@@ -48,7 +48,7 @@ body {
 
 .packagename {
     color: #fff;
-    font-family: "Poppins-SemiBold";
+    font-family: "Roboto";
     font-size: 19px;
     text-align: left;
     width: 220px;
@@ -570,7 +570,9 @@ body {
 }
 
 .form-inputt:focus {
-    border: 2px solid black;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.60);
+    /* border: 2px solid black; */
     outline: none;
     /* 👈 this removes browser default black outline */
 }
@@ -625,7 +627,7 @@ label {
     padding: 12px 16px;
     /* border: 2px solid black; */
     /* border-radius: 10px; */
-border: 1px solid rgba(0, 0, 0, 0.60);
+    border: 1px solid rgba(0, 0, 0, 0.60);
     border-radius: 10px;
     font-size: 16px;
     background: white;
@@ -703,7 +705,7 @@ border: 1px solid rgba(0, 0, 0, 0.60);
 
 .submit-now-btnn {
     color: #E67925;
-    
+
     font-family: 'Judson';
     font-size: 24px;
     font-style: normal;
@@ -2083,10 +2085,12 @@ background: #FFF; */
         font-size: 22px;
 
     }
-    .width-on-small{
-        width:130px ;
+
+    .width-on-small {
+        width: 130px;
     }
-    .submit-now-btnn{
+
+    .submit-now-btnn {
         width: 50%;
         font-size: 14px;
         padding: 24px 0px;
@@ -2102,13 +2106,16 @@ background: #FFF; */
     .trustedlogos:nth-child(2) {
         border-right: none 0px;
     }
-    .Exclusive-deals{
+
+    .Exclusive-deals {
         font-size: 22px;
     }
-    .Secure-journy{
+
+    .Secure-journy {
         font-size: 20px;
     }
-.width-on-small{
-    width: 100px;
-}
+
+    .width-on-small {
+        width: 100px;
+    }
 }
