@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+        }
+
+        .custom-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background-color: #0000ff;
+            border-color: #0000ff;
+        }
+
+        .form-control-border {
+            border: none;
+            border-bottom: 1px solid #000;
+            /* Change color as needed */
+            border-radius: 0;
+            /* Removes any default rounding */
+            outline: none;
+            /* Removes default focus outline */
+        }
+
+        .p-tag-center {
+            display: flex;
+            justify-content: center;
+            color: #111;
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: "Darker Grotesque";
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .info-form {
+            color: #717171;
+            font-family: "Darker Grotesque";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            /* 130% */
+
+        }
+
+        .Contact-us {
+            color: #000;
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: "Space Grotesk";
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+            /* 100% */
+            letter-spacing: -1px;
+        }
+
+        .Submit-button {
+            display: flex;
+            width: 162px;
+            height: 56px;
+            padding: 18px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            flex-shrink: 0;
+            color: #FFF;
+            font-family: "Space Grotesk";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 14px;
+            /* 70% */
+            letter-spacing: 0.2px;
+            border-radius: 100px;
+            background: #00F;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="custom-container ">
+      <div class="container">
+        <h2 class="mb-4"><span style="color: #0000ff;">↳</span> Contact Us</h2>
+        <p class="p-tag-center">Couldn't find what you were looking for?</p>
+        <form class="mt-5">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="fullName"><span class="info-form">Full Name</span></label>
+                    <input type="text" class="form-control form-control-border" id="fullName">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="contactNumber"><span class="info-form">Contact Number</span></label>
+                    <input type="text" class="form-control form-control-border" id="contactNumber">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="emailAddress"><span class="info-form">Email Address</span></label>
+                    <input type="email" class="form-control form-control-border" id="emailAddress">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="destination"><span class="info-form">Destination</span></label>
+                    <input type="text" class="form-control form-control-border" id="destination">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="query"><span class="info-form">Write your Query</span></label>
+                <textarea class="form-control form-control-border" id="query" rows="3"></textarea>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="Submit-button">Submit</button>
+            </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

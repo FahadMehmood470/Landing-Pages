@@ -1,0 +1,55 @@
+/* Navbar styles */
+.navbar {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 1rem; /* Padding for spacing */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Larger font size for brand */
+    font-weight: bold; /* Bold font weight */
+}
+
+.nav-link {
+    font-size: 1rem; /* Standard font size for links */
+    margin-right: 1rem; /* Spacing between links */
+}
+
+.nav-link.active {
+    font-weight: bold; /* Bold font weight for active link */
+}
+
+.navbar-toggler {
+    border: none; /* Remove border from toggler */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.dropdown-menu {
+    min-width: 8rem; /* Minimum width for dropdown */
+}
+
+.dropdown-item {
+    font-size: 0.9rem; /* Smaller font size for dropdown items */
+}
+
+.btn-outline-secondary {
+    border-color: #6c757d; /* Border color for outline buttons */
+    color: #6c757d; /* Text color for outline buttons */
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Background color for danger button */
+    border-color: #dc3545; /* Border color for danger button */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Background color on hover */
+    border-color: #bd2130; /* Border color on hover */
+}

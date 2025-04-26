@@ -1,0 +1,804 @@
+	<!DOCTYPE html>
+	<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Home</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Link Swiper's CSS -->
+		<link rel="stylesheet" href="assets/css/fonts.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+			integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+		<!-- Demo styles -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="assets/css/coustome.css">
+
+		<link href="assets/css/royalslider.css" rel="stylesheet">
+
+
+
+
+		<script src="assets/js/jquery-3.7.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+
+	<body>
+
+
+
+		<div class="container-fluid">
+
+			<!-- this is the navbar slide -->
+
+
+			<div class="container-fluid position-relative m-0 p-0 ">
+
+				<!-- Navbar -->
+				<div class="position-absolute col-12 topnavbar">
+					<nav class="navbar navbar-expand-lg">
+						<div class="container position-relative">
+							<a class="navbar-brand col-md-2" href="#"><img src="assets/images/LOGO.png" width="55"
+									height="15" alt="" /></a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+								data-bs-target="#navbarNav">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNav">
+								<ul class="navbar-nav me-auto">
+									<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+									<li class="nav-item explore-btn"><a class="nav-link" href="#">Explore</a>
+
+
+
+										<div
+											class="position-absolute slider-strip-width translate-middle-x d-flex align-items-stretch shadow mt-5 toggledropdown explorer-dropdown-hidden ">
+
+
+											<div
+												class="bg-white d-flex d-flex justify-content-between  px-4 explorer-dropdown">
+
+
+												<div>
+													<ul>
+														<li class="mt-5 explorer-info-font">Our Destinations</li>
+														<li class="explorer-info-li-tag">Africa</li>
+														<li class="explorer-info-li-tag">Europe</li>
+														<li class="explorer-info-li-tag">Asia</li>
+														<li class="explorer-info-li-tag">America</li>
+														<li class="explorer-info-li-tag">middle East</li>
+														<li class="explorer-info-li-tag explorer-info-view">View more</li>
+													</ul>
+												</div>
+												<div>
+													<ul>
+														<li class="mt-5 explorer-info-font">Our Destinations</li>
+														<li class="explorer-info-li-tag">Africa</li>
+														<li class="explorer-info-li-tag">Europe</li>
+														<li class="explorer-info-li-tag">Asia</li>
+														<li class="explorer-info-li-tag">America</li>
+														<li class="explorer-info-li-tag">middle East</li>
+														<li class="explorer-info-li-tag explorer-info-view">View more</li>
+													</ul>
+												</div>
+												<div>
+													<ul>
+														<li class="mt-5 explorer-info-font">Our Destinations</li>
+														<li class="explorer-info-li-tag">Africa</li>
+														<li class="explorer-info-li-tag">Europe</li>
+														<li class="explorer-info-li-tag">Asia</li>
+														<li class="explorer-info-li-tag">America</li>
+														<li class="explorer-info-li-tag">middle East</li>
+
+													</ul>
+												</div>
+												<div>
+													<img src="assets/images/pdes-1.jpg" class="explorer-info-img">
+												</div>
+
+											</div>
+
+
+
+										</div>
+
+
+
+
+									</li>
+									<li class="nav-item"><a class="nav-link" href="#">Book</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Check In</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Experience</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+								</ul>
+								<!-- Search Icon (Button) -->
+								<div class="position-relative d-inline-block">
+									<button class="btn btn-light" id="openSearchStrip">
+										<i class="fas fa-search"></i>
+									</button>
+
+									<!-- Search Strip (Initially Hidden) -->
+									<div id="searchStrip" class="position-absolute bg-white shadow p-3 d-none">
+										<div class=" align-items-center">
+											<div class="justify-content-between d-flex">
+												<span class="fw-bold">Looking for</span>
+												<!-- Close Button -->
+												<!-- <button class="cancel-btn btn p-0" id="closeSearchStrip">
+													❌
+													X
+												</button> -->
+												<button type="button" class="close" aria-label="Close"
+													id="closeSearchStrip">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<!-- Search Input -->
+											<div class="d-flex mt-2">
+												<input type="text" class="form-control mx-3" id="searchInput"
+													placeholder="Search your keyword...">
+
+												<!-- Search Button -->
+												<button class="btn btn-danger">Search</button>
+
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<a href="#" class="btnsignup">Login</a>
+								<a href="#" class="btnsignup">Sign Up</a>
+							</div>
+						</div>
+					</nav>
+				</div>
+
+
+				<div class="position-relative">
+					<!-- RoyalSlider (Moving Background) -->
+					<div id="simple-vertical" class="royalSlider rsDefault">
+						<a class="rsImg img-fluid" href="assets/images/hero-section.jpg"></a>
+						<a class="rsImg img-fluid" href="assets/images/hero-section.jpg"></a>
+						<a class="rsImg img-fluid" href="assets/images/hero-section.jpg"></a>
+						<a class="rsImg img-fluid" href="assets/images/hero-section.jpg"></a>
+					</div>
+
+					<!-- Fixed Text on Top -->
+					<div class="position-absolute top-50 translate-middle text-white text-start w-50" style="left: 40%;">
+						<h1 class="slider-heading">Start Your Unforgettable Journey With Us</h1>
+						<h3 class="fw-light font-strip">The best travels for yours journy begins now</h3>
+
+						<div class="mt-5">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input custom-radio" type="radio" name="inlineRadioOptions"
+									id="inlineRadio1" value="option1" style="margin-top: 4px;" checked>
+								<label class="form-check-label" for="inlineRadio1">One way</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input custom-radio" type="radio" name="inlineRadioOptions"
+									id="inlineRadio2" value="option2" style="margin-top: 4px;">
+								<label class="form-check-label" for="inlineRadio2">Round trip</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input custom-radio" type="radio" name="inlineRadioOptions"
+									id="inlineRadio2" value="option2" style="margin-top: 4px;">
+								<label class="form-check-label" for="inlineRadio2">Multicity</label>
+							</div>
+						</div>
+						<div
+							class="position-absolute slider-strip-width translate-middle-x d-flex align-items-stretch shadow mt-5">
+
+							<!-- White Strip -->
+							<div class="bg-white d-flex flex-grow-1  px-4 justify-content-between align-items-center">
+
+								<!-- FROM -->
+								<div style="width: 58vw;">
+
+									<div class="d-flex" style="justify-content: space-around;">
+										<div class="text-start">
+											<small class="text-uppercase text-muted strip-dropdown-margin">From</small>
+											<select class="form-select border-0 slider-strip-dropdown-margin">
+												<option>Dubai</option>
+												<option>New York</option>
+												<option>London</option>
+											</select>
+										</div>
+
+										<!-- TO -->
+										<div class="text-start">
+											<small class="text-uppercase text-muted strip-dropdown-margin">To</small>
+											<select class="form-select border-0 slider-strip-dropdown-margin">
+												<option>London</option>
+												<option>Paris</option>
+												<option>Tokyo</option>
+											</select>
+										</div>
+
+										<!-- PASSENGERS -->
+										<div class="text-start">
+											<small
+												class="text-uppercase text-muted strip-dropdown-margin">Passengers</small>
+											<select class="form-select border-0 slider-strip-dropdown-margin">
+												<option>1</option>
+												<option>2</option>
+												<option>3+</option>
+											</select>
+										</div>
+
+										<!-- CHECK-IN -->
+										<div class="text-start">
+											<small class="text-uppercase text-muted">Check In</small>
+											<input type="date" class="form-control border-0">
+										</div>
+									</div>
+
+
+
+
+									<div class="d-flex  mb-3">
+										<div class="text-start margin-inline-class">
+											<small class="text-uppercase text-muted font-strip ">Name</small>
+											<input type="text" class="form-control border-0 " placeholder="Enter your name">
+										</div>
+
+										<div class="text-start email-top">
+											<small class="text-uppercase text-muted font-strip">Email</small>
+											<input type="email" class="form-control border-0"
+												placeholder="Enter your email">
+										</div>
+
+										<div class="text-start margin-inline-class">
+											<small class="text-uppercase text-muted font-strip">Phone</small>
+											<input type="tel" class="form-control border-0" placeholder="Enter your phone">
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<!-- Red Strip (Search Button) -->
+							<div class="bg-danger text-white px-4 py-5 d-flex align-items-center justify-content-center slider-red-tag"
+								style="min-width: 200px;">
+								<button class="btn text-white fw-bold w-100"
+									style="font-size: 2.2vw; font-family: Playfair Display;	">Search Flights
+									&gt;</button>
+							</div>
+
+						</div>
+
+
+
+
+
+					</div>
+
+				</div>
+
+
+			</div>
+
+
+
+
+
+
+
+			<div class="container slides-top">
+				<h3 class="popular-destination-heading">Popular Destinations</h3>
+				<div class="red-line-destination"></div>
+				<div class="d-flex justify-content-between">
+					<p class="popular-destination">
+						Most popular destinations around the world, from historical places to natural wonders.
+					</p>
+					<div class="d-flex">
+						<div class="swiper-button-prev swiper-button-prev1"></div>
+						<div class="swiper-button-next swiper-button-next1"></div>
+					</div>
+				</div>
+				<div class="image-box">
+					<div class="swiper swiper1">
+						<div class="swiper-wrapper">
+					
+							<div class="swiper-slide img-container">
+								<img class="image-box-berlin" src="assets/images/pdes-1.jpg" alt="">
+								<div class="img-text">
+									<h3>Monument of Berlin</h3>
+									<div class="d-flex mt-2">
+										<img src="assets/images/location 1.png" alt="">
+										<p>Berlin, Germany</p>
+									</div>
+								</div>
+							</div>
+						
+							<div class="swiper-slide img-container">
+								<img class="image-box-berlin" src="assets/images/pdes-1.jpg" alt="">
+								<div class="img-text">
+									<h3>Monument of Berlin</h3>
+									<div class="d-flex mt-2">
+										<img src="assets/images/location 1.png" alt="">
+										<p>Berlin, Germany</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide img-container">
+								<img class="image-box-berlin" src="assets/images/pdes-1.jpg" alt="">
+								<div class="img-text">
+									<h3>Monument of Berlin</h3>
+									<div class="d-flex mt-2">
+										<img src="assets/images/location 1.png" alt="">
+										<p>Berlin, Germany</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide img-container">
+								<img class="image-box-berlin" src="assets/images/pdes-1.jpg" alt="">
+								<div class="img-text">
+									<h3>Monument of Berlin</h3>
+									<div class="d-flex mt-2">
+										<img src="assets/images/location 1.png" alt="">
+										<p>Berlin, Germany</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide img-container">
+								<img class="image-box-berlin" src="assets/images/pdes-1.jpg" alt="">
+								<div class="img-text">
+									<h3>Monument of Berlin</h3>
+									<div class="d-flex mt-2">
+										<img src="assets/images/location 1.png" alt="">
+										<p>Berlin, Germany</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide img-container">
+								<img class="image-box-berlin" src="assets/images/pdes-1.jpg" alt="">
+								<div class="img-text">
+									<h3>Monument of Berlin</h3>
+									<div class="d-flex mt-2">
+										<img src="assets/images/location 1.png" alt="">
+										<p>Berlin, Germany</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="second-slide-container slides-top">
+				<div class="mt-5">
+					<div class="mt-2"></div>
+					<div class="container">
+						<div>
+							<h3 class="d-flex justify-content-end special-offer mt-2	special-offer-heading">Special Offer</h3>
+						</div>
+					
+						<div class="red-line-special-offer"></div>
+					</div>
+					<div class=" d-flex justify-content-between small-screen-p mt-4">
+						<div class="d-flex previos-next ">
+							<div class="swiper-button-prev swiper-button-prev2"></div>
+							<div class="swiper-button-next swiper-button-next2"></div>
+						</div>
+						<p class="paragraph-p mt-3">Check out our special offer and discounts</p>
+					</div>
+	
+					<div class="swiper2 swiper container mt-3">
+						<div class="swiper-wrapper">
+					
+							<div class="swiper-slide  swiper2-card-overflow">
+								<div class="card" style="width: 25rem;">
+									<img src="assets/images/offer-1.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										
+									</div>
+									<div class="card-body d-flex justify-content-between">
+										<div class="d-flex">
+											<p class="highlights">From <span class="pound">&pound;500</span></p>
+										</div>
+										<div>
+											<button type="button" class="button">Danger</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide swiper2-card-overflow">
+								<div class="card" style="width: 25rem;">
+									<img src="assets/images/Image Container.png" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title card-title-h5">Lisbon, Portugal</h5>
+	
+										<span class="fa fa-star yellow"></span>
+										<span class="fa fa-star yellow"></span>
+										<span class="fa fa-star yellow"></span>
+										<span class="fa fa-star yellow"></span>
+										<span class="fa fa-star-half-alt yellow"></span>
+	
+										<p class="card-text card-text-p">5 nights and 4 days in 5 star hotel, breakfast and
+											lunch included.
+											Very popular during the renaissance. Passage and going through the cites of the
+											world in classical literature.</p>
+									</div>
+									<div class="card-body d-flex justify-content-between">
+										<div class="d-flex">
+											<p class="highlights">From <span class="pound">&pound;500</span></p>
+										</div>
+										<div>
+											<button type="button" class="button">Danger</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide swiper2-card-overflow">
+								<div class="card" style="width: 25rem;">
+									<img src="assets/images/Image Container (1).png" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title card-title-h5">Lisbon, Portugal</h5>
+	
+										<span class="fa fa-star yellow"></span>
+										<span class="fa fa-star yellow"></span>
+										<span class="fa fa-star yellow"></span>
+										<span class="fa fa-star yellow"></span>
+										<span class="fa fa-star-half-alt yellow"></span>
+	
+										<p class="card-text card-text-p">5 nights and 4 days in 5 star hotel, breakfast and
+											lunch included.
+											Very popular during the renaissance. Passage and going through the cites of the
+											world in classical literature.</p>
+									</div>
+									<div class="card-body d-flex justify-content-between">
+										<div class="d-flex">
+											<p class="highlights">From <span class="pound">&pound;500</span></p>
+										</div>
+										<div>
+											<button type="button" class="button">Danger</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide swiper2-card-overflow">
+								<div class="card" style="width: 25rem;">
+									<img src="assets/images/offer-1.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title card-title-h5">Lisbon, Portugal</h5>
+	
+	
+										<span class="fa fa-star yellow"></span>
+										<span class="fa fa-star yellow"></span>
+										<span class="fa fa-star yellow"></span>
+										<span class="fa fa-star yellow"></span>
+										<span class="fa fa-star-half-alt yellow"></span>
+	
+										<p class="card-text card-text-p">5 nights and 4 days in 5 star hotel, breakfast and
+											lunch included.
+											Very popular during the renaissance. Passage and going through the cites of the
+											world in classical literature.</p>
+									</div>
+									<div class="card-body d-flex justify-content-between">
+										<div class="d-flex">
+											<p class="highlights">From <span class="pound">&pound;500</span></p>
+										</div>
+										<div>
+											<button type="button" class="button">Danger</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide swiper2-card-overflow">
+								<div class="card" style="width: 25rem;">
+									<img src="assets/images/offer-1.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title card-title-h5">Lisbon, Portugal</h5>
+	
+										<span class="fa fa-star yellow"></span>
+										<span class="fa fa-star yellow"></span>
+										<span class="fa fa-star yellow"></span>
+										<span class="fa fa-star yellow"></span>
+										<span class="fa fa-star-half-alt yellow"></span>
+	
+										<p class="card-text card-text-p">5 nights and 4 days in 5 star hotel, breakfast and
+											lunch included.
+											Very popular during the renaissance. Passage and going through the cites of the
+											world in classical literature.</p>
+									</div>
+									<div class="card-body d-flex justify-content-between">
+										<div class="d-flex">
+											<p class="highlights">From <span class="pound">&pound;500</span></p>
+										</div>
+										<div>
+											<button type="button" class="button">Danger</button>
+										</div>
+									</div>
+								</div>
+							</div>
+					
+						</div>
+					</div>
+					<div class="container margin-discover">
+						<button type="button" class="discover-button">Secondary</button>
+	
+					</div>
+				</div>
+			</div>
+
+
+			<div class="container third-slide-container mt-5 slides-top">
+				<h1 class="our-blog-title">Our Blog</h1>
+				<div class="red-line-blog"></div>
+				<p class="our-blog-title-para">An insight the incredible experience in the world</p>
+				<div class="row blog-content">
+					<div class="col-md-6 col-12 blog-image-container">
+						<img class="blog-image" src="assets/images/blog-1.jpg" alt="">
+					</div>
+					<div class="col-md-6 col-12 blog-text-container d-flex flex-column justify-content-center">
+						<h2 class="blog-text-heading">Beautiful Italy Let’s travel</h2>
+						<p class="blog-text-paragraph">But I must explain to you how all this mistaken idea of denouncing
+							pleasure and praising pain was born and I will give you a complete account of the system and
+							expound the actual teachings of the great explorer of the truth, the master- builder of human
+							happiness. No one rejects, dislike, or avoids plasure itself, because it is pleasure, but
+							because those who do not know how to pursue pleasure rationally encounter consequences that are
+							extremly painful. Nor again is there anyone who loves or pursues.</p>
+						<h2 class="blog-text-read-more">Read More</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="container slides-top mt-5">
+				<div class="container">
+					<h2 class="desti-gallery-1">Destination Gallery</h2>
+					<div class="red-line-blog"></div>
+				</div>
+				<div class="d-flex justify-content-between">
+					<p class="paragraph-p-gallary">Our photo gallery on trip</p>
+					<div class="d-flex">
+						<div class="swiper-button-prev swiper-button-prev3"></div>
+						<div class="swiper-button-next swiper-button-next3"></div>
+					</div>
+				</div>
+				<div class="swiper swiper3">
+					<div class="swiper-wrapper swiper-gap">
+				
+						<div class="swiper-slide">
+							<img class="destination-image" src="assets/images/desti-gallery-1.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img class="destination-image" src="assets/images/Col-block (1).png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img class="destination-image" src="assets/images/Image Container (2).png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img class="destination-image" src="./assets/images/desti-gallery-1.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img class="destination-image" src="assets/images/desti-gallery-1.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img class="destination-image" src="assets/images/desti-gallery-1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<footer class="col-12 float-start ">
+				<div class="container">
+					<div class="row">
+						<div class="newsletter-area col-12 float-start">
+							<div class="col-12 col-sm-6 float-start">
+								<h4>Our Newsletter</h4>
+							</div>
+							<div class="col-12 col-sm-6 float-start">
+								<span class="mb-3 float-start">Email</span>
+								<div class="clearfix"></div>
+								<input class="txtsignup" type="text" name="" id="" value="">
+								<button class="btnsubscribe">Subscribe</button>
+							</div>
+	
+						</div>
+						<div class="clearfix"></div>
+						<div class="col-12 col-sm-12 col-md-4 float-start">
+							<img src="assets/images/LOGO.png" alt="" class="mb-3">
+							<div class="clearfix"></div>
+							<p>Copyright © Demo Location 2020 All rights reserved</p>
+						</div>
+						<div class="col-12 col-sm-6 col-md-1 float-start">
+							<ul>
+								<li><a href="">Home</a></li>
+								<li><a href="">Explore</a></li>
+								<li><a href="">Book</a></li>
+								<li><a href="">Blog</a></li>
+								<li><a href="">Pricing</a></li>
+							</ul>
+						</div>
+						<div class="col-12 col-sm-6 col-md-2 float-start">
+							<h4>Information</h4>
+							<ul>
+								<li><a href="">Home</a></li>
+								<li><a href="">Explore</a></li>
+								<li><a href="">Book</a></li>
+								<li><a href="">Blog</a></li>
+								<li><a href="">Pricing</a></li>
+							</ul>
+						</div>
+						<div class="col-12 col-sm-6 col-md-2 float-start">
+							<h4>Contact Info</h4>
+							<ul>
+								<li><a href="">+123 456 789</a></li>
+								<li><a href="">info@demoairline.com</a></li>
+								<li><a href="">1245, New Yourk, USA</a></li>
+							</ul>
+						</div>
+						<div class="col-12 col-sm-6 col-md-3 float-start">
+							<h4>Follow us on</h4>
+							<div class="socialicons">
+								<a href=""><i class="fa-brands fa-square-facebook"></i></a>
+								<a href=""><i class="fa-brands fa-square-instagram"></i></a>
+								<a href=""><i class="fa-brands fa-square-twitter"></i></a>
+								<a href=""><i class="fa-brands fa-square-pinterest"></i></a>
+							</div>
+						</div>
+					</div>
+			</footer>
+		</div>
+
+
+
+
+	
+
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="assets/js/jquery.royalslider.min.js"></script>
+
+		<script>
+			jQuery(document).ready(function ($) {
+				$('#simple-vertical').royalSlider({
+					arrowsNav: true,
+					arrowsNavAutoHide: true,
+					fadeinLoadedSlide: true,
+					controlNavigation: 'bullets',
+					imageScaleMode: 'fill',
+					imageAlignCenter: true,
+					loop: true,
+					loopRewind: true,
+					numImagesToPreload: 4,
+					slidesOrientation: 'vertical',
+					keyboardNavEnabled: true,
+					video: {
+						autoHideArrows: true,
+						autoHideControlNav: true
+					},
+	
+					autoScaleSlider: true,
+					autoScaleSliderWidth: 960,
+					autoScaleSliderHeight: 850,
+	
+					/* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
+					imgWidth: 640,
+					imgHeight: 360
+				});
+			});
+		</script>
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper1 = new Swiper(".swiper1", {
+				slidesPerView: 1, // Default for mobile
+				spaceBetween: 32,
+				loop: false, // No infinite loop
+				navigation: {
+					nextEl: ".swiper-button-next1",
+					prevEl: ".swiper-button-prev1",
+				},
+				breakpoints: {
+					768: { // Tablet
+						slidesPerView: 2,
+					},
+					1024: { // Laptops and Desktops
+						slidesPerView: 3.5, // Shows 3.5 images on large screens
+					}
+				},
+			});
+
+			// Run once to apply correct button colors on page load
+			swiper1.emit("slideChange");
+
+			var swiper2 = new Swiper(".swiper2", {
+				slidesPerView: 1, // Default for small screens
+				spaceBetween: 32,
+				loop: false, // No infinite loop
+				navigation: {
+					nextEl: ".swiper-button-next2",
+					prevEl: ".swiper-button-prev2",
+				},
+				breakpoints: {
+					768: { // Tablet
+						slidesPerView: 2,
+						slidesPerGroup: 2
+					},
+					1024: { // Large Screens
+						slidesPerView: 3, // Show 3 cards on large screens
+						slidesPerGroup: 3
+					}
+				}
+			});
+
+
+			var swiper3 = new Swiper(".swiper3", {
+				slidesPerView: 1, // Default for small screens
+				spaceBetween: 32,
+				loop: false, // No infinite loop
+				navigation: {
+					nextEl: ".swiper-button-next3",
+					prevEl: ".swiper-button-prev3",
+				},
+				breakpoints: {
+					768: { // Tablet
+						slidesPerView: 2,
+						slidesPerGroup: 1
+					},
+					1024: { // Large Screens
+						slidesPerView: 4, // Show 4 images on large screens
+						slidesPerGroup: 1
+					}
+				},
+				on: {
+					slideChange: function () {
+						let swiperContainer = document.querySelector(".swiper3");
+						if (window.innerWidth >= 1024) { // Apply margin only on large screens
+							swiperContainer.style.marginBottom = "30px";
+						} else {
+							swiperContainer.style.marginBottom = "0"; // Reset margin on smaller screens
+						}
+					}
+				}
+			});
+
+
+				document.getElementById("openSearchStrip").addEventListener("click", function () {
+			let searchStrip = document.getElementById("searchStrip");
+			if (searchStrip.style.display === "none" || searchStrip.classList.contains("d-none")) {
+				searchStrip.classList.remove("d-none");
+				searchStrip.style.display = "block";  // Show
+			} else {
+				searchStrip.classList.add("d-none");
+				searchStrip.style.display = "none";   // Hide
+			}
+		});
+
+		document.getElementById("closeSearchStrip").addEventListener("click", function () {
+			document.getElementById("searchStrip").classList.add("d-none");
+			document.getElementById("searchStrip").style.display = "none";
+		});
+
+
+		document.querySelector(".explore-btn .nav-link").addEventListener("click", function (event) {
+    event.preventDefault();
+    let dropdown = document.querySelector(".toggledropdown");
+    dropdown.classList.toggle("explorer-dropdown-hidden");
+    dropdown.classList.toggle("explorer-dropdown-block");
+});
+		</script>
+	</body>
+
+	</html>

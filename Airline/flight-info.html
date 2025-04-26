@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/flight-info.css">
+    <title>Flight Booking</title>
+
+    <link href="assets/css/fonts.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6H+ALEwIH" crossorigin="anonymous"-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- <link href="assets/css/header.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link href="assets/css/footer.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- <header>
+            <div class="logo">LOGO</div>
+            <div class="flight-route">Dubai (DXB) ✈ London (LHR)</div>
+            <div class="currency">🇵🇰 Pak</div>
+            <div class="auth-buttons">
+                <button>Login</button>
+                <button>Sign up</button>
+            </div>
+        </header> -->
+
+        <!-- <main>
+
+            <h1>Don't miss the seat, Book Flight</h1>
+            <form class="booking-form">
+                <fieldset>
+                    <legend>GUESTS INFORMATION</legend>
+                    <label>Title:
+                        <select>
+                            <option value="miss">Miss</option>
+                        </select>
+                    </label>
+                    <label>First Name: <input type="text" required></label>
+                    <label>Last Name: <input type="text" required></label>
+                    <label>Contact Number: <input type="tel" required></label>
+                    <label>Email Address: <input type="email" required></label>
+                    <label>Resident: <input type="text" required></label>
+                    <label>Adult: <input type="number" min="0" required></label>
+                    <label>Child: <input type="number" min="0"></label>
+                    <label>Infant: <input type="number" min="0"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>FLIGHT INFORMATION</legend>
+                    <label>Departure Airport: <input type="text" value="London Heathrow (LHR, United Kingdom)" readonly></label>
+                    <label>Destination Airport: <input type="text" value="Paris - Beauvais-Tille Airport (BVA, France)" readonly></label>
+                    <label>Airline: <input type="text" value="British Airways - BA (Economy Class)" readonly></label>
+                    <label>Flight Fare: <input type="text" value="All Passengers £1175 (without taxes)" readonly></label>
+                    <label>Departure Date: <input type="date" required></label>
+                    <label>Return Date: <input type="date" required></label>
+                </fieldset>
+
+                <button type="submit" class="book-button">Book Now</button>
+            </form>
+
+            <aside class="summary">
+                <h2>Summary</h2>
+                <div class="flight-details">
+                    <p><strong>SAT 22 FEB</strong></p>
+                    <p>07:45 <span>DXB</span> Dubai</p>
+                    <p>12:50 <span>LHR</span> London Heathrow</p>
+                </div>
+                <h3>Flight Fare Details</h3>
+                <p>Per Adult (12+ years) £175</p>
+                <p>Per Child (2 to 11 years) £131.25</p>
+                <p>Per Infant (under 2 years) £43.75</p>
+                <p>Booking Fee (each passenger) £500</p>
+                <p>Contact us at <strong>0204 618 9248</strong> to confirm the fare and seats availability.</p>
+            </aside>
+        </main> -->
+
+
+
+        <div class="container">
+            <div class="form-and-ticket-container">
+                <div class="formbold-main-wrapper">
+                    <!-- Form content here -->
+
+                    <div class="formbold-header">
+                        <h1 class="flight-details-book-it">Don't miss the seat, Book Flight</h1>
+                        <hr />
+                        <div class="formbold-form-wrapper container">
+                            <form>
+                                <div>
+                                    <h2 class="guest-info">Guests information</h2>
+                                    <div class="formbold-input-flex">
+                                        <div>
+                                            <input type="text" name="firstname" id="firstname" placeholder="Jane"
+                                                class="formbold-form-input" />
+                                            <label for="firstname" class="formbold-form-label"> First name </label>
+                                        </div>
+                                        <div>
+                                            <input type="text" name="firstname" id="firstname" placeholder="Jane"
+                                                class="formbold-form-input" />
+                                            <label for="firstname" class="formbold-form-label"> First name </label>
+                                        </div>
+                                        <div>
+                                            <input type="text" name="lastname" id="lastname" placeholder="Cooper"
+                                                class="formbold-form-input" />
+                                            <label for="lastname" class="formbold-form-label"> Last name </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="formbold-input-flex">
+                                        <div>
+                                            <input type="email" name="email" id="email" placeholder="jhon@mail.com"
+                                                class="formbold-form-input" />
+                                            <label for="email" class="formbold-form-label"> Mail </label>
+                                        </div>
+                                        <div>
+                                            <input type="text" name="phone" id="phone" placeholder="(319) 555-0115"
+                                                class="formbold-form-input" />
+                                            <label for="phone" class="formbold-form-label"> Phone </label>
+                                        </div>
+                                        <div>
+                                            <input type="text" name="phone" id="phone" placeholder="(319) 555-0115"
+                                                class="formbold-form-input" />
+                                            <label for="phone" class="formbold-form-label"> Phone </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="formbold-input-flex">
+                                        <div>
+                                            <select name="adult" id="adult" class="formbold-form-input">
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>
+                                            <label for="adult" class="formbold-form-label">Adult</label>
+
+                                        </div>
+                                        <div>
+                                            <select name="child" id="child" class="formbold-form-input">
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>
+                                            <label for="child" class="formbold-form-label">Child</label>
+
+                                        </div>
+                                        <div>
+                                            <select name="infant" id="infant" class="formbold-form-input">
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>
+                                            <label for="infant" class="formbold-form-label">Infant</label>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 class="flight-information">Flight information</h2>
+                                    <div class="formbold-input-flex">
+                                        <div>
+                                            <input type="text" name="firstname" id="firstname" placeholder="Jane"
+                                                class="formbold-form-input" />
+                                            <label for="firstname" class="formbold-form-label"> First name </label>
+                                        </div>
+                                        <div>
+                                            <input type="text" name="firstname" id="firstname" placeholder="Jane"
+                                                class="formbold-form-input" />
+                                            <label for="firstname" class="formbold-form-label"> First name </label>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="formbold-input-flex">
+                                        <div>
+                                            <input type="email" name="email" id="email" placeholder="jhon@mail.com"
+                                                class="formbold-form-input" />
+                                            <label for="email" class="formbold-form-label"> Mail </label>
+                                        </div>
+                                        <div>
+                                            <input type="text" name="phone" id="phone" placeholder="(319) 555-0115"
+                                                class="formbold-form-input" />
+                                            <label for="phone" class="formbold-form-label"> Phone </label>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="formbold-input-flex">
+                                        <div>
+                                            <select name="adult" id="adult" class="formbold-form-input">
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>
+                                            <label for="adult" class="formbold-form-label">Adult</label>
+
+                                        </div>
+                                        <div>
+                                            <select name="child" id="child" class="formbold-form-input">
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>
+                                            <label for="child" class="formbold-form-label">Child</label>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="d-grid gap-2 d-md-block">
+                                    <button class="btn btn-primary" type="button">Button</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket-summary">
+                    <h2 class="ticket-summary-h2">Summary</h2>
+                    <hr/>
+
+                    <div class="flight-details">
+                        <!-- Flight Segment 1 -->
+                        <div class="flight-segment d-flex justify-content-around">
+                            <div class="flight-time">
+                                <p class="flight-date-to-fly">Sat 22 Feb</p>
+                                <h2 class="flight-time-to-fly">07:45</h2>
+                                <p class=" flight-company-to-fly">DXB</p>
+                                <p class="flight-destination-to-fly">Dubai</p>
+                            </div>
+                            <div class="flight-duration">
+                                <p class="flight-time-take-to-destination">8 HRS 0 MIN</p>
+                                <img class="route-image-aeroplane" src="assets/images/Distance.png" alt="Flight Path">
+                                <p class="flight-non-stop">Non-stop</p>
+                            </div>
+                            <div class="flight-time text-end">
+                                <p class="flight-date-to-fly">Sat 22 Feb</p>
+                                <h2 class="flight-time-to-fly">12:50</h2>
+                                <p class=" flight-company-to-fly">LHR</p>
+                                <p class="flight-destination-to-fly">London Heathrow</p>
+                            </div>
+                        </div>
+
+                        <!-- Flight Segment 2 (Return) -->
+                        <div class="flight-segment d-flex justify-content-around mt-5">
+                            <div class="flight-time">
+                                <p class="flight-date-to-fly">Sat 22 Feb</p>
+                                <h2 class="flight-time-to-fly">07:45</h2>
+                                <p class=" flight-company-to-fly">DXB</p>
+                                <p class="flight-destination-to-fly">Dubai</p>
+                            </div>
+                            <div class="flight-duration">
+                                <p class="flight-time-take-to-destination">8 HRS 0 MIN</p>
+                                <img class="route-image-aeroplane" src="assets/images/Distance.png" alt="Flight Path">
+                                <p class="flight-non-stop">Non-stop</p>
+                            </div>
+                            <div class="flight-time text-end ">
+                                <p class="flight-date-to-fly">Sat 22 Feb</p>
+                                <h2 class="flight-time-to-fly">12:50</h2>
+                                <p class=" flight-company-to-fly">LHR</p>
+                                <p class="flight-destination-to-fly">London Heathrow</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container"> 
+                        <hr />
+                    </div>
+                    
+                    <!-- Flight Fare Details -->
+                    <h2 class="flight-fare-details">Flight Fare Details</h2>
+                    <div class="fare-details">
+                        <div class="fare-row d-flex justify-content-between">
+                            <p class="per-ticket">Per Adult (12+ years)</p>
+                            <p class="ticket-price-in-pound">£175</p>
+                        </div>
+                        <div class="fare-row d-flex justify-content-between">
+                            <p class="per-ticket">Per Child (2 to 11 years)</p>
+                            <p class="ticket-price-in-pound">£131.25</p>
+                        </div>
+                        <div class="fare-row d-flex justify-content-between">
+                            <p class="per-ticket">Per Infant (under 2 years)</p>
+                            <p class="ticket-price-in-pound">£43.75</p>
+                        </div>
+                        <div class="fare-row d-flex justify-content-between">
+                            <p class="per-ticket">Booking Fee (each passenger)</p>
+                            <p class="ticket-price-in-pound">£500</p>
+                        </div>
+                    </div>
+
+                    <p>Contact us at <span>0204 618 9248</span> to confirm the fare and seat availability.</p>
+                </div>
+            </div>
+</body>
+
+</html>

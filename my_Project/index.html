@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Navbar with Search Icon</title>
+    <link rel="stylesheet" href="css/index.css">
+    
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <div class="image-container ">
+        <img src="./assets/hero-section.jpg" alt="Hero Image">
+      
+            <!-- Your Navbar Code Here -->
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    
+                <div class="container ">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <div class="d-flex align-items-center">
+                        <!-- Search Icon -->
+                
+                    
+                        <!-- Menu Button -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#">Services</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#">Contact</a></li>
+            
+                        </ul>
+                        
+                        <!-- Search Icon -->
+                       <!-- Search Icon (Button) -->
+						<div class="position-relative d-inline-block">
+							<button class="btn btn-light" id="openSearchStrip">
+								<i class="fas fa-search"></i>
+							</button>
+
+							<!-- Search Strip (Initially Hidden) -->
+							<div id="searchStrip" class="position-absolute bg-white shadow p-3 d-none">
+								<div class=" align-items-center">
+									<div class="justify-content-between d-flex">
+										<span class="fw-bold">Looking for</span>
+										<!-- Close Button -->
+										<!-- <button class="cancel-btn btn p-0" id="closeSearchStrip">
+											❌
+											X
+										</button> -->
+										<button type="button" class="btn-close" aria-label="Close" id="closeSearchStrip">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<!-- Search Input -->
+									<div class="d-flex mt-2">
+										<input type="text" class="form-control mx-3" id="searchInput"
+											placeholder="Search your keyword...">
+
+										<!-- Search Button -->
+										<button class="btn btn-danger">Search</button>
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+            
+                        <!-- Login and Logout Buttons -->
+                        <div class="d-flex">
+                            <button class="btn btn-outline-success mx-2" type="button">Login</button>
+                            <button class="btn btn-outline-danger mx-2" type="button">Logout</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        
+    </div>
+    
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const navbarCollapse = document.getElementById("navbarSupportedContent");
+    const image = document.querySelector(".image-container img");
+
+    function checkScreenSize() {
+        if (window.innerWidth <= 768) {
+            image.style.visibility = "visible";  
+            image.style.opacity = "1";  
+        } else {
+            image.style.visibility = "visible";  
+            image.style.opacity = "1";  
+        }
+    }
+
+    // Show/hide image when menu is opened/closed
+    navbarCollapse.addEventListener("show.bs.collapse", function () {
+        image.style.visibility = "hidden";  
+        image.style.opacity = "0";  
+    });
+
+    navbarCollapse.addEventListener("hide.bs.collapse", function () {
+        image.style.visibility = "visible";  
+        image.style.opacity = "1";  
+    });
+
+    // Check screen size on page load
+    checkScreenSize();
+
+    // Check when the window resizes
+    window.addEventListener("resize", checkScreenSize);
+});
+
+
+
+document.getElementById("openSearchStrip").addEventListener("click", function () {
+			let searchStrip = document.getElementById("searchStrip");
+			if (searchStrip.style.display === "none" || searchStrip.classList.contains("d-none")) {
+				searchStrip.classList.remove("d-none");
+				searchStrip.style.display = "block";  // Show
+			} else {
+				searchStrip.classList.add("d-none");
+				searchStrip.style.display = "none";   // Hide
+			}
+		});
+
+		document.getElementById("closeSearchStrip").addEventListener("click", function () {
+			document.getElementById("searchStrip").classList.add("d-none");
+			document.getElementById("searchStrip").style.display = "none";
+		});
+
+
+    </script>
+</body>
+</html>

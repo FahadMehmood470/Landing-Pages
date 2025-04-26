@@ -1,0 +1,35 @@
+.destinations-to-visit{
+    color: #172432;
+font-family: "Playfair Display";
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.destinations-to-visit-p{
+    color: #767E86;
+font-family: Rubik;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.no-flight-available{
+    color: #C8D0D8;
+font-family: Rubik;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.red-line-destination{
+    width: 365px;
+height: 3px;
+background: #DC143C;
+}
+.map-of-america{
+    width: 1223.389px;
+height: 910px;
+flex-shrink: 0;
+fill: rgba(220, 20, 60, 0.15);
+}

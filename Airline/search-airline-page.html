@@ -1,0 +1,562 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Search Airline LAnding Page</title>
+
+    <link href="assets/css/fonts.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/search-airline.css">
+    <link href="assets/css/footer.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="position-absolute col-12 topnavbar">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container position-relative">
+                <a class="navbar-brand col-md-2" href="#"><img src="assets/images/LOGO.png" width="55" height="15"
+                        alt="" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item explore-btn"><a class="nav-link" href="#">Explore</a>
+                            <div
+                                class="position-absolute slider-strip-width translate-middle-x d-flex align-items-stretch shadow mt-5 toggledropdown explorer-dropdown-hidden ">
+
+
+                                <div class="bg-white d-flex d-flex justify-content-between  px-4 explorer-dropdown">
+
+
+                                    <div>
+                                        <ul>
+                                            <li class="mt-5 explorer-info-font">Our Destinations</li>
+                                            <li class="explorer-info-li-tag">Africa</li>
+                                            <li class="explorer-info-li-tag">Europe</li>
+                                            <li class="explorer-info-li-tag">Asia</li>
+                                            <li class="explorer-info-li-tag">America</li>
+                                            <li class="explorer-info-li-tag">middle East</li>
+                                            <li class="explorer-info-li-tag explorer-info-view">View more</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li class="mt-5 explorer-info-font">Our Destinations</li>
+                                            <li class="explorer-info-li-tag">Africa</li>
+                                            <li class="explorer-info-li-tag">Europe</li>
+                                            <li class="explorer-info-li-tag">Asia</li>
+                                            <li class="explorer-info-li-tag">America</li>
+                                            <li class="explorer-info-li-tag">middle East</li>
+                                            <li class="explorer-info-li-tag explorer-info-view">View more</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li class="mt-5 explorer-info-font">Our Destinations</li>
+                                            <li class="explorer-info-li-tag">Africa</li>
+                                            <li class="explorer-info-li-tag">Europe</li>
+                                            <li class="explorer-info-li-tag">Asia</li>
+                                            <li class="explorer-info-li-tag">America</li>
+                                            <li class="explorer-info-li-tag">middle East</li>
+
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <img src="./assets/images/pdes-1.jpg" class="explorer-info-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Book</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Check In</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                    </ul>
+                    <div class="position-relative d-inline-block">
+                        <button class="btn btn-light" id="openSearchStrip">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <div id="searchStrip" class="position-absolute bg-white shadow p-3 d-none">
+                            <div class=" align-items-center">
+                                <div class="justify-content-between d-flex">
+                                    <span class="fw-bold">Looking for</span>
+                                    <button type="button" class="close" aria-label="Close" id="closeSearchStrip">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <input type="text" class="form-control mx-3" id="searchInput"
+                                        placeholder="Search your keyword...">
+                                    <button class="btn btn-danger">Search</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btnsignup">Login</a>
+                    <a href="#" class="btnsignup">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container margin-top-150">
+            <h1 class="text-white flights-to-america-heading">Flights to America</h1>
+            <p class="text-white flights-to-america-heading-paragraph">The best travel for your jouney begins now
+            </p>
+            <button class="discover-now-button margin-top-150"> Discover Now</button>
+        </div>
+    </div>
+    <div class="position-relative">
+        <div>
+            <img class="background-image" src="assets/images/Hero Section.jpg" alt="">
+        </div>
+
+        <div class="container">
+            <h2 class="destinations-to-visit mt-5">Available Flight from Dubai to London</h2>
+            <p class="red-line-destination"></p>
+            <p class="destinations-to-visit-p mt-4">
+                Most popular destinations around the world, from historical places to natural wonders.
+            </p>
+        </div>
+    </div>
+    <!-- radio buttons -->
+
+    <div class="mt-5 container">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">One Way</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Round Trip</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Multicity</label>
+        </div>
+    </div>
+
+    <div class="mt-5 container">
+        <div class="row">
+            <div class="col-md-3">
+                <label for="title" class="form-label text-muted">FROM</label>
+                <select id="title" class="form-select border-0 ">
+                    <option selected>Miss</option>
+                    <option>Mr</option>
+                    <option>Mrs</option>
+                </select>
+                <hr />
+
+            </div>
+            <div class="col-md-3">
+                <label for="title" class="form-label text-muted">TO</label>
+                <select id="title" class="form-select border-0 ">
+                    <option selected>Miss</option>
+                    <option>Mr</option>
+                    <option>Mrs</option>
+                </select>
+                <hr />
+
+            </div>
+
+            <div class="col-md-3">
+                <label for="title" class="form-label text-muted">CHECK IN</label>
+                <select id="title" class="form-select border-0 ">
+                    <option selected>Miss</option>
+                    <option>Mr</option>
+                    <option>Mrs</option>
+                </select>
+                <hr />
+
+            </div>
+            <div class="col-md-3">
+                <label for="title" class="form-label text-muted">CHECK OUT</label>
+                <select id="title" class="form-select border-0 ">
+                    <option selected>Miss</option>
+                    <option>Mr</option>
+                    <option>Mrs</option>
+                </select>
+                <hr />
+
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-3">
+                <label for="title" class="form-label text-muted">TITLE</label>
+                <select id="title" class="form-select border-0 ">
+                    <option selected>Miss</option>
+                    <option>Mr</option>
+                    <option>Mrs</option>
+                </select>
+                <hr />
+
+            </div>
+
+            <div class="col-md-3">
+                <label for="firstName" class="form-label text-muted">FIRST NAME</label>
+                <input type="text" id="firstName" class="form-control border-0 " placeholder="Aaleen">
+                <hr />
+
+            </div>
+
+            <div class="col-md-3">
+                <label for="firstName" class="form-label text-muted">FIRST NAME</label>
+                <input type="text" id="firstName" class="form-control border-0 " placeholder="Aaleen">
+                <hr />
+
+            </div>
+
+
+
+            <div class="col-md-3">
+                <label for="firstName" class="form-label text-muted">FIRST NAME</label>
+                <input type="text" id="firstName" class="form-control border-0 " placeholder="Aaleen">
+                <hr />
+
+            </div>
+        </div>
+        <button class="search-flight">Search Flight</button>
+    </div>
+
+    <div class="background-color-cards">
+        <div class="container mt-5">
+            <div class="mt-5">
+                <div class="mt-2"></div>
+                <div class="d-flex flex-column align-items-end">
+                    <div>
+                        <h3 class="d-flex special-offer mt-2	american-offer-heading">America’s Popular Destinations</h3>
+                    </div>
+
+                    <div class="red-line-choose-us"></div>
+                    <div class=" d-flex justify-content-between small-screen-p mt-4">
+                        <p class="paragraph-p mt-3">Check out our special offer and discounts</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="container ">
+            <div class="row">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-6 mb-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="assets/images/offer-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-h5">Lisbon, Portugal</h5>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star-half-alt yellow"></span>
+                                <p class="card-text card-text-p">5 nights and 4 days in 5 star hotel, breakfast and
+                                    lunch
+                                    included. Very popular during the renaissance. Passage and going through the cites
+                                    of
+                                    the
+                                    world in classical literature.</p>
+                            </div>
+                            <div class="card-body d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <p class="highlights">From <span class="pound">&pound;500</span></p>
+                                </div>
+                                <div>
+                                    <button type="button" class="button">Danger</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-6 mb-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="assets/images/offer-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-h5">Lisbon, Portugal</h5>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star-half-alt yellow"></span>
+                                <p class="card-text card-text-p">5 nights and 4 days in 5 star hotel, breakfast and
+                                    lunch
+                                    included. Very popular during the renaissance. Passage and going through the cites
+                                    of
+                                    the
+                                    world in classical literature.</p>
+                            </div>
+                            <div class="card-body d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <p class="highlights">From <span class="pound">&pound;500</span></p>
+                                </div>
+                                <div>
+                                    <button type="button" class="button">Danger</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-6 mb-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="assets/images/offer-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-h5">Lisbon, Portugal</h5>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star-half-alt yellow"></span>
+                                <p class="card-text card-text-p">5 nights and 4 days in 5 star hotel, breakfast and
+                                    lunch
+                                    included. Very popular during the renaissance. Passage and going through the cites
+                                    of
+                                    the
+                                    world in classical literature.</p>
+                            </div>
+                            <div class="card-body d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <p class="highlights">From <span class="pound">&pound;500</span></p>
+                                </div>
+                                <div>
+                                    <button type="button" class="button">Danger</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-6 mb-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="assets/images/offer-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-h5">Lisbon, Portugal</h5>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star-half-alt yellow"></span>
+                                <p class="card-text card-text-p">5 nights and 4 days in 5 star hotel, breakfast and
+                                    lunch
+                                    included. Very popular during the renaissance. Passage and going through the cites
+                                    of
+                                    the
+                                    world in classical literature.</p>
+                            </div>
+                            <div class="card-body d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <p class="highlights">From <span class="pound">&pound;500</span></p>
+                                </div>
+                                <div>
+                                    <button type="button" class="button">Danger</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 col-6 mb-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="assets/images/offer-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-h5">Lisbon, Portugal</h5>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star-half-alt yellow"></span>
+                                <p class="card-text card-text-p">5 nights and 4 days in 5 star hotel, breakfast and
+                                    lunch
+                                    included. Very popular during the renaissance. Passage and going through the cites
+                                    of
+                                    the
+                                    world in classical literature.</p>
+                            </div>
+                            <div class="card-body d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <p class="highlights">From <span class="pound">&pound;500</span></p>
+                                </div>
+                                <div>
+                                    <button type="button" class="button">Danger</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-4 col-md-6 col-6 mb-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="assets/images/offer-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title card-title-h5">Lisbon, Portugal</h5>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star yellow"></span>
+                                <span class="fa fa-star-half-alt yellow"></span>
+                                <p class="card-text card-text-p">5 nights and 4 days in 5 star hotel, breakfast and
+                                    lunch
+                                    included. Very popular during the renaissance. Passage and going through the cites
+                                    of
+                                    the
+                                    world in classical literature.</p>
+                            </div>
+                            <div class="card-body d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <p class="highlights">From <span class="pound">&pound;500</span></p>
+                                </div>
+                                <div>
+                                    <button type="button" class="button">Danger</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+               
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="container position-relative">
+        <img src="assets/images/telegram.svg" alt="" class="telegram-icon">
+        <section class="why-choose-us margin-top-150px">
+            <div class="content">
+                <h1 class="destinations-to-visit">Why you should choose Us?</h1>
+                <div class="red-line-search-airline"></div>
+                <p class="paragraph-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.
+                </p>
+            </div>
+            <div class="image-card">
+                <img src="assets/images/Image Container.png" alt="Millennium Bridge" class="card-img-top-border position-relative">
+                <div class="card-text-margin position-absolute">
+                    <h5 class="card-title-h5-position">Millennium Bridge</h5>
+                    <div class="d-flex">
+                        <img src="assets/images/location 1.png" alt="" class="location-icon">
+                        <p class="card-text-uk">London, United Kingdom</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <footer class="col-12 float-start footer-margin-top">
+        <div class="container">
+            <div class="row">
+                <div class="newsletter-area col-12 float-start">
+                    <div class="col-12 col-sm-6 float-start">
+                        <h4>Our Newsletter</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 float-start">
+                        <span class="mb-3 float-start">Email</span>
+                        <div class="clearfix"></div>
+                        <input class="txtsignup" type="text" name="" id="" value="">
+                        <button class="btnsubscribe">Subscribe</button>
+                    </div>
+
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-12 col-sm-12 col-md-4 float-start">
+                    <img src="assets/images/LOGO.png" alt="" class="mb-3">
+                    <div class="clearfix"></div>
+                    <p>Copyright © Demo Location 2020 All rights reserved</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-1 float-start">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Explore</a></li>
+                        <li><a href="">Book</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-2 float-start">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Explore</a></li>
+                        <li><a href="">Book</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-2 float-start">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="">+123 456 789</a></li>
+                        <li><a href="">info@demoairline.com</a></li>
+                        <li><a href="">1245, New Yourk, USA</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 float-start">
+                    <h4>Follow us on</h4>
+                    <div class="socialicons">
+                        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-square-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <script>
+
+
+
+        document.getElementById("openSearchStrip").addEventListener("click", function () {
+            let searchStrip = document.getElementById("searchStrip");
+            if (searchStrip.style.display === "none" || searchStrip.classList.contains("d-none")) {
+                searchStrip.classList.remove("d-none");
+                searchStrip.style.display = "block";  // Show
+            } else {
+                searchStrip.classList.add("d-none");
+                searchStrip.style.display = "none";   // Hide
+            }
+        });
+
+        document.getElementById("closeSearchStrip").addEventListener("click", function () {
+            document.getElementById("searchStrip").classList.add("d-none");
+            document.getElementById("searchStrip").style.display = "none";
+        });
+
+
+        document.querySelector(".explore-btn .nav-link").addEventListener("click", function (event) {
+            event.preventDefault();
+            let dropdown = document.querySelector(".toggledropdown");
+            dropdown.classList.toggle("explorer-dropdown-hidden");
+            dropdown.classList.toggle("explorer-dropdown-block");
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Footer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <style>
+        .footer-color-background {
+            width: 100%;
+            height: 100%;
+            background: #FFF;
+        }
+
+        .footer-container {
+            max-width: 800px;
+            margin: auto;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            overflow: hidden;
+        }
+
+        .footer-item {
+            text-align: center;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        .footer-item:last-child {
+            border-right: none;
+        }
+
+        .icon-circle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: blue;
+            color: white;
+            border-radius: 50%;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-item {
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .footer-item:last-child {
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+    <div class="footer-color-background">
+        <div class="container py-5">
+            <div class="footer-container d-flex flex-column flex-md-row bg-white shadow-sm">
+                <div class="footer-item flex-fill">
+                    <div class="icon-circle"><img src="assests/images/Path.svg" alt=""></div>
+                    <small class="text-muted">Contact Number</small>
+                    <p class="mb-0 fw-bold">+92 000 000000</p>
+                </div>
+                <div class="footer-item flex-fill">
+                    <div>
+                        <div class="icon-circle"><img src="assests/images/Shape.svg" alt=""></div>
+                        <small class="text-muted">Email Address</small>
+                    </div>
+                    <p class="mb-0 fw-bold">@demo123</p>
+                </div>
+                <div class="footer-item flex-fill">
+                    <div class="icon-circle"><img src="assests/images/Shape (1).svg" alt=""></div>
+                    <small class="text-muted">Located</small>
+                    <p class="mb-0 fw-bold">Demo Location</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

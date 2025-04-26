@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    height: 925px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 1px solid #767E86;
+    /* Remove fixed width */
+    width: auto;
+}
+
+.formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    background: white;
+}
+
+.formbold-input-flex {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 22px;
+}
+
+.formbold-input-flex>div {
+    width: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.formbold-textarea {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.formbold-form-input {
+    width: 100%;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #DDE3EC;
+    background: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074D;
+    outline: none;
+    resize: none;
+}
+
+.formbold-form-input::placeholder {
+    color: #536387;
+}
+
+.formbold-form-input:focus {
+    border-color: #6A64F1;
+}
+
+.formbold-form-label {
+    color: #07074D;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 18px;
+}
+
+.formbold-form-input:focus+.formbold-form-label {
+    color: #6A64F1;
+}
+
+.formbold-input-file {
+    margin-top: 30px;
+}
+
+.formbold-input-file input[type="file"] {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    z-index: -1;
+}
+
+.formbold-input-file .formbold-input-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.formbold-filename-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 22px;
+}
+
+.formbold-filename {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 24px;
+    color: #536387;
+}
+
+.form-and-ticket-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.formbold-main-wrapper,
+.ticket-info-to-from {
+    flex: 1;
+    min-width: 300px;
+    /* Adjust as needed */
+}
+
+@media (max-width: 1100px) {
+    .form-and-ticket-container {
+        flex-direction: column;
+    }
+    .formbold-main-wrapper{
+        width: 159% !important;
+    }
+    .ticket-summary{
+        width: 159% !important;
+    }
+}
+.ticket-summary {
+    width: 100%;
+    max-width: 618px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 1px solid #767E86;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.ticket-summary-h2 {
+    color: #172432;
+    font-family: "Playfair Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-inline: 41px;
+}
+
+.flight-segment {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flight-time, .flight-duration {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+}
+
+.flight-date-to-fly, .flight-time-to-fly, .flight-company-to-fly, .flight-destination-to-fly, .flight-time-take-to-destination, .flight-non-stop {
+    text-align: center;
+}
+
+.route-image-aeroplane {
+    width: 100%;
+    max-width: 254px;
+    height: auto;
+    margin-inline: auto;
+    flex-shrink: 0;
+    stroke-width: 2px;
+    stroke: rgba(0, 0, 0, 0.30);
+}
+
+.flight-fare-details {
+    margin-inline: 41px;
+    color: #172432;
+    font-family: "Playfair Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fare-details {
+    padding: 0 20px;
+}
+
+.fare-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.per-ticket, .ticket-price-in-pound {
+    color: #767E86;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.ticket-price-in-pound {
+    color: #172432;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .ticket-summary {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .ticket-summary-h2, .flight-fare-details {
+        font-size: 24px;
+        margin-inline: 20px;
+    }
+
+    .flight-segment {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flight-time, .flight-duration {
+        min-width: 100%;
+        margin: 5px 0;
+    }
+
+    .fare-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .per-ticket, .ticket-price-in-pound {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}

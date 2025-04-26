@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>No Flight Available</title>
+
+    <link href="assets/css/fonts.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6H+ALEwIH" crossorigin="anonymous"-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <link href="assets/css/header.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/noflight.css">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/footer.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="position-absolute col-12 topnavbar">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container position-relative">
+                    <a class="navbar-brand col-md-2" href="#"><img src="assets/images/LOGO.png" width="55" height="15"
+                            alt="" /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item explore-btn"><a class="nav-link" href="#">Explore</a>
+                                <div
+                                    class="position-absolute slider-strip-width translate-middle-x d-flex align-items-stretch shadow mt-5 toggledropdown explorer-dropdown-hidden ">
+
+
+                                    <div class="bg-white d-flex d-flex justify-content-between  px-4 explorer-dropdown">
+
+
+                                        <div>
+                                            <ul>
+                                                <li class="mt-5 explorer-info-font">Our Destinations</li>
+                                                <li class="explorer-info-li-tag">Africa</li>
+                                                <li class="explorer-info-li-tag">Europe</li>
+                                                <li class="explorer-info-li-tag">Asia</li>
+                                                <li class="explorer-info-li-tag">America</li>
+                                                <li class="explorer-info-li-tag">middle East</li>
+                                                <li class="explorer-info-li-tag explorer-info-view">View more</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li class="mt-5 explorer-info-font">Our Destinations</li>
+                                                <li class="explorer-info-li-tag">Africa</li>
+                                                <li class="explorer-info-li-tag">Europe</li>
+                                                <li class="explorer-info-li-tag">Asia</li>
+                                                <li class="explorer-info-li-tag">America</li>
+                                                <li class="explorer-info-li-tag">middle East</li>
+                                                <li class="explorer-info-li-tag explorer-info-view">View more</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li class="mt-5 explorer-info-font">Our Destinations</li>
+                                                <li class="explorer-info-li-tag">Africa</li>
+                                                <li class="explorer-info-li-tag">Europe</li>
+                                                <li class="explorer-info-li-tag">Asia</li>
+                                                <li class="explorer-info-li-tag">America</li>
+                                                <li class="explorer-info-li-tag">middle East</li>
+
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <img src="./assets/images/pdes-1.jpg" class="explorer-info-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">Book</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Check In</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Experience</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                        </ul>
+                        <div class="position-relative d-inline-block">
+                            <button class="btn btn-light" id="openSearchStrip">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <div id="searchStrip" class="position-absolute bg-white shadow p-3 d-none">
+                                <div class=" align-items-center">
+                                    <div class="justify-content-between d-flex">
+                                        <span class="fw-bold">Looking for</span>
+                                        <button type="button" class="close" aria-label="Close" id="closeSearchStrip">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="d-flex mt-2">
+                                        <input type="text" class="form-control mx-3" id="searchInput"
+                                            placeholder="Search your keyword...">
+                                        <button class="btn btn-danger">Search</button>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btnsignup">Login</a>
+                        <a href="#" class="btnsignup">Sign Up</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="container margin-top-150">
+                <h1 class="text-white flights-to-america-heading">Flights to America</h1>
+                <p class="text-white flights-to-america-heading-paragraph">The best travel for your jouney begins now
+                </p>
+                <button class="discover-now-button margin-top-150"> Discover Now</button>
+            </div>
+        </div>
+        <div class="position-relative">
+            <!-- RoyalSlider (Moving Background) -->
+            <!-- <div id="simple-vertical">
+        <a class="rsImg  image-image" href="assets/images/Hero Section.jpg" h></a>
+    </div> -->
+            <div>
+                <img class="background-image" src="assets/images/Hero Section.jpg" alt="">
+            </div>
+
+
+        </div>
+        <div class="container">
+            <h2 class="destinations-to-visit mt-5">Available Flight from Dubai to London</h2>
+            <p class="red-line-destination"></p>
+            <p class="destinations-to-visit-p mt-4">
+                Most popular destinations around the world, from historical places to natural wonders.
+            </p>
+            <div class="row mt-5">
+                <div >
+                    <div class="col-md-2"></div>
+                    <div class="col-md-10">
+                        <p class="no-flight-available">No Flights Available</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-10">
+                        <img src="assets/images/map.svg" alt="Map of America" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+        <!-- footer -->
+
+
+        <footer class="col-12 float-start footer-margin-top"> 
+            <div class="container">
+                <div class="row">
+                    <div class="newsletter-area col-12 float-start">
+                        <div class="col-12 col-sm-6 float-start">
+                            <h4>Our Newsletter</h4>
+                        </div>
+                        <div class="col-12 col-sm-6 float-start">
+                            <span class="mb-3 float-start">Email</span>
+                            <div class="clearfix"></div>
+                            <input class="txtsignup" type="text" name="" id="" value="">
+                            <button class="btnsubscribe">Subscribe</button>
+                        </div>
+
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-12 col-sm-12 col-md-4 float-start">
+                        <img src="assets/images/LOGO.png" alt="" class="mb-3">
+                        <div class="clearfix"></div>
+                        <p>Copyright © Demo Location 2020 All rights reserved</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-1 float-start">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Explore</a></li>
+                            <li><a href="">Book</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2 float-start">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Explore</a></li>
+                            <li><a href="">Book</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2 float-start">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li><a href="">+123 456 789</a></li>
+                            <li><a href="">info@demoairline.com</a></li>
+                            <li><a href="">1245, New Yourk, USA</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 float-start">
+                        <h4>Follow us on</h4>
+                        <div class="socialicons">
+                            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-square-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+
+        
+    </div>
+
+
+
+
+    <!-- Swiper JS -->
+  
+
+    <script>
+
+
+
+        document.getElementById("openSearchStrip").addEventListener("click", function () {
+            let searchStrip = document.getElementById("searchStrip");
+            if (searchStrip.style.display === "none" || searchStrip.classList.contains("d-none")) {
+                searchStrip.classList.remove("d-none");
+                searchStrip.style.display = "block";  // Show
+            } else {
+                searchStrip.classList.add("d-none");
+                searchStrip.style.display = "none";   // Hide
+            }
+        });
+
+        document.getElementById("closeSearchStrip").addEventListener("click", function () {
+            document.getElementById("searchStrip").classList.add("d-none");
+            document.getElementById("searchStrip").style.display = "none";
+        });
+
+
+        document.querySelector(".explore-btn .nav-link").addEventListener("click", function (event) {
+            event.preventDefault();
+            let dropdown = document.querySelector(".toggledropdown");
+            dropdown.classList.toggle("explorer-dropdown-hidden");
+            dropdown.classList.toggle("explorer-dropdown-block");
+        });
+    </script>
+</body>
+
+</html>

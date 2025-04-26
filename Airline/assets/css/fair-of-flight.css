@@ -1,0 +1,25 @@
+.destinations-to-visit{
+    color: #172432;
+font-family: "Playfair Display";
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.destinations-to-visit-p{
+    color: #767E86;
+font-family: Rubik;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.destinations-links a{
+    color: #DC143C;
+font-family: Rubik;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration: none;
+}

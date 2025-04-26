@@ -1,0 +1,549 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+
+.backround-img {
+    background-image: url(../images/dua.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+.Logo {
+    color: #FFF;
+    text-align: center;
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 64px */
+}
+
+.blurr-background {
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8.100000381469727px);
+    width: 62%;
+    /* height: 403px; */
+    flex-shrink: 0;
+}
+
+.iframe-tag {
+    width: 94%;
+    height: 91%;
+    border-radius: 30px;
+    border: none;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+.custome-margin-top {
+    margin-top: 100px;
+}
+
+.beat-price-btn {
+    display: flex;
+    width: 60%;
+    height: 80px;
+    padding: 20px 78px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 500px;
+    background: var(--background-primary, #F8D49E);
+    box-shadow: 0px 0px 8.6px 0px rgba(5, 5, 5, 0.30);
+    color: var(--text-inverse, #081212);
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.Available {
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 100% */
+}
+
+.phone-no {
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.phone-no-company {
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+.blur-wattsapp-img {
+    width: 69px;
+    height: 69px;
+    flex-shrink: 0;
+    fill: #F8D49E;
+}
+
+.custome-gap {
+    gap: 17pc;
+}
+
+.custome-li-alignments {
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.80);
+
+}
+
+.custome-li-umrah {
+    color: #FACE8D;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.custome-li-alignments:hover {
+    color: #FACE8D;
+    transition: 0.4s ease-in-out;
+    font-size: 17px;
+}
+
+.custome-li-umrah:hover {
+    color: rgba(255, 255, 255, 0.80);
+    transition: 0.4s ease-in-out;
+    font-size: 18px;
+}
+
+.scrollable-section {
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.backround-image {
+    background-image: url(../images/dua.jpg);
+    background-size: cover;
+    background-position: center;
+    /* min-width: 100vw; */
+    /* min-height: 85vh; */
+    display: flex;
+}
+
+.post-date {
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+    /* text-align: center; */
+
+    /* text/default */
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 25.6px */
+}
+
+.post-title {
+    color: var(--text-default, #FFF);
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 40px */
+}
+
+.post-author {
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+
+    /* text/medium */
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 28.8px */
+}
+
+.post-author-span {
+    color: #FACE8D;
+
+    /* text/medium */
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.post-content {
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+    opacity: 0.6;
+}
+
+.post-image {
+    border-radius: 10px;
+}
+
+.post-image-small {
+    border-radius: 10px;
+}
+
+.article-container {
+    overflow: hidden;
+}
+
+.Latest-blog {
+    color: var(--text-default, #FFF);
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 40px */
+}
+
+.Latest-blog-p {
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+
+    /* text/large */
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 32px */
+}
+
+.umrah-blog {
+    color: var(--text-default, #FFF);
+
+    /* text/large */
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 32px */
+}
+
+.umrah-blog-p {
+    color: #FFF;
+
+    /* text/default */
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 25.6px */
+}
+
+.show-more-link {
+    align-self: stretch;
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+    text-align: center;
+
+    /* text/large */
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 32px */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.show-more-link:hover {
+    color: #FACE8D;
+    font-size: 23px;
+    transition: 0.4s ease-in-out;
+}
+
+.footer-logo {
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90%;
+    /* 28.8px */
+}
+
+.author-info {
+    color: #FFF;
+
+    /* text/small */
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 19.6px */
+}
+
+.footer-heading {
+    color: var(--text-default, #FFF);
+
+    /* heading/h6 */
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 28.8px */
+}
+
+.footer-link {
+    align-self: stretch;
+    color: #FFF;
+
+    /* text/default */
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 160%;
+    /* 25.6px */
+}
+
+.footer-link:hover {
+    color: #FACE8D;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.footer-phone {
+    color: #FACE8D;
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    /* 166.667% */
+}
+
+.footer-email {
+    color: var(--text-default, #FFF);
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.img-fluid {
+    border-radius: 10px;
+}
+.offcanvas {
+    background-color: black;
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    padding: 0px;
+}
+
+.offcanvas-header .btn-close {
+    filter: invert(1);
+}
+
+@media (max-width:667px) {
+    .umrah-blog {
+        font-size: 14px;
+        line-height: 160%;
+        /* 32px */
+    }
+
+    .umrah-blog-p {
+        font-size: 10px;
+        line-height: 160%;
+        /* 25.6px */
+    }
+
+}
+
+@media (max-width:576px) {
+    .umrah-blog {
+        font-size: 10px;
+        line-height: 160%;
+        /* 32px */
+    }
+
+    .umrah-blog-p {
+        font-size: 8px;
+        line-height: 160%;
+        /* 25.6px */
+    }
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+@media (max-width:1300px){
+    .blurr-background {
+        width: 100%;
+    }
+    .beat-price-btn{
+        width:80% ;
+    }
+
+    .custome-gap{
+        gap: 4pc;
+    }
+    .phone-no-company {
+        font-size: 30px;
+    }
+    .phone-no {
+        font-size: 35px;
+    }
+}
+@media (max-width:1200px){
+    .blurr-background {
+        width: 100%;
+    }
+    .beat-price-btn{
+        width:84% ;
+    }
+.custome-gap{
+        gap: 2pc;
+    }
+    .phone-no-company {
+        font-size: 25px;
+    }
+    .phone-no {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:992px) {
+
+    .scrollable-section {
+        max-height: none;
+    }
+
+    .display-none {
+        display: block !important;
+    }
+
+    .display-block {
+        display: none !important;
+        ;
+    }
+
+    .Logo {
+        font-size: 30px;
+    }
+
+    .phone-no-company {
+        font-size: 20px;
+    }
+
+    .phone-no {
+        font-size: 25px;
+    }
+
+    .fixed-top {
+        top: 91px;
+        position: absolute;
+    }
+
+    .line {
+        width: 100%;
+        height: 0.5px;
+        background: rgba(255, 255, 255, 0.50);
+        margin-top: 130px;
+    }
+
+    .devine-journy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--text-primary, #FACE8D);
+        font-family: "Bitter Rose DEMO";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 90%;
+    }
+
+    .nav-link {
+        color: white !important;
+    }
+
+    .nav-link:hover {
+        color: #F8D49E !important;
+        font-size: 20px;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+@media (max-width:667px) {
+    .umrah-blog {
+        font-size: 14px;
+        line-height: 160%;
+        /* 32px */
+    }
+
+    .umrah-blog-p {
+        font-size: 10px;
+        line-height: 160%;
+        /* 25.6px */
+    }
+}
+
+@media (max-width:576px) {
+    .umrah-blog {
+        font-size: 10px;
+        line-height: 160%;
+        /* 32px */
+    }
+
+    .umrah-blog-p {
+        font-size: 8px;
+        line-height: 160%;
+        /* 25.6px */
+    }
+}

@@ -1,0 +1,107 @@
+.navbar-nav .nav-link {
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: red; /* Change text color on hover */
+}
+
+/* Underline effect */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* By default, show the large navbar and hide the small navbar */
+.image-container {
+    position: relative;
+    width: 100%;
+
+    /* background: url('../assets/hero-section.jpg') center/cover no-repeat; */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Make navbar transparent and place it over the image */
+.navbar {
+    position: absolute; /* Ensure navbar overlays the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent !important; /* Fully transparent */
+    z-index: 1000; /* Keep navbar on top */
+}
+
+/* Change font color to white only on large screens */
+@media (min-width: 768px) {
+    .navbar-nav .nav-link,
+    .navbar-brand,
+    .bi-search {
+        color: white !important; /* Change text & icon to white */
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: red !important; /* Keep hover effect */
+    }
+}
+
+/* Remove image on small screens */
+@media (max-width: 768px) {  
+    .image-container img {
+        visibility: hidden; /* ✅ Allows JavaScript to show it again */
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    
+    /* Set a background color when image is removed */
+    .image-container {
+        background: #e9ecef;
+    }
+}
+
+.menu-expanded {
+    background: #e9ecef !important;
+}
+
+/* Remove display: none to avoid overriding JavaScript */
+@media (max-width: 768px) {  
+    .image-container img {
+        visibility: hidden; /* ✅ Allows JavaScript to show it again */
+        opacity: 0;  /* Optional: Smooth transition */
+        transition: opacity 0.3s ease-in-out;
+    }
+    
+
+    .menu-expanded img {
+        visibility: hidden; /* Ensures image stays hidden when menu expands */
+    }
+}
+
+
+
+#searchStrip {
+	top: 179%;
+	left: -47vw;
+	/* Move more towards the left */
+	width: 59vw;
+	/* Full screen width */
+	/* max-width: 1400px; */
+}

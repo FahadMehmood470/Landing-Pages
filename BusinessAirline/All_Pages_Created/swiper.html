@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Class Deals</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assests/css/swiper.css">
+
+</head>
+
+<body>
+
+    <div class="second-slide-container slides-top">
+        <div class=" container">
+            <div class="mt-2"></div>
+            <div class="d-flex justify-content-between">
+                <h3 class="popular-destination-heading">Best Business Class Deals</h3>
+
+                <div class="d-flex mt-3">
+                    <div class="swiper-button-prev business-class-prev"></div>
+                    <div class="swiper-button-next business-class-next"></div>
+                </div>
+            </div>
+
+            <div class="swiper2 swiper container mt-3">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide  swiper2-card-overflow">
+                        <div class="card" style="width: 25rem;">
+                            <img src="assests/images/Rectangle 5378 (1).png" class="custom-card-img" alt="...">
+                            <div class="business-card-body">
+                                <h2 class="business-flight-title">Flights to Europe</h2>
+                                <span class="business-price">starting from </span>
+                                <span class="business-total-price">£1,174*</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide  swiper2-card-overflow">
+                        <div class="card" style="width: 25rem;">
+                            <img src="assests/images/Rectangle 5378 (1).png" class="custom-card-img" alt="...">
+                            <div class="business-card-body">
+                                <h2 class="business-flight-title">Flights to Europe</h2>
+                                <span class="business-price">starting from </span>
+                                <span class="business-total-price">£1,174*</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide  swiper2-card-overflow">
+                        <div class="card" style="width: 25rem;">
+                            <img src="assests/images/Rectangle 5378 (1).png" class="custom-card-img" alt="...">
+                            <div class="business-card-body">
+                                <h2 class="business-flight-title">Flights to Europe</h2>
+                                <span class="business-price">starting from </span>
+                                <span class="business-total-price">£1,174*</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide  swiper2-card-overflow">
+                        <div class="card" style="width: 25rem;">
+                            <img src="assests/images/Rectangle 5378 (1).png" class="custom-card-img" alt="...">
+                            <div class="business-card-body">
+                                <h2 class="business-flight-title">Flights to Europe</h2>
+                                <span class="business-price">starting from </span>
+                                <span class="business-total-price">£1,174*</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide  swiper2-card-overflow">
+                        <div class="card" style="width: 25rem;">
+                            <img src="assests/images/Rectangle 5378 (1).png" class="custom-card-img" alt="...">
+                            <div class="business-card-body">
+                                <h2 class="business-flight-title">Flights to Europe</h2>
+                                <span class="business-price">starting from </span>
+                                <span class="business-total-price">£1,174*</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container business-margin-discover">
+                <button type="button" class="business-discover-btn">Secondary</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper2 = new Swiper(".swiper2", {
+            slidesPerView: 1, // Default for small screens
+            spaceBetween: 32,
+            loop: false, // No infinite loop
+            navigation: {
+                nextEl: ".business-class-next",
+                prevEl: ".business-class-prev",
+            },
+            breakpoints: {
+                768: { // Tablet
+                    slidesPerView: 2,
+                    slidesPerGroup: 2
+                },
+                1024: { // Large Screens
+                    slidesPerView: 3, // Show 3 cards on large screens
+                    slidesPerGroup: 3
+                }
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,339 @@
+.destinations-to-visit{
+    color: #172432;
+    font-family: "Playfair Display";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.destinations-to-visit-p{
+    color: #767E86;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: stretch;
+}
+.search-flight{
+    display: flex;
+width: 309px;
+padding: 20px 32px;
+justify-content: center;
+align-items: center;
+border-radius: 12px;
+background: #DC143C;
+color: #FFF;
+font-family: Rubik;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+border: #DC143C;
+}
+.card-img-top{
+    border-radius: 25px 26px 0px 0px;
+}
+
+.card-title-h5 {
+    color: #172432;
+    font-family: Mulish;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 449px;
+
+}
+.yellow {
+    color: #FFC107;
+}
+.card-text-p {
+    color: #767E86;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.discover-button {
+    display: flex;
+    height: 64px;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 4px;
+    flex-wrap: wrap;
+    background: #F5F6F7;
+    color: #172432;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 12px;
+    border: 1px solid #172432;
+    border: #DC143C;
+}
+
+.highlights {
+    color: #767E86;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pound {
+    color: #DC143C;
+    font-family: Rubik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.button {
+    cursor: pointer;
+    display: flex;
+    padding: 12px 34px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    border-radius: 12px;
+    background: #DC143C;
+    color: #FFF;
+    font-family: Rubik;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border: #DC143C;
+}
+
+
+.paragraph-p {
+    color: #767E86;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.paragraph-p-gallary {
+    color: #767E86;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.red-line-choose-us {
+    width: 173px;
+    height: 3px;    
+    background: #DC143C;
+}
+.american-offer-heading{
+    color: #172432;
+font-family: "Playfair Display";
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+/* Additional styles for cards */
+.card {
+    border-radius: 25px;
+}
+
+.card-title-h5-position {
+    color: #FFF;
+    font-family: "Playfair Display";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: start;
+    margin-top: 8pc;
+}
+.location-icon{
+    width: 24px;
+    height: 24px;
+}
+
+.yellow {
+    color: #FFC107;
+}
+
+.card-text-uk {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;   
+}
+
+.button {
+    cursor: pointer;
+    display: flex;
+    padding: 12px 34px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    border-radius: 12px;
+    background: #DC143C;
+    color: #FFF;
+    font-family: Rubik;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border: #DC143C;
+}
+
+.highlights {
+    color: #767E86;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pound {
+    color: #DC143C;
+    font-family: Rubik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.why-choose-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #F8D7DA;
+    border-radius: 120px 20px 20px 20px;
+    flex-wrap: wrap;
+}
+
+.margin-top-150px{
+    margin-top: 150px;
+}
+
+.content {
+    max-width: 50%;
+}
+
+.image-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40%;
+}
+
+.card-img-top {
+    height: 14pc;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
+
+.card-img-top-border{
+    width: 100%;
+
+    border-radius  : 25px 25px 25px 25px;
+}
+.card-text-margin {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: -100cpx;
+}
+
+.red-line-search-airline {
+    width: 100px;
+    height: 3px;
+    background: #DC143C;
+    margin: 20px 0;
+}
+.background-color-cards{
+    background: #F5F6F7;
+    height: 91pc;
+}
+
+/* Responsive styles */
+@media (max-width: 1000px) {
+    .why-choose-us {
+        flex-direction: column;
+        align-items: center; /* Center align items */
+    }
+
+    .content {
+        max-width: 100%;
+        order: 1;
+        text-align: center; /* Center align text */
+    }
+
+    .image-card {
+        max-width: 100%;
+        order: 2;
+        margin-top: 20px;
+        align-items: center; /* Center align items */
+    }
+
+    .paragraph-p {
+        order: 3;
+        margin-top: 20px;
+        text-align: center; /* Center align text */
+    }
+    .background-color-cards{
+        height: auto !important;
+    }
+    
+}
+
+
+
+.telegram-icon{
+    position: absolute;
+    top: -28px;
+    right: -10px;
+    width: 63.400px; /* Adjust size as needed */
+    height: auto;
+    margin: 10px; /* Adds space from edges */
+}
+
+
+.background-image-nav-section{
+width: 100%;
+height: 22vw;
+}
+.card-title-h5 {
+    width: auto;
+}
+
+
+@media (max-width: 768px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+.select2-container .select2-selection--single{
+    height:34px !important;
+}
+.select2-container--default .select2-selection--single{
+         border: 1px solid #ccc !important; 
+     border-radius: 0px !important; 
+}
+

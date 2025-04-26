@@ -1,0 +1,773 @@
+.call-us {
+    display: inline-flex;
+    height: 62px;
+    padding: 18px;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 10000px;
+    background: #00F;
+}
+
+.buttons-background {
+    display: inline-flex;
+    justify-content: center;
+    height: 62px;
+    padding: 10px;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #FFF;
+}
+
+.find-flights-button {
+    display: flex;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: #00F;
+    border: #00F;
+    color: #FFF;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    /* 70% */
+    letter-spacing: 0.2px;
+}
+
+.find-flights-button:hover {
+    background-color: #111;
+}
+
+.best-deals-button {
+    display: flex;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    color: #111;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    /* 70% */
+    letter-spacing: 0.2px;
+    border: #FFF;
+    background: #FFF;
+}
+
+.best-deals-button:hover {
+    background-color: #00F;
+}
+
+.Easiness-of-airline {
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Darker Grotesque", sans-serif;
+
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100px;
+    /* 104.167% */
+    letter-spacing: -2px;
+    width: 55%;
+    /* margin-inline: 14pc; */
+    text-align: center;
+    margin: auto;
+}
+
+.Easiness-of-airline-travel {
+    color: #00F;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Darker Grotesque", sans-serif;
+
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100px;
+    letter-spacing: -2px;
+}
+
+.One-way-ticket {
+    color: #FFF;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.call-us-twentyfour {
+    color: #FFF !important;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    /* 116.667% */
+    letter-spacing: 0.2px;
+    margin-inline: 10px;
+
+}
+
+.our-Phone-no {
+    color: #FFF;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    margin-inline: 10px;
+
+}
+
+.pill-background {
+    background: rgba(0, 0, 0, 0.60);
+
+
+}
+
+.business-class {
+    color: #FFF;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.margin-inline-radio {
+    margin-inline: 15px;
+}
+
+.white-strip-buisnesss-class {
+    display: inline-flex;
+    padding: 32px 96px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-radius: 1000px;
+    background: rgba(255, 255, 255, 0.60);
+    backdrop-filter: blur(12px);
+}
+
+.search-icon-buisness-class {
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    background: #00F;
+    width: 55px;
+    height: 55px;
+}
+
+.margin-inline-search {
+    margin-inline: -14px;
+
+}
+
+.route-destination {
+    color: #FFF;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.route-destination-data {
+    color: #FFF;
+    font-family: "Space Grotesk";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    /* width: 236px; */
+    flex-shrink: 0;
+}
+
+.group-icon-buisness {
+    color: #000;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.hover-pointer {
+    cursor: pointer;
+}
+
+.wattsapp-no {
+    cursor: pointer;
+}
+
+.parent-background-color {
+    background: rgba(255, 255, 255, 0.60);
+    backdrop-filter: blur(12px);
+}
+
+.whatsapp-container {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    margin-top: 20px;
+    /* bottom: 20px; */
+    right: 67px;
+    background: #25D366;
+    /* WhatsApp green */
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+    transition: width 0.3s ease-in-out;
+}
+
+.whatsapp-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.whatsapp-number {
+    white-space: nowrap;
+    font-size: 16px;
+    color: white;
+    /* padding-left: 10px; */
+    opacity: 0;
+    width: 0;
+    transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* Expand effect when hovered */
+.whatsapp-container:hover .whatsapp-number {
+    opacity: 1;
+    width: 150px;
+    /* Adjust as needed */
+}
+
+.one-way-radio {
+    color: #FFF;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.form-width {
+    width: 97%;
+    margin-inline: 29px;
+}
+
+@media (min-width: 1200px) {
+    .margin-top-10pc {
+        margin-top: 10pc;
+    }
+
+    .Easiness-of-airline {
+        font-size: 96px !important;
+
+    }
+
+    .Easiness-of-airline-travel {
+        font-size: 96px !important;
+
+    }
+}
+
+.background-image-business {
+    background-image: url("../images/home.png");
+    background-size: cover;
+    /* Ensures the image covers the entire area */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents image repetition */
+    width: auto;
+    /* Full viewport width */
+    height: 805px;
+    /* Full viewport height */
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+.logo-design {
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Darker Grotesque";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+}
+
+.form-padding {
+    padding: 22px 96px;
+}
+
+@media(max-width:768px) {
+    .call-us {
+        height: 30px !important;
+        padding: 6px !important;
+    }
+
+    .call-us-twentyfour {
+        font-size: 10px;
+    }
+
+    .our-Phone-no {
+        font-size: 17px;
+    }
+
+    .bg-white {
+        background-color: transparent !important;
+        /* Removes white background */
+    }
+
+    .shadow {
+        /* display: none; */
+        box-shadow: none !important;
+        /* background-color: white; */
+    }
+
+    .hide-on-small-screen {
+        display: none;
+    }
+
+    .Easiness-of-airline {
+        width: 66%;
+    }
+
+    .rounded-pill {
+        border-radius: 0 !important;
+        /* Removes the pill shape */
+    }
+
+    .parent-height {
+        height: auto !important;
+
+    }
+
+    .form-padding {
+        padding: 0px;
+    }
+
+    .Logo-height {
+        max-width: 66px;
+    }
+
+    .background-image-business {
+        height: 600px;
+    }
+}
+
+.Logo-height {
+    max-height: 50px;
+}
+
+.hover-change-background {
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    /* Add color transition */
+}
+
+.hover-change-background:hover {
+    color: white !important;
+    /* Force white text */
+    background: #00F;
+}
+
+.Get-free-Quote {
+    display: flex;
+    width: 293px;
+    height: 53px;
+    padding: 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #00F;
+    color: #FFF;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    /* 70% */
+    letter-spacing: 0.2px;
+    border: #00F;
+}
+
+.footer-color-background {
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.footer-item {
+    text-align: center;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.footer-item:last-child {
+    border-right: none;
+}
+
+.icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-item {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .footer-item:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Accordian css From Here */
+.accordion-background-color {
+    background: #F5F5FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 8% 10%;
+    /* Adjusts padding for responsiveness */
+}
+
+.accordion-font-style {
+    font-family: "Darker Grotesque" !important;
+}
+
+@media (max-width: 768px) {
+    .accordion-background-color {
+        padding: 5% 5%;
+        /* Reduce padding on smaller screens */
+    }
+}
+
+
+.accordion-item {
+    border: none;
+    /* Removes all borders */
+    border-bottom: 1px solid var(--Black-700, #282828);
+}
+
+.accordion-item {
+    background: #F5F5FF !important;
+}
+
+.accordion-button {
+    background: #F5F5FF !important;
+}
+
+.accordion-body {
+    background: #F5F5FF !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2'/%3E%3C/svg%3E");
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8'/%3E%3C/svg%3E");
+}
+
+.Frequently-asked-question {
+    color: #111;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Space Grotesk";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    /* 100% */
+    letter-spacing: -1px;
+}
+
+/* Contact Us CSS */
+
+.custom-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.btn-primary {
+    background-color: #0000ff;
+    border-color: #0000ff;
+}
+
+.form-control-border {
+    border: none;
+    border-bottom: 1px solid #000;
+    /* Change color as needed */
+    border-radius: 0;
+    /* Removes any default rounding */
+    outline: none;
+    /* Removes default focus outline */
+}
+
+.p-tag-center {
+    display: flex;
+    justify-content: center;
+    color: #111;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Darker Grotesque", sans-serif;
+
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.info-form {
+    color: #717171;
+    font-family: "Darker Grotesque", sans-serif;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 130% */
+
+}
+
+.Contact-us-page {
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    /* 100% */
+    letter-spacing: -1px;
+}
+
+.Submit-button {
+    display: flex;
+    width: 162px;
+    height: 56px;
+    padding: 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    /* 70% */
+    letter-spacing: 0.2px;
+    border-radius: 100px;
+    background: #00F;
+}
+
+/* newslatter css */
+
+
+
+.newsletter-form {
+    background: white;
+    border-radius: 50px;
+    padding: 32px 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    border-radius: 1000px;
+    background: rgba(255, 255, 255, 0.60);
+    backdrop-filter: blur(12px);
+}
+
+
+
+
+.Subscribe-to {
+    color: #111;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    /* 100% */
+    letter-spacing: -1px;
+}
+
+
+
+/* buisness class page css */
+.business-class-container {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+.airline-card {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.airline-card img {
+    width: 100%;
+    height: auto;
+}
+
+.airline-card .card-body {
+    background-color: #000;
+    /* border-top: 2px solid #00f; */
+    height: 90px;
+}
+
+.business-class-airline-heading {
+    color: var(--White, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    /* 100% */
+    letter-spacing: -1px;
+    margin-inline: -3pc;
+}
+
+.card-text-align {
+    text-align: start;
+    margin-inline: 10px;
+    color: #FFF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Darker Grotesque";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.6px;
+
+}
+
+@media (min-width:1200px) {
+    .business-class-airline-p-tag {
+        text-align: start;
+        color: var(--White, #FFF);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "Darker Grotesque";
+        font-size: 51px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 47px;
+        /* 81.25% */
+        width: 547px;
+    }
+
+    .custom-container {
+        padding: 108px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+    .business-class-airline-p-tag {
+        color: var(--White, #FFF);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "Darker Grotesque", sans-serif;
+
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: start;
+    }
+}
+
+@media(max-width:768px) {
+    .business-class-airline-p-tag {
+        color: var(--White, #FFF);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "Darker Grotesque", sans-serif;
+
+        /* font-size: 34px; */
+        font-style: normal;
+        /* font-weight: 400;
+            line-height: 25px;
+            text-align: start; */
+    }
+
+    .business-class-airline-heading {
+        margin-inline: 0px !important;
+    }
+}
+
+.margin-top-150px {
+    margin-top: 30px;
+}
+
+/* .margin-bottom{
+    margin-bottom: 50px;
+} */
+@media (min-width:1200px) {
+    .margin-top-150px {
+        margin-top: 150px;
+    }
+
+    .margin-bottom {
+        margin-bottom: 104px;
+    }
+
+    .Submit-button {
+        margin-bottom: 104px;
+    }
+
+    .footer-color-background {
+        margin-top: 60px;
+    }
+
+    .business-class-container {
+        padding: 29px;
+    }
+}

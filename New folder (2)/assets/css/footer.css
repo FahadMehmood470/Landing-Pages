@@ -1,0 +1,53 @@
+footer{background:#000000; }
+.btmcontactinfobox{border-radius:40px;border:solid 3px #3a3a3a;min-height:180px; }
+.btmcontactinfobox i{font-size:64px;color:#fff; }
+.btmcontactinfobox .iconbox{border-right:solid 1px #3a3a3a; }
+.btmcontactinfobox h4{color:#fff;font-family:"Gotham-Bold";font-size:22px;font-weight:bold; }
+.btmcontactinfobox p{color:#999999;font-family:"Poppins-Regular";font-size:14px; }
+.btmcontactinfobox p a {color:#999999;font-family:"Poppins-Regular";font-size:14px;text-decoration:none; }
+.btmcontactinfobox p a:link,.btmcontactinfobox p a:visited,.btmcontactinfobox p a:active {color:#999999;font-family:"Poppins-Regular";font-size:14px;text-decoration:none; }
+.btmcontactinfobox p a:hover {color:#fff;font-family:"Poppins-Regular";font-size:14px; }
+.btmcontactinfobox div{margin:48px 0 40px 0px; }
+
+
+
+.footerlinks h4{color:#fff;font-family:"Gotham-Bold";font-size:22px;font-weight:bold; }
+.footerlinks ul {list-style:none; }
+.footerlinks ul li {list-style:none; }
+.footerlinks ul li a {font-family:"Poppins-Regular";font-size:14px;color:#fff;text-decoration:none;line-height:25px; }
+.footerlinks ul li a:hover{color:#e97925; }
+.footertext{font-family:"Poppins-Regular";font-size:12px;color:#fff; }
+
+.footer-center{border-top:solid 2px #333; }
+.footertext2{font-family:"Poppins-Regular";font-size:14px;color:#fff;line-height:30px; }
+
+.footer-bottom{background: #e97925; }
+
+
+footer .accordion{background-color: transparent; }
+footer .accordion-item{background-color: transparent;}
+footer .accordion-header .accordion-button{background-color: transparent;padding-left:0px !important;  }
+footer .accordion-button{color:#fff;font-family:"Gotham-Bold";font-size:22px;font-weight:bold; }
+
+
+footer .accordion-collapse  ul {list-style:none; }
+footer .accordion-collapse  ul li {list-style:none; }
+footer .accordion-collapse  ul li a {font-family:"Poppins-Regular";font-size:14px;color:#fff;text-decoration:none;line-height:25px; }
+footer .accordion-collapse  ul li a:hover{color:#e97925; }
+footer .accordion-button:not(.collapsed){color:#e97925; }
+
+
+footer .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+footer .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e97925'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+footer .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{box-shadow: 0 0 0 !important;border-bottom: 2px #fff !important; }
+
+@media screen and (max-width:768px){
+	.btmcontactinfobox div{margin:18px 0 10px 0px !important;  }
+	.btmcontactinfobox{min-height:auto !important; }
+	.btmcontactinfobox .iconbox{border-right:none 0px !important; }
+}

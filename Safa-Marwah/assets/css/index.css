@@ -1,0 +1,2097 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.findthebestpackage h2 {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.findthebestpackage h2 span {
+    color: #D1A61B;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #D1A61B;
+}
+
+.findthebestpackage img {
+    border-radius: 10px;
+}
+
+.packagebox1 {
+    max-width: 305px;
+}
+
+.packageinfo {
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.totalnights {
+    background: #D1A61B;
+    border-radius: 50%;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 12px;
+    width: 66px;
+    height: 66px;
+    padding-top: 10px;
+}
+
+.packagename {
+    color: #fff;
+    font-family: "Poppins-SemiBold";
+    font-size: 19px;
+    text-align: left;
+    width: 220px;
+}
+
+.packagenightinfo {
+    color: #fff;
+    font-family: "Poppins-Regular";
+    font-size: 12px;
+    text-align: left;
+}
+
+.priceinfo {
+    font-family: "Poppins-Bold";
+    font-size: 30px;
+    color: #fff;
+}
+
+.bdrbottom {
+    border-bottom: solid 1px #777879;
+}
+
+.booknow {
+    color: #D1A61B;
+    text-decoration: none;
+}
+
+.callnow {
+    color: #fff;
+    text-decoration: none;
+}
+
+.findthebestpackage-p {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.packagebtminfo {
+    width: 90%;
+}
+
+.findthebestpackage .swiper-container .swiper-button-next.swiper-button-disabled {
+    top: 50px !important;
+    right: 15px !important;
+    background: #d3d3d3;
+}
+
+.findthebestpackage .swiper-container .swiper-button-next {
+    top: 50px !important;
+    right: 15px !important;
+    left: auto !important;
+    background: #D1A61B;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+
+.findthebestpackage .swiper-container .swiper-button-next:after {
+    font-size: 14px !important;
+    color: #fff;
+}
+
+.findthebestpackage .swiper-container .swiper-button-prev.swiper-button-disabled {
+    top: 50px !important;
+    right: 60px !important;
+    left: auto !important;
+    background: #d3d3d3;
+}
+
+.findthebestpackage .swiper-container .swiper-button-prev {
+    top: 50px !important;
+    right: 60px !important;
+    left: auto !important;
+    background: #D1A61B;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+
+.findthebestpackage .swiper-container .swiper-button-prev:after {
+    font-size: 14px !important;
+    color: #fff;
+}
+
+.swiper-container {
+    float: left;
+    overflow: hidden;
+
+}
+
+.swiper-container .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-img {
+    background-image: url(../images/main-page.jpg);
+    /* background-position: center;
+    background-repeat: no-repeat; */
+    /* width: 100vw;
+    height: 100vh; */
+}
+
+.custome-margin-top {
+    margin-top: 118px;
+}
+
+.custome-margin-bottom {
+    margin-bottom: 131px;
+}
+
+.Secure-journy {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 76px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.Secure-journy-p {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+
+.sign-up-for-umrah {
+    /* width: 483px;
+    height: 450px; */
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(8.100000381469727px);
+    /* margin-inline: 11rem; */
+    float: right;
+    width: 66%;
+}
+
+.custome-label {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 120% */
+    /* 22.4px */
+}
+
+.input-filds {
+    display: inline-flex;
+    /* height: 60px; */
+    padding: 16px 24px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1.5px solid #FFF;
+    background-color: inherit;
+    font-family: "Century Gothic";
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #FFF;
+}
+
+.input-filds:focus {
+    color: white;
+    background-color: inherit;
+    border-color: #FACE8D;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(250, 206, 141, 0.25);
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.input-filds::placeholder {
+    color: var(--text-default, #FFF);
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 100% */
+}
+
+.submit-enquiry {
+    color: #FFF;
+    font-family: 'Judson';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    width: 98%;
+    height: 60px;
+    padding: 33px 59px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #D1A61B;
+    border: #D1A61B;
+}
+
+.from-start {
+    color: #000;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.from-start-p {
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.my-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+    padding: 20px;
+}
+
+
+.my-box {
+    flex: 1 1 calc(20% - 28px);
+    /* 5 per row */
+    /* min-width: 150px; */
+    background-color: white;
+    /* color: white; */
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.40);
+    background: #FFF;
+}
+
+.my-box:hover {
+    transform: scale(1.05);
+}
+
+.facilites {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    /* line-height: 20px; */
+    /* 100% */
+    text-transform: capitalize;
+}
+
+.facilites-p {
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.why-choose-us {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-choose-us-p {
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.second-box {
+    flex: 1 1 33.33%;
+    background-color: white;
+    /* color: white; */
+    text-align: center;
+    padding: 25px 0;
+    box-sizing: border-box;
+
+    border: 1px solid rgba(0, 0, 0, 0.40);
+    background: #FFF;
+}
+
+/* First box corners */
+.first-box {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* Third box corners */
+.third-box {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.how-much {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: start;
+}
+
+.how-much-p {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: start;
+
+}
+
+.d-none {
+    display: none;
+}
+
+.bg-kaaba {
+    background-image: url(../images/kaaba-in-black.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+
+    /* height: 100vh; */
+}
+
+.bg-callus {
+    background-image: url(../images/call-us.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+}
+
+.blurry-backround {
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(14px);
+    /* width: 693px; */
+    /* height: 488px; */
+    flex-shrink: 0;
+}
+
+.Umrah-discount {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 46px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.Umrah-discount-p {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.Talk-to-us {
+    display: flex;
+    /* width: 549px; */
+    width: 98%;
+    height: 50px;
+    padding: 33px 59px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #D1A61B;
+    color: #FFF;
+    font-family: 'Judson';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.top-16 {
+    margin-top: 16%;
+}
+
+.bottom-16 {
+    margin-bottom: 16%;
+}
+
+.Enquire-for-umrah {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.Enquire-for-umrahh {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.bg-pattern {
+    background-image: url(../images/Section-4.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* height: 100vh; */
+}
+
+.bg-form-img {
+    background-image: url(../images/form-section.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* height: 100vh; */
+}
+
+.bg-form {
+    background-color: #D1A61B;
+    border-radius: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.bg-formm {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.form-group {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-input:focus {
+    border: 2px solid white;
+    outline: none;
+    /* 👈 this removes browser default black outline */
+}
+
+.form-inputt:focus {
+    border: 2px solid black;
+    outline: none;
+    /* 👈 this removes browser default black outline */
+}
+
+label {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.change-label {
+    /* color: #FFF; */
+    color: #000;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.form-input {
+    flex: 1 1 30%;
+    padding: 12px 16px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 16px;
+    background: white;
+    color: #333;
+    background: transparent;
+}
+
+.form-inputt {
+    flex: 1 1 30%;
+    padding: 12px 16px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    background: white;
+    /* color: white; */
+    background: white;
+}
+
+.form-button-wrapper {
+    text-align: center;
+}
+
+.form-submit {
+    padding: 12px 36px;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form-input::placeholder {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.form-inputt::placeholder {
+    /* color: #FFF; */
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.form-submit:hover {
+    background-color: white;
+    color: #D1A61B;
+}
+
+.submit-now-btn {
+    color: #D1A61B;
+    font-family: 'Judson';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 133.333% */
+    text-transform: uppercase;
+    display: flex;
+    width: 360px;
+    height: 50px;
+    padding: 33px 59px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #D1A61B;
+    background: #FFF;
+}
+
+.submit-now-btn:hover {
+    background-color: #D1A61B;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.submit-now-btnn {
+    color: #FFF;
+    font-family: 'Judson';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 133.333% */
+    text-transform: uppercase;
+    display: flex;
+    width: 360px;
+    height: 50px;
+    padding: 33px 59px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #D1A61B;
+    background: #D1A61B;
+}
+
+.submit-now-btnn:hover {
+    /* background-color: #D1A61B;
+    color: white;
+    transition: 0.4s ease-in-out; */
+}
+
+.bg-color {
+    background: #D9D9D9;
+}
+
+.trusted-patners {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.Explore-umrah {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.Explore-umrah-p {
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+
+
+.package-list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.packagebox3 {
+    width: 100%;
+}
+
+
+@media (min-width: 1200px) {}
+
+.packagebox3 {
+    width: 31.5%;
+}
+
+.packagebox3 {
+    float: left;
+    background: #f7f7f7;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px -1px 6px 0px rgba(225, 225, 225, 0.75);
+    -moz-box-shadow: 1px -1px 6px 0px rgba(225, 225, 225, 0.75);
+    box-shadow: 1px -1px 6px 0px rgba(225, 225, 225, 0.75);
+}
+
+.packagebox3 img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.packagebox3 .packageinfosec {
+    background: #f7f7f7;
+    border-bottom: solid 1px #e5e5e5;
+    padding-bottom: 22px;
+}
+
+.packagebox3 .packageicons {
+    background: #D1A61B;
+    margin: -10px auto 0 auto;
+    width: 90%;
+    padding: 10px 15px 10px 15px !important;
+    font-family: "Roboto-SemiBold";
+    font-size: 14px;
+    color: #fff;
+}
+
+.packagebox3 .packagename3 {
+    font-family: "Roboto";
+    font-size: 20px;
+    color: #000000;
+    text-align: left !important;
+}
+
+.packagebox3 .packagetext {
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #333333;
+}
+
+.packagebox3 .packagetext ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.packagebox3 .packagetext ul li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    line-height: 25px;
+    width: 100%;
+    float: left;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left !important;
+}
+
+.packagebox3 .packagetext .iconinfo {
+    float: left;
+    text-align: left !important;
+    width: 30px;
+}
+
+.packagebox3 .packageinfosec .priceinfoblock {
+    background: #000;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 26px;
+    padding: 5px 15px;
+    bottom: 70px;
+    right: 0px;
+    text-align: left !important;
+}
+
+.packagebox3 .packagebox3actions {
+    background: url("../images/package-info-2-sep.jpg") center center no-repeat #f7f7f7;
+    padding: 12px 22px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.packagebox3 .packagebox3actions .btncallnow {
+    padding: 10px 20px;
+    color: #fff;
+    font-family: "Roboto";
+    font-weight: bold;
+    background: #000;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.packagebox3 .packagebox3actions .btnbooknow {
+    padding: 10px 20px;
+    color: #fff;
+    font-family: "Roboto";
+    font-weight: bold;
+    background: #D1A61B;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    /* justify-content: center;     */
+    gap: 10px;
+}
+
+.wrapper .line {
+    width: 170px;
+    height: 4px;
+    background-color: #D1A61B;
+}
+
+
+.trust-us {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.trust-us-p {
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.trust-us {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.trust-us-p {
+    text-align: center;
+    color: #555;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    background-color: #D1A61B;
+    color: white;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.paddingg-left-right {
+    padding-left: 57px;
+    /* padding-right: 30px; */
+    /* border-radius: 16px;
+border: 1px solid rgba(0, 0, 0, 0.40);
+background: #FFF; */
+}
+
+
+/* Optional: style the icon inside */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px;
+    color: white;
+}
+
+
+.video-container iframe {
+    /* width: 556px;
+    height: 305px; */
+    /* flex-shrink: 0; */
+    border-radius: 16px;
+    border: 1px solid #D1A61B;
+    background: url(<path-to-image>) lightgray -5.881px 0px / 102.116% 119.344% no-repeat;
+}
+
+.date {
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.Umrah-expeicance {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    width: 65%;
+}
+
+.blog-name {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    /* 100% */
+    text-transform: capitalize;
+}
+
+.Umrah-expeicance-span {
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.bg-image {
+    background-image: url(../images/Group-1321315395.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 50vh; */
+}
+
+.top-100 {
+    margin-top: 100px;
+
+}
+
+.Exclusive-deals {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.Exclusive-deals-p {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+.subscribe-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    /* Ensures it fills all 6 cols */
+}
+
+.subscribe-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 2px solid orange;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    background: #FFF;
+    height: 80px;
+}
+
+.subscribe-btn {
+    color: #FFF;
+    font-family: 'Judson';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    /* width: 344px; */
+    height: 80px;
+    padding: 33px 59px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: 0px 10px 10px 0px;
+    background: #D1A61B;
+    border: #D1A61B;
+    transition: background 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: darkorange;
+}
+
+.Prepare-for {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.Prepare-for-p {
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.svg-box {
+    width: 130px;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D1A61B;
+    border-radius: 8px;
+}
+
+.svg-box img {
+    width: 60% !important;
+    height: 60% !important;
+    object-fit: contain;
+}
+
+
+
+.Depart {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.Depart-p {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.read-blog {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.read-blog-p {
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+
+
+.blog-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 10px;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+}
+
+.blog-card h5 {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    /* 100% */
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+
+.blog-date {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+/* Fix for the accordion button overlapping the top border */
+.accordion-button {
+    border-top: none !important;
+    border-radius: 0 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #FFF !important;
+}
+
+.accordion-body {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.accordian-heading {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.custom-border {
+    border: 1px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+    /* optional: ensures children don’t overflow rounded corners */
+}
+
+.Asked-quesions {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.Asked-quesions-p {
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.black-backround {
+    background: #505050;
+    /* width: 444px; */
+    height: 724px;
+    flex-shrink: 0;
+}
+
+.top-50 {
+    margin-top: 50%;
+}
+
+.our-journey {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.our-journey-p {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.Submit-Enquiry {
+    color: #FFF;
+    font-family: 'Judson';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    /* width: 339px; */
+    width: 100%;
+    height: 50px;
+    padding: 33px 59px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #D1A61B;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.steps-overlay {
+    /* position: absolute; */
+    /* top: 50%;
+    right: 61px; */
+    /* transform: translateY(-50%); */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 430px;
+    /* padding-right: 20px; */
+    float: right;
+}
+
+.step-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    width: 155%;
+}
+
+.step-box-back {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    padding: 22px 36px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #D1A61B;
+}
+
+.step-number {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.step-text h5 {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.step-text p {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+
+}
+
+.image-block {
+    background-image: url("../images/Rectangle\ 8.jpg");
+    /* background-size: cover; */
+    background-position: -200px top;
+    background-repeat: no-repeat;
+    height: 724px;
+    width: 53%;
+
+}
+
+.trustedlogos {
+    border-right: solid 2px #e5e5e5;
+    padding: 30px 30px;
+    height: 134px;
+}
+
+.trustedlogos:last-child {
+    border-right: none 0px;
+}
+
+@media(max-width:1500px) {
+    .step-box {
+        width: 132% !important;
+    }
+}
+
+@media(max-width:1400px) {
+    .Umrah-discount {
+        font-size: 38px;
+    }
+
+    .Umrah-expeicance {
+        width: 77%;
+    }
+
+    .Depart {
+        font-size: 27px;
+    }
+
+    .Depart-p {
+        font-size: 16px;
+    }
+
+    .svg-box {
+        width: 100px;
+        height: 80px;
+    }
+
+    .step-box {
+        width: 100% !important;
+    }
+
+    .steps-overlay {
+        right: 8px;
+    }
+
+    .our-journey {
+        font-size: 45px;
+    }
+
+    .our-journey-p {
+        font-size: 18px;
+    }
+
+    .Submit-Enquiry {
+        padding: 29px 20px;
+        width: 96%;
+        font-size: 18px;
+    }
+
+    .step-text h5 {
+        font-size: 28px;
+    }
+
+    .step-text h5 {
+        font-size: 18px;
+    }
+
+    .step-box {
+        width: 121% !important;
+    }
+
+    .step-box-back {
+        width: 90px;
+        height: 95px;
+    }
+
+    .step-number {
+        font-size: 46px;
+    }
+
+    .steps-overlay {
+        max-width: 325px;
+    }
+
+    .step-text p {
+        font-size: 16px;
+    }
+
+    .Enquire-for-umrah {
+        font-size: 42px;
+    }
+
+    .Enquire-for-umrahh {
+        font-size: 42px;
+
+    }
+}
+
+@media (max-width:1200px) {
+    .sign-up-for-umrah {
+        width: 80%;
+    }
+
+    .Secure-journy {
+        font-size: 60px;
+    }
+
+    .Secure-journy-p {
+        font-size: 28px;
+    }
+
+    .my-box {
+        flex: 1 1 calc(25% - 15px);
+    }
+
+    .custome-margin-top {
+        margin-top: 110px;
+    }
+
+    .custome-margin-bottom {
+        margin-bottom: 130px;
+    }
+
+    .Umrah-discount {
+        font-size: 30px;
+    }
+
+    .Umrah-discount-p {
+        font-size: 22px;
+    }
+
+    .Talk-to-us {
+        width: 96%;
+    }
+
+    .Exclusive-deals-p {
+        font-size: 15px;
+    }
+
+    .Exclusive-deals {
+        font-size: 36px
+    }
+
+    .subscribe-btn {
+        font-size: 18px;
+        height: 70px;
+    }
+
+    .subscribe-input {
+        height: 70px;
+    }
+
+    .Depart {
+        font-size: 24px;
+    }
+
+    .Depart-p {
+        font-size: 15px;
+        margin-bottom: 2px;
+    }
+
+    .svg-box {
+        width: 90px;
+        height: 65px;
+    }
+
+    .read-blog {
+        font-size: 42px;
+    }
+
+    .read-blog-p {
+        font-size: 18px;
+    }
+
+    .steps-overlay {
+        /* right: -48px; */
+        max-width: 233px;
+    }
+
+    .Enquire-for-umrah {
+        font-size: 38px;
+    }
+
+    .Enquire-for-umrahh {
+        font-size: 38px;
+
+    }
+
+
+
+
+
+    .our-journey {
+        font-size: 36px;
+    }
+
+    .our-journey-p {
+        font-size: 16px;
+    }
+
+    .Submit-Enquiry {
+        padding: 29px 20px;
+        width: 93%;
+        font-size: 17px;
+    }
+
+    .step-text h5 {
+        font-size: 28px;
+    }
+
+    .step-text h5 {
+        font-size: 18px;
+    }
+
+    .step-box {
+        width: 180% !important;
+    }
+
+    .step-box-back {
+        width: 85px;
+        height: 90px;
+    }
+
+    .step-number {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:992px) {
+    .sign-up-for-umrah {
+        float: left !important;
+        width: 100%;
+    }
+
+    .Umrah-expeicance {
+        width: 100%;
+    }
+
+
+    .package-list-wrapper {
+        gap: 18px;
+    }
+
+    .my-box {
+        flex: 1 1 calc(30% - 15px);
+    }
+
+    .why-choose-us {
+        font-size: 42px;
+    }
+
+    .why-choose-us-p {
+        font-size: 18px;
+    }
+
+    .custome-margin-top {
+        margin-top: 90px;
+    }
+
+    .custome-margin-bottom {
+        margin-bottom: 100px;
+    }
+
+    .Umrah-discount {
+        font-size: 28px;
+    }
+
+    .bottom-16 {
+        margin-bottom: 10%;
+    }
+
+    .top-16 {
+        margin-top: 11%;
+    }
+
+    .findthebestpackage h2 {
+        font-size: 34px;
+    }
+
+    .findthebestpackage h2 span {
+        font-size: 34px;
+
+    }
+
+    .findthebestpackage-p {
+        font-size: 17px;
+    }
+
+    .subscribe-wrapper {
+        margin-top: 30px;
+        /* margin-bottom: 30px; */
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .Prepare-for {
+        font-size: 36px;
+    }
+
+    .Prepare-for-p {
+        font-size: 18px;
+    }
+
+    .Depart-p {
+        margin-bottom: 16px;
+    }
+
+    .read-blog {
+        font-size: 32px;
+    }
+
+    .read-blog-p {
+        font-size: 16px;
+    }
+
+    .Asked-quesions {
+        font-size: 40px;
+    }
+
+    .Asked-quesions-p {
+        font-size: 18px;
+    }
+
+
+
+
+    .our-journey {
+        font-size: 24px;
+    }
+
+    .our-journey-p {
+        font-size: 14px;
+    }
+
+    .Submit-Enquiry {
+        padding: 6px;
+        width: 93%;
+        font-size: 14px;
+    }
+
+    .step-text h5 {
+        font-size: 28px;
+    }
+
+    .step-text h5 {
+        font-size: 18px;
+    }
+
+    .step-box {
+        width: 121% !important;
+    }
+
+    .step-box-back {
+        width: 90px;
+        height: 95px;
+    }
+
+    .step-number {
+        font-size: 46px;
+    }
+
+    .image-block {
+        background: none;
+        height: 381px;
+    }
+
+    .steps-overlay {
+        max-width: 340px;
+    }
+
+    .black-backround {
+        height: 381px
+    }
+
+    .trustedlogos {
+        padding: 15px 15px;
+        height: 80px;
+    }
+
+    .Enquire-for-umrah {
+        font-size: 32px;
+    }
+
+    .Enquire-for-umrahh {
+        font-size: 32px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .my-box {
+        flex: 1 1 calc(50% - 15px);
+    }
+
+    .packagebox3 {
+        width: 48%;
+    }
+
+    .second-box {
+        flex: 1 1 100%;
+        border-radius: 0;
+        /* remove corner rounding */
+
+    }
+
+    .why-choose-us {
+        font-size: 30px;
+    }
+
+    .why-choose-us-p {
+        font-size: 16px;
+    }
+
+    .second-box {
+        padding: 15px 0;
+    }
+
+    .from-start {
+        font-size: 38px;
+    }
+
+    .from-start-p {
+        font-size: 18px;
+    }
+
+    .custome-margin-top {
+        margin-top: 80px;
+    }
+
+    .custome-margin-bottom {
+        margin-bottom: 90px;
+    }
+
+    .Umrah-discount {
+        font-size: 20px;
+    }
+
+    .Umrah-discount-p {
+        font-size: 17px;
+    }
+
+    .Talk-to-us {
+        width: 92%;
+        font-size: 19px;
+    }
+
+    .trusted-patners {
+        font-size: 36px;
+    }
+
+    .findthebestpackage h2 {
+        font-size: 32px;
+    }
+
+    .findthebestpackage h2 span {
+        font-size: 32px;
+
+    }
+
+    .findthebestpackage-p {
+        font-size: 16px;
+    }
+
+    .Umrah-expeicance-span {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blog-name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .trust-us {
+        font-size: 26px;
+    }
+
+    .trust-us-p {
+        font-size: 16px;
+    }
+
+    .subscribe-wrapper {
+        /* margin-top: 30px; */
+        /* margin-bottom: 60px; */
+        margin-top: 0px;
+    }
+
+    .subscribe-input {
+        height: 50px;
+    }
+
+    .subscribe-btn {
+        height: 50px;
+        padding: 25px 55px;
+    }
+
+    .read-blog {
+        font-size: 23px;
+    }
+
+    .read-blog-p {
+        font-size: 14px;
+    }
+
+    .Asked-quesions {
+        font-size: 30px;
+    }
+
+    .Asked-quesions-p {
+        font-size: 16px;
+    }
+
+    .our-journey {
+        font-size: 14px;
+    }
+
+    .our-journey-p {
+        font-size: 11px;
+    }
+
+    .Submit-Enquiry {
+        font-size: 8px;
+        height: 40px;
+    }
+
+    .trustedlogos:nth-child(2) {
+        border-right: none 0px;
+    }
+
+    .Enquire-for-umrah {
+        font-size: 28px;
+    }
+
+    .Enquire-for-umrahh {
+        font-size: 28px;
+
+    }
+
+}
+
+@media (max-width:667px) {
+    .why-choose-us {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .why-choose-us-p {
+        font-size: 14px;
+    }
+
+    .custome-margin-bottom {
+        margin-bottom: 50px;
+    }
+
+    .custome-margin-top {
+        margin-top: 40px;
+    }
+
+    .from-start {
+        font-size: 24px;
+    }
+
+    .from-start-p {
+        font-size: 15px;
+    }
+
+    .Secure-journy {
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Secure-journy-p {
+        font-size: 18px;
+        margin-top: 20px !important;
+    }
+
+    .findthebestpackage h2 {
+        font-size: 28px;
+    }
+
+    .findthebestpackage h2 span {
+        font-size: 28px;
+
+    }
+
+    .findthebestpackage-p {
+        font-size: 14px;
+    }
+
+    .Exclusive-deals {
+        font-size: 28px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: 33%;
+    }
+
+    .our-journey {
+        font-size: 12px;
+    }
+
+    .our-journey-p {
+        font-size: 8px;
+    }
+
+    .step-box-back {
+        width: 70px;
+        height: 71px;
+    }
+
+    .step-number {
+        font-size: 32px;
+    }
+
+    .step-text p {
+        font-size: 11px;
+    }
+
+    .step-text h5 {
+        font-size: 14px;
+    }
+
+    .Submit-Enquiry {
+        width: 115%;
+    }
+
+    .black-backround {
+        height: 337px;
+    }
+
+    .image-block {
+        height: 337px;
+    }
+
+    .Prepare-for {
+        font-size: 24px;
+    }
+
+    .Prepare-for-p {
+        font-size: 16px;
+    }
+
+    .subscribe-btn {
+        height: 50px;
+        padding: 25px 25px;
+    }
+
+    .trust-us {
+        font-size: 20px;
+    }
+
+    .Enquire-for-umrah {
+        font-size: 22px;
+    }
+
+    .Enquire-for-umrahh {
+        font-size: 22px;
+
+    }
+    .width-on-small{
+        width:130px ;
+    }
+}
+
+/* Mobile view: 1 per row */
+@media (max-width: 480px) {
+    .my-box {
+        flex: 1 1 100%;
+    }
+
+    .trustedlogos:nth-child(2) {
+        border-right: none 0px;
+    }
+}

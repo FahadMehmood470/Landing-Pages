@@ -1,0 +1,111 @@
+footer{
+background: #172432;
+margin-top: 200px;	
+padding: 0px 0px 140px 0px;
+}
+footer p{
+color: #FFF;
+font-family: 'Rubik Regular';
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+footer ul{ margin:0px;padding: 0px;list-style: none; display: flex; flex-direction: column;}
+footer ul li { margin:0px;padding: 0px;list-style: none; }
+footer ul  a { 
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    color: #FFF;
+    font-family: 'Rubik Regular';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 12px;
+    text-decoration: none;
+}
+footer ul a:hover { 
+    color: #dc143c;
+}
+footer h4{
+color: #FFF;
+font-family: 'Rubik Regular';
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.socialicons a{font-size:28px;color: #dc143c;margin-right: 10px; }
+
+.newsletter-area{
+padding: 60px 80px;
+background: #FFF;
+box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.30);
+border-radius: 26px;
+margin-top: -100px;margin-bottom: 100px;  }
+.newsletter-area h4{
+color: #767E86;
+font-family: "Playfair Display";
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.newsletter-area span {
+color: #767E86;
+font-family: 'Rubik Regular';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;	
+}
+.txtsignup {
+padding: 24px 40px;
+align-items: center;
+border-radius: 12px;
+background: #F5F6F7;
+border: none 0px !important;	
+display: inline-block;
+
+margin-right: 15px;	
+	
+color: #DC143C;
+
+font-family: 'Rubik Regular';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+	
+}
+.btnsubscribe{
+color: #fff;
+font-family: 'Rubik Regular';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+background: #DC143C;
+border-radius:12px;
+display: inline-block;
+padding: 17px 29px;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+border: none 0px;	
+}
+.btnsubscribe:hover{
+color: #fff;
+font-family: 'Rubik Regular';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+background: #DC143C;
+border-radius:12px;
+display: inline-block;
+padding: 17px 29px;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+border: none 0px;		
+}

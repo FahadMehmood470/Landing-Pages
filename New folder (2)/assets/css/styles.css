@@ -1,0 +1,37 @@
+
+
+
+
+
+
+
+.packagebox3{float:left;background:#f7f7f7;border-radius:10px;
+-webkit-box-shadow: 1px -1px 6px 0px rgba(225,225,225,0.75);
+-moz-box-shadow: 1px -1px 6px 0px rgba(225,225,225,0.75);
+box-shadow: 1px -1px 6px 0px rgba(225,225,225,0.75);
+}
+.packagebox3 img{border-top-left-radius:10px;border-top-right-radius:10px;  }
+.packagebox3 .packageinfosec{background:#f7f7f7;border-bottom:solid 1px #e5e5e5;padding-bottom: 22px; }
+	
+.packagebox3 .packageicons{background:#e97925;margin:-10px auto 0 auto;width: 90%;padding:10px 15px 10px 15px !important;font-family:"Poppins-SemiBold";font-size:14px;color:#fff; }
+
+.packagebox3 .packagename3{font-family:"Poppins-SemiBold";font-size:24px;color:#000000;text-align:left !important; }
+.packagebox3 .packagetext{font-family:"Poppins-Medium";font-size:14px;color:#333333; }
+.packagebox3 .packagetext ul{margin:0px;padding:0px;list-style:none; }
+.packagebox3 .packagetext ul li{margin:0px;padding:0px;list-style:none;line-height:25px;width: 100%;float:left;display:block;margin-bottom:8px;text-align:left !important; } 
+.packagebox3 .packagetext .iconinfo{float:left;text-align:left !important;width: 30px; }
+
+.packagebox3 .packageinfosec .priceinfoblock{background:#000;color:#fff;font-family:"Poppins-SemiBold";font-size:26px;padding:5px 15px;bottom:70px;right: 0px;text-align:left !important; }
+
+.packagebox3 .packagebox3actions{background:url("../images/package-info-2-sep.jpg") center center no-repeat #f7f7f7;padding:12px 22px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;   }
+.packagebox3 .packagebox3actions .btncallnow{padding:10px 20px;color:#fff;font-family:"Poppins-Regular";font-weight:bold;background:#000;border-radius: 10px;text-decoration:none; }
+.packagebox3 .packagebox3actions .btnbooknow{padding:10px 20px;color:#fff;font-family:"Poppins-Regular";font-weight:bold;background:#e97925;border-radius: 10px;text-decoration:none; }
+
+
+
+@media screen and (max-width:1200px){
+	.packageinfo{width: 134px; }
+	.packagebox1 .totalnights{float: right !important;font-size:12px;width:56px;height:56px; }
+
+}
+

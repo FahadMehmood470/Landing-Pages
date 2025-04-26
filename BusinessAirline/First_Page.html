@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>First Main Page</title>
+    <link rel="stylesheet" href="assests/fonts/fonts.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assests/css/index2.css">
+    <link rel="stylesheet" href="assests/css/index.css">
+</head>
+
+<body>
+
+    <!-- main Page -->
+
+
+    <div class="container-fluid background-image-business p-0">
+        <nav class="navbar  d-none d-lg-flex ">
+            <div class="container">
+                <div class="d-flex justify-content-between w-100">
+                    <div><img src="assests/images/Logo.png" alt="Logo" class="img-fluid Logo-height">
+                    </div>
+                    <div class="buttons-background d-flex align-items-center">
+                        <button class="find-flights-button">Find flights</button>
+                        <button class="best-deals-button">Best Deals</button>
+                        <button class="best-deals-button">Airlines</button>
+                    </div>
+                    <div class="text-end d-flex align-items-center">
+                        <div>
+                            <p class="mb-0 call-us-twentyfour">Call us 24/7</p>
+                            <p class="mb-0 our-Phone-no">+1 (855) 855-1221</p>
+                        </div>
+                        <div>
+                            <img src="assests/images/phone-call.svg" alt="" class="call-us">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- <div class="d-flex justify-content-between align-items-center"> -->
+        <nav class="navbar  d-lg-none">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <div><img src="assests/images/Logo.png" alt="Logo" class="img-fluid Logo-height"></div>
+
+                <!-- Navbar Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Offcanvas Menu -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header" style="background: #00F;">
+                        <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel ">Our Flights Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active hover-change-background" aria-current="page" href="#">Find
+                                    Flights</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active hover-change-background" aria-current="page" href="#">Best
+                                    Deals</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active  hover-change-background " aria-current="page"
+                                    href="#">Airline</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Call Section (Moved inside .container-fluid) -->
+                <div class="text-end d-flex align-items-center">
+                    <div>
+                        <p class="mb-0 call-us-twentyfour">Call us 24/7</p>
+                        <p class="mb-0 our-Phone-no">+1 (855) 855-1221</p>
+                    </div>
+                    <div>
+                        <img src="assests/images/phone-call.svg" alt="" class="call-us">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- </div> -->
+
+        <div class="container  margin-top-10pc start-50  text-center text-white">
+            <h1 class="Easiness-of-airline">Expect Beyond, <span class="Easiness-of-airline-travel">Travel </span>with
+                Ease</h1>
+            <div class="d-flex justify-content-between mt-4">
+                <div class="d-flex">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            <span class="One-way-ticket">Round Trip</span>
+
+                        </label>
+                    </div>
+                    <div class="form-check margin-inline-radio ">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            <span class="one-way-radio"> One Way</span>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="d-flex">
+                    <div class="dropdown d-flex">
+                        <h3 class="business-class hover-pointer" id="dropdownMenuButton" aria-expanded="false"   data-bs-toggle="dropdown">
+                            Business Class
+                        </h3>
+                        <img src="assests/images/chevron-down.svg" alt="" data-bs-toggle="dropdown"
+                            class="hover-pointer" aria-expanded="false">
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">January</a></li>
+                            <li><a class="dropdown-item" href="#">Feburuary</a></li>
+                            <li><a class="dropdown-item" href="#">March</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container p-3 bg-white rounded-pill shadow mt-4 parent-height">
+                <form class="row g-3 align-items-center form-width form-padding">
+                    <!-- From Dropdown -->
+                    <div class="col-12 col-sm-6 col-md-2 d-flex flex-column align-items-start">
+                        <label class="form-label route-destination">
+                            <img src="assests/images/map-pin.png" alt="" class="group-icon-buisness"> From
+                        </label>
+                        <select class="form-select border-0 w-100">
+                            <option>Lahore LHE</option>
+                            <option>Karachi KHI</option>
+                            <option>Islamabad ISB</option>
+                            <option>Faisalabad LYP</option>
+                        </select>
+                    </div>
+
+                    <!-- Swap Icon -->
+                    <div class="col-12 col-sm-2 col-md-1 d-flex justify-content-center">
+                        <img class="hide-on-small-screen" src="assests/images/repeat.svg" alt="">
+                    </div>
+
+                    <!-- To Dropdown -->
+                    <div class="col-12 col-sm-6 col-md-2 d-flex flex-column align-items-start">
+                        <label class="form-label route-destination">
+                            <img src="assests/images/map-pin.png" alt="" class="group-icon-buisness"> To
+                        </label>
+                        <select class="form-select border-0 w-100">
+                            <option>London LHR</option>
+                            <option>New York JFK</option>
+                            <option>Dubai DXB</option>
+                            <option>Toronto YYZ</option>
+                        </select>
+                    </div>
+
+                    <!-- Depart Date -->
+                    <div class="col-12 col-sm-6 col-md-2 d-flex flex-column align-items-start">
+                        <label class="form-label route-destination">
+                            <img src="assests/images/calendar.jpg" alt="" class="group-icon-buisness"> Depart
+                        </label>
+                        <input type="date" class="form-control border-0 w-100" value="2025-02-20">
+                    </div>
+
+                    <!-- Return Date -->
+                    <div class="col-12 col-sm-6 col-md-2 d-flex flex-column align-items-start">
+                        <label class="form-label route-destination">
+                            <img src="assests/images/calendar.jpg" alt="" class="group-icon-buisness"> Return
+                        </label>
+                        <input type="date" class="form-control border-0 w-100" value="2025-05-03">
+                    </div>
+
+                    <!-- Travelers -->
+                    <div class="col-12 col-sm-6 col-md-2 d-flex flex-column align-items-start">
+                        <label class="form-label route-destination">
+                            <img src="assests/images/user.svg" alt="" class="group-icon-buisness"> Travelers
+                        </label>
+                        <input type="number" placeholder="Person" class="form-control border-0 w-100" value="3">
+                    </div>
+
+                    <!-- Search Button -->
+                    <div
+                        class="col-12 col-sm-6 col-md-1 d-flex justify-content-center align-items-center position-relative ">
+                        <!-- Search Icon (Large Screens) -->
+                        <button class="search-icon-buisness-class d-md-inline d-none d-md-block">
+                            <img src="assests/images/search.svg" alt="" class="margin-inline-search">
+                        </button>
+
+                        <!-- Search Button (Small Screens) -->
+                        <button
+                            class="btn btn-primary row col-11 d-inline d-md-none position-absolute mt-4">Search</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="whatsapp-container">
+                <img src="assests/images/Group 7167.svg" alt="WhatsApp" class="whatsapp-icon">
+                <span class="whatsapp-number">+92 346 8343 4367</span>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- Know about us Page -->
+    <div class="Know-about-us ">
+        <div class="container background-color-second-page ">
+            <div class="row about-us">
+                <div class="col-md-7">
+                    <h3 class="Know-about-us-h2-tag text-white"><img src="assests/images/icon.svg" alt=""> Know About Us
+                    </h3>
+                    <p>Our dedicated travel specialists work directly with all major airlines to secure discounts on
+                        first and business class flights. No matter where you want to go, we can find business class
+                        deals to take you there. By simply entering your destination and searching your desired travel
+                        dates, our experts can help you book cheap business class flights for an affordable trip.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="Know-about-us-img"
+                        src="assests/images/abstract-flow-shape-with-rainbow-reflections-refractions 1.png"
+                        alt="Business Class">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- swiper Page -->
+
+    <div class="second-slide-container slides-top  margin-top-150px ">
+        <div class=" container">
+            <div class="mt-2"></div>
+            <div class="d-flex justify-content-between">
+                <h3 class="popular-destination-heading"><img src="assests/images/icon.svg" alt=""> Best Business Class
+                    Deals
+                </h3>
+
+                <div class="d-flex mt-3">
+                    <div class="swiper-button-prev business-class-prev"></div>
+                    <div class="swiper-button-next business-class-next"></div>
+                </div>
+            </div>
+
+            <div class="swiper2 swiper container mt-3">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide swiper2-card-overflow">
+                        <div class="card" style="width: 25rem;">
+                            <div class="image-container position-relative">
+                                <img src="assests/images/Rectangle 5378 (1).png" class="custom-card-img w-100"
+                                    alt="...">
+                                <p class="position-absolute  bottom-0    custom-card-strip">Save upto
+                                    <span class="custom-card-strip-span">15-60%</span> * on business class
+                                </p>
+                            </div>
+                            <div class="business-card-body">
+                                <h2 class="business-flight-title">Flights to Europe</h2>
+                                <span class="business-price">starting from </span>
+                                <span class="business-total-price">£1,174*</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper2-card-overflow">
+                        <div class="card" style="width: 25rem;">
+                            <div class="image-container position-relative">
+                                <img src="assests/images/Rectangle 5378 (1).png" class="custom-card-img w-100"
+                                    alt="...">
+                                <p class="position-absolute  bottom-0    custom-card-strip">Save upto
+                                    <span class="custom-card-strip-span">15-60%</span> * on business class
+                                </p>
+                            </div>
+                            <div class="business-card-body">
+                                <h2 class="business-flight-title">Flights to Europe</h2>
+                                <span class="business-price">starting from </span>
+                                <span class="business-total-price">£1,174*</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper2-card-overflow">
+                        <div class="card" style="width: 25rem;">
+                            <div class="image-container position-relative">
+                                <img src="assests/images/Rectangle 5378 (1).png" class="custom-card-img w-100"
+                                    alt="...">
+                                <p class="position-absolute  bottom-0    custom-card-strip">Save upto
+                                    <span class="custom-card-strip-span">15-60%</span> * on business class
+                                </p>
+                            </div>
+                            <div class="business-card-body">
+                                <h2 class="business-flight-title">Flights to Europe</h2>
+                                <span class="business-price">starting from </span>
+                                <span class="business-total-price">£1,174*</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper2-card-overflow">
+                        <div class="card" style="width: 25rem;">
+                            <div class="image-container position-relative">
+                                <img src="assests/images/Rectangle 5378 (1).png" class="custom-card-img w-100"
+                                    alt="...">
+                                <p class="position-absolute bottom-0  custom-card-strip">Save upto
+                                    <span class="custom-card-strip-span">15-60%</span> * on business class
+                                </p>
+                            </div>
+                            <div class="business-card-body">
+                                <h2 class="business-flight-title">Flights to Europe</h2>
+                                <span class="business-price">starting from </span>
+                                <span class="business-total-price">£1,174*</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper2-card-overflow">
+                        <div class="card" style="width: 25rem;">
+                            <div class="image-container position-relative">
+                                <img src="assests/images/Rectangle 5378 (1).png" class="custom-card-img w-100"
+                                    alt="...">
+                                <p class="position-absolute  bottom-0   custom-card-strip">Save upto
+                                    <span class="custom-card-strip-span">15-60%</span> * on business class
+                                </p>
+                            </div>
+                            <div class="business-card-body">
+                                <h2 class="business-flight-title">Flights to Europe</h2>
+                                <span class="business-price">starting from </span>
+                                <span class="business-total-price">£1,174*</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container business-margin-discover">
+                <button type="button" class="business-discover-btn margin-bottom">View All Deals</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter Page -->
+    <div class="container mt-5">
+        <div class="custom-card">
+            <h3 class="fw-bold d-flex Subscribe-to"><img src="assests/images/icon.svg" alt=""> Subscribe to Our
+                Newsletter
+            </h3>
+            <p class="text-muted d-flex justify-content-start mt-4 exclusive-offers">Be the first to receive updates on
+                our exclusive offers
+            </p>
+
+            <div class="newsletter-form mt-4 row">
+                <input type="text" class="newsletter-input col-md-2" placeholder="Enter your Full Name">
+                <input type="email" class="newsletter-input col-md-2" placeholder="Enter your Email Address">
+                <input type="text" class="newsletter-input col-md-2" placeholder="Contact Number">
+                <button class=" newsletter-btn col-md-2">Subscribe</button>
+            </div>
+        </div>
+    </div>
+    <!-- end of Newsletter Page -->
+    <!-- businessclass page are start from here -->
+    <div class="business-class-container">
+        <div class="container business-class-container text-center my-5">
+            <h2 class=" text-white d-flex justify-content-start business-class-airline-heading "><img
+                    src="assests/images/icon.svg" alt="">Business class airlines</h2>
+
+            <div class="row container mt-5">
+                <div class="col-md-6 business-class-airline-p-tag">
+                    <p>We are passionate about giving easy travels to our valuable customers through our best business
+                        class
+                        airlines available</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="airline-card">
+                        <img src="assests/images/buisnessticket1.jpg" alt="Delta business class airline">
+                        <div class="card-body">
+                            <p class="card-text card-text-align accordion-font-style">Delta business class airline</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="airline-card">
+                        <img src="assests/images/buisnessticket1.jpg" alt="Emirates business class airline">
+                        <div class="card-body">
+                            <p class="card-text card-text-align accordion-font-style">Emirates business class airline
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="airline-card">
+                        <img src="assests/images/buisnessticket1.jpg" alt="United business class airline">
+                        <div class="card-body">
+                            <p class="card-text card-text-align accordion-font-style">United business class airline</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="airline-card">
+                        <img src="assests/images/buisnessticket1.jpg" alt="Air France business class airline">
+                        <div class="card-body">
+                            <p class="card-text card-text-align accordion-font-style">Air France business class airline
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="airline-card">
+                        <img src="assests/images/buisnessticket1.jpg" alt="Turkish business class airline">
+                        <div class="card-body">
+                            <p class="card-text card-text-align accordion-font-style">Turkish business class airline</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="airline-card">
+                        <img src="assests/images/buisnessticket1.jpg" alt="Lufthansa business class airline">
+                        <div class="card-body">
+                            <p class="card-text card-text-align accordion-font-style">Lufthansa business class airline
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- businessclass page are End from here -->
+    <!-- contact us Page -->
+    <div class="custom-container">
+        <h2 class="mb-4 container-fluid"><img src="assests/images/icon.svg" alt=""> Contact Us</h2>
+        <div class="container">
+            <p class="p-tag-center">Couldn't find what you were looking for?</p>
+            <form class="mt-5">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="fullName"><span class="info-form">Full Name</span></label>
+                        <input type="text" class="form-control form-control-border" id="fullName">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="contactNumber"><span class="info-form">Contact Number</span></label>
+                        <input type="text" class="form-control form-control-border" id="contactNumber">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="emailAddress"><span class="info-form">Email Address</span></label>
+                        <input type="email" class="form-control form-control-border" id="emailAddress">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="destination"><span class="info-form">Destination</span></label>
+                        <input type="text" class="form-control form-control-border" id="destination">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="query"><span class="info-form">Write your Query</span></label>
+                    <textarea class="form-control form-control-border" id="query" rows="3"></textarea>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="Submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Accordian -->
+    <div class="accordion-background-color">
+        <div class="container">
+            <h2 class="mb-4"><img src="assests/images/icon.svg" alt=""> Frequently Asked Questions</h2>
+            <div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordion-font-style" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body accordion-font-style">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed accordion-font-style" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body accordion-font-style">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and hiding
+                                via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed accordion-font-style" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body accordion-font-style">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Additional accordion items... -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="footer-color-background">
+            <div class="container py-5">
+                <div class="footer-container d-flex flex-column flex-md-row bg-white shadow-sm">
+                    <div class="footer-item flex-fill">
+                        <div class="icon-circle"><img src="assests/images/Path.svg" alt=""></div>
+                        <small class="text-muted accordion-font-style">Contact Number</small>
+                        <p class="mb-0 fw-bold accordion-font-style">+92 000 000000</p>
+                    </div>
+                    <div class="footer-item flex-fill">
+                        <div>
+                            <div class="icon-circle"><img src="assests/images/Shape.svg" alt=""></div>
+                            <small class="text-muted accordion-font-style">Email Address</small>
+                        </div>
+                        <p class="mb-0 fw-bold accordion-font-style">@demo123</p>
+                    </div>
+                    <div class="footer-item flex-fill">
+                        <div class="icon-circle"><img src="assests/images/Shape (1).svg" alt=""></div>
+                        <small class="text-muted accordion-font-style">Located</small>
+                        <p class="mb-0 fw-bold accordion-font-style">Demo Location</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <footer>
+        <div class="footer-color-background">
+            <div class="container py-5">
+                <div class="footer-container d-flex flex-column flex-md-row bg-white shadow-sm">
+                    <div class="footer-item flex-fill">
+                        <div class="d-flex ">
+                            <div class="icon-circle mr-2"><img src="assests/images/Path.svg" alt=""></div>
+                            <small class="text-muted accordion-font-style mt-1">Contact Number</small>
+                        </div>
+                        <p class="mb-0 fw-bold accordion-font-style d-flex justify-content-start">@demo123</p>
+                    </div>
+                    <div class="footer-item flex-fill">
+                        <div class="d-flex ">
+                            <div class="icon-circle mr-2"><img src="assests/images/Shape.svg" alt=""></div>
+                            <small class="text-muted accordion-font-style mt-1">Contact Number</small>
+                        </div>
+                        <p class="mb-0 fw-bold accordion-font-style d-flex justify-content-start">@demo123</p>
+                    </div>
+                    <div class="footer-item flex-fill">
+                        <div class="d-flex ">
+                            <div class="icon-circle mr-2"><img src="assests/images/Shape.svg" alt=""></div>
+                            <small class="text-muted accordion-font-style mt-1">Contact Number</small>
+                        </div>
+                        <p class="mb-0 fw-bold accordion-font-style d-flex justify-content-start">@demo123</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+    <!-- footer End Here -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper2 = new Swiper(".swiper2", {
+            slidesPerView: 1, // Default for small screens
+            spaceBetween: 32,
+            loop: false, // No infinite loop
+            navigation: {
+                nextEl: ".business-class-next",
+                prevEl: ".business-class-prev",
+            },
+            breakpoints: {
+                768: { // Tablet
+                    slidesPerView: 2,
+                    slidesPerGroup: 2
+                },
+                1024: { // Large Screens
+                    slidesPerView: 3, // Show 3 cards on large screens
+                    slidesPerGroup: 3
+                }
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>

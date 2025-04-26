@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Class Airlines</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .business-class-container {
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .airline-card {
+            border: 1px solid #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .airline-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .airline-card .card-body {
+            background-color: #000;
+            /* border-top: 2px solid #00f; */
+            height: 90px;
+        }
+
+        .business-class-airline-heading {
+            color: var(--White, #FFF);
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: "Space Grotesk";
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+            /* 100% */
+            letter-spacing: -1px;
+            margin-inline: -3pc;
+        }
+
+        .card-text-align {
+            text-align: start;
+            color: #FFF;
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: "Darker Grotesque";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: -0.6px;
+        }
+
+        @media (min-width:1200px) {
+            .business-class-airline-p-tag {
+                color: var(--White, #FFF);
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-family: "Darker Grotesque";
+                font-size: 47px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 42px;
+                text-align: start;
+                /* 81.25% */
+            }
+        }
+
+        @media (min-width:768px) and (max-width:1200px) {
+            .business-class-airline-p-tag {
+                color: var(--White, #FFF);
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-family: "Darker Grotesque";
+                font-size: 34px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 25px;
+                text-align: start;
+            }
+        }
+
+        @media(max-width:768px) {
+            .business-class-airline-p-tag {
+                color: var(--White, #FFF);
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-family: "Darker Grotesque";
+                /* font-size: 34px; */
+                font-style: normal;
+                /* font-weight: 400;
+                line-height: 25px;
+                text-align: start; */
+            }
+
+            .business-class-airline-heading {
+                margin-inline: 0px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="business-class-container">
+        <div class="container business-class-container text-center my-5">
+            <h2 class=" text-white d-flex justify-content-start business-class-airline-heading "><span
+                    style="color: #0000ff;">↳</span>Business class airlines</h2>
+
+            <div class="row container mt-5">
+                <div class="col-md-6 business-class-airline-p-tag">
+                    <p>We are passionate about giving easy travels to our valuable customers through our best business
+                        class
+                        airlines available</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="airline-card">
+                        <img src="assests/images/buisnessticket1.jpg" alt="Delta business class airline">
+                        <div class="card-body">
+                            <p class="card-text card-text-align">Delta business class airline</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="airline-card">
+                        <img src="assests/images/buisnessticket1.jpg" alt="Emirates business class airline">
+                        <div class="card-body">
+                            <p class="card-text card-text-align ">Emirates business class airline</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="airline-card">
+                        <img src="assests/images/buisnessticket1.jpg" alt="United business class airline">
+                        <div class="card-body">
+                            <p class="card-text card-text-align ">United business class airline</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="airline-card">
+                        <img src="assests/images/buisnessticket1.jpg" alt="Air France business class airline">
+                        <div class="card-body">
+                            <p class="card-text card-text-align ">Air France business class airline</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="airline-card">
+                        <img src="assests/images/buisnessticket1.jpg" alt="Turkish business class airline">
+                        <div class="card-body">
+                            <p class="card-text card-text-align ">Turkish business class airline</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="airline-card">
+                        <img src="assests/images/buisnessticket1.jpg" alt="Lufthansa business class airline">
+                        <div class="card-body">
+                            <p class="card-text card-text-align ">Lufthansa business class airline</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

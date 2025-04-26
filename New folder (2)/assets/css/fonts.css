@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('../fonts/Poppins-SemiBold.eot');
+    src: url('../fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+		font-family: "Poppins-Bold";
+		src: url('../fonts/Poppins-Bold.woff') format('woff'),
+			url('../fonts/Poppins-Bold.woff2') format('woff2'),
+			url('../fonts/Poppins-Bold.svg#Poppins-Bold') format('svg'),
+			url('../fonts/Poppins-Bold.eot'),
+			url('../fonts/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Poppins-Bold.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+}
+@font-face {
+	font-family: "Gotham-Bold";
+	src: url('../fonts/Gotham-Bold.woff') format('woff'),
+		url('../fonts/Gotham-Bold.woff2') format('woff2'),
+		url('../fonts/Gotham-Bold.eot'),
+		url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gotham-Bold.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+		font-family: "Gotham-Black";
+		src: url('../fonts/Gotham-Black.woff') format('woff'),
+			url('../fonts/Gotham-Black.woff2') format('woff2'),
+			url('../fonts/Gotham-Black.eot'),
+			url('../fonts/Gotham-Black.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Gotham-Black.otf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+}
+@font-face {
+	font-family: "Gotham-Book";
+	src: url('../fonts/Gotham-Book.woff') format('woff'),
+		url('../fonts/Gotham-Book.woff2') format('woff2'),
+		url('../fonts/Gotham-Book.eot'),
+		url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gotham-Book.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Gotham-Light";
+	src: url('../fonts/Gotham-Light.woff') format('woff'),
+	url('../fonts/Gotham-Light.woff2') format('woff2'),
+	url('../fonts/Gotham-Light.eot'),
+	url('../fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Gotham-Light.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Gotham-Medium";
+	src: url('../fonts/Gotham-Medium.woff') format('woff'),
+		url('../fonts/Gotham-Medium.woff2') format('woff2'),
+		url('../fonts/Gotham-Medium.eot'),
+		url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Gotham-Medium.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Montserrat-Regular";
+	src: url('../fonts/Montserrat-Regular.woff') format('woff'),
+		url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+		url('../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg'),
+		url('../fonts/Montserrat-Regular.eot'),
+		url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Montserrat-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Montserrat-Medium";
+	src: url('../fonts/Montserrat-Medium.woff') format('woff'),
+		url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+		url('../fonts/Montserrat-Medium.svg#Montserrat-Medium') format('svg'),
+		url('../fonts/Montserrat-Medium.eot'),
+		url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Montserrat-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Poppins-Regular";
+	src: url('../fonts/Poppins-Regular.woff') format('woff'),
+		url('../fonts/Poppins-Regular.woff2') format('woff2'),
+		url('../fonts/Poppins-Regular.svg#Poppins-Regular') format('svg'),
+		url('../fonts/Poppins-Regular.eot'),
+		url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Poppins-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Poppins-Medium";
+	src: url('../fonts/Poppins-Medium.woff') format('woff'),
+		url('../fonts/Poppins-Medium.woff2') format('woff2'),
+		url('../fonts/Poppins-Medium.svg#Poppins-Medium') format('svg'),
+		url('../fonts/Poppins-Medium.eot'),
+		url('../fonts/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Poppins-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Poppins-SemiBoldItalic";
+	src: url('../fonts/Poppins-SemiBoldItalic.woff') format('woff'),
+		url('../fonts/Poppins-SemiBoldItalic.woff2') format('woff2'),
+		url('../fonts/Poppins-SemiBoldItalic.svg#Poppins-SemiBoldItalic') format('svg'),
+		url('../fonts/Poppins-SemiBoldItalic.eot'),
+		url('../fonts/Poppins-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Poppins-SemiBoldItalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

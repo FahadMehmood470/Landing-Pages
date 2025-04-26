@@ -1,0 +1,86 @@
+.subsliderarea {background: url("../images/subsliderbg.jpg") top center no-repeat;padding-top:59px;padding-bottom:36px;background-size:cover; }
+.slidertext1 {font-family:"Gotham-Light";font-size:2.8rem;color:#fff;margin:0px;padding:0px; }
+.slidertext2 {font-family:"Gotham-Bold";font-size:4rem;color:#e97925;font-weight:bold;margin:0px;padding:0px; }
+.slidertext3 {font-family:"Gotham-Medium";font-size:1.6rem;color:#fff;display:inline-block;margin:0px;padding:0px;line-height:74px; }
+
+.trustedlogos{border-right:solid 2px #e5e5e5;padding:30px 30px;height: 134px; }
+.trustedlogos:last-child{border-right:none 0px; }
+
+
+.contentarea{border-top:solid 1px #c7c7c7; }
+
+.explorehajjpackage{padding:60px 0px; }
+.explorehajjpackage h2{font-family:"Poppins-SemiBold";font-size:30px;color:#000000;background: url("../images/headingbg.png") bottom left no-repeat;padding:5px 0px 25px 0px;  }
+
+#packagedetails .carousel-control-prev{width:44px;height:44px;opacity:1;top:45%;left:20px; }
+#packagedetails .carousel-control-next{width:44px;height:44px;opacity:1;top:45%;right:20px; }
+
+#packagedetails .carousel-control-next-icon{background: url("../images/arrow-next.png") top center no-repeat;width:44px;height:44px;opacity: 1; }
+#packagedetails .carousel-control-prev-icon{background: url("../images/arrow-prev.png") top center no-repeat;width:44px;height:44px;opacity: 1; }
+
+
+
+.packagemaincontent{border-radius:15px;background:#f7f7f7;margin-bottom:35px;padding-bottom:45px; }
+.packagemaincontent h1{border-top-left-radius:15px;border-top-right-radius:15px;background-color:#e97925;color:#fff;padding:55px 40px;font-family:"Poppins-Medium";font-size:30px;  }
+.packagemaincontent h1 .priceinfo{background:#000;color:#fff;font-size:22px;text-align: center;font-family:"Poppins-SemiBold";padding:5px 8px; }
+
+.packagemaincontenttext{background:#fff;padding-bottom: 25px; }
+.packagemaincontenttext h4{background:#e97925;padding:16px 22px;color: #fff;font-family:"Poppins-Medium";font-size:18px; }
+
+
+.packagemaincontenttext .packageicons{width:100%;font-family:"Poppins-Medium";font-size:16px;color:#000;border-bottom: solid 1px #e5e5e5; }
+.packagemaincontenttext .packageicons i{color:#e97925; }
+
+.packagemaincontenttext .packagetext ul{margin:0px;padding:0px;list-style:none; }
+.packagemaincontenttext .packagetext ul li{margin:0px;padding:0px;list-style:none;width: 100%;float:left;display:block;margin-bottom:8px;text-align:left !important;color:#666;font-family:"Poppins-Medium";font-size:16px;line-height:38px; } 
+.packagemaincontenttext .packagetext .iconinfo{float:left;text-align:left !important;width: 30px; }
+.btncallnow{background:#000;padding:12px 18px;text-align: center;color:#fff;font-family:"Poppins-SemiBold";font-size:16px; }
+.btnbooknow{background:#e97925;padding:12px 18px;text-align: center;color:#fff;font-family:"Poppins-SemiBold";font-size:16px; }
+.btnwhatsapp{background:#08cb1f;padding:12px 18px;text-align: center;color:#fff;font-family:"Poppins-SemiBold";font-size:16px; }
+
+
+.hotelinfotext{background-color:#f7f7f7; }
+.hotelinfotext h3{font-family:"Gotham-Medium";font-size:26px;color:#333333;  }
+.hotelinfotext h4{font-family:"Poppins-Medium";font-size:18px;color:#e97925;line-height: 30px;border-bottom:solid 1px #dedede;margin-bottom: 20px; }
+.hotelinfotext p{font-family:"Poppins-Medium";font-size:14px;color:#333333;}
+
+.packagedetailsboxlists h3{font-family:"Poppins-Regular";font-size:30px;color:#000000;background: url("../images/headingbg.png") bottom left no-repeat;padding:5px 0px 25px 0px;  }
+
+.packagedetailsboxlists ul{list-style:none; }
+.packagedetailsboxlists ul li{list-style:none; }
+.packagedetailsboxlists .packagedetailsbox{border-radius:15px;border:solid 1px #cfcfcf;text-align: center;color:#000;font-family:"Poppins-SemiBold";font-size:16px;margin:0px 2px 0px 2px;width: 100%;min-height:170px; }
+.packagedetailsbox span{width: 100%;text-align: center;display: block;margin-top: 16px;margin-left: auto;margin-right: auto; }
+
+
+.helpsection{background: url("../images/needhelp-bg.jpg") center top no-repeat;padding:100px 0px 130px 0px;background-size: cover; }
+.helpsection p{font-family:"Gotham-Book";font-size:26px;color:#fff; }
+.helpsection h4{font-family:"Gotham-Book";font-size:46px;color:#fff; }
+
+
+.footerlogos{height: 138px; }
+
+@media screen and (max-width:560px){
+	.trustedlogos:nth-child(2) {border-right:none 0px; }
+}
+
+
+@media screen and (max-width:768px){	
+	.helpsection{padding:20px 0px 20px 0px; }
+	.trustedlogos:nth-child(2){border-right:none 0px; }
+	.contentarea h2{font-size:20px; }
+}
+
+@media screen and (max-width:1120px){
+	.trustedlogos{padding:15px 15px;height:80px; }
+}
+
+
+
+@media screen and (max-width:1000px){
+	.slidertext1 {font-family:"Gotham-Light";font-size:1.8rem;color:#fff;margin:0px;padding:0px; }
+	.slidertext2 {font-family:"Gotham-Bold";font-size:2.8rem;color:#e97925;font-weight:bold;margin:0px;padding:0px; }
+}
+
+
+
+

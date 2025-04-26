@@ -1,0 +1,385 @@
+.navbar-container {
+    width: 100%;
+    height: 129px;
+    background: #DC143C;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* Ensures it stays in place */
+}
+
+/* Default desktop layout */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Hide menu button by default */
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.search-button-show-and-hide {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.info-logo,
+.from-and-to,
+.login-button {
+    color: #FFF;
+    font-family: Rubik, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.login-button {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.signup-button {
+    color: #DC143C;
+    font-family: Rubik, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+.border-flight-details {
+    /* width: 904px;
+height: 925px;
+flex-shrink: 0; */
+    border-radius: 30px;
+    border: 1px solid #767E86;
+}
+
+.border-summary-details {
+    border-radius: 30px;
+    border: 1px solid #767E86;
+    height: 768px;
+}
+
+.booking-form-button {
+    display: flex;
+    width: 40vw;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: #DC143C;
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.spacing-between-info-ticket {
+    width: 3.333333%;
+}
+
+.change-width-column      {
+    width: 30%;
+}
+
+.flight-details-book-h2 {
+    margin-top: 20px;
+    color: #172432;
+    font-family: "Playfair Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-details {
+    color: #767E86;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.guest-info {
+    color: #767E86;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 246px;
+}
+
+.flight-information {
+    color: #767E86;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 246px;
+}
+
+@media (min-width: 2000px) {
+
+    /* .booking-form-button{
+        width: 80vw;
+    }
+    .col-md-1{
+        width: 100%;
+    }
+    .col-md-3{
+        width: 100%;
+    }
+    .flight-details-book-h2{
+        font-size: 24px;
+    }
+    .form-details{
+        font-size: 14px;
+    }
+    .guest-info{
+        font-size: 16px;
+    }
+    .flight-information{
+        font-size: 16px;
+    } */
+    .booking-form-button {
+        width: 810px;
+    }
+}
+
+.flight-date-to-fly {
+    color: #767E86;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    align-self: stretch;
+}
+
+.flight-time-to-fly {
+    color: #172432;
+    font-family: Rubik;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    /* width: 126px; */
+}
+
+.flight-company-to-fly {
+    color: #172432;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    align-self: stretch;
+}
+
+.flight-destination-to-fly {
+    color: #767E86;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    align-self: stretch;
+}
+
+.flight-time-take-to-destination {
+    color: #767E86;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.route-image-aeroplane {
+    width: 196px;
+    margin-inline: -43px;
+}
+
+.flight-non-stop {
+    color: #172432;
+    /* text-align: right; */
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.margin-inline-tickets {
+    /* margin-inline: -17px; */
+}
+
+.summary {
+    margin-top: 20px;
+    color: #172432;
+    font-family: "Playfair Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.flight-fare-details {
+    /* margin-inline: 41px; */
+    color: #172432;
+    font-family: "Playfair Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.per-ticket,
+.ticket-price-in-pound {
+    color: #767E86;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 0.2rem !important;
+}
+
+.ticket-price-in-pound {
+    color: #172432;
+    text-align: right;
+}
+
+.contact-us {
+    color: #767E86;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 133.333% */
+}
+
+.phone-no {
+    color: #DC143C;
+    font-family: Rubik;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+@media (max-width:1480px) {
+    .flex-mobile-view {
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    .custom-full {
+        margin-top: 40px;
+    }
+
+    .custom-grid {
+        flex: 0 0 100%;
+        /* Full width */
+        max-width: 100%;
+    }
+
+    .contact-us {
+        margin-top: 74px !important;
+    }
+    .flight-time-to-fly{
+        /* width: 0px !important; */
+        margin-inline: 0px !important;
+    }
+    /* .booking-form-button {
+            width: 810px;
+        } */
+}
+
+@media (max-width: 774px) {
+
+    .nav-menu {
+        display: none;
+        /* Hidden by default */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #DC143C;
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .from-and-to,
+    .login-button,
+    .signup-button {
+        display: none;
+    }
+
+    .mobile-controls {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}
+@media (max-width:767px){
+    /* .footer-margin-top{
+        margin-top: 30pc;
+    } */
+    .custome-for-small-screen{
+        width: 33%;
+    }
+    .custome-for-small-screen-div2{
+        width: 33%;
+    }
+    .flight-time-take-to-destination{
+        /* margin-inline: 93px; */
+        width:74%;
+    }
+    ;
+}
+@media (max-width:575px){
+    /* .footer-margin-top{
+        margin-top: 30pc;
+    } */
+    .custome-for-small-screen{
+        width: 33%;
+    }
+    .custome-for-small-screen-div2{
+        width: 33%;
+    }
+}

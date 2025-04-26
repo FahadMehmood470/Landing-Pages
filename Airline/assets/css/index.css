@@ -1,0 +1,586 @@
+.topnavbar {
+	top: 32px;
+	z-index: 111;
+}
+
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24' /%3E%3C/svg%3E") !important;
+}
+
+.navbar-image {
+	background-image: url(../images/Hero\ Section.jpg);
+}
+
+.logo {
+	font-family: 'Rubik Regular';
+	font-size: 20px;
+	color: #fff !important;
+}
+
+.navbar-brand {
+	padding: 0px;
+	margin-top: -2px;
+}
+
+.navbar-nav a {
+	color: #fff;
+	font-family: 'Rubik Regular';
+	font-size: 20px;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	padding-top: 0px !important;
+	padding-bottom: 2px !important;
+	font-style: normal;
+	font-weight: 400;
+	margin-right: 15px;
+}
+
+.navbar-nav a:hover {
+	color: #fff;
+}
+
+.navbar-nav .nav-link {
+	color: white;
+	padding: 10px 15px;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect - Border from Bottom */
+.navbar-nav .nav-link::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 0%;
+	height: 3px;
+	background-color: #dc143c;
+	/* Yellow Border */
+	transition: all 0.3s ease-in-out;
+	transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+	width: 100%;
+	/* Expand on Hover */
+}
+
+.btnsignup {
+	color: #fff;
+	font-family: 'Rubik Regular';
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	border-radius: 12px;
+	display: flex;
+	padding: 17px 29px;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.btnsignup:hover {
+	color: #fff;
+	font-family: 'Rubik Regular';
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	background: #DC143C;
+	border-radius: 12px;
+	display: flex;
+	padding: 17px 29px;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+
+.slider-heading {
+	font-size: 4.5vw;
+	font-family: "Playfair Display";
+
+}
+
+.slider-witespace {
+	padding-top: 9rem;
+	width: 200%;
+}
+
+.slider-red-part {
+	background-color: #DC143C;
+
+}
+
+.slider-red-tag {
+	width: 22vw;
+	border-top-right-radius: 30px;
+	/* Curve top-left */
+	border-bottom-right-radius: 30px;
+	/* Curve bottom-left */
+	border-top-left-radius: 0;
+	/* Keep right corners sharp */
+	border-bottom-left-radius: 0
+}
+
+.slider-strip {
+	width: 250%;
+}
+
+.slider-strip-padding {
+	padding-right: 10rem !important;
+	padding-left: 5rem !important;
+}
+
+.slider-strip-width {
+	width: 82vw;
+	margin-inline: 26vw;
+}
+
+.slider-strip-dropdown-margin {
+	margin-inline: 3vw;
+}
+
+#searchStrip {
+	top: 179%;
+	left: -47vw;
+	/* Move more towards the left */
+	width: 59vw;
+	/* Full screen width */
+	/* max-width: 1400px; */
+}
+
+/* Change radio button color when checked */
+.custom-radio:checked {
+	accent-color: #DC143C;
+	/* Crimson color */
+}
+
+.font-strip {
+	font-family: 'Rubik Regular';
+	margin-inline: 0.6vw;
+}
+
+.strip-dropdown-margin {
+	margin-inline: 3.6vw;
+	font-family: 'Rubik Regular';
+
+}
+
+.margin-inline-class {
+	margin-inline: 4.6vw;
+	margin-top: 20px;
+}
+
+.email-top {
+	margin-top: 20px;
+}
+
+.explorer-dropdown {
+	width: 68vw;
+	height: 24pc;
+	margin-inline: -35px;
+}
+
+.explorer-info-font {
+	font-weight: 400;
+	color: #172432;
+	font-family: 'Playfair Display Regular';
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	list-style: none;
+}
+
+.explorer-info-li-tag {
+	position: relative;
+	/* Ensures the pseudo-element positions relative to this */
+	cursor: pointer;
+	/* Makes it look clickable */
+	padding-bottom: 5px;
+	/* Adds some space for the underline */
+	list-style: none;
+	margin-top: 13px;
+
+}
+
+.explorer-info-li-tag::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 0%;
+	/* Initially hidden */
+	height: 3px;
+	/* Thickness of the line */
+	background-color: #dc143c;
+	/* Red color */
+	transition: all 0.3s ease-in-out;
+	/* Smooth animation */
+	transform: translateX(-50%);
+	/* Centers the underline */
+}
+
+.explorer-info-li-tag:hover::after {
+	width: 100%;
+	/* Expands fully on hover */
+}
+
+
+.explorer-info-img {
+	margin-top: 39px;
+	width: 15vw;
+	height: 15vw;
+}
+
+.explorer-info-view {
+	color: #DC143C;
+	font-family: Rubik;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.explorer-dropdown-hidden {
+	display: none !important;
+}
+
+.explorer-dropdown-block {
+	display: block !important;
+}
+
+
+
+/* .swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+	margin-top: -20pc;
+}
+.swiper-button-prev{
+	margin-inline: 71pc;
+}
+.swiper-button-prev {
+    left: 0; 
+}
+
+.swiper-button-next {
+    right: 0; /
+} */
+
+.swiper-wrapper {
+	margin-left: 0 !important;
+}
+
+.swiper-container {
+	overflow: hidden;
+}
+
+.flights-to-america-heading {
+	color: #FFF;
+	font-family: "Playfair Display";
+	font-size: 5vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.flights-to-america-heading-paragraph {
+	color: #FFF;
+	font-family: Rubik;
+	font-size: 1.4vw;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.discover-now-button {
+	display: flex;
+	width: 17vw;
+	height: 4vw;
+	padding: 20px 32px;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+	font-family: Rubik;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	border-radius: 12px;
+	background: #DC143C;
+	border-color: #DC143C;
+}
+
+
+.image-image {
+
+	width: 1920px !important;
+	height: 723px !important;
+	flex-shrink: 0;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(/assets/images/image.png) lightgray 50% / cover no-repeat;
+}
+
+.cental-line {
+	width: 1px;
+	height: 72px;
+	background: #C4C4C4;
+}
+
+.ticket-info-date {
+	align-self: stretch;
+	color: #767E86;
+	font-family: Rubik;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.ticket-info-time {
+	width: 126px;
+	color: #172432;
+	font-family: Rubik;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.ticket-info-from {
+	align-self: stretch;
+	color: #172432;
+	font-family: Rubik;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.ticket-info-destination {
+	align-self: stretch;
+	color: #767E86;
+	font-family: Rubik;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+}
+
+.line {
+	width: 1416px;
+	height: 1px;
+	background: #C4C4C4;
+}
+
+.nav-item {
+	list-style: none;
+}
+
+.ticket-card {
+	width: 1556px;
+	height: 429px;
+	flex-shrink: 0;
+	border-radius: 30px;
+	border: 1px solid #767E86;
+}
+
+.route-image {
+	width: 215px;
+}
+/* 
+.col-md-1 {
+	width: 11.333333%;
+} */
+
+.button-btn {
+	border-color: #DC143C;
+	display: flex;
+	width: 227px;
+	height: 72px;
+	padding: 16px 32px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 12px;
+	background: #DC143C;
+	color: #FFF;
+	font-family: Rubik;
+	font-size: 39px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.card-border {
+	border-radius: 30px;
+	border: 1px solid #767E86;
+}
+
+.divider-line {
+	width: 1px;
+	height: 72px;
+	background: #C4C4C4;
+}
+
+@media (max-width: 1299px) {
+	/* .row.align-items-center.justify-content-center>div {
+		flex: 0 0 100%;
+	
+		max-width: 100%;
+	} */
+
+	/* .row.align-items-center.justify-content-center .col-md-2 {
+		display: none;
+	} */
+
+	.remove-line {
+
+		background-color: white !important;
+	}
+
+	.row.align-items-center.justify-content-center .col-md-1 {
+		flex: 0 0 50%;
+		/* Adjust the width of the flight segments */
+		max-width: 50%;
+	}
+
+	.on-small-screen-aeroplane {
+
+	}
+
+	.margin-inline-media-querrie {
+		display: flex;
+		/* margin-inline: 20px; */
+	}
+}
+.show-on-small {
+	display: none;
+}
+
+.hide-on-small {
+	display: block;
+}
+
+@media (max-width: 1299px) {
+	.show-on-small {
+		display: block;
+	}
+
+	.hide-on-small {
+		display: none;
+	}
+}
+.background-image{
+	width: 99vw;
+}
+/* @media (max-width: 1499px) {
+    .margin-top-150 {
+        margin-top: 0 !important;
+    }
+}
+
+@media (min-width: 1500px) {
+    .margin-top-150 {
+        margin-top: 150px !important; 
+    }
+} */
+.margin-top-150 {
+	margin-top: 4vw;
+}
+
+.flight-route{
+	color: #172432;
+font-family: "Playfair Display";
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.flight-route-p-tag{
+	width: 46vw;
+	color: #767E86;
+font-family: Rubik;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.dial-no{
+	color: #DC143C;
+font-family: Rubik;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.show-price{
+	color: #C8D0D8;
+font-family: Rubik;
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.short-by-tag{
+	color: #C8D0D8;
+font-family: Rubik;
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.search-bar{
+	display: flex;
+width: 209px;
+padding: 16px 14px;
+align-items: center;
+gap: 12px;
+border-radius: 12px;
+background: #F5F6F7;
+color: #172432;
+font-family: Rubik;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+border-color: #767E86;
+}
+.dropdown-color{
+	display: flex;
+width: 299px;
+padding: 16px 14px;
+justify-content: space-between;
+align-items: center;
+border-radius: 12px;
+background: #F5F6F7;
+}
+.show-result{
+	color: #C8D0D8;
+font-family: Rubik;
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.custom-checkbox {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+    vertical-align: middle; /* Align checkbox with text */
+    margin-right: 5px; /* Optional: Add spacing */
+}

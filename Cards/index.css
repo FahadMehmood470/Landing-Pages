@@ -1,0 +1,123 @@
+.swiper {
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+    background: #FFFFFF; /* Keeps background fixed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1; /* Keeps Swiper below the text */
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: transparent;
+}
+  .img-box {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden; /* Prevents content from overflowing */
+}
+
+.img-box div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+ margin-top: 40px;
+    color: white;
+    padding: 10px 15px;
+    text-align: left;
+    border-radius: 0 0 20px 20px;
+}
+
+.img-box h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.img-box p {
+    font-size: 14px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.img-box p::before {
+    content: "📍"; /* Location Icon */
+    margin-right: 5px;
+}
+
+
+
+  .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+  .swiper-buttons {
+    display: flex;
+    justify-content: flex-end; /* Aligns to the left */
+    gap: 10px; /* Adds spacing between buttons */
+    margin-bottom: 10px; /* Space between buttons and the <p> tag */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: static; /* Removes absolute positioning */
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #007aff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    border-radius: 12px;
+background: #DC143C;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Ensures elements are stacked properly */
+}
+
+.swiper-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.p-tag-destination {
+    position: relative;
+    z-index: 2; /* Ensures it's above Swiper */
+    color: #767E86;
+font-family: Rubik;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.slider-image {
+    width: 300px; /* Adjust this for responsiveness */
+    height: 600px;
+    border-radius: 20px;
+}
+
+.popular-destination{
+    color: #172432;
+font-family: "Playfair Display";
+font-size: 50px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

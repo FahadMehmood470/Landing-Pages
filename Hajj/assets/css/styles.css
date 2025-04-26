@@ -1,0 +1,745 @@
+.change-back {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.20) 100%), #E59C4E;
+    width: 100vw;
+    /* height: 100vh; */
+    padding-top: 1px;
+    /* Even 1px is enough to stop the margin collapse */
+
+}
+
+.Choose-umrah {
+    color: #FFF;
+    font-family: 'Judson';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Choose-umrah-p {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#umrah-swiper-btns .swiper-button-prev,
+#umrah-swiper-btns .swiper-button-next {
+    position: static !important;
+    width: 40px;
+    height: 40px;
+    background-color: #E59C4E;
+    border: 2px solid #FFF;
+    /* border-radius: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+}
+
+#umrah-swiper-btns .swiper-button-prev::after,
+#umrah-swiper-btns .swiper-button-next::after {
+    font-size: 16px;
+    /* Smaller arrow */
+}
+
+.color-white {
+    border-radius: 16px;
+    background: #FFF;
+}
+
+.custom-card-title {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.custom-services {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pound {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 34px;
+    margin-bottom: 0 !important;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 38px; */
+    /* 105.556% */
+}
+
+.pound-p {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.custom-package-info {
+    width: fit-content;
+}
+
+.city-namee {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.explore-button {
+    color: #FFF;
+    font-family: 'Judson';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: inline-flex;
+    height: 50px;
+    padding: 33px 59px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background-color: transparent;
+}
+
+.call-back-umrah {
+    background-color: white;
+
+}
+
+.blurr-overlay {
+    position: relative;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    padding: 30px;
+    overflow: hidden;
+}
+
+/* Add the background image to the .blurr-overlay via ::before pseudo-element */
+.blurr-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('../images/kaaba-in-black.jpg') center/cover no-repeat;
+    background-color: black;
+    z-index: -1;
+    /* opacity: 0.3; */
+    /* optional, adjust image visibility */
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.1);
+    /* semi-transparent */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    /* or black if background is light */
+    border-radius: 10px;
+
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.1);
+    /* semi-transparent */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    /* or black if background is light */
+}
+
+
+
+
+.form-control-custom {
+    padding: 15px 264px 16px 16px;
+}
+
+.form-control-number {
+    padding: 15px 16px;
+}
+
+
+.custom-heading {
+    color: #FFF;
+    font-family: 'Judson';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* 109.375% */
+}
+
+.custom-subtext {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-control::placeholder {
+    color: #AAA;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.Services {
+    width: 100vw;
+    background: #EBEBEB;
+}
+
+
+
+
+
+
+
+
+.custom-service-card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.custom-service-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.Services-title {
+    color: #000;
+    text-align: center;
+    font-family: 'Judson';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.service-title {
+    color: #000;
+    text-align: center;
+    font-family: 'Judson';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.service-description {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.custom-line {
+    width: 50%;
+    /* You can tweak this value to match heading width */
+    margin: 8px auto;
+    /* This centers it */
+    border: none;
+    height: 2px;
+    /* Optional: thickness */
+    background-color: #E8A846;
+    /* Your custom color */
+}
+
+.custome-margin-bottom {
+    margin-bottom: 100px;
+}
+
+.custome-margin-b {
+    margin-bottom: 50px;
+}
+
+.img-in-backround {
+    background-image: url(../images/Rectangle-kaaba.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+
+.package-affordabele {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.bg-wrapper {
+    background-image: url(../images/yellow-back.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    margin: 2rem;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 72%;
+    padding-bottom: 29.25%;
+    /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #000;
+    /* fallback */
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.Umrah {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.Umrah-p {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.experiance-us {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.accordian-heading {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.accordion-body {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.custom-border {
+    border: 1px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+    /* optional: ensures children don’t overflow rounded corners */
+}
+
+/* Fix for the accordion button overlapping the top border */
+.accordion-button {
+    border-top: none !important;
+    border-radius: 0 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #FFF !important;
+}
+
+.blogs {
+    background: #EBEBEB;
+}
+
+.read-now {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    width: 126px;
+    height: 36px;
+    padding: 8px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #F6B24A;
+    text-decoration: none;
+
+}
+
+.special-place {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.special-place-p {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.special-place-date {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.bg-img {
+    background-image: url(../images/kaabaGroup.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* border-radius: 30px; */
+    /* width: 100vw; */
+    /* height: 100vh; */
+}
+
+/* .bg-kaaba {
+    background-image: url(../images/taj.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    width: 590px;
+    height: 558px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+} */
+
+.kaaba-text h2 {
+
+    /* inset: 0;
+    display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    /* padding: 1rem; */
+    text-align: center;
+    color: white;
+    color: #FFF;
+    font-family: 'Judson';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Subscribe-btn {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    /* width: 398px; */
+    width: 100%;
+    height: 50px;
+    padding: 33px 59px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #DB8F51;
+    background: #F6B24A;
+}
+
+.translate {
+    transform: translate(-24%, -40%) !important;
+}
+
+.start-33 {
+    left: 33% !important;
+}
+
+.width-117 {
+    width: 140px;
+}
+
+.wattsapp-no {
+    color: #000;
+    text-align: center;
+    font-family: 'Lexend Exa';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.logo {
+    color: #000;
+    text-align: center;
+    font-family: 'Judson';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.custome-li {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.divider {
+    background: #000;
+    height: 1px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.all-rights {
+    color: #92989F;
+    text-align: center;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    /* 100% */
+    letter-spacing: 0.257px;
+}
+
+@media (max-width:1400px) {
+    .custom-card-title {
+        font-size: 26px;
+    }
+
+    .custom-package-info {
+        width: 50% !important;
+        margin-top: 0 !important;
+    }
+
+    .package-affordabele {
+        font-size: 35px;
+    }
+
+    .pound {}
+
+    .custom-services {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (max-width:1200px) {
+    .custom-services {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        font-size: 13px;
+    }
+
+    .custom-card-title {
+        font-size: 20px;
+    }
+
+    .pound {
+        font-size: 36px;
+    }
+
+    .package-affordabele {
+        font-size: 35px;
+    }
+
+    .video-wrapper {
+        width: 85%;
+        padding-bottom: 36.25%;
+
+    }
+
+    .experiance-us {
+        font-size: 32px;
+    }
+}
+
+@media (max-width:992px) {
+    .custom-services {
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+        font-size: 16px;
+    }
+
+    .custom-card-title {
+        font-size: 28px;
+    }
+
+    .pound {
+        font-size: 23px;
+    }
+
+    .custom-package-info {
+        width: 50% !important;
+        margin-top: 0 !important;
+    }
+
+    .Choose-umrah {
+        font-size: 40px;
+    }
+
+    .Choose-umrah-p {
+        font-size: 14px;
+    }
+
+    .custom-heading {
+        font-size: 53px;
+    }
+
+    .package-affordabele {
+        font-size: 31px;
+    }
+
+    .video-wrapper {
+        width: 100%;
+        padding-bottom: 54.25%;
+
+    }
+
+    .Umrah {
+        font-size: 36px;
+    }
+
+    .Umrah-p {
+        font-size: 19px;
+    }
+}
+
+@media (max-width:768px) {
+    .custom-heading {
+        font-size: 40px;
+    }
+
+    .package-affordabele {
+        font-size: 28px;
+    }
+
+    .experiance-us {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .kaaba-text h2 {
+        font-size: 23px;
+    }
+
+    .Subscribe-btn {
+        padding: 26px 59px;
+    }
+}
+
+@media (max-width:576px) {
+    .pound {
+        line-height: 11px;
+    }
+
+    .custom-services {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        font-size: 12px;
+    }
+
+    .custom-card-title {
+        font-size: 20px;
+    }
+
+    .pound {
+        font-size: 24px;
+    }
+
+    .Choose-umrah {
+        font-size: 36px;
+    }
+
+    .Choose-umrah-p {
+        font-size: 14px;
+    }
+
+    .custom-heading {
+        font-size: 35px;
+    }
+
+    .package-affordabele {
+        font-size: 22px;
+    }
+}

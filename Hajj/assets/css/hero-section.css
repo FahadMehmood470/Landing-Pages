@@ -1,0 +1,911 @@
+.hero-section {
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(14px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    border: 0.467px solid #FFF;
+    isolation: isolate;
+    /* Important */
+    overflow: visible;
+    /* Prevent clipping */
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 9999 !important;
+}
+
+.header {
+    position: relative;
+    z-index: 10;
+}
+
+
+.custome-margin-top {
+    margin-top: 5%;
+}
+
+.hero-subtitle-width {
+    width: 51%;
+}
+
+.hero-form-width {
+    width: 70%;
+
+}
+
+.swiper-slide {
+    width: 100%;
+}
+
+
+
+.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.explore-btn-btn {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: inline-flex;
+    height: 50px;
+    padding: 33px 59px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: transparent;
+}
+
+.hero-subtitle {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Judson';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.custom-label {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.explore-btn {
+    display: flex;
+    /* width: 196px; */
+    height: 45px;
+    padding: 20px 59px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #DB8F51;
+    background: #F6B24A;
+    color: #000;
+    font-family: 'Judson';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.input[type="radio"]:checked+label .star {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 4px gold);
+}
+
+
+.Popular-pkg {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-family: 'Judson';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.Popular-pkg-p {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.card-heading {
+    width: 99%;
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 40px; */
+    /* 111.111% */
+}
+
+.card-p {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.View-pkg {
+    display: inline-flex;
+    height: 36px;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border: #DB8F51;
+    border-radius: 6px;
+    background: #F6B24A;
+    color: #000;
+    font-family: 'Judson';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.top-30 {
+    top: 30%;
+}
+
+.img-fluid {
+    border-radius: 16px;
+}
+
+.whatsapp-container {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    margin-top: 20px;
+    bottom: 174px;
+    right: 67px;
+    background: white;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Expand effect when hovered */
+.whatsapp-container:hover .whatsapp-number {
+    opacity: 1;
+    width: 150px;
+    /* Adjust as needed */
+}
+
+.whatsapp-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.whatsapp-number {
+    white-space: nowrap;
+    font-size: 16px;
+    color: black;
+    /* padding-left: 10px; */
+    opacity: 0;
+    width: 0;
+    transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.holidays-btn {
+    font-family: 'Inter';
+    border: none;
+    box-shadow: 0px 2px 6.6px 0px rgba(0, 0, 0, 0.16), 0px 6px 10px 0px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(10px);
+}
+
+.custom-btn {
+    background: #F6B24A;
+    font-family: 'Inter';
+    color: white;
+    box-shadow: 0px 2px 6.6px 0px rgba(0, 0, 0, 0.16), 0px 6px 10px 0px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(10px);
+}
+
+.custom-btn.active {
+    background: #F6B24A;
+}
+
+.custom-button:hover {
+    background: #F6B24A;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6.6px 0px rgba(0, 0, 0, 0.16), 0px 6px 10px 0px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(10px);
+}
+
+.white-icon-dropdown {
+    background-image: url("../images/crevion-white.svg");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 26px 26px;
+    color: white;
+    background-color: #f9b854;
+    /* optional */
+}
+
+
+.custome-button {
+    background-color: #F6B24A;
+    font-family: 'Inter';
+    box-shadow: 0px 2px 6.6px 0px rgba(0, 0, 0, 0.16), 0px 6px 10px 0px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(10px);
+}
+
+.custome-button:hover {
+    background: white;
+    border-radius: 6px;
+    color: black;
+    border-radius: 10px;
+}
+
+
+.star-wrapper {
+    background-color: #F6B24A;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 6px;
+}
+
+.star {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url("../images/white-star.svg");
+    background-size: cover;
+    transition: background-image 0.3s;
+}
+
+.star-wrapper:hover {
+    background-color: #ffffff;
+}
+
+.star-wrapper:hover .star {
+    background-image: url("../images/yellow-star.svg");
+}
+
+.star-wrapper2 {
+    background-color: #ffffff;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 6px;
+
+}
+
+.star-wrapper2 .star {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url("../images/yellow-star.svg");
+    background-size: cover;
+    transition: background-image 0.3s;
+}
+
+.star-wrapper2:hover {
+    background-color: #F6B24A;
+}
+
+.star-wrapper2:hover .star {
+    background-image: url("../images/white-star.svg");
+}
+
+.section-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.img-stars {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.divider {}
+
+.custom-card {
+    /* width: 32.333%; */
+    border-radius: 16px;
+    border: 1px solid #F6B24A;
+    background: #FFF;
+    box-shadow: 0px 4.428px 17.712px 0px rgba(158, 158, 158, 0.25);
+}
+
+.gmail {
+    color: rgba(0, 0, 0, 0.85);
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 100% */
+    letter-spacing: 0.3px;
+}
+
+.callus {
+    color: rgba(0, 0, 0, 0.85);
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 100% */
+    letter-spacing: 0.3px;
+}
+
+.package-title {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.package-duration {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.city-name {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.days {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.facilisis {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: end;
+}
+
+.price {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    /* 105.556% */
+}
+
+.price-person {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.book-now-btn {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    width: 126px;
+    height: 36px;
+    padding: 8px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: #F6B24A;
+    background: #F6B24A;
+}
+
+.enquiry-btn {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: inline-flex;
+    height: 100px;
+    transform: rotate(-90deg);
+    padding: 12px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #DB8F51;
+    background: #F6B24A;
+
+}
+
+.custom-enquiry-button {
+    display: flex;
+    position: fixed;
+    right: 0;
+    width: 145px;
+    margin-top: 23px;
+    z-index: 9999;
+}
+
+.menu {
+    border-radius: 1px !important;
+}
+
+.fixed-top {
+    position: static !important;
+}
+
+.Ramadaan-pkg {
+    color: #FFF;
+    font-family: 'Judson';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.from-p {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.from-p-span {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.li-tag {
+    position: relative;
+    /* Needed for ::after */
+    text-decoration: none;
+    list-style: none;
+    color: #F6B24A;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    padding-bottom: 5px;
+    /* adds space between text and line */
+}
+
+.li-tag:hover {
+    color: black;
+}
+
+.li-tag::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.li-tag:hover::after {
+    width: 100%;
+}
+
+.margin-top-100 {
+    margin-top: 100px;
+}
+
+.iternary {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.place {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    /* 222.222% */
+}
+
+.stay-length {
+    color: #808080;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.day-heading {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 155.556% */
+}
+
+.day-description {
+    color: #808080;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.blurr-form {
+    border-radius: 30px;
+    border: 0.467px solid #FFF;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(14px);
+    width: 100%;
+    height: 881px;
+    flex-shrink: 0;
+}
+
+.book-seat {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Judson';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.book-seat-p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.back-form {
+    background-image: url(../images/kaaba-in-black.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+
+}
+
+.custom-placeholder::placeholder {
+    color: #AAA;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.Submit-btn {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    padding: 29px 59px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #DB8F51;
+    background: #F6B24A;
+}
+
+.margin-top-65 {
+    margin-top: 65px;
+}
+
+.hotels {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Transportation {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.transport-facilities {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.custom-section-title {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.custom-paragraph {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 155.556% */
+}
+
+.painted-posture {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    /* 150% */
+}
+
+.posture-name {
+    color: #F6B24A;
+    font-family: 'Judson';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.posture-location {
+    color: rgba(0, 0, 0, 0.21);
+    font-family: 'Inter';
+    font-size: 18.622px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+@media (max-width:1400px) {}
+
+@media (max-width:1200px) {
+    .card-heading {
+        font-size: 23px;
+    }
+
+    .card-p {
+        font-size: 14px;
+    }
+
+    .top-30 {
+        top: 23%;
+    }
+
+    .View-pkg {
+        font-size: 14px;
+    }
+
+    .custom-enquiry-button {
+        width: 190px;
+        margin-top: 77px;
+    }
+
+    .enquiry-btn {
+        font-size: 30px;
+        padding: 10px 28px;
+    }
+
+    .Ramadaan-pkg {
+        font-size: 50px;
+    }
+
+    .from-p {
+        font-size: 22px;
+    }
+
+    .from-p-span {
+        font-size: 50px;
+
+    }
+
+    .custome-li-alignments {
+        font-size: 21px;
+    }
+}
+
+
+
+
+@media (max-width:1100px) {
+    .hero-subtitle-width {
+        width: 100%;
+    }
+
+    .hero-form-width {
+        width: 100%;
+    }
+
+    .custom-enquiry-button {
+        width: 180px;
+    }
+
+    .enquiry-btn {
+        font-size: 28px;
+        padding: 8px 26px;
+    }
+
+
+}
+
+@media (max-width:992px) {
+    /* .section-box {
+        margin: 0px;
+    } */
+
+    .margin-on-small {
+        margin-inline-start: 20px;
+    }
+
+    .custom-enquiry-button {
+        width: 150px;
+    }
+
+    .enquiry-btn {
+        font-size: 25px;
+        padding: 8px 15px;
+    }
+
+    .Ramadaan-pkg {
+        font-size: 42px;
+    }
+
+    .from-p {
+        font-size: 20px;
+    }
+
+    .from-p-span {
+        font-size: 42px;
+
+    }
+}
+
+@media (max-width:667px) {
+    .hero-section {
+        width: 90%;
+    }
+
+    .hero-subtitle {
+        font-size: 29px;
+    }
+
+    .top-30 {
+        top: 33%;
+    }
+
+    .card-heading {
+        font-size: 33px;
+    }
+
+    .card-p {
+        font-size: 14px;
+    }
+
+    .custom-enquiry-button {
+        width: 142px;
+    }
+
+    .enquiry-btn {
+        font-size: 23px;
+        /* padding: 8px 15px; */
+        height: 80px;
+    }
+
+    .explore-btn {
+        font-size: 16px;
+    }
+
+    .Ramadaan-pkg {
+        font-size: 30px;
+    }
+
+    .from-p {
+        font-size: 18px;
+    }
+
+    .from-p-span {
+        font-size: 30px;
+
+    }
+
+    .transport-facilities {
+        font-size: 14px;
+    }
+}
