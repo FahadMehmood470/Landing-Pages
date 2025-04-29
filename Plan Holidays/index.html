@@ -1,13 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>My Tailwind Project</title>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> -->
+
+  <link rel="stylesheet" href="assets/css/index.css">
 </head>
+
 <body>
-  <div class="container mx-auto px-4">
-  
+  <div class="bg-white">
+    <div class="container mx-auto ">
+
+      <!-- Navbar -->
+      <nav class="mt-6 mb-5 flex items-center justify-between  display-block ">
+        <!-- Logo (left side) -->
+        <div class="flex items-center">
+          <h3 class="logo">Logo</h3>
+        </div>
+
+        <!-- Centered Icons (Destination, Packages, Hotels, Blog) -->
+        <div class="flex space-x-8">
+          <a href="#" class="nav-icon-nav hover:text-blue-500">
+            <i class="fas fa-map-marker-alt"></i> Destination
+          </a>
+          <a href="#" class="nav-icon-nav hover:text-blue-500">
+            <i class="fas fa-box-open"></i> Packages
+          </a>
+          <a href="#" class="nav-icon-nav hover:text-blue-500">
+            <i class="fas fa-hotel"></i> Hotels
+          </a>
+          <a href="#" class="nav-icon-nav hover:text-blue-500">
+            <i class="fas fa-blog"></i> Blog
+          </a>
+        </div>
+
+        <!-- Right side (Phone No & Signin Button) -->
+        <div class="flex items-center space-x-4">
+          <p class="nav-phone-number">
+            1800-123-5555
+          </p>
+          <a href="" class="btn-signin">Sign in</a>
+        </div>
+      </nav>
+
+
+
+      <!-- drawer init and toggle -->
+
+      <div class="display-none">
+        <div class="flex items-center justify-between ms-4 me-4 mt-6 mb-5">
+          <div class="flex items-center">
+            <h3 class="logo">Logo</h3>
+          </div>
+          <button
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            type="button" data-drawer-target="drawer-disabled-backdrop" data-drawer-show="drawer-disabled-backdrop"
+            data-drawer-backdrop="false" aria-controls="drawer-disabled-backdrop">
+            <i class="fas fa-bars"></i> <!-- Menu Icon -->
+          </button>
+
+        </div>
+
+        <!-- drawer component -->
+        <div id="drawer-disabled-backdrop"
+          class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800"
+          tabindex="-1" aria-labelledby="drawer-disabled-backdrop-label">
+          <h5 id="drawer-disabled-backdrop-label"
+            class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Menu</h5>
+          <button type="button" data-drawer-hide="drawer-disabled-backdrop" aria-controls="drawer-disabled-backdrop"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close menu</span>
+          </button>
+          <div class="py-4 overflow-y-auto">
+            <ul class="space-y-2 font-medium">
+              <li>
+                <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span class="ms-3">Destination</span>
+                </a>
+              </li>
+
+
+              <li>
+                <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <i class="fas fa-box-open"></i>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Packages</span>
+
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <i class="fas fa-hotel"></i>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Hotels</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <i class="fas fa-blog"></i>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Blog</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <svg
+                    class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3" />
+                  </svg>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Sign In</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <svg
+                    class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z" />
+                    <path
+                      d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z" />
+                    <path
+                      d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z" />
+                  </svg>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
   </div>
+
+  <div class="bg-hero p-1 ">
+    <div class="">
+      <div class="container mx-auto ">
+        <div class=" lg:mt-[144px] md:mt-[100px] sm:mt-[20px]">
+          <h3 class="make-tour">Let’s make a tour <span class="make-tour-span">Memorable the Convenient</span></h3>
+          <div class="mt-[32px] ">
+            <div class="form p-1">
+              <form class=" ms-[40px] me-[40px] mt-[62px] bg-white ">
+                <!-- Icons Section -->
+                <div class="  ">
+                  <i
+                    class="fas fa-map-marker-alt cursor-pointer text-gray-600 p-3 hover:border-b-2 hover:border-red-500 hover:text-[#FF626D]"></i>
+                  <i
+                    class="fas fa-plane cursor-pointer text-gray-600 p-3 hover:border-b-2 hover:border-red-500 hover:text-[#FF626D]"></i>
+                  <i
+                    class="fas fa-hotel cursor-pointer text-gray-600 p-3 hover:border-b-2 hover:border-red-500 hover:text-[#FF626D]"></i>
+                </div>
+
+                <!-- From Where Dropdown -->
+                <div class="form-input mt-[22px]">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="input-wrapper">
+                    <label for="from" class="from-where">From where</label>
+                    <div class="relative mb-4">
+                      <select id="from" name="from" class="w-full custom-select Destination">
+                        <option value="" disabled selected>Your Airport</option>
+                        <option value="airport1">Airport 1</option>
+                        <option value="airport2">Airport 2</option>
+                      </select>
+                      <span class="custom-icon">
+                        <i class="fas fa-chevron-down"></i> <!-- Your custom chevron down icon -->
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <!-- To Where Dropdown -->
+                <div class="form-input mt-[22px]">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="input-wrapper">
+                    <label for="from" class="from-where">To where</label>
+                    <div class="relative mb-4">
+                      <select id="from" name="from" class="w-full custom-select Destination">
+                        <option value="" disabled selected>Destination</option>
+                        <option value="airport1">Airport 1</option>
+                        <option value="airport2">Airport 2</option>
+                      </select>
+                      <span class="custom-icon">
+                        <i class="fas fa-chevron-down"></i> <!-- Your custom chevron down icon -->
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Departure and Return Dates -->
+                <div class="flex space-x-4 mt-[22px]">
+                  <!-- Departure Date -->
+                  <div class="form-input w-[48%]">
+                    <i class="fas fa-calendar-alt"></i> <!-- Icon for date -->
+                    <div class="input-wrapper">
+                      <label for="departure" class="from-where">Departure Date</label>
+                      <div class="relative mb-4">
+                        <input type="date" id="departure" name="departure" class="w-full custom-select">
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Return Date -->
+                  <div class="form-input w-[48%]">
+                    <i class="fas fa-calendar-alt"></i> <!-- Icon for date -->
+                    <div class="input-wrapper">
+                      <label for="return" class="from-where">Return Date</label>
+                      <div class="relative mb-4">
+                        <input type="date" id="return" name="return" class="w-full custom-select">
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Number of Guests -->
+                <div class="form-input mt-[22px]">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="input-wrapper">
+                    <label for="from" class="from-where">Number Of Guests</label>
+                    <div class="relative mb-4">
+                      <select id="from" name="from" class="w-full custom-select Destination">
+                        <option value="" disabled selected>3 Adults 2 Childeren</option>
+                        <option value="airport1">Airport 1</option>
+                        <option value="airport2">Airport 2</option>
+                      </select>
+                      <span class="custom-icon">
+                        <i class="fas fa-chevron-down"></i> <!-- Your custom chevron down icon -->
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="mt-[36px]">
+                  <button type="submit" class="Holidays-btn">
+                    Search Holidays
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto">
+    <div class="lg:mt-[120px] ms-4 me-4 mt-4 mb-4">
+      <h3 class="travel-inspiration">Browse Travel Theme Inspirations</h3>
+      <p class="travel-inspiration-p mt-4">Explore the best travel themes available for you, have the best travel experience</p>
+      <div class="flex flex-col md:flex-row mt-[40px] mb-[40px] align-item-on-small-screen">
+  
+        <!-- Left Side - Single Big Image -->
+        <div class="relative w-[364px] h-[364px] flex-shrink-0 mt-4">
+          <img class="w-full h-full object-cover rounded-lg" src="assets/images/Rectangle 75.jpg" alt="Big Image">
+          <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-white">
+            <h4 class="Holidays">Family Vacation</h4>
+            <i class="fas fa-arrow-right text-2xl"></i>
+          </div>
+        </div>
+  
+        <!-- Right Side - 2x2 Grid of Small Images -->
+        <div class="grid grid-cols-2 gap-2 ms-4 mt-sm-4 mb-sm-4 mt-4">
+          <div class="relative">
+            <img class="h-full w-full object-cover rounded-lg" src="assets/images/Rectangle 76.jpg" alt="Small Image 1">
+            <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-white">
+              <h4 class="Holidays">Friends Holidays</h4>
+              <i class="fas fa-arrow-right text-2xl"></i>
+            </div>
+          </div>
+          <div class="relative">
+            <img class="h-full w-full object-cover rounded-lg" src="assets/images/Rectangle 77.jpg" alt="Small Image 2">
+            <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-white">
+              <h4 class="Holidays">Honeymoon</h4>
+              <i class="fas fa-arrow-right text-2xl"></i>
+            </div>
+          </div>
+          <div class="relative">
+            <img class="h-full w-full object-cover rounded-lg" src="assets/images/Rectangle 78.jpg" alt="Small Image 3">
+            <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-white">
+              <h4 class="Holidays">Solo Trip</h4>
+              <i class="fas fa-arrow-right text-2xl"></i>
+            </div>
+          </div>
+          <div class="relative">
+            <img class="h-full w-full object-cover rounded-lg" src="assets/images/Rectangle 78.jpg" alt="Small Image 4">
+            <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-white">
+              <h4 class="Holidays">Adventure</h4>
+              <i class="fas fa-arrow-right text-2xl"></i>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div>
+        <a href="" class="explore-themes"> Explore all themes</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="container mx-auto">
+    <div class="lg:mt-[120px]">
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div class="absolute top-1/2 left-1/2 flex gap-4 -translate-x-1/2 -translate-y-1/2">
+          <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" class="h-40 w-40 object-cover rounded-lg" alt="Image 1">
+          <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" class="h-40 w-40 object-cover rounded-lg" alt="Image 2">
+          <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" class="h-40 w-40 object-cover rounded-lg" alt="Image 3">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
 </body>
+
 </html>

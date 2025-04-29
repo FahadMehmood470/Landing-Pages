@@ -1,0 +1,302 @@
+.logo {
+    color: #C02D63;
+
+    /* Heading/7 Bold */
+    font-family: 'Titillium Web';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 140%; */
+    /* 22.4px */
+}
+
+.nav-icon-nav {
+    color: var(--Gray-800, #607080);
+
+    /* Heading/7 Bold */
+    font-family: 'Titillium Web';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 140%; */
+    /* 22.4px */
+}
+
+.nav-phone-number {
+    color: var(--Gray-800, #607080);
+    font-family: 'Titillium Web';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    /* line-height: 140%; */
+    /* 33.6px */
+}
+
+.btn-signin {
+    color: #773A87;
+
+    /* Button/.fs -0 */
+    font-family: 'Titillium Web';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 140%; */
+    /* 22.4px */
+    display: flex;
+    padding: 7px 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 6px;
+    border: 1px solid #773A87;
+}
+
+.btn-signin:hover {
+    background-color: #773A87;
+    color: white;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
+
+.bg-hero {
+    background-image: url('../images/HeroSection.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Ensures the image covers the entire area */
+    /* height: 100vh; */
+}
+
+.make-tour {
+    color: #39434D;
+    font-family: 'Titillium Web';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    /* line-height: 70px; */
+    width: 50%;
+    /* 109.375% */
+}
+
+.make-tour-span {
+    color: #C02D63;
+    font-family: 'Titillium Web';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 70px; */
+    /* 109.375% */
+}
+
+.form {
+    width: 481px;
+    height: 582px;
+    flex-shrink: 0;
+    border-radius: 0px 40px 0px 0px;
+    background: #FFF;
+}
+
+
+
+.form-input {
+    display: flex;
+    /* width: 377px; */
+    padding: 0px 20px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #99B4CC;
+    background: #FFF;
+}
+
+.from-where {
+    color: rgba(57, 67, 77, 0.40);
+    font-family: 'Lato';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    /* line-height: 140%; */
+    /* 14px */
+}
+
+
+
+/* Custom Select Styles */
+.custom-select {
+    width: 100%;
+    background-color: white;
+    /* border: 1px solid #D1D5DB; */
+    padding: 0.rem 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    transition: border-color 0.3s;
+    appearance: none;
+    /* Remove default dropdown icon */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Focus styles for the select field */
+.custom-select:focus {
+    border-color: #FF626D;
+    /* Focus border color */
+}
+
+/* Custom Icon Styles */
+.custom-icon {
+    position: absolute;
+    right: 1rem;
+    /* Position the icon at the right */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4B5563;
+    /* Tailwind's gray-600 */
+    pointer-events: none;
+    /* Prevent clicks on the icon */
+}
+
+.input-wrapper {
+    width: 100%;
+}
+
+.Destination {
+    color: var(--Gray-1000, #39434D);
+
+    /* Body/.fs -0 */
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    /* line-height: 140%; */
+}
+
+.Holidays-btn {
+    color: var(--Theme-White, #FFFEFE);
+    font-family: "Titillium Web";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 140%; */
+    /* 28px */
+    display: flex;
+    /* width: 377px; */
+    width: 95%;
+    height: 62px;
+    padding: 7px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #763A87;
+}
+
+.travel-inspiration {
+    color: #262D33;
+    font-family: "Titillium Web";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 150% */
+}
+
+.travel-inspiration-p {
+    color: #99B4CC;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 125% */
+}
+
+.explore-themes {
+    color: #763A87;
+    font-family: "Titillium Web";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 28px */
+    display: flex;
+    width: 240px;
+    height: 62px;
+    padding: 7px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #763A87;
+}
+
+.explore-themes:hover {
+    background-color: #763A87;
+    color: white;
+}
+
+.explore-themes:active {
+    background-color: #763A87;
+    color: white;
+}
+.Holidays{
+    color: #FFF;
+font-family: "Titillium Web";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 33.6px */
+}
+@media (max-width:1400px) {
+    .make-tour {
+        font-size: 50px;
+        width: 80%;
+    }
+
+    .make-tour-span {
+        font-size: 50px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .make-tour {
+        width: 100%;
+    }
+    .Holidays{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:992px) {
+    .display-block {
+        display: none !important;
+    }
+
+    .display-none {
+        display: block;
+    }
+
+    .make-tour-span {
+        font-size: 30px;
+    }
+
+    .make-tour {
+        font-size: 30px;
+    }
+
+    .align-item-on-small-screen {
+        align-items: center;
+    }
+    .Holidays{
+        font-size: 18px;
+    }
+}
