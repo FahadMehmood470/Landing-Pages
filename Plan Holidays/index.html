@@ -6,10 +6,13 @@
   <title>My Tailwind Project</title>
   <link rel="stylesheet" href="assets/css/fonts.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> -->
 
   <link rel="stylesheet" href="assets/css/index.css">
+  <!-- Include Swiper.js CSS -->
 </head>
 
 <body>
@@ -149,7 +152,7 @@
     </div>
   </div>
 
-  <div class="bg-hero p-1 ">
+  <div class="bg-hero  overflow-hidden">
     <div class="">
       <div class="container mx-auto ">
         <div class=" lg:mt-[144px] md:mt-[100px] sm:mt-[20px]">
@@ -266,9 +269,10 @@
   <div class="container mx-auto">
     <div class="lg:mt-[120px] ms-4 me-4 mt-4 mb-4">
       <h3 class="travel-inspiration">Browse Travel Theme Inspirations</h3>
-      <p class="travel-inspiration-p mt-4">Explore the best travel themes available for you, have the best travel experience</p>
+      <p class="travel-inspiration-p mt-4">Explore the best travel themes available for you, have the best travel
+        experience</p>
       <div class="flex flex-col md:flex-row mt-[40px] mb-[40px] align-item-on-small-screen">
-  
+
         <!-- Left Side - Single Big Image -->
         <div class="relative w-[364px] h-[364px] flex-shrink-0 mt-4">
           <img class="w-full h-full object-cover rounded-lg" src="assets/images/Rectangle 75.jpg" alt="Big Image">
@@ -277,31 +281,31 @@
             <i class="fas fa-arrow-right text-2xl"></i>
           </div>
         </div>
-  
+
         <!-- Right Side - 2x2 Grid of Small Images -->
-        <div class="grid grid-cols-2 gap-2 ms-4 mt-sm-4 mb-sm-4 mt-4">
-          <div class="relative">
+        <div class="grid grid-cols-2 gap-2 ms-4 mt-sm-4 mb-sm-4 mt-4 w-full max-w-[740px]">
+          <div class="relative h-[140px] sm:h-[160px] md:h-[180px]">
             <img class="h-full w-full object-cover rounded-lg" src="assets/images/Rectangle 76.jpg" alt="Small Image 1">
             <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-white">
               <h4 class="Holidays">Friends Holidays</h4>
               <i class="fas fa-arrow-right text-2xl"></i>
             </div>
           </div>
-          <div class="relative">
+          <div class="relative h-[140px] sm:h-[160px] md:h-[180px]">
             <img class="h-full w-full object-cover rounded-lg" src="assets/images/Rectangle 77.jpg" alt="Small Image 2">
             <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-white">
               <h4 class="Holidays">Honeymoon</h4>
               <i class="fas fa-arrow-right text-2xl"></i>
             </div>
           </div>
-          <div class="relative">
+          <div class="relative h-[140px] sm:h-[160px] md:h-[180px]">
             <img class="h-full w-full object-cover rounded-lg" src="assets/images/Rectangle 78.jpg" alt="Small Image 3">
             <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-white">
               <h4 class="Holidays">Solo Trip</h4>
               <i class="fas fa-arrow-right text-2xl"></i>
             </div>
           </div>
-          <div class="relative">
+          <div class="relative h-[140px] sm:h-[160px] md:h-[180px]">
             <img class="h-full w-full object-cover rounded-lg" src="assets/images/Rectangle 78.jpg" alt="Small Image 4">
             <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-white">
               <h4 class="Holidays">Adventure</h4>
@@ -309,9 +313,9 @@
             </div>
           </div>
         </div>
-  
+
       </div>
-  
+
       <div>
         <a href="" class="explore-themes"> Explore all themes</a>
       </div>
@@ -320,18 +324,516 @@
 
 
 
+  <div class=" container mx-auto mt-12  ">
+    <h3 class="best-pkg mb-[40px]">Best Flash Packages for your next Holiday</h3>
+    <div class="swiper mySwiper ms-4 me-4">
+      <div class="swiper-wrapper ms-4 me-4">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="relative">
+            <img src="assets/images/Badges.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+            <div class="mt-5">
+              <h4 class="mermaid-beach me-5">Mermaid Beach Resort: The most joyful way to spend your holiday</h4>
+              <div class="flex items-center gap-2 mt-[22px]">
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country">Cox’s Bazar</span>
+                </div>
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country-days">4 days</span>
+                </div>
+              </div>
+              <div class=" mt-[22px]">
+                <p class="market-price">£200</p>
+                <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
+                <p class="discount mt-2">-15%</p>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
 
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="relative">
+            <img src="assets/images/Badges (1).jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+            <div class="mt-5">
+              <h4 class="mermaid-beach me-5">Mermaid Beach Resort: The most joyful way to spend your holiday</h4>
+              <div class="flex items-center gap-2 mt-[22px]">
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country">Cox’s Bazar</span>
+                </div>
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country-days">4 days</span>
+                </div>
+              </div>
+              <div class=" mt-[22px]">
+                <p class="market-price">£200</p>
+                <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
+                <p class="discount mt-2">-15%</p>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="relative">
+            <img src="assets/images/Badges (2).jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+            <div class="mt-5">
+              <h4 class="mermaid-beach me-5">Mermaid Beach Resort: The most joyful way to spend your holiday</h4>
+              <div class="flex items-center gap-2 mt-[22px]">
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country">Cox’s Bazar</span>
+                </div>
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country-days">4 days</span>
+                </div>
+              </div>
+              <div class=" mt-[22px]">
+                <p class="market-price">£200</p>
+                <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
+                <p class="discount mt-2">-15%</p>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <div class="relative">
+            <img src="assets/images/Badges.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+            <div class="mt-5">
+              <h4 class="mermaid-beach me-5">Mermaid Beach Resort: The most joyful way to spend your holiday</h4>
+              <div class="flex items-center gap-2 mt-[22px]">
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country">Cox’s Bazar</span>
+                </div>
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country-days">4 days</span>
+                </div>
+              </div>
+              <div class=" mt-[22px]">
+                <p class="market-price">£200</p>
+                <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
+                <p class="discount mt-2">-15%</p>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Slide 5 -->
+        <div class="swiper-slide ">
+          <div class="relative">
+            <img src="assets/images/Badges (2).jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+            <div class="mt-5">
+              <h4 class="mermaid-beach me-5">Mermaid Beach Resort: The most joyful way to spend your holiday</h4>
+              <div class="flex items-center gap-2 mt-[22px]">
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country">Cox’s Bazar</span>
+                </div>
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country-days">4 days</span>
+                </div>
+              </div>
+              <div class=" mt-[22px]">
+                <p class="market-price">£200</p>
+                <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
+                <p class="discount mt-2">-15%</p>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Navigation Buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
 
   <div class="container mx-auto">
-    <div class="lg:mt-[120px]">
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <div class="absolute top-1/2 left-1/2 flex gap-4 -translate-x-1/2 -translate-y-1/2">
-          <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" class="h-40 w-40 object-cover rounded-lg" alt="Image 1">
-          <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" class="h-40 w-40 object-cover rounded-lg" alt="Image 2">
-          <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" class="h-40 w-40 object-cover rounded-lg" alt="Image 3">
+    <div class="mt-5  sm:mt-[30px] lg:mt-[120px] md:mt-[60px]  ms-4 me-4  mb-4">
+
+      <h2 class="Trust-us text-center sm:text-left">Why Trust Us with Holidays</h2>
+      <p class="Trust-us-p text-center mt-2 sm:text-left">Explore the best travel themes available fot you, have a best
+        travel experience</p>
+      <div class="flex flex-wrap justify-center items-center mt-[40px] mb-[40px] gap-8">
+        <!-- Card 1 -->
+        <div class="text-center box">
+          <img src="assets/images/best-price.svg" alt="Best Price Guarantee" class="mx-auto mb-4">
+          <h2 class="guarantee-price">Best price guarantee</h2>
+          <p class="guarantee-price-p">Get the best hotel rates available online. Our low prices can't be beaten, that's
+            a promise!</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="text-center box">
+          <img src="assets/images/loveby.svg" alt="Loved by Millions" class="mx-auto mb-4">
+          <h2 class="guarantee-price">Loved by millions</h2>
+          <p class="guarantee-price-p">Join the 7 million people who've holidayed with us.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="text-center box">
+          <img src="assets/images/choosenow.svg" alt="Packaged by You" class="mx-auto mb-4">
+          <h2 class="guarantee-price">Packaged by us, Chosen by you</h2>
+          <p class="guarantee-price-p">Find your perfect holiday in a few simple taps, only designed as you want your
+            next trip.</p>
         </div>
       </div>
-      
+    </div>
+  </div>
+
+
+
+
+
+  <div class="bg-[#fcf4f7] py-16">
+    <div class="container mx-auto px-4">
+      <!-- Heading -->
+      <h2 class="Popular-destination mb-[40px] ">
+        Popular Destinations you would love to travel
+      </h2>
+
+      <!-- Cards Container -->
+      <div class="flex flex-wrap gap-[23px] justify-center">
+
+        <!-- Card 1 -->
+        <div class="relative rounded-lg overflow-hidden">
+          <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+          <div class="absolute bottom-4 left-4 text-white ml-9">
+            <h3 class="text-xl font-semibold mb-3">Agra</h3>
+            <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+            <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per person</span></p>
+          </div>
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="relative rounded-lg overflow-hidden">
+          <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+          <div class="absolute bottom-4 left-4 text-white ml-9">
+            <h3 class="text-xl font-semibold mb-3">Agra</h3>
+            <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+            <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per person</span></p>
+          </div>
+        </div>
+
+
+        <!-- Card 3 -->
+        <div class="relative rounded-lg overflow-hidden">
+          <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+          <div class="absolute bottom-4 left-4 text-white ml-9">
+            <h3 class="text-xl font-semibold mb-3">Agra</h3>
+            <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+            <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per person</span></p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Button -->
+      <div class="text-center mt-12">
+        <a href="#" class="explore-destination ">
+          Explore all Destinations
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bg-[#fcf4f7] py-16">
+    <div class="container mx-auto px-4">
+      <!-- Heading -->
+      <h2 class="Popular-destination mb-[40px] ">
+        Explore Popular Multi Centre Destinations
+      </h2>
+
+      <!-- Cards Container -->
+      <div class="flex flex-wrap gap-[23px] justify-center">
+
+        <!-- Card 1 -->
+        <div class="relative rounded-lg overflow-hidden">
+          <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+          <div class="absolute bottom-4 left-4 text-white ml-9">
+            <h3 class="text-xl font-semibold mb-3">Thailand Multi-Centre Holidays</h3>
+            <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+            <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per person</span></p>
+          </div>
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="relative rounded-lg overflow-hidden">
+          <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+          <div class="absolute bottom-4 left-4 text-white ml-9">
+            <h3 class="text-xl font-semibold mb-3">Dubai Multi-Centre Holidays</h3>
+            <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+            <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per person</span></p>
+          </div>
+        </div>
+
+
+        <!-- Card 3 -->
+        <div class="relative rounded-lg overflow-hidden">
+          <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+          <div class="absolute bottom-4 left-4 text-white ml-9">
+            <h3 class="text-xl font-semibold mb-3">Maldives Multi-Centre Holidays</h3>
+            <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+            <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per person</span></p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Button -->
+      <div class="text-center mt-12">
+        <a href="#" class="explore-destination ">
+          Explore all Destinations
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="bg-yellow overflow-hidden">
+    <div class="container mx-auto ">
+      <div class="flex flex-wrap justify-between mt-[60px] mb-4 ">
+        <div class="md:w-[100%] lg:w-[40%] ms-4 me-4 mt-4 mb-4">
+          <h3 class="">Couldn’t find what
+            you were looking for?</h3>
+          <p class="Experts mt-3">Our Experts would love to assist you on your next Travel Plan</p>
+          <div class="mt-[20px] sm:mt-[30px] md:mt-[60px] lg:mt-[120px] flex gap-1">
+            <p class="Experts-no"> 000 000 000</p> <span class="Experts-span mt-[42px]">24/7 Available - Call us</span>
+          </div>
+        </div>
+        <div class=" mt-[32px] mb-[32px] ">
+          <div class="form p-1 shadow-lg rounded-lg">
+            <form class=" ms-[40px] me-[40px] mt-[62px] bg-white ">
+              <!-- Icons Section -->
+
+              <!-- Name Input -->
+              <div class="form-input mt-[22px]">
+                <div class="input-wrapper">
+                  <label for="name" class="from-where">Full Name</label>
+                  <div class="relative mb-4">
+                    <input type="text" id="name" name="name" placeholder="Enter your name"
+                      class="w-full custom-select Destination">
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contact Number Input -->
+              <div class="form-input mt-[22px]">
+                <div class="input-wrapper">
+                  <label for="contact" class="from-where">Contact Number</label>
+                  <div class="relative mb-4">
+                    <input type="number" id="contact" name="contact" placeholder="Enter contact number"
+                      class="w-full custom-select Destination">
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Departure and Return Dates -->
+              <div class="form-input mt-[22px]">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="input-wrapper">
+                  <label for="from" class="from-where">To where</label>
+                  <div class="relative mb-4">
+                    <select id="from" name="from" class="w-full custom-select Destination">
+                      <option value="" disabled selected>Destination</option>
+                      <option value="airport1">Airport 1</option>
+                      <option value="airport2">Airport 2</option>
+                    </select>
+                    <span class="custom-icon">
+                      <i class="fas fa-chevron-down"></i> <!-- Your custom chevron down icon -->
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Number of Guests -->
+              <div class="form-input mt-[22px]">
+                <div class="input-wrapper">
+                  <label for="query" class="from-where">Write Your Query</label>
+                  <div class="relative mb-4">
+                    <textarea id="query" name="query" placeholder="Write your query here..."
+                      class="w-full custom-select Destination h-[82px] resize-none"></textarea>
+                    <span class="custom-icon">
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Submit Button -->
+              <div class="mt-[36px]">
+                <button type="submit" class="Holidays-btn">
+                  Search Holidays
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div class=" container mx-auto mt-12  ">
+    <h3 class="best-pkg mb-[40px]">Best Flash Packages for your next Holiday</h3>
+    <div class="swiper mySwiper2 ms-4 me-4">
+      <div class="swiper-wrapper ms-4 me-4">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="relative">
+            <img src="assets/images/Badges.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+            <div class="mt-5">
+              <h4 class="mermaid-beach me-5">Mermaid Beach Resort: The most joyful way to spend your holiday</h4>
+              <div class="flex items-center gap-2 mt-[22px]">
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country">Cox’s Bazar</span>
+                </div>
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country-days">4 days</span>
+                </div>
+              </div>
+              <div class=" mt-[22px]">
+                <p class="market-price">£200</p>
+                <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
+                <p class="discount mt-2">-15%</p>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="relative">
+            <img src="assets/images/Badges (1).jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+            <div class="mt-5">
+              <h4 class="mermaid-beach me-5">Mermaid Beach Resort: The most joyful way to spend your holiday</h4>
+              <div class="flex items-center gap-2 mt-[22px]">
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country">Cox’s Bazar</span>
+                </div>
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country-days">4 days</span>
+                </div>
+              </div>
+              <div class=" mt-[22px]">
+                <p class="market-price">£200</p>
+                <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
+                <p class="discount mt-2">-15%</p>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="relative">
+            <img src="assets/images/Badges (2).jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+            <div class="mt-5">
+              <h4 class="mermaid-beach me-5">Mermaid Beach Resort: The most joyful way to spend your holiday</h4>
+              <div class="flex items-center gap-2 mt-[22px]">
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country">Cox’s Bazar</span>
+                </div>
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country-days">4 days</span>
+                </div>
+              </div>
+              <div class=" mt-[22px]">
+                <p class="market-price">£200</p>
+                <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
+                <p class="discount mt-2">-15%</p>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <div class="relative">
+            <img src="assets/images/Badges.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+            <div class="mt-5">
+              <h4 class="mermaid-beach me-5">Mermaid Beach Resort: The most joyful way to spend your holiday</h4>
+              <div class="flex items-center gap-2 mt-[22px]">
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country">Cox’s Bazar</span>
+                </div>
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country-days">4 days</span>
+                </div>
+              </div>
+              <div class=" mt-[22px]">
+                <p class="market-price">£200</p>
+                <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
+                <p class="discount mt-2">-15%</p>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Slide 5 -->
+        <div class="swiper-slide ">
+          <div class="relative">
+            <img src="assets/images/Badges (2).jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+            <div class="mt-5">
+              <h4 class="mermaid-beach me-5">Mermaid Beach Resort: The most joyful way to spend your holiday</h4>
+              <div class="flex items-center gap-2 mt-[22px]">
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country">Cox’s Bazar</span>
+                </div>
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country-days">4 days</span>
+                </div>
+              </div>
+              <div class=" mt-[22px]">
+                <p class="market-price">£200</p>
+                <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
+                <p class="discount mt-2">-15%</p>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Navigation Buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
     </div>
   </div>
 
@@ -344,6 +846,112 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container mx-auto">
+    <div class="lg:mt-[120px]">
+
+
+    </div>
+  </div>
+
+  <!-- Include Swiper.js JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.mySwiper', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+
+    var swiper = new Swiper('.mySwiper2', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+
+
+
+
+
+
+
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 

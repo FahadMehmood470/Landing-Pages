@@ -79,7 +79,7 @@
     font-style: normal;
     font-weight: 400;
     /* line-height: 70px; */
-    width: 50%;
+    width: 68%;
     /* 109.375% */
 }
 
@@ -100,8 +100,6 @@
     border-radius: 0px 40px 0px 0px;
     background: #FFF;
 }
-
-
 
 .form-input {
     display: flex;
@@ -247,14 +245,345 @@
     background-color: #763A87;
     color: white;
 }
-.Holidays{
+
+.Holidays {
     color: #FFF;
-font-family: "Titillium Web";
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 140%; /* 33.6px */
+    font-family: "Titillium Web";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 33.6px */
 }
+
+.best-pkg {
+    color: var(--Gray-1100, #262D33);
+    font-family: "Titillium Web";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 150% */
+    text-align: center;
+}
+
+.mermaid-beach {
+    color: #39434D;
+    font-family: "Titillium Web";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 28px */
+}
+
+.market-price {
+    color: var(--Gray-900, #4C5A66);
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+    text-decoration-line: line-through;
+}
+
+.orignal-price {
+    color: #C02D63;
+
+    /* Body/.fs -3 Semibold */
+    font-family: 'Lato';
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%;
+    /* 43.4px */
+}
+
+.orignal-price-per {
+    color: var(--Gray-900, #4C5A66);
+
+    /* Heading/8 */
+    font-family: "Titillium Web";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 18.2px */
+}
+
+.discount {
+    color: #FF636D;
+
+    /* Body/.fs -0 */
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+.country {
+    color: #4C5A66;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+.country-days {
+    color: var(--Gray-900, #4C5A66);
+
+    /* Body/.fs -0 */
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #f2cbd6;
+    opacity: 1;
+    border-radius: 9999px;
+    margin: 0 4px;
+    transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    width: 42px;
+    background-color: #c02c61;
+}
+
+.Trust-us {
+    color: #262D33;
+    font-family: "Titillium Web";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 150% */
+}
+
+.Trust-us-p {
+    color: #99B4CC;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 125% */
+}
+
+.guarantee-price {
+    color: #39434D;
+    text-align: center;
+    font-family: "Titillium Web";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.guarantee-price-p {
+    color: #4C5A66;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 112.5% */
+}
+
+
+
+.box {
+    display: flex;
+    width: 292px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.bg-pink {
+    background-color: #FFEBF0;
+}
+
+.text-pink-600 {
+    color: #C02D63;
+}
+
+a:hover {
+    transition: all 0.3s ease;
+}
+
+.Popular-destination {
+    color: var(--Gray-1100, #262D33);
+    font-family: "Titillium Web";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 150% */
+    /* color: black; */
+    text-align: center;
+}
+
+.city-tour {
+    color: var(--Theme-White, #FFFEFE);
+
+    /* Heading/5 Bold */
+    font-family: "Titillium Web";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 35px */
+}
+
+.many-packages {
+    color: var(--Theme-White, #FFFEFE);
+
+    /* Body/.fs -0 */
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+.from {
+    color: var(--Theme-White, #FFFEFE);
+    font-family: 'Lato';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 18.2px */
+}
+
+.pound {
+    color: var(--Theme-White, #FFFEFE);
+
+    /* Body/.fs -3 Semibold */
+    font-family: 'Lato';
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%;
+}
+
+.per-person {
+    color: var(--Theme-White, #FFFEFE);
+
+    /* Heading/8 */
+    font-family: "Titillium Web";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 18.2px */
+}
+
+.explore-destination {
+    color: #763A87;
+    font-family: "Titillium Web";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 28px */
+    display: inline-flex;
+    height: 62px;
+    padding: 7px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #763A87;
+}
+
+.explore-destination:hover {
+    background-color: #763A87;
+    color: white;
+}
+
+.explore-destination:active {
+    background-color: #763A87;
+    color: white;
+}
+
+.bg-yellow {
+    background-color: #fffcf8;
+    /* opacity: 0.05; */
+    /* width: 1918px; */
+    /* height: 644px; */
+    flex-shrink: 0;
+}
+
+.bg-yellow h3 {
+    color: #39434D;
+    font-family: "Titillium Web";
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 68.6px */
+}
+
+.Experts {
+    color: #4C5A66;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+.Experts-no {
+    color: var(--Theme-White, #FFFEFE);
+    font-family: "Titillium Web";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 33.6px */
+    display: flex;
+    width: 204px;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 6px;
+    background: #FF636D;
+}
+
+.Experts-span {
+    color: #4C5A66;
+font-family: 'Lato';
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 16.8px */
+}
+
+@media (min-width:1536px) {
+    .container {
+        max-width: 1140px !important;
+    }
+}
+
 @media (max-width:1400px) {
     .make-tour {
         font-size: 50px;
@@ -271,8 +600,28 @@ line-height: 140%; /* 33.6px */
     .make-tour {
         width: 100%;
     }
-    .Holidays{
+
+    .Holidays {
         font-size: 20px;
+    }
+
+    .bg-yellow h3 {
+        font-size: 40px;
+    }
+    .Experts-no {
+        font-size: 20px;
+    } 
+    .Experts-span {
+        font-size: 10px;
+    }
+    .make-tour-span {
+        font-size: 40px;
+    }  
+    .Popular-destination {
+        font-size: 24px;
+    }
+    .travel-inspiration {
+        font-size: 28px;
     }
 }
 
@@ -296,7 +645,80 @@ line-height: 140%; /* 33.6px */
     .align-item-on-small-screen {
         align-items: center;
     }
-    .Holidays{
+
+    .Holidays {
         font-size: 18px;
+    }
+
+    .travel-inspiration {
+        font-size: 24px;
+    }
+
+    .travel-inspiration-p {
+        font-size: 14px;
+    }
+
+    .best-pkg {
+        font-size: 24px;
+    }
+
+    .mermaid-beach {
+        font-size: 16px;
+    }
+    .bg-yellow h3 {
+        font-size: 30px;
+    }
+    .Experts-no {
+        font-size: 20px;
+    }
+    .Popular-destination {
+        font-size: 20px;
+    }
+    .city-tour {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:768px) {
+    .make-tour {
+        font-size: 24px;
+    }
+
+    .make-tour-span {
+        font-size: 24px;
+    }
+
+    .Holidays {
+        font-size: 16px;
+    }
+
+    .box {
+        width: 100%;
+    }
+    .bg-yellow h3 {
+        font-size: 24px;
+    }
+    .Experts-no {
+        font-size: 16px;
+    } 
+    .Popular-destination {
+        font-size: 18px;
+    }
+    .travel-inspiration {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:640px) {
+    .make-tour {
+        font-size: 20px;
+    }
+
+    .make-tour-span {
+        font-size: 20px;
+    }
+
+    .Holidays {
+        font-size: 14px;
     }
 }
