@@ -1,0 +1,546 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+
+
+.Logo {
+    color: #FFF;
+    text-align: center;
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 64px */
+}
+
+.background-image {
+    background-image: url('../images/kaaba.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* or at least some height */
+}
+
+.devine-journy {
+    color: var(--text-primary, #FACE8D);
+    font-family: "Bitter Rose DEMO";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%;
+}
+
+.makkah-p {
+    color: var(--text-default, #FFF);
+    font-family: "Century Gothic";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.buttons-background {
+    display: inline-flex;
+    padding: 10px;
+    align-items: center;
+    gap: 32px;
+    border-radius: 100px;
+    background: #FFF;
+}
+
+.Umrah-button {
+    color: var(--text-inverse, #081212);
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 100px;
+    border: #ECECEC;
+    text-decoration: none;
+}
+
+.hajj-button {
+    color: var(--text-inverse, #081212);
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 100px;
+    background: #FFF;
+    border: #FFF solid 1px;
+    text-decoration: none;
+}
+
+.book-pakage {
+    display: flex;
+    padding: 16px 24px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 100px;
+    border: #111 solid 1px;
+    background: #111;
+    color: var(--text-default, #FFF);
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.Umrah-button:hover {
+    background: #111;
+    color: #FFF;
+    /* font-size: 18px; */
+
+}
+
+.hajj-button:hover {
+    background: #111;
+    color: #FFF;
+    border: #FFF solid 1px;
+    /* font-size: 18px; */
+
+}
+
+.book-pakage:hover {
+    color: #FACE8D;
+    /* font-size: 16px; */
+}
+
+.custome-margin-top-100px {
+    margin-top: 100px;
+}
+
+.custome-margin-top-150px {
+    margin-top: 250px;
+}
+
+.custome-margin-bottom {
+    margin-bottom: 100px;
+}
+
+.phone-no a:link,.phone-no a:visited,.phone-no a:active{
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    text-decoration: none;
+}
+
+.phone-no a:hover{
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.background-color {
+    background-color: black;
+
+}
+
+.custome-li-alignments {
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.80);
+
+}
+
+.custome-li-umrah {
+    color: #FACE8D;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.custome-li-alignments:hover {
+    color: #FACE8D;
+    transition: 0.4s ease-in-out;
+}
+
+.custome-li-umrah:hover {
+    color: rgba(255, 255, 255, 0.80);
+    transition: 0.4s ease-in-out;
+    font-size: 18px;
+}
+
+.book-umrah {
+    color: var(--text-default, #FFF);
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 40px */
+}
+
+.book-umrah-p {
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+
+    /* text/large */
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 32px */
+}
+
+.form-control {
+    width: 90%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid var(--border-default, rgba(255, 255, 255, 0.20));
+}
+
+.form-control:focus {
+    background-color: black;
+    color: #FFF;
+}
+
+.form-control::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.enquire-now {
+    display: flex;
+    /* width: 376px; */
+    width: 90%;
+    height: 50px;
+    padding: 20px 95px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 500px;
+    background: var(--background-primary, #F8D49E);
+    box-shadow: 0px 0px 8.6px 0px rgba(5, 5, 5, 0.30);
+    color: var(--text-inverse, #081212);
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"%3E%3C/path%3E%3C/svg%3E') !important;
+    width: 35px;
+}
+
+.offcanvas {
+    background-color: black;
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    padding: 0px;
+}
+
+.offcanvas-header .btn-close {
+    filter: invert(1);
+}
+
+.navbar-nav {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.backround-image {
+    background-image: url(../images/kaaba.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 27vh;
+    /* Ensures the container is at least the height of the viewport */
+    overflow: hidden;
+}
+
+.fixed-top {
+    top: 91px;
+    position: absolute;
+}
+
+.line {
+    width: 376px;
+    height: 0.5px;
+    background: rgba(255, 255, 255, 0.50);
+    margin-top: 130px;
+}
+
+.phone-no {
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.phone-no-company {
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+
+.blur-wattsapp-img {
+    width: 69px;
+    height: 69px;
+    flex-shrink: 0;
+    fill: #F8D49E;
+}
+
+.wattsapp-icon {
+    width: 33px;
+    height: 33px;
+    flex-shrink: 0;
+    fill: #F8D49E;
+}
+
+.scrollable-section {
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+@media (max-width: 1300px) {
+
+    .custome-margin-top-150px {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width: 1400px) {
+
+    .custome-margin-top-150px {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .makkah-p {
+        font-size: 50px;
+    }
+
+    .custome-margin-top-150px {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width:992px) {
+    .display-n {
+        display: block !important;
+    }
+
+    .display-b {
+        display: none;
+    }
+
+    .background-image {
+        background-image: url('../images/kaaba.png');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+
+    .devine-journy {
+        font-size: 50px;
+    }
+
+
+
+    .Logo {
+        font-size: 30px;
+    }
+
+    .phone-no {
+        font-size: 30px;
+    }
+
+    .book-umrah {
+        font-size: 20px;
+    }
+
+    .book-umrah-p {
+        font-size: 16px;
+    }
+
+    .phone-no-company {
+        font-size: 20px;
+    }
+
+    .phone-no {
+        font-size: 25px;
+    }
+
+    .devine-journy {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-control {
+        width: 100% !important;
+    }
+
+    .nav-link {
+        color: white !important;
+    }
+
+    .nav-link:hover {
+        color: #F8D49E !important;
+        font-size: 20px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .scrollable-section {
+        max-height: none;
+    }
+}
+
+.display-n {
+    display: none;
+}
+
+.footer-logo {
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90%;
+    /* 28.8px */
+}
+
+.author-info {
+    color: #FFF;
+
+    /* text/small */
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 19.6px */
+}
+
+.footer-heading {
+    color: var(--text-default, #FFF);
+
+    /* heading/h6 */
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 28.8px */
+}
+
+.footer-link {
+    align-self: stretch;
+    color: #FFF;
+
+    /* text/default */
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 160%;
+    /* 25.6px */
+}
+
+.footer-link:hover {
+    color: #FACE8D;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.footer-phone {
+    color: #FACE8D;
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    text-decoration: none;
+    /* 166.667% */
+}
+.footer-phone a:link,.footer-phone a:visited,.footer-phone a:active {
+    color: #FACE8D;
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    text-decoration: none;
+    /* 166.667% */
+}
+
+.footer-phone:hover {
+    color: #FACE8D;
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    text-decoration: none;
+    /* 166.667% */
+}
+
+.footer-email {
+    color: var(--text-default, #FFF);
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.custome-margin-top-100px h2 { color: #fff !important; font-family: "Century Gothic"; font-size: 24px; }
+.custome-margin-top-100px p { color: #fff !important; font-family: "Century Gothic"; }

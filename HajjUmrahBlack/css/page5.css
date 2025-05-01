@@ -1,0 +1,565 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+
+
+.backround-image {
+    background-image: url(../images/masjid.jpg);
+    background-size: cover;
+    background-position: center;
+    /* min-width: 100vw; */
+    /* min-height: 85vh; */
+    display: flex;
+}
+
+.Logo {
+    color: #FFF;
+    text-align: center;
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 64px */
+}
+
+.custome-margin-top {
+    margin-top: 10%;
+}
+
+.blrr-background {
+    width: 632px;
+    height: 370px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8.100000381469727px);
+}
+
+
+
+.video-border {
+    border-radius: 16px;
+    height: 200%;
+    width: 100%;
+}
+
+/* .ratio {
+    height: 66%;
+} */
+
+.customer-review {
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 38.4px */
+}
+
+.img-2 {
+    background-blend-mode: plus-lighter;
+    flex-shrink: 0;
+    aspect-ratio: 62/13;
+}
+
+.Customer-in-no {
+    color: var(--text-primary, #FACE8D);
+    font-family: "Century Gothic";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    /* 187.5% */
+}
+
+.Customer {
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.beat-price-btn {
+    display: flex;
+    width: 94%;
+    padding: 20px 78px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 500px;
+    background: var(--background-primary, #F8D49E);
+    box-shadow: 0px 0px 8.6px 0px rgba(5, 5, 5, 0.30);
+    color: var(--text-inverse, #081212);
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.Available {
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 100% */
+}
+.phone-no {
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.phone-no a:link,.phone-no a:visited,.phone-no a:active{
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    text-decoration: none;
+}
+
+.phone-no a:hover{
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.phone-no-company {
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+.blur-wattsapp-img {
+    width: 69px;
+    height: 69px;
+    flex-shrink: 0;
+    fill: #F8D49E;
+}
+.custome-li-alignments {
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.80);
+
+}
+
+.custome-li-umrah {
+    color: #FACE8D;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.custome-li-alignments:hover {
+    color: #FACE8D;
+    transition: 0.4s ease-in-out;
+    /* font-size: 17px; */
+}
+
+.custome-li-umrah:hover {
+    color: rgba(255, 255, 255, 0.80);
+    transition: 0.4s ease-in-out;
+    font-size: 18px;
+}   
+.Latest-blog{
+    color: var(--text-default, #FFF);
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 40px */
+}
+.Latest-blog-p{
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+
+    /* text/large */
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+}
+.umrah-blog{
+    color: var(--text-default, #FFF);
+    /* text/large */
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+}
+
+.umrah-blog a:link,.umrah-blog a:visited,.umrah-blog a:active {
+    color: var(--text-default, #FFF);
+    /* text/large */
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+    text-decoration: none;
+}
+
+.umrah-blog a:hover{
+    color: #FACE8D;
+}
+
+
+.umrah-blog-p{
+    color: #FFF;
+
+    /* text/default */
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+}
+.show-more-link {
+    align-self: stretch;
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+    text-align: center;
+
+    /* text/large */
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 32px */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.show-more-link:hover {
+    color: #FACE8D;
+    font-size: 23px;
+    transition: 0.4s ease-in-out;
+}
+
+.custom-mb {
+    margin-bottom: 5rem;
+    /* or any value you need */
+}
+.custom-mt {
+    margin-top: 5rem;
+    /* or any value you need */
+}
+.footer-logo {
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90%;
+    /* 28.8px */
+}
+
+.author-info {
+    color: #FFF;
+
+    /* text/small */
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 19.6px */
+}
+.footer-heading {
+    color: var(--text-default, #FFF);
+
+    /* heading/h6 */
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 28.8px */
+}
+
+.footer-link {
+    align-self: stretch;
+    color: #FFF;
+
+    /* text/default */
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 160%;
+    /* 25.6px */
+}
+
+.footer-link:hover {
+    color: #FACE8D;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.footer-phone {
+    color: #FACE8D;
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    text-decoration: none;
+    /* 166.667% */
+}
+.footer-phone a:link,.footer-phone a:visited,.footer-phone a:active {
+    color: #FACE8D;
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    text-decoration: none;
+    /* 166.667% */
+}
+
+.footer-phone:hover {
+    color: #FACE8D;
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    text-decoration: none;
+    /* 166.667% */
+}
+
+.footer-email {
+    color: var(--text-default, #FFF);
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-decoration: none;
+}
+.scrollable-section {
+    max-height: 100vh;
+    overflow-y: auto;
+}
+.display-none {
+    display: none;
+}
+.display-block {
+    display: block;
+}
+.offcanvas {
+    background-color: black;
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    padding: 0px;
+}
+
+.offcanvas-header .btn-close {
+    filter: invert(1);
+}
+@media(max-width:992px){
+  
+    .scrollable-section {
+        max-height: none;
+    }
+
+    .display-none {
+        display: block !important;
+    }
+    .display-block {
+        display: none !important; ;
+    }
+    .Logo {
+        font-size: 30px;
+    }
+    .phone-no-company {
+        font-size: 20px;
+    }
+    .phone-no {
+        font-size: 25px;
+    }
+    .fixed-top {
+        top: 91px;
+        position: absolute;
+    }
+    .line {
+        width: 100%;
+        height: 0.5px;
+        background: rgba(255, 255, 255, 0.50);
+        margin-top: 130px;
+    }
+    
+.devine-journy {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    color: var(--text-primary, #FACE8D);
+    font-family: "Bitter Rose DEMO";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%;
+}
+.nav-link{
+    color: white !important;
+}
+.nav-link:hover{
+    color: #F8D49E !important;
+    transition: 0.5s ease-in-out;
+}
+}
+@media (max-width:667px) {
+   .umrah-blog{
+    font-size: 14px;
+    line-height: 160%;
+    /* 32px */
+   } 
+    .umrah-blog-p{
+     font-size: 10px;
+     line-height: 160%;
+     /* 25.6px */
+    }
+}
+@media (max-width:576px) {
+    .umrah-blog{
+        font-size: 10px;
+        line-height: 160%;
+        /* 32px */
+    }
+    .umrah-blog-p{
+        font-size: 8px;
+        line-height: 160%;
+        /* 25.6px */
+    }
+}
+@media (max-width:1500px){
+    .blrr-background {
+      width: 570px;
+      height: 340px;
+      flex-shrink: 0;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(8.100000381469727px);
+    }
+    .customer-review {
+        font-size: 20px;
+    }
+    .Customer-in-no {
+        font-size: 28px;
+    }
+    .Customer {
+        font-size: 14px;
+    }
+  
+}
+@media (max-width:1400px){
+    .blrr-background {
+        width: 500px;
+        height: 300px;
+        flex-shrink: 0;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(8.100000381469727px);
+    }
+    .customer-review {
+        font-size: 18px;
+    }
+    .Customer-in-no {
+        font-size: 26px;
+    }
+    .Customer {
+        font-size: 14px;
+    }
+  
+}
+@media (max-width:1300px){
+    .blrr-background {
+        width: 470px;
+        height: 285px;
+        flex-shrink: 0;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(8.100000381469727px);
+    }
+    .customer-review {
+        font-size: 16px;
+    }
+    .Customer-in-no {
+        font-size: 24px;
+    }  
+    .Customer {
+        font-size: 14px;
+    }
+  
+}
+@media (max-width:1200px){
+    .blrr-background {
+        width: 470px;
+        height: 278px;
+        flex-shrink: 0;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(8.100000381469727px);
+    }
+    .customer-review {
+        font-size: 16px;
+    }
+    .Customer-in-no {
+        font-size: 24px;
+    }
+    .Customer {
+        font-size: 14px;
+    }
+  
+}
+@media(max-width:1100px){
+    .blrr-background {
+        width: 388px;
+        height: 278px;
+        flex-shrink: 0;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(8.100000381469727px);
+    }
+    .Customer-in-no {
+        font-size: 18px;
+    }
+    .Customer {
+        font-size: 12px;
+    }
+    .img-2{
+        width: 91%;
+    }
+    .footer-email{
+        font-size: 16px;
+    }
+}
