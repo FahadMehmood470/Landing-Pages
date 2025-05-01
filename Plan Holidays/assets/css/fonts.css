@@ -23,5 +23,16 @@
     font-display: swap;
 }
 
-
+@font-face {
+    font-family: 'Titillium';
+    src: url('Titillium-Regular.eot');
+    src: url('Titillium-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Titillium-Regular.woff2') format('woff2'),
+        url('Titillium-Regular.woff') format('woff'),
+        url('Titillium-Regular.ttf') format('truetype'),
+        url('Titillium-Regular.svg#Titillium-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
