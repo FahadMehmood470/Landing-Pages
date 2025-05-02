@@ -1,0 +1,100 @@
+.img-class {
+    max-width: 72%;
+}
+
+.select-month {
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+
+    /* text/large */
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+}
+
+
+.selected-month {
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 160%;
+}
+
+.add-to-compare{
+    color: #FFF;
+text-align: center;
+font-family: "Century Gothic";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+cursor: pointer;
+}
+.add-to-compare2{
+    color: #6BAD00;
+text-align: center;
+font-family: "Century Gothic";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+cursor: pointer;
+}
+.pointer{
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .img-class {
+        max-width: 100%;
+    }
+    .select-month {
+        font-size: 16px;
+    }
+    .selected-month {
+        font-size: 16px;
+    }
+    .add-to-compare{
+        font-size: 14px;
+    }
+    .add-to-compare2{
+        font-size: 14px;
+    }
+}
+@media (max-width: 576px) {
+    .img-class {
+        max-width: 100%;
+    }
+    .select-month {
+        font-size: 14px;
+    }
+    .selected-month {
+        font-size: 14px;
+    }
+    .add-to-compare{
+        font-size: 12px;
+    }
+    .add-to-compare2{
+        font-size: 12px;
+    }
+}
+@media (max-width: 480px) {
+    .img-class {
+        max-width: 100%;
+    }
+    .select-month {
+        font-size: 12px;
+    }
+    .selected-month {
+        font-size: 12px;
+    }
+    .add-to-compare{
+        font-size: 10px;
+    }   
+    .add-to-compare2{
+        font-size: 10px;
+    }
+}

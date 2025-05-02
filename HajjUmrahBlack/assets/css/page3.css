@@ -1,46 +1,110 @@
-.form-check-input:checked {
-    background-color: #FACE8D;
-    border-color: #FACE8D;
+#enquirymodal .modal-content { background: transparent !important; }    
+/* Modal Content Styling */
+.custom-modal-content {
+background-color: #000;
+margin: 0 auto;
+padding: 10px;
+border-radius: 12px;
+width: 100%;
+/* Full width for smaller screens */
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+position: relative;
+color: white;
+z-index: 10000;
 }
 
-    #enquirymodal .modal-content { background: transparent !important; }    
-    /* Modal Content Styling */
-    .custom-modal-content {
-    background-color: #000;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 12px;
+
+/* Close Button */
+.close-btn {
+position: absolute;
+right: 37px;
+top: 28px;
+font-size: 28px;
+color: white;
+cursor: pointer;
+z-index: 90;
+}
+
+/* Form Inputs */
+.input-filds {
+width: 100%;
+padding: 10px;
+border-radius: 8px;
+border: 1px solid #ddd;
+margin: 8px 0;
+font-size: 14px;
+}
+
+.all-btn2{
+    color: var(--text-inverse, #081212);
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    height: 60px;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: var(--background-primary, #272727);
+    color: #FFF;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.all-btn2 {
+    background: var(--background-primary, #F8D49E);
+    color: var(--text-inverse, #081212);
+}
+
+
+
+.hotel-image { width: 190px; height: 140px; overflow: hidden; }
+
+
+.background-color {
+    background: #050505;
+    /* min-height: 1700px; */
     width: 100%;
-    /* Full width for smaller screens */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    position: relative;
-    color: white;
-    z-index: 10000;
-    }
-    
-  
-    /* Close Button */
-    .close-btn {
-    position: absolute;
-    right: 37px;
-    top: 28px;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-    z-index: 90;
-    }
-    
-    /* Form Inputs */
-    .input-filds {
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    margin: 8px 0;
-    font-size: 14px;
-    }
-    
-    body {
+    height: 100vh;
+    overflow: hidden;
+    /* width: 1905px; */
+    /* height: 1700px; */
+
+}
+
+.backround-image {
+    /* background-image: url(../images/rain-on-kabba.jpg); */
+    /* width: 888px;
+    height: 1080px;
+    flex-shrink: 0; */
+    /* opacity: 0.6; */
+    background: url(../images/package-details.jpg) lightgray 50% / cover no-repeat;
+}
+
+
+.Logo {
+    color: #FFF;
+    text-align: center;
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 64px */
+}
+
+.scrollable-section {
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+body {
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -54,64 +118,6 @@
     /* background-color: #050505; */
 }
 
-.navbar-toggler:focus{ box-shadow: 0 0 0 0; }
-
-.background-color {
-    background: #050505;
-    /* min-height: 1700px; */
-    width: 100%;
-    height: auto;
-    /* width: 1905px; */
-    /* height: 1700px; */
-}
-
-.Logo {
-    color: #FFF;
-    text-align: center;
-    font-family: "Century Gothic";
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    /* 64px */
-}
-
-.custome-li-alignments {
-    font-family: "Century Gothic";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    color: rgba(255, 255, 255, 0.80);
-
-}
-
-.custome-li-umrah {
-    color: #FACE8D;
-    font-family: "Century Gothic";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-}
-
-.custome-li-alignments:hover {
-    color: #FACE8D;
-    transition: 0.4s ease-in-out;
-
-}
-
-.custome-li-umrah:hover {
-    color: rgba(255, 255, 255, 0.80);
-    transition: 0.4s ease-in-out;
-    font-size: 18px;
-}
-
-.backround-image {
-    background-image: url(../images/umrah-packages-banner.jpg);
-    background-position: top center;
-    background-repeat: no-repeat;
-}
 .enquire-for-umrah {
     color: var(--text-primary, #FACE8D);
     font-family: "Bitter Rose DEMO";
@@ -140,7 +146,18 @@
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(8.100000381469727px);
-    margin-inline: 14rem;
+    margin-inline: 11rem;
+}
+
+.custome-label {
+    width: 419px;
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+    font-family: "Century Gothic";
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 22.4px */
 }
 
 .input-filds {
@@ -174,16 +191,6 @@
     color: #FFF;
 }
 
-
-.custome-label {
-    color: var(--text-muted, rgba(255, 255, 255, 0.80));
-    font-family: "Century Gothic";
-    font-size: 14px !important;
-    font-style: normal;
-    font-weight: 400;
-    /* 22.4px */
-}
-
 .input-filds:focus {
     color: white;
     background-color: inherit;
@@ -204,8 +211,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     display: flex;
-    /* width: 419px; */
-    width: 90%;
+    width: 100%;
     height: 60px;
     padding: 16px 24px;
     justify-content: center;
@@ -219,8 +225,8 @@
 
 .beat-price-btn {
     display: flex;
-    width: 66%;
-    padding: 20px 78px;
+    width: 584px;
+    padding: 20px 95px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -277,7 +283,6 @@
 }
 
 
-
 .phone-no-company {
     color: #FFF;
     font-family: "Century Gothic";
@@ -294,7 +299,76 @@
     fill: #F8D49E;
 }
 
-.affordable-umrah {
+.custome-li-alignments {
+    font-family: "Century Gothic";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.80);
+
+}
+
+.custome-li-umrah {
+    color: #FACE8D;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.custome-li-alignments:hover {
+    color: #FACE8D;
+    transition: 0.4s ease-in-out;
+    /* font-size: 17px; */
+}
+
+.custome-li-umrah:hover {
+    color: rgba(255, 255, 255, 0.80);
+    transition: 0.4s ease-in-out;
+    font-size: 18px;
+}
+
+.umrah-package {
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+    text-align: center;
+    /* text/default */
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 25.6px */
+}
+
+.umrah-package a:link,.umrah-package a:visited,.umrah-package a:active{
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+    text-align: center;
+    /* text/default */
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-decoration: none;
+    /* 25.6px */
+}
+
+.umrah-package a:hover{
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+    text-align: center;
+    /* text/default */
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-decoration: none;
+    /* 25.6px */
+}
+
+.seat-reserve {
     color: var(--text-default, #FFF);
     font-family: "Century Gothic";
     font-size: 40px;
@@ -302,107 +376,138 @@
     font-weight: 400;
     line-height: 100%;
     /* 40px */
+    width: 560px;
 }
 
-.wattsapp-icon {
-    width: 69px;
-    height: 69px;
-    flex-shrink: 0;
-    fill: #F8D49E;
-}
-
-.scrollable-dropdown {
-    max-height: 200px;
-    overflow-y: auto;
-}
-
-.all-btn2{
-    color: var(--text-inverse, #081212);
-    font-family: "Century Gothic";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    display: flex;
-    height: 60px;
-    padding: 0 20px;
-    justify-content: center;
-    align-items: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background: var(--background-primary, #272727);
-    color: #FFF;
-    border: none;
-    transition: all 0.3s ease-in-out;
-}
-.all-btn2 {
-    background: var(--background-primary, #F8D49E);
-    color: var(--text-inverse, #081212);
-}
-
-.all-btn,
-.month-btn,
-.holiday-btn {
-    color: var(--text-inverse, #081212);
-    font-family: "Century Gothic";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    display: flex;
-    height: 60px;
-    padding: 0 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 500px;
-    background: var(--background-primary, #272727);
-    color: #FFF;
-    border: none;
-    transition: all 0.3s ease-in-out;
-}
-
-.all-btn {
-    background: var(--background-primary, #F8D49E);
-    color: var(--text-inverse, #081212);
-}
-
-.all-btn:hover,
-.month-btn:hover,
-.holiday-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.chevron-down {
-    width: 16px;
-    height: 16px;
-}
-
-/* @media (max-width: 768px) {
-
-    .all-btn,
-    .month-btn,
-    .holiday-btn {
-        height: 50px;
-        font-size: 14px;
-        padding: 0 15px;
-    }
-
-    .chevron-down {
-        width: 14px;
-        height: 14px;
-    }
-} */
-
-.umrah-content {
+.umrah-p {
     color: var(--text-muted, rgba(255, 255, 255, 0.80));
 
-    /* text/large */
+    /* text/medium */
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 28.8px */
+    align-self: stretch;
+}
+
+.umrah-price {
+    color: var(--text-primary, #FACE8D);
+    font-family: "Century Gothic";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    /* 125% */
+}
+
+.umrah-price-span {
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.details-umrah {
+    color: var(--text-primary, #FACE8D);
+    font-family: "Bitter Rose DEMO";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 64px */
+}
+
+.break-line {
+    width: 100%;
+    height: 1px;
+    background: var(--border-default, rgba(255, 255, 255, 0.10));
+}
+
+.details-section-h {
+    width: 272px;
+    flex-shrink: 0;
+    color: var(--text-default, #FFF);
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 32px */
+}
+
+.details-section-p {
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+    text-align: right;
+
+    /* text/medium */
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 28.8px */
+}
+
+.Itinerary {
+    color: var(--text-primary, #FACE8D);
+    font-family: "Bitter Rose DEMO";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 64px */
+}
+
+.confirmation {
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+
+    /* text/default */
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 25.6px */
+    width: 872px;
+}
+
+.Hotels {
+    color: var(--text-primary, #FACE8D);
+    font-family: "Bitter Rose DEMO";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 64px */
+}
+
+.hotel-location {
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    /* 25.6px */
+}
+
+.name-service {
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+
+    /* text/default */
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.makkah-p {
+    color: var(--text-default, #FFF);
     font-family: "Century Gothic";
     font-size: 20px;
     font-style: normal;
@@ -412,9 +517,28 @@
     align-self: stretch;
 }
 
-.scrollable-section {
-    max-height: 100vh;
-    overflow-y: auto;
+.transportation-facilities {
+    align-self: stretch;
+    color: var(--text-default, #FFF);
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 32px */
+}
+
+.image-border {
+    border-radius: 10px;
+    width: 106%;
+    height: auto;
+}
+
+.hover-border:hover {
+    border: 1px solid #FACE8D;
+    transition: 0.4s ease-in-out;
+    border-radius: 0;
+    border-left: none;
 }
 
 .rating-text {
@@ -430,7 +554,7 @@
 .package-title {
     color: var(--text-default, #FFF);
     font-family: "Century Gothic";
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 34px;
@@ -442,7 +566,7 @@
     align-self: stretch;
     color: #FFF;
     font-family: "Century Gothic";
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
@@ -493,20 +617,37 @@
     line-height: 30px;
 }
 
+
 .package-price {
     color: var(--text-primary, #FACE8D);
     font-family: "Century Gothic";
-    font-size: 32px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
     /* 125% */
 }
 
-.image-border {
-    border-radius: 10px;
-    width: 106%;
-    height: auto;
+.show-more-link {
+    align-self: stretch;
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+    text-align: center;
+
+    /* text/large */
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 32px */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.show-more-link:hover {
+    color: #FACE8D;
+    font-size: 23px;
+    transition: 0.4s ease-in-out;
 }
 
 .footer-logo {
@@ -594,8 +735,6 @@
     text-decoration: none;
     /* 166.667% */
 }
-
-
 .footer-email {
     color: var(--text-default, #FFF);
     font-family: "Century Gothic";
@@ -606,101 +745,8 @@
     text-decoration: none;
 }
 
-.show-more-link {
-    align-self: stretch;
-    color: var(--text-muted, rgba(255, 255, 255, 0.80));
-    text-align: center;
-
-    /* text/large */
-    font-family: "Century Gothic";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    /* 32px */
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.show-more-link:hover {
-    color: #FACE8D;
-    font-size: 23px;
-    transition: 0.4s ease-in-out;
-}
-
-/* .hover-border{
-    border: 1px solid #FFF;
-    border-radius: 500px 0px 0px 9px;
-    transition: 0.4s ease-in-out;
-} */
-
-.hover-border:hover {
-    border: 1px solid #000;
-    transition: 0.4s ease-in-out;
-    border-radius: 0;
-    border-left: none;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.hover-border:hover {
-    border: 1px solid #FACE8D;
-    transition: 0.4s ease-in-out;
-    border-radius: 0;
-    border-left: none;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.custom-dropdown {
-    width: 316px;
-    height: 805px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: rgba(39, 39, 39, 0.80);
-    backdrop-filter: blur(8.100000381469727px);
-}
-
-@media (max-width: 768px) {
-    .custom-dropdown {
-        max-height: 200px;
-    }
-}
-
-.custom-dropdown .month-list {
-    display: block;
-    padding: 10px 20px;
-    color: #fff;
-    font-family: "Century Gothic";
-    font-size: 16px;
-    font-style: normal;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.custom-dropdown .month-list:hover,
-.custom-dropdown .month-list.active {
-    color: #FACE8D;
-
-    /* text/large */
-    font-family: "Century Gothic";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    /* 32px */
-}
-
-.month-btn {
-    display: flex;
-    height: 60px;
-    padding: 16px 34px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 500px;
-    background: #272727;
-    color: #FFF;
+.show-more-button {
+    color: var(--text-inverse, #081212);
     font-family: "Century Gothic";
     font-size: 16px;
     font-style: normal;
@@ -708,126 +754,121 @@
     line-height: normal;
     letter-spacing: 1px;
     text-transform: uppercase;
-    width: auto;
+    display: flex;
+    height: 60px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 500px;
+    background: var(--background-primary, #F8D49E);
 }
 
-.month-btn:hover {
-    background-color: #444;
-}
-
-.chevron-down {
-    width: 16px;
-    height: 16px;
-}
-
-.dropdown-divider {
-    width: 284px;
-    height: 0.5px;
-    background: rgba(255, 255, 255, 0.80);
-    margin-inline: 1rem;
-}
-
-.dropdown-menu {
-    border-radius: 30px;
-    background: rgba(39, 39, 39, 0.80);
-    backdrop-filter: blur(8.100000381469727px);
-}
-
-.dropdown-menu .dropdown-item {
-    color: white;
-    /* Ensure readability */
-}
-
-.dropdown-menu .dropdown-item:hover {
-    background-color: transparent !important;
-    color: #FACE8D;
-    transition: 0.4s ease-in-out;
-    font-size: 22px;
-}
-
-.dropdown-item {
-    color: #FFF;
+.related-umrah-pkg {
+    color: var(--text-default, #FFF);
     font-family: "Century Gothic";
-    font-size: 20px;
+    font-size: 40px;
+    font-style: normal; 
+    font-weight: 400;
+    line-height: 100%;
+    /* 40px */
+}
+.show-on-small-screens {
+    display: none;
+}
+
+.wattsapp-icon {
+    width: 69px;
+    height: 69px;
+    flex-shrink: 0;
+    fill: #F8D49E;
+}
+.umrah-pkg {
+    color: var(--text-primary, #FACE8D);
+    font-family: "Bitter Rose DEMO";
+    font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%;
+    line-height: 90%;
+    /* 28.8px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* When the button is clicked or dropdown is open */
-.btn.show {
-    background: rgba(39, 39, 39, 0.80);
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"%3E%3C/path%3E%3C/svg%3E') !important;
+    width: 35px;
 }
-
-.custom-dropdown::after {
-    display: none !important;
-    /* Hides the default Bootstrap caret */
+.navbar-toggler-icon {
+    background-image: url(../images/menu.svg) !important;
 }
-
-.dropdown-icon-change {
-    width: 24px;
-    height: 24px;
-    fill: #FACE8D;
-}
-
-.close-icon-change {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
-
-.dropdown-item-days {
+.offcanvas {
+    background-color: black;
     color: #FFF;
-    font-family: "Century Gothic";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 160%;
-    /* 32px */
-    text-decoration: none;
-    cursor: default !important;
-}
-
-.dropdown-header {
-    color: rgba(255, 255, 255, 0.80);
-
-    /* text/default */
     font-family: "Century Gothic";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
-    /* 25.6px */
+    padding: 0px;
 }
 
-/*     
-    @media (max-width: 768px) {
-        .sign-up-for-umrah{
-            display: none;
-        }
-        .beat-price-btn{
-            display: none;
-        }
-        .custome-li-alignments{
-            display: none;
-        }
-        .custome-li-umrah{
-            display: none;
-        }
-        .enquire-for-umrah{
-            display: none;
-        }
-        .Available{
-            display: none;
-        }
-        .phone-no{
-            font-size: 18px;
-        }
-        .phone-no-company{
-            font-size: 18px;
-        }
-    } */
+.offcanvas-header .btn-close {
+    filter: invert(1);
+}
+.nav-link {
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.nav-link:hover {
+    color: #FACE8D;
+    transition: 0.4s ease-in-out;
+    /* font-size: 17px; */
+}
+
+
+/* media queries for responsiveness */
+@media (max-width: 1500px) {
+    .sign-up-for-umrah {
+        margin-inline: 4rem;
+    }
+    .enquire-for-umrah {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .sign-up-for-umrah {
+        margin-inline: 2rem;
+    }
+    .enquire-for-umrah {
+        font-size: 40px;
+    }
+}
+
 @media (max-width: 992px) {
+
+}
+@media (max-width: 992px) {
+    .hide-on-small-screens{
+        display: none;
+    }
+    .scrollable-section{
+        width: 100%;
+    }
+    .show-on-small-screens {
+        display: block;
+    }
+    .break-line{
+        width: 100%;
+    }
     .hide-on-small {
         display: none !important;
     }
@@ -838,6 +879,9 @@
 
 
     .backround-image {
+        background-image: url(../images/masjid-nabwi.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         min-height: 27vh;
         /* Ensures the container is at least the height of the viewport */
         overflow: hidden;
@@ -860,7 +904,7 @@
 
     .fixed-top {
         top: 91px;
-        position: absolute;
+        position: static;
     }
 
     .navbar-toggler-icon {
@@ -915,7 +959,7 @@
         width: 100%;
         height: 0.5px;
         background: rgba(255, 255, 255, 0.50);
-        margin-top: 88px;
+        /*margin-top: 88px;*/
     }
 
     .umrah-pkg {
@@ -958,6 +1002,7 @@
     .custome-li-alignments:hover {
         color: #FACE8D;
         transition: 0.4s ease-in-out;
+        /* font-size: 17px; */
     }
 
     .custome-li-umrah:hover {
@@ -978,6 +1023,7 @@
     .nav-link:hover {
         color: #FACE8D;
         transition: 0.4s ease-in-out;
+        /* font-size: 17px; */
     }
 
     .navbar-nav {
@@ -1047,7 +1093,7 @@
     }
 
     .month-btn {
-        /*color: #FFF;
+        color: #FFF;
         font-family: "Century Gothic";
         font-size: 12px;
         font-style: normal;
@@ -1064,7 +1110,7 @@
         gap: 8px;
         border-radius: 500px;
         background: #272727;
-        text-decoration: none;*/
+        text-decoration: none;
     }
 
     .holiday-btn {
@@ -1218,11 +1264,33 @@
         /* opacity: 0.6; */
         color: #FACE8D;
         font-family: "Century Gothic";
-        font-size: 14px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 700;
         line-height: 30px;
     }
+    
+    .package-includes-details a:link,.package-includes-details a:visited,.package-includes-details a:active {
+        /* opacity: 0.6; */
+        color: #FACE8D;
+        font-family: "Century Gothic";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    
+    .package-includes-details a:hover {
+        /* opacity: 0.6; */
+        color: #FACE8D;
+        font-family: "Century Gothic";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    
+    
 
     .package-price {
         color: var(--text-primary, #FACE8D);
@@ -1341,23 +1409,25 @@
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
-    body {
-        overflow-y: scroll;
-    }
-
-    .scrollable-section {
-        max-height: none;
-    }
-
-    .enquire-for-umrah {
-        font-size: 40px;
-    }
-    .page-two-start {
-        background-color: black;
-        height:255vh ;
-    }
+    /* .scrollable-section {
+        max-height: 100vh;
+        overflow-y: hidden;
+        overflow-x: auto;
+    } */
     
+        
      .hover-border:hover {
         border: 0px none;
         transition: 0.4s ease-in-out;
@@ -1369,90 +1439,4 @@
 
 }
 
-@media (max-width: 1700px) {
-    .sign-up-for-umrah {
-        margin-inline: 8rem;
-    }
-
-    .enquire-for-umrah {
-        font-size: 50px;
-    }
-}
-
-@media (max-width: 1300px) {
-    .sign-up-for-umrah {
-        margin-inline: 4rem;
-    }
-
-    .enquire-for-umrah {
-        font-size: 40px;
-    }
-
-
-
-
-
-}
-
-.show-on-small {
-    display: none;
-}
-
-.hide-on-small {
-    display: block;
-}
-
-.display-n {
-    display: none;
-}
-
-.display-b {
-    display: block;
-}
-
-@media (max-width:1200px) {
-    .display-n {
-        display: block;
-    }
-
-    .display-b {
-        display: none;
-    }
-
-    .offcanvas {
-        background-color: black;
-        color: #FFF;
-        font-family: "Century Gothic";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-        padding: 0px;
-    }
-
-    .offcanvas-header .btn-close {
-        filter: invert(1);
-    }
-
-    .navbar-toggler-icon {
-        background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"%3E%3C/path%3E%3C/svg%3E') !important;
-        width: 35px;
-    }
-
-
-
-    .nav-link {
-        font-family: "Century Gothic";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-        color: rgba(255, 255, 255, 0.80);
-    }
-
-    .nav-link:hover {
-        color: #FACE8D;
-        transition: 0.4s ease-in-out;
-    }
-
-}
+@media (max-width: 600px) {}
