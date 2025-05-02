@@ -10,7 +10,8 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 32px */
+    line-height: 160%;
+    /* 32px */
 }
 
 
@@ -23,78 +24,228 @@
     line-height: 160%;
 }
 
-.add-to-compare{
+.add-to-compare {
     color: #FFF;
-text-align: center;
-font-family: "Century Gothic";
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-cursor: pointer;
-}
-.add-to-compare2{
-    color: #6BAD00;
-text-align: center;
-font-family: "Century Gothic";
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-cursor: pointer;
-}
-.pointer{
+    text-align: center;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     cursor: pointer;
 }
 
+.add-to-compare2 {
+    color: #6BAD00;
+    text-align: center;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.custom-table {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.custom-table th,
+.custom-table td {
+    background-color: transparent !important;
+}
+
+.custom-td,
+.custom-th {
+    color: #FACE8D;
+    text-align: center;
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.custom-th {
+    color: #FACE8D !important;
+}
+
+
+.custom-table {
+    border-collapse: collapse;
+    border-left: none;
+    border-right: none;
+}
+
+.custom-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.custom-table td,
+.custom-table th {
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-left: none;
+    border-right: none;
+    background: transparent;
+    padding: 28px 20px !important;
+}
+
+/* Remove top border from the first row */
+
+.custom-table tr:first-child th {
+    border-top: 1px solid transparent !important;
+}
+
+/* Remove bottom border from the last row */
+.custom-table tr:last-child td {
+    border-bottom: 1px solid transparent !important;
+}
+
+/* Add left border only after the first column */
+.custom-table td:not(:first-child),
+.custom-table th:not(:first-child) {
+    border-left: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+/* Add right border only before the last column */
+.custom-table td:not(:last-child),
+.custom-table th:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+
+.custom-td{
+    color: #FFF !important;
+font-family: "Century Gothic";
+font-size: 12px !important;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 19.2px */
+}
+.number-cell{
+    color: #FFF;
+text-align: center;
+font-family: "Century Gothic";
+font-size: 12px !important;
+font-style: normal;
+font-weight: 700;
+line-height: 160%; /* 19.2px */
+}
+
+.custom-td-h{
+    color: #FFF !important;
+text-align: center;
+font-family: "Century Gothic";
+font-size: 12px !important;
+font-style: normal;
+font-weight: 700;
+line-height: 160%; /* 19.2px */
+}
+
+.packages a{
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+
+    /* text/large */
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+    text-decoration: none;
+}
+.packages h2{
+    color: var(--text-default, #FFF);
+font-family: "Century Gothic";
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 40px */
+}
 @media (max-width: 768px) {
     .img-class {
         max-width: 100%;
     }
+
     .select-month {
         font-size: 16px;
     }
+
     .selected-month {
         font-size: 16px;
     }
-    .add-to-compare{
+
+    .add-to-compare {
         font-size: 14px;
     }
-    .add-to-compare2{
+
+    .add-to-compare2 {
         font-size: 14px;
+    }
+    .packages h2{
+        font-size: 30px;
+    }
+    .packages a{
+        font-size: 16px;
     }
 }
+
 @media (max-width: 576px) {
     .img-class {
         max-width: 100%;
     }
+
     .select-month {
         font-size: 14px;
     }
+
     .selected-month {
         font-size: 14px;
     }
-    .add-to-compare{
+
+    .add-to-compare {
         font-size: 12px;
     }
-    .add-to-compare2{
+
+    .add-to-compare2 {
         font-size: 12px;
+    }
+    .packages h2{
+        font-size: 25px;
+    }
+    .packages a{
+        font-size: 14px;
     }
 }
+
 @media (max-width: 480px) {
     .img-class {
         max-width: 100%;
     }
+
     .select-month {
         font-size: 12px;
     }
+
     .selected-month {
         font-size: 12px;
     }
-    .add-to-compare{
+
+    .add-to-compare {
         font-size: 10px;
-    }   
-    .add-to-compare2{
+    }
+
+    .add-to-compare2 {
         font-size: 10px;
+    }
+    .packages h2{
+        font-size: 20px;
+    }
+    .packages a{
+        font-size: 12px;
     }
 }
