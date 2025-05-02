@@ -2,193 +2,303 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Popular Destination</title>
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <meta charset="UTF-8">
+  <title>Popular Destination</title>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> -->
 
-    <link rel="stylesheet" href="assets/css/index.css">
-    <!-- Include Swiper.js CSS -->
+  <link rel="stylesheet" href="assets/css/index.css">
+  <!-- Include Swiper.js CSS -->
 </head>
 
 <body>
-    <div class="bg-white">
-        <div class="container mx-auto ">
+  <div class="bg-white">
+    <div class="container mx-auto ">
 
-            <!-- Navbar -->
-            <nav class="mt-6 mb-5 flex items-center justify-between  display-block ">
-                <!-- Logo (left side) -->
-                <div class="flex items-center">
-                    <img src="assets/images/plan-holidays.jpg" class="max-w-full h-auto" alt="logo">
-                </div>
+      <!-- Navbar -->
+      <nav class="mt-6 mb-5 flex items-center justify-between  display-block ">
+        <!-- Logo (left side) -->
+        <div class="flex items-center">
+          <img src="assets/images/plan-holidays.jpg" class="max-w-full h-auto" alt="logo">
+        </div>
 
-                <!-- Centered Icons (Destination, Packages, Hotels, Blog) -->
-                <div class="flex space-x-8">
-                    <a href="#" class="nav-icon-nav hover:text-blue-500">
-                        <i class="fas fa-map-marker-alt"></i> Destination
-                    </a>
-                    <a href="#" class="nav-icon-nav hover:text-blue-500">
-                        <i class="fas fa-box-open"></i> Packages
-                    </a>
-                    <a href="#" class="nav-icon-nav hover:text-blue-500">
-                        <i class="fas fa-hotel"></i> Hotels
-                    </a>
-                    <a href="#" class="nav-icon-nav hover:text-blue-500">
-                        <i class="fas fa-blog"></i> Blog
-                    </a>
-                </div>
+        <!-- Centered Icons (Destination, Packages, Hotels, Blog) -->
+        <div class="flex space-x-8">
+          <a href="#" class="nav-icon-nav hover:text-blue-500">
+            <i class="fas fa-map-marker-alt"></i> Destination
+          </a>
+          <a href="#" class="nav-icon-nav hover:text-blue-500">
+            <i class="fas fa-box-open"></i> Packages
+          </a>
+          <a href="#" class="nav-icon-nav hover:text-blue-500">
+            <i class="fas fa-hotel"></i> Hotels
+          </a>
+          <a href="#" class="nav-icon-nav hover:text-blue-500">
+            <i class="fas fa-blog"></i> Blog
+          </a>
+        </div>
 
-                <!-- Right side (Phone No & Signin Button) -->
-                <div class="flex items-center space-x-4">
-                    <p class="nav-phone-number">
-                        1800-123-5555
-                    </p>
-                    <a href="" class="btn-signin">Sign in</a>
-                </div>
-            </nav>
-
-
-
-            <!-- drawer init and toggle -->
-
-            <div class="display-none">
-                <div class="flex items-center justify-between ms-4 me-4 mt-6 mb-5">
-                    <div class="flex items-center">
-                        <img src="assets/images/plan-holidays.jpg" class="max-w-full h-auto" alt="logo">
-                    </div>
-                    <button
-                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-                        type="button" data-drawer-target="drawer-disabled-backdrop"
-                        data-drawer-show="drawer-disabled-backdrop" data-drawer-backdrop="false"
-                        aria-controls="drawer-disabled-backdrop">
-                        <i class="fas fa-bars"></i> <!-- Menu Icon -->
-                    </button>
-
-                </div>
-
-                <!-- drawer component -->
-                <div id="drawer-disabled-backdrop"
-                    class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800"
-                    tabindex="-1" aria-labelledby="drawer-disabled-backdrop-label">
-                    <h5 id="drawer-disabled-backdrop-label"
-                        class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Menu</h5>
-                    <button type="button" data-drawer-hide="drawer-disabled-backdrop"
-                        aria-controls="drawer-disabled-backdrop"
-                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 14 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                        </svg>
-                        <span class="sr-only">Close menu</span>
-                    </button>
-                    <div class="py-4 overflow-y-auto">
-                        <ul class="space-y-2 font-medium">
-                            <li>
-                                <a href="#"
-                                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span class="ms-3">Destination</span>
-                                </a>
-                            </li>
+        <!-- Right side (Phone No & Signin Button) -->
+        <div class="flex items-center space-x-4">
+          <p class="nav-phone-number">
+            1800-123-5555
+          </p>
+          <a href="" class="btn-signin">Sign in</a>
+        </div>
+      </nav>
 
 
-                            <li>
-                                <a href="#"
-                                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                    <i class="fas fa-box-open"></i>
-                                    <span class="flex-1 ms-3 whitespace-nowrap">Packages</span>
 
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                    <i class="fas fa-hotel"></i>
-                                    <span class="flex-1 ms-3 whitespace-nowrap">Hotels</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                    <i class="fas fa-blog"></i>
-                                    <span class="flex-1 ms-3 whitespace-nowrap">Blog</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                    <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 18 16">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2"
-                                            d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3" />
-                                    </svg>
-                                    <span class="flex-1 ms-3 whitespace-nowrap">Sign In</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                    <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                        viewBox="0 0 20 20">
-                                        <path
-                                            d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z" />
-                                        <path
-                                            d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z" />
-                                        <path
-                                            d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z" />
-                                    </svg>
-                                    <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <!-- drawer init and toggle -->
 
+      <div class="display-none">
+        <div class="flex items-center justify-between ms-4 me-4 mt-6 mb-5">
+          <div class="flex items-center">
+            <img src="assets/images/plan-holidays.jpg" class="max-w-full h-auto" alt="logo">
+          </div>
+          <button
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            type="button" data-drawer-target="drawer-disabled-backdrop" data-drawer-show="drawer-disabled-backdrop"
+            data-drawer-backdrop="false" aria-controls="drawer-disabled-backdrop">
+            <i class="fas fa-bars"></i> <!-- Menu Icon -->
+          </button>
 
         </div>
-    </div>
+
+        <!-- drawer component -->
+        <div id="drawer-disabled-backdrop"
+          class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800"
+          tabindex="-1" aria-labelledby="drawer-disabled-backdrop-label">
+          <h5 id="drawer-disabled-backdrop-label"
+            class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Menu</h5>
+          <button type="button" data-drawer-hide="drawer-disabled-backdrop" aria-controls="drawer-disabled-backdrop"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close menu</span>
+          </button>
+          <div class="py-4 overflow-y-auto">
+            <ul class="space-y-2 font-medium">
+              <li>
+                <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span class="ms-3">Destination</span>
+                </a>
+              </li>
 
 
-    <div class="bg-[#fcf4f7] py-16">
-        <div class="container mx-auto">
-            <div>
-                <ul class="trip-category-list flex justify-between">
-                    <li class="">All</li>
-                    <li>Family Vacation</li>
-                    <li>Friends Holidays</li>
-                    <li>Solo Trip</li>
-                    <li>Honeymoon</li>
-                    <li>Adventure</li>
+              <li>
+                <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <i class="fas fa-box-open"></i>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Packages</span>
 
-                </ul>
-            </div>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <i class="fas fa-hotel"></i>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Hotels</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <i class="fas fa-blog"></i>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Blog</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <svg
+                    class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3" />
+                  </svg>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Sign In</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <svg
+                    class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z" />
+                    <path
+                      d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z" />
+                    <path
+                      d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z" />
+                  </svg>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div class="bg-hero-image overflow-hidden">
-        <div class="container mx-auto">
-            <div class="mt-[136px] ml-5 md:ml-[60px] lg:ml-[120px] widthforhero mr-4 ml-4">
-                <h2>All Travel Destinations</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. </p>
-                <div class="text-center mt-12">
-                    <a href="#" class="call-destination-btn mb-[50px]">
-                        <img src="assets/images/callus.svg" alt=""> CALL US <span class="call-destination-btn-span"> 800-123-5555</span>
-                    </a>
+
+    </div>
+  </div>
+
+
+  <div class="bg-[#fcf4f7] py-10">
+    <div class="container mx-auto">
+      <div>
+        <ul class="trip-category-list flex justify-between">
+          <li class="">All</li>
+          <li>Family Vacation</li>
+          <li>Friends Holidays</li>
+          <li>Solo Trip</li>
+          <li>Honeymoon</li>
+          <li>Adventure</li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-hero-image overflow-hidden">
+    <div class="container mx-auto">
+      <div class="mt-[136px] ml-5 md:ml-[60px] lg:ml-[120px] widthforhero mr-4 ml-4">
+        <h2>All Travel Destinations</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. </p>
+        <div class="text-center mt-12">
+          <a href="#" class="call-destination-btn mb-[50px]">
+            <img src="assets/images/callus.svg" alt=""> CALL US <span class="call-destination-btn-span">
+              800-123-5555</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class=" py-16">
+    <div class="container mx-auto px-4">
+      <!-- Heading -->
+      <h2 class="Popular-destination mb-[40px] ">
+        Popular Destinations you would love to travel
+      </h2>
+
+      <!-- Cards Container -->
+      <div class="flex flex-wrap gap-[23px] justify-center">
+
+        <!-- Card 1 -->
+        <div class="relative rounded-lg overflow-hidden">
+          <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+          <div class="absolute bottom-4 left-4 text-white ml-9">
+            <h3 class="text-xl font-semibold mb-3">Agra</h3>
+            <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+            <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per person</span></p>
+          </div>
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="relative rounded-lg overflow-hidden">
+          <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+          <div class="absolute bottom-4 left-4 text-white ml-9">
+            <h3 class="text-xl font-semibold mb-3">Agra</h3>
+            <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+            <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per person</span></p>
+          </div>
+        </div>
+
+
+        <!-- Card 3 -->
+        <div class="relative rounded-lg overflow-hidden">
+          <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+          <div class="absolute bottom-4 left-4 text-white ml-9">
+            <h3 class="text-xl font-semibold mb-3">Agra</h3>
+            <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+            <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per person</span></p>
+          </div>
+        </div>
+
+                <!-- Card 1 -->
+                <div class="relative rounded-lg overflow-hidden">
+                  <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+                  <div class="absolute bottom-4 left-4 text-white ml-9">
+                    <h3 class="text-xl font-semibold mb-3">Agra</h3>
+                    <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+                    <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per person</span></p>
+                  </div>
                 </div>
-            </div>
+        
+        
+                <!-- Card 2 -->
+                <div class="relative rounded-lg overflow-hidden">
+                  <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+                  <div class="absolute bottom-4 left-4 text-white ml-9">
+                    <h3 class="text-xl font-semibold mb-3">Agra</h3>
+                    <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+                    <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per person</span></p>
+                  </div>
+                </div>
+        
+        
+                <!-- Card 3 -->
+                <div class="relative rounded-lg overflow-hidden">
+                  <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+                  <div class="absolute bottom-4 left-4 text-white ml-9">
+                    <h3 class="text-xl font-semibold mb-3">Agra</h3>
+                    <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+                    <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per person</span></p>
+                  </div>
+                </div>
+
+                        <!-- Card 1 -->
+        <div class="relative rounded-lg overflow-hidden">
+          <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+          <div class="absolute bottom-4 left-4 text-white ml-9">
+            <h3 class="text-xl font-semibold mb-3">Agra</h3>
+            <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+            <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per person</span></p>
+          </div>
         </div>
+
+
+        <!-- Card 2 -->
+        <div class="relative rounded-lg overflow-hidden">
+          <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+          <div class="absolute bottom-4 left-4 text-white ml-9">
+            <h3 class="text-xl font-semibold mb-3">Agra</h3>
+            <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+            <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per person</span></p>
+          </div>
+        </div>
+
+
+        <!-- Card 3 -->
+        <div class="relative rounded-lg overflow-hidden">
+          <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+          <div class="absolute bottom-4 left-4 text-white ml-9">
+            <h3 class="text-xl font-semibold mb-3">Agra</h3>
+            <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+            <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per person</span></p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Button -->
+     
     </div>
+  </div>
 
 
 
@@ -228,6 +338,173 @@
 
 
 
+  <div class=" container mx-auto mt-12  ">
+    <h3 class="best-pkg mb-[40px]">Best Flash Packages for your next Holiday</h3>
+    <div class="swiper mySwiper ms-4 me-4">
+      <div class="swiper-wrapper ms-4 me-4">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="relative">
+            <img src="assets/images/Badges.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+            <div class="mt-5">
+              <h4 class="mermaid-beach me-5">Mermaid Beach Resort: The most joyful way to spend your holiday</h4>
+              <div class="flex items-center gap-2 mt-[22px]">
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country">Cox’s Bazar</span>
+                </div>
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country-days">4 days</span>
+                </div>
+              </div>
+              <div class=" mt-[22px]">
+                <p class="market-price">£200</p>
+                <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
+                <p class="discount mt-2">-15%</p>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="relative">
+            <img src="assets/images/Badges (1).jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+            <div class="mt-5">
+              <h4 class="mermaid-beach me-5">Mermaid Beach Resort: The most joyful way to spend your holiday</h4>
+              <div class="flex items-center gap-2 mt-[22px]">
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country">Cox’s Bazar</span>
+                </div>
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country-days">4 days</span>
+                </div>
+              </div>
+              <div class=" mt-[22px]">
+                <p class="market-price">£200</p>
+                <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
+                <p class="discount mt-2">-15%</p>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="relative">
+            <img src="assets/images/Badges (2).jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+            <div class="mt-5">
+              <h4 class="mermaid-beach me-5">Mermaid Beach Resort: The most joyful way to spend your holiday</h4>
+              <div class="flex items-center gap-2 mt-[22px]">
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country">Cox’s Bazar</span>
+                </div>
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country-days">4 days</span>
+                </div>
+              </div>
+              <div class=" mt-[22px]">
+                <p class="market-price">£200</p>
+                <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
+                <p class="discount mt-2">-15%</p>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <div class="relative">
+            <img src="assets/images/Badges.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+            <div class="mt-5">
+              <h4 class="mermaid-beach me-5">Mermaid Beach Resort: The most joyful way to spend your holiday</h4>
+              <div class="flex items-center gap-2 mt-[22px]">
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country">Cox’s Bazar</span>
+                </div>
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country-days">4 days</span>
+                </div>
+              </div>
+              <div class=" mt-[22px]">
+                <p class="market-price">£200</p>
+                <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
+                <p class="discount mt-2">-15%</p>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Slide 5 -->
+        <div class="swiper-slide ">
+          <div class="relative">
+            <img src="assets/images/Badges (2).jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+            <div class="mt-5">
+              <h4 class="mermaid-beach me-5">Mermaid Beach Resort: The most joyful way to spend your holiday</h4>
+              <div class="flex items-center gap-2 mt-[22px]">
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country">Cox’s Bazar</span>
+                </div>
+                <div>
+                  <i class="fas fa-map-marker-alt"></i> <span class="country-days">4 days</span>
+                </div>
+              </div>
+              <div class=" mt-[22px]">
+                <p class="market-price">£200</p>
+                <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
+                <p class="discount mt-2">-15%</p>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Navigation Buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <div class="container mx-auto">
+    <div class="mt-5  sm:mt-[30px] lg:mt-[120px] md:mt-[60px]  ms-4 me-4  mb-4">
+
+      <h2 class="Trust-us text-center sm:text-left">Why Trust Us with Holidays</h2>
+      <p class="Trust-us-p text-center mt-2 sm:text-left">Explore the best travel themes available fot you, have a best
+        travel experience</p>
+      <div class="flex flex-wrap justify-center items-center mt-[40px] mb-[40px] gap-8">
+        <!-- Card 1 -->
+        <div class="text-center box">
+          <img src="assets/images/best-price.svg" alt="Best Price Guarantee" class="mx-auto mb-4">
+          <h2 class="guarantee-price">Best price guarantee</h2>
+          <p class="guarantee-price-p">Get the best hotel rates available online. Our low prices can't be beaten, that's
+            a promise!</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="text-center box">
+          <img src="assets/images/loveby.svg" alt="Loved by Millions" class="mx-auto mb-4">
+          <h2 class="guarantee-price">Loved by millions</h2>
+          <p class="guarantee-price-p">Join the 7 million people who've holidayed with us.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="text-center box">
+          <img src="assets/images/choosenow.svg" alt="Packaged by You" class="mx-auto mb-4">
+          <h2 class="guarantee-price">Packaged by us, Chosen by you</h2>
+          <p class="guarantee-price-p">Find your perfect holiday in a few simple taps, only designed as you want your
+            next trip.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -238,7 +515,9 @@
 
 
 
-    
+
+
+
   <div class="bg-yellow overflow-hidden">
     <div class="container mx-auto ">
       <div class="flex flex-wrap justify-between mt-[60px] mb-4 ">
@@ -835,7 +1114,7 @@
   </script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
 </body>
 
