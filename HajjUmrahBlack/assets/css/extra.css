@@ -64,7 +64,7 @@
     color: #FACE8D;
     text-align: center;
     font-family: "Century Gothic";
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 16px;
@@ -119,35 +119,39 @@
 }
 
 
-.custom-td{
+.custom-td {
     color: #FFF !important;
-font-family: "Century Gothic";
-font-size: 12px !important;
-font-style: normal;
-font-weight: 400;
-line-height: 160%; /* 19.2px */
+    font-family: "Century Gothic";
+    font-size: 18px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 19.2px */
 }
-.number-cell{
+
+.number-cell {
     color: #FFF;
-text-align: center;
-font-family: "Century Gothic";
-font-size: 12px !important;
-font-style: normal;
-font-weight: 700;
-line-height: 160%; /* 19.2px */
+    text-align: center;
+    font-family: "Century Gothic";
+    font-size: 18px !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    /* 19.2px */
 }
 
-.custom-td-h{
+.custom-td-h {
     color: #FFF !important;
-text-align: center;
-font-family: "Century Gothic";
-font-size: 12px !important;
-font-style: normal;
-font-weight: 700;
-line-height: 160%; /* 19.2px */
+    text-align: center;
+    font-family: "Century Gothic";
+    font-size: 18px !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    /* 19.2px */
 }
 
-.packages a{
+.packages a {
     color: var(--text-muted, rgba(255, 255, 255, 0.80));
 
     /* text/large */
@@ -155,17 +159,158 @@ line-height: 160%; /* 19.2px */
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 32px */
+    line-height: 160%;
+    /* 32px */
     text-decoration: none;
 }
-.packages h2{
+
+.packages h2 {
     color: var(--text-default, #FFF);
-font-family: "Century Gothic";
-font-size: 40px;
-font-style: normal;
-font-weight: 400;
-line-height: 100%; /* 40px */
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 40px */
 }
+
+.Affordable-pakages h2 {
+    color: var(--text-default, #FFF);
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 40px */
+}
+
+.Affordable-pakages p {
+    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+
+    /* text/large */
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 32px */
+}
+
+
+.sign-up-for-umrahh {
+    /* width: 483px;
+    height: 450px; */
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8.100000381469727px);
+    /* margin-inline: 14rem; */
+    /* width: 48%; */
+    width: 483px;
+}
+
+.dropdown-divider {
+    /* width: 284px; */
+    height: 0.5px;
+    background: rgba(255, 255, 255, 0.80);
+    margin-inline: 1rem;
+}
+
+.dropdown-menu {
+    border-radius: 30px;
+    background: rgba(39, 39, 39, 0.80);
+    backdrop-filter: blur(8.100000381469727px);
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+    /* Ensure readability */
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: transparent !important;
+    color: #FACE8D;
+    transition: 0.4s ease-in-out;
+    font-size: 22px;
+}
+
+.dropdown-item {
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.dropdown-item-days {
+    color: #FFF;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    /* 32px */
+    text-decoration: none;
+    cursor: default !important;
+}
+
+.dropdown-header {
+    color: rgba(255, 255, 255, 0.80);
+
+    /* text/default */
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 25.6px */
+}
+
+.dropdown-icon-change {
+    width: 24px;
+    height: 24px;
+    fill: #FACE8D;
+    cursor: pointer;
+    ;
+}
+
+.close-icon-change {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+@media (max-width:1200px) {
+    .sign-up-for-umrahh {
+        width: 80%;
+
+    }
+
+    /* width: 48%; */
+    .Affordable-pakages h2 {
+        font-size: 32px;
+    }
+
+    .Affordable-pakages p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:992px) {
+    .sign-up-for-umrahh {
+        width: 483px;
+    }
+
+    .Affordable-pakages h2 {
+        font-size: 24px;
+    }
+}
+
 @media (max-width: 768px) {
     .img-class {
         max-width: 100%;
@@ -186,11 +331,17 @@ line-height: 100%; /* 40px */
     .add-to-compare2 {
         font-size: 14px;
     }
-    .packages h2{
+
+    .packages h2 {
         font-size: 30px;
     }
-    .packages a{
+
+    .packages a {
         font-size: 16px;
+    }
+
+    .sign-up-for-umrahh {
+        width: 85%;
     }
 }
 
@@ -214,11 +365,17 @@ line-height: 100%; /* 40px */
     .add-to-compare2 {
         font-size: 12px;
     }
-    .packages h2{
+
+    .packages h2 {
         font-size: 25px;
     }
-    .packages a{
+
+    .packages a {
         font-size: 14px;
+    }
+
+    .sign-up-for-umrahh {
+        width: 95%;
     }
 }
 
@@ -242,10 +399,16 @@ line-height: 100%; /* 40px */
     .add-to-compare2 {
         font-size: 10px;
     }
-    .packages h2{
+
+    .packages h2 {
         font-size: 20px;
     }
-    .packages a{
+
+    .packages a {
         font-size: 12px;
+    }
+
+    .sign-up-for-umrahh {
+        width: 100%;
     }
 }
