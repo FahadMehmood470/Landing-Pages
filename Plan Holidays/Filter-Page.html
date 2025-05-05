@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Filter Page</title>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> -->
+
+  <link rel="stylesheet" href="assets/css/index.css">
+  <!-- Include Swiper.js CSS -->
+</head>
+
+<body>
+  <div class="bg-white">
+    <div class="container mx-auto ">
+
+      <!-- Navbar -->
+      <nav class="mt-6 mb-5 flex items-center justify-between  display-block ">
+        <!-- Logo (left side) -->
+        <div class="flex items-center">
+          <img src="assets/images/plan-holidays.jpg" class="max-w-full h-auto" alt="logo">
+        </div>
+
+        <!-- Centered Icons (Destination, Packages, Hotels, Blog) -->
+        <div class="flex space-x-8">
+          <a href="#" class="nav-icon-nav hover:text-blue-500">
+            <i class="fas fa-map-marker-alt"></i> Destination
+          </a>
+          <a href="#" class="nav-icon-nav hover:text-blue-500">
+            <i class="fas fa-box-open"></i> Packages
+          </a>
+          <a href="#" class="nav-icon-nav hover:text-blue-500">
+            <i class="fas fa-hotel"></i> Hotels
+          </a>
+          <a href="#" class="nav-icon-nav hover:text-blue-500">
+            <i class="fas fa-blog"></i> Blog
+          </a>
+        </div>
+
+        <!-- Right side (Phone No & Signin Button) -->
+        <div class="flex items-center space-x-4">
+          <p class="nav-phone-number">
+            1800-123-5555
+          </p>
+          <a href="" class="btn-signin">Sign in</a>
+        </div>
+      </nav>
+
+
+
+      <!-- drawer init and toggle -->
+
+      <div class="display-none">
+        <div class="flex items-center justify-between ms-4 me-4 mt-6 mb-5">
+          <div class="flex items-center">
+            <img src="assets/images/plan-holidays.jpg" class="max-w-full h-auto" alt="logo">
+          </div>
+          <button
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            type="button" data-drawer-target="drawer-disabled-backdrop" data-drawer-show="drawer-disabled-backdrop"
+            data-drawer-backdrop="false" aria-controls="drawer-disabled-backdrop">
+            <i class="fas fa-bars"></i> <!-- Menu Icon -->
+          </button>
+
+        </div>
+
+        <!-- drawer component -->
+        <div id="drawer-disabled-backdrop"
+          class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800"
+          tabindex="-1" aria-labelledby="drawer-disabled-backdrop-label">
+          <h5 id="drawer-disabled-backdrop-label"
+            class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Menu</h5>
+          <button type="button" data-drawer-hide="drawer-disabled-backdrop" aria-controls="drawer-disabled-backdrop"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close menu</span>
+          </button>
+          <div class="py-4 overflow-y-auto">
+            <ul class="space-y-2 font-medium">
+              <li>
+                <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span class="ms-3">Destination</span>
+                </a>
+              </li>
+
+
+              <li>
+                <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <i class="fas fa-box-open"></i>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Packages</span>
+
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <i class="fas fa-hotel"></i>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Hotels</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <i class="fas fa-blog"></i>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Blog</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <svg
+                    class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3" />
+                  </svg>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Sign In</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <svg
+                    class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z" />
+                    <path
+                      d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z" />
+                    <path
+                      d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z" />
+                  </svg>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <!-- <div class="overflow-hidden">
+      <div class="mt-5 sm:mt-[30px] lg:mt-[51px]">
+        <h2 class="Popular-destination">Popular Packages you would love to travel</h2>
+        <div class="container mx-auto mt-12">
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+           
+            <div class="col-span-1 bg-[#FCF4F7]  p-6 rounded-lg hight-of-sidebar">
+              <div class="flex justify-between  mb-4">
+                <h3 class="Filters-text mb-4">Filters</h3>
+                <p class="Filters-text-p">clear</p>
+              </div>
+              <div class="mb-6">
+                <h4 class="trip-heading mb-2">Themes</h4>
+                <input type="text" placeholder="Search Destination" class="w-full border-gray-300 rounded-lg p-2 mt-2">
+
+                <div class="space-y-2 mt-2">
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="trip">Family Vacation</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="trip">Solo Trip</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="trip">Friends Holidays</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="trip">Honeymoon</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="trip">Solo Trip</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="trip">Friends Holidays</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="trip">Honeymoon</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mb-6">
+                <h4 class="trip-heading mb-2">Destination</h4>
+                <input type="text" placeholder="Search Destination" class="w-full border-gray-300 rounded-lg p-2 mt-2">
+                <div class="space-y-2 mt-4">
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="trip">Paris</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="trip">Munich</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="trip">Vienna</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="trip">Paris</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="trip">Munich</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="trip">Vienna</span>
+                  </label>
+                </div>
+              </div>
+
+
+              <div class="mb-6">
+                <h4 class="trip-heading mb-2">Duration <span>( in days )</span></h4>
+                <div class="space-y-2 ">
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="trip">1-3</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="trip">4-6</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="trip">9-12</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="trip">13 or more</span>
+                  </label>
+
+                </div>
+              </div>
+
+              <div class="mb-6">
+                <h4 class="trip-heading mb-2">Budget <span>( per person )</span></h4>
+                <p class="upto-pound mt-2 mb-4">Up to £200</p>
+                <input type="range" min="0" max="200" class="w-full accent-[#C02D63]">
+              </div>
+
+              <div class="mb-6">
+                <h4 class="trip-heading mb-2">Month of Travel</h4>
+                <div class="space-y-2">
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="ml-2 text-gray-700">Jan-Mar</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="ml-2 text-gray-700">Apr-Jun</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="ml-2 text-gray-700">Jul-Sep</span>
+                  </label>
+                  <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                    <span class="ml-2 text-gray-700">Oct-Dec</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 px-4 sm:px-6 lg:px-0">
+              <div class="w-full">
+                <div class="relative">
+                  <img src="assets/images/Badges.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+                  <div class="mt-5">
+                    <h4 class="mermaid-beach me-5">
+                      Mermaid Beach Resort: The most joyful way to spend your holiday
+                    </h4>
+                    <div class="flex items-center gap-2 mt-[22px]">
+                      <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="country">Cox’s Bazar</span>
+                      </div>
+                      <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="country-days">4 days</span>
+                      </div>
+                    </div>
+                    <div class="mt-[22px]">
+                      <p class="market-price">£200</p>
+                      <p class="orignal-price">
+                        £175 <span class="orignal-price-per">/ Per person</span>
+                      </p>
+                      <p class="discount mt-2">-15%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full">
+                <div class="relative">
+                  <img src="assets/images/Badges.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+                  <div class="mt-5">
+                    <h4 class="mermaid-beach me-5">
+                      Mermaid Beach Resort: The most joyful way to spend your holiday
+                    </h4>
+                    <div class="flex items-center gap-2 mt-[22px]">
+                      <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="country">Cox’s Bazar</span>
+                      </div>
+                      <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="country-days">4 days</span>
+                      </div>
+                    </div>
+                    <div class="mt-[22px]">
+                      <p class="market-price">£200</p>
+                      <p class="orignal-price">
+                        £175 <span class="orignal-price-per">/ Per person</span>
+                      </p>
+                      <p class="discount mt-2">-15%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full">
+                <div class="relative">
+                  <img src="assets/images/Badges.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+                  <div class="mt-5">
+                    <h4 class="mermaid-beach me-5">
+                      Mermaid Beach Resort: The most joyful way to spend your holiday
+                    </h4>
+                    <div class="flex items-center gap-2 mt-[22px]">
+                      <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="country">Cox’s Bazar</span>
+                      </div>
+                      <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="country-days">4 days</span>
+                      </div>
+                    </div>
+                    <div class="mt-[22px]">
+                      <p class="market-price">£200</p>
+                      <p class="orignal-price">
+                        £175 <span class="orignal-price-per">/ Per person</span>
+                      </p>
+                      <p class="discount mt-2">-15%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full">
+                <div class="relative">
+                  <img src="assets/images/Badges.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+                  <div class="mt-5">
+                    <h4 class="mermaid-beach me-5">
+                      Mermaid Beach Resort: The most joyful way to spend your holiday
+                    </h4>
+                    <div class="flex items-center gap-2 mt-[22px]">
+                      <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="country">Cox’s Bazar</span>
+                      </div>
+                      <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="country-days">4 days</span>
+                      </div>
+                    </div>
+                    <div class="mt-[22px]">
+                      <p class="market-price">£200</p>
+                      <p class="orignal-price">
+                        £175 <span class="orignal-price-per">/ Per person</span>
+                      </p>
+                      <p class="discount mt-2">-15%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div> -->
+
+
+
+
+
+
+  <div class="overflow-hidden">
+    <div class="mt-5 sm:mt-[30px] lg:mt-[51px]">
+      <h2 class="Popular-destination">Popular Packages you would love to travel</h2>
+      <div class="container mx-auto mt-12">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 ">
+
+          <!-- Filter Button for Small Screens -->
+          <!-- <button id="filterButton"
+              class="block lg:hidden ms-4"
+              type="button">
+              <i class="fas fa-bars"></i> Filters
+            </button> -->
+
+          <!-- <div class="flex items-center justify-between ms-4 me-4 mt-6 mb-5"> -->
+
+          <button class="block lg:hidden ml-4 filter-button" type="button" id="filterButton">
+            <i class="fas fa-bars"></i> <!-- Menu Icon -->
+          </button>
+
+          <!-- </div> -->
+
+
+
+          <!-- Filters Sidebar -->
+          <div id="filterSidebar"
+            class="fixed top-0 left-0 z-40 hight-of-sidebar w-64 bg-[#FCF4F7] p-6 rounded-lg transform -translate-x-full transition-transform lg:translate-x-0 lg:relative lg:col-span-1 overflow-on-scroll">
+            <div class="flex justify-between mb-4">
+              <h3 class="Filters-text mb-4">Filters</h3>
+              <button id="closeFilterButton" class="lg:hidden text-gray-500 hover:text-gray-900">
+                <i class="fas fa-times"></i>
+              </button>
+              <p class="Filters-text-p display-block">clear</p>
+            </div>
+            <!-- <div class="flex justify-between  mb-4">
+                <h3 class="Filters-text mb-4">Filters</h3>
+                <p class="Filters-text-p">clear</p>
+              </div> -->
+            <div class="mb-6">
+              <h4 class="trip-heading mb-2">Themes</h4>
+              <input type="text" placeholder="Search Destination"
+                class="w-full border-gray-300 rounded-lg p-2 mt-2 display-block ">
+
+              <div class="space-y-2 mt-2">
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="trip">Family Vacation</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="trip">Solo Trip</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="trip">Friends Holidays</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="trip">Honeymoon</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="trip">Solo Trip</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="trip">Friends Holidays</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="trip">Honeymoon</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <h4 class="trip-heading mb-2">Destination</h4>
+              <input type="text" placeholder="Search Destination"
+                class="w-full border-gray-300 rounded-lg p-2 mt-2 display-block">
+              <div class="space-y-2 mt-4">
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="trip">Paris</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="trip">Munich</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="trip">Vienna</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="trip">Paris</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="trip">Munich</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="trip">Vienna</span>
+                </label>
+              </div>
+            </div>
+
+
+            <div class="mb-6">
+              <h4 class="trip-heading mb-2">Duration <span>( in days )</span></h4>
+              <div class="space-y-2 ">
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="trip">1-3</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="trip">4-6</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="trip">9-12</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="trip">13 or more</span>
+                </label>
+
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <h4 class="trip-heading mb-2">Budget <span>( per person )</span></h4>
+              <p id="budgetValue" class="upto-pound mt-2 mb-4">Up to £200</p>
+              <input id="budgetRange" type="range" min="0" max="200" class="w-full accent-[#C02D63]">
+            </div>
+
+            <div class="mb-6">
+              <h4 class="trip-heading mb-2">Month of Travel</h4>
+              <div class="space-y-2">
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="ml-2 text-gray-700">Jan-Mar</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="ml-2 text-gray-700">Apr-Jun</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="ml-2 text-gray-700">Jul-Sep</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" class="form-checkbox h-5 w-5 accent-[#C02D63]">
+                  <span class="ml-2 text-gray-700">Oct-Dec</span>
+                </label>
+              </div>
+            </div>
+            <!-- Add other filter sections here -->
+          </div>
+
+          <!-- Packages Grid -->
+          <div class="col-span-3 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 px-4 sm:px-6 lg:px-0">
+            <!-- Package Card -->
+            <div class="w-full">
+              <div class="relative">
+                <img src="assets/images/Badges.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+                <div class="mt-5">
+                  <h4 class="mermaid-beach me-5">
+                    Mermaid Beach Resort: The most joyful way to spend your holiday
+                  </h4>
+                  <div class="flex items-center gap-2 mt-[22px]">
+                    <div>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="country">Cox’s Bazar</span>
+                    </div>
+                    <div>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="country-days">4 days</span>
+                    </div>
+                  </div>
+                  <div class="mt-[22px]">
+                    <p class="market-price">£200</p>
+                    <p class="orignal-price">
+                      £175 <span class="orignal-price-per">/ Per person</span>
+                    </p>
+                    <p class="discount mt-2">-15%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full">
+              <div class="relative">
+                <img src="assets/images/Badges.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+                <div class="mt-5">
+                  <h4 class="mermaid-beach me-5">
+                    Mermaid Beach Resort: The most joyful way to spend your holiday
+                  </h4>
+                  <div class="flex items-center gap-2 mt-[22px]">
+                    <div>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="country">Cox’s Bazar</span>
+                    </div>
+                    <div>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="country-days">4 days</span>
+                    </div>
+                  </div>
+                  <div class="mt-[22px]">
+                    <p class="market-price">£200</p>
+                    <p class="orignal-price">
+                      £175 <span class="orignal-price-per">/ Per person</span>
+                    </p>
+                    <p class="discount mt-2">-15%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full">
+              <div class="relative">
+                <img src="assets/images/Badges.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+                <div class="mt-5">
+                  <h4 class="mermaid-beach me-5">
+                    Mermaid Beach Resort: The most joyful way to spend your holiday
+                  </h4>
+                  <div class="flex items-center gap-2 mt-[22px]">
+                    <div>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="country">Cox’s Bazar</span>
+                    </div>
+                    <div>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="country-days">4 days</span>
+                    </div>
+                  </div>
+                  <div class="mt-[22px]">
+                    <p class="market-price">£200</p>
+                    <p class="orignal-price">
+                      £175 <span class="orignal-price-per">/ Per person</span>
+                    </p>
+                    <p class="discount mt-2">-15%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full">
+              <div class="relative">
+                <img src="assets/images/Badges.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+                <div class="mt-5">
+                  <h4 class="mermaid-beach me-5">
+                    Mermaid Beach Resort: The most joyful way to spend your holiday
+                  </h4>
+                  <div class="flex items-center gap-2 mt-[22px]">
+                    <div>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="country">Cox’s Bazar</span>
+                    </div>
+                    <div>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="country-days">4 days</span>
+                    </div>
+                  </div>
+                  <div class="mt-[22px]">
+                    <p class="market-price">£200</p>
+                    <p class="orignal-price">
+                      £175 <span class="orignal-price-per">/ Per person</span>
+                    </p>
+                    <p class="discount mt-2">-15%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full">
+              <div class="relative">
+                <img src="assets/images/Badges.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+                <div class="mt-5">
+                  <h4 class="mermaid-beach me-5">
+                    Mermaid Beach Resort: The most joyful way to spend your holiday
+                  </h4>
+                  <div class="flex items-center gap-2 mt-[22px]">
+                    <div>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="country">Cox’s Bazar</span>
+                    </div>
+                    <div>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="country-days">4 days</span>
+                    </div>
+                  </div>
+                  <div class="mt-[22px]">
+                    <p class="market-price">£200</p>
+                    <p class="orignal-price">
+                      £175 <span class="orignal-price-per">/ Per person</span>
+                    </p>
+                    <p class="discount mt-2">-15%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full">
+              <div class="relative">
+                <img src="assets/images/Badges.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+                <div class="mt-5">
+                  <h4 class="mermaid-beach me-5">
+                    Mermaid Beach Resort: The most joyful way to spend your holiday
+                  </h4>
+                  <div class="flex items-center gap-2 mt-[22px]">
+                    <div>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="country">Cox’s Bazar</span>
+                    </div>
+                    <div>
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span class="country-days">4 days</span>
+                    </div>
+                  </div>
+                  <div class="mt-[22px]">
+                    <p class="market-price">£200</p>
+                    <p class="orignal-price">
+                      £175 <span class="orignal-price-per">/ Per person</span>
+                    </p>
+                    <p class="discount mt-2">-15%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Repeat other cards -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="container mx-auto">
+      <div class="mt-5  sm:mt-[30px] lg:mt-[120px] md:mt-[60px]  ms-4 me-4  mb-4">
+
+        <h2 class="Trust-us text-center sm:text-left">Why Trust Us with Holidays</h2>
+        <p class="Trust-us-p text-center mt-2 sm:text-left">Explore the best travel themes available fot you, have a
+          best
+          travel experience</p>
+        <div class="flex flex-wrap justify-center items-center mt-[40px] mb-[40px] gap-8">
+          <!-- Card 1 -->
+          <div class="text-center box">
+            <img src="assets/images/best-price.svg" alt="Best Price Guarantee" class="mx-auto mb-4">
+            <h2 class="guarantee-price">Best price guarantee</h2>
+            <p class="guarantee-price-p">Get the best hotel rates available online. Our low prices can't be
+              beaten, that's
+              a promise!</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="text-center box">
+            <img src="assets/images/loveby.svg" alt="Loved by Millions" class="mx-auto mb-4">
+            <h2 class="guarantee-price">Loved by millions</h2>
+            <p class="guarantee-price-p">Join the 7 million people who've holidayed with us.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="text-center box">
+            <img src="assets/images/choosenow.svg" alt="Packaged by You" class="mx-auto mb-4">
+            <h2 class="guarantee-price">Packaged by us, Chosen by you</h2>
+            <p class="guarantee-price-p">Find your perfect holiday in a few simple taps, only designed as you
+              want your
+              next trip.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="bg-[#fcf4f7] py-16">
+      <div class="container mx-auto px-4">
+        <!-- Heading -->
+        <h2 class="Popular-destination mb-[40px] ">
+          Popular Destinations you would love to travel
+        </h2>
+
+        <!-- Cards Container -->
+        <div class="flex flex-wrap gap-[23px] justify-center">
+
+          <!-- Card 1 -->
+          <div class="relative rounded-lg overflow-hidden">
+            <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+            <div class="absolute bottom-4 left-4 text-white ml-9">
+              <h3 class="text-xl font-semibold mb-3">Agra</h3>
+              <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+              <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per
+                  person</span></p>
+            </div>
+          </div>
+
+
+          <!-- Card 2 -->
+          <div class="relative rounded-lg overflow-hidden">
+            <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+            <div class="absolute bottom-4 left-4 text-white ml-9">
+              <h3 class="text-xl font-semibold mb-3">Agra</h3>
+              <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+              <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per
+                  person</span></p>
+            </div>
+          </div>
+
+
+          <!-- Card 3 -->
+          <div class="relative rounded-lg overflow-hidden">
+            <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+            <div class="absolute bottom-4 left-4 text-white ml-9">
+              <h3 class="text-xl font-semibold mb-3">Agra</h3>
+              <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+              <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per
+                  person</span></p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Button -->
+        <div class="text-center mt-12">
+          <a href="#" class="explore-destination ">
+            Explore all Destinations
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="bg-[#fcf4f7] py-16">
+      <div class="container mx-auto px-4">
+        <!-- Heading -->
+        <h2 class="Popular-destination mb-[40px] ">
+          Explore Popular Multi Centre Destinations
+        </h2>
+
+        <!-- Cards Container -->
+        <div class="flex flex-wrap gap-[23px] justify-center">
+
+          <!-- Card 1 -->
+          <div class="relative rounded-lg overflow-hidden">
+            <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+            <div class="absolute bottom-4 left-4 text-white ml-9">
+              <h3 class="text-xl font-semibold mb-3">Thailand Multi-Centre Holidays</h3>
+              <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+              <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per
+                  person</span></p>
+            </div>
+          </div>
+
+
+          <!-- Card 2 -->
+          <div class="relative rounded-lg overflow-hidden">
+            <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+            <div class="absolute bottom-4 left-4 text-white ml-9">
+              <h3 class="text-xl font-semibold mb-3">Dubai Multi-Centre Holidays</h3>
+              <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+              <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per
+                  person</span></p>
+            </div>
+          </div>
+
+
+          <!-- Card 3 -->
+          <div class="relative rounded-lg overflow-hidden">
+            <img src="assets/images/taj-mahal.png" alt="Agra" class="">
+            <div class="absolute bottom-4 left-4 text-white ml-9">
+              <h3 class="text-xl font-semibold mb-3">Maldives Multi-Centre Holidays</h3>
+              <p class="text-sm mb-5"><i class="fa fa-suitcase mr-1"></i>10 Packages</p>
+              <p class="from mb-5">From <span class="pound">£175</span> <span class="per-person">/ Per
+                  person</span></p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Button -->
+        <div class="text-center mt-12">
+          <a href="#" class="explore-destination ">
+            Explore all Destinations
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="bg-yellow overflow-hidden">
+      <div class="container mx-auto ">
+        <div class="flex flex-wrap  mt-[60px] mb-4 ">
+          <div class="md:w-[100%] lg:w-[40%] ms-4 me-4 mt-4 mb-4">
+            <h3 class="">Couldn’t find what
+              you were looking for?</h3>
+            <p class="Experts mt-3">Our Experts would love to assist you on your next Travel Plan</p>
+            <div class="mt-[20px] sm:mt-[30px] md:mt-[60px] lg:mt-[120px] flex gap-1">
+              <p class="Experts-no"> 000 000 000</p> <span class="Experts-span mt-[42px]">24/7 Available -
+                Call us</span>
+            </div>
+          </div>
+          <div class=" mt-[32px] mb-[32px] ">
+            <div class="form p-1 shadow-lg rounded-lg ml-4">
+              <form class=" ms-[40px] me-[40px] mt-[62px] bg-white ">
+                <!-- Icons Section -->
+
+                <!-- Name Input -->
+                <div class="form-input mt-[22px]">
+                  <div class="input-wrapper">
+                    <label for="name" class="from-where">Full Name</label>
+                    <div class="relative mb-4">
+                      <input type="text" id="name" name="name" placeholder="Enter your name"
+                        class="w-full custom-select Destination">
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Contact Number Input -->
+                <div class="form-input mt-[22px]">
+                  <div class="input-wrapper">
+                    <label for="contact" class="from-where">Contact Number</label>
+                    <div class="relative mb-4">
+                      <input type="number" id="contact" name="contact" placeholder="Enter contact number"
+                        class="w-full custom-select Destination">
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- Departure and Return Dates -->
+                <div class="form-input mt-[22px]">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="input-wrapper">
+                    <label for="from" class="from-where">To where</label>
+                    <div class="relative mb-4">
+                      <select id="from" name="from" class="w-full custom-select Destination">
+                        <option value="" disabled selected>Destination</option>
+                        <option value="airport1">Airport 1</option>
+                        <option value="airport2">Airport 2</option>
+                      </select>
+                      <span class="custom-icon">
+                        <i class="fas fa-chevron-down"></i> <!-- Your custom chevron down icon -->
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Number of Guests -->
+                <div class="form-input mt-[22px]">
+                  <div class="input-wrapper">
+                    <label for="query" class="from-where">Write Your Query</label>
+                    <div class="relative mb-4">
+                      <textarea id="query" name="query" placeholder="Write your query here..."
+                        class="w-full custom-select Destination h-[82px] resize-none"></textarea>
+                      <span class="custom-icon">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- Submit Button -->
+                <div class="mt-[36px]">
+                  <button type="submit" class="Holidays-btn">
+                    Search Holidays
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class=" container mx-auto mt-12 mb-[60px]  ">
+      <h3 class="best-pakage mb-[40px] text-start ms-5">Discover our best hotels to stay</h3>
+      <div class="swiper   ms-4 me-4">
+        <div class="swiper-wrapper ms-4 me-4">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="relative">
+              <img src="assets/images/discoverImage1.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+              <div class="mt-5">
+                <h4 class="mermaid-beach me-5">Moon House Hostel</h4>
+                <div class="flex items-center gap-4 mt-[22px]">
+                  <div>
+                    <i class="fas fa-map-marker-alt"></i> <span class="country ms-1">Dismesi Sokak,
+                      Istanbul</span>
+                  </div>
+
+                </div>
+                <div class=" mt-[22px]">
+                  <p class="Start-from">Starts from</p>
+                  <p class="Start-from-price">£150 <span class="Start-from-span">/ Per night</span></p>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="relative">
+              <img src="assets/images/discoverImage2.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+              <div class="mt-5">
+                <h4 class="mermaid-beach me-5">Moon House Hostel</h4>
+                <div class="flex items-center gap-4 mt-[22px]">
+                  <div>
+                    <i class="fas fa-map-marker-alt"></i> <span class="country ms-1">Dismesi Sokak,
+                      Istanbul</span>
+                  </div>
+
+                </div>
+                <div class=" mt-[22px]">
+                  <p class="Start-from">Starts from</p>
+                  <p class="Start-from-price">£150 <span class="Start-from-span">/ Per night</span></p>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="relative">
+              <img src="assets/images/discoverImage3.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+              <div class="mt-5">
+                <h4 class="mermaid-beach me-5">Moon House Hostel</h4>
+                <div class="flex items-center gap-4 mt-[22px]">
+                  <div>
+                    <i class="fas fa-map-marker-alt"></i> <span class="country ms-1">Dismesi Sokak,
+                      Istanbul</span>
+                  </div>
+
+                </div>
+                <div class=" mt-[22px]">
+                  <p class="Start-from">Starts from</p>
+                  <p class="Start-from-price">£150 <span class="Start-from-span">/ Per night</span></p>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Slide 4 -->
+
+          <div class="swiper-slide">
+            <div class="relative">
+              <img src="assets/images/discoverImage1.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+              <div class="mt-5">
+                <h4 class="mermaid-beach me-5">Moon House Hostel</h4>
+                <div class="flex items-center gap-4 mt-[22px]">
+                  <div>
+                    <i class="fas fa-map-marker-alt"></i> <span class="country ms-1">Dismesi Sokak,
+                      Istanbul</span>
+                  </div>
+
+                </div>
+                <div class=" mt-[22px]">
+                  <p class="Start-from">Starts from</p>
+                  <p class="Start-from-price">£150 <span class="Start-from-span">/ Per night</span></p>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="swiper-slide">
+            <div class="relative">
+              <img src="assets/images/discoverImage2.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
+              <div class="mt-5">
+                <h4 class="mermaid-beach me-5">Moon House Hostel</h4>
+                <div class="flex items-center gap-4 mt-[22px]">
+                  <div>
+                    <i class="fas fa-map-marker-alt"></i> <span class="country ms-1">Dismesi Sokak,
+                      Istanbul</span>
+                  </div>
+
+                </div>
+                <div class=" mt-[22px]">
+                  <p class="Start-from">Starts from</p>
+                  <p class="Start-from-price">£150 <span class="Start-from-span">/ Per night</span></p>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+      </div>
+      <div class="ms-[25px] mt-12">
+        <a href="#" class="explore-destination ">
+          Explore all Destinations
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="bg-light-background">
+      <div class="container mx-auto overflow-hidden">
+        <div class=" lg:my-[130px] ml-auto">
+          <div class="holiday-lovers ml-auto">
+            <div class="mb-[40px]">
+              <h3 class="holiday-lovers-h3 mt-4">Join thousands of holiday lovers</h3>
+              <p class="holiday-lovers-p mt-5 mr-4">
+                Stay up to date with the hottest destinations, deals and holiday inspiration.
+              </p>
+              <form class="flex mt-4 gap-2">
+                <input type="email" name="email" placeholder="Enter your email address" class="holiday-lovers-input"
+                  required>
+                <button type="submit" class="holiday-lovers-btn">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="bg-light">
+      <div class="container mx-auto overflow-hidden">
+        <div class="mt-5 lg:mt-[120px]">
+          <h3 class="travel-blog text-2xl font-bold mb-8">Travel Blogs</h3>
+          <div class="flex flex-wrap gap-4 ">
+            <!-- Blog Card 1 -->
+            <div class="flex flex-wrap ">
+              <!-- Card Start -->
+
+
+              <div class="w-full md:w-[336px] ml-10">
+                <img src="assets/images/Top Card.jpg" class="max-w-full h-auto" alt="Top Card">
+
+                <div class="flex gap-8 mt-5 justify-center">
+                  <div class="flex flex-col items-center mt-4">
+                    <img src="assets/images/Heart.svg" alt="Heart">
+                    <p class="View mt-2">222</p>
+                  </div>
+                  <div class="flex flex-col items-center mt-4">
+                    <img src="assets/images/Eye.svg" alt="Views">
+                    <p class="View mt-3">222</p>
+                  </div>
+                  <div class="flex flex-col items-center mt-4">
+                    <img src="assets/images/Share.svg" alt="Share">
+                    <p class="View mt-2">222</p>
+                  </div>
+                </div>
+
+                <h2 class="best-way ms-5 me-5 mt-5">15 Best Day Trips from Portland Oregon</h2>
+                <p class="best-way-p  ms-5 me-10 mt-5">
+                  The structure of the trip blog is only a white canvas to highlight the atmospheric and
+                  immersive.
+                </p>
+                <div class="flex justify-center mt-4 mb-4">
+                  <img src="assets/images/arrow-right.png" alt="Read more" class="mt-10 justify-center ms-5 me-5">
+
+                </div>
+              </div>
+
+
+              <div class="w-full md:w-[300px] ml-10">
+                <img src="assets/images/Top Card (1).jpg" class="max-w-full h-auto" alt="Top Card">
+
+                <div class="flex gap-8 mt-5 justify-center">
+                  <div class="flex flex-col items-center mt-4">
+                    <img src="assets/images/Heart.svg" alt="Heart">
+                    <p class="View mt-2">222</p>
+                  </div>
+                  <div class="flex flex-col items-center mt-4">
+                    <img src="assets/images/Eye.svg" alt="Views">
+                    <p class="View mt-3">222</p>
+                  </div>
+                  <div class="flex flex-col items-center mt-4">
+                    <img src="assets/images/Share.svg" alt="Share">
+                    <p class="View mt-2">222</p>
+                  </div>
+                </div>
+
+                <h2 class="best-way ms-5 me-5 mt-5">15 Best Day Trips from Portland Oregon</h2>
+                <p class="best-way-p  ms-5 me-10 mt-5">
+                  The structure of the trip blog is only a white canvas to highlight the atmospheric and
+                  immersive.
+                </p>
+                <div class="flex justify-center mt-4 mb-4">
+                  <img src="assets/images/arrow-right.png" alt="Read more" class="mt-10 justify-center ms-5 me-5">
+
+                </div>
+              </div>
+
+
+
+
+
+              <div class="w-full md:w-[300px] ml-10">
+                <img src="assets/images/Top Card (2).jpg" class="max-w-full h-auto" alt="Top Card">
+
+                <div class="flex gap-8 mt-5 justify-center">
+                  <div class="flex flex-col items-center mt-4">
+                    <img src="assets/images/Heart.svg" alt="Heart">
+                    <p class="View mt-2">222</p>
+                  </div>
+                  <div class="flex flex-col items-center mt-4">
+                    <img src="assets/images/Eye.svg" alt="Views">
+                    <p class="View mt-3">222</p>
+                  </div>
+                  <div class="flex flex-col items-center mt-4">
+                    <img src="assets/images/Share.svg" alt="Share">
+                    <p class="View mt-2">222</p>
+                  </div>
+                </div>
+
+                <h2 class="best-way ms-5 me-5 mt-5">15 Best Day Trips from Portland Oregon</h2>
+                <p class="best-way-p  ms-5 me-10 mt-5">
+                  The structure of the trip blog is only a white canvas to highlight the atmospheric and
+                  immersive.
+                </p>
+                <div class="flex justify-center mt-4 mb-4">
+                  <img src="assets/images/arrow-right.png" alt="Read more" class="mt-10 justify-center ms-5 me-5">
+
+                </div>
+              </div>
+
+
+
+              <!-- Card End -->
+            </div>
+
+          </div>
+          <div class="ms-[25px] mt-12 mb-[50px]  items-center text-center">
+            <a href="#" class="explore-destination  ">
+              Explore all blogs
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="container mx-auto overflow-hidden">
+      <div class="mt-5 lg:mt-[40px]">
+        <div class="items-center text-center lg:text-left ms-4 me-4">
+          <h2 class="about-demo">About Demo Holiday</h2>
+
+          <p class="about-demo-p mt-5">We believe everyone deserves a little bit of sunshine. That's why here at
+            Sunshine.co.uk
+            we aim to find your
+            perfect holiday, for the best possible price. We want to make finding your holiday easy by searching
+            around to
+            do all the hard work for you. </p>
+
+          <p class="about-demo-p mt-5"> Book with confidence when you secure your sunny escape with
+            Sunshine.co.uk. All of
+            our
+            flight-inclusive
+            package holidays are ATOL protected and follow the Package Travel Directive, plus you can rest
+            assured that
+            your money is safe in our secure trust account. Find out more about our protection promise. We aim
+            to spread
+            as much sunshine as possible, which is why you can trust booking through us for your next holiday.
+          </p>
+        </div>
+        <div class=" mt-12 mb-12 ml-5 text-center lg:text-left ">
+          <a href="#" class="explore-destination ">
+            Read more
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="bg-footer-img">
+      <div class="container mx-auto overflow-hidden">
+        <div class="mt-5 lg:mt-[60px]">
+          <h3 class="confidence">Book with confidence with Us</h3>
+
+          <div class="flex justify-center items-center gap-[70px] mt-[48px] mb-[60px] ms-4 me-4">
+            <div>
+              <img src="assets/images/secure.svg" alt="Secure">
+            </div>
+            <div>
+              <img src="assets/images/secure2.svg" alt="Secure2">
+            </div>
+            <div class="flex items-center gap-2">
+              <p class="confidence-p">Click to view Packages</p>
+              <img src="assets/images/secure-arrow.svg" class="cursor-pointer" alt="Arrow">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="bg-[#fcf4f7] py-10 text-center text-sm text-gray-800">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8 text-left">
+          <div>
+            <!-- <img src="assets/images/plan-holidays.jpg" class="max-w-full h-auto" alt="logo"> -->
+            <h2>Logo</h2>
+          </div>
+          <div>
+            <h4 class="footer-heading mb-5">Opening Hours</h4>
+            <p class="footer-p">Weekdays: <span class="footer-span">Timings</span></p>
+            <p class="footer-p">Saturday, Sunday: <span class="footer-span">Timings</span></p>
+          </div>
+          <div>
+            <h4 class="footer-heading mb-5">Address</h4>
+            <p class="footer-p">Level 1, 12 Sample St, Sydney</p>
+            <p class="footer-p">NSW 2000</p>
+          </div>
+          <div>
+            <h4 class="footer-heading mb-5">Contact</h4>
+            <p class="footer-p flex items-center">
+              <img src="assets/images/email.svg" alt="Email" class="w-4 h-4 mr-2">
+              info@example.com
+            </p>
+            <p class="footer-p flex items-center">
+              <img src="assets/images/call.svg" alt="Phone" class="w-4 h-4 mr-2">
+              (270) 555-0117
+            </p>
+
+          </div>
+        </div>
+
+        <hr class="my-6 border-gray-300" />
+
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="all-rights lg:ml-[200px]">&copy;2022, All rights reserved.</p>
+          <div class="flex gap-4 text-pink-600 text-lg">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+
+    <script>
+      const filterButton = document.getElementById('filterButton');
+      const filterSidebar = document.getElementById('filterSidebar');
+      const closeFilterButton = document.getElementById('closeFilterButton');
+
+      filterButton.addEventListener('click', () => {
+        filterSidebar.classList.remove('-translate-x-full');
+      });
+
+      closeFilterButton.addEventListener('click', () => {
+        filterSidebar.classList.add('-translate-x-full');
+      });
+      const budgetRange = document.getElementById('budgetRange');
+      const budgetValue = document.getElementById('budgetValue');
+
+      // Update the text content when the range slider value changes
+      budgetRange.addEventListener('input', () => {
+        budgetValue.textContent = `Up to £${budgetRange.value}`;
+      });
+
+
+
+
+      var swiper = new Swiper('.mySwiper2', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+
+
+
+
+    </script>
+  </div>
+
+</body>
+
+</html>

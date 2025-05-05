@@ -433,13 +433,12 @@ a:hover {
 
 .Popular-destination {
     color: var(--Gray-1100, #262D33);
-    font-family: 'Titillium Web';
+    font-family: "Titillium Web";
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 48px;
     /* 150% */
-    /* color: black; */
     text-align: center;
 }
 
@@ -1180,6 +1179,143 @@ a:hover {
     /* 112.5% */
 }
 
+.Campanile-p {
+    color: #4C5A66;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+}
+
+.Campanile {
+    color: #39434D;
+    font-family: "Titillium Web";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 44.8px */
+}
+
+.pound-per-person {
+    color: #C02D63;
+    font-family: 'Lato';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 48px;
+    /* 150% */
+}
+
+.pound-per-person-p {
+    color: var(--Gray-900, #4C5A66);
+
+    /* Heading/8 */
+    font-family: "Titillium Web";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 18.2px */
+}
+
+.trip {
+    color: #39434D;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 125% */
+    margin-left: 10px;
+}
+
+.trip-heading {
+    color: #39434D;
+    font-family: "Titillium Web";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+}
+
+.trip-heading span {
+    color: #39434D;
+    font-family: "Titillium Web";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.upto-pound {
+    color: #763A87;
+
+    /* Button */
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    /* 162.5% */
+    text-transform: capitalize;
+}
+
+.hight-of-sidebar {
+    height: 1133px;
+}
+
+.Filters-text {
+    color: #39434D;
+    font-family: "Titillium Web";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 133.333% */
+}
+
+.Filters-text-p {
+    color: #99B4CC;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 166.667% */
+}
+
+.filter-button{
+    color: var(--Theme-White, #FFFEFE);
+    font-family: 'Titillium Web';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 28px */
+    display: flex;
+    width: 100%;
+    height: 62px;
+    padding: 7px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #763A87;
+}
+.filter-button:hover{
+    background-color: #f289af;
+    color: white;
+}
+.filter-button:active{
+    background-color: #f289af;
+    color: white;
+}
+
 @media (min-width:1536px) {
     .container {
         max-width: 1140px !important;
@@ -1253,7 +1389,15 @@ a:hover {
     }
 
     .form {
-        width: auto;
+        width: 452px !important;
+    }
+
+    .Campanile {
+        font-size: 28px;
+    }
+
+    .Campanile-p {
+        font-size: 16px;
     }
 
 }
@@ -1331,6 +1475,14 @@ a:hover {
     .call-destination-btn-span {
         font-size: 18px;
     }
+
+    .Campanile {
+        font-size: 24px;
+    }
+    .overflow-on-scroll{
+        overflow: scroll;
+        height: 100vh;
+    }
 }
 
 @media (max-width:768px) {
@@ -1376,6 +1528,10 @@ a:hover {
 
     .widthforhero {
         width: 90%;
+    }
+
+    .Campanile {
+        font-size: 20px;
     }
 }
 
