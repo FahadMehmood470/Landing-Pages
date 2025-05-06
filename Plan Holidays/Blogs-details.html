@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>blogs Details</title>
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+
+    <div class="bg-white">
+        <div class="container mx-auto ">
+
+            <!-- Navbar -->
+            <nav class="mt-6 mb-5 flex items-center justify-between  display-block ">
+                <!-- Logo (left side) -->
+                <div class="flex items-center">
+                    <img src="assets/images/plan-holidays.jpg" class="max-w-full h-auto" alt="logo">
+                </div>
+
+                <!-- Centered Icons (Destination, Packages, Hotels, Blog) -->
+                <div class="flex space-x-8">
+                    <a href="#" class="nav-icon-nav hover:text-blue-500">
+                        <i class="fas fa-map-marker-alt"></i> Destination
+                    </a>
+                    <a href="#" class="nav-icon-nav hover:text-blue-500">
+                        <i class="fas fa-box-open"></i> Packages
+                    </a>
+                    <a href="#" class="nav-icon-nav hover:text-blue-500">
+                        <i class="fas fa-hotel"></i> Hotels
+                    </a>
+                    <a href="#" class="nav-icon-nav hover:text-blue-500">
+                        <i class="fas fa-blog"></i> Blog
+                    </a>
+                </div>
+
+                <!-- Right side (Phone No & Signin Button) -->
+                <div class="flex items-center space-x-4">
+                    <p class="nav-phone-number">
+                        1800-123-5555
+                    </p>
+                    <a href="" class="btn-signin">Sign in</a>
+                </div>
+            </nav>
+
+
+
+            <!-- drawer init and toggle -->
+
+            <div class="display-none">
+                <div class="flex items-center justify-between ml-4 me-4 mt-6 mb-5">
+                    <div class="flex items-center">
+                        <img src="assets/images/plan-holidays.jpg" class="max-w-full h-auto" alt="logo">
+                    </div>
+                    <button
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                        type="button" data-drawer-target="drawer-disabled-backdrop"
+                        data-drawer-show="drawer-disabled-backdrop" data-drawer-backdrop="false"
+                        aria-controls="drawer-disabled-backdrop">
+                        <i class="fas fa-bars"></i> <!-- Menu Icon -->
+                    </button>
+
+                </div>
+
+                <!-- drawer component -->
+                <div id="drawer-disabled-backdrop"
+                    class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800"
+                    tabindex="-1" aria-labelledby="drawer-disabled-backdrop-label">
+                    <h5 id="drawer-disabled-backdrop-label"
+                        class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">Menu</h5>
+                    <button type="button" data-drawer-hide="drawer-disabled-backdrop"
+                        aria-controls="drawer-disabled-backdrop"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close menu</span>
+                    </button>
+                    <div class="py-4 overflow-y-auto">
+                        <ul class="space-y-2 font-medium">
+                            <li>
+                                <a href="#"
+                                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="ml-3">Destination</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="#"
+                                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <i class="fas fa-box-open"></i>
+                                    <span class="flex-1 ml-3 whitespace-nowrap">Packages</span>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <i class="fas fa-hotel"></i>
+                                    <span class="flex-1 ml-3 whitespace-nowrap">Hotels</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <i class="fas fa-blog"></i>
+                                    <span class="flex-1 ml-3 whitespace-nowrap">Blog</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 18 16">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3" />
+                                    </svg>
+                                    <span class="flex-1 ml-3 whitespace-nowrap">Sign In</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path
+                                            d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z" />
+                                        <path
+                                            d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z" />
+                                        <path
+                                            d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z" />
+                                    </svg>
+                                    <span class="flex-1 ml-3 whitespace-nowrap">Sign Up</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 ml-4 me-4 mt-4 lg:mt-[41px]">
+            <!-- Carousel Section -->
+            <div class="lg:col-span-7 mt-4 lg:mt-[41px] ">
+                <h2 class="blog-h ">What we ate in a day at Stella Island Luxury Resort</h2>
+                <p class="blog-by mt-4 mb-7">By <span>John Oliver</span></p>
+
+                <div class="blog-section">
+                    <img src="assets/images/Blog-image1.jpg" alt="Blog Image"
+                        class="w-full h-auto rounded-lg shadow-lg">
+                    <p class="mt-3 mb-4">One of the best things about going on holiday? It’s got to be the food. From
+                        the traditional
+                        local dishes that simply aren’t the same at home, to the incredible all-inclusive options you
+                        can enjoy day after day. Food is one of the simpler joys in life, but it’s so much better on
+                        your jollies.
+                    </p>
+                    <p class="mt-3 mb-4">
+                        I recently had the pleasure of staying at the incredible Stella Island Luxury Resort and Spa in
+                        Crete, and although I could go on and on about how every single detail was perfect, I’m going to
+                        give you the inside scoop on (you guessed it) the food!
+                    </p>
+                    <p class="mt-3 mb-4">
+                        You’ve all heard of Stella Island, right? If not, then listen closely…‘cause you’re really going
+                        to want to hear about it. Stella Island is a five-star, adult-only hotel located in Analipsis,
+                        Crete. But this isn’t just any hotel. The design, the staff, the vibes – immaculate. From the
+                        moment you pull up to the entrance, not only do you feel like a VIP…you are a VIP. It’s hard to
+                        put into words just how much ‘wow’ factor this place has, so here’s a snap to give you an idea…
+                    </p>
+
+                    <div class="grid grid-cols-2 lg:grid-cols-2 gap-4 mt-4">
+                        <img src="assets/images/Blog-image2.jpg" alt="blog Image"
+                            class="max-w-full  h-auto rounded-lg shadow-lg mt-5 mb-3">
+                        <img src="assets/images/Blog-image2.jpg" alt="blog Image"
+                            class="max-w-full  h-auto rounded-lg shadow-lg mt-5 mb-3">
+                    </div>
+                    <p class="mt-3 mb-4">
+                        So…the food. Let’s start with breakfast. Fruit, cheese, meat, bread, yoghurt, cereal and a range
+                        of milk alternatives are available at the buffet. And that’s before you get to the hot stuff!
+                        Whether you’re looking for a sweet continental start to the day or eggs cooked in your favourite
+                        way – they’ve got it. Woke up thirsty? There are bottles of infused water, a range of juices and
+                        little bottles of freshly squeezed orange on offer – as well as a coffee service directly to
+                        your table!
+
+                    </p>
+                    <p class="mt-3 mb-4 ">
+                        So, what did I have? Well, if there’s watermelon on the menu, then I’m all over it. But, being
+                        the indecisive eater I am – I had to get a little bit of everything. Starting off with
+                        watermelon, grapefruit, a croissant and some cold meat, cheese and olives. It was a perfect
+                        plate for a picky eater. Once that was demolished, I had a bit of food envy as I spotted cheese
+                        and beans on toast, so went for the comfort food favourite (with a side of MORE watermelon) to
+                        finish off – and it was delicious!
+                    </p>
+
+                    <div class="grid grid-cols-3 lg:grid-cols-3 gap-4 mt-4">
+                        <img src="assets/images/Blog-image4.jpg" alt="blog Image"
+                            class="max-w-full  h-auto rounded-lg shadow-lg mt-5 mb-3">
+                        <img src="assets/images/Blog-image4.jpg" alt="blog Image"
+                            class="max-w-full  h-auto rounded-lg shadow-lg mt-5 mb-3">
+                        <img src="assets/images/Blog-image4.jpg" alt="blog Image"
+                            class="max-w-full  h-auto rounded-lg shadow-lg mt-5 mb-3">
+
+                    </div>
+                    <p class="mt-3 mb-4 ">
+                        Now, one of the reasons we thought a snack might be a good idea was because we knew we weren’t
+                        going to eat until later, having booked a table at Oceania restaurant for 9pm. What we didn’t
+                        know was that we were going to be trying out 7 (yes, 7!) different courses at the seafood
+                        restaurant, so to say we were full by the end of the day is an understatement, but it was so
+                        worth it
+                    </p>
+
+                    <p class="mt-3 mb-4 ">
+                        Scallops, red snapper, caviar – you name it, we tried it. Everything from the smoked eel mousse,
+                        beetroot and passion fruit macaron to the white chocolate, yoghurt and lime pearl was absolutely
+                        amazing. If I could fly back just for the food… I would.
+                    </p>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+ 
+            <!-- Form Section -->
+            <div class="lg:col-span-5 w-full flex items-center justify-center lg:justify-start lg:items-start" >
+
+                <div class="lg:mt-[41px]  mr-4">
+                    <div class="flex justify-center items-center lg:justify-end lg:items-end ">
+                        <div class="flex gap-8 mt-5 jus justify-end">
+                            <div class="flex flex-col items-center mt-4">
+                                <img src="assets/images/Heart.svg" alt="Heart">
+                                <p class="View mt-2">222</p>
+                            </div>
+                            <div class="flex flex-col items-center mt-4">
+                                <img src="assets/images/Eye.svg" alt="Views">
+                                <p class="View mt-3">222</p>
+                            </div>
+                            <div class="flex flex-col items-center mt-4">
+                                <img src="assets/images/Share.svg" alt="Share">
+                                <p class="View mt-2">222</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form p-1 shadow-lg rounded-lg bg-white">
+                        <form class="ms-[40px] me-[40px] mt-4 lg:mt-[62px] bg-white ">
+                            <!-- Icons Section -->
+                            <div class="flex  space-x-4">
+                                <i
+                                    class="fas fa-map-marker-alt cursor-pointer text-gray-600 p-3 hover:border-b-2 hover:border-red-500 hover:text-[#FF626D]"></i>
+                                <i
+                                    class="fas fa-plane cursor-pointer text-gray-600 p-3 hover:border-b-2 hover:border-red-500 hover:text-[#FF626D]"></i>
+                                <i
+                                    class="fas fa-hotel cursor-pointer text-gray-600 p-3 hover:border-b-2 hover:border-red-500 hover:text-[#FF626D]"></i>
+                            </div>
+
+                            <!-- From Where Dropdown -->
+                            <div class="form-input mt-[22px]">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="input-wrapper">
+                                    <label for="from-where" class="from-where">From where</label>
+                                    <div class="relative mb-4">
+                                        <select id="from-where" name="from" class="w-full custom-select Destination"
+                                            aria-label="Select Departure Airport">
+                                            <option value="" disabled selected>Your Airport</option>
+                                            <option value="airport1">Airport 1</option>
+                                            <option value="airport2">Airport 2</option>
+                                        </select>
+                                        <span class="custom-icon">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- To Where Dropdown -->
+                            <div class="form-input mt-[22px]">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="input-wrapper">
+                                    <label for="to-where" class="from-where">To where</label>
+                                    <div class="relative mb-4">
+                                        <select id="to-where" name="to" class="w-full custom-select Destination"
+                                            aria-label="Select Destination Airport">
+                                            <option value="" disabled selected>Destination</option>
+                                            <option value="airport1">Airport 1</option>
+                                            <option value="airport2">Airport 2</option>
+                                        </select>
+                                        <span class="custom-icon">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Contact No -->
+                            <div class="form-input mt-[22px]">
+                                <div class="input-wrapper">
+                                    <label for="contact" class="from-where">Contact Number</label>
+                                    <div class="relative mb-4">
+                                        <input type="number" id="contact" name="contact" placeholder="+92"
+                                            class="w-full custom-select Destination">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Email Adress -->
+                            <div class="form-input mt-[22px]">
+                                <div class="input-wrapper">
+                                    <label for="contact" class="from-where">Contact Number</label>
+
+                                    <div class="relative mb-4">
+                                        <input type="email" id="email" name="email" placeholder="Enter Your E"
+                                            class="w-full custom-select Destination">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Submit Button -->
+                            <div class="mt-[36px]">
+                                <button type="submit" class="Holidays-btn" aria-label="Search Holidays">
+                                    Customize and Book
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="overflow-hidden">
+                    <div class="mt-[60px]">
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+</body>
+
+</html>

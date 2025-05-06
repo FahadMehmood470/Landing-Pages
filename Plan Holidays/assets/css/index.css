@@ -1288,7 +1288,7 @@ a:hover {
     /* 166.667% */
 }
 
-.filter-button{
+.filter-button {
     color: var(--Theme-White, #FFFEFE);
     font-family: 'Titillium Web';
     font-size: 16px;
@@ -1307,13 +1307,53 @@ a:hover {
     border-radius: 8px;
     background: #763A87;
 }
-.filter-button:hover{
+
+.filter-button:hover {
     background-color: #f289af;
     color: white;
 }
-.filter-button:active{
+
+.filter-button:active {
     background-color: #f289af;
     color: white;
+}
+
+.blog-by {
+    color: #4C5A66;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 28px */
+}
+
+.blog-by span {
+    color: #C02D63;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.blog-section p {
+    color: #4C5A66;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.blog-h {
+    color: #39434D;
+    font-family: "Titillium Web";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 44.8px */
 }
 
 @media (min-width:1536px) {
@@ -1331,6 +1371,7 @@ a:hover {
     .make-tour-span {
         font-size: 50px;
     }
+    
 
 }
 
@@ -1399,7 +1440,12 @@ a:hover {
     .Campanile-p {
         font-size: 16px;
     }
-
+    .blog-h{
+        font-size: 26px;
+    }
+    .blog-section p {
+        font-size: 16px;
+    }
 }
 
 @media (max-width:992px) {
@@ -1479,7 +1525,8 @@ a:hover {
     .Campanile {
         font-size: 24px;
     }
-    .overflow-on-scroll{
+
+    .overflow-on-scroll {
         overflow: scroll;
         height: 100vh;
     }
