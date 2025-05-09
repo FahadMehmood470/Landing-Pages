@@ -1,395 +1,386 @@
 .form-check-input:checked {
-    background-color: #FACE8D;
-    border-color: #FACE8D;
+  background-color: #face8d;
+  border-color: #face8d;
 }
 
 #enquirymodal .modal-content {
-    background: transparent !important;
+  background: transparent !important;
 }
 
 /* Modal Content Styling */
 .custom-modal-content {
-    background-color: #000;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 12px;
-    width: 100%;
-    /* Full width for smaller screens */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    position: relative;
-    color: white;
-    z-index: 10000;
+  background-color: #000;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 12px;
+  width: 100%;
+  /* Full width for smaller screens */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  color: white;
+  z-index: 10000;
 }
-
 
 /* Close Button */
 .close-btn {
-    position: absolute;
-    right: 37px;
-    top: 28px;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-    z-index: 90;
+  position: absolute;
+  right: 37px;
+  top: 28px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  z-index: 90;
+}
+
+.heart-icon {
 }
 
 /* Form Inputs */
 .input-filds {
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    margin: 8px 0;
-    font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin: 8px 0;
+  font-size: 14px;
 }
 
 body {
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Century Gothic";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    color: #FFF;
-    /* background-color: #050505; */
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: #fff;
+  /* background-color: #050505; */
 }
 
 .navbar-toggler:focus {
-    box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
 }
 
 .background-color {
-    background: #050505;
-    /* min-height: 1700px; */
-    width: 100%;
-    height: auto;
-    /* width: 1905px; */
-    /* height: 1700px; */
+  background: #050505;
+  /* min-height: 1700px; */
+  width: 100%;
+  height: auto;
+  /* width: 1905px; */
+  /* height: 1700px; */
 }
 
 .Logo {
-    color: #FFF;
-    text-align: center;
-    font-family: "Century Gothic";
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    /* 64px */
+  color: #fff;
+  text-align: center;
+  font-family: "Century Gothic";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 64px */
 }
 
 .custome-li-alignments {
-    font-family: "Century Gothic";
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    color: rgba(255, 255, 255, 0.80);
-
+  font-family: "Century Gothic";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .custome-li-umrah {
-    color: #FACE8D;
-    font-family: "Century Gothic";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
+  color: #face8d;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
 }
 
 .custome-li-alignments:hover {
-    color: #FACE8D;
-    transition: 0.4s ease-in-out;
-
+  color: #face8d;
+  transition: 0.4s ease-in-out;
 }
 
 .custome-li-umrah:hover {
-    color: rgba(255, 255, 255, 0.80);
-    transition: 0.4s ease-in-out;
-    font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.4s ease-in-out;
+  font-size: 18px;
 }
 
 .backround-image {
-    background-image: url(../images/umrah-packages-banner.jpg);
-    background-position: top center;
-    background-repeat: no-repeat;
+  background-image: url(../images/umrah-packages-banner.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .enquire-for-umrah {
-    color: var(--text-primary, #FACE8D);
-    font-family: "Bitter Rose DEMO";
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-    display: flex;
-    justify-content: center;
+  color: var(--text-primary, #face8d);
+  font-family: "Bitter Rose DEMO";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .custom-mt {
-    margin-top: 3rem;
-    /* or any value you need */
+  margin-top: 3rem;
+  /* or any value you need */
 }
 
 .custom-mb {
-    margin-bottom: 5rem;
-    /* or any value you need */
+  margin-bottom: 5rem;
+  /* or any value you need */
 }
 
 .sign-up-for-umrah {
-    /* width: 483px;
+  /* width: 483px;
     height: 450px; */
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(8.100000381469727px);
-    margin-inline: 14rem;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8.100000381469727px);
+  margin-inline: 14rem;
 }
 
 .input-filds {
-    display: inline-flex;
-    height: 60px;
-    padding: 16px 24px;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.40);
-    background-color: inherit;
-    font-family: "Century Gothic";
-    background-color: transparent;
-    outline: none;
+  display: inline-flex;
+  height: 60px;
+  padding: 16px 24px;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: inherit;
+  font-family: "Century Gothic";
+  background-color: transparent;
+  outline: none;
 }
 
 .input-filds {
-    display: inline-flex;
-    height: 60px;
-    padding: 16px 24px;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.40);
-    background-color: inherit;
-    font-family: "Century Gothic";
-    display: block;
-    width: 100%;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #FFF;
+  display: inline-flex;
+  height: 60px;
+  padding: 16px 24px;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: inherit;
+  font-family: "Century Gothic";
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
 }
-
 
 .custome-label {
-    color: var(--text-muted, rgba(255, 255, 255, 0.80));
-    font-family: "Century Gothic";
-    font-size: 14px !important;
-    font-style: normal;
-    font-weight: 400;
-    /* 22.4px */
+  color: var(--text-muted, rgba(255, 255, 255, 0.8));
+  font-family: "Century Gothic";
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 400;
+  /* 22.4px */
 }
 
 .input-filds:focus {
-    color: white;
-    background-color: inherit;
-    border-color: #FACE8D;
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(250, 206, 141, 0.25);
-    font-family: inherit;
-    font-size: 14px;
+  color: white;
+  background-color: inherit;
+  border-color: #face8d;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(250, 206, 141, 0.25);
+  font-family: inherit;
+  font-size: 14px;
 }
 
 .submit-enquiry {
-    color: #FFF;
-    font-family: "Century Gothic";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    display: flex;
-    /* width: 419px; */
-    width: 90%;
-    height: 60px;
-    padding: 16px 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    border-radius: 500px;
-    background: rgba(255, 255, 255, 0.30);
-    border: rgba(255, 255, 255, 0.30);
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  /* width: 419px; */
+  width: 90%;
+  height: 60px;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 500px;
+  background: rgba(255, 255, 255, 0.3);
+  border: rgba(255, 255, 255, 0.3);
 }
 
 .beat-price-btn {
-    display: flex;
-    width: 66%;
-    padding: 20px 78px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 500px;
-    background: var(--background-primary, #F8D49E);
-    box-shadow: 0px 0px 8.6px 0px rgba(5, 5, 5, 0.30);
-    color: var(--text-inverse, #081212);
-    font-family: "Century Gothic";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-decoration: none;
+  display: flex;
+  width: 66%;
+  padding: 20px 78px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 500px;
+  background: var(--background-primary, #f8d49e);
+  box-shadow: 0px 0px 8.6px 0px rgba(5, 5, 5, 0.3);
+  color: var(--text-inverse, #081212);
+  font-family: "Century Gothic";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .Available {
-    color: #FFF;
-    font-family: "Century Gothic";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    /* 100% */
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* 100% */
 }
 
 .phone-no {
-    color: #FFF;
-    font-family: "Century Gothic";
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 48px;
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
 }
 
 .phone-no a:link,
 .phone-no a:visited,
 .phone-no a:active {
-    color: #FFF;
-    font-family: "Century Gothic";
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 48px;
-    text-decoration: none;
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-decoration: none;
 }
 
 .phone-no a:hover {
-    color: #FFF;
-    font-family: "Century Gothic";
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 48px;
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
 }
 
-
-
 .phone-no-company {
-    color: #FFF;
-    font-family: "Century Gothic";
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 48px;
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
 }
 
 .blur-wattsapp-img {
-    width: 69px;
-    height: 69px;
-    flex-shrink: 0;
-    fill: #F8D49E;
+  width: 69px;
+  height: 69px;
+  flex-shrink: 0;
+  fill: #f8d49e;
 }
 
 .affordable-umrah {
-    color: var(--text-default, #FFF);
-    font-family: "Century Gothic";
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-    /* 40px */
+  color: var(--text-default, #fff);
+  font-family: "Century Gothic";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 40px */
 }
-
+ 
 .wattsapp-icon {
-    width: 69px;
-    height: 69px;
-    flex-shrink: 0;
-    fill: #F8D49E;
+  width: 69px;
+  height: 69px;
+  flex-shrink: 0;
+  fill: #f8d49e;
 }
 
 .scrollable-dropdown {
-    max-height: 200px;
-    overflow-y: auto;
+  max-height: 200px;
+  overflow-y: auto;
 }
-
-.all-btn2 {
-    color: var(--text-inverse, #081212);
-    font-family: "Century Gothic";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    display: flex;
-    height: 60px;
-    padding: 0 20px;
-    justify-content: center;
-    align-items: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background: var(--background-primary, #272727);
-    color: #FFF;
-    border: none;
-    transition: all 0.3s ease-in-out;
+.position1{
+  position: absolute;
+  left: 17px;
+  top: 140px;
 }
-
+.position2{
+  position: absolute;
+  right: 22px;
+  top: 140px;
+}
 .all-btn2 {
-    background: var(--background-primary, #F8D49E);
-    color: var(--text-inverse, #081212);
+
+  color: #fff;
+  text-align: center;
+  font-family: "Century Gothic";
+  font-size: 20px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 22.4px */
 }
 
 .all-btn,
 .month-btn,
 .holiday-btn {
-    color: var(--text-inverse, #081212);
-    font-family: "Century Gothic";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    display: flex;
-    height: 60px;
-    padding: 0 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 500px;
-    background: var(--background-primary, #272727);
-    color: #FFF;
-    border: none;
-    transition: all 0.3s ease-in-out;
+  color: var(--text-inverse, #081212);
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  height: 60px;
+  padding: 0 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 500px;
+  background: var(--background-primary, #272727);
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .all-btn {
-    background: var(--background-primary, #F8D49E);
-    color: var(--text-inverse, #081212);
+  background: var(--background-primary, #f8d49e);
+  color: var(--text-inverse, #081212);
 }
 
 .all-btn:hover,
 .month-btn:hover,
 .holiday-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .chevron-down {
-    width: 16px;
-    height: 16px;
+  width: 16px;
+  height: 16px;
 }
 
 /* @media (max-width: 768px) {
@@ -409,237 +400,235 @@ body {
 } */
 
 .umrah-content {
-    color: var(--text-muted, rgba(255, 255, 255, 0.80));
+  color: var(--text-muted, rgba(255, 255, 255, 0.8));
 
-    /* text/large */
-    font-family: "Century Gothic";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    /* 32px */
-    align-self: stretch;
+  /* text/large */
+  font-family: "Century Gothic";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 32px */
+  align-self: stretch;
 }
 
 .scrollable-section {
-    max-height: 100vh;
-    overflow-y: auto;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 .rating-text {
-    color: var(--text-primary, #FACE8D);
-    font-family: "Century Gothic";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 0.2rem;
+  color: var(--text-primary, #face8d);
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0.2rem;
 }
 
 .package-title {
-    color: var(--text-default, #FFF);
-    font-family: "Century Gothic";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 34px;
+  color: var(--text-default, #fff);
+  font-family: "Century Gothic";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
 
-    /* 141.667% */
+  /* 141.667% */
 }
 
 .package-details {
-    align-self: stretch;
-    color: #FFF;
-    font-family: "Century Gothic";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    /* 187.5% */
-    /* opacity: 0.6; */
-    margin-bottom: 0.2rem;
-
+  align-self: stretch;
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 187.5% */
+  /* opacity: 0.6; */
+  margin-bottom: 0.2rem;
 }
 
 .package-includes {
-    color: #FFF;
-    font-family: "Century Gothic";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    /* 187.5% */
-    /* opacity: 0.6; */
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 187.5% */
+  /* opacity: 0.6; */
 }
 
 .package-includes-details {
-    /* opacity: 0.6; */
-    color: #FACE8D;
-    font-family: "Century Gothic";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
+  /* opacity: 0.6; */
+  color: #face8d;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
 }
 
 .package-includes-details a:link,
 .package-includes-details a:visited,
 .package-includes-details a:active {
-    /* opacity: 0.6; */
-    color: #FACE8D;
-    font-family: "Century Gothic";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
+  /* opacity: 0.6; */
+  color: #face8d;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
 }
 
 .package-includes-details a:hover {
-    /* opacity: 0.6; */
-    color: #FACE8D;
-    font-family: "Century Gothic";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
+  /* opacity: 0.6; */
+  color: #face8d;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
 }
 
 .package-price {
-    color: var(--text-primary, #FACE8D);
-    font-family: "Century Gothic";
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px;
-    /* 125% */
+  color: var(--text-primary, #face8d);
+  font-family: "Century Gothic";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  /* 125% */
 }
 
 .image-border {
-    border-radius: 10px;
-    width: 106%;
-    height: auto;
+  border-radius: 10px;
+  width: 106%;
+  height: auto;
 }
 
 .footer-logo {
-    color: #FFF;
-    font-family: "Century Gothic";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 90%;
-    /* 28.8px */
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%;
+  /* 28.8px */
 }
 
 .author-info {
-    color: #FFF;
+  color: #fff;
 
-    /* text/small */
-    font-family: "Century Gothic";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    /* 19.6px */
+  /* text/small */
+  font-family: "Century Gothic";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  /* 19.6px */
 }
 
 .footer-heading {
-    color: var(--text-default, #FFF);
+  color: var(--text-default, #fff);
 
-    /* heading/h6 */
-    font-family: "Century Gothic";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    /* 28.8px */
+  /* heading/h6 */
+  font-family: "Century Gothic";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 28.8px */
 }
 
 .footer-link {
-    align-self: stretch;
-    color: #FFF;
+  align-self: stretch;
+  color: #fff;
 
-    /* text/default */
-    font-family: "Century Gothic";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    text-decoration: none;
-    line-height: 160%;
-    /* 25.6px */
+  /* text/default */
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 160%;
+  /* 25.6px */
 }
 
 .footer-link:hover {
-    color: #FACE8D;
-    font-size: 18px;
-    transition: 0.4s;
+  color: #face8d;
+  font-size: 18px;
+  transition: 0.4s;
 }
 
 .footer-phone {
-    color: #FACE8D;
-    font-family: "Century Gothic";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-    text-decoration: none;
-    /* 166.667% */
+  color: #face8d;
+  font-family: "Century Gothic";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration: none;
+  /* 166.667% */
 }
 
 .footer-phone a:link,
 .footer-phone a:visited,
 .footer-phone a:active {
-    color: #FACE8D;
-    font-family: "Century Gothic";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-    text-decoration: none;
-    /* 166.667% */
+  color: #face8d;
+  font-family: "Century Gothic";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration: none;
+  /* 166.667% */
 }
 
 .footer-phone:hover {
-    color: #FACE8D;
-    font-family: "Century Gothic";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-    text-decoration: none;
-    /* 166.667% */
+  color: #face8d;
+  font-family: "Century Gothic";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration: none;
+  /* 166.667% */
 }
 
-
 .footer-email {
-    color: var(--text-default, #FFF);
-    font-family: "Century Gothic";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    text-decoration: none;
+  color: var(--text-default, #fff);
+  font-family: "Century Gothic";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
 }
 
 .show-more-link {
-    align-self: stretch;
-    color: var(--text-muted, rgba(255, 255, 255, 0.80));
-    text-align: center;
+  align-self: stretch;
+  color: var(--text-muted, rgba(255, 255, 255, 0.8));
+  text-align: center;
 
-    /* text/large */
-    font-family: "Century Gothic";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    /* 32px */
-    text-decoration: none;
-    cursor: pointer;
+  /* text/large */
+  font-family: "Century Gothic";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 32px */
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .show-more-link:hover {
-    color: #FACE8D;
-    font-size: 23px;
-    transition: 0.4s ease-in-out;
+  color: #face8d;
+  font-size: 23px;
+  transition: 0.4s ease-in-out;
 }
 
 /* .hover-border{
@@ -649,169 +638,169 @@ body {
 } */
 
 .hover-border:hover {
-    border: 1px solid #000;
-    transition: 0.4s ease-in-out;
-    border-radius: 0;
-    border-left: none;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+  border: 1px solid #000;
+  transition: 0.4s ease-in-out;
+  border-radius: 0;
+  border-left: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .hover-border:hover {
-    border: 1px solid #FACE8D;
-    transition: 0.4s ease-in-out;
-    border-radius: 0;
-    border-left: none;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+  border: 1px solid #face8d;
+  transition: 0.4s ease-in-out;
+  border-radius: 0;
+  border-left: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .custom-dropdown {
-    width: 316px;
-    height: 805px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: rgba(39, 39, 39, 0.80);
-    backdrop-filter: blur(8.100000381469727px);
+  width: 316px;
+  height: 805px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: rgba(39, 39, 39, 0.8);
+  backdrop-filter: blur(8.100000381469727px);
 }
 
 @media (max-width: 768px) {
-    .custom-dropdown {
-        max-height: 200px;
-    }
+  .custom-dropdown {
+    max-height: 200px;
+  }
 }
 
 .custom-dropdown .month-list {
-    display: block;
-    padding: 10px 20px;
-    color: #fff;
-    font-family: "Century Gothic";
-    font-size: 16px;
-    font-style: normal;
-    text-decoration: none;
-    font-size: 16px;
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 .custom-dropdown .month-list:hover,
 .custom-dropdown .month-list.active {
-    color: #FACE8D;
+  color: #face8d;
 
-    /* text/large */
-    font-family: "Century Gothic";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    /* 32px */
+  /* text/large */
+  font-family: "Century Gothic";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 32px */
 }
 
 .month-btn {
-    display: flex;
-    height: 60px;
-    padding: 16px 34px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 500px;
-    background: #272727;
-    color: #FFF;
-    font-family: "Century Gothic";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    width: auto;
+  display: flex;
+  height: 60px;
+  padding: 16px 34px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 500px;
+  background: #272727;
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: auto;
 }
 
 .month-btn:hover {
-    background-color: #444;
+  background-color: #444;
 }
 
 .chevron-down {
-    width: 16px;
-    height: 16px;
+  width: 16px;
+  height: 16px;
 }
 
 .dropdown-divider {
-    width: 284px;
-    height: 0.5px;
-    background: rgba(255, 255, 255, 0.80);
-    margin-inline: 1rem;
+  width: 284px;
+  height: 0.5px;
+  background: rgba(255, 255, 255, 0.8);
+  margin-inline: 1rem;
 }
 
 .dropdown-menu {
-    border-radius: 30px;
-    background: rgba(39, 39, 39, 0.80);
-    backdrop-filter: blur(8.100000381469727px);
+  border-radius: 30px;
+  background: rgba(39, 39, 39, 0.8);
+  backdrop-filter: blur(8.100000381469727px);
 }
 
 .dropdown-menu .dropdown-item {
-    color: white;
-    /* Ensure readability */
+  color: white;
+  /* Ensure readability */
 }
 
 .dropdown-menu .dropdown-item:hover {
-    background-color: transparent !important;
-    color: #FACE8D;
-    transition: 0.4s ease-in-out;
-    font-size: 22px;
+  background-color: transparent !important;
+  color: #face8d;
+  transition: 0.4s ease-in-out;
+  font-size: 22px;
 }
 
 .dropdown-item {
-    color: #FFF;
-    font-family: "Century Gothic";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
 }
 
 /* When the button is clicked or dropdown is open */
 .btn.show {
-    background: rgba(39, 39, 39, 0.80);
+  background: rgba(39, 39, 39, 0.8);
 }
 
 .custom-dropdown::after {
-    display: none !important;
-    /* Hides the default Bootstrap caret */
+  display: none !important;
+  /* Hides the default Bootstrap caret */
 }
 
 .dropdown-icon-change {
-    width: 24px;
-    height: 24px;
-    fill: #FACE8D;
+  width: 24px;
+  height: 24px;
+  fill: #face8d;
 }
 
 .close-icon-change {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
 
 .dropdown-item-days {
-    color: #FFF;
-    font-family: "Century Gothic";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 160%;
-    /* 32px */
-    text-decoration: none;
-    cursor: default !important;
+  color: #fff;
+  font-family: "Century Gothic";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  /* 32px */
+  text-decoration: none;
+  cursor: default !important;
 }
 
 .dropdown-header {
-    color: rgba(255, 255, 255, 0.80);
+  color: rgba(255, 255, 255, 0.8);
 
-    /* text/default */
-    font-family: "Century Gothic";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    /* 25.6px */
+  /* text/default */
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 25.6px */
 }
 
 /*     
@@ -842,226 +831,224 @@ body {
         }
     } */
 @media (max-width: 992px) {
-    .hide-on-small {
-        display: none !important;
-    }
+  .hide-on-small {
+    display: none !important;
+  }
 
-    .show-on-small {
-        display: block !important;
-    }
+  .show-on-small {
+    display: block !important;
+  }
 
+  .backround-image {
+    min-height: 27vh;
+    /* Ensures the container is at least the height of the viewport */
+    overflow: hidden;
+  }
 
-    .backround-image {
-        min-height: 27vh;
-        /* Ensures the container is at least the height of the viewport */
-        overflow: hidden;
-    }
+  body {
+    overflow-x: hidden;
+  }
 
-    body {
-        overflow-x: hidden;
-    }
+  .Logo {
+    color: #fff;
+    text-align: center;
+    font-family: "Century Gothic";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 64px */
+  }
 
-    .Logo {
-        color: #FFF;
-        text-align: center;
-        font-family: "Century Gothic";
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-        /* 64px */
-    }
+  .fixed-top {
+    /* top: 91px; */
+    position: absolute;
+  }
 
-    .fixed-top {
-        top: 91px;
-        position: absolute;
-    }
+  .navbar-toggler-icon {
+    background-image: url(../images/menu.svg) !important;
+  }
 
-    .navbar-toggler-icon {
-        background-image: url(../images/menu.svg) !important;
-    }
+  .phone-no {
+    color: #fff;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+  }
 
-    .phone-no {
-        color: #FFF;
-        font-family: "Century Gothic";
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 160%;
-    }
+  .phone-no-company {
+    color: #fff;
+    text-align: center;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 22.4px */
+  }
 
-    .phone-no-company {
-        color: #FFF;
-        text-align: center;
-        font-family: "Century Gothic";
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-        /* 22.4px */
-    }
+  .blur-wattsapp-img {
+    width: 69px;
+    height: 69px;
+    flex-shrink: 0;
+    fill: #f8d49e;
+  }
 
-    .blur-wattsapp-img {
-        width: 69px;
-        height: 69px;
-        flex-shrink: 0;
-        fill: #F8D49E;
-    }
+  .wattsapp-icon {
+    width: 25px;
+    height: 33px;
+    flex-shrink: 0;
+    fill: #f8d49e;
+  }
 
-    .wattsapp-icon {
-        width: 33px;
-        height: 33px;
-        flex-shrink: 0;
-        fill: #F8D49E;
-    }
+  .Umrah-pkg {
+    color: var(--text-primary, #face8d);
+    font-family: "Bitter Rose DEMO";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%;
+    /* 28.8px */
+  }
 
-    .Umrah-pkg {
-        color: var(--text-primary, #FACE8D);
-        font-family: "Bitter Rose DEMO";
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 90%;
-        /* 28.8px */
-    }
+  .line {
+    width: 90%;
+    height: 0.5px;
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: 88px;
+  }
 
-    .line {
-        width: 100%;
-        height: 0.5px;
-        background: rgba(255, 255, 255, 0.50);
-        margin-top: 88px;
-    }
+  .umrah-pkg {
+    color: var(--text-primary, #face8d);
+    font-family: "Bitter Rose DEMO";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%;
+    /* 28.8px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .umrah-pkg {
-        color: var(--text-primary, #FACE8D);
-        font-family: "Bitter Rose DEMO";
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 90%;
-        /* 28.8px */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .page-two-start {
+    background-color: black;
+    height: auto;
+  }
 
-    .page-two-start {
-        background-color: black;
-        height: auto;
-    }
+  .custome-li-alignments {
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.8);
+  }
 
-    .custome-li-alignments {
-        font-family: "Century Gothic";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-        color: rgba(255, 255, 255, 0.80);
+  .custome-li-umrah {
+    color: #face8d;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
 
-    }
+  .custome-li-alignments:hover {
+    color: #face8d;
+    transition: 0.4s ease-in-out;
+  }
 
-    .custome-li-umrah {
-        color: #FACE8D;
-        font-family: "Century Gothic";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-    }
+  .custome-li-umrah:hover {
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.4s ease-in-out;
+    font-size: 18px;
+  }
 
-    .custome-li-alignments:hover {
-        color: #FACE8D;
-        transition: 0.4s ease-in-out;
-    }
+  .nav-link {
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.8);
+  }
 
-    .custome-li-umrah:hover {
-        color: rgba(255, 255, 255, 0.80);
-        transition: 0.4s ease-in-out;
-        font-size: 18px;
-    }
+  .nav-link:hover {
+    color: #face8d;
+    transition: 0.4s ease-in-out;
+  }
 
-    .nav-link {
-        font-family: "Century Gothic";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-        color: rgba(255, 255, 255, 0.80);
-    }
+  .navbar-nav {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
-    .nav-link:hover {
-        color: #FACE8D;
-        transition: 0.4s ease-in-out;
-    }
+  .offcanvas {
+    background-color: black;
+    color: #fff;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    padding: 0px;
+  }
 
-    .navbar-nav {
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+  .offcanvas-header .btn-close {
+    filter: invert(1);
+  }
 
-    .offcanvas {
-        background-color: black;
-        color: #FFF;
-        font-family: "Century Gothic";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-        padding: 0px;
-    }
+  .affordable-pkg {
+    color: var(--text-default, #fff);
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 20px */
+  }
 
-    .offcanvas-header .btn-close {
-        filter: invert(1);
-    }
+  .dropdown-icon-change {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    fill: #f8d49e;
+  }
 
-    .affordable-pkg {
-        color: var(--text-default, #FFF);
-        font-family: "Century Gothic";
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 100%;
-        /* 20px */
-    }
+  .dropdown-divider {
+    width: 284px;
+    height: 0.5px;
+    background: rgba(255, 255, 255, 0.8);
+    margin-inline: 1rem;
+  }
 
-    .dropdown-icon-change {
-        width: 20px;
-        height: 20px;
-        flex-shrink: 0;
-        fill: #F8D49E;
-    }
+  .all-btn-btn {
+    display: flex;
+    height: 30px;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 500px;
+    background: var(--background-primary, #f8d49e);
+    color: var(--text-inverse, #081212);
+    font-family: "Century Gothic";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 13%;
+  }
 
-    .dropdown-divider {
-        width: 284px;
-        height: 0.5px;
-        background: rgba(255, 255, 255, 0.80);
-        margin-inline: 1rem;
-    }
-
-    .all-btn-btn {
-        display: flex;
-        height: 30px;
-        padding: 8px 20px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 500px;
-        background: var(--background-primary, #F8D49E);
-        color: var(--text-inverse, #081212);
-        font-family: "Century Gothic";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        width: 13%;
-    }
-
-    .month-btn {
-        /*color: #FFF;
+  .month-btn {
+    /*color: #FFF;
         font-family: "Century Gothic";
         font-size: 12px;
         font-style: normal;
@@ -1079,36 +1066,36 @@ body {
         border-radius: 500px;
         background: #272727;
         text-decoration: none;*/
-        padding: 16px 24px;
-        font-size: 12px;
-    }
+    padding: 16px 24px;
+    font-size: 12px;
+  }
 
-    .holiday-btn {
-        display: flex;
-        height: 30px;
-        padding: 8px 20px;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-        border-radius: 500px;
-        background: #272727;
-        color: #FFF;
-        font-family: "Century Gothic";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        border: #272727;
-        width: 20%;
-    }
+  .holiday-btn {
+    display: flex;
+    height: 30px;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 500px;
+    background: #272727;
+    color: #fff;
+    font-family: "Century Gothic";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: #272727;
+    width: 20%;
+  }
 
-    /* .all-btn {
+  /* .all-btn {
         background: var(--background-primary, #F8D49E);
         color: var(--text-inverse, #081212);
     } */
-    /* 
+  /* 
     .all-btn:hover,
     .month-btn:hover,
     .holiday-btn:hover {
@@ -1116,394 +1103,377 @@ body {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     } */
 
-    .dropdown-item-days {
-        color: #FFF;
-        font-family: "Century Gothic";
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 160%;
-        /* 32px */
-        text-decoration: none;
-        cursor: default !important;
-    }
+  .dropdown-item-days {
+    color: #fff;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    /* 32px */
+    text-decoration: none;
+    cursor: default !important;
+  }
 
-    .dropdown-menu .dropdown-item {
-        color: white;
-        /* Ensure readability */
+  .dropdown-menu .dropdown-item {
+    color: white;
+    /* Ensure readability */
+  }
 
-    }
+  .dropdown-menu .dropdown-item:hover {
+    background-color: transparent !important;
+    color: #face8d;
+    transition: 0.4s ease-in-out;
+    font-size: 22px;
+  }
 
-    .dropdown-menu .dropdown-item:hover {
-        background-color: transparent !important;
-        color: #FACE8D;
-        transition: 0.4s ease-in-out;
-        font-size: 22px;
+  .dropdown-menu.show {
+    background: rgba(39, 39, 39, 0.8);
 
-    }
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
+  }
 
-    .dropdown-menu.show {
-        background: rgba(39, 39, 39, 0.80);
+  .dropdown-item {
+    color: #fff;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
 
+  .close-icon-change {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
 
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
-    }
+  .dropdown-toggle::after {
+    display: none !important;
+  }
 
-    .dropdown-item {
-        color: #FFF;
-        font-family: "Century Gothic";
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-    }
+  .cursor-pointer {
+    cursor: pointer;
+  }
 
-    .close-icon-change {
-        width: 24px;
-        height: 24px;
-        cursor: pointer;
-    }
+  .image-border {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+  }
 
-    .dropdown-toggle::after {
-        display: none !important;
-    }
-
-    .cursor-pointer {
-        cursor: pointer;
-    }
-
-    .image-border {
-        border-radius: 10px;
-        width: 100%;
-        height: auto;
-    }
-
-    /* .hover-border:hover {
+  /* .hover-border:hover {
         border: 1px solid #FACE8D;
         transition: 0.4s ease-in-out;
         border-radius: 0;
         border-left: none;
     } */
-    .rating-text {
-        color: var(--text-primary, #FACE8D);
-        font-family: "Century Gothic";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin-bottom: 0.2rem;
-    }
+  .rating-text {
+    color: var(--text-primary, #face8d);
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0.2rem;
+  }
 
-    .package-title {
-        color: var(--text-default, #FFF);
-        font-family: "Century Gothic";
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 34px;
+  .package-title {
+    color: var(--text-default, #fff);
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
 
-        /* 141.667% */
-    }
+    /* 141.667% */
+  }
 
-    .package-details {
-        align-self: stretch;
-        color: #FFF;
-        font-family: "Century Gothic";
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 30px;
-        /* 187.5% */
-        /* opacity: 0.6; */
-        margin-bottom: 0.2rem;
+  .package-details {
+    align-self: stretch;
+    color: #fff;
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 187.5% */
+    /* opacity: 0.6; */
+    margin-bottom: 0.2rem;
+  }
 
-    }
+  .package-includes {
+    color: #fff;
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 187.5% */
+    /* opacity: 0.6; */
+  }
 
-    .package-includes {
-        color: #FFF;
-        font-family: "Century Gothic";
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 30px;
-        /* 187.5% */
-        /* opacity: 0.6; */
-    }
+  .package-includes-details {
+    /* opacity: 0.6; */
+    color: #face8d;
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+  }
 
-    .package-includes-details {
-        /* opacity: 0.6; */
-        color: #FACE8D;
-        font-family: "Century Gothic";
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 30px;
-    }
+  .package-price {
+    color: var(--text-primary, #face8d);
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    /* 125% */
+  }
 
-    .package-price {
-        color: var(--text-primary, #FACE8D);
-        font-family: "Century Gothic";
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 40px;
-        /* 125% */
-    }
+  .show-more-link {
+    align-self: stretch;
+    color: var(--text-muted, rgba(255, 255, 255, 0.8));
+    text-align: center;
 
-    .show-more-link {
-        align-self: stretch;
-        color: var(--text-muted, rgba(255, 255, 255, 0.80));
-        text-align: center;
+    /* text/large */
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 32px */
+    text-decoration: none;
+    cursor: pointer;
+  }
 
-        /* text/large */
-        font-family: "Century Gothic";
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-        /* 32px */
-        text-decoration: none;
-        cursor: pointer;
-    }
+  .show-more-link:hover {
+    color: #face8d;
+    font-size: 23px;
+    transition: 0.4s ease-in-out;
+  }
 
-    .show-more-link:hover {
-        color: #FACE8D;
-        font-size: 23px;
-        transition: 0.4s ease-in-out;
-    }
+  .custom-mb {
+    margin-bottom: 5rem;
+    /* or any value you need */
+  }
 
-    .custom-mb {
-        margin-bottom: 5rem;
-        /* or any value you need */
-    }
+  .footer-logo {
+    color: #fff;
+    font-family: "Century Gothic";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90%;
+    /* 28.8px */
+  }
 
-    .footer-logo {
-        color: #FFF;
-        font-family: "Century Gothic";
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 90%;
-        /* 28.8px */
-    }
+  .author-info {
+    color: #fff;
 
-    .author-info {
-        color: #FFF;
+    /* text/small */
+    font-family: "Century Gothic";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 19.6px */
+  }
 
-        /* text/small */
-        font-family: "Century Gothic";
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%;
-        /* 19.6px */
-    }
+  .footer-heading {
+    color: var(--text-default, #fff);
 
-    .footer-heading {
-        color: var(--text-default, #FFF);
+    /* heading/h6 */
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 28.8px */
+  }
 
-        /* heading/h6 */
-        font-family: "Century Gothic";
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-        /* 28.8px */
-    }
+  .footer-link {
+    align-self: stretch;
+    color: #fff;
 
-    .footer-link {
-        align-self: stretch;
-        color: #FFF;
+    /* text/default */
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 160%;
+    /* 25.6px */
+  }
 
-        /* text/default */
-        font-family: "Century Gothic";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        text-decoration: none;
-        line-height: 160%;
-        /* 25.6px */
-    }
+  .footer-link:hover {
+    color: #face8d;
+    font-size: 18px;
+    transition: 0.4s;
+  }
 
-    .footer-link:hover {
-        color: #FACE8D;
-        font-size: 18px;
-        transition: 0.4s;
-    }
+  .footer-phone {
+    color: #face8d;
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    /* 166.667% */
+  }
 
-    .footer-phone {
-        color: #FACE8D;
-        font-family: "Century Gothic";
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 30px;
-        /* 166.667% */
-    }
+  .footer-email {
+    color: var(--text-default, #fff);
+    font-family: "Century Gothic";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-decoration: none;
+  }
 
-    .footer-email {
-        color: var(--text-default, #FFF);
-        font-family: "Century Gothic";
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 30px;
-        text-decoration: none;
-    }
-
-
-    .affordable-umrah {
-        font-size: 30px;
-    }
-
-
+  .affordable-umrah {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 768px) {
-    body {
-        overflow-y: scroll;
-    }
+  body {
+    overflow-y: scroll;
+  }
 
-    .scrollable-section {
-        max-height: none;
-    }
+  .scrollable-section {
+    max-height: none;
+  }
 
-    .enquire-for-umrah {
-        font-size: 40px;
-    }
+  .enquire-for-umrah {
+    font-size: 40px;
+  }
 
-    .page-two-start {
-        background-color: black;
-        height: 255vh;
-    }
+  .page-two-start {
+    background-color: black;
+    height: 255vh;
+  }
 
-    .hover-border:hover {
-        border: 0px none;
-        transition: 0.4s ease-in-out;
-        border-radius: 0;
-        border-left: none;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-    }
+  .hover-border:hover {
+    border: 0px none;
+    transition: 0.4s ease-in-out;
+    border-radius: 0;
+    border-left: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
 
-    .affordable-umrah {
-        font-size: 20px;
-    }
+  .affordable-umrah {
+    font-size: 20px;
+  }
 
-    .package-details {
-        /* line-height: 12px; */
-        font-size: 11px;
-      
-    }
+  .package-details {
+    /* line-height: 12px; */
+    font-size: 11px;
+  }
 
-    .package-includes {
-        line-height: 12px;
-    }
+  .package-includes {
+    line-height: 12px;
+  }
 
-    .package-title {
-        font-size: 16px;
-        line-height: 20px;
-        /* margin-bottom: 20px; */
-        /* display: block; */
-        margin-top: 0px !important;
-    }
+  .package-title {
+    font-size: 16px;
+    line-height: 20px;
+    /* margin-bottom: 20px; */
+    /* display: block; */
+    margin-top: 0px !important;
+  }
 
-    .position-on-small {
-        position: absolute;
+  .position-on-small {
+    position: absolute;
 
-        right: 17px;
-        top: 0px;
-
-    }
-    .display-none{
-        display: none !important;
-    }
+    right: 17px;
+    top: 0px;
+  }
+  .display-none {
+    display: none !important;
+  }
 }
 
 @media (max-width: 1700px) {
-    .sign-up-for-umrah {
-        margin-inline: 8rem;
-    }
+  .sign-up-for-umrah {
+    margin-inline: 8rem;
+  }
 
-    .enquire-for-umrah {
-        font-size: 50px;
-    }
+  .enquire-for-umrah {
+    font-size: 50px;
+  }
 }
 
 @media (max-width: 1300px) {
-    .sign-up-for-umrah {
-        margin-inline: 4rem;
-    }
+  .sign-up-for-umrah {
+    margin-inline: 4rem;
+  }
 
-    .enquire-for-umrah {
-        font-size: 40px;
-    }
-
-
-
-
-
+  .enquire-for-umrah {
+    font-size: 40px;
+  }
 }
 
 .show-on-small {
-    display: none;
+  display: none;
 }
 
 .hide-on-small {
-    display: block;
+  display: block;
 }
 
 .display-n {
-    display: none;
+  display: none;
 }
 
 .display-b {
-    display: block;
+  display: block;
 }
 
-@media (max-width:1200px) {
-    .display-n {
-        display: block;
-    }
+@media (max-width: 1200px) {
+  .display-n {
+    display: block;
+  }
 
-    .display-b {
-        display: none;
-    }
+  .display-b {
+    display: none;
+  }
 
-    .offcanvas {
-        background-color: black;
-        color: #FFF;
-        font-family: "Century Gothic";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-        padding: 0px;
-    }
+  .offcanvas {
+    background-color: black;
+    color: #fff;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    padding: 0px;
+  }
 
-    .offcanvas-header .btn-close {
-        filter: invert(1);
-    }
+  .offcanvas-header .btn-close {
+    filter: invert(1);
+  }
 
-    .navbar-toggler-icon {
-        background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"%3E%3C/path%3E%3C/svg%3E') !important;
-        width: 35px;
-    }
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"%3E%3C/path%3E%3C/svg%3E') !important;
+    width: 35px;
+  }
 
+  .nav-link {
+    font-family: "Century Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.8);
+  }
 
-
-    .nav-link {
-        font-family: "Century Gothic";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-        color: rgba(255, 255, 255, 0.80);
-    }
-
-    .nav-link:hover {
-        color: #FACE8D;
-        transition: 0.4s ease-in-out;
-    }
-
+  .nav-link:hover {
+    color: #face8d;
+    transition: 0.4s ease-in-out;
+  }
 }

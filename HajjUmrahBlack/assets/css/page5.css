@@ -13,6 +13,32 @@ body {
   /* min-height: 85vh; */
   display: flex;
 }
+  .navbar-toggler-icon {
+    background-image: url(../images/menu.svg) !important;
+  }
+
+  
+.position1 {
+  position: absolute;
+  left: 17px;
+  top: 148px;
+}
+.position2 {
+  position: absolute;
+  right: 22px;
+  top: 140px;
+}
+.all-btn2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Century Gothic";
+  font-size: 20px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 22.4px */
+}
+
 
 .Logo {
   color: #fff;
@@ -453,6 +479,13 @@ body {
 .offcanvas-header .btn-close {
   filter: invert(1);
 }
+.wattsapp-icon {
+  width: 24px;
+  height: 33px;
+  flex-shrink: 0;
+  fill: #f8d49e;
+  margin-left: 10px;
+}
 @media (max-width: 992px) {
   .scrollable-section {
     max-height: none;
@@ -474,14 +507,14 @@ body {
     font-size: 25px;
   }
   .fixed-top {
-    top: 91px;
+    /* top: 91px; */
     position: absolute;
   }
   .line {
-    width: 100%;
+    width: 90%;
     height: 0.5px;
     background: rgba(255, 255, 255, 0.5);
-    margin-top: 130px;
+    margin-top: 70px;
   }
 
   .devine-journy {
@@ -618,5 +651,15 @@ body {
   }
   .footer-email {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Latest-blog-p {
+    margin-top: 0px !important;
+    margin-bottom: 0px;
+  }
+  .Latest-blog {
+    font-size: 25px;
   }
 }

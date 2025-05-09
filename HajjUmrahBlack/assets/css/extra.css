@@ -52,6 +52,7 @@
 
 .custom-table {
     background-color: rgba(0, 0, 0, 0.5);
+    border: black;
 }
 
 .custom-table th,
@@ -85,7 +86,23 @@
     border-collapse: collapse;
     width: 100%;
 }
+.book-umrah{
 
+    color: var(--text-inverse, #081212);
+font-family: "Century Gothic";
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px; /* 133.333% */
+letter-spacing: 1px;
+text-transform: uppercase;
+text-decoration: none;
+text-align: center;
+border-radius: 500px;
+background: var(--background-primary, #F8D49E);
+box-shadow: 0px 0px 8.6px 0px rgba(5, 5, 5, 0.30);
+padding: 18px 25px;
+}
 .custom-table td,
 .custom-table th {
     border: 1px solid rgba(255, 255, 255, 0.10);
@@ -284,6 +301,34 @@
 .dropdown-toggle::after {
     display: none !important;
 }
+.overflow-x-auto {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    border-bottom: 2px solid black; /* Your border */
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+    height: 8px;  /* Adjust scrollbar height */
+    background-color: black;  /* Matches border */
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+    background-color: #555;  /* Scrollbar handle */
+    border-radius: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+    background-color: #333;
+}
+
+
+@media (max-width: 1400px) {
+.book-umrah{
+    font-size: 8px !important;
+    padding: 12px 15px !important;
+}
+}
 
 @media (max-width:1200px) {
     .sign-up-for-umrahh {
@@ -299,6 +344,7 @@
     .Affordable-pakages p {
         font-size: 18px;
     }
+  
 }
 
 @media (max-width:992px) {
@@ -309,6 +355,48 @@
     .Affordable-pakages h2 {
         font-size: 24px;
     }
+    .Affordable-pakages p {
+        font-size: 16px;
+    }
+    .packages h2 {
+        font-size: 32px;
+    }
+    .packages a {
+        font-size: 18px;
+    }
+    .add-to-compare {
+        font-size: 14px;
+    }
+    .add-to-compare2 {
+        font-size: 14px;
+    }
+    .select-month {
+        font-size: 18px;
+    }
+    .selected-month {
+        font-size: 18px;
+    }
+    .book-umrah{
+        font-size: 14px;
+    }
+    .custom-td {
+        font-size: 16px !important;
+    }
+    .custom-td-h {
+        font-size: 16px !important;
+    }
+    .number-cell {
+        font-size: 16px !important;
+    }   
+    .custom-th {
+        font-size: 16px !important;
+    }
+    .custom-table td,
+    .custom-table th {
+        padding: 20px 10px !important;
+    }
+
+
 }
 
 @media (max-width: 768px) {
@@ -343,6 +431,25 @@
     .sign-up-for-umrahh {
         width: 85%;
     }
+    .book-umrah{
+        font-size: 16px;
+    }
+    .custom-td {
+        font-size: 16px !important;
+    }
+    .custom-td-h {
+        font-size: 16px !important;
+    }
+    .number-cell {
+        font-size: 16px !important;
+    }
+    .custom-th {
+        font-size: 16px !important;
+    }
+    .custom-table td,
+    .custom-table th {
+        padding: 20px 10px !important;
+    }
 }
 
 @media (max-width: 576px) {
@@ -376,6 +483,25 @@
 
     .sign-up-for-umrahh {
         width: 95%;
+    }
+    .book-umrah{
+        font-size: 14px;
+    }
+    .custom-td {
+        font-size: 14px !important;
+    }
+    .custom-td-h {
+        font-size: 14px !important;
+    }
+    .number-cell {
+        font-size: 14px !important;
+    }
+    .custom-th {
+        font-size: 14px !important;
+    }
+    .custom-table td,
+    .custom-table th {
+        padding: 15px 5px !important;
     }
 }
 
