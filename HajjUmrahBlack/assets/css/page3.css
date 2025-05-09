@@ -63,7 +63,7 @@ font-size: 14px;
 
 
 
-.hotel-image { width: 190px; height: 140px; overflow: hidden; }
+/* .hotel-image { width: 190px; height: 140px; overflow: hidden; } */
 
 
 .background-color {
@@ -301,7 +301,7 @@ body {
 
 .custome-li-alignments {
     font-family: "Century Gothic";
-    font-size: 13px;
+    font-size:16px;
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
@@ -312,7 +312,7 @@ body {
 .custome-li-umrah {
     color: #FACE8D;
     font-family: "Century Gothic";
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
@@ -376,7 +376,7 @@ body {
     font-weight: 400;
     line-height: 100%;
     /* 40px */
-    width: 560px;
+    /* width: 560px; */
 }
 
 .umrah-p {
@@ -763,6 +763,7 @@ body {
     align-self: stretch;
     border-radius: 500px;
     background: var(--background-primary, #F8D49E);
+    text-decoration: none;
 }
 
 .related-umrah-pkg {
@@ -851,11 +852,12 @@ body {
     .enquire-for-umrah {
         font-size: 40px;
     }
+    .details-section-h{
+        width: auto;
+    }
 }
 
-@media (max-width: 992px) {
 
-}
 @media (max-width: 992px) {
     .hide-on-small-screens{
         display: none;
@@ -871,6 +873,9 @@ body {
     }
     .hide-on-small {
         display: none !important;
+    }
+    .hotel-location{
+        font-size: 14px;
     }
 
     .show-on-small {
@@ -901,6 +906,8 @@ body {
         line-height: 160%;
         /* 64px */
     }
+
+
 
     .fixed-top {
         top: 91px;
@@ -1436,6 +1443,9 @@ body {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
+    .seat-reserve {
+    font-size: 20px;
+}
 
 }
 
