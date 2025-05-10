@@ -140,7 +140,7 @@
                                         <a href="https://api.whatsapp.com/send?phone=+442081451117&amp;text=Hi,I%20would%20like%20to%20contact%20you"
                                             target="_blank"><img src="assets/images/wattsapp-image.svg"
                                                 class="wattsapp-icon me-3" alt="" /></a>
-                                      
+
                                     </div>
                                     <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarMenuLarge"
                                         aria-labelledby="offcanvasNavbarLabel">
@@ -183,10 +183,10 @@
                                 </div>
                             </nav>
                         </div>
-                       <div class="d-flex align-items-center justify-content-center">
-                         <p class="umrah-pkg">Umrah Packages</p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <p class="umrah-pkg">Umrah Packages</p>
 
-                       </div>
+                        </div>
                         <!-- <button type="button" class="all-btn2" data-bs-toggle="modal" data-bs-target="#enquirymodal">
                             Send Enquiry
                         </button> -->
@@ -257,89 +257,72 @@
                                     value="Umrah" />
                                 <div class="mb-3">
                                     <label for="month" class="custome-label mb-2">Select Month</label>
-                                    <div class="dropdown w-100">
-                                        <button
-                                            class="input-filds dropdown-toggle text-start d-flex justify-content-between align-items-center"
-                                            type="button" id="monthDropdown" data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            Select a Month
-                                            <img src="assets/images/chevron-down.svg" alt="Dropdown Icon"
-                                                class="dropdown-icon-change ms-auto" />
-                                        </button>
-                                        <ul class="dropdown-menu w-100 mt-2" aria-labelledby="monthDropdown">
-                                            <li
-                                                class="dropdown-header d-flex justify-content-between align-items-center">
-                                                <span>Select A Month</span>
-                                                <img src="assets/images/close-icon.svg" alt="Close Icon"
-                                                    class="close-icon-change" />
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">July Umrah Packages</a>
-                                            </li>
-                                            <li>
-                                                <hr class="dropdown-divider" />
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">August Umrah Packages</a>
-                                            </li>
-                                            <li>
-                                                <hr class="dropdown-divider" />
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">September Umrah Packages</a>
-                                            </li>
-                                            <li>
-                                                <hr class="dropdown-divider" />
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">October Umrah Packages</a>
-                                            </li>
-                                            <li>
-                                                <hr class="dropdown-divider" />
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">November Umrah Packages</a>
-                                            </li>
-                                            <li>
-                                                <hr class="dropdown-divider" />
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">December Umrah Package</a>
-                                            </li>
-                                        </ul>
+                                    <div class="mb-3">
+                                        <div class="position-relative">
+                                            <select id="monthSelect" class="form-select custom-select">
+                                                <option value="July Umrah Packages">July Umrah Packages</option>
+                                                <option value="August Umrah Packages">August Umrah Packages</option>
+                                                <option value="September Umrah Packages">September Umrah Packages
+                                                </option>
+                                                <option value="October Umrah Packages">October Umrah Packages</option>
+                                            </select>
+                                          
+                                        </div>
                                     </div>
+
                                 </div>
 
                                 <input type="hidden" name="_token" value="lz0tQqQxZ88V2aVM4QqlDjlU0ZhSlwDeVXcaz5DB"
                                     autocomplete="off" />
                                 <input type="hidden" name="estimate_packagetype" id="estimate_packagetype"
                                     value="Umrah" />
-                                <div class="mb-3">
+                                <!-- <div class="mb-3">
                                     <label for="month" class="custome-label mb-2">
                                         Select Hotels Rating</label>
                                     <div class="dropdown w-100">
                                         <button
                                             class="input-filds dropdown-toggle text-start d-flex justify-content-between align-items-center"
-                                            type="button" id="monthDropdown" data-bs-toggle="dropdown"
+                                            type="button" id="ratingsDropdown" data-bs-toggle="dropdown"
                                             aria-expanded="false">
                                             Ratings
                                             <img src="assets/images/chevron-down.svg" alt="Dropdown Icon"
                                                 class="dropdown-icon-change ms-auto" />
                                         </button>
-                                        <ul class="dropdown-menu w-100 mt-2" aria-labelledby="monthDropdown">
+
+                                        <ul class="dropdown-menu w-100 mt-2" aria-labelledby="ratingsDropdown">
                                             <li
                                                 class="dropdown-header d-flex justify-content-between align-items-center">
                                                 <span>Ratings</span>
                                                 <img src="assets/images/close-icon.svg" alt="Close Icon"
                                                     class="close-icon-change" />
                                             </li>
-                                            <li><a class="dropdown-item" href="#">3 Stars</a></li>
+                                            <li><a class="dropdown-item" data-value="3 Stars"
+                                                    data-target="ratingsDropdown" href="#">3 Stars</a></li>
                                             <li>
                                                 <hr class="dropdown-divider" />
                                             </li>
-                                            <li><a class="dropdown-item" href="#">4 Stars</a></li>
+                                            <li><a class="dropdown-item" data-value="4 Stars"
+                                                    data-target="ratingsDropdown" href="#">4 Stars</a></li>
                                         </ul>
                                     </div>
+                                </div>
+ -->
+
+                                    <div class="mb-3">
+                                    <label for="month" class="custome-label mb-2"> Select Hotels Rating</label>
+                                    <div class="mb-3">
+                                        <div class="position-relative">
+                                            <select id="monthSelect" class="form-select custom-select">
+                                    <option for="month" class="custome-label mb-2" selected disabled> Select Hotels Rating</option>
+
+                                                <option value="July Umrah Packages">3 Stars</option>
+                                                <option value="August Umrah Packages">4 Stars</option>
+                                               
+                                            </select>
+                                          
+                                        </div>
+                                    </div>
+
                                 </div>
                                 <div class="mb-3" id="enquiryform_msg"></div>
                                 <button type="button" class="submit-enquiry" onclick="submitenquiry();">

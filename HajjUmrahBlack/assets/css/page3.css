@@ -1,6 +1,7 @@
 #enquirymodal .modal-content {
   background: transparent !important;
 }
+
 /* Modal Content Styling */
 .custom-modal-content {
   background-color: #000;
@@ -26,6 +27,58 @@
   z-index: 90;
 }
 
+.custom-select {
+  display: inline-flex;
+  height: 60px;
+  padding: 16px 24px;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: inherit;
+  font-family: "Century Gothic";
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.custom-select:focus {
+  color: white;
+  background-color: inherit;
+  border-color: #face8d;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(250, 206, 141, 0.25);
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.custom-select option {
+  color: white;
+  background: rgba(39, 39, 39, 0.8);
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
+  border-color: #face8d;
+  outline: 0;
+  font-family: inherit;
+  font-size: 14px;
+  border-radius: 30px;
+  background: rgba(39, 39, 39, 0.80);
+  backdrop-filter: blur(8.100000381469727px);
+}
+
+.form-select {
+  background-color: inherit;
+  background-image: url('../images/chevron-down.svg');
+  /* White icon */
+
+  background-size: 24px;
+
+}
+
+
+
 /* Form Inputs */
 .input-filds {
   width: 100%;
@@ -44,7 +97,8 @@
   text-decoration: none;
   font-style: normal;
   font-weight: 700;
-  line-height: 160%; /* 22.4px */
+  line-height: 160%;
+  /* 22.4px */
 }
 
 .position1 {
@@ -52,11 +106,13 @@
   left: 17px;
   top: 140px;
 }
+
 .position2 {
   position: absolute;
   right: 25px;
   top: 140px;
 }
+
 /* .hotel-image { width: 190px; height: 140px; overflow: hidden; } */
 
 .background-color {
@@ -707,6 +763,7 @@ body {
   text-decoration: none;
   /* 166.667% */
 }
+
 .footer-phone a:link,
 .footer-phone a:visited,
 .footer-phone a:active {
@@ -730,6 +787,7 @@ body {
   text-decoration: none;
   /* 166.667% */
 }
+
 .footer-email {
   color: var(--text-default, #fff);
   font-family: "Century Gothic";
@@ -770,6 +828,7 @@ body {
   line-height: 100%;
   /* 40px */
 }
+
 .show-on-small-screens {
   display: none;
 }
@@ -780,6 +839,7 @@ body {
   flex-shrink: 0;
   fill: #f8d49e;
 }
+
 .umrah-pkg {
   color: var(--text-primary, #face8d);
   font-family: "Bitter Rose DEMO";
@@ -791,18 +851,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-      position: absolute;
-    top: 191px;
-    /* right: 115px; */
+  position: absolute;
+  top: 191px;
+  /* right: 115px; */
 }
 
 .navbar-toggler-icon {
   background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"%3E%3C/path%3E%3C/svg%3E') !important;
   width: 35px;
 }
+
 .navbar-toggler-icon {
   background-image: url(../images/menu.svg) !important;
 }
+
 .offcanvas {
   background-color: black;
   color: #fff;
@@ -817,6 +879,7 @@ body {
 .offcanvas-header .btn-close {
   filter: invert(1);
 }
+
 .nav-link {
   font-family: "Century Gothic";
   font-size: 16px;
@@ -837,6 +900,7 @@ body {
   .sign-up-for-umrah {
     margin-inline: 4rem;
   }
+
   .enquire-for-umrah {
     font-size: 50px;
   }
@@ -846,9 +910,11 @@ body {
   .sign-up-for-umrah {
     margin-inline: 2rem;
   }
+
   .enquire-for-umrah {
     font-size: 40px;
   }
+
   .details-section-h {
     width: auto;
   }
@@ -858,18 +924,23 @@ body {
   .hide-on-small-screens {
     display: none;
   }
+
   .scrollable-section {
     width: 100%;
   }
+
   .show-on-small-screens {
     display: block;
   }
+
   .break-line {
     width: 100%;
   }
+
   .hide-on-small {
     display: none !important;
   }
+
   .hotel-location {
     font-size: 14px;
   }
@@ -1405,13 +1476,14 @@ body {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
   }
+
   .seat-reserve {
     font-size: 20px;
   }
 }
 
 @media (max-width: 600px) {
-    .backround-image{
-        position: relative;
-    }
+  .backround-image {
+    position: relative;
+  }
 }
