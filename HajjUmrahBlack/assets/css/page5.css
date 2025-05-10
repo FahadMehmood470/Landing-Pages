@@ -13,21 +13,24 @@ body {
   /* min-height: 85vh; */
   display: flex;
 }
-  .navbar-toggler-icon {
-    background-image: url(../images/menu.svg) !important;
-  }
 
-  
+.navbar-toggler-icon {
+  background-image: url(../images/menu.svg) !important;
+}
+
+
 .position1 {
   position: absolute;
   left: 17px;
   top: 148px;
 }
+
 .position2 {
   position: absolute;
   right: 22px;
   top: 140px;
 }
+
 .all-btn2 {
   color: #fff;
   text-align: center;
@@ -36,7 +39,8 @@ body {
   text-decoration: none;
   font-style: normal;
   font-weight: 700;
-  line-height: 160%; /* 22.4px */
+  line-height: 160%;
+  /* 22.4px */
 }
 
 
@@ -54,6 +58,74 @@ body {
 .custome-margin-top {
   margin-top: 10%;
 }
+
+
+
+
+
+
+
+.post-date {
+  color: var(--text-muted, rgba(255, 255, 255, 0.80));
+
+  /* text/default */
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 25.6px */
+}
+
+.post-title {
+  color: var(--text-default, #FFF);
+  font-family: "Century Gothic";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 40px */
+}
+
+.post-author {
+  color: var(--text-muted, rgba(255, 255, 255, 0.80));
+
+  /* text/medium */
+  font-family: "Century Gothic";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 28.8px */
+}
+
+.post-author-span {
+  color: #FACE8D;
+
+  /* text/medium */
+  font-family: "Century Gothic";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.post-content {
+  color: #FFF;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  /* 162.5% */
+}
+
+
+
+
+
+
+
 
 .blrr-background {
   width: 632px;
@@ -129,6 +201,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
+
 .Available {
   color: #fff;
   font-family: "Century Gothic";
@@ -138,6 +211,7 @@ body {
   line-height: 20px;
   /* 100% */
 }
+
 .phone-no {
   color: #fff;
   font-family: "Century Gothic";
@@ -183,6 +257,7 @@ body {
   flex-shrink: 0;
   fill: #f8d49e;
 }
+
 .custome-li-alignments {
   font-family: "Century Gothic";
   font-size: 18px;
@@ -212,14 +287,17 @@ body {
   transition: 0.4s ease-in-out;
   font-size: 18px;
 }
+
 .Latest-blog {
   color: var(--text-default, #fff);
   font-family: "Century Gothic";
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  line-height: 100%; /* 40px */
+  line-height: 100%;
+  /* 40px */
 }
+
 .Latest-blog-p {
   color: var(--text-muted, rgba(255, 255, 255, 0.8));
 
@@ -228,8 +306,10 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%; /* 32px */
+  line-height: 160%;
+  /* 32px */
 }
+
 .umrah-blog {
   color: var(--text-default, #fff);
   /* text/large */
@@ -237,7 +317,8 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%; /* 32px */
+  line-height: 160%;
+  /* 32px */
 }
 
 .umrah-blog a:link,
@@ -249,7 +330,8 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%; /* 32px */
+  line-height: 160%;
+  /* 32px */
   text-decoration: none;
 }
 
@@ -265,13 +347,16 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%; /* 25.6px */
+  line-height: 160%;
+  /* 25.6px */
 }
+
 .blog-border {
   border-radius: 16px;
   height: 100%;
   width: 100%;
 }
+
 .blog-border:hover {
   box-shadow: 0px 0px 8.6px 0px rgba(5, 5, 5, 0.3);
   transition: 0.4s ease-in-out;
@@ -285,9 +370,12 @@ body {
 }
 
 .blog-item:hover {
-  border: 1px solid #face8d; /* Customize border color */
-  background-color: #1a1a1a; /* Optional: Dark background */
-  cursor: pointer; /* Change cursor on hover */
+  border: 1px solid #face8d;
+  /* Customize border color */
+  background-color: #1a1a1a;
+  /* Optional: Dark background */
+  cursor: pointer;
+  /* Change cursor on hover */
   box-shadow: 0px 0px 8.6px 0px rgba(5, 5, 5, 0.3);
 }
 
@@ -312,7 +400,8 @@ body {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 19.6px */
+  line-height: 140%;
+  /* 19.6px */
 }
 
 .blog-item:hover .hover-button {
@@ -326,7 +415,8 @@ body {
 }
 
 .blog-item:hover .blog-image {
-  transform: scale(1.05); /* Slight zoom effect */
+  transform: scale(1.05);
+  /* Slight zoom effect */
 }
 
 .show-more-link {
@@ -355,10 +445,12 @@ body {
   margin-bottom: 5rem;
   /* or any value you need */
 }
+
 .custom-mt {
   margin-top: 5rem;
   /* or any value you need */
 }
+
 .footer-logo {
   color: #fff;
   font-family: "Century Gothic";
@@ -380,6 +472,7 @@ body {
   line-height: 140%;
   /* 19.6px */
 }
+
 .footer-heading {
   color: var(--text-default, #fff);
 
@@ -422,6 +515,7 @@ body {
   text-decoration: none;
   /* 166.667% */
 }
+
 .footer-phone a:link,
 .footer-phone a:visited,
 .footer-phone a:active {
@@ -455,16 +549,20 @@ body {
   line-height: 30px;
   text-decoration: none;
 }
+
 .scrollable-section {
   max-height: 100vh;
   overflow-y: auto;
 }
+
 .display-none {
   display: none;
 }
+
 .display-block {
   display: block;
 }
+
 .offcanvas {
   background-color: black;
   color: #fff;
@@ -479,6 +577,7 @@ body {
 .offcanvas-header .btn-close {
   filter: invert(1);
 }
+
 .wattsapp-icon {
   width: 24px;
   height: 33px;
@@ -486,6 +585,7 @@ body {
   fill: #f8d49e;
   margin-left: 10px;
 }
+
 @media (max-width: 992px) {
   .scrollable-section {
     max-height: none;
@@ -494,22 +594,28 @@ body {
   .display-none {
     display: block !important;
   }
+
   .display-block {
     display: none !important;
   }
+
   .Logo {
     font-size: 30px;
   }
+
   .phone-no-company {
     font-size: 20px;
   }
+
   .phone-no {
     font-size: 25px;
   }
+
   .fixed-top {
     /* top: 91px; */
     position: absolute;
   }
+
   .line {
     width: 90%;
     height: 0.5px;
@@ -528,38 +634,46 @@ body {
     font-weight: 400;
     line-height: 90%;
   }
+
   .nav-link {
     color: white !important;
   }
+
   .nav-link:hover {
     color: #f8d49e !important;
     transition: 0.5s ease-in-out;
   }
 }
+
 @media (max-width: 667px) {
   .umrah-blog {
     font-size: 14px;
     line-height: 160%;
     /* 32px */
   }
+
   .umrah-blog-p {
     font-size: 10px;
     line-height: 160%;
     /* 25.6px */
   }
+
 }
+
 @media (max-width: 576px) {
   .umrah-blog {
     font-size: 10px;
     line-height: 160%;
     /* 32px */
   }
+
   .umrah-blog-p {
     font-size: 8px;
     line-height: 160%;
     /* 25.6px */
   }
 }
+
 @media (max-width: 1500px) {
   .blrr-background {
     width: 570px;
@@ -568,16 +682,20 @@ body {
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(8.100000381469727px);
   }
+
   .customer-review {
     font-size: 20px;
   }
+
   .Customer-in-no {
     font-size: 28px;
   }
+
   .Customer {
     font-size: 14px;
   }
 }
+
 @media (max-width: 1400px) {
   .blrr-background {
     width: 500px;
@@ -586,16 +704,20 @@ body {
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(8.100000381469727px);
   }
+
   .customer-review {
     font-size: 18px;
   }
+
   .Customer-in-no {
     font-size: 26px;
   }
+
   .Customer {
     font-size: 14px;
   }
 }
+
 @media (max-width: 1300px) {
   .blrr-background {
     width: 470px;
@@ -604,16 +726,20 @@ body {
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(8.100000381469727px);
   }
+
   .customer-review {
     font-size: 16px;
   }
+
   .Customer-in-no {
     font-size: 24px;
   }
+
   .Customer {
     font-size: 14px;
   }
 }
+
 @media (max-width: 1200px) {
   .blrr-background {
     width: 470px;
@@ -622,16 +748,26 @@ body {
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(8.100000381469727px);
   }
+
   .customer-review {
     font-size: 16px;
   }
+
   .Customer-in-no {
     font-size: 24px;
   }
+
   .Customer {
     font-size: 14px;
   }
+  .post-title{
+    font-size: 34px;
+  }
+  .post-content{
+    font-size: 14px;
+  }
 }
+
 @media (max-width: 1100px) {
   .blrr-background {
     width: 388px;
@@ -640,17 +776,29 @@ body {
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(8.100000381469727px);
   }
+
   .Customer-in-no {
     font-size: 18px;
   }
+
   .Customer {
     font-size: 12px;
   }
+
   .img-2 {
     width: 91%;
   }
+
   .footer-email {
     font-size: 16px;
+  }
+}
+@media (max-width:1200px){
+  .phone-no-company{
+    font-size:32px ;
+  }
+  .phone-no a:link {
+    font-size: 32px;
   }
 }
 
@@ -659,7 +807,15 @@ body {
     margin-top: 0px !important;
     margin-bottom: 0px;
   }
+
   .Latest-blog {
     font-size: 25px;
+  }
+    .post-title{
+    font-size: 26px;
+  }
+  .post-content{
+    line-height: 22px;
+    font-size: 12px;
   }
 }
