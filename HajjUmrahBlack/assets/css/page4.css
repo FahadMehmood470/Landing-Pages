@@ -164,7 +164,7 @@ body {
 
 .custome-li-alignments {
     font-family: "Century Gothic";
-    font-size: 13px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
@@ -302,7 +302,7 @@ body {
 }
 
 .line {
-    width: 376px;
+    width: 100%;
     height: 0.5px;
     background: rgba(255, 255, 255, 0.50);
     margin-top: 130px;

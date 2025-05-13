@@ -27,6 +27,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/page3.css" />
+    <link rel="stylesheet" href="assets/css/page2.css" />
+
     <style></style>
   </head>
 
@@ -427,147 +429,464 @@
               </div>
             </div>
 
-            <div class="row mt-5 ms-5 me-5">
-              <div class="row mt-5">
-                <p class="related-umrah-pkg">Related Umrah packages</p>
-                <div class="col-12 mt-5 p-0 float-start">
-                  <div class="row mt-4">
-                    <div class="col-4">
-                      <img
-                        class="image-border"
-                        src="https://hajjumrah.haqtravels.co.uk/public/uploads/servicepackages/1741697935-package-.webp"
-                        alt="July Umrah Package 7 Nights 3 Star"
-                      />
-                    </div>
-                    <div class="col-8 hover-border">
-                      <div class="px-2">
-                        <p class="rating-text">3 Stars</p>
-                        <h3 class="package-title">
-                          July Umrah Package 7 Nights 3 Star
-                        </h3>
-                        <p class="package-details">
-                          4 Nights Makkah - 3 Nights Madinah
-                        </p>
-                        <ul class="list-unstyled">
-                          <li class="package-includes">
-                            ...
-                            <span class="package-includes-details"
-                              ><a
-                                href="https://hajjumrah.haqtravels.co.uk/package/december-umrah-package-7-nights-3-star"
-                                >Details</a
-                              ></span
-                            >
-                          </li>
-                        </ul>
-                        <span class="package-price">£770</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 mt-5 p-0 float-start">
-                  <div class="row mt-4">
-                    <div class="col-4">
-                      <img
-                        class="image-border"
-                        src="https://hajjumrah.haqtravels.co.uk/public/uploads/servicepackages/1741698453-package-.webp"
-                        alt="July Umrah Package 10 Nights 3 Star"
-                      />
-                    </div>
-                    <div class="col-8 hover-border">
-                      <div class="px-2">
-                        <p class="rating-text">3 Stars</p>
-                        <h3 class="package-title">
-                          July Umrah Package 10 Nights 3 Star
-                        </h3>
-                        <p class="package-details">
-                          6 Nights Makkah - 4 Nights Madinah
-                        </p>
-                        <ul class="list-unstyled">
-                          <li class="package-includes">
-                            ...
-                            <span class="package-includes-details"
-                              ><a
-                                href="https://hajjumrah.haqtravels.co.uk/package/july-umrah-package-10-nights-3-star"
-                                >Details</a
-                              ></span
-                            >
-                          </li>
-                        </ul>
-                        <span class="package-price">£799</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 mt-5 p-0 float-start">
-                  <div class="row mt-4">
-                    <div class="col-4">
-                      <img
-                        class="image-border"
-                        src="https://hajjumrah.haqtravels.co.uk/public/uploads/servicepackages/1741698718-package-.webp"
-                        alt="July Umrah Package 12 Nights 3 Star"
-                      />
-                    </div>
-                    <div class="col-8 hover-border">
-                      <div class="px-2">
-                        <p class="rating-text">3 Stars</p>
-                        <h3 class="package-title">
-                          July Umrah Package 12 Nights 3 Star
-                        </h3>
-                        <p class="package-details">
-                          6 Nights Makkah - 6 Nights Madinah
-                        </p>
-                        <ul class="list-unstyled">
-                          <li class="package-includes">
-                            ...
-                            <span class="package-includes-details"
-                              ><a
-                                href="https://hajjumrah.haqtravels.co.uk/package/july-umrah-package-12-nights-3-star"
-                                >Details</a
-                              ></span
-                            >
-                          </li>
-                        </ul>
-                        <span class="package-price">£899</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 mt-5 p-0 float-start">
-                  <div class="row mt-4">
-                    <div class="col-4">
-                      <img
-                        class="image-border"
-                        src="https://hajjumrah.haqtravels.co.uk/public/uploads/servicepackages/1741699192-package-.webp"
-                        alt="July Umrah Package 14 Nights 3 Star"
-                      />
-                    </div>
-                    <div class="col-8 hover-border">
-                      <div class="px-2">
-                        <p class="rating-text">3 Stars</p>
-                        <h3 class="package-title">
-                          July Umrah Package 14 Nights 3 Star
-                        </h3>
-                        <p class="package-details">
-                          7 Nights Makkah - 7 Nights Madinah
-                        </p>
-                        <ul class="list-unstyled">
-                          <li class="package-includes">
-                            ...
-                            <span class="package-includes-details"
-                              ><a
-                                href="https://hajjumrah.haqtravels.co.uk/package/july-umrah-package-14-nights-3-star"
-                                >Details</a
-                              ></span
-                            >
-                          </li>
-                        </ul>
-                        <span class="package-price">£999</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                <div class="row" id="packagesData">
+                            <div class="row mt-4 position-relative">
+                                <div class="col-4 mpadding-0">
+                                    <img class="image-border"
+                                        src="https://hajjumrah.haqtravels.co.uk/public/uploads/servicepackages/1741697935-package-.webp"
+                                        alt="July Umrah Package 7 Nights 3 Star" />
+                                </div>
+                                <div class="col-8 hover-border">
+                                    <div class="px-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h3 class="rating-text mb-0 display-none">3 Stars</h3>
+                                            <!-- Replace p with h3 -->
+                                            <img src="assets/images/yellow-heart.svg"
+                                                class="img-fluid mt-1 position-on-small" alt="Heart Icon" />
+                                        </div>
+                                        <h3 class="package-title mb-0 mt-2 mt-sm-0 col-10">
+                                            July Umrah Package 7 Nights 3 Star
+                                        </h3>
+                                        <p class="package-details">
+                                            4 Nights Makkah - 3 Nights Madinah
+                                        </p>
+                                        <ul class="list-unstyled mb-1">
+                                            <li class="package-includes">
+                                                ...
+                                                <span class="package-includes-details"><a
+                                                        href="package.html">Details</a></span>
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="package-price">£770</span>
+                                            <div class="d-flex align-items-center gap-2 mt-1">
+                                                <p class="mb-0 add-to-compare">Add to Compare</p>
+                                                <img src="assets/images/compare-white.svg" class="img-fluid pointer"
+                                                    alt="Compare Icon" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4 position-relative">
+                                <div class="col-4 mpadding-0">
+                                    <img class="image-border"
+                                        src="https://hajjumrah.haqtravels.co.uk/public/uploads/servicepackages/1741703950-package-.webp"
+                                        alt="November Umrah Package 7 Nights 3 Star" />
+                                </div>
+                                <div class="col-8 hover-border">
+                                    <div class="px-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h3 class="rating-text mb-0 display-none">3 Stars</h3>
+                                            <!-- Replace p with h3 -->
+                                            <img src="assets/images/heart-icon.svg"
+                                                class="img-fluid mt-1 position-on-small" alt="Heart Icon" />
+                                        </div>
+                                        <h3 class="package-title mb-0 mt-2 mt-sm-0 col-10">
+                                            July Umrah Package 7 Nights 3 Star
+                                        </h3>
+                                        <p class="package-details">
+                                            4 Nights Makkah - 3 Nights Madinah
+                                        </p>
+                                        <ul class="list-unstyled mb-1">
+                                            <li class="package-includes">
+                                                ...
+                                                <span class="package-includes-details"><a
+                                                        href="https://hajjumrah.haqtravels.co.uk/package/november-umrah-package-7-nights-3-star">Details</a></span>
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="package-price">£770</span>
+                                            <div class="d-flex align-items-center gap-2 mt-1">
+                                                <p class="mb-0 add-to-compare2">Add to Compare</p>
+                                                <img src="assets/images/compare-green.svg" class="img-fluid pointer"
+                                                    alt="Compare Icon" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4 position-relative">
+                                <div class="col-4 mpadding-0">
+                                    <img class="image-border"
+                                        src="https://hajjumrah.haqtravels.co.uk/public/uploads/servicepackages/1741707471-package-.webp"
+                                        alt="January Umrah Package 7 Nights 3 Star" />
+                                </div>
+                                <div class="col-8 hover-border">
+                                    <div class="px-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h3 class="rating-text mb-0 display-none">3 Stars</h3>
+                                            <!-- Replace p with h3 -->
+                                            <img src="assets/images/heart-icon.svg"
+                                                class="img-fluid mt-1 position-on-small" alt="Heart Icon" />
+                                        </div>
+                                        <h3 class="package-title mb-0 mt-2 mt-sm-0 col-10">
+                                            July Umrah Package 7 Nights 3 Star
+                                        </h3>
+                                        <p class="package-details">
+                                            4 Nights Makkah - 3 Nights Madinah
+                                        </p>
+                                        <ul class="list-unstyled mb-1">
+                                            <li class="package-includes">
+                                                ...
+                                                <span class="package-includes-details"><a
+                                                        href="https://hajjumrah.haqtravels.co.uk/package/january-umrah-package-7-nights-3-star">Details</a></span>
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="package-price">£770</span>
+                                            <div class="d-flex align-items-center gap-2 mt-1">
+                                                <p class="mb-0 add-to-compare">Add to Compare</p>
+                                                <img src="assets/images/compare-white.svg" class="img-fluid pointer"
+                                                    alt="Compare Icon" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4 position-relative">
+                                <div class="col-4 mpadding-0">
+                                    <img class="image-border"
+                                        src="https://hajjumrah.haqtravels.co.uk/public/uploads/servicepackages/1741707950-package-.webp"
+                                        alt="February Umrah Package 7 Nights 3 Star" />
+                                </div>
+                                <div class="col-8 hover-border">
+                                    <div class="px-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h3 class="rating-text mb-0 display-none">3 Stars</h3>
+                                            <!-- Replace p with h3 -->
+                                            <img src="assets/images/heart-icon.svg"
+                                                class="img-fluid mt-1 position-on-small" alt="Heart Icon" />
+                                        </div>
+                                        <h3 class="package-title mb-0 mt-2 mt-sm-0 col-10">
+                                            July Umrah Package 7 Nights 3 Star
+                                        </h3>
+                                        <p class="package-details">
+                                            4 Nights Makkah - 3 Nights Madinah
+                                        </p>
+                                        <ul class="list-unstyled mb-1">
+                                            <li class="package-includes">
+                                                ...
+                                                <span class="package-includes-details"><a
+                                                        href="https://hajjumrah.haqtravels.co.uk/package/february-umrah-package-7-nights-3-star">Details</a></span>
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="package-price">£770</span>
+                                            <div class="d-flex align-items-center gap-2 mt-1">
+                                                <p class="mb-0 add-to-compare">Add to Compare</p>
+                                                <img src="assets/images/compare-white.svg" class="img-fluid pointer"
+                                                    alt="Compare Icon" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4 position-relative">
+                                <div class="col-4 mpadding-0">
+                                    <img class="image-border"
+                                        src="https://hajjumrah.haqtravels.co.uk/public/uploads/servicepackages/1741698453-package-.webp"
+                                        alt="July Umrah Package 10 Nights 3 Star" />
+                                </div>
+                                <div class="col-8 hover-border">
+                                    <div class="px-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h3 class="rating-text mb-0 display-none">3 Stars</h3>
+                                            <!-- Replace p with h3 -->
+                                            <img src="assets/images/heart-icon.svg"
+                                                class="img-fluid mt-1 position-on-small" alt="Heart Icon" />
+                                        </div>
+                                        <h3 class="package-title mb-0 mt-2 mt-sm-0 col-10">
+                                            July Umrah Package 7 Nights 3 Star
+                                        </h3>
+                                        <p class="package-details">
+                                            6 Nights Makkah - 4 Nights Madinah
+                                        </p>
+                                        <ul class="list-unstyled mb-1">
+                                            <li class="package-includes">
+                                                ...
+                                                <span class="package-includes-details"><a
+                                                        href="https://hajjumrah.haqtravels.co.uk/package/july-umrah-package-10-nights-3-star">Details</a></span>
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="package-price">£770</span>
+                                            <div class="d-flex align-items-center gap-2 mt-1">
+                                                <p class="mb-0 add-to-compare">Add to Compare</p>
+                                                <img src="assets/images/compare-white.svg" class="img-fluid pointer"
+                                                    alt="Compare Icon" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4 position-relative">
+                                <div class="col-4 mpadding-0">
+                                    <img class="image-border"
+                                        src="https://hajjumrah.haqtravels.co.uk/public/uploads/servicepackages/1741703991-package-.webp"
+                                        alt="November Umrah Package 10 Nights 3 Star" />
+                                </div>
+                                <div class="col-8 hover-border">
+                                    <div class="px-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h3 class="rating-text mb-0 display-none">3 Stars</h3>
+                                            <!-- Replace p with h3 -->
+                                            <img src="assets/images/heart-icon.svg"
+                                                class="img-fluid mt-1 position-on-small" alt="Heart Icon" />
+                                        </div>
+                                        <h3 class="package-title mb-0 mt-2 mt-sm-0 col-10">
+                                            July Umrah Package 7 Nights 3 Star
+                                        </h3>
+                                        <p class="package-details">
+                                            6 Nights Makkah - 4 Nights Madinah
+                                        </p>
+                                        <ul class="list-unstyled mb-1">
+                                            <li class="package-includes">
+                                                ...
+                                                <span class="package-includes-details"><a
+                                                        href="https://hajjumrah.haqtravels.co.uk/package/november-umrah-package-10-nights-3-star">Details</a></span>
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="package-price">£770</span>
+                                            <div class="d-flex align-items-center gap-2 mt-1">
+                                                <p class="mb-0 add-to-compare">Add to Compare</p>
+                                                <img src="assets/images/compare-white.svg" class="img-fluid pointer"
+                                                    alt="Compare Icon" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4 position-relative">
+                                <div class="col-4 mpadding-0">
+                                    <img class="image-border"
+                                        src="https://hajjumrah.haqtravels.co.uk/public/uploads/servicepackages/1741707494-package-.webp"
+                                        alt="January Umrah Package 10 Nights 3 Star" />
+                                </div>
+                                <div class="col-8 hover-border">
+                                    <div class="px-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h3 class="rating-text mb-0 display-none">3 Stars</h3>
+                                            <!-- Replace p with h3 -->
+                                            <img src="assets/images/heart-icon.svg"
+                                                class="img-fluid mt-1 position-on-small" alt="Heart Icon" />
+                                        </div>
+                                        <h3 class="package-title mb-0 mt-2 mt-sm-0 col-10">
+                                            July Umrah Package 7 Nights 3 Star
+                                        </h3>
+                                        <p class="package-details">
+                                            6 Nights Makkah - 4 Nights Madinah
+                                        </p>
+                                        <ul class="list-unstyled mb-1">
+                                            <li class="package-includes">
+                                                ...
+                                                <span class="package-includes-details"><a
+                                                        href="https://hajjumrah.haqtravels.co.uk/package/january-umrah-package-10-nights-3-star">Details</a></span>
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="package-price">£770</span>
+                                            <div class="d-flex align-items-center gap-2 mt-1">
+                                                <p class="mb-0 add-to-compare">Add to Compare</p>
+                                                <img src="assets/images/compare-white.svg" class="img-fluid pointer"
+                                                    alt="Compare Icon" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4 position-relative">
+                                <div class="col-4 mpadding-0">
+                                    <img class="image-border"
+                                        src="https://hajjumrah.haqtravels.co.uk/public/uploads/servicepackages/1741708005-package-.webp"
+                                        alt="February Umrah Package 10 Nights 3 Star" />
+                                </div>
+                                <div class="col-8 hover-border">
+                                    <div class="px-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h3 class="rating-text mb-0 display-none">3 Stars</h3>
+                                            <!-- Replace p with h3 -->
+                                            <img src="assets/images/heart-icon.svg"
+                                                class="img-fluid mt-1 position-on-small" alt="Heart Icon" />
+                                        </div>
+                                        <h3 class="package-title mb-0 mt-2 mt-sm-0 col-10">
+                                            July Umrah Package 7 Nights 3 Star
+                                        </h3>
+                                        <p class="package-details">
+                                            6 Nights Makkah - 4 Nights Madinah
+                                        </p>
+                                        <ul class="list-unstyled mb-1">
+                                            <li class="package-includes">
+                                                ...
+                                                <span class="package-includes-details"><a
+                                                        href="https://hajjumrah.haqtravels.co.uk/package/february-umrah-package-10-nights-3-star">Details</a></span>
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="package-price">£770</span>
+                                            <div class="d-flex align-items-center gap-2 mt-1">
+                                                <p class="mb-0 add-to-compare">Add to Compare</p>
+                                                <img src="assets/images/compare-white.svg" class="img-fluid pointer"
+                                                    alt="Compare Icon" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4 position-relative">
+                                <div class="col-4 mpadding-0">
+                                    <img class="image-border"
+                                        src="https://hajjumrah.haqtravels.co.uk/public/uploads/servicepackages/1741698718-package-.webp"
+                                        alt="July Umrah Package 12 Nights 3 Star" />
+                                </div>
+                                <div class="col-8 hover-border">
+                                    <div class="px-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h3 class="rating-text mb-0 display-none">3 Stars</h3>
+                                            <!-- Replace p with h3 -->
+                                            <img src="assets/images/heart-icon.svg"
+                                                class="img-fluid mt-1 position-on-small" alt="Heart Icon" />
+                                        </div>
+                                        <h3 class="package-title mb-0 mt-2 mt-sm-0 col-10">
+                                            July Umrah Package 7 Nights 3 Star
+                                        </h3>
+                                        <p class="package-details">
+                                            6 Nights Makkah - 6 Nights Madinah
+                                        </p>
+                                        <ul class="list-unstyled mb-1">
+                                            <li class="package-includes">
+                                                ...
+                                                <span class="package-includes-details"><a
+                                                        href="https://hajjumrah.haqtravels.co.uk/package/july-umrah-package-12-nights-3-star">Details</a></span>
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="package-price">£770</span>
+                                            <div class="d-flex align-items-center gap-2 mt-1">
+                                                <p class="mb-0 add-to-compare">Add to Compare</p>
+                                                <img src="assets/images/compare-white.svg" class="img-fluid pointer"
+                                                    alt="Compare Icon" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4 position-relative">
+                                <div class="col-4 mpadding-0">
+                                    <img class="image-border"
+                                        src="https://hajjumrah.haqtravels.co.uk/public/uploads/servicepackages/1741705399-package-.webp"
+                                        alt="November Umrah Package 12 Nights 3 Star" />
+                                </div>
+                                <div class="col-8 hover-border">
+                                    <div class="px-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h3 class="rating-text mb-0 display-none">3 Stars</h3>
+                                            <!-- Replace p with h3 -->
+                                            <img src="assets/images/heart-icon.svg"
+                                                class="img-fluid mt-1 position-on-small" alt="Heart Icon" />
+                                        </div>
+                                        <h3 class="package-title mb-0 mt-2 mt-sm-0 col-10">
+                                            July Umrah Package 7 Nights 3 Star
+                                        </h3>
+                                        <p class="package-details">
+                                            6 Nights Makkah - 6 Nights Madinah
+                                        </p>
+                                        <ul class="list-unstyled mb-1">
+                                            <li class="package-includes">
+                                                ...
+                                                <span class="package-includes-details"><a
+                                                        href="https://hajjumrah.haqtravels.co.uk/package/november-umrah-package-12-nights-3-star">Details</a></span>
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="package-price">£770</span>
+                                            <div class="d-flex align-items-center gap-2 mt-1">
+                                                <p class="mb-0 add-to-compare">Add to Compare</p>
+                                                <img src="assets/images/compare-white.svg" class="img-fluid pointer"
+                                                    alt="Compare Icon" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4 position-relative">
+                                <div class="col-4 mpadding-0">
+                                    <img class="image-border"
+                                        src="https://hajjumrah.haqtravels.co.uk/public/uploads/servicepackages/1741707547-package-.webp"
+                                        alt="January Umrah Package 12 Nights 3 Star" />
+                                </div>
+                                <div class="col-8 hover-border">
+                                    <div class="px-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h3 class="rating-text mb-0 display-none">3 Stars</h3>
+                                            <!-- Replace p with h3 -->
+                                            <img src="assets/images/heart-icon.svg"
+                                                class="img-fluid mt-1 position-on-small" alt="Heart Icon" />
+                                        </div>
+                                        <h3 class="package-title mb-0 mt-2 mt-sm-0 col-10">
+                                            July Umrah Package 7 Nights 3 Star
+                                        </h3>
+                                        <p class="package-details">
+                                            6 Nights Makkah - 6 Nights Madinah
+                                        </p>
+                                        <ul class="list-unstyled mb-1">
+                                            <li class="package-includes">
+                                                ...
+                                                <span class="package-includes-details"><a
+                                                        href="https://hajjumrah.haqtravels.co.uk/package/january-umrah-package-12-nights-3-star">Details</a></span>
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="package-price">£770</span>
+                                            <div class="d-flex align-items-center gap-2 mt-1">
+                                                <p class="mb-0 add-to-compare">Add to Compare</p>
+                                                <img src="assets/images/compare-white.svg" class="img-fluid pointer"
+                                                    alt="Compare Icon" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4 position-relative">
+                                <div class="col-4 mpadding-0">
+                                    <img class="image-border"
+                                        src="https://hajjumrah.haqtravels.co.uk/public/uploads/servicepackages/1741708038-package-.webp"
+                                        alt="February Umrah Package 12 Nights 3 Star" />
+                                </div>
+                                <div class="col-8 hover-border">
+                                    <div class="px-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h3 class="rating-text mb-0 display-none">3 Stars</h3>
+                                            <!-- Replace p with h3 -->
+                                            <img src="assets/images/heart-icon.svg"
+                                                class="img-fluid mt-1 position-on-small" alt="Heart Icon" />
+                                        </div>
+                                        <h3 class="package-title mb-0 mt-2 mt-sm-0 col-10">
+                                            July Umrah Package 7 Nights 3 Star
+                                        </h3>
+                                        <p class="package-details">
+                                            6 Nights Makkah - 6 Nights Madinah
+                                        </p>
+                                        <ul class="list-unstyled mb-1">
+                                            <li class="package-includes">
+                                                ...
+                                                <span class="package-includes-details"><a
+                                                        href="https://hajjumrah.haqtravels.co.uk/package/february-umrah-package-12-nights-3-star">Details</a></span>
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="package-price">£770</span>
+                                            <div class="d-flex align-items-center gap-2 mt-1">
+                                                <p class="mb-0 add-to-compare">Add to Compare</p>
+                                                <img src="assets/images/compare-white.svg" class="img-fluid pointer"
+                                                    alt="Compare Icon" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
             <!-- here is the show more section -->
             <div class="row mt-4">
