@@ -20,7 +20,7 @@
         <div class="navbar flex justify-between items-center">
             <!-- Logo -->
             <div class="flex items-center space-x-4">
-                <img src="assets/images/logo.png" class="h-10" alt="Logo">
+                <img src="assets/images/logo.png" class="h-10 lg:h-20" alt="Logo">
             </div>
 
             <!-- Navigation Links -->
@@ -266,46 +266,109 @@
 
     </div>
 
-<div class="container mx-auto px-10 py-8">
-    <div class="grid md:grid-cols-1  lg:grid-cols-2 gap-8">
+    <div class="container mx-auto px-10 py-8 mb-24">
+        <div class="grid md:grid-cols-12 lg:grid-cols-12 gap-8">
 
-        <!-- Form Column -->
-        <div class="hero-section ">
+            <!-- Form Column (7/12 for lg, 12/12 for md) -->
+            <div class=" md:col-span-12 lg:col-span-5">
 
-            <!-- Dropdowns -->
-            <div class="grid grid-cols-2 m-5">
-                <select class="dropdown-select">
-                    <option>Select Date</option>
-                    <option>Option 1</option>
-                    <option>Option 2</option>
-                </select>
+                <!-- Content Wrapper -->
+                <div class="hero-section">
+                    <div class="m-6 ">
+                        <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4  ">
+                            <select class="dropdown-select  appearance-none relative">
+                                <option>Select Date</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                            </select>
 
-                <select class="dropdown-select">
-                    <option>No. of Passengers</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                </select>
+
+                            <select class="dropdown-select appearance-none relative margin-top ">
+                                <option>No. of Passengers</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+
+                        <!-- Input Fields -->
+                        <input type="text" placeholder="Full Name" class="input-field w-full mt-6" />
+                        <input type="text" placeholder="Contact Number" class="input-field w-full mt-6" />
+                        <input type="email" placeholder="Email Id" class="input-field w-full mt-6" />
+
+                        <!-- Submit Button -->
+                        <button class="book-enquiry mt-6 w-full">
+                            Book Inquiry
+                        </button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4 mt-10 ">
+                    <div class="Green-section1">
+                        <div class="m-6">
+                            <h2>300+</h2>
+                            <p class="mt-2">Packages</p>
+                        </div>
+                    </div>
+                    <div class="bg-section2 h-full">
+                        <div class="m-6">
+                            <h2>35000+</h2>
+                            <p class="mt-2">Happy Passengers</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- Input Fields -->
-            <input type="text" placeholder="Full Name" class="input-field m-6" />
-            <input type="text" placeholder="Contact Number" class="input-field m-6" />
-            <input type="email" placeholder="Email Id" class="input-field m-6" />
+            <!-- Second Column (5/12 for lg, 12/12 for md) -->
+            <div class="rounded-2xl md:col-span-12 lg:col-span-7 overflow-hidden bg-image">
+                <!-- Green Section Positioned Relative to the Image -->
+                <div class="img-green-section z-10">
+                    <div class="m-10">
+                        <h2 class="Promo-umrah">Promo umrah packAGE</h2>
+                        <p class="Promo-umrah-p mt-3 mb-3">5 Star Special Offer</p>
+                        <p class="Promo-umrah-price">£840<span class="Promo-umrah-pound">pp</span></p>
+                    </div>
+                </div>
+            </div>
 
-            <!-- Submit Button -->
-            <button class="book-enquiry m-7">
-                Book Inquiry
-            </button>
+
+
 
         </div>
 
-        <!-- Second Column (for Image or Additional Content) -->
-        <div class="bg-gray-200 rounded-2xl flex items-center justify-center">
-            <!-- Content goes here -->
-            Image/Content
-        </div>
 
+
+
+    </div>
+<div class="bg-[#18361B] overflow-hidden">
+    <div class="container mx-auto">
+        <div class="flex  flex-nowrap py-10 overflow-x-scroll scrollbar-hide m-20">
+            <div class="w-[279px] flex-shrink-0">
+                <img src="assets/images/c.svg" alt="">
+                <h2 class="Affordable-price mt-5 mb-5">Affordable Price</h2>
+                <p class="text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="w-[279px] flex-shrink-0">
+                <img src="assets/images/c.svg" alt="">
+                <h2 class="text-white mt-5 mb-5">Good Quality Building</h2>
+                <p class="text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="w-[279px] flex-shrink-0">
+                <img src="assets/images/c.svg" alt="">
+                <h2 class="text-white mt-5 mb-5">Good Maintenance</h2>
+                <p class="text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="w-[279px] flex-shrink-0">
+                <img src="assets/images/c.svg" alt="">
+                <h2 class="text-white mt-5 mb-5">Best Environment</h2>
+                <p class="text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="w-[279px] flex-shrink-0">
+                <img src="assets/images/c.svg" alt="">
+                <h2 class="text-white mt-5 mb-5">Affordable Price</h2>
+                <p class="text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -340,9 +403,7 @@
 
 
 
-
-
-    <div class="container mx-auto px-10">
+    <div class="container mx-auto px-10 overflow-hidden">
         <div class="content">
 
         </div>
