@@ -131,6 +131,7 @@ body {
     background-position: right 2rem center;
     /* Adjust to center the icon */
     background-size: 13px;
+    font-size: 14px;
     /* Adjust size as needed */
 }
 
@@ -1437,7 +1438,262 @@ input[type="range"]::-moz-range-thumb {
 }
 
 
+.bg-form {
+    border-radius: 25px;
+    border: 1px solid var(--secondary2-s300, #C7C7C7);
+    background: #18361B;
+    width: 411px;
+    height: 475px;
+    flex-shrink: 0;
+}
 
+.whitelist-tag {
+    width: 415px;
+    height: 178px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    border: 1px solid var(--secondary2-s300, #C7C7C7);
+    background: var(--text-t100, #FFF);
+    margin-top: -114px;
+}
+
+.whitelist-price {
+    color: var(--text-t400, #181818);
+
+    /* Heading/Sans-Serif/H10 */
+    font-family: "Sen";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    /* 131.25% */
+}
+
+.whitelist-pound {
+    color: #367C3D;
+    text-align: right;
+
+    /* Heading/Sans-Serif/H10 */
+    font-family: "Sen";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    /* 131.25% */
+}
+
+.Add-to-whitelist {
+    color: #18361B;
+
+    /* Subheading/Title Case/T2 */
+    font-family: 'Barlow';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    /* 160% */
+}
+
+.border-on-container {
+    border-radius: 50px;
+    border: 1px solid #C7C7C7;
+    width: 1420px;
+    /* height: 2279px; */
+    flex-shrink: 0;
+}
+
+.Visa-guid h1 {
+    color: #367C3D;
+    font-family: "Playfair Display";
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 58px;
+    /* 120.833% */
+}
+
+.Visa-guid p {
+    color: var(--text-t400, #181818);
+
+    /* Body/B2 */
+    font-family: 'Barlow';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 150% */
+    /* width: 1300px; */
+}
+
+.Visa-guid ol li {
+    color: var(--text-t400, #181818);
+
+    /* Body/B2 */
+    font-family: 'Barlow';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 150% */
+    /* width: 1300px; */
+}
+
+.Visa-guid h2 {
+    color: #231F20;
+    font-family: 'Sen';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    /* 125% */
+}
+
+.Visa-guid span {
+    color: var(--text-t400, #181818);
+    font-family: 'Barlow';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+ol {
+    list-style-type: decimal !important;
+    padding-left: 1.5rem;
+    /* or use Bootstrap's ps-3 */
+}
+
+.Preparing-umrah {
+    color: var(--text-t300, #313131);
+
+    /* Heading/Sans-Serif/H5 */
+    font-family: 'Sen';
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 82px;
+    /* 113.889% */
+}
+
+.bg-gray-img1 {
+    border-radius: 50px 50px 50px 0px;
+    background: #D9D9D9;
+    /* width: 1125px; */
+    height: 400px;
+    flex-shrink: 0;
+}
+
+.blog-upload span {
+    color: #367C3D;
+
+    /* Subheading/Title Case/T2 */
+    font-family: 'Barlow';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    /* 160% */
+}
+
+.para {
+    color: var(--secondary2-s300, #C7C7C7);
+
+    /* Subheading/Title Case/T2 */
+    font-family: 'Barlow';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.blog-upload p {
+    color: var(--text-t400, #181818);
+
+    /* Body/B2 */
+    font-family: 'Barlow';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 150% */
+}
+
+.blog-upload h3 {
+    color: var(--text-t400, #181818);
+
+    /* Heading/Sans-Serif/H8 */
+    font-family: 'Sen';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    /* 120.833% */
+}
+
+.blog-upload h4 {
+    color: var(--text-t400, #181818);
+
+    /* Heading/Sans-Serif/H11 */
+    font-family: 'Sen';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    /* 135.714% */
+}
+
+.bg-gray-img2 {
+    /* width: 358px; */
+    height: 350.005px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #D9D9D9;
+}
+
+.bg-gray-img3 {
+    border-radius: 25px;
+    background: var(--secondary2-s100, #F3F3F3);
+    /* width: 1125px; */
+    /* height: 170px; */
+    flex-shrink: 0;
+}
+
+
+@media (max-width:1910px) {
+    .hotels-details p {
+        width: auto;
+    }
+
+    .whitelist-tag {
+        width: auto;
+        height: auto;
+    }
+
+    .Visa-guid p {
+        width: auto;
+    }
+
+    .Visa-guid ol li {
+        width: auto;
+    }
+
+    .border-on-container {
+        width: auto;
+        height: auto;
+    }
+
+    .bg-gray-img3 {
+        height: auto;
+    }
+
+    .bg-gray-img2 {
+        height: auto;
+    }
+
+    .bg-gray-img1 {
+        height: auto;
+    }
+}
 
 
 
@@ -1451,6 +1707,8 @@ input[type="range"]::-moz-range-thumb {
     .hotels-details p {
         width: auto;
     }
+
+
 }
 
 @media (max-width:1300px) {
@@ -1553,7 +1811,7 @@ input[type="range"]::-moz-range-thumb {
 
 
 
-        .Umrah-details-h1 {
+    .Umrah-details-h1 {
         font-size: 34px;
         line-height: 42px;
     }
@@ -1672,6 +1930,19 @@ input[type="range"]::-moz-range-thumb {
         line-height: normal;
     }
 
+    .margin-top {
+        margin-top: 20px;
+    }
+
+    .Preparing-umrah {
+        font-size: 42px;
+        line-height: 54px
+    }
+
+    .blog-upload p {
+        font-size: 18px;
+        line-height: 28px;
+    }
 
 }
 
@@ -1698,12 +1969,14 @@ input[type="range"]::-moz-range-thumb {
 
     .dropdown-select {
         background-position: right 10px center;
-        font-size: 14px;
+        font-size: 12px;
+        padding: 12px 22px;
+
     }
 
-    .dropdown-select {
+    /* .dropdown-select {
         padding: 12px 22px;
-    }
+    } */
 
     .input-field {
         padding: 12px 22px;
@@ -1810,6 +2083,15 @@ input[type="range"]::-moz-range-thumb {
         line-height: normal;
     }
 
+    .Preparing-umrah {
+        font-size: 34px;
+        line-height: 48px
+    }
+
+    .blog-upload p {
+        font-size: 18px;
+        line-height: 28px;
+    }
 }
 
 @media (max-width:600px) {
@@ -1843,9 +2125,7 @@ input[type="range"]::-moz-range-thumb {
         font-size: 10px;
     }
 
-    .margin-top {
-        margin-top: 20px;
-    }
+
 
     .bg-section2 h2 {
         font-size: 24px;
@@ -2015,4 +2295,30 @@ input[type="range"]::-moz-range-thumb {
         font-size: 20px;
         line-height: normal;
     }
+
+    .Add-to-whitelist {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .whitelist-price {
+        font-size: 20px;
+        line-height: normal;
+    }
+
+    .whitelist-pound {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .Preparing-umrah {
+        font-size: 28px;
+        line-height: 38px
+    }
+
+    .blog-upload p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
 }
