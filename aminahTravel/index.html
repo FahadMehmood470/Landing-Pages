@@ -24,7 +24,7 @@
         <div class="navbar flex justify-between items-center">
             <!-- Logo -->
             <div class="flex items-center space-x-4">
-                <img src="assets/images/logo.png" class="h-10 lg:h-20" alt="Logo">
+                <img src="assets/images/logo.png" class="h-10 max-w-full" alt="Logo">
             </div>
 
             <!-- Navigation Links -->
@@ -704,42 +704,45 @@
 
 
 
+    <div class="bg-testimonial py-16">
+        <div class="container mx-auto overflow-hidden">
+            <div class="mt-5 lg:mt-20 flex flex-col items-center">
+                <h2 class="testimonials-heading">Testimonials</h2>
+                <h3 class="customers mt-5">What our customers say</h3>
+                <p class="mt-4 testimonials-text">Are Saying</p>
+            </div>
 
-        <div class="bg-testimonial py-16">
-            <div class="container mx-auto  overflow-hidden">
-                <div class="mt-5 lg:mt-20 flex flex-col items-center">
-                    <h2 class="testimonials-heading">Testimonials</h2>
-                    <h3 class="customers mt-5">What our customers say</h3>
-                    <p class="mt-4 testimonials-text">Are Saying</p>
-                </div>
-                <div class="grid grid-cols-12 gap-8 mt-12">
-                    <div class="relative bg-white rounded-[50px] p-10 shadow-lg w-[449px] h-[369px] col-span-6 grid grid-cols-12 gap-4">
-                        <div class="absolute Image-card overflow-hidden rounded-[50px] col-span-4">
+            <div class="my-swiper mt-12">
+                <div class="my-swiper-wrapper">
+                    <div
+                        class="my-swiper-slide relative bg-white rounded-[50px] p-10 shadow-lg w-[449px] h-[369px] grid grid-cols-12 gap-4">
+                        <div class="absolute custom-image-card overflow-hidden rounded-[50px] col-span-4">
                             <img src="assets/images/testimonial1.jpg" class="w-full h-auto" alt="Testimonial Image">
                         </div>
                         <div class="ml-[80px] testimonial-content col-span-8">
-                            <span class="">November 08, 2023</span>
+                            <span>November 08, 2023</span>
                             <h4 class="mt-5">Seamless coordination of return flights, providing peace of mind for</h4>
-                            <p class="mt-4">Pilgrims as they conclude their sacred journey. Round-trip airfare arrangements,
-                                ensuring a comfortable and timely return home.</p>
+                            <p class="mt-4">Pilgrims as they conclude their sacred journey. Round-trip airfare
+                                arrangements, ensuring a comfortable and timely return home.</p>
                         </div>
                     </div>
 
-                    <div class="relative bg-white rounded-[50px] p-10 shadow-lg col-span-6 grid grid-cols-12 gap-4">
-                        <div class="absolute Image-card overflow-hidden rounded-[50px] col-span-4">
+                    <div
+                        class="my-swiper-slide relative bg-white rounded-[50px] p-10 shadow-lg grid grid-cols-12 gap-4">
+                        <div class="absolute custom-image-card overflow-hidden rounded-[50px] col-span-4">
                             <img src="assets/images/testimonial1.jpg" class="w-full h-auto" alt="Testimonial Image">
                         </div>
                         <div class="ml-[80px] testimonial-content col-span-8">
-                            <span class="">November 08, 2023</span>
+                            <span>November 08, 2023</span>
                             <h4 class="mt-5">Seamless coordination of return flights, providing peace of mind for</h4>
-                            <p class="mt-4">Pilgrims as they conclude their sacred journey. Round-trip airfare arrangements,
-                                ensuring a comfortable and timely return home.</p>
+                            <p class="mt-4">Pilgrims as they conclude their sacred journey. Round-trip airfare
+                                arrangements, ensuring a comfortable and timely return home.</p>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
+    </div>
 
 
 
@@ -1044,7 +1047,8 @@
 
     <div class="container mx-auto h-auto  mb-10">
         <div class="mt-5 px-5 lg:px-16">
-            <p class="paragraph">"Most of the flights and flight-inclusive packages that we sell are ATOL and IATA protected by our
+            <p class="paragraph">"Most of the flights and flight-inclusive packages that we sell are ATOL and IATA
+                protected by our
                 suppliers. All quotations are subject to availability at the time of booking. When you pay you will be
                 supplied with an ATOL Certificate. Please ask for it and check to ensure that everything you booked
                 (flights, hotels and other services) is listed on it. Please see our booking conditions for further
@@ -1088,6 +1092,21 @@
 
             },
         });
+
+        const swiper2 = new Swiper('.my-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
 
     </script>
 </body>
