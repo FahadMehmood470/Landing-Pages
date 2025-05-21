@@ -1658,10 +1658,248 @@ ol {
     flex-shrink: 0;
 }
 
+.bg-gray-img4 {
+    border-radius: 50px 50px 0px 0px;
+    background: #D9D9D9;
+    /* width: 685px; */
+    /* height: 437.941px; */
+    flex-shrink: 0;
+}
+
+.bg-gray-img5 {
+    /* width: 684px; */
+    /* height: 336px; */
+    flex-shrink: 0;
+    border-radius: 0px 0px 50px 50px;
+    background: #F3F3F3;
+    backdrop-filter: blur(15px);
+    cursor: pointer;
+}
+
+
+.bg-gray-img5:hover {
+    border-radius: 0px 0px 50px 50px;
+    background: #18361B;
+    backdrop-filter: blur(15px);
+}
+
+.car-detatls p {
+    color: #000;
+    font-family: 'Barlow';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* .car-detatls p:hover {
+    color: var(--text-t100, #FFF);
+
+} */
+
+
+.bg-gray-img5:hover .car-detatls p,
+.bg-gray-img5:hover .car-brand {
+    color: var(--text-t100, #FFF);
+
+}
+
+.bg-gray-img5:hover .car-detatls span {
+    color: var(--primary-p500, #134A56);
+    background: #A4FF01;
+
+}
+
+.bg-gray-img5:hover .car-seats,
+.bg-gray-img5:hover .car-seats-p {
+    color: var(--accent-a500, #B7F843);
+
+}
+
+
+
+.car-detatls span {
+    color: var(--primary-p500, #134A56);
+    text-align: center;
+    font-family: 'Barlow';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    display: flex;
+    width: 107px;
+    padding: 6px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: rgba(164, 255, 1, 0.20);
+}
+
+.car-brand {
+    color: #000;
+    font-family: 'Barlow';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    /* 112.5% */
+}
+
+.car-seats {
+    color: #367C3D;
+
+    /* Subheading/Uppercase/S2 */
+    font-family: 'Barlow';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    /* 150% */
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+.car-seats-p {
+    color: #367C3D;
+
+    /* Subheading/Uppercase/S2 */
+    font-family: 'Barlow';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    /* 150% */
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+.Contact-section h2 {
+    color: #367C3D;
+    font-family: 'Sen';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 125% */
+}
+
+.Contact-section span {
+    color: #231F20;
+    font-family: 'Barlow';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 42px;
+    /* 131.25% */
+}
+
+.radius-border {
+    border-radius: 25px;
+}
+
+.about-us-heading {
+    color: var(--text-t300, #313131);
+
+    /* Heading/Sans-Serif/H5 */
+    font-family: 'Sen';
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 82px;
+    /* 113.889% */
+}
+
+.bg-border {
+    border-radius: 50px;
+    border: 1px solid #C7C7C7;
+    width: 1420px;
+    height: 1860px;
+    flex-shrink: 0;
+}
+
+.about-us {
+    color: #367C3D;
+
+    /* Heading/Serif/H8 */
+    font-family: "Playfair Display";
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 58px;
+    /* 120.833% */
+}
+
+
+.about-heading {
+    color: #231F20;
+
+    /* Heading/Sans-Serif/H8 */
+    font-family: 'Sen';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    /* 120.833% */
+    width: 449px;
+}
+
+.about-paragraph {
+    color: var(--text-t400, #181818);
+
+    /* Body/B2 */
+    font-family: 'Barlow';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 150% */
+    width: 714px;
+}
+
+.bg-blurr-img {
+    background-image: url('../images/Rectangle\ 4796.png');
+    /* height: 638px; */
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.88) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+
+.bg-blurr-img h1{
+    color: #FFF;
+
+/* Heading/Sans-Serif/H8 */
+font-family: 'Sen';
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 58px; /* 120.833% */
+text-align: center;
+}
+.bg-blurr-img p{
+    color: #FFF;
+text-align: center;
+
+/* Body/B2 */
+font-family: 'Barlow';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 150% */
+}
 
 @media (max-width:1910px) {
     .hotels-details p {
         width: auto;
+    }
+
+    .bg-border {
+        width: auto;
+        height: auto;
     }
 
     .whitelist-tag {
@@ -1692,6 +1930,14 @@ ol {
 
     .bg-gray-img1 {
         height: auto;
+    }
+
+    .about-heading {
+        width: auto;
+    }
+
+    .about-paragraph {
+        width: auto;
     }
 }
 
@@ -1768,6 +2014,11 @@ ol {
     .bg-pkg {
         height: 200px;
         border-radius: 16px;
+    }
+
+    .umrah-month h1 {
+        font-size: 56px;
+        line-height: 62px;
     }
 }
 
@@ -1875,6 +2126,11 @@ ol {
         font-size: 16px;
     }
 
+    .about-us {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
     .content-container {
         text-align: start;
     }
@@ -1940,6 +2196,16 @@ ol {
     }
 
     .blog-upload p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+     .bg-blurr-img h1{
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .bg-blurr-img p{
         font-size: 18px;
         line-height: 28px;
     }
@@ -2188,6 +2454,16 @@ ol {
         font-size: 22px;
         line-height: normal;
     }
+        
+    .bg-blurr-img h1{
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .bg-blurr-img p{
+        font-size: 14px;
+        line-height: 22px;
+    }
 }
 
 @media (max-width:576px) {
@@ -2319,6 +2595,45 @@ ol {
     .blog-upload p {
         font-size: 16px;
         line-height: 24px;
+    }
+
+    .car-detatls span {
+        font-size: 16px;
+        width: 80px;
+    }
+
+    .car-detatls p {
+        font-size: 16px;
+    }
+
+    .about-us-heading {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .about-us {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .about-heading {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .about-paragraph {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .bg-blurr-img h1{
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .bg-blurr-img p{
+        font-size: 13px;
+        line-height: 22px;
     }
 
 }
