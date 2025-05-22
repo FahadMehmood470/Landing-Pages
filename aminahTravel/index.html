@@ -323,9 +323,38 @@
 
             </div>
 
-            <!-- Second Column (5/12 for lg, 12/12 for md) -->
-            <div class="rounded-2xl md:col-span-12 lg:col-span-7 overflow-hidden bg-image">
-                <!-- Green Section Positioned Relative to the Image -->
+            <!-- 
+            <div class="md:col-span-12 lg:col-span-7 ">
+
+                <div class="swiper mySwiper3 mt-10">
+                    <div class="swiper-wrapper">
+                     
+                        <div class="swiper-slide">
+                            <div class="rounded-2xl overflow-hidden bg-image">
+                                <div class="img-green-section z-10">
+                                    <div class="m-5 sm:m-6 md:m-8 lg:m-10">
+                                        <h2 class="Promo-umrah">Promo umrah packAGE</h2>
+                                        <p class="Promo-umrah-p mt-3 mb-3">5 Star Special Offer</p>
+                                        <p class="Promo-umrah-price">£840<span class="Promo-umrah-pound">pp</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rounded-2xl  overflow-hidden bg-image">
+                                <div class="img-green-section z-10">
+                                    <div class="m-5 sm:m-6 md:m-8 lg:m-10">
+                                        <h2 class="Promo-umrah">Promo umrah packAGE</h2>
+                                        <p class="Promo-umrah-p mt-3 mb-3">5 Star Special Offer</p>
+                                        <p class="Promo-umrah-price">£840<span class="Promo-umrah-pound">pp</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="md:col-span-12 lg:col-span-7 rounded-2xl overflow-hidden bg-image">
                 <div class="img-green-section z-10">
                     <div class="m-5 sm:m-6 md:m-8 lg:m-10">
                         <h2 class="Promo-umrah">Promo umrah packAGE</h2>
@@ -334,9 +363,6 @@
                     </div>
                 </div>
             </div>
-
-
-
 
         </div>
 
@@ -389,18 +415,18 @@
 
 
 
-    <div class="bg-gray-100 ">
+    <div class="bg-gray-100 px-4 lg:px-16 ">
         <div class="container mx-auto  overflow-hidden ">
             <div class="m-5 lg:mt-20  ">
                 <h2 class="Package">Popular pACKAGES</h2>
                 <h2 class="Budget-Friendly mt-5">Budget-Friendly</h2>
                 <div class="flex justify-between">
                     <p class="Pilgrim mt-4">Packages for Every Pilgrim</p>
-                    <a href="" class="view-packages">view all packages</a>
+                    <a href="" class="view-packages mr-[100px]">view all packages</a>
                 </div>
             </div>
 
-            <div class="flex flex-wrap gap-[50px] px-5 mb-5 lg:mb-24">
+            <div class="flex flex-wrap gap-[50px]  mb-5 lg:mb-24">
 
                 <div class="card mt-4 lg:mt-10 ">
                     <div class="m-4">
@@ -644,7 +670,7 @@
 
                         <div class="swiper-slide">
                             <div class="card1">
-                                <div class="card-content p-10">
+                                <div class="card-content p-5 lg:p-10">
                                     <h2 class="mt-2">Custom Property for You</h2>
                                     <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
                                         gravida nulla ac eros porttitor.</p>
@@ -660,7 +686,7 @@
 
                         <div class="swiper-slide">
                             <div class="card1">
-                                <div class="card-content p-10">
+                                <div class="card-content p-5 lg:p-10">
                                     <h2 class="mt-2">Custom Property for You</h2>
                                     <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
                                         gravida nulla ac eros porttitor.</p>
@@ -675,7 +701,7 @@
 
                         <div class="swiper-slide">
                             <div class="card1">
-                                <div class="card-content p-10">
+                                <div class="card-content p-5 lg:p-10">
                                     <h2 class="mt-2">Custom Property for You</h2>
                                     <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
                                         gravida nulla ac eros porttitor.</p>
@@ -690,7 +716,7 @@
 
                     <!-- Swiper Pagination -->
                     <div class="flex justify-center align-center">
-                        <div class="swiper-pagination"></div>
+                        <div class="custome-swiper-pagination swiper-pagination no-margin"></div>
 
                     </div>
                 </div>
@@ -703,8 +729,7 @@
 
 
 
-
-    <!-- <div class="bg-testimonial py-16">
+    <div class="bg-testimonial py-16">
         <div class="container mx-auto overflow-hidden">
             <div class="mt-5 lg:mt-20 flex flex-col items-center">
                 <h2 class="testimonials-heading">Testimonials</h2>
@@ -712,67 +737,77 @@
                 <p class="mt-4 testimonials-text">Are Saying</p>
             </div>
 
-            <div class="my-swiper mt-12">
-                <div class="my-swiper-wrapper">
-                    <div
-                        class="my-swiper-slide relative bg-white rounded-[50px] p-10 shadow-lg w-[449px] h-[369px] grid grid-cols-12 gap-4">
-                        <div class="absolute custom-image-card overflow-hidden rounded-[50px] col-span-4">
-                            <img src="assets/images/testimonial1.jpg" class="w-full h-auto" alt="Testimonial Image">
-                        </div>
-                        <div class="ml-[80px] testimonial-content col-span-8">
-                            <span>November 08, 2023</span>
-                            <h4 class="mt-5">Seamless coordination of return flights, providing peace of mind for</h4>
-                            <p class="mt-4">Pilgrims as they conclude their sacred journey. Round-trip airfare
-                                arrangements, ensuring a comfortable and timely return home.</p>
+            <!-- Swiper -->
+            <div class="swiper mySwiper2 mt-10">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="relative bg-white lg:rounded-[50px] p-5 lg:p-10 shadow-lg col-span-6 w- xl:w-[64%] lg:h-[369px] gap-4 mx-8 xl:mx-[200px]">
+                            <div class="absolute Image-card overflow-hidden rounded-[50px] col-span-4">
+                                <img src="assets/images/testimonial1.jpg" class="w-full h-auto hide-on-small"
+                                    alt="Testimonial Image">
+                            </div>
+                            <div class="ml-[10px] lg:ml-[80px] testimonial-content col-span-8">
+                                <span class="">November 08, 2023</span>
+                                <h4 class="mt-5">Seamless coordination of return flights, providing peace of mind
+                                    for</h4>
+                                <p class="mt-4">Pilgrims as they conclude their sacred journey. Round-trip airfare
+                                    arrangements,
+                                    ensuring a comfortable and timely return home.</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div
-                        class="my-swiper-slide relative bg-white rounded-[50px] p-10 shadow-lg grid grid-cols-12 gap-4">
-                        <div class="absolute custom-image-card overflow-hidden rounded-[50px] col-span-4">
-                            <img src="assets/images/testimonial1.jpg" class="w-full h-auto" alt="Testimonial Image">
+                    <!-- Slide 2 (Duplicate for demo) -->
+                    <div class="swiper-slide">
+                        <div
+                            class="relative bg-white lg:rounded-[50px] p-5 lg:p-10 shadow-lg col-span-6 w- xl:w-[64%] lg:h-[369px] gap-4 mx-8 xl:mx-[200px]">
+                            <div class="absolute Image-card overflow-hidden rounded-[50px] col-span-4">
+                                <img src="assets/images/testimonial1.jpg" class="w-full h-auto hide-on-small"
+                                    alt="Testimonial Image">
+                            </div>
+                            <div class="ml-[10px] lg:ml-[80px] testimonial-content col-span-8">
+                                <span class="">November 08, 2023</span>
+                                <h4 class="mt-5">Seamless coordination of return flights, providing peace of mind
+                                    for</h4>
+                                <p class="mt-4">Pilgrims as they conclude their sacred journey. Round-trip airfare
+                                    arrangements,
+                                    ensuring a comfortable and timely return home.</p>
+                            </div>
                         </div>
-                        <div class="ml-[80px] testimonial-content col-span-8">
-                            <span>November 08, 2023</span>
-                            <h4 class="mt-5">Seamless coordination of return flights, providing peace of mind for</h4>
-                            <p class="mt-4">Pilgrims as they conclude their sacred journey. Round-trip airfare
-                                arrangements, ensuring a comfortable and timely return home.</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div
+                            class="relative bg-white lg:rounded-[50px] p-5 lg:p-10 shadow-lg col-span-6 w- xl:w-[64%] lg:h-[369px] gap-4 mx-8 xl:mx-[200px]">
+                            <div class="absolute Image-card overflow-hidden rounded-[50px] col-span-4">
+                                <img src="assets/images/testimonial1.jpg" class="w-full h-auto hide-on-small"
+                                    alt="Testimonial Image">
+                            </div>
+                            <div class="ml-[10px] lg:ml-[80px] testimonial-content col-span-8">
+                                <span class="">November 08, 2023</span>
+                                <h4 class="mt-5">Seamless coordination of return flights, providing peace of mind
+                                    for</h4>
+                                <p class="mt-4">Pilgrims as they conclude their sacred journey. Round-trip airfare
+                                    arrangements,
+                                    ensuring a comfortable and timely return home.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Optional Swiper controls -->
+                <div class="flex justify-center align-center">
+                    <div class="custome-swiper-pagination swiper-pagination with-margin"></div>
+
+                </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="container mx-auto  overflow-hidden">
+    <div class="container mx-auto  overflow-hidden lg:mr-[50px]">
         <div class="container mx-auto px-4 sm:px-6 md:px-8 mt-5 lg:mt-20 py-8  mb-5 ">
             <div class="grid md:grid-cols-12 lg:grid-cols-12 gap-8">
 
@@ -913,37 +948,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <footer class="bg-[#18361B] overflow-hidden">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 mt-20">
             <div class="md:flex md:justify-between">
@@ -1069,7 +1073,7 @@
         const swiper = new Swiper(".mySwiper", {
             loop: true, // Enable looping
             pagination: {
-                el: ".swiper-pagination",
+                el: ".custome-swiper-pagination",
                 clickable: true,
             },
             breakpoints: {
@@ -1093,19 +1097,61 @@
             },
         });
 
-        const swiper2 = new Swiper('.my-swiper', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
+        const swiper2 = new Swiper(".mySwiper2", {
+            loop: true, // Enable looping
             pagination: {
-                el: '.swiper-pagination',
+                el: ".custome-swiper-pagination",
                 clickable: true,
             },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+            breakpoints: {
+                320: {   // Small screens
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                768: {   // Medium screens
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                1024: {  // Large screens
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1300: {  // Large screens
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+
             },
         });
+
+
+        const swiper3 = new Swiper(".mySwiper3", {
+            loop: true, // Enable looping
+            pagination: {
+                el: ".custome-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: {   // Small screens
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                768: {   // Medium screens
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                1024: {  // Large screens
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+                1300: {  // Large screens
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+
+            },
+        });
+
 
 
     </script>

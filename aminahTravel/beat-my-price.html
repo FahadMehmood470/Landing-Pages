@@ -270,110 +270,130 @@
 
 
         <!-- Form Column (7/12 for lg, 12/12 for md) -->
-        <div class=" md:col-span-12 lg:col-span-5">
+      <div class="md:col-span-12 lg:col-span-5">
+  <div class="hero-section">
+    <div class="mx-4 md:mx-6 my-4 md:my-6 gap-4 md:gap-6">
 
-            <!-- Content Wrapper -->
-            <div class="hero-section">
-                <div class="m-6 ">
-                    <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4  ">
-                        <select class="dropdown-select  appearance-none relative">
-                            <option>Select Date</option>
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                        </select>
-
-
-                        <select class="dropdown-select appearance-none relative margin-top ">
-                            <option>No. of Passengers</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </div>
-
-                    <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4   mt-6">
-                        <select class="dropdown-select  appearance-none relative">
-                            <option>Select Date</option>
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                        </select>
-
-
-                        <select class="dropdown-select appearance-none relative margin-top ">
-                            <option>No. of Passengers</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </div>
-                    <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4   mt-6">
-                        <select class="dropdown-select  appearance-none relative">
-                            <option>Select Date</option>
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                        </select>
-
-
-                        <select class="dropdown-select appearance-none relative margin-top ">
-                            <option>No. of Passengers</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </div>
-                    <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4   mt-6">
-                        <select class="dropdown-select  appearance-none relative">
-                            <option>Select Date</option>
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                        </select>
-
-
-                        <select class="dropdown-select appearance-none relative margin-top ">
-                            <option>No. of Passengers</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-4   mt-6">
-                        <select class="dropdown-select  appearance-none relative">
-                            <option>Select Date</option>
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                        </select>
-
-
-                        <select class="dropdown-select appearance-none relative margin-top ">
-                            <option>No. of Passengers</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-
-
-
-                        <select class="dropdown-select appearance-none relative margin-top ">
-                            <option>No. of Passengers</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </div>
-
-                    <textarea placeholder="Your Message" class="Message-field w-full mt-6" rows="3"></textarea>
-
-
-                    <!-- Submit Button -->
-                    <button class="book-enquiry mt-6 w-full">
-                        Book Inquiry
-                    </button>
-                </div>
-            </div>
-
-
+      <!-- Row 1 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
+        <div class="relative">
+          <img src="assets/images/departed-airport.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 ml-4 h-5" alt="">
+          <select class="dropdown-select appearance-none pl-16 w-full text-xl">
+            <option selected disabled>Departed Airport</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+          </select>
         </div>
+        <div class="relative">
+          <img src="assets/images/arrival.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 ml-4 h-5" alt="">
+          <select class="dropdown-select appearance-none pl-16 w-full text-xl">
+            <option selected disabled>Arrival Airport</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 mt-4 md:mt-6">
+        <div class="relative">
+          <img src="assets/images/mail.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 ml-4 h-5" alt="">
+          <select class="dropdown-select appearance-none pl-16 w-full text-xl">
+            <option selected disabled>Select Date</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+          </select>
+        </div>
+        <div class="relative">
+          <img src="assets/images/name.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 ml-4 h-5" alt="">
+          <select class="dropdown-select appearance-none pl-16 w-full text-xl">
+            <option selected disabled>Full Name</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 mt-4 md:mt-6">
+        <div class="relative">
+          <img src="assets/images/destination.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 ml-4 h-5" alt="">
+          <select class="dropdown-select appearance-none pl-16 w-full text-xl">
+            <option selected disabled>Makkah Nights</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+          </select>
+        </div>
+        <div class="relative">
+          <img src="assets/images/destination.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 ml-4 h-5" alt="">
+          <select class="dropdown-select appearance-none pl-16 w-full text-xl">
+            <option selected disabled>Madina Nights</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Row 4 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 mt-4 md:mt-6">
+        <div class="relative">
+          <img src="assets/images/room.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 ml-4 h-5" alt="">
+          <select class="dropdown-select appearance-none pl-16 w-full text-xl">
+            <option selected disabled>Rooms</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+          </select>
+        </div>
+        <div class="relative">
+          <img src="assets/images/accomodation.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 ml-4 h-5" alt="">
+          <select class="dropdown-select appearance-none pl-16 w-full text-xl">
+            <option selected disabled>Accommodation</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Row 5 -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 mt-4 md:mt-6">
+        <div class="relative">
+          <img src="assets/images/adults.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 ml-4 h-5" alt="">
+          <select class="dropdown-select appearance-none pl-16 w-full text-xl">
+            <option selected disabled>Adults</option>
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+        <div class="relative">
+          <img src="assets/images/childeren.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 ml-4 h-5" alt="">
+          <select class="dropdown-select appearance-none pl-16 w-full text-xl">
+            <option selected disabled>Children</option>
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+        <div class="relative">
+          <img src="assets/images/baby.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 ml-4" alt="">
+          <select class="dropdown-select appearance-none pl-16 w-full text-xl">
+            <option selected disabled>Infants</option>
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Message -->
+      <textarea placeholder="Your Message" class="Message-field text-xl w-full mt-4 md:mt-6" rows="3"></textarea>
+
+      <!-- Button -->
+      <button class="book-enquiry mt-4 md:mt-6 w-full">
+        Book Inquiry
+      </button>
+
+    </div>
+  </div>
+</div>
+
 
         <!-- Second Column (5/12 for lg, 12/12 for md) -->
 
@@ -408,7 +428,7 @@
         </div>
     </div>
 
-  <div class="container mx-auto px-4 sm:px-6 md:px-8 mt-4 lg:mt-10  mb-5 lg:mb-16 ">
+    <div class="container mx-auto px-4 sm:px-6 md:px-8 mt-4 lg:mt-10  mb-5 lg:mb-16 ">
 
         <!-- <div class="mt-5 lg:mt-20 mb-5 lg:mb-20">
             <h2 class="reach-us">Reach Out to Us</h2>
