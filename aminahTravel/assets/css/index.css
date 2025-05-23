@@ -2510,11 +2510,6 @@ ol {
     .width-on-small {
         width: 236px !important;
     }
-
-    .card {
-        width: 100%;
-    }
-
     .package-heading {
         font-size: 18px;
     }
@@ -2699,5 +2694,11 @@ ol {
         /* margin-left: 14px; */
         margin-inline: 20px;
         width: 90%;
+    }
+}
+
+@media (max-width:476px){
+        .card {
+        width: 100%;
     }
 }
