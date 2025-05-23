@@ -201,20 +201,6 @@ body {
     /* 155.556% */
 }
 
-.bg-image {
-    background-image: url('../images/travels.jpg');
-    /* Adjust path if necessary */
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* Ensures the image covers the entire container */
-    background-position: center;
-    position: relative;
-    width: 100%;
-    /* Make it take the full width */
-    min-height: 300px;
-    /* Adjust height as needed */
-}
-
 .bg-enquiry {
     background-image: url('../images/enquiry.jpg');
     /* Adjust path if necessary */
@@ -2510,6 +2496,7 @@ ol {
     .width-on-small {
         width: 236px !important;
     }
+
     .package-heading {
         font-size: 18px;
     }
@@ -2695,10 +2682,18 @@ ol {
         margin-inline: 20px;
         width: 90%;
     }
+
+    .Contact-section span{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .Contact-section h2{
+        font-size: 22px;
+    }
 }
 
-@media (max-width:476px){
-        .card {
+@media (max-width:476px) {
+    .card {
         width: 100%;
     }
 }
