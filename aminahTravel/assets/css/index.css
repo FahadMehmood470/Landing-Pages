@@ -131,7 +131,7 @@ body {
     background-position: right 2rem center;
     /* Adjust to center the icon */
     background-size: 13px;
-    font-size: 14px;
+    font-size: 18px;
     /* Adjust size as needed */
 }
 
@@ -1676,7 +1676,7 @@ ol {
 
 
 .bg-gray-img5:hover {
-    border-radius: 0px 0px 50px 50px;
+    /* border-radius: 0px 0px 50px 50px; */
     background: #18361B;
     backdrop-filter: blur(15px);
 }
@@ -2025,6 +2025,13 @@ ol {
         font-size: 56px;
         line-height: 62px;
     }
+    
+    .dropdown-select {
+        background-position: right 10px center;
+        font-size: 12px;
+        padding: 12px 22px;
+
+    }
 }
 
 @media (max-width:1280px) {
@@ -2227,6 +2234,14 @@ ol {
         display: none;
     }
 
+    
+    .dropdown-select {
+        background-position: right 10px center;
+        font-size: 18px;
+        padding: 12px 22px;
+
+    }
+
 
 }
 
@@ -2253,7 +2268,7 @@ ol {
 
     .dropdown-select {
         background-position: right 10px center;
-        font-size: 12px;
+        font-size: 18px;
         padding: 12px 22px;
 
     }
@@ -2490,6 +2505,15 @@ ol {
         font-size: 14px;
         line-height: 22px;
     }
+
+    .bg-gray-img4 {
+        border-radius: 0px;
+    }
+
+    .bg-gray-img5 {
+        border-radius: 0px;
+    }
+
 }
 
 @media (max-width:576px) {
@@ -2683,11 +2707,12 @@ ol {
         width: 90%;
     }
 
-    .Contact-section span{
+    .Contact-section span {
         font-size: 24px;
         line-height: 28px;
     }
-    .Contact-section h2{
+
+    .Contact-section h2 {
         font-size: 22px;
     }
 }
