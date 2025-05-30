@@ -14,9 +14,9 @@
 </head>
 
 <body>
-
     <div class="container">
-        <div class="d-flex align-items-center justify-content-between justify-content-lg-between flex-wrap gap-3 mt-2">
+        <div
+            class="d-flex align-items-center justify-content-between justify-content-lg-between flex-wrap gap-3 mt-3 mb-3">
 
             <div>
                 <img src="assets/images/logoforlarge.png" alt="Logo" class="logo-img d-block">
@@ -49,19 +49,14 @@
 
         </div>
     </div>
-
-
-
-
-
-    <div class="background-img">
+    <div class="background-img overflow-hidden">
         <div class="background-color header">
-            <div class="container ">
-                <ul class="list-unstyled d-flex flex-row flex-wrap align-items-center justify-content-between mt-5 gap-5  text-decoration-none
+            <div class="container d-block ">
+                <ul class="list-unstyled d-flex flex-row flex-wrap align-items-center justify-content-between mt-4 mb-4 gap-5   text-decoration-none
                             px-lg-3">
-                    <li><a href="#" class=" hover-underline custome-li-alignments ms-4">Home</a></li>
+                    <li><a href="#" class=" hover-underline custome-li-alignments ms-2 ms-lg-4">Home</a></li>
                     <li><a href="#" class=" custome-li-umrah hover-underline">About</a></li>
-                     <div class="dropdown d-flex ">
+                    <div class="dropdown d-flex hover-underline">
                         <div class="dropdown">
                             <a class="custome-li-alignments   dropdown-toggle custom-dropdown" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -98,7 +93,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="dropdown d-flex ">
+                    <div class="dropdown d-flex hover-underline ">
                         <div class="dropdown">
                             <a class="custome-li-alignments  dropdown-toggle custom-dropdown" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -145,13 +140,167 @@
                     </li>
                 </ul>
             </div>
+        </div>
+        <div class="d-none">
+            <div class="background-color">
+                <div class="container mt-4 mb-4">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <li class="list-unstyled mb-0">
+                            <a href="#" class="hover-underline custome-li-alignments ms-2 ms-lg-4">Home</a>
+                        </li>
+                        <button class="btn p-0 border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <img src="assets/images/menu.svg" alt="Menu Icon" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item hover-underline">
+                            <a class="nav-link active " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item hover-underline">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item hover-underline dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Umrah Packages <img src="assets/images/chevron-down.svg" class="down-icon" alt="">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">January</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">February</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">March</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">April</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">May</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">June</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">July</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">August</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">September</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Octuber</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">November</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">December</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li class="nav-item hover-underline dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Hajj Packages <img src="assets/images/chevron-down.svg" class="down-icon" alt="">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">January</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">February</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">March</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">April</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">May</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">June</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">July</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">August</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">September</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Octuber</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">November</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">December</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li class="nav-item hover-underline">
+                            <a class="nav-link" href="#">Hajj Packages 2025</a>
+                        </li>
+                        <li class="nav-item hover-underline">
+                            <a class="nav-link" href="#">Ramadaan</a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
 
         </div>
+        <div class="clearfix"></div>
+
         <div class="hero-section container custome-margin-top custome-margin-bottom  ">
+            <div class="clearfix"></div>
+
             <div class="container hero-subtitle-width">
-                <p class="hero-subtitle mt-5">Customize your Divine Journey with Best Umrah Packages</p>
+                <p class="hero-subtitle mt-4 mt-lg-5">Customize your Divine Journey with Best Umrah Packages</p>
             </div>
-            <div class="container hero-form-width mb-5">
+            <div class="container hero-form-width mb-3 mb-lg-5">
                 <form>
                     <div class="container">
                         <div class=" row">
@@ -174,24 +323,114 @@
                                 <input type="text" class="form-control" id="exampleInputName1" aria-describedby="Name"
                                     placeholder="Fahad">
                             </div>
-                            <div class="mb-3 col-lg-4  mt-3  col-6">
+                            <div class="mb-3 col-lg-4  mt-lg-2  col-6">
                                 <label for="exampleInputName1" class="custom-label">contact number</label>
                                 <input type="number" class="form-control" id="exampleInputContact1"
                                     aria-describedby="contact" placeholder="000 0000 000">
                             </div>
-                            <div class="mb-3 col-lg-5  mt-3  col-6">
+                            <div class="mb-3 col-lg-5  mt-lg-2  col-6">
                                 <label for="exampleInputName1" class="custom-label">email id</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="email" placeholder="Deno@123">
                             </div>
-                            <div class="mb-3 col-lg-3  mt-3  col-6">
-                                <button type="submit" class="explore-btn mt-3">explore</button>
+                            <div class="mb-3 col-12 col-lg-3  mt-3  ">
+                                <button type="submit" class="explore-btn mt-3">submit</button>
                             </div>
                         </div>
                     </div>
-
+                    <div class="clearfix"></div>
                 </form>
+                <div class="clearfix"></div>
             </div>
+            <div class="clearfix"></div>
+
+        </div>
+
+        <div class="clearfix"></div>
+
+        <!-- <div class="container bg-yellow position-absolute">
+            <div class="row m-3 m-sm-4 m-lg-5">
+                <div class="col-6 col-md-3 text-center stats-item">
+                    <h2>10<sup>+</sup></h2>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="col-6 col-md-3 text-center stats-item">
+                    <h2>10<sup>+</sup></h2>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="col-6 col-md-3 text-center stats-item">
+                    <h2>10<sup>+</sup></h2>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="col-6 col-md-3 text-center stats-item">
+                    <h2>10<sup>+</sup></h2>
+                    <p>Years of Experience</p>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+    <div class="container custome-margin-top custome-margin-bottom">
+        <h2 class="umrah-package">Browse Popular Umrah Packages</h2>
+        <p class="mt-3 umrah-package-p">
+            Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec mattis
+            lectus quam pretium amet facilisis.
+        </p>
+
+        <div class="row  ">
+            <div class="col-12 col-lg-8">
+                <div class="position-relative mt-4" >
+                    <img src="assets/images/Rectangle 6.png" class="img-fluid w-full img-h" alt="Ramadan Umrah Packages">
+                    <div class="position-absolute top-50  text-white  px-3 text-img1 ms-2 ms-lg-4 mt-xl-5">
+                        <h3>Ramadan Umrah Packages</h3>
+                        <p class="mt-3">
+                            Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec
+                            mattis lectus quam pretium amet facilisis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4  mt-4">
+                <div class="position-relative">
+                    <img src="assets/images/Rectangle 9.png" class="img-fluid w-full img-h" alt="Easter Holidays Umrah">
+                    <div class="position-absolute top-50  text-white px-3 text-img2 ms-2 ms-lg-4">
+                        <h3>Easter Holidays Umrah</h3>
+                        <p class="mt-3">
+                            Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec
+                            mattis lectus quam pretium amet facilisis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4  mt-4">
+                <div class="position-relative">
+                    <img src="assets/images/Rectangle 9.png" class="img-fluid w-full img-h" alt="Easter Holidays Umrah">
+                    <div class="position-absolute top-50  text-white px-3 text-img2 ms-2 ms-lg-4">
+                        <h3>Easter Holidays Umrah</h3>
+                        <p class="mt-3">
+                            Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec
+                            mattis lectus quam pretium amet facilisis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-8 mt-4">
+                <div class="position-relative">
+                    <img src="assets/images/Rectangle 6.png" class="img-fluid w-full img-h" alt="Ramadan Umrah Packages">
+                    <div class="position-absolute top-50  text-white  px-3 text-img1 ms-2 ms-lg-4 mt-xl-5">
+                        <h3>Ramadan Umrah Packages</h3>
+                        <p class="mt-3">
+                            Urna, massa aliqua dui pellentesque. Ac, gravida in. Diam vitae, nec
+                            mattis lectus quam pretium amet facilisis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
