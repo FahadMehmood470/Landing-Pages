@@ -1,0 +1,418 @@
+.watsapp-png {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 8px;
+    border-radius: 8px;
+    background: #005E38;
+    flex-shrink: 0;
+    aspect-ratio: 1 / 1;
+    /* gap is unnecessary unless this is a container for multiple elements */
+}
+
+.call-png {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 8px;
+    border-radius: 8px;
+    background: #C1A269;
+    aspect-ratio: 1 / 1;
+    /* gap is also not needed here */
+}
+
+.contact-info p {
+    color: #5E5E5E;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact-info h3 {
+    color: #01411C;
+    font-family: 'Inter';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 109.091% */
+    text-transform: capitalize;
+}
+
+.info-block p {
+    color: #5E5E5E;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.info-block h3 {
+    color: #C1A269;
+    font-family: 'Inter';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 109.091% */
+    text-transform: capitalize;
+}
+
+.logo-img {
+    width: 220px;
+    height: 100px;
+    flex-shrink: 0;
+    aspect-ratio: 11/5;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.custome-li-alignments {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none   ;
+
+}
+
+
+
+.custome-li-umrah {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none   ;
+
+}
+
+.custome-li-alignments:hover,
+.custome-li-umrah:hover {
+    color: #FACE8D;
+    transform: scale(1.05);
+    /* letter-spacing: 0.5px; */
+    transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease;
+}
+
+
+.dropdown {
+    position: static;
+}
+
+.background-color {
+    border: 1px solid var(--Main-Stroke, rgba(255, 255, 255, 0.70));
+    opacity: 0.68;
+    background: #000;
+    backdrop-filter: blur(91.55000305175781px);
+    width: 100%;
+    height: 105px;
+    flex-shrink: 0;
+
+}
+
+.header {
+    position: relative;
+    z-index: 10;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+    color: white;
+}
+
+.custom-dropdown {
+    width: 316px;
+    height: 805px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    /* background: rgba(39, 39, 39, 0.80); */
+    backdrop-filter: blur(8.100000381469727px);
+}
+
+.dropdown-icon-change {
+    width: 24px;
+    height: 24px;
+    fill: #FACE8D;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 9999 !important;
+}
+
+.dropdown-menu {
+    border-radius: 30px;
+    background: rgba(39, 39, 39, 0.80);
+    backdrop-filter: blur(8.100000381469727px);
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+    /* Ensure readability */
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: transparent !important;
+    color: #FACE8D;
+    transition: 0.4s ease-in-out;
+    /* font-size: 22px; */
+}
+
+
+
+
+
+.dropdown-item {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+
+.dropdown-divider {
+    width: 284px;
+    height: 0.5px;
+    background: rgba(255, 255, 255, 0.80);
+    margin-inline: 1rem;
+}
+
+.hero-section {
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(14px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    border: 0.467px solid #FFF;
+    isolation: isolate;
+    /* Important */
+    overflow: visible;
+    /* Prevent clipping */
+}
+
+.background-img {
+    background-image: url(../images/kaaba-in-black.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* width: 100%;
+    height: 88vh; */
+    height: 853px;
+
+}
+
+.custome-margin-top {
+    margin-top: 5%;
+}
+
+.hero-subtitle-width {
+    width: 51%;
+}
+
+.hero-subtitle {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Judson';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero-form-width {
+    width: 70%;
+
+}
+
+.custom-label {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.1);
+    /* semi-transparent */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    /* or black if background is light */
+    border-radius: 10px;
+
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.1);
+    /* semi-transparent */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    /* or black if background is light */
+}
+
+.form-control::placeholder {
+    color: #AAA;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.explore-btn {
+    display: flex;
+    /* width: 196px; */
+    height: 45px;
+    padding: 20px 59px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #DB8F51;
+    background: #F6B24A;
+    color: #000;
+    font-family: 'Judson';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.custome-margin-bottom{
+    margin-bottom: 5%;
+}
+
+
+
+.hover-underline {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.hover-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #FACE8D;
+    transition: width 0.3s ease;
+}
+
+.hover-underline:hover::after {
+    width: 100%;
+}
+
+
+
+
+@media (max-width:1919px){
+    .background-img{
+        width: auto;
+    }
+}
+
+
+@media (max-width:1180px) {
+    .hero-subtitle-width {
+        width: 100%;
+    }
+
+    .hero-form-width {
+        width: 100%;
+    }
+    .info-block {
+        display: none !important;
+    }
+
+    .contact-info {
+        display: none !important;
+    }
+
+}
+
+@media (max-width:992px) {
+
+
+    .logo-img {
+        width: 47px;
+        height: 52px;
+        flex-shrink: 0;
+        aspect-ratio: 47/52;
+    }
+
+    .d-none {
+        display: block !important;
+    }
+
+    .d-block {
+        display: none !important;
+    }
+
+    .trustpilot-logo {
+        width: 71px;
+        height: 15px;
+        flex-shrink: 0;
+        aspect-ratio: 71/15;
+    }
+
+    .certificates-logo {
+        width: 53px;
+        height: 19px;
+        flex-shrink: 0;
+        aspect-ratio: 53/19;
+    }
+
+    .background-img {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width:667px) {
+    .custom-dropdown {
+        max-height: 200px;
+    }
+
+    .hero-section {
+        width: 90%;
+    }
+
+    .explore-btn {
+        font-size: 16px;
+    }
+}
