@@ -557,6 +557,353 @@
     line-height: normal;
 }
 
+.Popular-pkg {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-family: 'Judson';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.Popular-pkg-p {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.section-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.white-icon-dropdown {
+    background-image: url("../images/crevion-white.svg");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 26px 26px;
+    color: white;
+    background-color: #f9b854;
+    /* optional */
+}
+
+.holidays-btn {
+    font-family: 'Inter';
+    border: none;
+    box-shadow: 0px 2px 6.6px 0px rgba(0, 0, 0, 0.16), 0px 6px 10px 0px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(10px);
+    font-size: 16px;
+}
+
+.custom-button:hover {
+    background: #F6B24A;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6.6px 0px rgba(0, 0, 0, 0.16), 0px 6px 10px 0px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(10px);
+}
+
+.custome-button {
+    background-color: #F6B24A;
+    font-family: 'Inter';
+    box-shadow: 0px 2px 6.6px 0px rgba(0, 0, 0, 0.16), 0px 6px 10px 0px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(10px);
+}
+
+.custome-button:hover {
+    background: white;
+    border-radius: 6px;
+    color: black;
+    border-radius: 10px;
+}
+
+.star-wrapper2 {
+    background-color: #ffffff;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 6px;
+
+}
+
+.star-wrapper2 .star {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url("../images/greenstar.svg");
+    background-size: cover;
+    transition: background-image 0.3s;
+}
+
+.star-wrapper2:hover {
+    background-color: #F6B24A;
+}
+
+.star-wrapper2:hover .star {
+    background-image: url("../images/white-star.svg");
+}
+
+.btn-check:checked+.custom-button,
+.btn-check:checked+.custome-button {
+    background-color: #005E38;
+    /* or your desired selected color */
+    color: white;
+    /* or your preferred text color */
+    box-shadow: 0px 2px 6.6px rgba(0, 0, 0, 0.16), 0px 6px 10px rgba(0, 0, 0, 0.10);
+}
+
+input[type="radio"]:checked+.star-wrapper2,
+input[type="radio"]:checked+.star-wrapper {
+    background-color: #005E38;
+}
+
+input[type="radio"]:checked+.star-wrapper2 .star,
+input[type="radio"]:checked+.star-wrapper .star {
+    background-image: url("../images/white-star.svg");
+}
+
+
+
+.star-wrapper {
+    background-color: #F6B24A;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 6px;
+}
+
+.star {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url("../images/white-star.svg");
+    background-size: cover;
+    transition: background-image 0.3s;
+}
+
+.star-wrapper:hover {
+    background-color: #ffffff;
+}
+
+.star-wrapper:hover .star {
+    background-image: url("../images/yellow-star.svg");
+}
+
+.custom-btn {
+    background: #F6B24A;
+    font-family: 'Inter';
+    color: white;
+    box-shadow: 0px 2px 6.6px 0px rgba(0, 0, 0, 0.16), 0px 6px 10px 0px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(10px);
+}
+
+.custom-btn.active {
+    background: #F6B24A;
+}
+
+.custom-card {
+    /* width: 32.333%; */
+    border-radius: 16px;
+    border: 1px solid #F6B24A;
+    background: #FFF;
+    box-shadow: 0px 4.428px 17.712px 0px rgba(158, 158, 158, 0.25);
+}
+
+.package-title {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.package-duration {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.city-name {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.facilisis {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: end;
+}
+
+.price {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    /* 105.556% */
+}
+
+.price-person {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.book-now-btn {
+  position: relative;
+  color: #000;
+  font-family: 'Judson';
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  width: 126px;
+  height: 36px;
+  padding: 8px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  border: 1px solid #F6B24A;
+  background: #F6B24A;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.5s ease;
+}
+
+.book-now-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #005E38; /* Hover fill color */
+  z-index: -1;
+  transition: width 0.5s ease;
+}
+
+.book-now-btn:hover::before {
+  width: 100%;
+}
+
+.book-now-btn:hover {
+  color: #FFF;
+}
+
+/* .explore-btn-btn {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: inline-flex;
+    height: 50px;
+    padding: 33px 59px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: transparent;
+} */
+
+.card-header {
+    background-color: #FFF;
+}
+
+.img-filter {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 6px;
+    background: #005E38;
+    box-shadow: 0px 2px 6.6px 0px rgba(0, 0, 0, 0.16), 0px 6px 10px 0px rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(10px);
+}
+
+.details-btn {
+    color: #C1A269;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    /* width: 356px; */
+    width: 100%;
+    height: 46px;
+    padding: 8px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 1px solid #C1A269;
+    text-decoration: none;
+}
+
+.details-btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.5s ease;
+}
+
+.details-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: #C1A269;
+    z-index: -1;
+    transition: width 0.5s ease;
+}
+
+.details-btn:hover::before {
+    width: 100%;
+}
+
+.details-btn:hover {
+    border-color: #C1A269;
+    color: #FFF;
+}
+
+
+
+
+
 
 @media (max-width:1919px) {
     .background-img {
@@ -601,6 +948,7 @@
     .umrah-package {
         font-size: 32px;
     }
+
     .text-img1 h3 {
         font-size: 32px;
         line-height: normal;
@@ -679,7 +1027,7 @@
         font-size: 15px;
     }
 
-        .text-img1 h3 {
+    .text-img1 h3 {
         font-size: 28px;
         line-height: normal;
     }
@@ -698,6 +1046,15 @@
         line-height: normal;
         font-size: 11px;
     }
+
+    .margin-on-small {
+        margin-inline-start: 20px;
+    }
+
+    .Popular-pkg {
+        font-size: 35px;
+    }
+
 }
 
 @media (max-width:667px) {
@@ -750,9 +1107,13 @@
         font-size: 10px;
     }
 
-     .img-h{
+    .img-h {
         height: 222px;
         width: 100%;
+    }
+
+    .Popular-pkg {
+        font-size: 33px;
     }
 }
 
@@ -796,8 +1157,13 @@
         line-height: normal;
         font-size: 10px;
     }
-    .img-h{
+
+    .img-h {
         height: 200px;
         width: 100%;
+    }
+
+    .Popular-pkg {
+        font-size: 23px;
     }
 }
