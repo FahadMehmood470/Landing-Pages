@@ -1892,15 +1892,362 @@ hr {
     padding: .5rem 1rem;
 }
 
-.background-hajj{
+.background-hajj {
     background-image: url('../images/kaaba-in-black.png');
-height: 414px;
-flex-shrink: 0;
-background-position: center;
-background-repeat: no-repeat;
+    /* height: 414px; */
+    flex-shrink: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ramadan-packg h2 {
+    color: #FFF;
+    font-family: 'Judson';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ramadan-packg p {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.ramadan-packg span {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.li-tag {
+    position: relative;
+    /* Needed for ::after */
+    text-decoration: none;
+    list-style: none;
+    color: #C1A269;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 18px;
+    /* font-size: 20px; */
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    padding-bottom: 5px;
+    /* adds space between text and line */
+}
+
+.li-tag:hover {
+    color: black;
+}
+
+.li-tag::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.li-tag:hover::after {
+    width: 100%;
+}
+
+.iternary {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.place {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    /* 222.222% */
+}
+
+.stay-length {
+    color: #808080;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.day-heading {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 155.556% */
+}
+
+.day-description {
+    color: #808080;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.transportation {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.transport-facilities {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+
 }
 
 
+.back-form {
+    background-image: url(../images/kaaba-in-black.jpg);
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    border-radius: 30px;
+
+}
+
+.blurr-form {
+    border-radius: 30px;
+    border: 0.467px solid #FFF;
+    /* background: rgba(255, 255, 255, 0.10); */
+    backdrop-filter: blur(14px);
+}
+
+.book-seat {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Judson';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.book-seat-p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.margin-top-65 {
+    margin-top: 65px;
+}
+
+.custom-label {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.custom-placeholder::placeholder {
+    color: #AAA;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.transport-facilities span {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    cursor: pointer;
+}
+
+.Submit-btn {
+    display: flex;
+    /* width: 379px; */
+    height: 50px;
+    padding: 33px 59px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #C1A269;
+    color: #000;
+    font-family: 'Judson';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.related-pkg {
+    color: #000;
+    font-family: 'Judson';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.related-pkg-p {
+    color: #808080;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.deposit-amount {
+    color: var(--light, #FAFAFA);
+    font-family: 'Inter';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 240% */
+    text-transform: uppercase;
+    padding: 7px 20px;
+    background: black;
+    position: absolute;
+    top: 38px;
+    border-radius: 8px;
+}
+
+.deposit-amount span {
+    color: var(--light, #FAFAFA);
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.info-page {
+    color: #000;
+    text-align: justify;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 155.556% */
+}
+
+.back-info {
+    /* width: 479px; */
+    /* height: 826px; */
+    flex-shrink: 0;
+    aspect-ratio: 479/826;
+    border-radius: 30px;
+    background: #F6F1E9;
+    filter: blur(0px);
+}
+
+.line {
+    /* width: 379px; */
+    height: 3px !important;
+    background: #C1A269;
+}
+
+.perform-umrah h2 {
+    color: #5E5E5E;
+    font-family: 'Judson';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: stretch;
+}
+
+.perform-umrah p {
+    color: #C1A269;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27px */
+    align-self: stretch;
+}
+
+.bg-book {
+    width: 479px;
+    height: 322px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 0.467px solid #FFF;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(14px);
+}
+
+.exclusive-deals p {
+    color: #C1A269;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 26px */
+    text-align: center;
+}
+
+.exclusive-deals h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Judson';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 @media (max-width:1919px) {
     .background-img {
@@ -2539,5 +2886,77 @@ background-repeat: no-repeat;
 
     .negitive-margin-top-01 {
         margin-top: -129px;
+    }
+
+    .ramadan-packg h2,
+    .ramadan-packg p {
+        font-size: 18px;
+    }
+
+    .ramadan-packg span {
+        font-size: 10px;
+    }
+
+    .ramadan-packg {
+        margin-left: 25px;
+    }
+
+    .day-description {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .day-heading {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .li-tag,
+    .transport-facilities {
+        font-size: 12px;
+    }
+
+    .transport-facilities span,
+    .book-seat-p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .iternary,
+    .book-seat {
+        font-size: 20px;
+    }
+
+    .place {
+        font-size: 15px;
+    }
+
+    .stay-length {
+        font-size: 12px;
+    }
+
+    .margin-top-65 {
+        margin-top: 25px;
+    }
+
+    .perform-umrah h2 {
+        font-size: 16px;
+    }
+
+    .perform-umrah p {
+        font-size: 13px;
+    }
+
+    .info-page {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .exclusive-deals h2{
+        font-size: 16px;
+    }
+
+    .exclusive-deals p{
+        font-size: 16px;
     }
 }
