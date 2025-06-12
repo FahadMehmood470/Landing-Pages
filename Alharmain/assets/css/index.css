@@ -185,7 +185,7 @@
 .dropdown-item {
     color: #FFF;
     font-family: 'Inter';
-    font-size: 20px;
+    /* font-size: 20px; */
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
@@ -401,6 +401,11 @@
     margin-bottom: 6%;
 }
 
+.custome-margin-bottom-01 {
+    margin-bottom: 12%;
+
+}
+
 
 
 .hover-underline {
@@ -464,9 +469,9 @@
 .bg-yellow {
     border-radius: 30px;
     background: #C1A269;
-    bottom: -15px;
+    /* bottom: -15px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
     /* padding: 20px; */
 }
 
@@ -1149,6 +1154,11 @@ text-edge: cap; */
     margin-top: -50px;
 }
 
+.negitive-margin-top-01 {
+    margin-top: -108px;
+
+}
+
 .overflow-on-cards {
     overflow: auto;
     scrollbar-width: none;
@@ -1467,8 +1477,8 @@ text-edge: cap; */
 .service-form {
     border-radius: 16px;
     border: 1px solid #C1A269;
-    width: 660px;
-    height: 692px;
+    /* width: 660px; */
+    /* height: 692px; */
     flex-shrink: 0;
 }
 
@@ -1579,7 +1589,7 @@ text-edge: cap; */
     color: var(--light, #FAFAFA);
 
     /* link/normal */
-    font-family: "Gothic A1";
+    font-family: "Inter";
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -1618,8 +1628,276 @@ text-edge: cap; */
 
 }
 
-.custom-input{
+.custom-input {
     color: #000;
+}
+
+/* .airlines {
+    color: #000;
+    text-align: center;
+    font-family: 'Judson';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+} */
+
+.bg-footer {
+    background-image: url('../images/footer.jpg');
+    /* width: 1920px; */
+    /* height: 779px; */
+    flex-shrink: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .footer-help ul li a {
+  color: var(--light, #FAFAFA);
+  font-family: "Gothic A1";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+} */
+
+.footer-title {
+    color: #C1A269;
+
+    /* heading/title */
+    font-family: "Gothic A1";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+}
+
+.footer-link li+li {
+    margin-top: 12px;
+}
+
+.footer-link li a {
+    color: var(--light, #FAFAFA);
+
+    /* body/normal */
+    font-family: "Gothic A1";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    text-decoration: none;
+}
+
+
+.footer-link a {
+    position: relative;
+    display: inline-block;
+    vertical-align: top
+}
+
+.footer-link a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    width: 0;
+    height: 1px;
+    transition: ease all .35s;
+    background: currentColor
+}
+
+.footer-link a:hover:after {
+    left: 0;
+    right: auto;
+    width: 100%
+}
+
+.footer-icon-01 i {
+    color: var(--light, #FAFAFA);
+    font-family: "Font Awesome 5 Brands";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.icon-gold {
+    color: #C1A269;
+
+}
+
+.icon-circle {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    border: 1px solid #C1A269;
+    color: #C1A269;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.icon-circle::before {
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #C1A269;
+    z-index: 0;
+    transition: bottom 0.5s ease;
+}
+
+.icon-circle:hover::before {
+    bottom: 0;
+}
+
+.icon-circle i {
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+.icon-circle:hover i {
+    color: white;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #C1A269;
+    /* gold color */
+    margin: 14px 0;
+    /* spacing */
+}
+
+.contact-info-2 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #FAFAFA;
+    /* light text */
+}
+
+.contact-info-2 i {
+    color: #FAFAFA;
+    /* gold icon */
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.contact-info-2 p {
+    color: var(--light, #FAFAFA);
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    margin-bottom: 0px !important;
+}
+
+.custome-email {
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 8px;
+    background: var(--light, #FAFAFA);
+    color: var(--text-secondary, #A3A3A3);
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    /* smooth transition */
+
+    font-family: "Gothic A1";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.custome-email:focus {
+    outline: none;
+    border: 1px solid #C1A269;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 0 8px rgba(193, 162, 105, 0.4);
+    /* optional glowing effect */
+}
+
+
+.suscribe-btn {
+    color: var(--light, #FAFAFA);
+
+    /* link/normal */
+    font-family: "Gothic A1";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+    text-transform: capitalize;
+    display: flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 8px;
+    background: #C1A269;
+}
+
+.suscribe-btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.5s ease;
+}
+
+.suscribe-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: #FFF;
+    z-index: -1;
+    transition: width 0.5s ease;
+}
+
+.suscribe-btn:hover::before {
+    width: 100%;
+}
+
+.suscribe-btn:hover {
+    border-color: #C1A269;
+    color: #000;
+
+}
+
+.package-card-body {
+    padding: .5rem 1rem;
+}
+
+.background-hajj{
+    background-image: url('../images/kaaba-in-black.png');
+height: 414px;
+flex-shrink: 0;
+background-position: center;
+background-repeat: no-repeat;
 }
 
 
@@ -1726,6 +2004,7 @@ text-edge: cap; */
 
     .testimonials {
         width: auto;
+        font-size: 34px;
     }
 
     .img-sm-md-fluid {
@@ -1734,6 +2013,19 @@ text-edge: cap; */
 
     .accordion-heading {
         font-size: 32px;
+    }
+
+    .custome-email {
+        font-size: 13px;
+        padding: 12px 12px;
+    }
+
+    .suscribe-btn {
+        font-size: 14px;
+    }
+
+    .background-img {
+        height: 716px;
     }
 
 }
@@ -1872,6 +2164,14 @@ text-edge: cap; */
         font-size: 15px;
     }
 
+    .footer-link-01 li+li {
+        padding-top: .6rem
+    }
+
+    .footer-title {
+        margin-top: 30px;
+    }
+
 }
 
 @media (max-width:667px) {
@@ -1966,6 +2266,36 @@ text-edge: cap; */
 
     .accordion-body {
         font-size: 14px;
+    }
+
+    .form-title {
+        font-size: 16px;
+    }
+
+    .form-check-label {
+        font-size: 14px;
+    }
+
+    .form-label,
+    .select-any-text {
+        font-size: 13px;
+    }
+
+    .custom-date-btn,
+    .custom-submit-btn {
+        font-size: 15px;
+        padding: 10px 8px;
+    }
+
+    .expert-text {
+        line-height: normal;
+        font-size: 12px;
+    }
+
+    .custom-input {
+        height: auto;
+        padding: 5px 8px;
+
     }
 
 }
@@ -2071,7 +2401,8 @@ text-edge: cap; */
     }
 
     .testimonials-p {
-        font-size: 17px;
+        font-size: 14px;
+        line-height: 130%;
     }
 
     .testimonials {
@@ -2150,5 +2481,63 @@ text-edge: cap; */
         height: auto;
     }
 
+    .form-title {
+        font-size: 16px;
+    }
 
+    .form-check-label {
+        font-size: 14px;
+    }
+
+    .form-label,
+    .select-any-text {
+        font-size: 12px;
+    }
+
+    .custom-date-btn,
+    .custom-submit-btn {
+        font-size: 14px;
+        padding: 8px 8px;
+    }
+
+    .expert-text {
+        line-height: normal;
+        font-size: 12px;
+    }
+
+    .custom-input {
+        height: auto;
+        padding: 4px 8px;
+
+    }
+
+    .icon-circle {
+        width: 26px;
+        height: 26px;
+    }
+
+    .custome-email {
+        padding: 12px 7px;
+        font-size: 14px;
+
+    }
+
+    .suscribe-btn {
+        font-size: 12px;
+    }
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-logo img {
+        width: 111px;
+        height: 60px;
+    }
+
+    .negitive-margin-top-01 {
+        margin-top: -129px;
+    }
 }
