@@ -2249,6 +2249,54 @@ hr {
     line-height: normal;
 }
 
+.testimonials-para {
+    color: #000;
+    /* text-align: center; */
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.bg-blurr-yellow {
+    width: 283px;
+    height: 130px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(14px);
+
+}
+
+.month-umrah-pkg h2 {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    /* 110% */
+}
+
+.month-umrah-pkg p {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.month-umrah-pkg span {
+    color: #AAA;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 @media (max-width:1919px) {
     .background-img {
         width: auto;
@@ -2952,11 +3000,11 @@ hr {
         line-height: 22px;
     }
 
-    .exclusive-deals h2{
+    .exclusive-deals h2 {
         font-size: 16px;
     }
 
-    .exclusive-deals p{
+    .exclusive-deals p {
         font-size: 16px;
     }
 }

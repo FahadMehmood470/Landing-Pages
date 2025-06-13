@@ -1,0 +1,121 @@
+.topbarbg {background: url(../images/topbarbg.jpg) repeat top left;color: #fff;font-family: 'Poppins-SemiBold';font-size: 14px; }
+header {background: #fff; }
+.btninquirenow {background: #000000;color:#fff;font-family:'Poppins-SemiBold';font-size: 22px;text-decoration:none;margin-top:12px;padding:22px 22px 25px 22px; }
+
+.toprighticonsbar {position:fixed;top:428px;right:0px;width:230px;z-index: 2;overflow: hidden; }
+
+.toprighticons{
+	margin-bottom:12px;
+	background:#26b848;
+	color:#fff;
+	font-family:'Poppins-SemiBold';
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+	text-decoration:none;
+	padding-right:8px;
+	width: 59px;
+	height: 59px;
+    overflow: hidden;
+    display: block;
+    float: right;
+	transition: width 0.5s ease; /* Transition for position change */ }
+.toprighticons:hover{margin-bottom:12px;width:230px; }
+
+.toprighticons2{
+	margin-bottom:12px;
+	background:#19a039;
+	color:#fff;
+	font-family:'Poppins-SemiBold';
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+	text-decoration:none;
+	padding-right:8px;
+	width: 59px;
+	height: 59px;
+    overflow: hidden;
+    display: block;
+    float: right;
+	transition: width 0.5s ease; /* Transition for position change */ }
+.toprighticons2:hover{margin-bottom:12px;width:230px; }
+
+.toprighticons3{
+	margin-bottom:12px;
+	background:#e3e3e3;
+	color:#000;
+	font-family:'Poppins-SemiBold';
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+	text-decoration:none;
+	padding-right:8px;
+	width: 59px;
+	height: 59px;
+    overflow: hidden;
+    display: block;
+    float: right;
+	transition: width 0.5s ease; /* Transition for position change */ }
+.toprighticons3:hover{margin-bottom:12px;width:230px; }
+
+
+.topnavbar{background: #f5f5f5;padding:10px;max-width: 958px;margin:12px auto 0 auto !important;min-width:70px; }
+.nav-link{font-family: "Gotham-Medium";font-size:16px;text-transform:uppercase;float:left;color:#333333 !important;padding:18px 21px !important;  }
+.nav-link:hover{background:#e97925;color:#fff !important;  }
+
+.custom-toggler{background:#e97925; }
+.custom-toggler.navbar-toggler:hover {box-shadow: 0 0 0; }
+.custom-toggler.navbar-toggler:focus {box-shadow: 0 0 0; }
+.custom-toggler .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24' /%3E%3C/svg%3E") !important;
+}
+.offcanvas{background:#f5f5f5; }
+.offcanvas-header{background:#e97925;color:#fff; }
+.btn-close{color: #fff !important; }
+.dropdown-menu{background:#f5f5f5;min-width:100% !important;padding:10px;border:none 0px;border-radius:0px; }
+
+.dropdown-item{font-family: "Gotham-Medium";font-size:16px;text-transform:uppercase;float:left;color:#333333 !important;padding:18px 21px !important;  }
+.dropdown-item:hover{background:#e97925;color:#fff !important;  }
+
+.offcanvas-end.show .nav-link{padding:8px 8px !important;width:100%;font-size:16px; }
+.offcanvas-end.show .dropdown-item{padding:8px 8px !important;width:100%;font-size:16px;  }
+
+
+@media screen and (max-width:768px){
+	.mainnavbar{position:absolute;top:17px;right:20px; }
+	.nav-link{width:100%; }
+}
+
+@media (900px <= width) {
+	.nav-link {padding:8px 5px !important;font-size:12px;  }
+	.btninquirenow {padding:13px 6px 13px 6px !important;font-size:18px;  }
+}
+
+@media (1024px <= width) {
+	.nav-link {padding:8px 8px !important;font-size:12px;  }
+	.btninquirenow {padding:13px 8px 13px 8px !important;font-size:18px;  }
+}
+
+@media (1152px <= width) and (1170px >= width){
+	.nav-link {padding:8px 8px !important;font-size:16px;  }
+	.btninquirenow {padding:13px 14px 13px 14px !important;  }
+}
+
+@media (1170px <= width) {
+	.nav-link {padding:8px 5px !important;font-size:15px;  }
+	.btninquirenow {padding:13px 14px 13px 14px !important;  }
+}
+
+
+@media (1360px <= width) {
+	.nav-link {padding:8px 8px !important;font-size:16px;  }
+	.btninquirenow {padding:13px 14px 13px 14px !important;  }
+}
+
+@media (1500px >= width) and (1400px <= width){
+	.nav-link {padding:10px 15px !important;  }
+	.btninquirenow {padding:12px 22px 18px 22px !important;  }
+}
+
+
+@media (1500px <= width){
+	.nav-link {padding:18px 21px !important;  }
+	.btninquirenow {padding:22px 22px 25px 22px !important;  }
+}

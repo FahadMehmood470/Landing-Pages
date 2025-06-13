@@ -1,0 +1,127 @@
+.subsliderarea {background: url("../images/subsliderbg.jpg") top center no-repeat;padding-top:59px;padding-bottom:36px;background-size:cover; }
+.slidertext1 {font-family:"Gotham-Light";font-size:2.8rem;color:#fff;margin:0px;padding:0px; }
+.slidertext2 {font-family:"Gotham-Bold";font-size:4rem;color:#e97925;font-weight:bold;margin:0px;padding:0px; }
+.slidertext3 {font-family:"Gotham-Medium";font-size:1.6rem;color:#fff;display:inline-block;margin:0px;padding:0px;line-height:74px; }
+
+.trustedlogos{border-right:solid 2px #e5e5e5;padding:30px 30px;height: 134px; }
+.trustedlogos:last-child{border-right:none 0px; }
+
+.custom-toggler2{background:#e97925;padding: 8px 15px;font-family:"Poppins-Medium";font-size:26px;color:#fff;border-radius: 15px; }
+.custom-toggler2.navbar-toggler:hover {box-shadow: 0 0 0; }
+.custom-toggler2.navbar-toggler:focus {box-shadow: 0 0 0; }
+.custom-toggler2 .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24' /%3E%3C/svg%3E") !important;
+}
+
+
+
+
+.leftmenu{background-color:#e97925;border-radius:15px;padding-bottom:25px;margin-bottom:15px; }
+.leftmenuhead{background-color:#000;font-family:"Poppins-SemiBold";font-size:24px;color:#fff;padding:28px 25px 16px 25px;border-bottom:solid 1px #f4bc92;border-top-left-radius: 15px;border-top-right-radius: 15px; }
+.leftmenu ul{margin:0px;padding:0px;list-style:none; }
+.leftmenu ul li {margin:0px;padding:0px;list-style:none; }
+.leftmenu ul li a{margin:0px 15px;padding:6px 0px;font-family:"Poppins-Medium";font-size:16px;color:#fff;text-decoration:none;display: block;border-bottom: solid 1px #f4bc92; }
+
+.leftmenu ul li.active a{margin:0px 15px;padding:6px 0px;font-family:"Poppins-Medium";font-size:16px;color:#000;text-decoration:none;display: block;border-bottom: solid 1px #f4bc92; }
+
+.leftmenu li.hoteltypesinfo {margin:0px 15px;padding:6px 0px;font-family:"Poppins-Medium";font-size:16px;color:#fff;text-decoration:none;display: block;border-bottom: solid 1px #f4bc92; }
+.leftmenu li.hoteltypesinfo i{font-size:12px; }
+.leftmenu li.packagenightsinfo {margin:0px 15px;padding:6px 0px;font-family:"Poppins-Medium";font-size:16px;color:#fff;text-decoration:none;display: block;border-bottom: solid 1px #f4bc92; }
+
+.pricerangesec{margin:60px 15px 10px 15px;font-family:"Poppins-Medium";font-size:16px;display: block;color: #fff; }
+
+
+.contentarea{border-top:solid 1px #c7c7c7; }
+
+.explorehajjpackage{padding:60px 0px; }
+.explorehajjpackage h2{font-family:"Poppins-SemiBold";font-size:30px;color:#000000;background: url("../images/headingbg.png") bottom left no-repeat;padding:5px 0px 25px 0px;  }
+
+.packagebox3{float:left;background:#f7f7f7;border-radius:10px;
+-webkit-box-shadow: 1px -1px 6px 0px rgba(225,225,225,0.75);
+-moz-box-shadow: 1px -1px 6px 0px rgba(225,225,225,0.75);
+box-shadow: 1px -1px 6px 0px rgba(225,225,225,0.75);
+}
+.packagebox3 img{border-top-left-radius:10px;border-top-right-radius:10px;  }
+.packagebox3 .packageinfosec{background:#f7f7f7;border-bottom:solid 1px #e5e5e5;padding-bottom: 22px; }
+	
+.packagebox3 .packageicons{background:#e97925;margin:-10px auto 0 auto;width: 90%;padding:10px 15px 10px 15px !important;font-family:"Poppins-SemiBold";font-size:14px;color:#fff; }
+
+.packagebox3 .packagename3{font-family:"Poppins-SemiBold";font-size:24px;color:#000000;text-align:left !important; }
+.packagebox3 .packagetext{font-family:"Poppins-Medium";font-size:14px;color:#333333; }
+.packagebox3 .packagetext ul{margin:0px;padding:0px;list-style:none; }
+.packagebox3 .packagetext ul li{margin:0px;padding:0px;list-style:none;line-height:25px;width: 100%;float:left;display:block;margin-bottom:8px;text-align:left !important; } 
+.packagebox3 .packagetext .iconinfo{float:left;text-align:left !important;width: 30px; }
+
+.packagebox3 .packageinfosec .priceinfoblock{background:#000;color:#fff;font-family:"Poppins-SemiBold";font-size:26px;padding:5px 15px;bottom:70px;right: 0px;text-align:left !important; }
+
+.packagebox3 .packagebox3actions{background:url("../images/package-info-2-sep.jpg") center center no-repeat #f7f7f7;padding:12px 22px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;   }
+.packagebox3 .packagebox3actions .btncallnow{padding:10px 20px;color:#fff;font-family:"Poppins-Regular";font-weight:bold;background:#000;border-radius: 10px;text-decoration:none; }
+.packagebox3 .packagebox3actions .btnbooknow{padding:10px 20px;color:#fff;font-family:"Poppins-Regular";font-weight:bold;background:#e97925;border-radius: 10px;text-decoration:none; }
+
+
+.hajjinfo h3{font-family:"Poppins-Regular";font-size:30px;color:#000000;background: url("../images/headingbg.png") bottom left no-repeat;padding:5px 0px 25px 0px;  }
+
+.hajjinfo .accordion-item{background:#f8f8f8 !important;margin-bottom:20px !important;border-radius:15px;  }
+.hajjinfo .accordion-item h2{font-family:"Poppins-SemiBold" !important;color:#fff !important; }
+.hajjinfo .accordion-button{padding:18px 25px 18px 25px !important;border: none 0px !important;background-color: #ea853a !important;color: #fff !important;border-radius: 15px !important;text-transform:uppercase !important;font-size:22px !important;font-family:"Poppins-SemiBold" !important; }
+
+.hajjinfo .accordion-button.collapsed{background-color: #000 !important;}
+
+.hajjinfo .accordion-button::after {
+    /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");*/
+	background-image: none !important;
+}
+.hajjinfo .accordion-button:not(.collapsed)::after {
+    /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");*/
+	background-image: none !important;
+}
+
+.hajjinfo .accordion-body{background-color: #f8f8f8 !important;border-bottom-left-radius: 15px !important;border-bottom-right-radius: 15px !important; }
+
+/* Custom CSS to replace the arrow icon with plus/minus */
+.hajjinfo .accordion-button::after {
+  content: '-';
+  font-family:"Poppins-SemiBold" !important;font-size:22px !important;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.hajjinfo .accordion-button.collapsed::after {
+  content: '+';
+}
+
+.helpsection{background: url("../images/needhelp-bg.jpg") center top no-repeat;padding:100px 0px 130px 0px;background-size: cover; }
+.helpsection p{font-family:"Gotham-Book";font-size:26px;color:#fff; }
+.helpsection h4{font-family:"Gotham-Book";font-size:46px;color:#fff; }
+
+
+.footerlogos{height: 138px; }
+
+@media screen and (max-width:1400px){
+	.packagebox3 .packagetext{font-size:11px; }
+	.packagebox3 .packageinfosec .priceinfoblock{font-size:16px; }
+	.packagebox3 .packagebox3actions .btncallnow{padding:5px 10px;font-size:12px; }
+	.packagebox3 .packagebox3actions .btnbooknow{padding:5px 10px;font-size:12px; }
+	.packagebox3 .packagename3{font-size:18px; }
+}
+
+@media screen and (max-width:1120px){
+	.trustedlogos{padding:15px 15px;height:80px; }
+}
+
+@media screen and (max-width:768px){	
+	.helpsection{padding:20px 0px 20px 0px; }
+	.trustedlogos:nth-child(2){border-right:none 0px; }
+	.contentarea h2{font-size:20px; }
+}
+
+@media screen and (max-width:580px){
+	.trustedlogos:nth-child(2) {border-right:none 0px; }
+	.packagebox3 .packagetext{font-size:16px; }
+	.packagebox3 .packageinfosec .priceinfoblock{font-size:26px; }
+	.packagebox3 .packagebox3actions .btncallnow{padding:10px 15px;font-size:16px; }
+	.packagebox3 .packagebox3actions .btnbooknow{padding:10px 15px;font-size:16px; }
+	.packagebox3 .packagename3{font-size:24px; }
+}
+
+
