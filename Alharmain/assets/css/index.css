@@ -2261,7 +2261,7 @@ hr {
 
 .bg-blurr-yellow {
     width: 283px;
-    height: 130px;
+    /* height: 130px; */
     flex-shrink: 0;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.10);
@@ -2295,6 +2295,72 @@ hr {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.package-min-price p {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.package-min-price span {
+    color: #FFF;
+    font-family: 'Judson';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.package-min-price a {
+    color: #C1A269;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    width: 57px;
+    height: 23px;
+    padding: 8px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 1px solid #C1A269;
+    text-decoration: none;
+}
+
+.package-min-price a {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.5s ease;
+}
+
+.package-min-price a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: #C1A269;
+    z-index: -1;
+    transition: width 0.5s ease;
+}
+
+.package-min-price a:hover::before {
+    width: 100%;
+}
+
+.package-min-price a:hover {
+    border-color: #C1A269;
+    color: #FFF;
 }
 
 @media (max-width:1919px) {
@@ -2333,6 +2399,12 @@ hr {
     .about-p {
         width: auto;
     }
+        .aligin-on-small{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
 
 
@@ -2567,6 +2639,8 @@ hr {
         margin-top: 30px;
     }
 
+    
+
 }
 
 @media (max-width:667px) {
@@ -2692,6 +2766,7 @@ hr {
         padding: 5px 8px;
 
     }
+
 
 }
 
