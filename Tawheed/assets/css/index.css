@@ -1,0 +1,145 @@
+.nav-link li {
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.book-btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    color: #005B68;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    width: 198px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #FFF;
+    transition: color 0.3s ease;
+}
+
+.book-btn::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #66aeb9;
+    border-radius: 100px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.book-btn:hover::before {
+    transform: translateY(0);
+}
+
+.book-btn:hover {
+    color: white;
+}
+
+.bg-nav {
+    background-image: url('../images/nav-img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    border-radius: 50px;
+    /* background: linear-gradient(0deg, rgba(0, 91, 104, 0.40) 0%, rgba(0, 91, 104, 0.40) 100%), url('../images/nav-img.png') lightgray 0px -401.73px / 100% 153.236% no-repeat; */
+}
+
+.bg-border {
+    border-radius: 50px;
+    border: 8px solid #FFF;
+    height: 450px;
+
+}
+
+.d-none {
+    display: none;
+}
+
+.our-patner {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+    /* 125% */
+}
+
+.our-patner span {
+    color: #D4B357;
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.our-patner-p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bg-form {
+    border-radius: 200px;
+    background: #FFF;
+    width: 1471px;
+    height: 148px;
+    flex-shrink: 0;
+    margin-top: -85px;
+}
+
+.custome-label{
+    color: #333;
+font-family: 'Poppins';
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+
+@media (max-width:1300px) {
+    .nav-link li {
+        font-size: 14px;
+    }
+
+    .book-btn {
+        font-size: 16px;
+        width: 125px;
+        height: 40px;
+    }
+}
+
+@media (max-width:1024px) {
+    .d-none {
+        display: block;
+    }
+
+    .d-block {
+        display: none;
+    }
+}
