@@ -56,7 +56,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 700px;
+    /* height: 700px; */
     border-radius: 50px;
     /* background: linear-gradient(0deg, rgba(0, 91, 104, 0.40) 0%, rgba(0, 91, 104, 0.40) 100%), url('../images/nav-img.png') lightgray 0px -401.73px / 100% 153.236% no-repeat; */
 }
@@ -64,12 +64,16 @@
 .bg-border {
     border-radius: 50px;
     border: 8px solid #FFF;
-    height: 450px;
+    /* height: 450px; */
 
 }
 
 .d-none {
-    display: none;
+    display: none !important;
+}
+
+.d-block {
+    display: block !important;
 }
 
 .our-patner {
@@ -105,20 +109,426 @@
 .bg-form {
     border-radius: 200px;
     background: #FFF;
-    width: 1471px;
-    height: 148px;
+    /* width: 1471px; */
+    /* height: 148px; */
     flex-shrink: 0;
     margin-top: -85px;
 }
 
-.custome-label{
+.custome-label {
     color: #333;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.search-packages {
+    display: flex;
+    /* width: 355px; */
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #D4B357;
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    align-items: center;
+}
+
+.bg-contact {
+    border-radius: 100px;
+    background: #FFF;
+    box-shadow: 0px 4px 28px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    width: 623px;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    margin-top: -41px;
+}
+
+.line-breaker {
+    background: #005B68;
+    width: 1px;
+    height: 36px;
+}
+
+.line-breaker2 {
+    background: #005B68;
+    width: 1px;
+}
+
+.call-us {
+    color: #005B68;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact-us {
+    color: #D4B357;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.our-experiance {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 56px;
+    /* 116.667% */
+}
+
+.our-experiance-p {
+    color: rgba(0, 0, 0, 0.50);
+    text-align: justify;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.review h2 {
+    color: #005B68;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.review p {
+    color: #000;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.affordable-price {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 56px;
+    /* 116.667% */
+    width: 699px;
+}
+
+.umrah-leaving{
+    color: #000;
+text-align: center;
 font-family: 'Poppins';
+font-size: 48px;
+font-style: normal;
+font-weight: 500;
+line-height: 56px; /* 116.667% */
+}
+
+.affordable-price-p {
+    color: rgba(0, 0, 0, 0.50);
+    text-align: justify;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.umrah-leaving-p{
+    color: rgba(0, 0, 0, 0.50);
+text-align: center;
+font-family: 'Roboto';
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+
+.view-more {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 200px;
+    height: 58px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 1px solid rgba(0, 91, 104, 0.3);
+    color: #005B68;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 91, 104, 0.1);
+    transition: color 0.4s ease;
+}
+
+.view-more::before {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 91, 104, 0.2);
+    transition: bottom 0.6s ease;
+    z-index: 0;
+}
+
+.view-more:hover::before {
+    bottom: 0;
+}
+
+.view-more:hover {
+    color: #003B48;
+}
+
+.view-more>* {
+    position: relative;
+    z-index: 1;
+}
+
+.card-width {
+    width: 539px;
+    border-radius: 50px 50px 50px 50px;
+    background: #FFF;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid transparent;
+    flex-shrink: 0;
+}
+
+.card-width:hover {
+    border: 1px solid #005B68;
+    box-shadow: 0 4px 20px rgba(0, 91, 104, 0.2);
+}
+
+.scroll-none {
+    scrollbar-width: none;
+}
+
+/* .card-body {
+  border-radius: 0px 0px 50px 50px;
+} */
+
+.rating-star {
+    color: #FFA100;
+}
+
+.card-h {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.destination {
+    color: rgba(0, 0, 0, 0.50);
+    text-align: justify;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.service {
+    color: rgba(0, 0, 0, 0.80);
+    text-align: right;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 111.111% */
+}
+
+.card-breaker {
+    background-color: #005B68;
+    height: 1px;
+}
+
+.prices h3 {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 46px;
+    /* 127.778% */
+}
+
+.prices p {
+    color: rgba(0, 0, 0, 0.80);
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.circle {
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    display: flex;
+    width: 58px;
+    height: 58px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 1px solid #005B68;
+    /* background: #005B68; */
+    cursor: pointer;
+}
+
+
+.circle2 {
+    position: relative;
+    overflow: hidden;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: rgba(0, 91, 104, 0.33);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.circle2::before {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #005B68;
+    transition: bottom 0.4s ease;
+    z-index: 0;
+    border-radius: 100%;
+}
+
+.circle2:hover {
+    transform: scale(1.05);
+}
+
+.circle2:hover::before {
+    bottom: 0;
+}
+
+.circle2>* {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    transition: color 0.4s ease;
+}
+
+.circle2:hover>* {
+    color: #005B68;
+    /* contrast color after water fill */
+}
+
+
+.view-details {
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    width: 200px;
+    height: 58px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #005B68;
+}
+
+.view-details {
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view-details:hover {
+    background: #0A6C7A;
+    /* slightly lighter shade */
+    color: #F3FDFF;
+    /* lighter font on hover */
+    box-shadow: 0 4px 15px rgba(0, 91, 104, 0.4);
+    /* subtle glow */
+}
+
+.deposit-only {
+    color: #005B68;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    width: 192px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #FFF;
+}
+
+.time-duaration {
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    width: 192px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #00282E;
+}
+
+
 
 
 
@@ -132,14 +542,198 @@ line-height: normal;
         width: 125px;
         height: 40px;
     }
+
+    .affordable-price,.umrah-leaving {
+        width: auto;
+        font-size: 27px;
+        line-height: 40px;
+    }
 }
 
 @media (max-width:1024px) {
     .d-none {
-        display: block;
+        display: block !important;
     }
 
     .d-block {
+        display: none !important;
+    }
+
+    .our-patner,
+    .our-patner span {
+        font-size: 24px;
+        line-height: 22px;
+    }
+
+    .bg-border {
+        border: 4px solid #FFF;
+        border-radius: 20px;
+    }
+
+    .bg-nav {
+        border-radius: 20px;
+
+    }
+
+    .our-patner-p {
+        font-size: 15px;
+    }
+
+    .bg-form {
+        border-radius: 20px;
+    }
+
+    .custome-label {
+        font-size: 15px;
+    }
+
+    .search-packages {
+        width: 100%;
+        font-size: 16px;
+        height: 48px;
+    }
+
+    .card-width{
+        width: 440px;
+    }
+
+    .view-details{
+        width: 170px;
+        height: 55px;
+        font-size: 18px;
+    }
+
+    .circle{
         display: none;
     }
+
+    .circle2{
+        width: 50px;
+        height: 50px;
+    }
+    .prices h3 {    
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .deposit-only{
+        border-radius: 0px 4px 4px 0px;
+
+    }
+}
+
+@media (max-width:576px) {
+
+    .our-patner,
+    .our-patner span,
+    .our-experiance,
+    .affordable-price,.umrah-leaving {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .bg-border {
+        border: 4px solid #FFF;
+        border-radius: 20px;
+    }
+
+    .bg-nav {
+        border-radius: 20px;
+
+    }
+
+    .our-patner-p,
+    .our-experiance-p,
+    .review p {
+        font-size: 14px;
+    }
+
+    .bg-form {
+        border-radius: 20px;
+    }
+
+    .custome-label {
+        font-size: 14px;
+    }
+
+    .search-packages {
+        width: 200%;
+        font-size: 14px;
+        height: 42px;
+    }
+
+    .review h2 {
+        font-size: 24px;
+    }
+
+    .card-width {
+        width: 328px;
+    }
+
+    .deposit-only {
+        height: 28px;
+        width: 121px;
+        font-size: 10px;
+        border-radius: 0px 4px 4px 0px;
+
+    }
+
+    .time-duaration {
+        height: 28px;
+        width: 121px;
+        font-size: 10px;
+    }
+
+    .card-h,
+    .destination {
+        font-size: 14px;
+    }
+
+    .service p {
+        font-size: 12px;
+    }
+
+    .prices h3 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .view-details {
+        width: 100px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .prices p {
+        font-size: 10px;
+    }
+
+    /* .circle,.circle2 {
+        width: 34px;
+        height: 34px;
+    } */
+
+    .circle2{
+         width: 34px;
+        height: 34px;
+    }
+
+}
+
+@media (max-width:500px) {
+    .card-width {
+        width: 275px;
+    }
+
+    .our-patner,
+    .our-patner span,
+    .our-experiance,
+    .affordable-price,.umrah-leaving {
+        font-size: 17px;
+    }
+
+    .custome-label {
+        font-size: 12px;
+    }
+
+ 
 }
