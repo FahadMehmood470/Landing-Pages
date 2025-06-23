@@ -975,51 +975,162 @@
 }
 
 .reach_us_route {
-  position: relative;
-  display: inline-flex;
-  padding: 10px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9999px;
-  background: var(--secondary2-s100, #F3F3F3);
-  overflow: hidden;
-  cursor: pointer;
-  transition: color 0.3s ease;
+    position: relative;
+    display: inline-flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    background: var(--secondary2-s100, #F3F3F3);
+    overflow: hidden;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 .reach_us_route::before {
-  content: '';
-  position: absolute;
-  bottom: -100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #D2E7EB; /* Light teal or desired wave color */
-  transition: bottom 0.4s ease;
-  z-index: 0;
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #D2E7EB;
+    /* Light teal or desired wave color */
+    transition: bottom 0.4s ease;
+    z-index: 0;
 }
 
 .reach_us_route:hover::before {
-  bottom: 0;
+    bottom: 0;
 }
 
-.reach_us_route > * {
-  position: relative;
-  z-index: 1;
+.reach_us_route>* {
+    position: relative;
+    z-index: 1;
 }
 
-.contact_us{
+.contact_us {
     color: #000;
-font-family: 'Poppins';
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: 26px; /* 130% */
-cursor: pointer;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    /* 130% */
+    cursor: pointer;
 }
 
-.contact_us:hover{
+.contact_us:hover {
     color: #005B68;
+}
+
+.bg-about {
+    border-radius: 50px;
+    border: 4px solid #005B68;
+    /* width: 1542px; */
+    height: 248px;
+    flex-shrink: 0;
+    border-top: none;
+}
+
+.bg-heading {
+    border-radius: 100px;
+    border: 4px solid #005B68;
+    background: #FFF;
+    /* width: 1380px; */
+    /* height: 128px; */
+    flex-shrink: 0;
+    margin-top: 182px;
+}
+
+.tawheed_travels {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.why_choose_us h2 {
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 56px;
+    /* 116.667% */
+}
+
+.why_choose_us span {
+    color: #005B68;
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 56px;
+}
+
+.why_choose_us p {
+    color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.our_features h2 {
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.our_features p {
+    color: #555;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.our_features {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border-radius 0.3s ease;
+    cursor: pointer;
+}
+
+.our_features:hover {
+    border-radius: 50px;
+    background: #F3FDFF;
+}
+
+.know_about_us h2 {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 56px;
+    /* 116.667% */
+}
+
+.know_about_us p {
+    color: rgba(0, 0, 0, 0.50);
+    text-align: justify;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 
@@ -1058,7 +1169,8 @@ cursor: pointer;
     }
 
     .our-patner,
-    .our-patner span {
+    .our-patner span,
+    .our_features h2 {
         font-size: 24px;
         line-height: 22px;
     }
@@ -1073,7 +1185,8 @@ cursor: pointer;
 
     }
 
-    .our-patner-p {
+    .our-patner-p,
+    .our_features p {
         font-size: 15px;
     }
 
@@ -1114,7 +1227,10 @@ cursor: pointer;
         height: 50px;
     }
 
-    .prices h3 {
+    .prices h3,
+    .why_choose_us h2,
+    .why_choose_us span,
+    .know_about_us h2 {
         font-size: 30px;
         line-height: 32px;
     }
@@ -1128,12 +1244,26 @@ cursor: pointer;
         font-size: 18px;
     }
 
-    .border-p p {
+    .border-p p,
+    .know_about_us p {
         font-size: 15px;
     }
 
     .bg_protected {
         border-radius: 20px;
+    }
+
+    .width-on-small {
+        width: 95% !important;
+    }
+
+    .bg-heading {
+        margin-top: 118px;
+        border-radius: 20px;
+    }
+
+    .bg-about {
+        height: 180px;
     }
 
 }
@@ -1151,7 +1281,10 @@ cursor: pointer;
     .our-experiance,
     .affordable-price,
     .umrah-leaving,
-    .talk-to h2 {
+    .talk-to h2,
+    .why_choose_us h2,
+    .why_choose_us span,
+    .know_about_us h2 {
         font-size: 20px;
         line-height: 22px;
     }
@@ -1168,7 +1301,9 @@ cursor: pointer;
 
     .our-patner-p,
     .our-experiance-p,
-    .review p,.contact_us  {
+    .review p,
+    .contact_us,
+    .why_choose_us p {
         font-size: 14px;
     }
 
@@ -1284,9 +1419,21 @@ cursor: pointer;
 
     .footer_info h2,
     .cheap_umrah,
-    .payments,.reach_us p {
+    .payments,
+    .reach_us p,
+    .tawheed_travels,
+    .know_about_us p {
         font-size: 14px;
         line-height: normal;
+    }
+
+    .bg-about {
+        border-radius: 20px;
+        height: 107px;
+    }
+
+    .bg-heading {
+        margin-top: 73px;
     }
 
 
@@ -1302,7 +1449,7 @@ cursor: pointer;
     .our-experiance,
     .affordable-price,
     .umrah-leaving,
-    .talk-to h2 {
+    .talk-to h2,.know_about_us h2 {
         font-size: 17px;
     }
 
@@ -1320,13 +1467,16 @@ cursor: pointer;
     }
 
     .border-p p,
-    .talk-to p,.contact_us  {
+    .talk-to p,
+    .contact_us {
         font-size: 12px;
     }
 
     .card-h,
     .destination,
-    .talk-to p,.reach_us p {
+    .talk-to p,
+    .reach_us p,
+    .tawheed_travels,.know_about_us p {
         font-size: 12px;
     }
 
