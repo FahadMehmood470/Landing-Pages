@@ -486,7 +486,7 @@
 }
 
 .circle2:hover>* {
-    color: #005B68;
+    color: #FFF;
     /* contrast color after water fill */
 }
 
@@ -1367,11 +1367,137 @@
     width: 699px;
 }
 
-.bg-hover {
+.bg-blue-overlay {
+    background-color: rgba(0, 91, 104, 0.72);
     border-radius: 20px;
-    background: linear-gradient(0deg, rgba(0, 91, 104, 0.72) 0%, rgba(0, 91, 104, 0.72) 100%);
-        backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+}
 
+.cost_start {
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cost_start_span {
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.blog_written {
+    color: #005B68;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* adds space between date, separator, and author */
+}
+
+.blog_written .separator {
+    color: #C7C7C7;
+}
+
+.tips {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.tips_p {
+    color: rgba(0, 0, 0, 0.50);
+    text-align: justify;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.read_more {
+    color: #005B68;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: color 0.3s ease;
+}
+
+.read_more:hover {
+    color: #0db1ce;
+}
+
+.bg_post {
+    /* width: 572px; */
+    /* height: 606px; */
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #FFF;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.05);
+}
+
+.posts{
+    color: #000;
+font-family: 'Poppins';
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.essential_tips{
+color: #000;
+font-family: 'Poppins';
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px; /* 130% */
+margin-top: 10px;
+
+}
+
+.essential_tips_p{
+color: #005B68;
+font-family: 'Roboto';
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 10px;
+}
+
+.essential_Admin{
+color: rgba(0, 0, 0, 0.50);
+text-align: justify;
+font-family: 'Roboto';
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 10px;
+}
+
+.stay_connected{
+    color: rgba(0, 0, 0, 0.50);
+text-align: justify;
+font-family: 'Roboto';
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 @media (max-width:1300px) {
@@ -1395,7 +1521,7 @@
 
     .necessary,
     .start_from,
-    .copyright_claim {
+    .copyright_claim,.stay_connected {
         width: auto;
     }
 
@@ -1409,6 +1535,10 @@
     .hide_on_large {
         display: none !important;
     }
+    .essential_tips{
+        font-size: 14px;
+        line-height: normal;
+    } 
 }
 
 @media (max-width:1024px) {
@@ -1423,7 +1553,8 @@
     .our-patner,
     .our-patner span,
     .our_features h2,
-    .popular_umrah {
+    .popular_umrah,
+    .tips {
         font-size: 24px;
         line-height: 22px;
     }
@@ -1441,11 +1572,13 @@
     .our-patner-p,
     .our_features p,
     .month_umrah,
-    .hotel_discription {
+    .hotel_discription,
+    .tips_p.border-p p,
+    .know_about_us p,.stay_connected {
         font-size: 15px;
     }
 
-    .bg-form {
+    .bg-form,.bg_post  {
         border-radius: 20px;
     }
 
@@ -1497,13 +1630,9 @@
     }
 
     .accordian-heading,
-    .border-p h2 {
+    .border-p h2,
+    .read_more {
         font-size: 18px;
-    }
-
-    .border-p p,
-    .know_about_us p {
-        font-size: 15px;
     }
 
     .bg_protected {
@@ -1547,7 +1676,8 @@
     .share_destination,
     .share_room,
     .packages_showing,
-    .popular_umrah {
+    .popular_umrah,
+    .tips,.posts  {
         font-size: 20px;
         line-height: 22px;
     }
@@ -1569,7 +1699,8 @@
     .why_choose_us p,
     .month_umrah,
     .hotel_discription,
-    .destination_route {
+    .destination_route,
+    .blog_written,.stay_connected {
         font-size: 14px;
     }
 
@@ -1689,7 +1820,9 @@
     .payments,
     .reach_us p,
     .tawheed_travels,
-    .know_about_us p {
+    .know_about_us p,
+    .tips_p,
+    .read_more {
         font-size: 14px;
         line-height: normal;
     }
@@ -1725,7 +1858,8 @@
     .share_room,
     .packages_showing,
     .filter_btn,
-    .popular_umrah {
+    .popular_umrah,
+    .tips,.posts {
         font-size: 17px;
     }
 
@@ -1756,7 +1890,10 @@
     .border-p p,
     .talk-to p,
     .contact_us,
-    .destination_route {
+    .destination_route,
+    .tips_p,
+    .blog_written,
+    .read_more,.stay_connected {
         font-size: 12px;
     }
 
