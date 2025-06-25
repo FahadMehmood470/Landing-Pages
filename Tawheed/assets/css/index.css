@@ -326,6 +326,19 @@
     flex-shrink: 0;
 }
 
+.card-width2 {
+    border-radius: 50px 50px 50px 50px;
+    background: #FFF;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid transparent;
+    flex-shrink: 0;
+}
+
+.card-width2:hover {
+    border: 1px solid #005B68;
+    box-shadow: 0 4px 20px rgba(0, 91, 104, 0.2);
+}
+
 .img-card-width {
     width: 372px;
     border-radius: 20px;
@@ -360,6 +373,16 @@
 
 .destination {
     color: rgba(0, 0, 0, 0.50);
+    text-align: justify;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.destination_route {
+    color: #000;
     text-align: justify;
     font-family: 'Roboto';
     font-size: 18px;
@@ -491,6 +514,38 @@
 }
 
 .view-details:hover {
+    background: #0A6C7A;
+    /* slightly lighter shade */
+    color: #F3FDFF;
+    /* lighter font on hover */
+    box-shadow: 0 4px 15px rgba(0, 91, 104, 0.4);
+    /* subtle glow */
+}
+
+
+.view-details_btn {
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    width: 200px;
+    height: 58px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #005B68;
+}
+
+.view-details_btn {
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view-details_btn:hover {
     background: #0A6C7A;
     /* slightly lighter shade */
     color: #F3FDFF;
@@ -1133,6 +1188,191 @@
     line-height: normal;
 }
 
+.month_umrah {
+    color: #005B68;
+    text-align: justify;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.total_star {
+    color: rgba(0, 0, 0, 0.80);
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nights_spend {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.price {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 46px;
+    /* 127.778% */
+}
+
+.price_span {
+    color: rgba(0, 0, 0, 0.80);
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.share_room {
+    color: rgba(0, 0, 0, 0.80);
+    text-align: justify;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.share_destination {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.share_destination_span {
+    color: #000;
+    text-align: justify;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hotel_discription {
+    color: rgba(0, 0, 0, 0.50);
+    text-align: justify;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.packages_showing {
+    color: rgba(0, 0, 0, 0.50);
+    text-align: justify;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.filter_btn {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 200px;
+    height: 58px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: rgba(0, 91, 104, 0.10);
+    color: #005B68;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: color 0.4s ease;
+}
+
+.filter_btn::before {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 91, 104, 0.2);
+    transition: bottom 0.6s ease;
+    z-index: 0;
+    border-radius: 100px;
+}
+
+.filter_btn:hover::before {
+    bottom: 0;
+}
+
+.filter_btn:hover {
+    color: #003B48;
+}
+
+.filter_btn>* {
+    position: relative;
+    z-index: 1;
+}
+
+.month_umrah_pkg {
+    color: #005B68;
+    text-align: justify;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card_breaker {
+    background: rgba(0, 91, 104, 0.33);
+    width: 2px;
+    height: 100%;
+}
+
+.terms_condition {
+    color: #005B68;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.popular_umrah {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 56px;
+    /* 116.667% */
+    width: 699px;
+}
+
+.bg-hover {
+    border-radius: 20px;
+    background: linear-gradient(0deg, rgba(0, 91, 104, 0.72) 0%, rgba(0, 91, 104, 0.72) 100%);
+        backdrop-filter: blur(14px);
+
+}
 
 @media (max-width:1300px) {
     .nav-link li {
@@ -1146,7 +1386,8 @@
     }
 
     .affordable-price,
-    .umrah-leaving {
+    .umrah-leaving,
+    .popular_umrah {
         width: auto;
         font-size: 27px;
         line-height: 40px;
@@ -1156,6 +1397,17 @@
     .start_from,
     .copyright_claim {
         width: auto;
+    }
+
+    .view-details_btn {
+        width: auto;
+        height: auto;
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+
+    .hide_on_large {
+        display: none !important;
     }
 }
 
@@ -1170,7 +1422,8 @@
 
     .our-patner,
     .our-patner span,
-    .our_features h2 {
+    .our_features h2,
+    .popular_umrah {
         font-size: 24px;
         line-height: 22px;
     }
@@ -1186,7 +1439,9 @@
     }
 
     .our-patner-p,
-    .our_features p {
+    .our_features p,
+    .month_umrah,
+    .hotel_discription {
         font-size: 15px;
     }
 
@@ -1230,7 +1485,9 @@
     .prices h3,
     .why_choose_us h2,
     .why_choose_us span,
-    .know_about_us h2 {
+    .know_about_us h2,
+    .price,
+    .nights_spend {
         font-size: 30px;
         line-height: 32px;
     }
@@ -1284,7 +1541,13 @@
     .talk-to h2,
     .why_choose_us h2,
     .why_choose_us span,
-    .know_about_us h2 {
+    .know_about_us h2.price,
+    .nights_spend,
+    .share_destination_span,
+    .share_destination,
+    .share_room,
+    .packages_showing,
+    .popular_umrah {
         font-size: 20px;
         line-height: 22px;
     }
@@ -1303,7 +1566,10 @@
     .our-experiance-p,
     .review p,
     .contact_us,
-    .why_choose_us p {
+    .why_choose_us p,
+    .month_umrah,
+    .hotel_discription,
+    .destination_route {
         font-size: 14px;
     }
 
@@ -1412,7 +1678,8 @@
     .footer_info p,
     .umrah_packages li,
     .start_from,
-    .copyright_claim {
+    .copyright_claim,
+    .price_span {
         font-size: 12px;
         line-height: normal;
     }
@@ -1449,9 +1716,19 @@
     .our-experiance,
     .affordable-price,
     .umrah-leaving,
-    .talk-to h2,.know_about_us h2 {
+    .talk-to h2,
+    .know_about_us h2,
+    .price,
+    .nights_spend,
+    .share_destination_span,
+    .share_destination,
+    .share_room,
+    .packages_showing,
+    .filter_btn,
+    .popular_umrah {
         font-size: 17px;
     }
+
 
     .custome-label {
         font-size: 10px;
@@ -1466,18 +1743,26 @@
         font-size: 14px;
     }
 
-    .border-p p,
-    .talk-to p,
-    .contact_us {
-        font-size: 12px;
-    }
-
     .card-h,
     .destination,
     .talk-to p,
     .reach_us p,
-    .tawheed_travels,.know_about_us p {
+    .tawheed_travels,
+    .know_about_us p,
+    .month_umrah,
+    .price_span,
+    .hotel_discription,
+    .bg-enquiry h2,
+    .border-p p,
+    .talk-to p,
+    .contact_us,
+    .destination_route {
         font-size: 12px;
+    }
+
+    .filter_btn {
+        width: 121px;
+        height: 42px;
     }
 
 
