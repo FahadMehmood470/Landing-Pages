@@ -786,7 +786,7 @@
 }
 
 .card2 {
-    max-width: 677px;
+    /* max-width: 677px; */
     /* height: 258px; */
     flex-shrink: 0;
     border-radius: 0px 50px 50px 0px;
@@ -1370,7 +1370,12 @@
 .bg-blue-overlay {
     background-color: rgba(0, 91, 104, 0.72);
     border-radius: 20px;
-    backdrop-filter: blur(14px);
+    /* backdrop-filter: blur(14px); */
+}
+
+.bg-blue-overlay2 {
+    background-color: rgba(0, 91, 104, 0.72);
+    /* backdrop-filter: blur(14px); */
 }
 
 .cost_start {
@@ -1440,6 +1445,20 @@
     color: #0db1ce;
 }
 
+.read_more2 {
+    color: #005B68;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: color 0.3s ease;
+}
+
+.read_more2:hover {
+    color: #0db1ce;
+}
+
 .bg_post {
     /* width: 572px; */
     /* height: 606px; */
@@ -1449,55 +1468,99 @@
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.05);
 }
 
-.posts{
+.posts {
     color: #000;
-font-family: 'Poppins';
-font-size: 24px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
-.essential_tips{
-color: #000;
-font-family: 'Poppins';
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: 26px; /* 130% */
-margin-top: 10px;
+.essential_tips {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    /* 130% */
+    margin-top: 10px;
 
 }
 
-.essential_tips_p{
-color: #005B68;
-font-family: 'Roboto';
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-margin-top: 10px;
+.essential_tips_p {
+    color: #005B68;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 10px;
 }
 
-.essential_Admin{
-color: rgba(0, 0, 0, 0.50);
-text-align: justify;
-font-family: 'Roboto';
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-top: 10px;
-}
-
-.stay_connected{
+.essential_Admin {
     color: rgba(0, 0, 0, 0.50);
-text-align: justify;
-font-family: 'Roboto';
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    text-align: justify;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.stay_connected {
+    color: rgba(0, 0, 0, 0.50);
+    text-align: justify;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.umrah_pilgrim {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    /* width: 749px; */
+}
+
+.perfect_umrah_heading {
+    color: #FFF;
+    font-family: 'Poppins';
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 41px;
+    width: 350px;
+}
+
+.relate_info {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 130% */
+}
+
+.pillars_islam {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.w-custome{
+    width: 450px;
 }
 
 @media (max-width:1300px) {
@@ -1513,7 +1576,8 @@ line-height: normal;
 
     .affordable-price,
     .umrah-leaving,
-    .popular_umrah {
+    .popular_umrah,
+    .perfect_umrah_heading {
         width: auto;
         font-size: 27px;
         line-height: 40px;
@@ -1521,7 +1585,8 @@ line-height: normal;
 
     .necessary,
     .start_from,
-    .copyright_claim,.stay_connected {
+    .copyright_claim,
+    .stay_connected {
         width: auto;
     }
 
@@ -1535,10 +1600,11 @@ line-height: normal;
     .hide_on_large {
         display: none !important;
     }
-    .essential_tips{
+
+    .essential_tips {
         font-size: 14px;
         line-height: normal;
-    } 
+    }
 }
 
 @media (max-width:1024px) {
@@ -1554,7 +1620,8 @@ line-height: normal;
     .our-patner span,
     .our_features h2,
     .popular_umrah,
-    .tips {
+    .tips,
+    .perfect_umrah_heading {
         font-size: 24px;
         line-height: 22px;
     }
@@ -1574,11 +1641,14 @@ line-height: normal;
     .month_umrah,
     .hotel_discription,
     .tips_p.border-p p,
-    .know_about_us p,.stay_connected {
+    .know_about_us p,
+    .stay_connected {
         font-size: 15px;
     }
 
-    .bg-form,.bg_post  {
+    .bg-form,
+    .bg_post,
+    .bg-yellow {
         border-radius: 20px;
     }
 
@@ -1620,7 +1690,8 @@ line-height: normal;
     .why_choose_us span,
     .know_about_us h2,
     .price,
-    .nights_spend {
+    .nights_spend,
+    .umrah_pilgrim {
         font-size: 30px;
         line-height: 32px;
     }
@@ -1652,6 +1723,10 @@ line-height: normal;
         height: 180px;
     }
 
+    .tips-tricks h2,.read-more{
+        font-size: 16px;
+    }
+
 }
 
 @media (max-width:768px) {
@@ -1677,7 +1752,11 @@ line-height: normal;
     .share_room,
     .packages_showing,
     .popular_umrah,
-    .tips,.posts  {
+    .tips,
+    .posts,
+    .umrah_pilgrim,
+    .perfect_umrah_heading,
+    .pillars_islam {
         font-size: 20px;
         line-height: 22px;
     }
@@ -1700,7 +1779,8 @@ line-height: normal;
     .month_umrah,
     .hotel_discription,
     .destination_route,
-    .blog_written,.stay_connected {
+    .blog_written,
+    .stay_connected, .tips-tricks h2,.read-more {
         font-size: 14px;
     }
 
@@ -1822,7 +1902,7 @@ line-height: normal;
     .tawheed_travels,
     .know_about_us p,
     .tips_p,
-    .read_more {
+    .read_more,.tips-tricks p {
         font-size: 14px;
         line-height: normal;
     }
@@ -1859,7 +1939,11 @@ line-height: normal;
     .packages_showing,
     .filter_btn,
     .popular_umrah,
-    .tips,.posts {
+    .tips,
+    .posts,
+    .umrah_pilgrim,
+    .perfect_umrah_heading,
+    .pillars_islam {
         font-size: 17px;
     }
 
@@ -1893,7 +1977,8 @@ line-height: normal;
     .destination_route,
     .tips_p,
     .blog_written,
-    .read_more,.stay_connected {
+    .read_more,
+    .stay_connected,.tips-tricks p {
         font-size: 12px;
     }
 
