@@ -297,9 +297,59 @@
 
                     <div class="flex justify-between">
                         <p class="packages_showing flex justify-center items-center">Showing 45 Packages</p>
-                        <button class="flex items-center gap-2 filter_btn">
+                        <button id="openFilter" class="flex items-center gap-2 filter_btn">
                             <img src="assets/images/filter.svg" alt=""> Filter
                         </button>
+                        <div id="filterSidebar"
+                            class="fixed top-0 right-0 h-full w-80 max-w-full bg-white p-6 shadow-lg z-50 transform translate-x-full transition-transform duration-300 ease-in-out">
+                            <div class="flex justify-between items-center mb-6">
+                                <h2 class="text-xl font-semibold font-['Poppins']">Apply Filters</h2>
+                                <button id="closeFilter" class="text-xl">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+
+                            <div>
+                                <h3 class="font-semibold mb-2 font-['Poppins']">Accommodation</h3>
+                                <ul class="space-y-3">
+                                    <li><input type="radio" name="stars" class="mr-2"> 3 Star
+                                        <i class="fas fa-star text-[#FFA100]"></i><i
+                                            class="fas fa-star text-[#FFA100]"></i><i
+                                            class="fas fa-star text-[#FFA100]"></i>
+                                    </li>
+                                    <li><input type="radio" name="stars" class="mr-2" checked> 4 Star <i
+                                            class="fas fa-star text-[#FFA100]"></i><i
+                                            class="fas fa-star text-[#FFA100]"></i><i
+                                            class="fas fa-star text-[#FFA100]"></i><i
+                                            class="fas fa-star text-[#FFA100]"></i></li>
+                                    <li><input type="radio" name="stars" class="mr-2"> 5 Star <i
+                                            class="fas fa-star text-[#FFA100]"></i><i
+                                            class="fas fa-star text-[#FFA100]"></i><i
+                                            class="fas fa-star text-[#FFA100]"></i><i
+                                            class="fas fa-star text-[#FFA100]"></i><i
+                                            class="fas fa-star text-[#FFA100]"></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="mt-6">
+                                <h3 class="font-semibold mb-2 font-['Poppins']">Total Nights</h3>
+                                <ul class="space-y-3">
+                                    <li><input type="radio" name="nights" class="mr-2"> 7 Nights or Above</li>
+                                    <li><input type="radio" name="nights" class="mr-2" checked> 10 Nights or Above</li>
+                                    <li><input type="radio" name="nights" class="mr-2"> 12 Nights or Above</li>
+                                    <li><input type="radio" name="nights" class="mr-2"> 14 Nights or Above</li>
+                                </ul>
+                            </div>
+
+                            <div class="mt-6 flex justify-between items-center">
+                                <button class="text-gray-400 text-sm">Clear</button>
+                                <button
+                                    class="bg-[#005B68] font-['Poppins'] hover:bg-teal-800 text-base text-white font-semibold px-5 py-3 rounded-full">Show
+                                    Results</button>
+                            </div>
+                        </div>
+
+
                     </div>
                     <div class="">
                         <div
@@ -358,7 +408,7 @@
                                     <div class="card_breaker h-auto w-[1px] bg-[#005B68]/30"></div>
 
                                     <!-- Star + price -->
-                                    <div class="hidden 2xl:flex flex-col items-end gap-2 pl-4">
+                                    <div class="flex flex-col items-end gap-2 pl-4">
                                         <!-- Star rating -->
                                         <div class="flex items-center gap-2 ">
                                             <span class="total_star">5 Star</span>
@@ -387,34 +437,7 @@
                                         </div>
                                     </div>
 
-                                    <div class=" grid grid-cols-2 gap-2 pl-4">
-                                        <!-- Star rating -->
-                                        <div class="flex items-center gap-2 ">
-                                            <span class="total_star">5 Star</span>
-                                            <div class="rating-star">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
 
-                                        <div class="mt-12 xl:mt-16">
-                                            <!-- Price -->
-                                            <p class="price">£500 <span class="price_span">per person</span></p>
-                                            <p class="terms_condition mt-1">Terms and Conditions Applied * </p>
-                                            <div class="flex gap-3 justify-center mt-5">
-                                                <div class="circle2 rotate-180">
-                                                    <img src="assets/images/call-icon.svg"
-                                                        class="h-4 lg:h-auto max-w-full rotate-180" alt="">
-                                                </div>
-                                                <div>
-                                                    <a href="" class="view-details_btn">View More</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
 
                                 </div>
                             </div>
@@ -848,8 +871,8 @@
 
                 <!-- Center Logos -->
                 <div class="flex items-center  gap-3">
-                    <img src="assets/images/footer_logo_3.png" class="h-10 w-10 object-contain" alt="">
-                    <img src="assets/images/footer_logo_2.png" class="h-10 w-10 object-contain" alt="">
+                    <img src="assets/images/footer_logo_3.png" class="h-auto max-w-full object-contain" alt="">
+                    <img src="assets/images/footer_logo_2.png" class="h-auto max-w-full object-contain" alt="">
                     <img src="assets/images/footer_logo_1.png" class="h-10 w-[120px] lg:w-[200px] object-contain"
                         alt="">
                 </div>
@@ -918,15 +941,19 @@
                             <p class="payments">Follow us on</p>
 
                             <div class="footer-icons flex gap-3 mt-4">
-                                <span class="icon-circle">
-                                    <i class="fab fa-instagram"></i>
-                                </span>
-                                <span class="icon-circle">
-                                    <i class="fab fa-facebook-f"></i>
-                                </span>
-                                <span class="icon-circle">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </span>
+                                <a href=""> <span class="icon-circle">
+                                        <i class="fab fa-instagram"></i>
+                                    </span></a>
+                                <a href="">
+                                    <span class="icon-circle">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </span>
+                                </a>
+                                <a href="">
+                                    <span class="icon-circle">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1053,6 +1080,18 @@
         const container = document.getElementById('scroll-container4');
         container.scrollBy({ left: -400, behavior: "smooth" })
     }
+    const openBtn = document.getElementById('openFilter');
+    const closeBtn = document.getElementById('closeFilter');
+    const sidebar = document.getElementById('filterSidebar');
+
+    openBtn.addEventListener('click', () => {
+        sidebar.classList.remove('translate-x-full');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        sidebar.classList.add('translate-x-full');
+    });
+
 </script>
 
 </html>

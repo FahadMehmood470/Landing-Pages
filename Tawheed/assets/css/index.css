@@ -1563,6 +1563,15 @@
     width: 450px;
 }
 
+footer{
+    border-radius: 50px;
+}
+
+input[type="radio"] {
+  accent-color: #005B68;
+}
+
+
 @media (max-width:1300px) {
     .nav-link li {
         font-size: 14px;
@@ -1648,7 +1657,7 @@
 
     .bg-form,
     .bg_post,
-    .bg-yellow {
+    .bg-yellow,.card2 {
         border-radius: 20px;
     }
 
@@ -1675,10 +1684,10 @@
         height: 55px;
         font-size: 18px;
     }
-
+/* 
     .circle {
         display: none;
-    }
+    } */
 
     .circle2 {
         width: 50px;
@@ -1725,6 +1734,9 @@
 
     .tips-tricks h2,.read-more{
         font-size: 16px;
+    }
+    .w-custome{
+        width: auto;
     }
 
 }
@@ -1845,15 +1857,15 @@
         font-size: 10px;
     }
 
-    /* .circle,.circle2 {
-        width: 34px;
-        height: 34px;
-    } */
-
-    .circle2 {
+    .circle,.circle2 {
         width: 34px;
         height: 34px;
     }
+
+    /* .circle2 {
+        width: 34px;
+        height: 34px;
+    } */
 
     .img-card-width {
         width: 270px;
