@@ -123,7 +123,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, transparent 30%, #CFE0FF);
+    background: linear-gradient(0deg, transparent 30%, #78639A);
     z-index: -1;
     transition: bottom 0.5s ease, opacity 0.5s ease;
     opacity: 0.8;
@@ -131,7 +131,7 @@
 
 .search_flights:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 10px #CFE0FF;
+    box-shadow: 0 0 10px #78639A;
 }
 
 .search_flights:hover::before {
@@ -165,7 +165,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, transparent 30%, #CFE0FF);
+    background: linear-gradient(0deg, transparent 30%, #78639A);
     z-index: -1;
     transition: bottom 0.5s ease, opacity 0.5s ease;
     opacity: 0.8;
@@ -173,7 +173,7 @@
 
 .search_flights2:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 10px #CFE0FF;
+    box-shadow: 0 0 10px #78639A;
 }
 
 .search_flights2:hover::before {
@@ -207,7 +207,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, transparent 30%, #CFE0FF);
+    background: linear-gradient(0deg, transparent 30%, #7ad19b);
     z-index: -1;
     transition: bottom 0.5s ease, opacity 0.5s ease;
     opacity: 0.8;
@@ -215,7 +215,7 @@
 
 .search_flights3:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 10px #CFE0FF;
+    box-shadow: 0 0 10px #7ad19b;
 }
 
 .search_flights3:hover::before {
@@ -256,7 +256,7 @@
 }
 
 .explore_card {
-    width: 367px;
+    /* width: 367px; */
     /* height: 122px; */
     border-radius: 10px;
     background: #EEF4FF;
@@ -286,7 +286,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, transparent 30%, #e0e0ff);
+    background: linear-gradient(0deg, transparent 30%, #130055);
     z-index: -1;
     transition: bottom 0.5s ease, opacity 0.5s ease;
     opacity: 0.8;
@@ -295,6 +295,9 @@
 .view_pkg:hover {
     transform: scale(1.03);
     box-shadow: 0 0 10px #c0c0ff;
+    color: #FFF;
+    background-color: #130055;
+
 }
 
 .view_pkg:hover::before {
@@ -302,12 +305,23 @@
     opacity: 1;
 }
 
-.card_breaker{
+.card_breaker {
     background: rgba(16, 1, 66, 0.30);
     height: 1px;
     width: 100%;
 }
 
+.scroll_none {
+    scrollbar-width: none;
+}
+
+/* .bg-explore {
+    background-image: url('../images/bg_explore.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 359px;
+} */
 
 @media(max-width:1400px) {
     .nav_links {
@@ -345,6 +359,19 @@
     .book_flight {
         font-size: 30px;
     }
+
+    .view_pkg {
+        padding: 6px 28px;
+    }
+
+    .search_flights2 {
+        width: auto;
+        height: 45px;
+    }
+
+    .bg-explore{
+
+    }
 }
 
 @media (max-width:576px) {
@@ -356,6 +383,10 @@
     .logo,
     .book_flight {
         font-size: 20px;
+    }
+
+    .view_pkg {
+        padding: 3px 18px;
     }
 
 }
