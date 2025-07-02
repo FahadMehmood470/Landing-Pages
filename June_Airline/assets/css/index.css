@@ -323,6 +323,120 @@
     height: 359px;
 } */
 
+.view_deals {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    display: flex;
+    width: 218px;
+    padding: 7px 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #100142;
+    background: white;
+    color: #100142;
+    font-family: 'Syne';
+    font-weight: bold;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view_deals::before {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, transparent 30%, rgb(224, 218, 218));
+    z-index: -1;
+    transition: bottom 0.5s ease, opacity 0.5s ease;
+    opacity: 0.8;
+}
+
+.view_deals:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgb(244, 218, 218);
+}
+
+.view_deals:hover::before {
+    bottom: 0;
+    opacity: 1;
+}
+
+.view_deals2 {
+    display: inline-flex;
+    padding: 7px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #5b479c;
+    /* background: white; */
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    color: #100142;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view_deals2::before {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, transparent 30%, #130055);
+    z-index: -1;
+    transition: bottom 0.5s ease, opacity 0.5s ease;
+    opacity: 0.8;
+}
+
+.view_deals2:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #c0c0ff;
+    color: #FFF;
+    background-color: #3b3550;
+
+}
+
+.view_deals2:hover::before {
+    bottom: 0;
+    opacity: 1;
+}
+
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  animation: scroll-left 30s linear infinite;
+}
+
+.gap-10 {
+  display: flex;
+  gap: 40px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
 @media(max-width:1400px) {
     .nav_links {
         font-size: 16px;
@@ -369,7 +483,10 @@
         height: 45px;
     }
 
-    .bg-explore{
+    .view_deals {
+        width: 85px;
+        font-size: 0.9rem;
+        padding: 8px 28px;
 
     }
 }
@@ -387,6 +504,13 @@
 
     .view_pkg {
         padding: 3px 18px;
+    }
+
+    .view_deals {
+        width: 85px;
+        font-size: 0.8rem;
+        padding: 8px 28px;
+
     }
 
 }
