@@ -410,29 +410,123 @@
 }
 
 .slider-container {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
 }
 
 .slider-track {
-  display: flex;
-  animation: scroll-left 30s linear infinite;
+    display: flex;
+    animation: scroll-left 30s linear infinite;
 }
 
 .gap-10 {
-  display: flex;
-  gap: 40px;
+    display: flex;
+    gap: 40px;
 }
 
 @keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
+
+.view_deals3 {
+    display: inline-flex;
+    padding: 10px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background-color: #100142;
+    border: 1px solid #5b479c;
+    /* background: white; */
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    color: #FFF;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.view_deals3::before {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, transparent 30%, #130055);
+    z-index: -1;
+    transition: bottom 0.5s ease, opacity 0.5s ease;
+    opacity: 0.8;
+}
+
+.view_deals3:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #c0c0ff;
+    color: #FFF;
+    background-color: #3b3550;
+
+}
+
+.view_deals3:hover::before {
+    bottom: 0;
+    opacity: 1;
+}
+
+.icon_circle {
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.icon_circle::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #ffffff44;
+    z-index: 0;
+    transition: height 0.5s ease;
+}
+
+.icon_circle:hover::before {
+    height: 100%;
+}
+
+.icon_circle i {
+    z-index: 1;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.icon_circle:hover i {
+    color: #000;
+}
+
+.footer_breaker{
+    background: #FFF;
+    height: 1px;
+    
+}
+
 
 
 

@@ -11,6 +11,8 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"> -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
@@ -427,7 +429,7 @@
         </div>
     </div>
 
-    <div class="h-[7290px]">
+
         <div class="container mx-auto px-3 sm:px-8 md:px-12 lg:px-20 mb-12 lg:py-5 mt-5">
             <div class="d_block">
                 <div class="flex items-center justify-center mb-4 gap-6 ">
@@ -1887,8 +1889,49 @@
                     </div>
                 </div>
             </div>
+        </div>
 
+        <div class="container mx-auto px-3 2xl:px-28 mb-12 lg:py-5 mt-5 lg:mt-12 mb-5">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-white lg:bg-indigo-50 rounded-[10px] gap-3 p-4 grid grid-cols-1 lg:grid-cols-2">
+                    <div class="bg-blue-200 rounded-[10px] p-2 lg:p-4 d_block">
+                        <img src="assets/images/aeroplane.png" class="h-auto max-w-full" alt="">
+                    </div>
+                    <div class=" p-2 lg:p-4 xl:mr-8">
+                        <h2 class="text-center lg:text-start text-black text-xl font-bold font-['Syne']">Want Cheap
+                            Flights?
+                            Get Exclusive Access</h2>
+                        <p class="text-center lg:text-start text-black text-sm font-normal font-['Inter'] mt-3">Join
+                            2.5M+
+                            travelers saving hundreds on flights with insider-only deals.</p>
+                        <a href="" class="view_deals3 w-full mt-5">Explore Deals</a>
+                    </div>
+                </div>
 
+                <div class="bg-indigo-50 rounded-[10px] p-3 lg:p-4">
+                    <div class="bg-white rounded-[10px] p-3 lg:p-5">
+                        <div class="mb-6">
+                            <label for="email"
+                                class="block mb-2 text-sm font-medium text-black dark:text-white font-medium font-['Syne'] ml-4">Your
+                                best Email</label>
+                            <input type="email" id="email"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="john.doe@company.com" required />
+                        </div>
+                        <div class="mb-6">
+                            <label for="contact"
+                                class="block mb-2 text-sm font-medium text-black dark:text-white font-medium font-['Syne'] ml-4">Contact
+                                Number</label>
+                            <input type="number" id="contact"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="345152415" required />
+                        </div>
+                        <a href="" class="view_deals2 w-full">Explore Deals</a>
+
+                    </div>
+                </div>
+
+            </div>
 
         </div>
 
@@ -1899,40 +1942,133 @@
 
 
 
-
-
-        <!-- <footer class="bg-[#100142] h-[400px]">
-            <div class="container mx-auto px-4 2xl:px-24">
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 p-8">
+        <footer class="bg-[#100142]">
+            <div class="container mx-auto px-4 2xl:px-24 pb-6 md:pb-9">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 p-5 sm:p-8 md:p-12 lg:p-16">
                     <div>
-                        <ul class="justify-start text-white text-base font-medium font-['Inter']">Top Countries
-
-                            <li class="justify-start text-zinc-400 text-sm font-light font-['Inter'] leading-7">
-                                Philippines
-                            </li>
-                            <li class="justify-start text-zinc-400 text-sm font-light font-['Inter'] leading-7">
-                                Italy
-                            </li>
-                            <li class="justify-start text-zinc-400 text-sm font-light font-['Inter'] leading-7">
-                                Unit
-                            </li>
-                            <li class="justify-start text-zinc-400 text-sm font-light font-['Inter'] leading-7">
-                                Philippines
-                            </li>
-                            <li class="justify-start text-zinc-400 text-sm font-light font-['Inter'] leading-7">
-                                Philippines
-                            </li>
-                            <li class="justify-start text-zinc-400 text-sm font-light font-['Inter'] leading-7">
-                                Philippines
-                            </li>
+                        <h4 class="text-white text-base font-medium font-['Inter'] mb-2 mt-5 lg:mt-0">Top Countries</h4>
+                        <ul>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Philippines</li>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Italy</li>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Unit</li>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Spain</li>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                nigeria</li>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Franse</li>
                         </ul>
                     </div>
+
+                    <div>
+                        <h4 class="text-white text-base font-medium font-['Inter'] mb-2 mt-5 lg:mt-0">Top Cites</h4>
+                        <ul>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                London</li>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Paris</li>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Rome</li>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Dubai</li>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Manilia</li>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Lagos</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-white text-base font-medium font-['Inter'] mb-2 mt-5 lg:mt-0">Top Airlines</h4>
+                        <ul>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Qatar Airways</li>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Philippine Airlines</li>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Turkish Airlines</li>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Air India</li>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Ethiopian Airlines</li>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Kenya Airways</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-white text-base font-medium font-['Inter'] mb-2 mt-5 lg:mt-0">Links</h4>
+                        <ul>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                About US</li>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                FAQ</li>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Business Class</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-white text-base font-medium font-['Inter'] mb-2 mt-5 lg:mt-0">Help and Support</h4>
+                        <ul>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Contact Us</li>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Privacy Policy</li>
+                            <li
+                                class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
+                                Terms and Conditions</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <div class="icon_circle">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="icon_circle">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="icon_circle">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="footer_breaker"></div>
+
+                <p class="text-center justify-start text-white text-xs sm:text-sm md:text-base font-normal font-['Inter'] mt-4 lg:mt-6">© Copyright 2025 Travigence as TAWHEED TRAVELS. Company Number 15101982. All Rights Reserved.</p>
+
+                
+                
             </div>
-        </footer> -->
-
-
-    </div>
+            
+        </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
