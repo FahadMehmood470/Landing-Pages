@@ -374,7 +374,7 @@
     gap: 10px;
     border-radius: 5px;
     border: 1px solid #5b479c;
-    /* background: white; */
+    background: white;
     position: relative;
     overflow: hidden;
     z-index: 0;
@@ -619,6 +619,137 @@
     opacity: 1;
 }
 
+.bg_multi{
+    background-image: url('../images/multi_hero.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.view_deals6 {
+    display: inline-flex;
+    padding: 18px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #5b479c;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    color: #100142;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view_deals6::before {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, transparent 30%, #130055);
+    z-index: -1;
+    transition: bottom 0.5s ease, opacity 0.5s ease;
+    opacity: 0.8;
+}
+
+.view_deals6:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #c0c0ff;
+    color: #FFF;
+    background-color: #3b3550;
+
+}
+
+.view_deals6:hover::before {
+    bottom: 0;
+    opacity: 1;
+}
+
+.remove_row {
+    display: inline-flex;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #ac3547;
+    background-color: #C54A5D;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    color: #FFF;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.remove_row::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #ac3547;
+    z-index: -1;
+    transition: height 0.5s ease;
+    border-radius: inherit;
+}
+
+.remove_row:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #ac3547;
+    color: #FFF;
+}
+
+.remove_row:hover::before {
+    height: 100%;
+}
+
+.add_row {
+    display: inline-flex;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #54aa4e;
+    background-color: #6B8A69;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    color: #FFF;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add_row::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #54aa4e;
+    z-index: -1;
+    transition: height 0.5s ease;
+    border-radius: inherit;
+}
+
+.add_row:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #54aa4e;
+    color: #FFF;
+}
+
+.add_row:hover::before {
+    height: 100%;
+}
+
+
 @media(max-width:1400px) {
     .nav_links {
         font-size: 16px;
@@ -694,7 +825,7 @@
         padding: 8px 28px;
     }
 
-    .view_deals5{
+    .view_deals5,.view_deals6{
         padding: 9px 34px;
     }
 
