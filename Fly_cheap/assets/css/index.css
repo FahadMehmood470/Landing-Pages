@@ -619,7 +619,7 @@
     opacity: 1;
 }
 
-.bg_multi{
+.bg_multi {
     background-image: url('../images/multi_hero.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -749,6 +749,14 @@
     height: 100%;
 }
 
+.bg_accordian {
+    background-image: url('../images/Accordian_image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 600px; */
+}
+
 
 @media(max-width:1400px) {
     .nav_links {
@@ -802,6 +810,10 @@
         padding: 8px 28px;
 
     }
+
+    .bg_accordian {
+        background-image: none;
+    }
 }
 
 @media (max-width:576px) {
@@ -825,7 +837,8 @@
         padding: 8px 28px;
     }
 
-    .view_deals5,.view_deals6{
+    .view_deals5,
+    .view_deals6 {
         padding: 9px 34px;
     }
 
