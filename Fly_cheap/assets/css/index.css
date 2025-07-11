@@ -65,6 +65,14 @@
     /* height: 700px; */
 }
 
+.bg_buisness {
+    background-image: url('../images/buisness_travel.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 600px; */
+}
+
 .book_flight {
     color: #130055;
     text-align: center;
