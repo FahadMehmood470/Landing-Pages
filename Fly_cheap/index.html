@@ -1713,10 +1713,10 @@
             </div>
             <div class="slider-container">
                 <div class="slider-track">
-                    <div class="gap-10 flex mb-60">
+                    <div class="gap-10 flex mb-8 sm:mb-12 md:mb-16 lg:mb-20">
 
                         <div
-                            class=" w-60 sm:w-72 md:w-80 lg:w-96 bg-white rounded-[10px] border border-stone-300 p-4 mt-16">
+                            class="w-60 sm:w-72 md:w-80 lg:w-96 bg-white rounded-[10px] border border-stone-300 p-4 mt-4 sm:mt-8 md:mt-12 lg:mt-16">
                             <div class="flex justify-between items-center">
                                 <img src="assets/images/recommend_us1.svg" class="h-auto max-w-full" alt="">
                                 <img src="assets/images/reccomend_us.png" class="h-auto max-w-full" alt="">
@@ -1746,7 +1746,7 @@
                         </div>
 
                         <div
-                            class=" w-60 sm:w-72 md:w-80 lg:w-96 bg-white rounded-[10px] border border-stone-300 p-4 mt-16">
+                            class="w-60 sm:w-72 md:w-80 lg:w-96 bg-white rounded-[10px] border border-stone-300 p-4 mt-4 sm:mt-8 md:mt-12 lg:mt-16">
                             <div class="flex justify-between items-center">
                                 <img src="assets/images/recommend_us1.svg" class="h-auto max-w-full" alt="">
                                 <img src="assets/images/reccomend_us.png" class="h-auto max-w-full" alt="">
@@ -1776,7 +1776,7 @@
                         </div>
 
                         <div
-                            class=" w-60 sm:w-72 md:w-80 lg:w-96 bg-white rounded-[10px] border border-stone-300 p-4 mt-16">
+                            class="w-60 sm:w-72 md:w-80 lg:w-96 bg-white rounded-[10px] border border-stone-300 p-4 mt-4 sm:mt-8 md:mt-12 lg:mt-16">
                             <div class="flex justify-between items-center">
                                 <img src="assets/images/recommend_us1.svg" class="h-auto max-w-full" alt="">
                                 <img src="assets/images/reccomend_us.png" class="h-auto max-w-full" alt="">
@@ -1806,7 +1806,7 @@
                         </div>
 
                         <div
-                            class=" w-60 sm:w-72 md:w-80 lg:w-96 bg-white rounded-[10px] border border-stone-300 p-4 mt-16">
+                            class="w-60 sm:w-72 md:w-80 lg:w-96 bg-white rounded-[10px] border border-stone-300 p-4 mt-4 sm:mt-8 md:mt-12 lg:mt-16">
                             <div class="flex justify-between items-center">
                                 <img src="assets/images/recommend_us1.svg" class="h-auto max-w-full" alt="">
                                 <img src="assets/images/reccomend_us.png" class="h-auto max-w-full" alt="">
@@ -1836,7 +1836,7 @@
                         </div>
 
                         <div
-                            class=" w-60 sm:w-72 md:w-80 lg:w-96 bg-white rounded-[10px] border border-stone-300 p-4 mt-16">
+                            class="w-60 sm:w-72 md:w-80 lg:w-96 bg-white rounded-[10px] border border-stone-300 p-4 mt-4 sm:mt-8 md:mt-12 lg:mt-16">
                             <div class="flex justify-between items-center">
                                 <img src="assets/images/recommend_us1.svg" class="h-auto max-w-full" alt="">
                                 <img src="assets/images/reccomend_us.png" class="h-auto max-w-full" alt="">
@@ -1866,7 +1866,7 @@
                         </div>
 
                         <div
-                            class=" w-60 sm:w-72 md:w-80 lg:w-96 bg-white rounded-[10px] border border-stone-300 p-4 mt-16">
+                            class="w-60 sm:w-72 md:w-80 lg:w-96 bg-white rounded-[10px] border border-stone-300 p-4 mt-4 sm:mt-8 md:mt-12 lg:mt-16">
                             <div class="flex justify-between items-center">
                                 <img src="assets/images/recommend_us1.svg" class="h-auto max-w-full" alt="">
                                 <img src="assets/images/reccomend_us.png" class="h-auto max-w-full" alt="">
@@ -1946,12 +1946,19 @@
 
         </div>
 
-        <footer class="bg-[#100142]">
+        <footer class=" bg-[#100142]">
             <div class="container mx-auto px-4 2xl:px-24 pb-6 md:pb-9">
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 p-5 sm:p-8 md:p-12 lg:p-16">
-                    <div>
-                        <h4 class="text-white text-base font-medium font-['Inter'] mb-2 mt-5 lg:mt-0">Top Countries</h4>
-                        <ul>
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-6 p-5 sm:p-8 md:p-12 lg:p-16 gap-7 md:gap-8 lg:gap-1">
+                    <div class="footer-item border-b border-zinc-700 md:border-0">
+                        <button
+                            class="footer-toggle text-white text-base font-medium font-['Inter'] py-3 w-full flex justify-between items-center md:cursor-default">
+                            Top Countries
+                            <span class="icon text-white md:hidden">
+                                <img src="assets/images/toogle_up.svg" alt="">
+                            </span>
+                        </button>
+                        <ul class="footer-content hidden md:block pl-2">
                             <li
                                 class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
                                 Philippines</li>
@@ -1973,9 +1980,15 @@
                         </ul>
                     </div>
 
-                    <div>
-                        <h4 class="text-white text-base font-medium font-['Inter'] mb-2 mt-5 lg:mt-0">Top Cites</h4>
-                        <ul>
+                    <div class="footer-item border-b border-zinc-700 md:border-0">
+                        <button
+                            class="footer-toggle text-white text-base font-medium font-['Inter'] py-3 w-full flex justify-between items-center md:cursor-default">
+                            Top Cities
+                            <span class="icon text-white md:hidden">
+                                <img src="assets/images/toogle_up.svg" alt="">
+                            </span>
+                        </button>
+                        <ul class="footer-content hidden md:block pl-2">
                             <li
                                 class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
                                 London</li>
@@ -1997,9 +2010,15 @@
                         </ul>
                     </div>
 
-                    <div>
-                        <h4 class="text-white text-base font-medium font-['Inter'] mb-2 mt-5 lg:mt-0">Top Airlines</h4>
-                        <ul>
+                    <div class="footer-item border-b border-zinc-700 md:border-0">
+                        <button
+                            class="footer-toggle text-white text-base font-medium font-['Inter'] py-3 w-full flex justify-between items-center md:cursor-default">
+                            Top Airlines
+                            <span class="icon text-white md:hidden">
+                                <img src="assets/images/toogle_up.svg" alt="">
+                            </span>
+                        </button>
+                        <ul class="footer-content hidden md:block pl-2">
                             <li
                                 class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
                                 Qatar Airways</li>
@@ -2021,9 +2040,15 @@
                         </ul>
                     </div>
 
-                    <div>
-                        <h4 class="text-white text-base font-medium font-['Inter'] mb-2 mt-5 lg:mt-0">Links</h4>
-                        <ul>
+                    <div class="footer-item border-b border-zinc-700 md:border-0">
+                        <button
+                            class="footer-toggle text-white text-base font-medium font-['Inter'] py-3 w-full flex justify-between items-center md:cursor-default">
+                            Useful Links
+                            <span class="icon text-white md:hidden">
+                                <img src="assets/images/toogle_up.svg" alt="">
+                            </span>
+                        </button>
+                        <ul class="footer-content hidden md:block pl-2">
                             <li
                                 class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
                                 About US</li>
@@ -2036,10 +2061,15 @@
                         </ul>
                     </div>
 
-                    <div>
-                        <h4 class="text-white text-base font-medium font-['Inter'] mb-2 mt-5 lg:mt-0">Help and Support
-                        </h4>
-                        <ul>
+                    <div class="footer-item border-b border-zinc-700 md:border-0">
+                        <button
+                            class="footer-toggle text-white text-base font-medium font-['Inter'] py-3 w-full flex justify-between items-center md:cursor-default">
+                            Help And Support
+                            <span class="icon text-white md:hidden">
+                                <img src="assets/images/toogle_up.svg" alt="">
+                            </span>
+                        </button>
+                        <ul class="footer-content hidden md:block pl-2">
                             <li
                                 class="text-zinc-400 text-sm font-light font-['Inter'] leading-7 hover:text-white cursor-pointer">
                                 Contact Us</li>
@@ -2052,7 +2082,7 @@
                         </ul>
                     </div>
 
-                    <div class="flex gap-3">
+                    <div class="flex justify-center lg:justify-start  items-center lg:items-start gap-3">
                         <div class="icon_circle">
                             <i class="fab fa-facebook"></i>
                         </div>
@@ -2141,6 +2171,21 @@
         window.addEventListener("resize", handleResize);
 
 
+        document.querySelectorAll('.footer-toggle').forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (window.innerWidth < 768) {
+                    const content = btn.nextElementSibling;
+                    content.classList.toggle('hidden');
+
+                    const iconImg = btn.querySelector('.icon img');
+                    if (iconImg) {
+                        iconImg.src = content.classList.contains('hidden')
+                            ? 'assets/images/toogle_up.svg'
+                            : 'assets/images/toogle_down.svg';
+                    }
+                }
+            });
+        });
 
 
     </script>
