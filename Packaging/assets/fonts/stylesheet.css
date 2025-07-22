@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('Manrope-Regular.eot');
+    src: url('Manrope-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Manrope-Regular.woff2') format('woff2'),
+        url('Manrope-Regular.woff') format('woff'),
+        url('Manrope-Regular.ttf') format('truetype'),
+        url('Manrope-Regular.svg#Manrope-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Afacad';
+    src: url('Afacad-Regular.eot');
+    src: url('Afacad-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Afacad-Regular.woff2') format('woff2'),
+        url('Afacad-Regular.woff') format('woff'),
+        url('Afacad-Regular.ttf') format('truetype'),
+        url('Afacad-Regular.svg#Afacad-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
