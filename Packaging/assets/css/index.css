@@ -44,6 +44,15 @@
     scrollbar-width: none;
 }
 
+.bg_hero{
+   background-image: url("../images/bg_work.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   backdrop-filter: blur(32px);
+   /* height: 600px; */
+}
+
 @media(max-width:1390px) {
     .quote_btn {
         padding: 14px 34px;
