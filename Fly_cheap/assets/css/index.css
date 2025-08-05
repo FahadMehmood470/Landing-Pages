@@ -916,6 +916,11 @@
     .bg_accordian {
         background-image: none;
     }
+
+    .overflow-on-scroll {
+        overflow: scroll;
+        height: 100vh;
+    }
 }
 
 @media (max-width:576px) {
