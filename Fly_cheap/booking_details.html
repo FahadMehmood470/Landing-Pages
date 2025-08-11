@@ -224,204 +224,406 @@
 
     <div class="container mx-auto px-4 lg:mt-20 lg:px-24 py-5 ">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div class="rounded-[10px] border">
+
+            <div class="">
+
+                <div class="rounded-[10px] border mt-4 sm:mt-5 md:mt-6 lg:mt-12">
 
 
-                <div class="bg-indigo-950 p-3 md:p-4 lg:p-5">
-                    <p
-                        class="justify-start text-white text-sm sm:text-base md:text-lg lg:text-xl font-bold font-['Syne']">
-                        Passenger Details</p>
-                </div>
-                <div class=" border border-stone-300 p-3 lg:p-5">
-                    <div class="flex justify-between items-center mb-5">
-                        <h2
-                            class=" justify-start text-stone-900 text-xs sm:text-base md:text-lg lg:text-xl font-normal font-['Inter']">
-                            Adult 1</h2>
+                    <div class="bg-indigo-950 p-3 md:p-4 lg:p-5">
                         <p
-                            class="justify-start text-stone-900 text-[8px] sm:text-[10px] lg:text-xs font-light font-['Inter']">
-                            (details should be as shown on passport including middle names)</p>
+                            class="justify-start text-white text-sm sm:text-base md:text-lg lg:text-xl font-bold font-['Syne']">
+                            Passenger Details</p>
                     </div>
-                    <div class=" grid grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div>
-                            <label for="Departure Date"
-                                class="block mb-2 text-[10px] text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Departure
-                                Date</label>
-                            <div class="relative max-w-sm">
-                                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                        <path
-                                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                                    </svg>
+                    <div class=" border border-stone-300 p-3 lg:p-5">
+                        <div class="flex justify-between items-center mb-5">
+                            <h2
+                                class=" justify-start text-stone-900 text-xs sm:text-base md:text-lg lg:text-xl font-normal font-['Inter']">
+                                Adult 1</h2>
+                            <p
+                                class="justify-start text-stone-900 text-[8px] sm:text-[10px] lg:text-xs font-light font-['Inter']">
+                                (details should be as shown on passport including middle names)</p>
+                        </div>
+                        <div class=" grid grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div>
+                                <label for="Departure Date"
+                                    class="block mb-2 text-[10px] text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Departure
+                                    Date</label>
+                                <div class="relative max-w-sm">
+                                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                            <path
+                                                d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                        </svg>
+                                    </div>
+                                    <input id="Departure" datepicker datepicker-autohide type="text"
+                                        class="bg-gray-50 border border-gray-300 text-stone-900 text-xs lg:text-sm font-bold font-['Syne'] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="Select date">
                                 </div>
-                                <input id="Departure" datepicker datepicker-autohide type="text"
-                                    class="bg-gray-50 border border-gray-300 text-stone-900 text-xs lg:text-sm font-bold font-['Syne'] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    placeholder="Select date">
+                            </div>
+
+                            <div>
+                                <label for="Return Date"
+                                    class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Departure
+                                    Date</label>
+                                <div class="relative max-w-sm">
+                                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                            <path
+                                                d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                                        </svg>
+                                    </div>
+                                    <input id="Return" datepicker datepicker-autohide type="text"
+                                        class="bg-gray-50 border border-gray-300 text-stone-900 text-xs lg:text-sm font-bold font-['Syne'] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="Select date">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="email"
+                                    class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Your
+                                    best Email</label>
+                                <input type="email" id="email"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="john.doe@company.com" required />
+                            </div>
+
+                            <div>
+                                <label for="name"
+                                    class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Your
+                                    best Email</label>
+                                <input type="text" id="name"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="fahad123" required />
+                            </div>
+
+                            <div>
+                                <label for="Contact"
+                                    class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Contact
+                                    Number</label>
+                                <input type="number" id="contact"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="345152415" required />
+                            </div>
+                            <div>
+                                <label for="passport_issue"
+                                    class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Your
+                                    best Email</label>
+                                <input type="text" id="passport_issue"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="United Kingdom" required />
+                            </div>
+
+                            <div>
+                                <label for="passport_issue_date"
+                                    class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Your
+                                    best Email</label>
+                                <input type="date" id="passport_issue_date"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="5/9/2002" required />
+                            </div>
+
+                            <div>
+                                <label for="passport_expiry_date"
+                                    class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Your
+                                    best Email</label>
+                                <input type="date" id="passport_expiry_date"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="6/7/20025" required />
+                            </div>
+
+                            <div>
+                                <label for="nationality"
+                                    class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Your
+                                    best Email</label>
+                                <input type="text" id="nationality"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Europe" required />
+                            </div>
+
+
+
+
+                        </div>
+
+                        <div
+                            class="justify-start text-stone-900 text-xs lg:text-sm font-medium font-['Inter'] leading-none mt-5">
+                            Disruption Contact Details</div>
+                        <div class="justify-start text-slate-500 text-xs lg:text-sm font-light font-['Inter'] mt-2">If
+                            you
+                            provide your contact details here, they will be passed to the airline so they can contact
+                            you in
+                            the event of delay, schedule change or cancellation. If you do not provide these details,
+                            you
+                            may not receive important information from your airline.</div>
+
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-6 mt-5">
+
+
+                            <div>
+                                <label for="name"
+                                    class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Your
+                                    First name</label>
+                                <input type="text" id="first_name"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="fahad" required />
+                            </div>
+
+                            <div>
+                                <label for="name"
+                                    class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Your
+                                    Last name</label>
+                                <input type="text" id="last_name"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="mehmood" required />
                             </div>
                         </div>
 
-                        <div>
-                            <label for="Return Date"
-                                class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Departure
-                                Date</label>
-                            <div class="relative max-w-sm">
-                                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                        <path
-                                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                                    </svg>
-                                </div>
-                                <input id="Return" datepicker datepicker-autohide type="text"
-                                    class="bg-gray-50 border border-gray-300 text-stone-900 text-xs lg:text-sm font-bold font-['Syne'] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    placeholder="Select date">
+                    </div>
+                </div>
+
+                <div class="rounded-[10px] border mt-4 sm:mt-5 md:mt-6 lg:mt-12">
+
+
+                    <div class="bg-indigo-950 p-3 md:p-4 lg:p-5">
+                        <p
+                            class="justify-start text-white text-sm sm:text-base md:text-lg lg:text-xl font-bold font-['Syne']">
+                            Terms & Conditions</p>
+                    </div>
+                    <div class=" border border-stone-300 p-3 lg:p-5">
+                        <h2
+                            class="justify-start text-black text-sm sm:text-base md:text-lg lg:text-xl font-medium font-['Syne']">
+                            Please select your preferred Payment method</h2>
+
+                        <div class="flex items-center mb-4 mt-4">
+                            <input id="default-checkbox" type="checkbox" value=""
+                                class="h-3 w-3 lg:w-4 lg:h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="default-checkbox"
+                                class="ms-2 text-stone-900 text-xs md:text-sm lg:text-base font-normal font-['Inter'] leading-none">I
+                                have read and accept the <span
+                                    class="text-xs md:text-sm lg:text-base text-orange-500 font-normal font-[Inter] underline">
+                                    Terms and Conditions
+                                </span> of travel.</label>
+                        </div>
+
+                        <p class="text-xs md:text-sm lg:text-base text-orange-500 font-normal font-[Inter] underline">
+                            Terms and Conditions
+                        </p>
+                        <p
+                            class="text-xs md:text-sm lg:text-base text-orange-500 font-normal font-[Inter] underline mt-2">
+                            Terms and Conditions
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rounded-[10px] border mt-4 sm:mt-5 md:mt-6 lg:mt-12">
+
+
+                    <div class="bg-indigo-950 p-3 md:p-4 lg:p-5">
+                        <p
+                            class="justify-start text-white text-sm sm:text-base md:text-lg lg:text-xl font-bold font-['Syne']">
+                            Payment Details</p>
+                    </div>
+                    <div class=" border border-stone-300 p-3 lg:p-5">
+                        <h2
+                            class="justify-start text-black text-sm sm:text-base md:text-lg lg:text-xl font-medium font-['Syne']">
+                            Please select your preferred Payment method</h2>
+
+                        <div class="flex items-center mb-4 mt-4">
+                            <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                class="w-4 h-4 lg:w-5 lg:h-5 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="default-radio-1"
+                                class="ms-2 text-stone-900 text-xs sm:text-sm lg:text-base font-normal font-['Inter']">Payment
+                                on Account</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input checked id="default-radio-2" type="radio" value="" name="default-radio"
+                                class="w-4 h-4 lg:w-5 lg:h-5 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="default-radio-2"
+                                class="ms-2 text-stone-900 text-xs sm:text-sm lg:text-base font-normal font-['Inter']">Pay
+                                by Link</label>
+                        </div>
+
+                        <p
+                            class="justify-start text-slate-500 text-[10px] sm:text-xs lg:text-sm font-light font-['Inter'] mt-3">
+                            This booking does not exceed the defined credit limit and will be automatically accepted</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+
+                <div class="rounded-[10px] border mt-4 sm:mt-5 md:mt-6 lg:mt-12">
+
+
+                    <div class="bg-indigo-950 p-3 md:p-4 lg:p-5 cursor-pointer" onclick="toggleFlightDetails(this)">
+                        <p
+                            class="justify-start text-white text-sm sm:text-base md:text-lg lg:text-xl font-bold font-['Syne']">
+                            London Heathrow (LHR) - Melbourne (MEL) </p>
+                    </div>
+                    <div class=" border border-stone-300 p-3 lg:p-5 flight-details hidden lg:block">
+                        <div class="flex items-center justify-between mb-4">
+                            <h2
+                                class="text-center justify-start text-orange-500 text-sm sm:text-base md:text-lg lg:text-xl font-semibold font-['Syne']">
+                                Booking Details</h2>
+                            <p
+                                class="text-center justify-start text-indigo-950 text-sm sm:text-base md:text-lg lg:text-xl font-semibold font-['Syne']">
+                                24 hrs 40 mins 1 Connection</p>
+                        </div>
+                        <hr />
+
+                        <div class="flex items-start gap-4 mt-8">
+                            <h2 class="text-zinc-600 text-xs sm:text-sm lg:text-base font-normal font-['Inter']">
+                                Mon, 8 Sep 2025
+                            </h2>
+                            <p class="text-slate-500 text-xs sm:text-sm lg:text-base font-normal font-['Inter']">
+                                10:35
+                            </p>
+
+                            <div class="flex flex-col items-center gap-4">
+                                <p class="w-4 h-4 rounded-full border border-indigo-950"></p>
+                                <div class="w-px h-11 bg-stone-300"></div>
+                            </div>
+                            <h2
+                                class="text-center justify-start text-stone-900 text-xs sm:text-sm lg:text-base font-normal font-['Inter']">
+                                London Heathrow</h2>
+                        </div>
+
+                        <div class="flex items-start gap-4 mt-4">
+                            <h2 class="text-zinc-600 text-xs sm:text-sm lg:text-base font-normal font-['Inter']">
+                                Mon, 8 Sep 2025
+                            </h2>
+
+                            <!-- <img src="assets/images/booking_details_ticket_logo.png" class="h-auto max-w-full" alt=""> -->
+
+                            <p class="text-slate-500 text-xs sm:text-sm lg:text-base font-normal font-['Inter']">
+                                10:35
+                            </p>
+
+                            <div class="flex flex-col items-center gap-4">
+                                <p class="w-4 h-4 bg-indigo-950 rounded-full"></p>
+                                <div class="w-px h-11 bg-stone-300"></div>
+                            </div>
+                            <h2
+                                class="justify-start text-indigo-950 text-xs sm:text-sm lg:text-base font-normal font-['Inter']">
+                                QR1434 - Boeing 787-8 Economy
+                                <br />Operated by Virgin Atlantic
+                            </h2>
+                        </div>
+
+                        <div class="flex items-start gap-4 mt-4 mb-4">
+                            <h2 class="text-zinc-600 text-xs sm:text-sm lg:text-base font-normal font-['Inter']">
+                                Mon, 8 Sep 2025
+                            </h2>
+                            <p class="text-slate-500 text-xs sm:text-sm lg:text-base font-normal font-['Inter']">
+                                10:35
+                            </p>
+
+                            <div class="flex flex-col items-center gap-4">
+                                <p class="w-4 h-4 rounded-full border border-indigo-950"></p>
+                            </div>
+                            <h2
+                                class="text-center justify-start text-stone-900 text-xs sm:text-sm lg:text-base font-normal font-['Inter']">
+                                London Heathrow</h2>
+                        </div>
+
+                        <hr />
+
+                        <div class="flex items-center gap-6 mt-4 mb-4">
+                            <img src="assets/images/alarm.svg" class="h-auto max-w-full" alt="">
+                            <p class="justify-start text-stone-900 text-[10px] lg:text-xs font-semibold font-['Inter']">
+                                4h 40m transit in San Francisco</p>
+                        </div>
+
+                        <hr />
+
+                    </div>
+                </div>
+
+
+                <div class="rounded-[10px] border mt-4 sm:mt-5 md:mt-6 lg:mt-12 flight-details hidden lg:block">
+
+
+                    <div class="bg-indigo-950 p-3 md:p-4 lg:p-5">
+                        <p
+                            class="justify-start text-white text-sm sm:text-base md:text-lg lg:text-xl font-bold font-['Syne']">
+                            Price Breakdown </p>
+                    </div>
+                    <div class=" border border-stone-300 p-3 lg:p-5">
+
+                        <div class="flex flex-row items-center justify-between">
+                            <div class="">
+                                <h2 class="justify-start text-stone-900 text-xl font-bold font-['Syne']">1 Adult</h2>
+                                <!-- <p class="text-center justify-start text-zinc-600 text-xl font-light font-['Inter'] mt-4">
+                                    £750.00</p> -->
+                            </div>
+                            <div>
+                                <h2
+                                    class="justify-start text-stone-900 text-sm sm:text-base md:text-lg lg:text-xl font-bold font-['Syne']">
+                                    Fare</h2>
+                                <p
+                                    class="text-center justify-start text-zinc-600 text-sm sm:text-base md:text-lg lg:text-xl font-light font-['Inter'] mt-4">
+                                    £750.00</p>
+                            </div>
+                            <div>
+                                <h2
+                                    class="justify-start text-stone-900 text-sm sm:text-base md:text-lg lg:text-xl font-bold font-['Syne']">
+                                    Tax</h2>
+                                <p
+                                    class="text-center justify-start text-zinc-600 text-sm sm:text-base md:text-lg lg:text-xl font-light font-['Inter'] mt-4">
+                                    £750.00</p>
+                            </div>
+                            <div>
+                                <h2
+                                    class="justify-start text-stone-900 text-sm sm:text-base md:text-lg lg:text-xl font-bold font-['Syne']">
+                                    Subtotal</h2>
+                                <p
+                                    class="text-center justify-start text-zinc-600 text-xss lg:text-sm sm:text-base md:text-lg lg:text-xl font-light font-['Inter'] mt-4">
+                                    £750.00</p>
                             </div>
                         </div>
 
-                        <div>
-                            <label for="email"
-                                class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Your
-                                best Email</label>
-                            <input type="email" id="email"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="john.doe@company.com" required />
-                        </div>
+                        <div class="justify-start text-slate-500 text-[10px] lg:text-xs font-light font-['Inter'] mt-4">
+                            The ticketing
+                            deadline for this booking is Fri, 1 Aug 2025.</div>
 
-                        <div>
-                            <label for="name"
-                                class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Your
-                                best Email</label>
-                            <input type="text" id="name"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="fahad123" required />
+                        <div
+                            class="w-full bg-violet-100 rounded-[10px] mt-5 p-3 sm:p-4 lg:p-8 flex justify-between items-center">
+                            <h2
+                                class="justify-start text-stone-900 text-sm sm:text-base md:text-lg lg:text-xl font-bold font-['Syne']">
+                                Total</h2>
+                            <p
+                                class="justify-start text-indigo-950 text-base sm:text-lg md:text-xl lg:text-3xl font-semibold font-['Inter']">
+                                £1,506.52</p>
                         </div>
-
-                        <div>
-                            <label for="Contact"
-                                class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Contact
-                                Number</label>
-                            <input type="number" id="contact"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="345152415" required />
-                        </div>
-                        <div>
-                            <label for="passport_issue"
-                                class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Your
-                                best Email</label>
-                            <input type="text" id="passport_issue"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="United Kingdom" required />
-                        </div>
-
-                        <div>
-                            <label for="passport_issue_date"
-                                class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Your
-                                best Email</label>
-                            <input type="date" id="passport_issue_date"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="5/9/2002" required />
-                        </div>
-
-                        <div>
-                            <label for="passport_expiry_date"
-                                class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Your
-                                best Email</label>
-                            <input type="date" id="passport_expiry_date"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="6/7/20025" required />
-                        </div>
-
-                        <div>
-                            <label for="nationality"
-                                class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Your
-                                best Email</label>
-                            <input type="text" id="nationality"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="Europe" required />
-                        </div>
-
 
 
 
                     </div>
-
-                    <div
-                        class="justify-start text-stone-900 text-xs lg:text-sm font-medium font-['Inter'] leading-none mt-5">
-                        Disruption Contact Details</div>
-                    <div class="justify-start text-slate-500 text-xs lg:text-sm font-light font-['Inter'] mt-2">If you
-                        provide your contact details here, they will be passed to the airline so they can contact you in
-                        the event of delay, schedule change or cancellation. If you do not provide these details, you
-                        may not receive important information from your airline.</div>
-
-                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-6 mt-5">
-
-
-                        <div>
-                            <label for="name"
-                                class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Your
-                                First name</label>
-                            <input type="text" id="first_name"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="fahad" required />
-                        </div>
-
-                        <div>
-                            <label for="name"
-                                class="block mb-2 text-[10px] sm:text-xs lg:text-sm font-medium text-black dark:text-white ml-1 sm:ml-2 lg:ml-3 font-['Syne']">Your
-                                Last name</label>
-                            <input type="text" id="last_name"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-xs lg:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="mehmood" required />
-                        </div>
-                    </div>
-
                 </div>
+
+
+
+
             </div>
+
+
         </div>
     </div>
+    <script>
+        function toggleFlightDetails(header) {
+            
+            const parent = header.closest('div');
+            const details = document.querySelectorAll('.flight-details');
 
-
-
-    <div class="container mx-auto px-4 lg:px-24 py-5 ">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div class="rounded-[10px] border">
-
-
-                <div class="bg-indigo-950 p-3 md:p-4 lg:p-5">
-                    <p
-                        class="justify-start text-white text-sm sm:text-base md:text-lg lg:text-xl font-bold font-['Syne']">
-                        Payment Details</p>
-                </div>
-                <div class=" border border-stone-300 p-3 lg:p-5">
-                    <h2
-                        class="justify-start text-black text-sm sm:text-base md:text-lg lg:text-xl font-medium font-['Syne']">
-                        Please select your preferred Payment method</h2>
-
-                    <div class="flex items-center mb-4 mt-4">
-                        <input id="default-radio-1" type="radio" value="" name="default-radio"
-                            class="w-4 h-4 lg:w-5 lg:h-5 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <label for="default-radio-1"
-                            class="ms-2 text-stone-900 text-xs sm:text-sm lg:text-base font-normal font-['Inter']">Payment on Account</label>
-                    </div>
-                    <div class="flex items-center">
-                        <input checked id="default-radio-2" type="radio" value="" name="default-radio"
-                            class="w-4 h-4 lg:w-5 lg:h-5 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <label for="default-radio-2"
-                            class="ms-2 text-stone-900 text-xs sm:text-sm lg:text-base font-normal font-['Inter']">Pay by Link</label>
-                    </div>
-
-                    <p class="w-[608px] justify-start text-slate-500 text-sm font-light font-['Inter']">This booking does not exceed the defined credit limit and will be automatically accepted</p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="h-[200px]">
-
-    </div>
-
-
+            details.forEach(detail => {
+                detail.classList.toggle('hidden');
+            });
+        }
+    </script>
 
 </body>
 
