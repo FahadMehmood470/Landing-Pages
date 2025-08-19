@@ -53,6 +53,20 @@
    /* height: 600px; */
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+.bg_img{
+       background-image: url("../images/req_buisness.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   backdrop-filter: blur(32px);
+   border-radius: 30px;
+   /* height: 250px; */
+}
+
 @media(max-width:1390px) {
     .quote_btn {
         padding: 14px 34px;
