@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
+    <title>details Page</title>
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
@@ -228,224 +228,135 @@
     </div>
 
     <hr />
-    <div class="container mx-auto py-5 px-4 lg:px-28 mt-10">
-        <!-- Heading -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
-            <h2 class="text-black text-2xl md:text-4xl lg:text-5xl font-semibold font-['Manrope'] leading-snug">
-                Request Quote
-            </h2>
-            <p class="text-gray-600 text-sm md:text-base lg:text-lg font-normal font-['Manrope']">
-                Get in touch to discuss your employee wellbeing needs today. Please give us a call, drop us an email or
-                fill out the contact form.
+
+    <section class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-1">
+
+            <!-- Left Side (Image Gallery) -->
+            <div class="hidden lg:block">
+                <img src="assets/images/details_large.jpg" alt="CBD Cream Box"
+                    class="shadow-md max-w-full h-auto rounded-[20px]">
+                <div class="flex gap-4 mt-4">
+                    <img src="assets/images/details_small.jpg" alt="Thumb"
+                        class="max-w-full h-auto rounded-md border cursor-pointer rounded-[20px]">
+                    <img src="assets/images/details_small.jpg" alt="Thumb"
+                        class="max-w-full h-auto rounded-md border cursor-pointer rounded-[20px]">
+                    <img src="assets/images/details_small.jpg" alt="Thumb"
+                        class="max-w-full h-auto rounded-md border cursor-pointer rounded-[20px]">
+                </div>
+            </div>
+
+            <!-- Right Side (Form) -->
+            <div>
+                <h2 class="text-black text-xl md:text-2xl lg:text-4xl font-bold font-['ABC_Favorit'] mb-6">Get Quote for
+                    CBD Cream Boxes</h2>
+
+                <form class="space-y-6">
+                    <!-- Product Information -->
+                    <div>
+                        <h3
+                            class="text-black text-lg md:text-xl lg:text-2xl font-semibold font-['Manrope'] leading-loose mb-2">
+                            Product Information</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <input type="number" placeholder="Quantity"
+                                class="w-full border rounded-md p-3 focus:ring-2 focus:ring-black outline-none">
+                            <select class="w-full border rounded-md p-3 focus:ring-2 focus:ring-black outline-none">
+                                <option>No printing / plain</option>
+                                <option>Full color</option>
+                                <option>Custom</option>
+                            </select>
+                            <select class="w-full border rounded-md p-3 focus:ring-2 focus:ring-black outline-none">
+                                <option>Gloss</option>
+                                <option>Matte</option>
+                                <option>Soft Touch</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Personal Information -->
+                    <div>
+                        <h3
+                            class="text-black text-lg md:text-xl lg:text-2xl font-semibold font-['Manrope'] leading-loose mb-2">
+                            Personal Information</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <input type="text" placeholder="Full Name"
+                                class="w-full border rounded-md p-3 focus:ring-2 focus:ring-black outline-none">
+                            <input type="tel" placeholder="Phone No"
+                                class="w-full border rounded-md p-3 focus:ring-2 focus:ring-black outline-none">
+                            <input type="email" placeholder="Email"
+                                class="w-full border rounded-md p-3 focus:ring-2 focus:ring-black outline-none">
+                        </div>
+                    </div>
+
+                    <!-- Upload Work -->
+                    <div>
+                        <label class="block mb-2 text-gray-700">Upload your work</label>
+                        <input type="file" class="w-full border rounded-md p-3">
+                    </div>
+
+                    <!-- Additional Comments -->
+                    <textarea placeholder="Write additional comments..." rows="4"
+                        class="w-full border rounded-md p-3 focus:ring-2 focus:ring-black outline-none"></textarea>
+
+                    <!-- Submit -->
+                    <button type="submit"
+                        class="w-full bg-black text-white rounded-[50px] py-3 font-medium hover:bg-gray-800 transition text-xl font-bold font-['Manrope'] leading-7">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Product Details Table -->
+        <div class="max-w-7xl mx-auto mt-12 px-6">
+            <h3 class="text-xl font-semibold mb-4">Product details</h3>
+            <p class="text-gray-600 mb-6">
+                Discover our range of high-quality packaging materials designed to tailor your packaging order to
+                perfection.
+                From sturdy cardboard boxes to eco-friendly options, we have the ideal materials for your unique needs.
             </p>
-        </div>
-
-        <!-- Form Container -->
-        <!-- Form Container -->
-        <div class="w-full rounded-[30px] border border-black p-5 lg:p-8 md:p-12">
-            <!-- Product Information -->
-            <h3 class="text-black text-lg md:text-xl font-semibold font-['Manrope'] mb-6 text-center">
-                Product Information
-            </h3>
-
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-                <div>
-                    <label class="block text-neutral-400 text-base font-light font-['Manrope'] mb-1 ">Select Box
-                        Style</label>
-                    <select
-                        class="w-full border border-gray-300 rounded-full px-4 py-2 text-sm md:text-base outline outline-1 outline-offset-[-1px] outline-black">
-                        <option>Select</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-neutral-400 text-base font-light font-['Manrope'] mb-1">Others</label>
-                    <select
-                        class="w-full border border-gray-300 rounded-full px-4 py-2 text-sm md:text-base outline outline-1 outline-offset-[-1px] outline-black">
-                        <option>cm</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-neutral-400 text-base font-light font-['Manrope'] mb-1">Quantity 1</label>
-                    <select
-                        class="w-full border border-gray-300 rounded-full px-4 py-2 text-sm md:text-base outline outline-1 outline-offset-[-1px] outline-black">
-                        <option>0</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-neutral-400 text-base font-light font-['Manrope'] mb-1">Quantity 2</label>
-                    <select
-                        class="w-full border border-gray-300 rounded-full px-4 py-2 text-sm md:text-base outline outline-1 outline-offset-[-1px] outline-black">
-                        <option>0</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-6">
-                <div>
-                    <label class="block text-neutral-400 text-base font-light font-['Manrope'] mb-1">Length</label>
-                    <select
-                        class="w-full border border-gray-300 rounded-full px-4 py-2 text-sm md:text-base outline outline-1 outline-offset-[-1px] outline-black">
-                        <option>0</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-neutral-400 text-base font-light font-['Manrope'] mb-1">Width</label>
-                    <select
-                        class="w-full border border-gray-300 rounded-full px-4 py-2 text-sm md:text-base outline outline-1 outline-offset-[-1px] outline-black">
-                        <option>0</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-neutral-400 text-base font-light font-['Manrope'] mb-1">Depth</label>
-                    <select
-                        class="w-full border border-gray-300 rounded-full px-4 py-2 text-sm md:text-base outline outline-1 outline-offset-[-1px] outline-black">
-                        <option>0</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-neutral-400 text-base font-light font-['Manrope'] mb-1">Unit</label>
-                    <select
-                        class="w-full border border-gray-300 rounded-full px-4 py-2 text-sm md:text-base outline outline-1 outline-offset-[-1px] outline-black">
-                        <option>cm</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-neutral-400 text-base font-light font-['Manrope'] mb-1">Colors</label>
-                    <select
-                        class="w-full border border-gray-300 rounded-full px-4 py-2 text-sm md:text-base outline outline-1 outline-offset-[-1px] outline-black">
-                        <option>1/2</option>
-                    </select>
-                </div>
-            </div>
-
-            <!-- Personal Information -->
-            <h3 class="text-black text-lg md:text-xl font-semibold font-['Manrope'] mb-6 text-center">
-                Personal Information
-            </h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                <div>
-                    <label class="block text-neutral-400 text-base font-light font-['Manrope'] mb-1">Full Name</label>
-                    <input type="text" placeholder="Full Name"
-                        class="w-full border border-gray-300 rounded-full px-4 py-2 text-sm md:text-base outline outline-1 outline-offset-[-1px] outline-black" />
-                </div>
-                <div>
-                    <label class="block text-neutral-400 text-base font-light font-['Manrope'] mb-1">Contact
-                        Number</label>
-                    <input type="text" placeholder="Phone No"
-                        class="w-full border border-gray-300 rounded-full px-4 py-2 text-sm md:text-base outline outline-1 outline-offset-[-1px] outline-black" />
-                </div>
-                <div>
-                    <label class="block text-neutral-400 text-base font-light font-['Manrope'] mb-1">Email
-                        Address</label>
-                    <input type="email" placeholder="Email"
-                        class="w-full border border-gray-300 rounded-full px-4 py-2 text-sm md:text-base outline outline-1 outline-offset-[-1px] outline-black" />
-                </div>
-            </div>
-
-            <!-- Artwork Upload -->
-            <h3 class="text-black text-lg md:text-xl font-semibold font-['Manrope'] mb-4 text-center">
-                Artwork
-            </h3>
-            <div class="flex flex-col items-center mb-6">
-                <!-- <label class="block text-neutral-400 text-base font-light font-['Manrope'] mb-2">Upload File</label> -->
-                <input type="file"
-                    class="file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-gray-200 file:text-black hover:file:bg-gray-300" />
-            </div>
-
-            <!-- Additional Comment -->
-            <div class="mb-6">
-                <label class="block text-neutral-400 text-base font-light font-['Manrope'] mb-1">Additional
-                    Comment</label>
-                <textarea placeholder="Write additional Comment"
-                    class="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm md:text-base outline outline-1 outline-offset-[-1px] outline-black"></textarea>
-            </div>
-
-            <!-- Submit Button -->
-            <div class="flex justify-center">
-                <button
-                    class="w-full md:w-1/3 bg-black text-white font-semibold rounded-full py-3 text-lg hover:bg-gray-800 transition">
-                    Submit
-                </button>
+            <div class="overflow-x-auto border rounded-lg">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gray-100 text-gray-700">
+                            <th class="p-4">Description</th>
+                            <th class="p-4">GSM</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-t">
+                            <td class="p-4">13 Point Pulp</td>
+                            <td class="p-4">200 GSM</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="p-4">14 Point Uncoated</td>
+                            <td class="p-4">270 GSM</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="p-4">16 C2S / Solid Bleached Sulfate(SBS)*</td>
+                            <td class="p-4">350 GSM</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="p-4">18 Point C2S</td>
+                            <td class="p-4">400 GSM</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="p-4">24 Point Uncoated</td>
+                            <td class="p-4">405 GSM</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="p-4">24 C2S / Solid Bleached Sulfate(SBS)*</td>
+                            <td class="p-4">460 GSM</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="p-4">40 Point Cotton</td>
+                            <td class="p-4">600 GSM</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-
-    </div>
-
-
-    <!-- Our Main Offices Section -->
-    <div class="container mx-auto px-4 md:px-12 lg:px-20 py-12">
-        <h2
-            class="text-black text-xl md:text-3xl lg:text-5xl font-semibold font-['Manrope'] leading-[50px] text-center mb-3">
-            Our Main Offices
-        </h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left mt-5 lg:mt-12">
-            <!-- USA Office -->
-            <div class="lg:border-r lg:border-l border-gray-300 pr-6 pl-5">
-                <h3 class="text-red-500 text-xl md:text-2xl lg:text-4xl font-bold mb-4 font-['Manrope']">USA Head Office
-                </h3>
-
-                <p>
-                    <span
-                        class="text-neutral-400 text-base md:text-xl lg:text-2xl font-medium font-['Manrope'] leading-10">Phone:
-                    </span>
-                    <span class="text-black text-base md:text-xl lg:text-2xl font-medium font-['Manrope'] leading-10">+1
-                        (442) 319 1309</span>
-                </p>
-
-                <p>
-                    <span
-                        class="text-neutral-400 text-base md:text-xl lg:text-2xl font-medium font-['Manrope'] leading-10">E-mail:
-                    </span>
-                    <span
-                        class="text-black text-base md:text-xl lg:text-2xl font-medium font-['Manrope'] leading-10">sales@adroitcustompackaging.com</span>
-                </p>
-
-                <p>
-                    <span
-                        class="text-neutral-400 text-base md:text-xl lg:text-2xl font-medium font-['Manrope'] leading-10">Address:
-                    </span>
-                    <span
-                        class="text-black text-base md:text-xl lg:text-2xl font-medium font-['Manrope'] leading-10">1968
-                        S. Coast Hwy #1017 Laguna Beach, CA 92651</span>
-                </p>
-            </div>
-
-            <!-- UK Office -->
-            <div class="pl-6 lg:border-r border-gray-300 pr-6">
-                <h3 class="text-indigo-500 text-xl md:text-2xl lg:text-4xl font-['Manrope'] font-bold mb-4">UK Head
-                    Office</h3>
-
-                <p>
-                    <span
-                        class="text-neutral-400 text-base md:text-xl lg:text-2xl font-medium font-['Manrope'] leading-10">Phone:
-                    </span>
-                    <span
-                        class="text-black text-base md:text-xl lg:text-2xl font-medium font-['Manrope'] leading-10">+44
-                        1619 490081</span>
-                </p>
-
-                <p>
-                    <span
-                        class="text-neutral-400 text-base md:text-xl lg:text-2xl font-medium font-['Manrope'] leading-10">E-mail:
-                    </span>
-                    <span
-                        class="text-black text-base md:text-xl lg:text-2xl font-medium font-['Manrope'] leading-10">sales@adroitcustompackaging.com</span>
-                </p>
-
-                <p>
-                    <span
-                        class="text-neutral-400 text-base md:text-xl lg:text-2xl font-medium font-['Manrope'] leading-10">Address:
-                    </span>
-                    <span
-                        class="text-black text-base md:text-xl lg:text-2xl font-medium font-['Manrope'] leading-10">Office
-                        3, College Rd, Whalley Range, Manchester M16 8BP</span>
-                </p>
-            </div>
-        </div>
-    </div>
-
-
+    </section>
 
 
 
