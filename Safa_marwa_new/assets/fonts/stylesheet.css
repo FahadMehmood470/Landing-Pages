@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('Manrope-Regular.eot');
+    src: url('Manrope-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Manrope-Regular.woff2') format('woff2'),
+        url('Manrope-Regular.woff') format('woff'),
+        url('Manrope-Regular.ttf') format('truetype'),
+        url('Manrope-Regular.svg#Manrope-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.eot');
+    src: url('Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Poppins-Regular.woff2') format('woff2'),
+        url('Poppins-Regular.woff') format('woff'),
+        url('Poppins-Regular.ttf') format('truetype'),
+        url('Poppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ruda';
+    src: url('Ruda.eot');
+    src: url('Ruda.eot?#iefix') format('embedded-opentype'),
+        url('Ruda.woff2') format('woff2'),
+        url('Ruda.woff') format('woff'),
+        url('Ruda.ttf') format('truetype'),
+        url('Ruda.svg#Ruda') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('/assets/fonts/Manrope-Regular.eot');
+    src: url('/assets/fonts/Manrope-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Manrope-Regular.woff2') format('woff2'),
+        url('/assets/fonts/Manrope-Regular.woff') format('woff'),
+        url('/assets/fonts/Manrope-Regular.ttf') format('truetype'),
+        url('/assets/fonts/Manrope-Regular.svg#Manrope-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins-Regular.eot');
+    src: url('/assets/fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Poppins-Regular.woff2') format('woff2'),
+        url('/assets/fonts/Poppins-Regular.woff') format('woff'),
+        url('/assets/fonts/Poppins-Regular.ttf') format('truetype'),
+        url('/assets/fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Ruda';
+    src: url('/assets/fonts/Ruda.eot');
+    src: url('/assets/fonts/Ruda.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Ruda.woff2') format('woff2'),
+        url('/assets/fonts/Ruda.woff') format('woff'),
+        url('/assets/fonts/Ruda.ttf') format('truetype'),
+        url('/assets/fonts/Ruda.svg#Ruda') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
