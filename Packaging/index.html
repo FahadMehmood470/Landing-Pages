@@ -59,36 +59,71 @@
             </div>
         </div>
 
-        <div class="flex gap-8 items-center pt-4 pb-4 z-20">
-            <div>
-                <!-- Button -->
-                <button id="package_dropdownButton" data-dropdown-toggle="package_dropdown" type="button"
-                    class=" px-4 py-2 inline-flex items-center gap-2 text-black text-lg font-normal font-['Manrope']">
-                    By Industry
-                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                        </path>
-                    </svg>
-                </button>
+       <div class="flex gap-8 items-center pt-4 pb-4 z-20">
+    <div class="relative">
+        <!-- Button -->
+        <button id="package_dropdownButton" data-dropdown-toggle="package_dropdown" type="button"
+            class="px-4 py-2 inline-flex items-center gap-2 text-black text-lg font-normal font-['Manrope']">
+            By Industry
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </button>
 
-                <!-- Dropdown Menu -->
-                <div id="package_dropdown" class="z-10 hidden bg-white rounded-lg shadow w-44">
-                    <ul class="py-2 text-sm text-gray-700">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 font-['Inter'] text-start">Domestic
-                                Flights</a></li>
-                        <li><a href="#"
-                                class="block px-4 py-2 hover:bg-gray-100 font-['Inter'] text-start">International
-                                Flights</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 font-['Inter'] text-start">Cheap
-                                Flights</a></li>
-                    </ul>
-                </div>
+        <!-- Dropdown Menu (Mega Menu Style) -->
+        <div id="package_dropdown"
+            class="z-20 hidden absolute left-0 mt-2 w-screen max-w-6xl bg-white rounded-lg shadow-lg p-6">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 text-sm text-gray-700 font-['Inter']">
+                <a href="#" class="group relative block hover:text-red-500">
+                    Apparel Boxes
+                    <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#" class="group relative block hover:text-red-500">
+                    Cereal Boxes
+                    <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#" class="group relative block hover:text-red-500">
+                    Retail Boxes
+                    <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#" class="group relative block hover:text-red-500">
+                    Shipping Boxes
+                    <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#" class="group relative block hover:text-red-500">
+                    Bakery Boxes
+                    <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#" class="group relative block hover:text-red-500">
+                    Gift Boxes
+                    <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#" class="group relative block hover:text-red-500">
+                    Cigarette Boxes
+                    <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#" class="group relative block hover:text-red-500">
+                    Pre Roll Boxes
+                    <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#" class="group relative block hover:text-red-500">
+                    Stationery Boxes
+                    <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#" class="group relative block hover:text-red-500">
+                    Cosmetic Boxes
+                    <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <!-- keep adding more items as in image -->
             </div>
-
-            <a class="justify-start text-black text-lg font-normal font-['Manrope']">About Us</a>
-            <a class="justify-start text-black text-lg font-normal font-['Manrope']">Contact Us</a>
-
         </div>
+    </div>
+
+    <a class="justify-start text-black text-lg font-normal font-['Manrope']">About Us</a>
+    <a class="justify-start text-black text-lg font-normal font-['Manrope']">Contact Us</a>
+</div>
+
 
     </div>
 
@@ -897,8 +932,12 @@
                             <div class="grid grid-cols-2 mt-6">
 
                                 <div class="flex flex-col items-center justify-center p-5">
-                                    <h2 class="self-stretch justify-start text-black text-2xl font-bold font-['Manrope']">Holographic <br/>Foiling</h2>
-                                    <p class="self-stretch justify-start text-neutral-400 text-base font-normal font-['Manrope'] mt-3">Find the right box style or create a custom dieline perfect </p>
+                                    <h2
+                                        class="self-stretch justify-start text-black text-2xl font-bold font-['Manrope']">
+                                        Holographic <br />Foiling</h2>
+                                    <p
+                                        class="self-stretch justify-start text-neutral-400 text-base font-normal font-['Manrope'] mt-3">
+                                        Find the right box style or create a custom dieline perfect </p>
                                 </div>
 
                                 <div class="p-5">
@@ -913,8 +952,12 @@
                             <div class="grid grid-cols-2 mt-6">
 
                                 <div class="flex flex-col items-center justify-center p-5">
-                                    <h2 class="self-stretch justify-start text-black text-2xl font-bold font-['Manrope']">Holographic <br/>Foiling</h2>
-                                    <p class="self-stretch justify-start text-neutral-400 text-base font-normal font-['Manrope'] mt-3">Find the right box style or create a custom dieline perfect </p>
+                                    <h2
+                                        class="self-stretch justify-start text-black text-2xl font-bold font-['Manrope']">
+                                        Holographic <br />Foiling</h2>
+                                    <p
+                                        class="self-stretch justify-start text-neutral-400 text-base font-normal font-['Manrope'] mt-3">
+                                        Find the right box style or create a custom dieline perfect </p>
                                 </div>
 
                                 <div class="p-5">
@@ -930,13 +973,62 @@
                 </div>
 
 
+
+
+
+
+
+
+            </div>
+            <div class="grid grid-cols-12 gap-6 mt-6">
+
+                <!-- Right Section (8 columns) -->
+                <div class="col-span-12 md:col-span-8 space-y-6">
+
+                    <!-- Gold Foiling -->
+                    <div class="bg-slate-200 rounded-[36px] grid grid-cols-2 p-6">
+                        <div class="flex flex-col justify-center pr-6">
+                            <h2 class="text-black text-2xl font-bold font-['Manrope']">Gold Foiling</h2>
+                            <p class="text-neutral-400 text-base font-normal font-['Manrope'] mt-2">
+                                Find the right box style or create a custom dieline perfect for your product
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <img src="assets/images/premium_box_2.png" class="h-auto max-w-full" alt="Gold Foiling">
+                        </div>
+                    </div>
+
+                    <!-- Holographic Foiling -->
+
+
+                </div>
+
+                <!-- Debossing (Left 4 columns) -->
+                <div class="col-span-12 md:col-span-4 bg-orange-100 rounded-[36px] flex flex-row items-center p-6">
+                   
+                                <div class="flex flex-col items-center justify-center">
+                                    <h2
+                                        class="self-stretch justify-start text-black text-2xl font-bold font-['Manrope']">
+                                        Holographic <br />Foiling</h2>
+                                    <p
+                                        class="self-stretch justify-start text-neutral-400 text-base font-normal font-['Manrope'] mt-3">
+                                        Find the right box style or create a custom dieline perfect </p>
+                                </div>
+
+                                <div class="">
+                                    <img src="assets/images/premium_box_3.png" class="h-auto max-w-full" alt="">
+                                </div>
+
+                </div>
+
+
             </div>
 
         </div>
 
     </div>
 
-    <div class="bg-red-50">
+    <div class="bg-[#F0F0F0A8]">
         <div>
             <div class="float-right hidden lg:block pt-16 pb-16">
                 <img src="assets/images/get_Quote.png" class="h-auto max-w-ful;l" alt="">
@@ -1130,7 +1222,9 @@
                         <span>What custom packaging should I use?</span>
                         <svg class="w-4 h-4 icon-toggle" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path d="M12 5v14M5 12h14" /> <!-- Plus icon -->
+                            <!-- <path d="M12 5v14M5 12h14" /> Plus icon -->
+                            '
+                            <path d="M12 5v14M5 12h14" />'
                         </svg>
                     </button>
                 </h2>
@@ -1164,8 +1258,15 @@
                 </h2>
                 <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
                     <div class="pt-2 pb-5">
-                        <p class="justify-start text-neutral-400 text-base font-normal font-['Manrope']">
-                            Content here...
+                        <p
+                            class="justify-start text-neutral-400 text-xs md:text-sm lg:text-base font-normal font-['Manrope']">
+                            The packaging you choose for your business depends on various factors such as the type of
+                            products you ship, your budget, and your long-term goals. For instance, custom packing tape
+                            can be a cost-effective way to brand your shipments while monitoring your budget. Custom
+                            printed poly mailers can help you stand out from the competition and keep your shipping
+                            costs low. Custom boxes and tissue paper can enhance the unboxing experience and make your
+                            products look more valuable. As you gain confidence and grow your budget, you can add more
+                            custom packaging options to your lineup.
                         </p>
                     </div>
                 </div>
@@ -1175,71 +1276,71 @@
         </div>
     </div>
 
-    <div class="container mx-auto mb-5 sm:mb-8 sm:mt-8 md:mt-12 md:mb-12 lg:mt-16 lg:mb-16 gap-20 px-4 lg:px-20">
-        <div class="w-full h-[591px] rounded-3xl border border-neutral-400 
-              overflow-y-auto scroll-smooth 
-              px-4 sm:px-4 md:px-6 lg:px-10 
-              pt-3 pb-3 lg:pt-10 lg:pb-10">
+    <div class="container mx-auto mb-5 sm:mb-8 md:mb-12 lg:mb-16 px-4 lg:px-20">
+        <div class="w-full rounded-3xl border border-neutral-300 p-6 lg:p-10 overflow-y-auto h-[541px]">
 
             <!-- Heading 1 -->
-            <h2 class="text-left text-black text-base sm:text-lg md:text-xl lg:text-2xl 
-               font-semibold font-['Plus_Jakarta_Sans'] lg:leading-loose mt-3">
-                Premium Custom Packaging Solutions
+            <h2 class="text-left text-black text-lg sm:text-xl md:text-2xl font-semibold font-['Plus_Jakarta_Sans']">
+                Custom Boxes with Logo – Designed to Impress
             </h2>
-            <p class="text-justify text-neutral-600 text-xs md:text-sm lg:text-base 
-              font-normal font-['Manrope'] mt-2">
-                Our premium packaging options are designed to give your brand a luxurious touch.
-                From rigid boxes to magnetic closures, every detail is crafted to impress your customers
-                and enhance your brand identity.
+            <p class="text-justify text-neutral-600 text-sm sm:text-base font-normal font-['Manrope'] mt-2">
+                Elevate your product presentation with Custom Boxes with Logo tailored to your brand. Whether you’re
+                launching
+                a new product or upgrading your packaging, custom boxes help you stand out on the shelf and connect with
+                customers instantly. Say goodbye to dull, generic packaging – it’s time to wrap your products in
+                something
+                truly unique.
             </p>
 
             <!-- Heading 2 -->
-            <h2 class="text-left text-black text-base sm:text-lg md:text-xl lg:text-2xl 
-               font-semibold font-['Plus_Jakarta_Sans'] lg:leading-loose mt-6">
-                Eco-Friendly Packaging
+            <h2
+                class="text-left text-black text-lg sm:text-xl md:text-2xl font-semibold font-['Plus_Jakarta_Sans'] mt-6">
+                Wholesale Custom Packaging for Every Industry
             </h2>
-            <p class="text-justify text-neutral-600 text-xs md:text-sm lg:text-base 
-              font-normal font-['Manrope'] mt-2">
-                Sustainability matters more than ever. Our eco-friendly packaging solutions use recyclable
-                and biodegradable materials to reduce environmental impact while keeping your products safe
-                and stylish.
+            <p class="text-justify text-neutral-600 text-sm sm:text-base font-normal font-['Manrope'] mt-2">
+                From cosmetics to electronics, food to fashion, custom packaging is a need – not a luxury. We offer
+                custom
+                boxes wholesale for all industries, crafted in multiple sizes and shapes. Whether it’s a delicate item
+                or
+                a bold retail product, our packaging solutions are designed to fit, protect, and promote.
             </p>
+
+            <ul
+                class="list-disc list-inside text-neutral-600 text-sm sm:text-base font-normal font-['Manrope'] mt-3 space-y-1">
+                <li>Custom Cosmetic Boxes</li>
+                <li>Custom Food Boxes (Burger, Bakery, Cereal)</li>
+                <li>Custom Jewelry & Ring Boxes</li>
+                <li>Custom CBD, Vape, and Cigarette Boxes</li>
+                <li>Custom Display & Window Boxes</li>
+            </ul>
 
             <!-- Heading 3 -->
-            <h2 class="text-left text-black text-base sm:text-lg md:text-xl lg:text-2xl 
-               font-semibold font-['Plus_Jakarta_Sans'] lg:leading-loose mt-6">
-                Custom Printed Boxes
+            <h2
+                class="text-left text-black text-lg sm:text-xl md:text-2xl font-semibold font-['Plus_Jakarta_Sans'] mt-6">
+                Add Value with Custom Printed Boxes
             </h2>
-            <p class="text-justify text-neutral-600 text-xs md:text-sm lg:text-base 
-              font-normal font-['Manrope'] mt-2">
-                Create an unforgettable unboxing experience with custom printed boxes. Add your logo,
-                colors, and designs to showcase your brand and make every package a marketing opportunity.
+            <p class="text-justify text-neutral-600 text-sm sm:text-base font-normal font-['Manrope'] mt-2">
+                Packaging is more than just a container – it’s a powerful branding tool. A custom printed box speaks
+                volumes
+                about the product inside. It reflects your brand and creates a memorable unboxing experience.
             </p>
+
 
             <!-- Heading 4 -->
-            <h2 class="text-left text-black text-base sm:text-lg md:text-xl lg:text-2xl 
-               font-semibold font-['Plus_Jakarta_Sans'] lg:leading-loose mt-6">
-                Wholesale Packaging Options
+            <h2
+                class="text-left text-black text-lg sm:text-xl md:text-2xl font-semibold font-['Plus_Jakarta_Sans'] mt-6">
+                Add Value with Custom Printed Boxes
             </h2>
-            <p class="text-justify text-neutral-600 text-xs md:text-sm lg:text-base 
-              font-normal font-['Manrope'] mt-2">
-                Looking for cost-effective solutions? Our wholesale custom boxes are perfect for businesses
-                of all sizes, providing affordability without compromising on quality and design.
+            <p class="text-justify text-neutral-600 text-sm sm:text-base font-normal font-['Manrope'] mt-2">
+                Packaging is more than just a container – it’s a powerful branding tool. A custom printed box speaks
+                volumes
+                about the product inside. It reflects your brand and creates a memorable unboxing experience.
             </p>
 
-            <!-- Heading 5 -->
-            <h2 class="text-left text-black text-base sm:text-lg md:text-xl lg:text-2xl 
-               font-semibold font-['Plus_Jakarta_Sans'] lg:leading-loose mt-6">
-                Industry-Specific Packaging
-            </h2>
-            <p class="text-justify text-neutral-600 text-xs md:text-sm lg:text-base 
-              font-normal font-['Manrope'] mt-2">
-                Every industry has unique needs. Whether it’s cosmetics, food, electronics, or retail,
-                our packaging solutions are tailored to match your product requirements and industry standards.
-            </p>
 
         </div>
     </div>
+
 
     <div class="container mx-auto mb-5 sm:mb-8 sm:mt-8 md:mt-12 md:mb-12 lg:mt-16 lg:mb-16 gap-20 px-4">
 
@@ -1273,8 +1374,8 @@
 
 
     <footer class="bg-white dark:bg-gray-900">
-        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-            <div class="md:flex md:justify-between">
+        <div class="container mx-auto p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between space-y-4">
                 <!-- Logo Section -->
                 <div class="mb-6 md:mb-0">
                     <a href="" class="flex items-center justify-center gap-3">
@@ -1283,32 +1384,137 @@
                             Adroit Custom Packaging
                         </span>
                     </a>
+
+                    <p class="text-neutral-400 text-sm font-normal font-['Roboto'] leading-normal mt-3">Good for Planet.
+                    </p>
+
+                    <div class="flex gap-8 mt-6">
+                        <img src="assets/images/footer_icon_1.svg" class="h-auto max-w-full" alt="">
+                        <img src="assets/images/footer_icon_2.svg" class="h-auto max-w-full" alt="">
+                        <img src="assets/images/footer_icon_3.svg" class="h-auto max-w-full" alt="">
+                        <img src="assets/images/footer_icon_4.svg" class="h-auto max-w-full" alt="">
+
+                    </div>
                 </div>
 
                 <!-- Footer Sections -->
-                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-                    <div>
-                        <h2 class="mb-6 text-gray-800 text-lg font-semibold font-['Roboto']">Resources</h2>
-                        <ul>
-                            <li class="mb-4 text-neutral-400 text-sm font-normal font-['Roboto']">Privacy Policy</li>
-                            <li class="text-neutral-400 text-sm font-normal font-['Roboto']">Terms & Conditions</li>
+
+                <div>
+                    <h3 class="text-gray-800 text-lg font-semibold font-['Roboto'] mb-2">Categories</h3>
+                    <div class="flex gap-4 items-center flex justify-start lg:justify-center">
+                        <ul class="list-none space-y-2">
+                            <li class="text-neutral-400 text-sm font-normal font-['Roboto'] relative cursor-pointer 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-neutral-400 
+               after:transition-all after:duration-300 hover:after:w-full">
+                                Vape Cartridge Packaging
+                            </li>
+                            <li class="text-neutral-400 text-sm font-normal font-['Roboto'] relative cursor-pointer 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-neutral-400 
+               after:transition-all after:duration-300 hover:after:w-full">
+                                Bath Bomb Packaging
+                            </li>
+                            <li class="text-neutral-400 text-sm font-normal font-['Roboto'] relative cursor-pointer 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-neutral-400 
+               after:transition-all after:duration-300 hover:after:w-full">
+                                Candle Packaging
+                            </li>
+                            <li class="text-neutral-400 text-sm font-normal font-['Roboto'] relative cursor-pointer 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-neutral-400 
+               after:transition-all after:duration-300 hover:after:w-full">
+                                Cereal Packaging
+                            </li>
+                            <li class="text-neutral-400 text-sm font-normal font-['Roboto'] relative cursor-pointer 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-neutral-400 
+               after:transition-all after:duration-300 hover:after:w-full">
+                                Cigarette Packaging
+                            </li>
                         </ul>
-                    </div>
-                    <div>
-                        <h2 class="mb-6 text-gray-800 text-lg font-semibold font-['Roboto']">Follow Us</h2>
-                        <ul>
-                            <li class="mb-4 text-neutral-400 text-sm font-normal font-['Roboto']">Facebook</li>
-                            <li class="text-neutral-400 text-sm font-normal font-['Roboto']">Instagram</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 class="mb-6 text-gray-800 text-lg font-semibold font-['Roboto']">Legal</h2>
-                        <ul>
-                            <li class="mb-4 text-neutral-400 text-sm font-normal font-['Roboto']">Copyright</li>
-                            <li class="text-neutral-400 text-sm font-normal font-['Roboto']">Disclaimer</li>
+                        <ul class="list-none space-y-2">
+                            <li class="text-neutral-400 text-sm font-normal font-['Roboto'] relative cursor-pointer 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-neutral-400 
+               after:transition-all after:duration-300 hover:after:w-full">
+                                Vape Cartridge Packaging
+                            </li>
+                            <li class="text-neutral-400 text-sm font-normal font-['Roboto'] relative cursor-pointer 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-neutral-400 
+               after:transition-all after:duration-300 hover:after:w-full">
+                                Bath Bomb Packaging
+                            </li>
+                            <li class="text-neutral-400 text-sm font-normal font-['Roboto'] relative cursor-pointer 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-neutral-400 
+               after:transition-all after:duration-300 hover:after:w-full">
+                                Candle Packaging
+                            </li>
+                            <li class="text-neutral-400 text-sm font-normal font-['Roboto'] relative cursor-pointer 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-neutral-400 
+               after:transition-all after:duration-300 hover:after:w-full">
+                                Cereal Packaging
+                            </li>
+                            <li class="text-neutral-400 text-sm font-normal font-['Roboto'] relative cursor-pointer 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-neutral-400 
+               after:transition-all after:duration-300 hover:after:w-full">
+                                Cigarette Packaging
+                            </li>
                         </ul>
                     </div>
                 </div>
+
+
+
+                <div>
+                    <h3 class="text-gray-800 text-lg font-semibold font-['Roboto'] mb-3 lg:mb-4">Quick Links</h3>
+                    <ul class="list-none space-y-2 sm:space-y-3 lg:space-y-4">
+                        <li class="text-neutral-400 text-sm font-normal font-['Roboto'] relative cursor-pointer 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-neutral-400 
+               after:transition-all after:duration-300 hover:after:w-full">
+                            Home
+                        </li>
+                        <li class="text-neutral-400 text-sm font-normal font-['Roboto'] relative cursor-pointer 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-neutral-400 
+               after:transition-all after:duration-300 hover:after:w-full">
+                            About
+                        </li>
+                        <li class="text-neutral-400 text-sm font-normal font-['Roboto'] relative cursor-pointer 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-neutral-400 
+               after:transition-all after:duration-300 hover:after:w-full">
+                            Contact Us
+                        </li>
+                        <li class="text-neutral-400 text-sm font-normal font-['Roboto'] relative cursor-pointer 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-neutral-400 
+               after:transition-all after:duration-300 hover:after:w-full">
+                            FAQ
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="space-y-3">
+                    <h3 class="text-gray-800 text-lg font-semibold font-['Roboto'] mb-3 lg:mb-4">Contact</h3>
+                    <div class="flex justify-start lg:justify-center items-start gap-4">
+                        <img src="assets/images/mark.svg" alt="">
+                        <div class="w-80 flex flex-col space-y-1">
+                            <span class="text-neutral-400 text-sm font-normal font-['Roboto'] leading-normal">
+                                1968 S. Coast Hwy #1917 Laguna Beach, CA 92651
+                            </span>
+                            <span class="text-black text-sm font-normal font-['Roboto'] leading-normal">
+                                +1 (442) 319 1309
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-start lg:justify-center items-start gap-4">
+                        <img src="assets/images/mark.svg" alt="">
+                        <div class="w-80 flex flex-col space-y-1">
+                            <span class="text-neutral-400 text-sm font-normal font-['Roboto'] leading-normal">
+                                1968 S. Coast Hwy #1917 Laguna Beach, CA 92651
+                            </span>
+                            <span class="text-black text-sm font-normal font-['Roboto'] leading-normal">
+                                +1 (442) 319 1309
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
             <!-- Bottom Section -->
@@ -1344,9 +1550,9 @@
 
                 // Toggle plus/minus icon
                 if (expanded) {
-                    icon.innerHTML = '<path d="M5 12h14" />'; // Minus
+                    icon.innerHTML = '<path d="M12 5v14M5 12h14" />'; // Minus
                 } else {
-                    icon.innerHTML = '<path d="M12 5v14M5 12h14" />'; // Plus
+                    icon.innerHTML = '<path d="M5 12h14" />'; // Plus
                 }
             });
         });

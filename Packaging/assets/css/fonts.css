@@ -3,7 +3,7 @@
     src: url('../fonts/Manrope-Regular.eot');
     src: url('../fonts/Manrope-Regular.eot?#iefix') format('embedded-opentype'),
         url('../fonts/Manrope-Regular.woff2') format('woff2'),
-        url('Manrope-Regular.woff') format('woff'),
+        url('../fonts/Manrope-Regular.woff') format('woff'),
         url('../fonts/Manrope-Regular.ttf') format('truetype'),
         url('../fonts/Manrope-Regular.svg#Manrope-Regular') format('svg');
     font-weight: normal;
@@ -28,7 +28,7 @@
     font-family: 'ABC_Favorit';
     src: url('../fonts/ABCFavoritMono-BookItalic.eot');
     src: url('../fonts/ABCFavoritMono-BookItalic.eot?#iefix') format('embedded-opentype'),
-        url('ABCFavoritMono-BookItalic.woff2') format('woff2'),
+        url('../fonts/ABCFavoritMono-BookItalic.woff2') format('woff2'),
         url('../fonts/ABCFavoritMono-BookItalic.woff') format('woff'),
         url('../fonts/ABCFavoritMono-BookItalic.ttf') format('truetype'),
         url('../fonts/ABCFavoritMono-BookItalic.svg#ABCFavoritMono-BookItalic') format('svg');
@@ -36,3 +36,29 @@
     font-style: italic;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Plus_Jakarta_Sans';
+    src: url('../fonts/PlusJakartaSans-Regular.eot');
+    src: url('../fonts/PlusJakartaSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlusJakartaSans-Regular.woff2') format('woff2'),
+        url('../fonts/PlusJakartaSans-Regular.woff') format('woff'),
+        url('../fonts/PlusJakartaSans-Regular.ttf') format('truetype'),
+        url('../fonts/PlusJakartaSans-Regular.svg#PlusJakartaSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ABC_Favorit';
+    src: url('../fonts/ABCFavorit-Bold.eot');
+    src: url('../fonts/ABCFavorit-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ABCFavorit-Bold.woff2') format('woff2'),
+        url('../fonts/ABCFavorit-Bold.woff') format('woff'),
+        url('../fonts/ABCFavorit-Bold.ttf') format('truetype'),
+        url('../fonts/ABCFavorit-Bold.svg#ABCFavorit-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
