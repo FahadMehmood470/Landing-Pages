@@ -61,10 +61,10 @@
         </div>
 
         <div class="flex gap-8 items-center pt-4 pb-4 z-20">
-            <div>
+            <div class="">
                 <!-- Button -->
                 <button id="package_dropdownButton" data-dropdown-toggle="package_dropdown" type="button"
-                    class=" px-4 py-2 inline-flex items-center gap-2 text-black text-lg font-normal font-['Manrope']">
+                    class="px-4 py-2 inline-flex items-center gap-2 text-black text-lg font-normal font-['Manrope']">
                     By Industry
                     <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
@@ -72,19 +72,183 @@
                     </svg>
                 </button>
 
-                <!-- Dropdown Menu -->
-                <div id="package_dropdown" class="z-10 hidden bg-white rounded-lg shadow w-44">
-                    <ul class="py-2 text-sm text-gray-700">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 font-['Inter'] text-start">Domestic
-                                Flights</a></li>
-                        <li><a href="#"
-                                class="block px-4 py-2 hover:bg-gray-100 font-['Inter'] text-start">International
-                                Flights</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 font-['Inter'] text-start">Cheap
-                                Flights</a></li>
+                <!-- Dropdown Menu (Full Width) -->
+                <div id="package_dropdown"
+                    class="z-20 hidden absolute left-0 mt-2 w-full bg-white rounded-lg shadow-lg p-6">
+                    <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 lg:px-12">
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group">
+                                Apparel Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Shipping Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Pre roll Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Pre roll Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Pre roll Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Pre roll Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Pre roll Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Pre roll Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Pre roll Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Pre roll Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Pre roll Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Pre roll Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Pre roll Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Pre roll Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Pre roll Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Pre roll Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Pre roll Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Pre roll Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Pre roll Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Pre roll Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="relative block px-4 py-1 font-['Manrope'] text-black text-xs sm:text-sm md:text-base lg:text-lg font-normal transition-colors duration-300 group hover:text-rose-600">
+                                Pre roll Boxes
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[2px] bg-rose-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+                        </li>
                     </ul>
+
                 </div>
             </div>
+
 
             <a class="justify-start text-black text-lg font-normal font-['Manrope']">About Us</a>
             <a class="justify-start text-black text-lg font-normal font-['Manrope']">Contact Us</a>
@@ -259,20 +423,33 @@
                             Product Information
                         </h3>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <input type="number" placeholder="Quantity"
-                                class="w-full border rounded-[50px] outline outline-1 outline-offset-[-1px] outline-black p-3 focus:ring-2 focus:ring-black outline-none">
-                            <select
-                                class="w-full border rounded-[50px] outline outline-1 outline-offset-[-1px] outline-black p-3 focus:ring-2 focus:ring-black outline-none">
-                                <option>No printing / plain</option>
-                                <option>Full color</option>
-                                <option>Custom</option>
-                            </select>
-                            <select
-                                class="w-full border rounded-[50px] outline outline-1 outline-offset-[-1px] outline-black p-3 focus:ring-2 focus:ring-black outline-none">
-                                <option>Gloss</option>
-                                <option>Matte</option>
-                                <option>Soft Touch</option>
-                            </select>
+                            <div>
+                                <label class="text-neutral-400 text-base font-light font-['Manrope'] ">Quantity</label>
+                                <input type="number" placeholder="Quantity"
+                                    class="w-full border rounded-[50px] outline outline-1 outline-offset-[-1px] outline-black p-3 outline-none mt-2 text-black text-sm font-normal font-['Manrope'] leading-tight">
+                            </div>
+                            <div>
+                                <label class="text-neutral-400 text-base font-light font-['Manrope'] ">Printing
+                                    Option</label>
+
+                                <select
+                                    class="w-full border rounded-[50px] outline outline-1 outline-offset-[-1px] outline-black p-3 outline-none mt-2 text-black text-sm font-normal font-['Manrope'] leading-tight">
+                                    <option>No printing / plain</option>
+                                    <option>Full color</option>
+                                    <option>Custom</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="text-neutral-400 text-base font-light font-['Manrope'] ">Lamination /
+                                    Finish
+                                </label>
+                                <select
+                                    class="w-full border rounded-[50px] outline outline-1 outline-offset-[-1px] outline-black p-3 outline-none mt-2 text-black text-sm font-normal font-['Manrope'] leading-tight">
+                                    <option>Gloss</option>
+                                    <option>Matte</option>
+                                    <option>Soft Touch</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
 
@@ -283,25 +460,44 @@
                             Personal Information
                         </h3>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <input type="text" placeholder="Full Name"
-                                class="w-full border rounded-[50px] outline outline-1 outline-offset-[-1px] outline-black p-3 focus:ring-2 focus:ring-black outline-none">
-                            <input type="tel" placeholder="Phone No"
-                                class="w-full border rounded-[50px] outline outline-1 outline-offset-[-1px] outline-black p-3 focus:ring-2 focus:ring-black outline-none">
-                            <input type="email" placeholder="Email"
-                                class="w-full border rounded-[50px] outline outline-1 outline-offset-[-1px] outline-black p-3 focus:ring-2 focus:ring-black outline-none">
+                            <div>
+                                <label class="text-neutral-400 text-base font-light font-['Manrope'] ">Name
+                                </label>
+                                <input type="text" placeholder="Full Name"
+                                    class="w-full border rounded-[50px] outline outline-1 outline-offset-[-1px] outline-black p-3 outline-none mt-2 text-black text-sm font-normal font-['Manrope'] leading-tight">
+                            </div>
+                            <div>
+                                <label class="text-neutral-400 text-base font-light font-['Manrope'] ">Contact No
+                                </label>
+                                <input type="tel" placeholder="Phone No"
+                                    class="w-full border rounded-[50px] outline outline-1 outline-offset-[-1px] outline-black p-3 outline-none mt-2 text-black text-sm font-normal font-['Manrope'] leading-tight">
+                            </div>
+                            <div>
+
+                                <label class="text-neutral-400 text-base font-light font-['Manrope'] ">Email Address
+                                </label>
+                                <input type="email" placeholder="Email"
+                                    class="w-full border rounded-[50px] outline outline-1 outline-offset-[-1px] outline-black p-3 outline-none mt-2 text-black text-sm font-normal font-['Manrope'] leading-tight">
+                            </div>
                         </div>
                     </div>
 
                     <!-- Upload Work -->
                     <div>
                         <label class="block mb-2 text-gray-700">Upload your work</label>
-                        <input type="file"
-                            class="file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-gray-200 file:text-black hover:file:bg-gray-300 text-whitefont-['Manrope'] leading-tight p-3 text-base font-bold" />
+                        <label for="file-upload"
+                            class="cursor-pointer px-5 py-4 bg-stone-300 rounded-[50px] outline outline-1 outline-offset-1 inline-flex items-center gap-3">
+                            <span class="text-white text-sm font-bold font-['Manrope'] leading-tight">
+                                Choose File
+                            </span>
+                            <input id="file-upload" type="file" class="hidden" />
+                        </label>
+
                     </div>
 
                     <!-- Additional Comments -->
                     <textarea placeholder="Write additional comments..." rows="4"
-                        class="w-full border outline outline-1 outline-offset-[-1px] outline-black rounded-md p-3 focus:ring-2 focus:ring-black outline-none "></textarea>
+                        class="w-full border outline outline-1 outline-offset-[-1px] outline-black rounded-md p-3 outline-none "></textarea>
 
                     <!-- Submit -->
                     <button type="submit"
@@ -315,8 +511,9 @@
 
         <!-- Product Details Table -->
         <div class="max-w-7xl mx-auto mt-12 px-6 ">
-            <h3 class="text-xl font-semibold mb-4">Product details</h3>
-            <p class="text-gray-600 mb-6">
+            <h3 class="text-black lg:text-lg font-bold font-['Manrope'] mb-2 lg:mb-4">Product details</h3>
+            <p
+                class="text-neutral-400 text-xs sm:text-sm md:text-base lg:text-lg font-medium font-['Manrope'] leading-relaxed mb-2 sm:mb-4 lg:mb-6">
                 Discover our range of high-quality packaging materials designed to tailor your packaging order to
                 perfection.
                 From sturdy cardboard boxes to eco-friendly options, we have the ideal materials for your unique needs.
@@ -368,7 +565,94 @@
         </div>
     </section>
 
+    <div class="container mx-auto py-4 px-4 lg:px-28">
+        <div class="relative w-full max-w-6xl mx-auto">
+            
+            <div id="cardWrapper" class="overflow-hidden">
+                <div class="flex transition-transform duration-500" id="cardContainer">
 
+                    <div class="min-w-[25%] ">
+                        <div class="">
+                            <img src="assets/images/rec_1.jpg" alt="">
+                            <p class="text-black text-xl font-normal font-['Manrope'] mt-2">CBD Cream Boxes</p>
+                        </div>
+                    </div>
+
+                    <div class="min-w-[25%]">
+                        <div class="">
+                            <img src="assets/images/rec_2.jpg" alt="">
+                            <p class="text-black text-xl font-normal font-['Manrope'] mt-2">Custom Vape Boxes</p>
+                        </div>
+                    </div>
+
+                    <div class="min-w-[25%]">
+                        <div class="">
+                            <img src="assets/images/rec_3.jpg" alt="">
+                            <p class="text-black text-xl font-normal font-['Manrope'] mt-2">Cosmetic Packaging</p>
+                        </div>
+                    </div>
+
+                    <div class="min-w-[25%]">
+                        <div class="">
+                            <img src="assets/images/rec_4.jpg" alt="">
+                            <p class="text-black text-xl font-normal font-['Manrope'] mt-2">Luxury Perfume Box</p>
+                        </div>
+                    </div>
+
+                    <div class="min-w-[25%]">
+                        <div class="">
+                            <img src="assets/images/rec_1.jpg" alt="">
+                            <p class="text-black text-xl font-normal font-['Manrope'] mt-2">Food Packaging</p>
+                        </div>
+                    </div>
+
+                    <div class="min-w-[25%]">
+                        <div class="">
+                            <img src="assets/images/rec_2.jpg" alt="">
+                            <p class="text-black text-xl font-normal font-['Manrope'] mt-2">Food Packaging</p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            <!-- Prev Button -->
+            <button id="prevBtn"
+                class="absolute left-0 top-1/2 -translate-y-1/2 bg-rose-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-rose-700">
+                ← Prev
+            </button>
+
+            <!-- Next Button -->
+            <button id="nextBtn"
+                class="absolute right-0 top-1/2 -translate-y-1/2 bg-rose-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-rose-700">
+                Next →
+            </button>
+        </div>
+
+    </div>
+
+
+    <script>
+        const cardContainer = document.getElementById("cardContainer");
+        const cards = cardContainer.children.length;
+        const visibleCards = 4; // show 4 at a time
+        let currentIndex = 0;
+
+        document.getElementById("nextBtn").addEventListener("click", () => {
+            if (currentIndex < cards - visibleCards) {
+                currentIndex++;
+                cardContainer.style.transform = `translateX(-${(100 / visibleCards) * currentIndex}%)`;
+            }
+        });
+
+        document.getElementById("prevBtn").addEventListener("click", () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                cardContainer.style.transform = `translateX(-${(100 / visibleCards) * currentIndex}%)`;
+            }
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 
