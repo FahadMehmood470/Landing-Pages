@@ -5,3 +5,27 @@
    background-size: cover;
    /* height: 748px; */
 }
+
+.scroll_hidden::-webkit-scrollbar { display: none; }
+.scroll_hidden { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Marquee (infinite auto-scroll) */
+.marquee { overflow: hidden; position: relative; }
+.marquee__track {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;          /* space between logos */
+  flex-shrink: 0;
+  animation: marquee 20s linear infinite;
+}
+.marquee:hover .marquee__track { animation-play-state: paused; } /* pause on hover */
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); } /* shift by one full track width */
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track { animation: none; }
+}
