@@ -9,23 +9,31 @@
 .scroll_hidden::-webkit-scrollbar { display: none; }
 .scroll_hidden { -ms-overflow-style: none; scrollbar-width: none; }
 
-/* Marquee (infinite auto-scroll) */
+
 .marquee { overflow: hidden; position: relative; }
 .marquee__track {
   display: flex;
   align-items: center;
-  gap: 1.25rem;          /* space between logos */
+  gap: 1.25rem;         
   flex-shrink: 0;
   animation: marquee 20s linear infinite;
 }
-.marquee:hover .marquee__track { animation-play-state: paused; } /* pause on hover */
+.marquee:hover .marquee__track { animation-play-state: paused; }
 
 @keyframes marquee {
   0%   { transform: translateX(0); }
-  100% { transform: translateX(-100%); } /* shift by one full track width */
+  100% { transform: translateX(-100%); } 
 }
 
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .marquee__track { animation: none; }
+}
+
+.bg_pkg{
+      background-image: url("../images/custome_pkg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+   background-size: cover;
+   /* height: 748px; */
 }
