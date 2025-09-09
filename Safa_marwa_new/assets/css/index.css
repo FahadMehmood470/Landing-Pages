@@ -1,39 +1,85 @@
-.bg_hero{
-    background-image: url("../images/hero.png");
-    background-repeat: no-repeat;
-    background-position: center;
-   background-size: cover;
-   /* height: 748px; */
+.bg_hero {
+  background-image: url("../images/hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* height: 748px; */
 }
 
-.scroll_hidden::-webkit-scrollbar { display: none; }
-.scroll_hidden { -ms-overflow-style: none; scrollbar-width: none; }
+.scroll_hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll_hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
 
-.marquee { overflow: hidden; position: relative; }
+.marquee {
+  overflow: hidden;
+  position: relative;
+}
+
 .marquee__track {
   display: flex;
   align-items: center;
-  gap: 1.25rem;         
+  gap: 1.25rem;
   flex-shrink: 0;
   animation: marquee 20s linear infinite;
 }
-.marquee:hover .marquee__track { animation-play-state: paused; }
+
+.marquee:hover .marquee__track {
+  animation-play-state: paused;
+}
 
 @keyframes marquee {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-100%); } 
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .marquee__track { animation: none; }
+  .marquee__track {
+    animation: none;
+  }
 }
 
-.bg_pkg{
-      background-image: url("../images/custome_pkg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-   background-size: cover;
-   /* height: 748px; */
+.bg_pkg {
+  background-image: url("../images/custome_pkg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* height: 748px; */
+}
+
+[data-accordion-icon] path {
+  d: path("M12 4v16m8-8H4");
+
+}
+
+button[aria-expanded="true"] [data-accordion-icon] path {
+  d: path("M20 12H4");
+
+}
+
+.bg_card{
+    background-image: url("../images/bg_card.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 748px;
+}
+
+.bg_gate{
+      background-image: url("../images/bg_gateway.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* height: 448px; */
 }
