@@ -272,7 +272,7 @@
                 <img src="https://tawheedtravel.co.uk/public/frontend/assets/images/filter.svg" alt=""> Filter
             </button>
             <div id="filterSidebar"
-                class="fixed top-0 right-0 h-full w-80 max-w-full bg-white p-6 shadow-lg z-50 transform transition-transform duration-300 ease-in-out translate-x-full"
+                class="fixed top-0 right-0 h-full max-w-full bg-white p-6 shadow-lg z-50 transform transition-transform duration-300 ease-in-out translate-x-full"
                 style="z-index:444444;">
 
 
@@ -445,6 +445,65 @@
         </div>
     </div>
 
+    <div class="container mx-auto py-5 px-4 lg:px-24 sm:pt-8 lg:pt-12">
+        <div class="flex overflow-x-auto lg:grid lg:grid-cols-4 lg:overflow-visible gap-6 cardContainer">
+
+            <!-- Card -->
+            <div class="relative ">
+                <img src="assets/images/umrah_pkg.svg" class="w-full h-auto rounded-2xl" alt="">
+                <p class="absolute bottom-5 left-8 text-white text-3xl font-semibold font-['Poppins']">December</p>
+            </div>
+
+            <div class="relative ">
+                <img src="assets/images/umrah_pkg.svg" class="w-full h-auto rounded-2xl" alt="">
+                <p class="absolute bottom-5 left-8 text-white text-3xl font-semibold font-['Poppins']">December</p>
+            </div>
+
+            <div class="relative ">
+                <img src="assets/images/umrah_pkg.svg" class="w-full h-auto rounded-2xl" alt="">
+                <p class="absolute bottom-5 left-8 text-white text-3xl font-semibold font-['Poppins']">December</p>
+            </div>
+
+            <div class="relative ">
+                <img src="assets/images/umrah_pkg.svg" class="w-full h-auto rounded-2xl" alt="">
+                <p class="absolute bottom-5 left-8 text-white text-3xl font-semibold font-['Poppins']">December</p>
+            </div>
+
+
+            <!-- more cards… -->
+
+        </div>
+
+        <!-- Controls -->
+        <div class="flex justify-between items-center mt-4 sm:mt-6 md:mt-8 lg:mt-12">
+            <!-- Prev / Next -->
+            <div class="flex flex-row gap-2 lg:gap-3 ml-4 sm:ml-2">
+                <div
+                    class="rounded-lg outline outline-1 outline-offset-[-1px] outline-blue-950 inline-flex justify-center items-center p-2 transition duration-300 hover:outline-blue-500 cursor-pointer prevBtn">
+                    <img src="assets/images/left_arrow.svg" class="h-4 w-4 lg:h-5 lg:w-5" alt="">
+                </div>
+                <div
+                    class="rounded-lg outline outline-1 outline-offset-[-1px] outline-blue-950 inline-flex justify-center items-center p-2 transition duration-300 hover:outline-blue-500 cursor-pointer nextBtn">
+                    <img src="assets/images/right_arrow.svg" class="h-4 w-4 lg:h-5 lg:w-5" alt="">
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex gap-2 justify-center mt-4 paginationBullets"></div>
+
+            <!-- View All -->
+            <div>
+                <a href="#"
+                    class="rounded-lg outline outline-1 outline-offset-[-1px] outline-blue-950 inline-flex items-center gap-2.5 p-2 lg:p-3 transition duration-300 hover:outline-blue-500 cursor-pointer text-blue-950 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Poppins'] mt-4">
+                    View all
+                    <img src="assets/images/right_arrow.svg" class="h-3.5 w-3.5 lg:h-5 lg:w-5" alt="Right arrow">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="h-[800px]">
 
     </div>
@@ -466,6 +525,74 @@
             sidebar.classList.add('translate-x-full');
         });
     </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".cardContainer").forEach((cardContainer) => {
+                const cards = cardContainer.querySelectorAll(".card");
+                const pagination = cardContainer.closest(".container").querySelector(".paginationBullets");
+                const prevBtn = cardContainer.closest(".container").querySelector(".prevBtn");
+                const nextBtn = cardContainer.closest(".container").querySelector(".nextBtn");
+
+                let currentIndex = 0;
+
+                // Create bullets
+                pagination.innerHTML = "";
+                cards.forEach((_, index) => {
+                    const bullet = document.createElement("div");
+                    bullet.className =
+                        "w-3 h-3 rounded-full bg-gray-300 cursor-pointer transition-all duration-300";
+                    if (index === 0) bullet.classList.add("bg-blue-950");
+
+                    bullet.addEventListener("click", () => {
+                        currentIndex = index;
+                        updateSlider();
+                    });
+
+                    pagination.appendChild(bullet);
+                });
+
+                const bullets = pagination.querySelectorAll("div");
+
+                function updateSlider() {
+                    const cardWidth = cards[0].offsetWidth + 48; // card width + gap (gap-12 = 48px)
+                    cardContainer.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+                    bullets.forEach((b, i) => {
+                        b.classList.toggle("bg-blue-950", i === currentIndex);
+                        b.classList.toggle("bg-gray-300", i !== currentIndex);
+                    });
+                }
+
+                // Prev button
+                prevBtn.addEventListener("click", () => {
+                    if (currentIndex > 0) {
+                        currentIndex--;
+                        updateSlider();
+                    }
+                });
+
+                // Next button
+                nextBtn.addEventListener("click", () => {
+                    if (currentIndex < cards.length - 1) {
+                        currentIndex++;
+                        updateSlider();
+                    }
+                });
+
+                // Smooth transition
+                cardContainer.classList.add("transition-transform", "duration-500", "ease-in-out");
+
+                // Recalculate on resize (responsive)
+                window.addEventListener("resize", updateSlider);
+
+                // Init
+                updateSlider();
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
