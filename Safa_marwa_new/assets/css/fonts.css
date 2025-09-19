@@ -38,3 +38,44 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/PlusJakartaSans-Regular.eot');
+    src: url('../fonts/PlusJakartaSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlusJakartaSans-Regular.woff2') format('woff2'),
+        url('../fonts/PlusJakartaSans-Regular.woff') format('woff'),
+        url('../fonts/PlusJakartaSans-Regular.ttf') format('truetype'),
+        url('../fonts/PlusJakartaSans-Regular.svg#PlusJakartaSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tai Heritage Pro';
+    src: url('../fonts/TaiHeritagePro.eot');
+    src: url('../fonts/TaiHeritagePro.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TaiHeritagePro.woff2') format('woff2'),
+        url('../fonts/TaiHeritagePro.woff') format('woff'),
+        url('../fonts/TaiHeritagePro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Flex';
+    src: url('../fonts/RobotoFlex-Regular.eot');
+    src: url('../fonts/RobotoFlex-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoFlex-Regular.woff2') format('woff2'),
+        url('../fonts/RobotoFlex-Regular.woff') format('woff'),
+        url('../fonts/RobotoFlex-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
