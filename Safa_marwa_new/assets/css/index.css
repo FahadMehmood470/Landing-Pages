@@ -198,6 +198,11 @@ button[aria-expanded="true"] [data-accordion-icon] path {
   animation: flagWaveOut 1.4s ease-in forwards;
 }
 
+.paginationBullets div:hover {
+    transform: scale(1.2);
+}
+
+
 @keyframes flagWaveIn {
   0% {
     transform: translateY(100%) rotate(1deg) skewX(2deg);
