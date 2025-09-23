@@ -36,6 +36,41 @@
                            before:transition-all before:duration-300 hover:before:w-full hover:font-bold">
                             Umrah Packages
                         </li>
+                        <button id="dropdownDefaultButton2" data-dropdown-toggle="dropdown2"
+                            class="relative text-white lg:base xl:text-lg font-normal cursor-pointer font-['Poppins'] 
+                           before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0 before:bg-white 
+                           before:transition-all before:duration-300 hover:before:w-full hover:font-bold flex justify-center items-center"
+                            type="button">Change month <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown menu -->
+                        <div id="dropdown2"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownDefaultButton2">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
+                                        out</a>
+                                </li>
+                            </ul>
+                        </div>
                         <li class="relative text-white lg:base xl:text-lg font-normal cursor-pointer font-['Poppins'] 
                            before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:w-0 before:bg-white 
                            before:transition-all before:duration-300 hover:before:w-full hover:font-bold">
@@ -195,13 +230,15 @@
 
 
                 <div
-                    class="bg-white/10 rounded-3xl border-4 border-white backdrop-blur-lg mt-8 sm:mt-12 mb-8 md:mt-20 md:mb-12 lg:mt-28 lg:mb-16 relative ">
-                    <div class="p-4 md:p-6 lg:p-12 flex justify-between items-center">
-                        <h1 class="text-center justify-start text-white text-3xl font-semibold font-['Poppins']">August
+                    class="bg-white/10 rounded-3xl border-4 border-white backdrop-blur-lg mt-8 sm:mt-12 mb-8 md:mt-20 md:mb-12 lg:mt-28 lg:mb-16 relative p-4 lg:p-8">
+                    <div class="flex justify-between items-center">
+                        <h1
+                            class="text-center justify-start text-white text-xs sm:text-base md:text-xl lg:text-3xl font-semibold font-['Poppins']">
+                            August
                             Umrah Packages</h1>
 
                         <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                            class="text-white text-lg font-normal font-['Poppins'] flex justify-center items-center"
+                            class="text-white text-xs sm:text-base lg:text-lg font-normal font-['Poppins'] flex justify-center items-center"
                             type="button">Change month <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -235,7 +272,7 @@
                         </div>
 
                     </div>
-                    <div class="mt-6 lg:mt-10  rounded-bl-2xl rounded-br-2xl p-4 lg:p-8">
+                    <div class="mt-3 sm:mt-4 md:mt-6 lg:mt-10  rounded-bl-2xl rounded-br-2xl ">
                         <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
                             <input type="month"
                                 class="w-full px-2 py-3 lg:px-5 lg:py-4 bg-white rounded-lg text-neutral-700 text-xs md:text-sm lg:text-base font-medium font-['Poppins'] focus:outline-none focus:ring-2 focus:ring-blue-500" />
@@ -264,7 +301,7 @@
     </div>
 
     <div class="container mx-auto py-5 px-4 lg:px-24 sm:pt-8 lg:pt-12">
-        <div class="flex justify-between items-center mb-5 md:mb-8 lg:mb-12">
+        <div class="flex justify-between items-center">
             <p class="text-justify justify-start text-black/50 text-xl font-normal font-['Roboto']">Showing 45 Packages
             </p>
             <button id="openFilter"
@@ -361,86 +398,884 @@
                 </form>
             </div>
         </div>
-        <div
-            class="bg-white rounded-lg shadow-[0px_0px_31.600000381469727px_9px_rgba(78,78,78,0.06)] border border-blue-950 p-8">
-            <div class="grid grid-cols-12 lg:gap-20 ">
-                <div class="col-span-7 relative">
-                    <h4
-                        class="text-blue-950 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] hidden lg:block">
-                        August Umrah Package</h4>
-                    <h2
-                        class="text-black text-xs sm:text-sm md:text-base lg:text-3xl font-normal font-['Poppins'] mt-3">
-                        7 Nights September Umrah Package</h2>
-                    <div class="w-full h-0 outline outline-1 outline-offset-[-0.50px] outline-blue-950/30 mt-6">
+        <div class=" mt-5 md:mt-8 lg:mt-12">
+            <div
+                class="bg-white rounded-lg shadow-[0px_0px_31.600000381469727px_9px_rgba(78,78,78,0.06)] border border-blue-950 p-4 xl:p-6 2xl:p-8 hidden lg:block">
+                <div class="grid grid-cols-12 gap-4">
+                    <div class="col-span-7 relative">
+                        <h4
+                            class="text-blue-950 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] hidden lg:block">
+                            August Umrah Package</h4>
+                        <h2
+                            class="text-black text-xs sm:text-sm xl:text-xl 2xl:text-3xl font-normal font-['Poppins'] mt-3">
+                            7 Nights September Umrah Package</h2>
+                        <div
+                            class="w-[calc(100%-80px)] h-0 outline outline-1 outline-offset-[-0.5px] outline-blue-950/30 mt-6">
+                        </div>
+                        <div class="flex gap-10 items-center pt-3 pb-3">
+                            <p class="text-black text-sm xl:text-base 2xl:text-lg font-normal font-['Roboto'] pt-4">
+                                Makkah<span
+                                    class="text-black/50 text-sm xl:text-base 2xl:text-lg font-normal font-['Roboto']">
+                                    4
+                                    Nights . Saja Hotels
+                                </span>
+                            </p>
+                            <p class="text-black text-sm xl:text-base 2xl:text-lg font-normal font-['Roboto'] pt-4">
+                                Madinah<span
+                                    class="text-black/50 text-sm xl:text-base 2xl:text-lg font-normal font-['Roboto']">
+                                    3
+                                    Nights . Golden Tulip Al
+                                    Mektan </span>
+                            </p>
+                        </div>
+                        <div class="flex gap-8 2xl:gap-12 items-center mt-6">
+
+                            <div class="flex flex flex-row items-center lg:gap-3">
+                                <img src="assets/images/card_icon_1.svg" alt="Visa"
+                                    class="h-5 w-5 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 object-contain">
+                                <p
+                                    class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
+                                    Visa</p>
+                            </div>
+
+                            <div class="flex flex flex-row items-center lg:gap-3">
+                                <img src="assets/images/card_icon_2.svg" alt="Flights"
+                                    class="h-5 w-5 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 object-contain">
+                                <p
+                                    class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
+                                    Flights</p>
+
+                            </div>
+
+                            <div class="flex flex flex-row items-center lg:gap-3">
+                                <img src="assets/images/card_icon_3.svg" alt="Transfer"
+                                    class="h-5 w-5 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 object-contain">
+                                <p
+                                    class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
+                                    Transfer</p>
+
+                            </div>
+
+                            <div class="flex flex flex-row items-center lg:gap-3">
+                                <img src="assets/images/card_icon_4.svg" alt="Hotels"
+                                    class="h-5 w-5 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 object-contain">
+                                <p
+                                    class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
+                                    Hotels</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="absolute top-[-20px] xl:top-[-33px] right-0">
+                            <p
+                                class="p-2 bg-orange-500 text-neutral-50 text-base font-medium font-['Plus_Jakarta_Sans'] uppercase [writing-mode:vertical-rl]">
+                                Deposit only
+                                <span
+                                    class="text-neutral-50 text-base font-bold font-['Plus_Jakarta_Sans'] uppercase">£50</span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="flex gap-10 items-center pt-3 pb-3">
-                        <p class="text-black text-lg font-normal font-['Roboto'] pt-4">Makkah<span
-                                class="text-black/50 text-lg font-normal font-['Roboto']"> 4 Nights . Saja Hotels
-                            </span>
-                        </p>
-                        <p class="text-black text-lg font-normal font-['Roboto'] pt-4">Madinah<span
-                                class="text-black/50 text-lg font-normal font-['Roboto']"> 3 Nights . Golden Tulip Al
-                                Mektan </span>
-                        </p>
-                    </div>
-                    <div class="flex gap-12 items-center mt-6">
 
-                        <div class="flex flex flex-row items-center lg:gap-3">
-                            <img src="assets/images/card_icon_1.svg" alt="Visa"
-                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+
+
+                    <div class="col-span-5 border-l border-sky-900/30 pl-3">
+                        <div>
+                            <div class="flex items-center gap-2.5 justify-end">
+                                <p class="text-black/80 text-sm font-normal font-['Poppins']">5 Star</p>
+                                <div class="flex">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                </div>
+                            </div>
                             <p
-                                class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
-                                Visa</p>
-                        </div>
+                                class="text-end text-blue-950 text-5xl font-bold font-['Roboto_Flex'] leading-[54px] mt-8">
+                                £500 <span class="text-start text-black/80 text-sm font-normal font-['Poppins']">
+                                    per person
+                                </span></p>
+                            <p class="text-end text-blue-950 text-xs font-normal font-['Poppins']">Terms and Conditions
+                                Applied * </p>
 
-                        <div class="flex flex flex-row items-center lg:gap-3">
-                            <img src="assets/images/card_icon_2.svg" alt="Flights"
-                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
-                            <p
-                                class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
-                                Flights</p>
+                            <div class="flex items-center justify-end mt-8 gap-3">
+                                <a href="#" class="group h-10 sm:h-12 lg:h-14 px-5 px-5 bg-blue-950/30 rounded-lg inline-flex justify-center items-center gap-2.5
+                                    hover:bg-blue-950 hover:shadow-lg transition-all duration-300 ease-in-out">
+                                    <img src="assets/images/call_icon.svg" alt="Call Icon"
+                                        class="w-4 h-4 lg:h-6 lg:w-6 transform transition-transform duration-300 group-hover:translate-x-1 group-hover:rotate-180">
+                                </a>
+                                <a href="#" class="h-10 sm:h-12 lg:h-14 px-5 sm:px-6 lg:px-7 bg-blue-950 rounded-lg inline-flex justify-center items-center gap-2.5
+                                hover:bg-[#202F5975] hover:shadow-lg transition-all duration-300 ease-in-out">
+                                    <span
+                                        class="text-white text-xs sm:text-base md:text-lg lg:text-xl font-semibold font-['Poppins']">
+                                        View Details
+                                    </span>
+                                </a>
 
-                        </div>
 
-                        <div class="flex flex flex-row items-center lg:gap-3">
-                            <img src="assets/images/card_icon_3.svg" alt="Transfer"
-                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
-                            <p
-                                class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
-                                Transfer</p>
+                            </div>
 
-                        </div>
-
-                        <div class="flex flex flex-row items-center lg:gap-3">
-                            <img src="assets/images/card_icon_4.svg" alt="Hotels"
-                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
-                            <p
-                                class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
-                                Hotels</p>
 
                         </div>
-
                     </div>
 
-                    <div class="absolute top-[-33px] right-0">
-                        <p
-                            class="p-2 bg-orange-500 text-neutral-50 text-base font-medium font-['Plus_Jakarta_Sans'] uppercase [writing-mode:vertical-rl]">
+
+
+
+                </div>
+            </div>
+            <div
+                class="bg-white rounded shadow-[0px_0px_31.600000381469727px_9px_rgba(78,78,78,0.06)] border-[0.50px] border-blue-950 p-3 block lg:hidden">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-black text-xs font-semibold font-['Plus_Jakarta_Sans']">3 Star 10 Nights September
+                        Umrah
+                    </h2>
+                    <div class="flex items-center justify-center">
+                        <img src="assets/images/yellow_star.svg" class="w-5 h-5" alt="">
+                        <img src="assets/images/yellow_star.svg" class="w-5 h-5" alt="">
+                        <img src="assets/images/yellow_star.svg" class="w-5 h-5" alt="">
+                    </div>
+                </div>
+                <div class="flex justify-between items-center relative mb-5">
+                    <div class="inline-flex justify-end items-end gap-0.5 mt-3 lg:mt-4">
+                        <h2
+                            class="justify-start text-orange-500 text-2xl font-bold font-['Roboto_Flex'] leading-normal">
+                            £500
+                        </h2>
+                        <span class="justify-start text-black text-[10px] font-normal font-['Poppins']">/pp</span>
+                    </div>
+                    <div class="w-24 h-6  bg-orange-500 flex items-center justify-center absolute right-[-18px]">
+                        <span class="text-neutral-50 text-[8px] font-medium font-['Plus_Jakarta_Sans'] uppercase">
                             Deposit only
+                        </span>
+                        <span class="text-neutral-50 text-[8px] font-bold font-['Plus_Jakarta_Sans'] uppercase ml-1">
+                            £50
+                        </span>
+                    </div>
+                </div>
+                <hr class="h-0 outline outline-[0.50px] outline-offset-[-0.25px] outline-blue-950/30" />
+                <div class="flex justify-between items-center mt-3 lg:mt-4">
+                    <p class="text-justify justify-start text-black/50 text-xs font-normal font-['Plus_Jakarta_Sans']">
+                        Makkah 4N</p>
+                    <p class="text-justify justify-start text-black/50 text-xs font-normal font-['Plus_Jakarta_Sans']">
+                        Makkah 4N</p>
+                </div>
+                <div class="flex justify-between items-center mt-6 mb-5">
+
+                    <div class="flex flex-row items-center gap-1 md:gap-2 lg:gap-3">
+                        <img src="assets/images/card_icon_1.svg" alt="Visa"
+                            class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                        <p
+                            class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
+                            Visa</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-1 md:gap-2 lg:gap-3">
+                        <img src="assets/images/card_icon_2.svg" alt="Flights"
+                            class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                        <p
+                            class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
+                            Flights</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-1 md:gap-2 lg:gap-3">
+                        <img src="assets/images/card_icon_3.svg" alt="Transfer"
+                            class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                        <p
+                            class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
+                            Transfer</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-1 md:gap-2 lg:gap-3">
+                        <img src="assets/images/card_icon_4.svg" alt="Hotels"
+                            class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                        <p
+                            class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
+                            Hotels</p>
+                    </div>
+
+                </div>
+                <hr class="h-0 outline outline-[0.50px] outline-offset-[-0.25px] outline-blue-950/30" />
+                <div class="flex justify-between items-center pt-5">
+                    <div class="flex lg:gap-2 items-center justify-center">
+                        <p
+                            class="text-orange-500 text-xs sm:text-base md:text-lg lg:text-xl font-medium font-['Plus_Jakarta_Sans'] leading-normal">
+                            View Detail</p>
+                        <img src="assets/images/forward_icon.svg" class="w-3.5 h-3.5 lg:h-5 lg:w-5" alt="">
+                    </div>
+                    <div>
+                        <a href="#"
+                            class="h-10 sm:h-12 lg:h-14 px-5 sm:px-6 lg:px-7 bg-blue-950 rounded-lg inline-flex justify-center items-center gap-2.5
+                                          hover:bg-[#202F5975] hover:shadow-lg transition-all duration-300 ease-in-out">
                             <span
-                                class="text-neutral-50 text-base font-bold font-['Plus_Jakarta_Sans'] uppercase">£50</span>
-                        </p>
+                                class="text-white text-xs sm:text-base md:text-lg lg:text-xl font-semibold font-['Poppins'] ">Book
+                                Now</span>
+                            <img src="assets/images/call_icon.svg" alt="Call Icon"
+                                class="w-4 h-4 lg:h-6 lg:w-6 transform transition-transform duration-300 group-hover:translate-x-1 hover:rotate-180">
+                        </a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class=" mt-5 md:mt-8 lg:mt-12">
+            <div
+                class="bg-white rounded-lg shadow-[0px_0px_31.600000381469727px_9px_rgba(78,78,78,0.06)] border border-blue-950 p-4 xl:p-6 2xl:p-8 hidden lg:block">
+                <div class="grid grid-cols-12 gap-4">
+                    <div class="col-span-7 relative">
+                        <h4
+                            class="text-blue-950 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] hidden lg:block">
+                            August Umrah Package</h4>
+                        <h2
+                            class="text-black text-xs sm:text-sm xl:text-xl 2xl:text-3xl font-normal font-['Poppins'] mt-3">
+                            7 Nights September Umrah Package</h2>
+                        <div
+                            class="w-[calc(100%-80px)] h-0 outline outline-1 outline-offset-[-0.5px] outline-blue-950/30 mt-6">
+                        </div>
+                        <div class="flex gap-10 items-center pt-3 pb-3">
+                            <p class="text-black text-sm xl:text-base 2xl:text-lg font-normal font-['Roboto'] pt-4">
+                                Makkah<span
+                                    class="text-black/50 text-sm xl:text-base 2xl:text-lg font-normal font-['Roboto']">
+                                    4
+                                    Nights . Saja Hotels
+                                </span>
+                            </p>
+                            <p class="text-black text-sm xl:text-base 2xl:text-lg font-normal font-['Roboto'] pt-4">
+                                Madinah<span
+                                    class="text-black/50 text-sm xl:text-base 2xl:text-lg font-normal font-['Roboto']">
+                                    3
+                                    Nights . Golden Tulip Al
+                                    Mektan </span>
+                            </p>
+                        </div>
+                        <div class="flex gap-8 2xl:gap-12 items-center mt-6">
+
+                            <div class="flex flex flex-row items-center lg:gap-3">
+                                <img src="assets/images/card_icon_1.svg" alt="Visa"
+                                    class="h-5 w-5 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 object-contain">
+                                <p
+                                    class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
+                                    Visa</p>
+                            </div>
+
+                            <div class="flex flex flex-row items-center lg:gap-3">
+                                <img src="assets/images/card_icon_2.svg" alt="Flights"
+                                    class="h-5 w-5 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 object-contain">
+                                <p
+                                    class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
+                                    Flights</p>
+
+                            </div>
+
+                            <div class="flex flex flex-row items-center lg:gap-3">
+                                <img src="assets/images/card_icon_3.svg" alt="Transfer"
+                                    class="h-5 w-5 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 object-contain">
+                                <p
+                                    class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
+                                    Transfer</p>
+
+                            </div>
+
+                            <div class="flex flex flex-row items-center lg:gap-3">
+                                <img src="assets/images/card_icon_4.svg" alt="Hotels"
+                                    class="h-5 w-5 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 object-contain">
+                                <p
+                                    class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
+                                    Hotels</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="absolute top-[-20px] xl:top-[-33px] right-0">
+                            <p
+                                class="p-2 bg-orange-500 text-neutral-50 text-base font-medium font-['Plus_Jakarta_Sans'] uppercase [writing-mode:vertical-rl]">
+                                Deposit only
+                                <span
+                                    class="text-neutral-50 text-base font-bold font-['Plus_Jakarta_Sans'] uppercase">£50</span>
+                            </p>
+                        </div>
+                    </div>
 
 
 
-                <div class="">
-                    <div class="float-right">
-                        <div class="w-0 h-60 outline outline-1 outline-sky-900/30"></div>
+                    <div class="col-span-5 border-l border-sky-900/30 pl-3">
+                        <div>
+                            <div class="flex items-center gap-2.5 justify-end">
+                                <p class="text-black/80 text-sm font-normal font-['Poppins']">5 Star</p>
+                                <div class="flex">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                </div>
+                            </div>
+                            <p
+                                class="text-end text-blue-950 text-5xl font-bold font-['Roboto_Flex'] leading-[54px] mt-8">
+                                £500 <span class="text-start text-black/80 text-sm font-normal font-['Poppins']">
+                                    per person
+                                </span></p>
+                            <p class="text-end text-blue-950 text-xs font-normal font-['Poppins']">Terms and Conditions
+                                Applied * </p>
+
+                            <div class="flex items-center justify-end mt-8 gap-3">
+                                <a href="#" class="group h-10 sm:h-12 lg:h-14 px-5 px-5 bg-blue-950/30 rounded-lg inline-flex justify-center items-center gap-2.5
+                                    hover:bg-blue-950 hover:shadow-lg transition-all duration-300 ease-in-out">
+                                    <img src="assets/images/call_icon.svg" alt="Call Icon"
+                                        class="w-4 h-4 lg:h-6 lg:w-6 transform transition-transform duration-300 group-hover:translate-x-1 group-hover:rotate-180">
+                                </a>
+                                <a href="#" class="h-10 sm:h-12 lg:h-14 px-5 sm:px-6 lg:px-7 bg-blue-950 rounded-lg inline-flex justify-center items-center gap-2.5
+                                hover:bg-[#202F5975] hover:shadow-lg transition-all duration-300 ease-in-out">
+                                    <span
+                                        class="text-white text-xs sm:text-base md:text-lg lg:text-xl font-semibold font-['Poppins']">
+                                        View Details
+                                    </span>
+                                </a>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div
+                class="bg-white rounded shadow-[0px_0px_31.600000381469727px_9px_rgba(78,78,78,0.06)] border-[0.50px] border-blue-950 p-3 block lg:hidden">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-black text-xs font-semibold font-['Plus_Jakarta_Sans']">3 Star 10 Nights September
+                        Umrah
+                    </h2>
+                    <div class="flex items-center justify-center">
+                        <img src="assets/images/yellow_star.svg" class="w-5 h-5" alt="">
+                        <img src="assets/images/yellow_star.svg" class="w-5 h-5" alt="">
+                        <img src="assets/images/yellow_star.svg" class="w-5 h-5" alt="">
                     </div>
                 </div>
+                <div class="flex justify-between items-center relative mb-5">
+                    <div class="inline-flex justify-end items-end gap-0.5 mt-3 lg:mt-4">
+                        <h2
+                            class="justify-start text-orange-500 text-2xl font-bold font-['Roboto_Flex'] leading-normal">
+                            £500
+                        </h2>
+                        <span class="justify-start text-black text-[10px] font-normal font-['Poppins']">/pp</span>
+                    </div>
+                    <div class="w-24 h-6  bg-orange-500 flex items-center justify-center absolute right-[-18px]">
+                        <span class="text-neutral-50 text-[8px] font-medium font-['Plus_Jakarta_Sans'] uppercase">
+                            Deposit only
+                        </span>
+                        <span class="text-neutral-50 text-[8px] font-bold font-['Plus_Jakarta_Sans'] uppercase ml-1">
+                            £50
+                        </span>
+                    </div>
+                </div>
+                <hr class="h-0 outline outline-[0.50px] outline-offset-[-0.25px] outline-blue-950/30" />
+                <div class="flex justify-between items-center mt-3 lg:mt-4">
+                    <p class="text-justify justify-start text-black/50 text-xs font-normal font-['Plus_Jakarta_Sans']">
+                        Makkah 4N</p>
+                    <p class="text-justify justify-start text-black/50 text-xs font-normal font-['Plus_Jakarta_Sans']">
+                        Makkah 4N</p>
+                </div>
+                <div class="flex justify-between items-center mt-6 mb-5">
+
+                    <div class="flex flex-row items-center gap-1 md:gap-2 lg:gap-3">
+                        <img src="assets/images/card_icon_1.svg" alt="Visa"
+                            class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                        <p
+                            class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
+                            Visa</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-1 md:gap-2 lg:gap-3">
+                        <img src="assets/images/card_icon_2.svg" alt="Flights"
+                            class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                        <p
+                            class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
+                            Flights</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-1 md:gap-2 lg:gap-3">
+                        <img src="assets/images/card_icon_3.svg" alt="Transfer"
+                            class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                        <p
+                            class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
+                            Transfer</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-1 md:gap-2 lg:gap-3">
+                        <img src="assets/images/card_icon_4.svg" alt="Hotels"
+                            class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                        <p
+                            class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
+                            Hotels</p>
+                    </div>
+
+                </div>
+                <hr class="h-0 outline outline-[0.50px] outline-offset-[-0.25px] outline-blue-950/30" />
+                <div class="flex justify-between items-center pt-5">
+                    <div class="flex lg:gap-2 items-center justify-center">
+                        <p
+                            class="text-orange-500 text-xs sm:text-base md:text-lg lg:text-xl font-medium font-['Plus_Jakarta_Sans'] leading-normal">
+                            View Detail</p>
+                        <img src="assets/images/forward_icon.svg" class="w-3.5 h-3.5 lg:h-5 lg:w-5" alt="">
+                    </div>
+                    <div>
+                        <a href="#"
+                            class="h-10 sm:h-12 lg:h-14 px-5 sm:px-6 lg:px-7 bg-blue-950 rounded-lg inline-flex justify-center items-center gap-2.5
+                                          hover:bg-[#202F5975] hover:shadow-lg transition-all duration-300 ease-in-out">
+                            <span
+                                class="text-white text-xs sm:text-base md:text-lg lg:text-xl font-semibold font-['Poppins'] ">Book
+                                Now</span>
+                            <img src="assets/images/call_icon.svg" alt="Call Icon"
+                                class="w-4 h-4 lg:h-6 lg:w-6 transform transition-transform duration-300 group-hover:translate-x-1 hover:rotate-180">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" mt-5 md:mt-8 lg:mt-12">
+            <div
+                class="bg-white rounded-lg shadow-[0px_0px_31.600000381469727px_9px_rgba(78,78,78,0.06)] border border-blue-950 p-4 xl:p-6 2xl:p-8 hidden lg:block">
+                <div class="grid grid-cols-12 gap-4">
+                    <div class="col-span-7 relative">
+                        <h4
+                            class="text-blue-950 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] hidden lg:block">
+                            August Umrah Package</h4>
+                        <h2
+                            class="text-black text-xs sm:text-sm xl:text-xl 2xl:text-3xl font-normal font-['Poppins'] mt-3">
+                            7 Nights September Umrah Package</h2>
+                        <div
+                            class="w-[calc(100%-80px)] h-0 outline outline-1 outline-offset-[-0.5px] outline-blue-950/30 mt-6">
+                        </div>
+                        <div class="flex gap-10 items-center pt-3 pb-3">
+                            <p class="text-black text-sm xl:text-base 2xl:text-lg font-normal font-['Roboto'] pt-4">
+                                Makkah<span
+                                    class="text-black/50 text-sm xl:text-base 2xl:text-lg font-normal font-['Roboto']">
+                                    4
+                                    Nights . Saja Hotels
+                                </span>
+                            </p>
+                            <p class="text-black text-sm xl:text-base 2xl:text-lg font-normal font-['Roboto'] pt-4">
+                                Madinah<span
+                                    class="text-black/50 text-sm xl:text-base 2xl:text-lg font-normal font-['Roboto']">
+                                    3
+                                    Nights . Golden Tulip Al
+                                    Mektan </span>
+                            </p>
+                        </div>
+                        <div class="flex gap-8 2xl:gap-12 items-center mt-6">
+
+                            <div class="flex flex flex-row items-center lg:gap-3">
+                                <img src="assets/images/card_icon_1.svg" alt="Visa"
+                                    class="h-5 w-5 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 object-contain">
+                                <p
+                                    class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
+                                    Visa</p>
+                            </div>
+
+                            <div class="flex flex flex-row items-center lg:gap-3">
+                                <img src="assets/images/card_icon_2.svg" alt="Flights"
+                                    class="h-5 w-5 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 object-contain">
+                                <p
+                                    class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
+                                    Flights</p>
+
+                            </div>
+
+                            <div class="flex flex flex-row items-center lg:gap-3">
+                                <img src="assets/images/card_icon_3.svg" alt="Transfer"
+                                    class="h-5 w-5 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 object-contain">
+                                <p
+                                    class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
+                                    Transfer</p>
+
+                            </div>
+
+                            <div class="flex flex flex-row items-center lg:gap-3">
+                                <img src="assets/images/card_icon_4.svg" alt="Hotels"
+                                    class="h-5 w-5 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 object-contain">
+                                <p
+                                    class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
+                                    Hotels</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="absolute top-[-20px] xl:top-[-33px] right-0">
+                            <p
+                                class="p-2 bg-orange-500 text-neutral-50 text-base font-medium font-['Plus_Jakarta_Sans'] uppercase [writing-mode:vertical-rl]">
+                                Deposit only
+                                <span
+                                    class="text-neutral-50 text-base font-bold font-['Plus_Jakarta_Sans'] uppercase">£50</span>
+                            </p>
+                        </div>
+                    </div>
 
 
+
+                    <div class="col-span-5 border-l border-sky-900/30 pl-3">
+                        <div>
+                            <div class="flex items-center gap-2.5 justify-end">
+                                <p class="text-black/80 text-sm font-normal font-['Poppins']">5 Star</p>
+                                <div class="flex">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                </div>
+                            </div>
+                            <p
+                                class="text-end text-blue-950 text-5xl font-bold font-['Roboto_Flex'] leading-[54px] mt-8">
+                                £500 <span class="text-start text-black/80 text-sm font-normal font-['Poppins']">
+                                    per person
+                                </span></p>
+                            <p class="text-end text-blue-950 text-xs font-normal font-['Poppins']">Terms and Conditions
+                                Applied * </p>
+
+                            <div class="flex items-center justify-end mt-8 gap-3">
+                                <a href="#" class="group h-10 sm:h-12 lg:h-14 px-5 px-5 bg-blue-950/30 rounded-lg inline-flex justify-center items-center gap-2.5
+                                    hover:bg-blue-950 hover:shadow-lg transition-all duration-300 ease-in-out">
+                                    <img src="assets/images/call_icon.svg" alt="Call Icon"
+                                        class="w-4 h-4 lg:h-6 lg:w-6 transform transition-transform duration-300 group-hover:translate-x-1 group-hover:rotate-180">
+                                </a>
+                                <a href="#" class="h-10 sm:h-12 lg:h-14 px-5 sm:px-6 lg:px-7 bg-blue-950 rounded-lg inline-flex justify-center items-center gap-2.5
+                                hover:bg-[#202F5975] hover:shadow-lg transition-all duration-300 ease-in-out">
+                                    <span
+                                        class="text-white text-xs sm:text-base md:text-lg lg:text-xl font-semibold font-['Poppins']">
+                                        View Details
+                                    </span>
+                                </a>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div
+                class="bg-white rounded shadow-[0px_0px_31.600000381469727px_9px_rgba(78,78,78,0.06)] border-[0.50px] border-blue-950 p-3 block lg:hidden">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-black text-xs font-semibold font-['Plus_Jakarta_Sans']">3 Star 10 Nights September
+                        Umrah
+                    </h2>
+                    <div class="flex items-center justify-center">
+                        <img src="assets/images/yellow_star.svg" class="w-5 h-5" alt="">
+                        <img src="assets/images/yellow_star.svg" class="w-5 h-5" alt="">
+                        <img src="assets/images/yellow_star.svg" class="w-5 h-5" alt="">
+                    </div>
+                </div>
+                <div class="flex justify-between items-center relative mb-5">
+                    <div class="inline-flex justify-end items-end gap-0.5 mt-3 lg:mt-4">
+                        <h2
+                            class="justify-start text-orange-500 text-2xl font-bold font-['Roboto_Flex'] leading-normal">
+                            £500
+                        </h2>
+                        <span class="justify-start text-black text-[10px] font-normal font-['Poppins']">/pp</span>
+                    </div>
+                    <div class="w-24 h-6  bg-orange-500 flex items-center justify-center absolute right-[-18px]">
+                        <span class="text-neutral-50 text-[8px] font-medium font-['Plus_Jakarta_Sans'] uppercase">
+                            Deposit only
+                        </span>
+                        <span class="text-neutral-50 text-[8px] font-bold font-['Plus_Jakarta_Sans'] uppercase ml-1">
+                            £50
+                        </span>
+                    </div>
+                </div>
+                <hr class="h-0 outline outline-[0.50px] outline-offset-[-0.25px] outline-blue-950/30" />
+                <div class="flex justify-between items-center mt-3 lg:mt-4">
+                    <p class="text-justify justify-start text-black/50 text-xs font-normal font-['Plus_Jakarta_Sans']">
+                        Makkah 4N</p>
+                    <p class="text-justify justify-start text-black/50 text-xs font-normal font-['Plus_Jakarta_Sans']">
+                        Makkah 4N</p>
+                </div>
+                <div class="flex justify-between items-center mt-6 mb-5">
+
+                    <div class="flex flex-row items-center gap-1 md:gap-2 lg:gap-3">
+                        <img src="assets/images/card_icon_1.svg" alt="Visa"
+                            class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                        <p
+                            class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
+                            Visa</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-1 md:gap-2 lg:gap-3">
+                        <img src="assets/images/card_icon_2.svg" alt="Flights"
+                            class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                        <p
+                            class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
+                            Flights</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-1 md:gap-2 lg:gap-3">
+                        <img src="assets/images/card_icon_3.svg" alt="Transfer"
+                            class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                        <p
+                            class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
+                            Transfer</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-1 md:gap-2 lg:gap-3">
+                        <img src="assets/images/card_icon_4.svg" alt="Hotels"
+                            class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                        <p
+                            class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
+                            Hotels</p>
+                    </div>
+
+                </div>
+                <hr class="h-0 outline outline-[0.50px] outline-offset-[-0.25px] outline-blue-950/30" />
+                <div class="flex justify-between items-center pt-5">
+                    <div class="flex lg:gap-2 items-center justify-center">
+                        <p
+                            class="text-orange-500 text-xs sm:text-base md:text-lg lg:text-xl font-medium font-['Plus_Jakarta_Sans'] leading-normal">
+                            View Detail</p>
+                        <img src="assets/images/forward_icon.svg" class="w-3.5 h-3.5 lg:h-5 lg:w-5" alt="">
+                    </div>
+                    <div>
+                        <a href="#"
+                            class="h-10 sm:h-12 lg:h-14 px-5 sm:px-6 lg:px-7 bg-blue-950 rounded-lg inline-flex justify-center items-center gap-2.5
+                                          hover:bg-[#202F5975] hover:shadow-lg transition-all duration-300 ease-in-out">
+                            <span
+                                class="text-white text-xs sm:text-base md:text-lg lg:text-xl font-semibold font-['Poppins'] ">Book
+                                Now</span>
+                            <img src="assets/images/call_icon.svg" alt="Call Icon"
+                                class="w-4 h-4 lg:h-6 lg:w-6 transform transition-transform duration-300 group-hover:translate-x-1 hover:rotate-180">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" mt-5 md:mt-8 lg:mt-12">
+            <div
+                class="bg-white rounded-lg shadow-[0px_0px_31.600000381469727px_9px_rgba(78,78,78,0.06)] border border-blue-950 p-4 xl:p-6 2xl:p-8 hidden lg:block">
+                <div class="grid grid-cols-12 gap-4">
+                    <div class="col-span-7 relative">
+                        <h4
+                            class="text-blue-950 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] hidden lg:block">
+                            August Umrah Package</h4>
+                        <h2
+                            class="text-black text-xs sm:text-sm xl:text-xl 2xl:text-3xl font-normal font-['Poppins'] mt-3">
+                            7 Nights September Umrah Package</h2>
+                        <div
+                            class="w-[calc(100%-80px)] h-0 outline outline-1 outline-offset-[-0.5px] outline-blue-950/30 mt-6">
+                        </div>
+                        <div class="flex gap-10 items-center pt-3 pb-3">
+                            <p class="text-black text-sm xl:text-base 2xl:text-lg font-normal font-['Roboto'] pt-4">
+                                Makkah<span
+                                    class="text-black/50 text-sm xl:text-base 2xl:text-lg font-normal font-['Roboto']">
+                                    4
+                                    Nights . Saja Hotels
+                                </span>
+                            </p>
+                            <p class="text-black text-sm xl:text-base 2xl:text-lg font-normal font-['Roboto'] pt-4">
+                                Madinah<span
+                                    class="text-black/50 text-sm xl:text-base 2xl:text-lg font-normal font-['Roboto']">
+                                    3
+                                    Nights . Golden Tulip Al
+                                    Mektan </span>
+                            </p>
+                        </div>
+                        <div class="flex gap-8 2xl:gap-12 items-center mt-6">
+
+                            <div class="flex flex flex-row items-center lg:gap-3">
+                                <img src="assets/images/card_icon_1.svg" alt="Visa"
+                                    class="h-5 w-5 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 object-contain">
+                                <p
+                                    class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
+                                    Visa</p>
+                            </div>
+
+                            <div class="flex flex flex-row items-center lg:gap-3">
+                                <img src="assets/images/card_icon_2.svg" alt="Flights"
+                                    class="h-5 w-5 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 object-contain">
+                                <p
+                                    class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
+                                    Flights</p>
+
+                            </div>
+
+                            <div class="flex flex flex-row items-center lg:gap-3">
+                                <img src="assets/images/card_icon_3.svg" alt="Transfer"
+                                    class="h-5 w-5 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 object-contain">
+                                <p
+                                    class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
+                                    Transfer</p>
+
+                            </div>
+
+                            <div class="flex flex flex-row items-center lg:gap-3">
+                                <img src="assets/images/card_icon_4.svg" alt="Hotels"
+                                    class="h-5 w-5 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 object-contain">
+                                <p
+                                    class="justify-start text-black/80 text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight">
+                                    Hotels</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="absolute top-[-20px] xl:top-[-33px] right-0">
+                            <p
+                                class="p-2 bg-orange-500 text-neutral-50 text-base font-medium font-['Plus_Jakarta_Sans'] uppercase [writing-mode:vertical-rl]">
+                                Deposit only
+                                <span
+                                    class="text-neutral-50 text-base font-bold font-['Plus_Jakarta_Sans'] uppercase">£50</span>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-span-5 border-l border-sky-900/30 pl-3">
+                        <div>
+                            <div class="flex items-center gap-2.5 justify-end">
+                                <p class="text-black/80 text-sm font-normal font-['Poppins']">5 Star</p>
+                                <div class="flex">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                    <img src="assets/images/yellow_star.svg" class="h-auto max-w-full" alt="">
+                                </div>
+                            </div>
+                            <p
+                                class="text-end text-blue-950 text-5xl font-bold font-['Roboto_Flex'] leading-[54px] mt-8">
+                                £500 <span class="text-start text-black/80 text-sm font-normal font-['Poppins']">
+                                    per person
+                                </span></p>
+                            <p class="text-end text-blue-950 text-xs font-normal font-['Poppins']">Terms and Conditions
+                                Applied * </p>
+
+                            <div class="flex items-center justify-end mt-8 gap-3">
+                                <a href="#" class="group h-10 sm:h-12 lg:h-14 px-5 px-5 bg-blue-950/30 rounded-lg inline-flex justify-center items-center gap-2.5
+                                    hover:bg-blue-950 hover:shadow-lg transition-all duration-300 ease-in-out">
+                                    <img src="assets/images/call_icon.svg" alt="Call Icon"
+                                        class="w-4 h-4 lg:h-6 lg:w-6 transform transition-transform duration-300 group-hover:translate-x-1 group-hover:rotate-180">
+                                </a>
+                                <a href="#" class="h-10 sm:h-12 lg:h-14 px-5 sm:px-6 lg:px-7 bg-blue-950 rounded-lg inline-flex justify-center items-center gap-2.5
+                                hover:bg-[#202F5975] hover:shadow-lg transition-all duration-300 ease-in-out">
+                                    <span
+                                        class="text-white text-xs sm:text-base md:text-lg lg:text-xl font-semibold font-['Poppins']">
+                                        View Details
+                                    </span>
+                                </a>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div
+                class="bg-white rounded shadow-[0px_0px_31.600000381469727px_9px_rgba(78,78,78,0.06)] border-[0.50px] border-blue-950 p-3 block lg:hidden">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-black text-xs font-semibold font-['Plus_Jakarta_Sans']">3 Star 10 Nights September
+                        Umrah
+                    </h2>
+                    <div class="flex items-center justify-center">
+                        <img src="assets/images/yellow_star.svg" class="w-5 h-5" alt="">
+                        <img src="assets/images/yellow_star.svg" class="w-5 h-5" alt="">
+                        <img src="assets/images/yellow_star.svg" class="w-5 h-5" alt="">
+                    </div>
+                </div>
+                <div class="flex justify-between items-center relative mb-5">
+                    <div class="inline-flex justify-end items-end gap-0.5 mt-3 lg:mt-4">
+                        <h2
+                            class="justify-start text-orange-500 text-2xl font-bold font-['Roboto_Flex'] leading-normal">
+                            £500
+                        </h2>
+                        <span class="justify-start text-black text-[10px] font-normal font-['Poppins']">/pp</span>
+                    </div>
+                    <div class="w-24 h-6  bg-orange-500 flex items-center justify-center absolute right-[-18px]">
+                        <span class="text-neutral-50 text-[8px] font-medium font-['Plus_Jakarta_Sans'] uppercase">
+                            Deposit only
+                        </span>
+                        <span class="text-neutral-50 text-[8px] font-bold font-['Plus_Jakarta_Sans'] uppercase ml-1">
+                            £50
+                        </span>
+                    </div>
+                </div>
+                <hr class="h-0 outline outline-[0.50px] outline-offset-[-0.25px] outline-blue-950/30" />
+                <div class="flex justify-between items-center mt-3 lg:mt-4">
+                    <p class="text-justify justify-start text-black/50 text-xs font-normal font-['Plus_Jakarta_Sans']">
+                        Makkah 4N</p>
+                    <p class="text-justify justify-start text-black/50 text-xs font-normal font-['Plus_Jakarta_Sans']">
+                        Makkah 4N</p>
+                </div>
+                <div class="flex justify-between items-center mt-6 mb-5">
+
+                    <div class="flex flex-row items-center gap-1 md:gap-2 lg:gap-3">
+                        <img src="assets/images/card_icon_1.svg" alt="Visa"
+                            class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                        <p
+                            class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
+                            Visa</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-1 md:gap-2 lg:gap-3">
+                        <img src="assets/images/card_icon_2.svg" alt="Flights"
+                            class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                        <p
+                            class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
+                            Flights</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-1 md:gap-2 lg:gap-3">
+                        <img src="assets/images/card_icon_3.svg" alt="Transfer"
+                            class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                        <p
+                            class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
+                            Transfer</p>
+                    </div>
+
+                    <div class="flex flex-row items-center gap-1 md:gap-2 lg:gap-3">
+                        <img src="assets/images/card_icon_4.svg" alt="Hotels"
+                            class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                        <p
+                            class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
+                            Hotels</p>
+                    </div>
+
+                </div>
+                <hr class="h-0 outline outline-[0.50px] outline-offset-[-0.25px] outline-blue-950/30" />
+                <div class="flex justify-between items-center pt-5">
+                    <div class="flex lg:gap-2 items-center justify-center">
+                        <p
+                            class="text-orange-500 text-xs sm:text-base md:text-lg lg:text-xl font-medium font-['Plus_Jakarta_Sans'] leading-normal">
+                            View Detail</p>
+                        <img src="assets/images/forward_icon.svg" class="w-3.5 h-3.5 lg:h-5 lg:w-5" alt="">
+                    </div>
+                    <div>
+                        <a href="#"
+                            class="h-10 sm:h-12 lg:h-14 px-5 sm:px-6 lg:px-7 bg-blue-950 rounded-lg inline-flex justify-center items-center gap-2.5
+                                          hover:bg-[#202F5975] hover:shadow-lg transition-all duration-300 ease-in-out">
+                            <span
+                                class="text-white text-xs sm:text-base md:text-lg lg:text-xl font-semibold font-['Poppins'] ">Book
+                                Now</span>
+                            <img src="assets/images/call_icon.svg" alt="Call Icon"
+                                class="w-4 h-4 lg:h-6 lg:w-6 transform transition-transform duration-300 group-hover:translate-x-1 hover:rotate-180">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -470,13 +1305,10 @@
             </div>
 
 
-            <!-- more cards… -->
 
         </div>
 
-        <!-- Controls -->
         <div class="flex justify-between items-center mt-4 sm:mt-6 md:mt-8 lg:mt-12">
-            <!-- Prev / Next -->
             <div class="flex flex-row gap-2 lg:gap-3 ml-4 sm:ml-2">
                 <div
                     class="rounded-lg outline outline-1 outline-offset-[-1px] outline-blue-950 inline-flex justify-center items-center p-2 transition duration-300 hover:outline-blue-500 cursor-pointer prevBtn">
@@ -488,7 +1320,6 @@
                 </div>
             </div>
 
-            <!-- Pagination -->
             <div class="flex gap-2 justify-center mt-4 paginationBullets"></div>
 
             <!-- View All -->

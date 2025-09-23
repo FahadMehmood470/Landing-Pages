@@ -64,11 +64,108 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
                 </div>
                 <div class="flex items-center gap-5">
                     <div>
-                        <a href="#" class="xl:w-56 px-5 py-2.5 lg:py-3.5 bg-white text-blue-950 sm:text-sm md:text-lg lg:text-xl font-semibold font-['Poppins'] rounded-lg inline-flex justify-center items-center gap-2.5
+                        <button data-modal-target="default-modal" data-modal-toggle="default-modal" class="xl:w-56 px-5 py-2.5 lg:py-3.5 bg-white text-blue-950 sm:text-sm md:text-lg lg:text-xl font-semibold font-['Poppins'] rounded-lg inline-flex justify-center items-center gap-2.5
                       transition-all duration-300 hover:bg-blue-900 hover:text-white hover:shadow-lg">
                             Book Now
-                        </a>
+                        </button>
+
+
+
                     </div>
+
+                    <div id="default-modal" tabindex="-1" aria-hidden="true"
+                        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative p-4 w-full max-w-4xl max-h-full">
+
+                            <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                                <div class=" p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+                                    <div class="grid grid-cols-2 pt-6">
+                                        <div>
+                                            <h2
+                                                class="text-center text-blue-950 text-3xl font-semibold font-['Poppins'] mb-6">
+                                                How it Works
+                                            </h2>
+
+                                            <div class="flex items-center gap-3 mb-4">
+                                                <div
+                                                    class="px-3 py-1 rounded-full border border-orange-500 text-orange-500 text-lg font-semibold font-['Poppins']">
+                                                    1
+                                                </div>
+                                                <p class="text-black text-lg font-normal font-['Plus_Jakarta_Sans']">
+                                                    Tell us details of your Umrah plan.
+                                                </p>
+                                            </div>
+
+                                            <div class="flex items-center gap-3 mb-4">
+                                                <div
+                                                    class="px-3 py-1 rounded-full border border-orange-500 text-orange-500 text-lg font-semibold font-['Poppins']">
+                                                    2
+                                                </div>
+                                                <p class="text-black text-lg font-normal font-['Plus_Jakarta_Sans']">
+                                                    Collect and adjust agent quotes.
+                                                </p>
+                                            </div>
+
+                                            <div class="flex items-center gap-3">
+                                                <div
+                                                    class="px-3 py-1 rounded-full border border-orange-500 text-orange-500 text-lg font-semibold font-['Poppins']">
+                                                    3
+                                                </div>
+                                                <p class="text-black text-lg font-normal font-['Plus_Jakarta_Sans']">
+                                                    Select and book best deal.
+                                                </p>
+                                            </div>
+
+                                            <div class="flex justify-between items-center mt-6 pr-8">
+
+                                                    <img src="assets/images/card_icon_1.svg" alt="Visa"
+                                                        class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-12 lg:w-12 object-contain">
+
+
+                                                    <img src="assets/images/card_icon_2.svg" alt="Flights"
+                                                        class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-12 lg:w-12 object-contain">
+
+
+                                                    <img src="assets/images/card_icon_3.svg" alt="Transfer"
+                                                        class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-12 lg:w-12 object-contain">
+
+
+                                                    <img src="assets/images/card_icon_4.svg" alt="Hotels"
+                                                        class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-12 lg:w-12 object-contain">
+                                            </div>
+
+                                            <hr class="w-full h-0.5 bg-orange-500 mt-4 lg:mt-8">
+                                            <div class="flex justify-center gap-3 mt-5 items-center">
+                                                <img src="assets/images/call_icon_yellow.svg" class="h-auto max-w-full" alt="">
+                                                <p class="justify-start text-black text-sm font-normal font-['Poppins'] leading-normal">Call Us for details</p>
+                                            </div>
+                                            <p class="text-center mt-5 text-blue-950 text-3xl font-semibold font-['Poppins'] leading-tight">0203-062-8929</p>
+                                        </div>
+
+                                        <div class="relative">
+                                            <h3
+                                                class="self-stretch text-center justify-start text-orange-500 text-2xl font-semibold font-['Poppins'] leading-7">
+                                                Get Ready for Your <br />Umrah.</h3>
+                                            <button type="button"
+                                                class="absolute right-0 top-0 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                                data-modal-hide="default-modal">
+                                                <svg class="w-3 h-3" aria-hidden="true"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                                    <path stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2"
+                                                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                                </svg>
+                                                <span class="sr-only">Close modal</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="text-center block lg:hidden">
                         <img src="assets/images/menu.svg" class="h-auto max-w-full cursor-pointer"
                             data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
@@ -676,7 +773,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
                         <div
                             class="bg-white rounded-lg packageblock hover:border-[0.50px] hover:border-blue-950 transition-all duration-500 ease-in-out">
                             <div class="grid grid-cols-1 lg:grid-cols-12">
-                                <div class="p-6 col-span-8">
+                                <div class="p-3 sm:p-4 lg:p-6 col-span-8">
 
                                     <div class="flex justify-between items-center">
                                         <p
@@ -746,7 +843,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_1.svg" alt="Visa"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Visa</p>
@@ -754,7 +851,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_2.svg" alt="Flights"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Flights</p>
@@ -762,7 +859,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_3.svg" alt="Transfer"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Transfer</p>
@@ -770,7 +867,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_4.svg" alt="Hotels"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Hotels</p>
@@ -825,7 +922,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
                         <div
                             class="bg-white rounded-lg packageblock hover:border-[0.50px] hover:border-blue-950 transition-all duration-500 ease-in-out">
                             <div class="grid grid-cols-1 lg:grid-cols-12">
-                                <div class="p-6 col-span-8">
+                                <div class="p-3 sm:p-4 lg:p-6 col-span-8">
 
                                     <div class="flex justify-between items-center">
                                         <p
@@ -895,7 +992,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_1.svg" alt="Visa"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Visa</p>
@@ -903,7 +1000,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_2.svg" alt="Flights"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Flights</p>
@@ -911,7 +1008,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_3.svg" alt="Transfer"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Transfer</p>
@@ -919,7 +1016,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_4.svg" alt="Hotels"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Hotels</p>
@@ -974,7 +1071,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
                         <div
                             class="bg-white rounded-lg packageblock hover:border-[0.50px] hover:border-blue-950 transition-all duration-500 ease-in-out">
                             <div class="grid grid-cols-1 lg:grid-cols-12">
-                                <div class="p-6 col-span-8">
+                                <div class="p-3 sm:p-4 lg:p-6 col-span-8">
 
                                     <div class="flex justify-between items-center">
                                         <p
@@ -1044,7 +1141,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_1.svg" alt="Visa"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Visa</p>
@@ -1052,7 +1149,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_2.svg" alt="Flights"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Flights</p>
@@ -1060,7 +1157,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_3.svg" alt="Transfer"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Transfer</p>
@@ -1068,7 +1165,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_4.svg" alt="Hotels"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Hotels</p>
@@ -1175,7 +1272,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
                         <div
                             class="bg-white rounded-lg packageblock hover:border-[0.50px] hover:border-blue-950 transition-all duration-500 ease-in-out">
                             <div class="grid grid-cols-1 lg:grid-cols-12">
-                                <div class="p-6 col-span-8">
+                                <div class="p-3 sm:p-4 lg:p-6 col-span-8">
 
                                     <div class="flex justify-between items-center">
                                         <p
@@ -1245,7 +1342,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_1.svg" alt="Visa"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Visa</p>
@@ -1253,7 +1350,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_2.svg" alt="Flights"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Flights</p>
@@ -1261,7 +1358,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_3.svg" alt="Transfer"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Transfer</p>
@@ -1269,7 +1366,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_4.svg" alt="Hotels"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Hotels</p>
@@ -1324,7 +1421,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
                         <div
                             class="bg-white rounded-lg packageblock hover:border-[0.50px] hover:border-blue-950 transition-all duration-500 ease-in-out">
                             <div class="grid grid-cols-1 lg:grid-cols-12">
-                                <div class="p-6 col-span-8">
+                                <div class="p-3 sm:p-4 lg:p-6 col-span-8">
 
                                     <div class="flex justify-between items-center">
                                         <p
@@ -1394,7 +1491,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_1.svg" alt="Visa"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Visa</p>
@@ -1402,7 +1499,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_2.svg" alt="Flights"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Flights</p>
@@ -1410,7 +1507,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_3.svg" alt="Transfer"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Transfer</p>
@@ -1418,7 +1515,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_4.svg" alt="Hotels"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Hotels</p>
@@ -1473,7 +1570,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
                         <div
                             class="bg-white rounded-lg packageblock hover:border-[0.50px] hover:border-blue-950 transition-all duration-500 ease-in-out">
                             <div class="grid grid-cols-1 lg:grid-cols-12">
-                                <div class="p-6 col-span-8">
+                                <div class="p-3 sm:p-4 lg:p-6 col-span-8">
 
                                     <div class="flex justify-between items-center">
                                         <p
@@ -1543,7 +1640,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_1.svg" alt="Visa"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Visa</p>
@@ -1551,7 +1648,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_2.svg" alt="Flights"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Flights</p>
@@ -1559,7 +1656,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_3.svg" alt="Transfer"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Transfer</p>
@@ -1567,7 +1664,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_4.svg" alt="Hotels"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Hotels</p>
@@ -1770,7 +1867,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
                         <div
                             class="bg-white rounded-lg packageblock hover:border-[0.50px] hover:border-blue-950 transition-all duration-500 ease-in-out">
                             <div class="grid grid-cols-1 lg:grid-cols-12">
-                                <div class="p-6 col-span-8">
+                                <div class="p-3 sm:p-4 lg:p-6 col-span-8">
 
                                     <div class="flex justify-between items-center">
                                         <p
@@ -1840,7 +1937,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_1.svg" alt="Visa"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Visa</p>
@@ -1848,7 +1945,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_2.svg" alt="Flights"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Flights</p>
@@ -1856,7 +1953,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_3.svg" alt="Transfer"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Transfer</p>
@@ -1864,7 +1961,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_4.svg" alt="Hotels"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Hotels</p>
@@ -1919,7 +2016,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
                         <div
                             class="bg-white rounded-lg packageblock hover:border-[0.50px] hover:border-blue-950 transition-all duration-500 ease-in-out">
                             <div class="grid grid-cols-1 lg:grid-cols-12">
-                                <div class="p-6 col-span-8">
+                                <div class="p-3 sm:p-4 lg:p-6 col-span-8">
 
                                     <div class="flex justify-between items-center">
                                         <p
@@ -1989,7 +2086,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_1.svg" alt="Visa"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Visa</p>
@@ -1997,7 +2094,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_2.svg" alt="Flights"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Flights</p>
@@ -2005,7 +2102,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_3.svg" alt="Transfer"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Transfer</p>
@@ -2013,7 +2110,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_4.svg" alt="Hotels"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Hotels</p>
@@ -2068,7 +2165,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
                         <div
                             class="bg-white rounded-lg packageblock hover:border-[0.50px] hover:border-blue-950 transition-all duration-500 ease-in-out">
                             <div class="grid grid-cols-1 lg:grid-cols-12">
-                                <div class="p-6 col-span-8">
+                                <div class="p-3 sm:p-4 lg:p-6 col-span-8">
                                     <div class="flex justify-between items-center">
                                         <p
                                             class="text-black text-xs sm:text-base md:text-lg lg:text-2xl font-semibold font-['Plus_Jakarta_Sans']">
@@ -2137,7 +2234,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_1.svg" alt="Visa"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Visa</p>
@@ -2145,7 +2242,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_2.svg" alt="Flights"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Flights</p>
@@ -2153,7 +2250,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_3.svg" alt="Transfer"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Transfer</p>
@@ -2161,7 +2258,7 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
 
                                         <div class="flex flex-row lg:flex-col items-center gap-1 md:gap-2 lg:gap-0">
                                             <img src="assets/images/card_icon_4.svg" alt="Hotels"
-                                                class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
+                                                class="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 object-contain">
                                             <p
                                                 class="text-black/50 text-xs sm:text-sm md:text-base lg:text-lg font-normal font-['Plus_Jakarta_Sans'] leading-tight mt-2">
                                                 Hotels</p>
@@ -2948,85 +3045,85 @@ Safa <span class="text-orange-500 text-3xl font-extrabold font-['Ruda']">&</span
         });
     </script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".cardContainer").forEach((container) => {
-      const wrapper = container.closest(".container"); // parent wrapper
-      const prevBtn = wrapper.querySelector(".prevBtn");
-      const nextBtn = wrapper.querySelector(".nextBtn");
-      const pagination = wrapper.querySelector(".paginationBullets");
-      const cards = container.children;
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".cardContainer").forEach((container) => {
+                const wrapper = container.closest(".container"); // parent wrapper
+                const prevBtn = wrapper.querySelector(".prevBtn");
+                const nextBtn = wrapper.querySelector(".nextBtn");
+                const pagination = wrapper.querySelector(".paginationBullets");
+                const cards = container.children;
 
-      let currentIndex = 0;
+                let currentIndex = 0;
 
-      function getVisibleCards() {
-        return window.innerWidth >= 1024 ? 2 : 1; // lg: 2, else 1
-      }
+                function getVisibleCards() {
+                    return window.innerWidth >= 1024 ? 2 : 1; // lg: 2, else 1
+                }
 
-      // Create bullets dynamically
-      pagination.innerHTML = "";
-      Array.from(cards).forEach((_, index) => {
-        const bullet = document.createElement("div");
-        bullet.className =
-          "w-3 h-3 rounded-full bg-gray-300 cursor-pointer transition-all duration-300";
-        if (index === 0) bullet.classList.add("bg-blue-950");
+                // Create bullets dynamically
+                pagination.innerHTML = "";
+                Array.from(cards).forEach((_, index) => {
+                    const bullet = document.createElement("div");
+                    bullet.className =
+                        "w-3 h-3 rounded-full bg-gray-300 cursor-pointer transition-all duration-300";
+                    if (index === 0) bullet.classList.add("bg-blue-950");
 
-        bullet.addEventListener("click", () => {
-          currentIndex = index;
-          updateSlider();
+                    bullet.addEventListener("click", () => {
+                        currentIndex = index;
+                        updateSlider();
+                    });
+
+                    pagination.appendChild(bullet);
+                });
+
+                const bullets = pagination.querySelectorAll("div");
+
+                function updateSlider() {
+                    const cardWidth = cards[0].offsetWidth + 24; // card + gap
+                    container.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+                    // update bullets
+                    bullets.forEach((b, i) => {
+                        b.classList.toggle("bg-blue-950", i === currentIndex);
+                        b.classList.toggle("bg-gray-300", i !== currentIndex);
+                    });
+
+                    // disable/enable buttons
+                    prevBtn.classList.toggle("opacity-50", currentIndex === 0);
+                    prevBtn.classList.toggle("pointer-events-none", currentIndex === 0);
+
+                    nextBtn.classList.toggle(
+                        "opacity-50",
+                        currentIndex >= cards.length - getVisibleCards()
+                    );
+                    nextBtn.classList.toggle(
+                        "pointer-events-none",
+                        currentIndex >= cards.length - getVisibleCards()
+                    );
+                }
+
+                nextBtn.addEventListener("click", () => {
+                    if (currentIndex < cards.length - getVisibleCards()) {
+                        currentIndex++;
+                        updateSlider();
+                    }
+                });
+
+                prevBtn.addEventListener("click", () => {
+                    if (currentIndex > 0) {
+                        currentIndex--;
+                        updateSlider();
+                    }
+                });
+
+                window.addEventListener("resize", updateSlider);
+
+                // Init
+                container.classList.add("transition-transform", "duration-500", "ease-in-out");
+                updateSlider();
+            });
         });
-
-        pagination.appendChild(bullet);
-      });
-
-      const bullets = pagination.querySelectorAll("div");
-
-      function updateSlider() {
-        const cardWidth = cards[0].offsetWidth + 24; // card + gap
-        container.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-
-        // update bullets
-        bullets.forEach((b, i) => {
-          b.classList.toggle("bg-blue-950", i === currentIndex);
-          b.classList.toggle("bg-gray-300", i !== currentIndex);
-        });
-
-        // disable/enable buttons
-        prevBtn.classList.toggle("opacity-50", currentIndex === 0);
-        prevBtn.classList.toggle("pointer-events-none", currentIndex === 0);
-
-        nextBtn.classList.toggle(
-          "opacity-50",
-          currentIndex >= cards.length - getVisibleCards()
-        );
-        nextBtn.classList.toggle(
-          "pointer-events-none",
-          currentIndex >= cards.length - getVisibleCards()
-        );
-      }
-
-      nextBtn.addEventListener("click", () => {
-        if (currentIndex < cards.length - getVisibleCards()) {
-          currentIndex++;
-          updateSlider();
-        }
-      });
-
-      prevBtn.addEventListener("click", () => {
-        if (currentIndex > 0) {
-          currentIndex--;
-          updateSlider();
-        }
-      });
-
-      window.addEventListener("resize", updateSlider);
-
-      // Init
-      container.classList.add("transition-transform", "duration-500", "ease-in-out");
-      updateSlider();
-    });
-  });
-</script>
+    </script>
 
 
 
