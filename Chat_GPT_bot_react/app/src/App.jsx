@@ -5,11 +5,11 @@ import './App.css'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, MessageInput, TypingIndicator, Message } from "@chatscope/chat-ui-kit-react";
 function App() {
-  const API_KEY = "sk-proj-"
+  const API_KEY = ""
   const [typing, setTyping] = useState(false)
   const [messages, setMessages] = useState([
     {
-      message: "Hello i Am Chat GPT",
+      message: "restaurant chatbot",
       sender: "ChatGPT",
       direction: "ingoing"
 
@@ -45,10 +45,9 @@ function App() {
     })
 
     const systemMessage = {
-      role: "system",
-  "content": "You are Experiance Travel Age"
-
-    }
+  role: "system",
+  content: "You are a helpful restaurant chatbot. Your job is to show the menu, take orders, confirm them, and collect delivery details politely. Always ask step by step."
+}
 
     const apiRequestBody = {
       "model": "gpt-3.5-turbo",
@@ -88,7 +87,7 @@ function App() {
         <MainContainer>
           <ChatContainer>
             <MessageList
-              typingIndicator={typing ? <TypingIndicator content="chatGPT is typing" /> : null}
+              typingIndicator={typing ? <TypingIndicator content="Agent is typing" /> : null}
             >
               {
                 messages.map((message, i) => {
