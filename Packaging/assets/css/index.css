@@ -17,6 +17,16 @@
     letter-spacing: -0.4px;
 }
 
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* moves half width for seamless loop */
+}
+
+.animate-slide {
+  animation: slide 20s linear infinite;
+}
+
+
 .search_round {
     width: 40px;
     height: 40px;
