@@ -2,11 +2,13 @@
 export const content = [
   "./index.html",
   "./src/**/*.{js,ts,jsx,tsx}",
-  "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}"
+  "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
 ];
 export const theme = {
-  extend: {},
+  extend: {
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
+    },
+  },
 };
-export const plugins = [
-  require('flowbite/plugin')
-];
+export const plugins = [require("flowbite/plugin")];
