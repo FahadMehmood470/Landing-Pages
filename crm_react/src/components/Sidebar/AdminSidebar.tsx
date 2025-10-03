@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-const MySidebar = () => {
+const AdminSidebar = () => {
   const menuItems = [
     {
       id: 1,
@@ -101,4 +101,4 @@ const MySidebar = () => {
   );
 };
 
-export default MySidebar;
+export default AdminSidebar;

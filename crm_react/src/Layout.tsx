@@ -1,11 +1,12 @@
-import MySidebar from "./components/Sidebar";
+import AdminSidebar from "./components/Sidebar/AdminSidebar";
 import { Outlet } from "react-router-dom";
+import "./Pages/Admin/Component.css"
 
 const Layout = () => {
   return (
     <div className="flex">
-      <MySidebar />
-      <div className="flex-1 p-6">
+      <AdminSidebar />
+      <div className="flex-1 dashborad_gradient">
         <Outlet />
       </div>
     </div>
