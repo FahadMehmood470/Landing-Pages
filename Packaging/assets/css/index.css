@@ -26,6 +26,10 @@
   animation: slide 20s linear infinite;
 }
 
+.use_after ::after{
+    background-image: url("../images/top_arrow.svg");
+}
+
 
 .search_round {
     width: 40px;
