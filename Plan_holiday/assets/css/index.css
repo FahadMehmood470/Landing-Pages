@@ -83,7 +83,7 @@ body {
     font-size: 64px;
     font-style: normal;
     font-weight: 400;
-    /* line-height: 70px; */
+    line-height: 70px;
     width: 68%;
     /* 109.375% */
 }
@@ -94,7 +94,7 @@ body {
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
-    /* line-height: 70px; */
+    line-height: 70px;
     /* 109.375% */
 }
 
@@ -828,6 +828,7 @@ a:hover {
     font-weight: 800;
     line-height: normal;
     text-align: center;
+    margin-left: -300px;
 }
 
 .confidence-p {
@@ -1459,10 +1460,12 @@ a:hover {
 
     .make-tour-span {
         font-size: 30px;
+        line-height: normal;
     }
 
     .make-tour {
         font-size: 30px;
+        line-height: normal;
     }
 
     .align-item-on-small-screen {
@@ -1529,6 +1532,10 @@ a:hover {
     .overflow-on-scroll {
         overflow: scroll;
         height: 100vh;
+    }
+
+    .confidence{
+        margin-left: auto;
     }
 }
 

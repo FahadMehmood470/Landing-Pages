@@ -3,9 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Home Page</title>
   <link rel="stylesheet" href="assets/css/fonts.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -17,7 +19,7 @@
 
 <body>
   <div class="bg-white">
-    <div class="container mx-auto ">
+    <div class="container mx-auto px-4">
 
       <!-- Navbar -->
       <nav class="mt-6 mb-5 flex items-center justify-between  display-block ">
@@ -29,21 +31,21 @@
         <!-- Centered Icons (Destination, Packages, Hotels, Blog) -->
         <div class="flex space-x-8">
           <a href="#" class="nav-icon-nav hover:text-blue-500">
-            <i class="fas fa-map-marker-alt"></i> Destination
+            <i class="fas fa-map-marker-alt mr-1"></i> Destination
           </a>
           <a href="#" class="nav-icon-nav hover:text-blue-500">
-            <i class="fas fa-box-open"></i> Packages
+            <i class="fas fa-plane mr-1"></i> Packages
           </a>
           <a href="#" class="nav-icon-nav hover:text-blue-500">
-            <i class="fas fa-hotel"></i> Hotels
+            <i class="fas fa-hotel mr-1"></i> Hotels
           </a>
           <a href="#" class="nav-icon-nav hover:text-blue-500">
-            <i class="fas fa-blog"></i> Blog
+            <i class="fas fa-bolt mr-1"></i> Blog
           </a>
         </div>
 
         <!-- Right side (Phone No & Signin Button) -->
-        <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-6">
           <p class="nav-phone-number">
             1800-123-5555
           </p>
@@ -154,13 +156,13 @@
 
   <div class="bg-hero  overflow-hidden">
     <div class="">
-      <div class="container mx-auto ">
+      <div class="container mx-auto px-4">
         <div class=" lg:mt-[144px] md:mt-[100px] sm:mt-[20px]">
-          <h3 class="make-tour">Let’s make a tour <span class="make-tour-span">Memorable the Convenient</span></h3>
+          <h3 class="make-tour">Let’s make a tour <br /> <span class="make-tour-span">Memorable the Convenient</span>
+          </h3>
           <div class="mt-[32px] ">
-            <div class="form p-1">
-              <form class=" ms-[40px] me-[40px] mt-[62px] bg-white ">
-                <!-- Icons Section -->
+            <div class=" bg-white rounded-tr-[40px] md:w-[481px] p-1">
+              <form class="p-4 md:p-6 lg:p-8">
                 <div class="  ">
                   <i
                     class="fas fa-map-marker-alt cursor-pointer text-gray-600 p-3 hover:border-b-2 hover:border-red-500 hover:text-[#FF626D]"></i>
@@ -170,94 +172,95 @@
                     class="fas fa-hotel cursor-pointer text-gray-600 p-3 hover:border-b-2 hover:border-red-500 hover:text-[#FF626D]"></i>
                 </div>
 
-                <!-- From Where Dropdown -->
-                <div class="form-input mt-[22px]">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <div class="input-wrapper">
-                    <label for="from" class="from-where">From where</label>
-                    <div class="relative mb-4">
-                      <select id="from" name="from" class="w-full custom-select Destination">
-                        <option value="" disabled selected>Your Airport</option>
-                        <option value="airport1">Airport 1</option>
-                        <option value="airport2">Airport 2</option>
-                      </select>
-                      <span class="custom-icon">
-                        <i class="fas fa-chevron-down"></i> <!-- Your custom chevron down icon -->
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-
-
-                <!-- To Where Dropdown -->
-                <div class="form-input mt-[22px]">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <div class="input-wrapper">
-                    <label for="from" class="from-where">To where</label>
-                    <div class="relative mb-4">
-                      <select id="from" name="from" class="w-full custom-select Destination">
-                        <option value="" disabled selected>Destination</option>
-                        <option value="airport1">Airport 1</option>
-                        <option value="airport2">Airport 2</option>
-                      </select>
-                      <span class="custom-icon">
-                        <i class="fas fa-chevron-down"></i> <!-- Your custom chevron down icon -->
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Departure and Return Dates -->
-                <div class="flex space-x-4 mt-[22px]">
-                  <!-- Departure Date -->
-                  <div class="form-input w-[48%]">
-                    <i class="fas fa-calendar-alt"></i> <!-- Icon for date -->
+                <!-- <div class="grid grid-cols-1">
+                  <div class="form-input mt-[22px]">
+                    <i class="fas fa-map-marker-alt"></i>
                     <div class="input-wrapper">
-                      <label for="departure" class="from-where">Departure Date</label>
+                      <label for="from" class="from-where">From where</label>
                       <div class="relative mb-4">
-                        <input type="date" id="departure" name="departure" class="w-full custom-select">
+                        <select id="from" name="from" class="w-full custom-select Destination">
+                          <option value="" disabled selected>Your Airport</option>
+                          <option value="airport1">Airport 1</option>
+                          <option value="airport2">Airport 2</option>
+                        </select>
+                        <span class="custom-icon">
+                          <i class="fas fa-chevron-down"></i>
+                        </span>
                       </div>
                     </div>
                   </div>
 
-                  <!-- Return Date -->
-                  <div class="form-input w-[48%]">
-                    <i class="fas fa-calendar-alt"></i> <!-- Icon for date -->
+
+
+                  <div class="form-input mt-[22px]">
+                    <i class="fas fa-map-marker-alt"></i>
                     <div class="input-wrapper">
-                      <label for="return" class="from-where">Return Date</label>
+                      <label for="from" class="text-gray-700/40 text-[10px] font-normal font-['Lato'] leading-3">To
+                        where</label>
                       <div class="relative mb-4">
-                        <input type="date" id="return" name="return" class="w-full custom-select">
+                        <select id="from3" name="from" class="w-full custom-select Destination">
+                          <option value="" disabled selected>Destination</option>
+                          <option value="airport1">Airport 1</option>
+                          <option value="airport2">Airport 2</option>
+                        </select>
+                        <span class="custom-icon">
+                          <i class="fas fa-chevron-down"></i>
+                        </span>
                       </div>
                     </div>
                   </div>
 
-                </div>
+                  <div class="flex lg:space-x-4 mt-[22px] grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-0">
+                    <div class="form-input">
+                      <i class="fas fa-calendar-alt"></i>
+                      <div class="input-wrapper">
+                        <label for="departure"
+                          class="text-gray-700/40 text-[10px] font-normal font-['Lato'] leading-3">Departure
+                          Date</label>
+                        <div class="relative mb-4">
+                          <input type="date" id="departure" name="departure" class="w-full custom-select">
+                        </div>
+                      </div>
+                    </div>
 
-                <!-- Number of Guests -->
-                <div class="form-input mt-[22px]">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <div class="input-wrapper">
-                    <label for="from" class="from-where">Number Of Guests</label>
-                    <div class="relative mb-4">
-                      <select id="from" name="from" class="w-full custom-select Destination">
-                        <option value="" disabled selected>3 Adults 2 Childeren</option>
-                        <option value="airport1">Airport 1</option>
-                        <option value="airport2">Airport 2</option>
-                      </select>
-                      <span class="custom-icon">
-                        <i class="fas fa-chevron-down"></i> <!-- Your custom chevron down icon -->
-                      </span>
+                    <div class="form-input">
+                      <i class="fas fa-calendar-alt"></i>
+                      <div class="input-wrapper">
+                        <label for="return"
+                          class="text-gray-700/40 text-[10px] font-normal font-['Lato'] leading-3">Return Date</label>
+                        <div class="relative mb-4">
+                          <input type="date" id="return" name="return" class="w-full custom-select">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="form-input mt-[22px]">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="input-wrapper">
+                      <label for="from" class="text-gray-700/40 text-[10px] font-normal font-['Lato'] leading-3">Number
+                        Of Guests</label>
+                      <div class="relative mb-4">
+                        <select id="from2" name="from" class="w-full custom-select Destination">
+                          <option value="" disabled selected>3 Adults 2 Childeren</option>
+                          <option value="airport1">Airport 1</option>
+                          <option value="airport2">Airport 2</option>
+                        </select>
+                        <span class="custom-icon">
+                          <i class="fas fa-chevron-down"></i> 
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <!-- Submit Button -->
-                <div class="mt-[36px]">
-                  <button type="submit" class="Holidays-btn">
-                    Search Holidays
-                  </button>
-                </div>
+                  <div class="mt-[36px]">
+                    <button type="submit" class="Holidays-btn">
+                      Search Holidays
+                    </button>
+                  </div>
+                </div> -->
+
               </form>
             </div>
           </div>
@@ -322,9 +325,18 @@
     </div>
   </div>
 
+  <div class=" container mx-auto mt-12 relative">
+    <div class="hidden lg:block">
+      <i class="fa-solid fa-chevron-left swiper-prev absolute left-[-60px] top-[300px] text-center justify-start text-pink-700 text-5xl font-black 
+      font-['Font_Awesome_5_Free'] leading-[67.20px]"></i>
+
+      <i class="fa-solid fa-chevron-right swiper-next absolute right-[-60px] top-[300px] text-center justify-start text-pink-700 text-5xl font-black 
+      font-['Font_Awesome_5_Free'] leading-[67.20px]"></i>
+    </div>
+
+    <!-- <div class="swiper-pagination absolute"></div> -->
 
 
-  <div class=" container mx-auto mt-12  ">
     <h3 class="best-pkg mb-[40px]">Best Flash Packages for your next Holiday</h3>
     <div class="swiper mySwiper ms-4 me-4">
       <div class="swiper-wrapper ms-4 me-4">
@@ -347,7 +359,7 @@
                 <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
                 <p class="discount mt-2">-15%</p>
               </div>
-              </p>
+
             </div>
           </div>
         </div>
@@ -372,7 +384,6 @@
                 <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
                 <p class="discount mt-2">-15%</p>
               </div>
-              </p>
             </div>
           </div>
         </div>
@@ -396,7 +407,6 @@
                 <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
                 <p class="discount mt-2">-15%</p>
               </div>
-              </p>
             </div>
           </div>
         </div>
@@ -422,7 +432,6 @@
                 <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
                 <p class="discount mt-2">-15%</p>
               </div>
-              </p>
             </div>
           </div>
         </div>
@@ -447,17 +456,19 @@
                 <p class="orignal-price">£175 <span class="orignal-price-per">/ Per person</span></p>
                 <p class="discount mt-2">-15%</p>
               </div>
-              </p>
+
             </div>
           </div>
         </div>
 
       </div>
       <!-- Navigation Buttons -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <!-- Pagination -->
-      <div class="swiper-pagination"></div>
+      <!-- <div class="swiper-button-next"></div> -->
+      <!-- <div class="swiper-button-prev"></div> -->
+
+
+
+      <div class="swiper-pagination hidden"></div>
     </div>
   </div>
 
@@ -550,7 +561,7 @@
   </div>
 
 
-  <div class="bg-[#fcf4f7] py-16">
+  <div class="bg-[#fcf4f7] py-16 hidden lg:block">
     <div class="container mx-auto px-4">
       <!-- Heading -->
       <h2 class="Popular-destination mb-[40px] ">
@@ -654,7 +665,7 @@
                 <div class="input-wrapper">
                   <label for="from" class="from-where">To where</label>
                   <div class="relative mb-4">
-                    <select id="from" name="from" class="w-full custom-select Destination">
+                    <select id="from1" name="from" class="w-full custom-select Destination">
                       <option value="" disabled selected>Destination</option>
                       <option value="airport1">Airport 1</option>
                       <option value="airport2">Airport 2</option>
@@ -720,7 +731,6 @@
                 <p class="Start-from">Starts from</p>
                 <p class="Start-from-price">£150 <span class="Start-from-span">/ Per night</span></p>
               </div>
-              </p>
             </div>
           </div>
         </div>
@@ -742,7 +752,6 @@
                 <p class="Start-from">Starts from</p>
                 <p class="Start-from-price">£150 <span class="Start-from-span">/ Per night</span></p>
               </div>
-              </p>
             </div>
           </div>
         </div>
@@ -763,7 +772,6 @@
                 <p class="Start-from">Starts from</p>
                 <p class="Start-from-price">£150 <span class="Start-from-span">/ Per night</span></p>
               </div>
-              </p>
             </div>
           </div>
         </div>
@@ -787,7 +795,6 @@
                 <p class="Start-from">Starts from</p>
                 <p class="Start-from-price">£150 <span class="Start-from-span">/ Per night</span></p>
               </div>
-              </p>
             </div>
           </div>
         </div>
@@ -808,7 +815,6 @@
                 <p class="Start-from">Starts from</p>
                 <p class="Start-from-price">£150 <span class="Start-from-span">/ Per night</span></p>
               </div>
-              </p>
             </div>
           </div>
         </div>
@@ -1126,38 +1132,28 @@
     var swiper = new Swiper('.mySwiper', {
       slidesPerView: 3,
       spaceBetween: 30,
+      loop: true,
+      watchSlidesProgress: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-next',
+        prevEl: '.swiper-prev',
       },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        type: 'bullets',
       },
       breakpoints: {
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        480: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
+        320: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
       },
     });
+
 
     var swiper = new Swiper('.mySwiper2', {
       slidesPerView: 3,
