@@ -1,0 +1,7 @@
+{
+  "liveServer.settings.multiRootWorkspaceName": "Plan_holiday",
+  "liveServer.settings.host": "localhost",
+  "liveServer.settings.port": 5501,
+  "liveServer.settings.wait": 1000,
+  "liveServer.settings.CustomBrowser": "chrome"
+}
