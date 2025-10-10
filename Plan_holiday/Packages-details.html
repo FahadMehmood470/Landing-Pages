@@ -158,7 +158,7 @@
         </div>
     </div>
     <div class="container mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 ms-4 me-4 mt-4 lg:mt-[41px]">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-12 m-4 lg:mt-[41px]">
             <!-- Carousel Section -->
             <div class="lg:col-span-7 mt-4 lg:mt-[41px] ">
                 <h2 class="Campanile">Campanile Val de France Ex Kyriad Disneyland</h2>
@@ -322,14 +322,14 @@
             </div>
 
             <!-- Form Section -->
-            <div class="lg:col-span-5 w-full flex items-center justify-center lg:justify-start lg:items-start">
+            <div class="lg:col-span-5 w-full flex flex-col items-center justify-center lg:justify-start lg:items-start">
 
                 <div class="lg:mt-[41px]  mr-4">
                     <div class="flex justify-end items-end mb-[40px]">
                         <p class="pound-per-person">175 <span class="pound-per-person-p">/ Per person</span></p>
                     </div>
-                    <div class="form p-1 shadow-lg rounded-lg bg-white">
-                        <form class="ms-[40px] me-[40px] mt-4 lg:mt-[62px] bg-white ">
+                    <div class="form shadow-lg rounded-lg bg-white">
+                        <form class="bg-white p-4 md:p-6 lg:p-8">
                             <!-- Icons Section -->
                             <div class="flex justify-center space-x-4">
                                 <i
@@ -434,9 +434,9 @@
                         </form>
                     </div>
                 </div>
-                <div class="overflow-hidden mt-5 lg:mt-[32px] ">
-                    <div class="bg-support overflow-hidden">
-                        <div class="mt-5 lg:mt-[34px] ml-4 lg:ml-[30px] mr-4 ">
+                <div class="mt-5">
+                    <div class="bg-support w-full">
+                        <div class="p-8">
                             <h2>Our 24/7 Support</h2>
                             <p class="mt-5">All our holidays include <span>24/7 service</span>. That means that, while
                                 you’re away,
@@ -689,10 +689,10 @@
 
 
     <div class="bg-yellow overflow-hidden">
-        <div class="container mx-auto ">
-            <div class="flex flex-wrap  mt-[60px] mb-4 ">
-                <div class="md:w-[100%] lg:w-[40%] ms-4 me-4 mt-4 mb-4">
-                    <h3 class="">Couldn’t find what
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 mt-[60px] mb-4 ">
+                <div class="m-4">
+                    <h3 class="">Couldn’t find what <br />
                         you were looking for?</h3>
                     <p class="Experts mt-3">Our Experts would love to assist you on your next Travel Plan</p>
                     <div class="mt-[20px] sm:mt-[30px] md:mt-[60px] lg:mt-[120px] flex gap-1">
@@ -700,9 +700,10 @@
                             Call us</span>
                     </div>
                 </div>
-                <div class=" mt-[32px] mb-[32px] ">
-                    <div class="form p-1 shadow-lg rounded-lg ml-4">
-                        <form class=" ms-[40px] me-[40px] mt-[62px] bg-white ">
+                <div
+                    class="mt-5 mb-5 lg:mt-[32px] lg:mb-[32px] flex flex-row items-center justify-center lg:justify-end w-full">
+                    <div class="form p-1 shadow-lg rounded-lg w-full">
+                        <form class="m-4 md:m-6 lg:m-8 bg-white ">
                             <!-- Icons Section -->
 
                             <!-- Name Input -->
@@ -735,7 +736,7 @@
                                 <div class="input-wrapper">
                                     <label for="from" class="from-where">To where</label>
                                     <div class="relative mb-4">
-                                        <select id="from" name="from" class="w-full custom-select Destination">
+                                        <select id="from1" name="from" class="w-full custom-select Destination">
                                             <option value="" disabled selected>Destination</option>
                                             <option value="airport1">Airport 1</option>
                                             <option value="airport2">Airport 2</option>
@@ -781,10 +782,21 @@
 
 
 
-    <div class=" container mx-auto mt-12 mb-[60px]  ">
-        <h3 class="best-pakage mb-[40px] text-start ms-5">Discover our best hotels to stay</h3>
-        <div class="swiper mySwiper2 ms-4 me-4">
-            <div class="swiper-wrapper ms-4 me-4">
+    <div class=" container mx-auto mt-5 mb-5 lg:mt-12 lg:mb-12 relative px-4">
+        <div class="hidden lg:block">
+            <i class="fa-solid fa-chevron-left swiper-prev2 absolute left-[-60px] top-[300px] text-center justify-start text-pink-700 text-5xl font-black 
+      font-['Font_Awesome_5_Free'] leading-[67.20px]"></i>
+
+            <i class="fa-solid fa-chevron-right swiper-next2 absolute right-[-60px] top-[300px] text-center justify-start text-pink-700 text-5xl font-black 
+      font-['Font_Awesome_5_Free'] leading-[67.20px]"></i>
+        </div>
+
+        <!-- <div class="swiper-pagination absolute"></div> -->
+
+
+        <h3 class="best-pakage mb-5 lg:mb-[40px] text-start ms-5">Discover our best hotels to stay</h3>
+        <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
                 <!-- Slide 1 -->
                 <div class="swiper-slide">
                     <div class="relative">
@@ -802,7 +814,6 @@
                                 <p class="Start-from">Starts from</p>
                                 <p class="Start-from-price">£150 <span class="Start-from-span">/ Per night</span></p>
                             </div>
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -825,7 +836,6 @@
                                 <p class="Start-from">Starts from</p>
                                 <p class="Start-from-price">£150 <span class="Start-from-span">/ Per night</span></p>
                             </div>
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -847,7 +857,6 @@
                                 <p class="Start-from">Starts from</p>
                                 <p class="Start-from-price">£150 <span class="Start-from-span">/ Per night</span></p>
                             </div>
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -855,7 +864,6 @@
 
 
                 <!-- Slide 4 -->
-
                 <div class="swiper-slide">
                     <div class="relative">
                         <img src="assets/images/discoverImage1.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
@@ -872,13 +880,13 @@
                                 <p class="Start-from">Starts from</p>
                                 <p class="Start-from-price">£150 <span class="Start-from-span">/ Per night</span></p>
                             </div>
-                            </p>
                         </div>
                     </div>
                 </div>
 
+
                 <!-- Slide 5 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide ">
                     <div class="relative">
                         <img src="assets/images/discoverImage2.jpg" alt="Mermaid Beach" class="max-w-full h-auto" />
                         <div class="mt-5">
@@ -894,17 +902,20 @@
                                 <p class="Start-from">Starts from</p>
                                 <p class="Start-from-price">£150 <span class="Start-from-span">/ Per night</span></p>
                             </div>
-                            </p>
                         </div>
                     </div>
                 </div>
 
             </div>
             <!-- Navigation Buttons -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-button-next"></div> -->
+            <!-- <div class="swiper-button-prev"></div> -->
 
+
+
+            <div class="swiper-pagination hidden"></div>
         </div>
+
         <div class="ms-[25px] mt-12">
             <a href="#" class="explore-destination ">
                 Explore all Destinations
@@ -933,15 +944,15 @@
 
 
     <div class="bg-light-background">
-        <div class="container mx-auto overflow-hidden">
-            <div class=" lg:my-[130px] ml-auto">
-                <div class="holiday-lovers ml-auto">
+        <div class="container mx-auto px-4 pt-12 pb-12 lg:pt-20 lg:pb-20 flex flex-row justify-center lg:justify-end">
+            <div class="">
+                <div class="holiday-lovers p-4 md:p-6 lg:p-8">
                     <div class="mb-[40px]">
                         <h3 class="holiday-lovers-h3 mt-4">Join thousands of holiday lovers</h3>
-                        <p class="holiday-lovers-p mt-5 mr-4">
+                        <p class="holiday-lovers-p lg:w-96 mt-5 mr-4">
                             Stay up to date with the hottest destinations, deals and holiday inspiration.
                         </p>
-                        <form class="flex mt-4 gap-2">
+                        <form class="flex flex-col lg:flex-row mt-4 gap-2">
                             <input type="email" name="email" placeholder="Enter your email address"
                                 class="holiday-lovers-input" required>
                             <button type="submit" class="holiday-lovers-btn">Subscribe</button>
@@ -960,31 +971,31 @@
 
 
 
-
     <div class="bg-light">
-        <div class="container mx-auto overflow-hidden">
+        <div class="container mx-auto px-4">
             <div class="mt-5 lg:mt-[120px]">
                 <h3 class="travel-blog text-2xl font-bold mb-8">Travel Blogs</h3>
-                <div class="flex flex-wrap gap-4 ">
+                <div class="">
                     <!-- Blog Card 1 -->
-                    <div class="flex flex-wrap ">
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex flex-row items-center justify-center gap-4 md:gap-8 lg:gap-12">
                         <!-- Card Start -->
 
 
-                        <div class="w-full md:w-[336px] ml-10">
+                        <div class="">
                             <img src="assets/images/Top Card.jpg" class="max-w-full h-auto" alt="Top Card">
 
                             <div class="flex gap-8 mt-5 justify-center">
                                 <div class="flex flex-col items-center mt-4">
-                                    <img src="assets/images/Heart.svg" alt="Heart">
+                                    <img src="assets/images/Heart.svg" class="h-auto max-w-full" alt="Heart">
                                     <p class="View mt-2">222</p>
                                 </div>
                                 <div class="flex flex-col items-center mt-4">
-                                    <img src="assets/images/Eye.svg" alt="Views">
+                                    <img src="assets/images/Eye.svg" class="h-auto max-w-full" alt="Views">
                                     <p class="View mt-3">222</p>
                                 </div>
                                 <div class="flex flex-col items-center mt-4">
-                                    <img src="assets/images/Share.svg" alt="Share">
+                                    <img src="assets/images/Share.svg" class="h-auto max-w-full" alt="Share">
                                     <p class="View mt-2">222</p>
                                 </div>
                             </div>
@@ -996,26 +1007,26 @@
                             </p>
                             <div class="flex justify-center mt-4 mb-4">
                                 <img src="assets/images/arrow-right.png" alt="Read more"
-                                    class="mt-10 justify-center ms-5 me-5">
+                                    class="mt-10 justify-center ms-5 me-5 h-auto max-w-full">
 
                             </div>
                         </div>
 
 
-                        <div class="w-full md:w-[300px] ml-10">
+                        <div class="">
                             <img src="assets/images/Top Card (1).jpg" class="max-w-full h-auto" alt="Top Card">
 
                             <div class="flex gap-8 mt-5 justify-center">
                                 <div class="flex flex-col items-center mt-4">
-                                    <img src="assets/images/Heart.svg" alt="Heart">
+                                    <img src="assets/images/Heart.svg" class="h-auto max-w-full" alt="Heart">
                                     <p class="View mt-2">222</p>
                                 </div>
                                 <div class="flex flex-col items-center mt-4">
-                                    <img src="assets/images/Eye.svg" alt="Views">
+                                    <img src="assets/images/Eye.svg" class="h-auto max-w-full" alt="Views">
                                     <p class="View mt-3">222</p>
                                 </div>
                                 <div class="flex flex-col items-center mt-4">
-                                    <img src="assets/images/Share.svg" alt="Share">
+                                    <img src="assets/images/Share.svg" class="h-auto max-w-full" alt="Share">
                                     <p class="View mt-2">222</p>
                                 </div>
                             </div>
@@ -1027,7 +1038,7 @@
                             </p>
                             <div class="flex justify-center mt-4 mb-4">
                                 <img src="assets/images/arrow-right.png" alt="Read more"
-                                    class="mt-10 justify-center ms-5 me-5">
+                                    class="mt-10 justify-center ms-5 me-5 h-auto max-w-full">
 
                             </div>
                         </div>
@@ -1036,20 +1047,20 @@
 
 
 
-                        <div class="w-full md:w-[300px] ml-10">
+                        <div class="">
                             <img src="assets/images/Top Card (2).jpg" class="max-w-full h-auto" alt="Top Card">
 
                             <div class="flex gap-8 mt-5 justify-center">
                                 <div class="flex flex-col items-center mt-4">
-                                    <img src="assets/images/Heart.svg" alt="Heart">
+                                    <img src="assets/images/Heart.svg" class="h-auto max-w-full" alt="Heart">
                                     <p class="View mt-2">222</p>
                                 </div>
                                 <div class="flex flex-col items-center mt-4">
-                                    <img src="assets/images/Eye.svg" alt="Views">
+                                    <img src="assets/images/Eye.svg" class="h-auto max-w-full" alt="Views">
                                     <p class="View mt-3">222</p>
                                 </div>
                                 <div class="flex flex-col items-center mt-4">
-                                    <img src="assets/images/Share.svg" alt="Share">
+                                    <img src="assets/images/Share.svg" class="h-auto max-w-full" alt="Share">
                                     <p class="View mt-2">222</p>
                                 </div>
                             </div>
@@ -1061,7 +1072,7 @@
                             </p>
                             <div class="flex justify-center mt-4 mb-4">
                                 <img src="assets/images/arrow-right.png" alt="Read more"
-                                    class="mt-10 justify-center ms-5 me-5">
+                                    class="mt-10 justify-center ms-5 me-5 h-auto max-w-full">
 
                             </div>
                         </div>
@@ -1081,7 +1092,6 @@
             </div>
         </div>
     </div>
-
 
 
 
@@ -1122,27 +1132,30 @@
 
 
 
+
     <div class="bg-footer-img">
         <div class="container mx-auto overflow-hidden">
             <div class="mt-5 lg:mt-[60px]">
                 <h3 class="confidence">Book with confidence with Us</h3>
 
-                <div class="flex justify-center items-center gap-[70px] mt-[48px] mb-[60px] ms-4 me-4">
+                <div
+                    class="flex justify-center items-center gap-5 md:gap-8 lg:gap-[70px] mt-[48px] mb-[60px] ms-4 me-4">
                     <div>
-                        <img src="assets/images/secure.svg" alt="Secure">
+                        <img src="assets/images/secure.svg" class="h-auto max-w-full" alt="Secure">
                     </div>
                     <div>
-                        <img src="assets/images/secure2.svg" alt="Secure2">
+                        <img src="assets/images/secure2.svg" class="h-auto max-w-full" alt="Secure2">
                     </div>
                     <div class="flex items-center gap-2">
                         <p class="confidence-p">Click to view Packages</p>
-                        <img src="assets/images/secure-arrow.svg" class="cursor-pointer" alt="Arrow">
+                        <img src="assets/images/secure-arrow.svg" class="cursor-pointer h-auto max-w-full" alt="Arrow">
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+
 
 
 
@@ -1222,75 +1235,52 @@
         var swiper = new Swiper('.mySwiper', {
             slidesPerView: 3,
             spaceBetween: 30,
+            loop: true,
+            watchSlidesProgress: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev',
             },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
+                type: 'bullets',
             },
             breakpoints: {
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                },
-                480: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
+                320: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
             },
         });
 
         var swiper = new Swiper('.mySwiper2', {
             slidesPerView: 3,
             spaceBetween: 30,
+            loop: true,
+            watchSlidesProgress: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-next2',
+                prevEl: '.swiper-prev2',
             },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
+                type: 'bullets',
             },
             breakpoints: {
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                },
-                480: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
+                320: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
             },
         });
-
 
 
 
@@ -1298,6 +1288,8 @@
 
 
     </script>
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>

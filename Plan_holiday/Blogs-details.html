@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>blogs Details</title>
     <link rel="stylesheet" href="assets/css/fonts.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -154,7 +156,7 @@
         </div>
     </div>
     <div class="container mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 ml-4 me-4 mt-4 lg:mt-[41px]">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-12 ml-4 me-4 mt-4 lg:mt-[41px]">
             <!-- Carousel Section -->
             <div class="lg:col-span-7 mt-4 lg:mt-[41px] ">
                 <h2 class="blog-h ">What we ate in a day at Stella Island Luxury Resort</h2>
@@ -246,9 +248,9 @@
 
 
             </div>
- 
+
             <!-- Form Section -->
-            <div class="lg:col-span-5 w-full flex items-center justify-center lg:justify-start lg:items-start" >
+            <div class="lg:col-span-5 w-full">
 
                 <div class="lg:mt-[41px]  mr-4">
                     <div class="flex justify-center items-center lg:justify-end lg:items-end ">
@@ -268,10 +270,9 @@
                         </div>
 
                     </div>
-                    <div class="form p-1 shadow-lg rounded-lg bg-white">
-                        <form class="ms-[40px] me-[40px] mt-4 lg:mt-[62px] bg-white ">
-                            <!-- Icons Section -->
-                            <div class="flex  space-x-4">
+                    <div class="bg-white shadow-lg rounded-lg md:w-[481px] p-1">
+                        <form class="p-4 md:p-6 lg:p-8">
+                            <div class="  ">
                                 <i
                                     class="fas fa-map-marker-alt cursor-pointer text-gray-600 p-3 hover:border-b-2 hover:border-red-500 hover:text-[#FF626D]"></i>
                                 <i
@@ -280,72 +281,100 @@
                                     class="fas fa-hotel cursor-pointer text-gray-600 p-3 hover:border-b-2 hover:border-red-500 hover:text-[#FF626D]"></i>
                             </div>
 
-                            <!-- From Where Dropdown -->
-                            <div class="form-input mt-[22px]">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="input-wrapper">
-                                    <label for="from-where" class="from-where">From where</label>
-                                    <div class="relative mb-4">
-                                        <select id="from-where" name="from" class="w-full custom-select Destination"
-                                            aria-label="Select Departure Airport">
-                                            <option value="" disabled selected>Your Airport</option>
-                                            <option value="airport1">Airport 1</option>
-                                            <option value="airport2">Airport 2</option>
-                                        </select>
-                                        <span class="custom-icon">
-                                            <i class="fas fa-chevron-down"></i>
-                                        </span>
+                            <div class="grid grid-cols-1">
+                                <div class="form-input mt-[22px]">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="input-wrapper">
+                                        <label for="from" class="from-where">From where</label>
+                                        <div class="relative mb-4">
+                                            <select id="from" name="from" class="w-full custom-select Destination">
+                                                <option value="" disabled selected>Your Airport</option>
+                                                <option value="airport1">Airport 1</option>
+                                                <option value="airport2">Airport 2</option>
+                                            </select>
+                                            <span class="custom-icon">
+                                                <i class="fas fa-chevron-down"></i>
+                                            </span>
+                                        </div>
                                     </div>
+                                </div>
+
+
+
+                                <div class="form-input mt-[22px]">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="input-wrapper">
+                                        <label for="from"
+                                            class="text-gray-700/40 text-[10px] font-normal font-['Lato'] leading-3">To
+                                            where</label>
+                                        <div class="relative mb-4">
+                                            <select id="from3" name="from" class="w-full custom-select Destination">
+                                                <option value="" disabled selected>Destination</option>
+                                                <option value="airport1">Airport 1</option>
+                                                <option value="airport2">Airport 2</option>
+                                            </select>
+                                            <span class="custom-icon">
+                                                <i class="fas fa-chevron-down"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex lg:space-x-4 mt-[22px] grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-0">
+                                    <div class="form-input">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <div class="input-wrapper">
+                                            <label for="departure"
+                                                class="text-gray-700/40 text-[10px] font-normal font-['Lato'] leading-3">Departure
+                                                Date</label>
+                                            <div class="relative mb-4">
+                                                <input type="date" id="departure" name="departure"
+                                                    class="w-full custom-select">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-input">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <div class="input-wrapper">
+                                            <label for="return"
+                                                class="text-gray-700/40 text-[10px] font-normal font-['Lato'] leading-3">Return
+                                                Date</label>
+                                            <div class="relative mb-4">
+                                                <input type="date" id="return" name="return"
+                                                    class="w-full custom-select">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-input mt-[22px]">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="input-wrapper">
+                                        <label for="from"
+                                            class="text-gray-700/40 text-[10px] font-normal font-['Lato'] leading-3">Number
+                                            Of Guests</label>
+                                        <div class="relative mb-4">
+                                            <select id="from2" name="from" class="w-full custom-select Destination">
+                                                <option value="" disabled selected>3 Adults 2 Childeren</option>
+                                                <option value="airport1">Airport 1</option>
+                                                <option value="airport2">Airport 2</option>
+                                            </select>
+                                            <span class="custom-icon">
+                                                <i class="fas fa-chevron-down"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-[36px]">
+                                    <button type="submit" class="Holidays-btn">
+                                        Search Holidays
+                                    </button>
                                 </div>
                             </div>
 
-                            <!-- To Where Dropdown -->
-                            <div class="form-input mt-[22px]">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="input-wrapper">
-                                    <label for="to-where" class="from-where">To where</label>
-                                    <div class="relative mb-4">
-                                        <select id="to-where" name="to" class="w-full custom-select Destination"
-                                            aria-label="Select Destination Airport">
-                                            <option value="" disabled selected>Destination</option>
-                                            <option value="airport1">Airport 1</option>
-                                            <option value="airport2">Airport 2</option>
-                                        </select>
-                                        <span class="custom-icon">
-                                            <i class="fas fa-chevron-down"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Contact No -->
-                            <div class="form-input mt-[22px]">
-                                <div class="input-wrapper">
-                                    <label for="contact" class="from-where">Contact Number</label>
-                                    <div class="relative mb-4">
-                                        <input type="number" id="contact" name="contact" placeholder="+92"
-                                            class="w-full custom-select Destination">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Email Adress -->
-                            <div class="form-input mt-[22px]">
-                                <div class="input-wrapper">
-                                    <label for="contact" class="from-where">Contact Number</label>
-
-                                    <div class="relative mb-4">
-                                        <input type="email" id="email" name="email" placeholder="Enter Your E"
-                                            class="w-full custom-select Destination">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Submit Button -->
-                            <div class="mt-[36px]">
-                                <button type="submit" class="Holidays-btn" aria-label="Search Holidays">
-                                    Customize and Book
-                                </button>
-                            </div>
                         </form>
                     </div>
                 </div>

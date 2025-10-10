@@ -230,8 +230,8 @@ body {
     /* 28px */
     display: flex;
     width: 240px;
-    height: 62px;
-    padding: 7px 40px;
+    /* height: 62px; */
+    padding: 14px 40px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -294,7 +294,7 @@ body {
 }
 
 .orignal-price {
-    color: #C02D63;
+    /* color: abla; */
 
     /* Body/.fs -3 Semibold */
     font-family: 'Lato';
@@ -985,8 +985,8 @@ a:hover {
 }
 
 .bg-support {
-    width: 481px;
-    height: 210px;
+    /* width: 481px; */
+    /* height: 210px; */
     flex-shrink: 0;
     background-color: #fcf4f7;
 }
@@ -1486,7 +1486,7 @@ a:hover {
         font-size: 16px;
     }
 
-    .travel-inspiration-p {
+    .travel-inspiration-p,.confidence-p {
         font-size: 14px;
     }
 
@@ -1576,11 +1576,15 @@ a:hover {
         width: 100%;
     }
 
+    .explore-themes{
+        width: auto;
+    }
+
     .bg-yellow h3 {
         font-size: 24px;
     }
 
-    .Experts-no {
+    .Experts-no,.explore-themes {
         font-size: 16px;
     }
 
