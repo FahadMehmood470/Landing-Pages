@@ -1460,7 +1460,7 @@ a:hover {
         display: block;
     }
 
-    .make-tour-span {
+    .make-tour-span,.Trust-us {
         font-size: 30px;
         line-height: normal;
     }
@@ -1486,7 +1486,7 @@ a:hover {
         font-size: 16px;
     }
 
-    .travel-inspiration-p,.confidence-p {
+    .travel-inspiration-p,.confidence-p,.holidays-p,.holidays-span,.holidays-list li,.bg-support span {
         font-size: 14px;
     }
 
@@ -1544,7 +1544,7 @@ a:hover {
         margin-left: auto;
     }
 
-    .best-pakage{
+    .best-pakage,.orignal-price{
         font-size: 24px;
         line-height: normal;
     }
@@ -1557,10 +1557,16 @@ a:hover {
         font-size: 24px;
         line-height: normal;
     }
+
+    .custom-select2{
+        width: 130px;
+        padding: 8px 14px;
+        font-size: 13px;
+    }
 }
 
 @media (max-width:768px) {
-    .make-tour {
+    .make-tour,.Trust-us {
         font-size: 24px;
     }
 
@@ -1568,7 +1574,7 @@ a:hover {
         font-size: 24px;
     }
 
-    .Holidays {
+    .Holidays,.bg-support h2 {
         font-size: 16px;
     }
 
@@ -1584,7 +1590,7 @@ a:hover {
         font-size: 24px;
     }
 
-    .Experts-no,.explore-themes {
+    .Experts-no,.explore-themes,.holidays-offer {
         font-size: 16px;
     }
 
@@ -1604,7 +1610,7 @@ a:hover {
         width: 452px !important;
     } */
 
-    .about-demo-p,.holiday-lovers-p {
+    .about-demo-p,.holiday-lovers-p,.market-price,.bg-support p,.Trust-us-p {
         font-size: 14px;
     }
 
@@ -1626,8 +1632,13 @@ a:hover {
         font-size: 20px;
     }
 
-    .Holidays {
+    .Holidays,.market-price,.holidays-p,.holidays-list li,.bg-support p,.Trust-us-p {
         font-size: 12px;
+    }
+
+    .Campanile{
+    font-size: 16px;
+    margin-bottom: 14px;
     }
 
 

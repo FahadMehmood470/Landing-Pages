@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Packages Details</title>
     <link rel="stylesheet" href="assets/css/fonts.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -220,28 +222,28 @@
 
                 <div class="lg:mt-[30px] mt-4">
                     <div class="bg-frame1">
-                        <div class="mt-4 lg:mt-[24px] ml-4 lg:ml-[30px] mr-4 mb-4 lg:mb-[34px] ">
+                        <div class="p-4 md:p-6 lg:p-8">
                             <h2 class="holidays-offer">Holiday Details</h2>
-                            <div class="flex flex-wrap justify-between mt-5 lg:mt-[34px] gap-4">
-                                <div class="flex flex-col items-center justify-center">
-                                    <img src="assets/images/travel.svg" alt="Travel Icon">
-                                    <p class="holidays-offer-p">Travel</p>
+                            <div class="grid grid-cols-4 lg:grid-cols-5 gap-4 mt-4">
+                                <div class="flex flex-col items-center justify-center hidden lg:block">
+                                    <img src="assets/images/travel.svg" class="w-6 h-6 md:w-7 md:h-7 lg:h-10 lg:w-10" alt="Travel Icon">
+                                    <p class="justify-start text-gray-600 text-sm md:text-base lg:text-xl font-normal font-['Lato'] leading-7">Travel</p>
                                 </div>
                                 <div class="flex flex-col items-center justify-center">
-                                    <img src="assets/images/sight-seeing.svg" alt="Sightseeing Icon">
-                                    <p class="holidays-offer-p">SightSeeing</p>
+                                    <img src="assets/images/sight-seeing.svg" class="w-6 h-6 md:w-7 md:h-7 lg:h-10 lg:w-10" alt="Sightseeing Icon">
+                                    <p class="justify-start text-gray-600 text-sm md:text-base lg:text-xl font-normal font-['Lato'] leading-7">SightSeeing</p>
                                 </div>
                                 <div class="flex flex-col items-center justify-center">
-                                    <img src="assets/images/hotels.svg" alt="Hotels Icon">
-                                    <p class="holidays-offer-p">Stay Included</p>
+                                    <img src="assets/images/hotels.svg" class="w-6 h-6 md:w-7 md:h-7 lg:h-10 lg:w-10" alt="Hotels Icon">
+                                    <p class="justify-start text-gray-600 text-sm md:text-base lg:text-xl font-normal font-['Lato'] leading-7">Breakfast</p>
                                 </div>
                                 <div class="flex flex-col items-center justify-center">
-                                    <img src="assets/images/breakfast.svg" alt="Breakfast Icon">
-                                    <p class="holidays-offer-p">Breakfast</p>
+                                    <img src="assets/images/breakfast.svg" class="w-6 h-6 md:w-7 md:h-7 lg:h-10 lg:w-10" alt="Breakfast Icon">
+                                    <p class="justify-start text-gray-600 text-sm md:text-base lg:text-xl font-normal font-['Lato'] leading-7">Travel</p>
                                 </div>
                                 <div class="flex flex-col items-center justify-center">
-                                    <img src="assets/images/room-sharing.svg" alt="Room Sharing Icon">
-                                    <p class="holidays-offer-p">Twin Sharing Room</p>
+                                    <img src="assets/images/room-sharing.svg" class="w-6 h-6 md:w-7 md:h-7 lg:h-10 lg:w-10" alt="Room Sharing Icon">
+                                    <p class="justify-start text-gray-600 text-sm md:text-base lg:text-xl font-normal font-['Lato'] leading-7">Travel</p>
                                 </div>
                             </div>
                             <hr class="mt-5 lg:mt-[34px] border-gray-300 h-1">
@@ -322,7 +324,7 @@
             </div>
 
             <!-- Form Section -->
-            <div class="lg:col-span-5 w-full flex flex-col items-center justify-center lg:justify-start lg:items-start">
+            <div class="lg:col-span-5 ">
 
                 <div class="lg:mt-[41px]  mr-4">
                     <div class="flex justify-end items-end mb-[40px]">
@@ -378,32 +380,7 @@
                                 </div>
                             </div>
 
-                            <!-- Departure and Return Dates -->
-                            <div class="flex space-x-4 mt-[22px]">
-                                <!-- Departure Date -->
-                                <div class="form-input w-[48%]">
-                                    <i class="fas fa-calendar-alt"></i>
-                                    <div class="input-wrapper">
-                                        <label for="departure" class="from-where">Departure Date</label>
-                                        <div class="relative mb-4">
-                                            <input type="date" id="departure" name="departure"
-                                                class="w-full custom-select" aria-label="Select Departure Date">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Return Date -->
-                                <div class="form-input w-[48%]">
-                                    <i class="fas fa-calendar-alt"></i>
-                                    <div class="input-wrapper">
-                                        <label for="return" class="from-where">Return Date</label>
-                                        <div class="relative mb-4">
-                                            <input type="date" id="return" name="return" class="w-full custom-select"
-                                                aria-label="Select Return Date">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        
 
                             <!-- Number of Guests -->
                             <div class="form-input mt-[22px]">
@@ -436,9 +413,9 @@
                 </div>
                 <div class="mt-5">
                     <div class="bg-support w-full">
-                        <div class="p-8">
+                        <div class="p-4 lg:p-8">
                             <h2>Our 24/7 Support</h2>
-                            <p class="mt-5">All our holidays include <span>24/7 service</span>. That means that, while
+                            <p class="mt-3 lg:mt-5">All our holidays include <span>24/7 service</span>. That means that, while
                                 you’re away,
                                 you can get in touch with us 24 hours a day, seven days a week using the First Choice
                                 app. Or, call us if you need to. Just so you know, we don’t have reps based in any of
@@ -455,7 +432,7 @@
                             <div class="mt-5 lg:mt-[34px]">
                                 <h2 class="ms-4 lg:ms-[30px] me-4 lg:me-[30px] frame-location mb-5">Location</h2>
                                 <img src="assets/images/Google Maps Widget.png" class="max-w-full h-auto" alt="">
-                                <div class="ms-4 lg:ms-[30px] me-4 lg:me-[30px] mt-5 mb-5 flex justify-between">
+                                <div class="p-3 lg:p-6">
                                     <div class="Location-info">
                                         <h2 class="mt-[30px] mb-[20px]">Location Information</h2>
                                         <ul class="ms-4">
@@ -489,39 +466,11 @@
 
 
 
-                <div class="overflow-hidden">
+                <div class="overflow-hidden hidden lg:block">
                     <div class="mt-[60px]">
 
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             </div>
 
