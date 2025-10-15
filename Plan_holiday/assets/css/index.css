@@ -930,6 +930,15 @@ a:hover {
     /* width: 100vw; */
 }
 
+.bg-hero-image2{
+        background-image: url('../images/bg_pakage.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 396px; */
+    /* width: 100vw; */
+}
+
 .bg-hero-image h2 {
     color: #262D33;
     font-family: "Titillium Web";
