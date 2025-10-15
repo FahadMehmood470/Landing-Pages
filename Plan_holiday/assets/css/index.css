@@ -930,8 +930,27 @@ a:hover {
     /* width: 100vw; */
 }
 
-.bg-hero-image2{
-        background-image: url('../images/bg_pakage.jpg');
+.bg_hero_multi {
+    background-image: url('../images/bg_multi_hero.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 396px; */
+    /* width: 100vw; */
+}
+
+.bg_hero_multi2 {
+    background-image: url('../images/multi_dinstination_pkg_2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 396px; */
+    /* width: 100vw; */
+}
+
+
+.bg-hero-image2 {
+    background-image: url('../images/bg_pakage.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -970,8 +989,8 @@ a:hover {
     display: flex;
     /* width: 341px; */
     width: 70%;
-    height: 62px;
-    padding: 7px 16px;
+    /* height: 62px; */
+    padding: 14px 16px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -1381,7 +1400,7 @@ a:hover {
     .make-tour-span {
         font-size: 50px;
     }
-    
+
 
 }
 
@@ -1400,7 +1419,7 @@ a:hover {
 
     .Experts-no {
         font-size: 20px;
-    width: auto;
+        width: auto;
 
     }
 
@@ -1412,7 +1431,8 @@ a:hover {
         font-size: 40px;
     }
 
-    .Popular-destination,.best-pakage {
+    .Popular-destination,
+    .best-pakage {
         font-size: 24px;
     }
 
@@ -1452,9 +1472,11 @@ a:hover {
     .Campanile-p {
         font-size: 16px;
     }
-    .blog-h{
+
+    .blog-h {
         font-size: 26px;
     }
+
     .blog-section p {
         font-size: 16px;
     }
@@ -1469,7 +1491,8 @@ a:hover {
         display: block;
     }
 
-    .make-tour-span,.Trust-us {
+    .make-tour-span,
+    .Trust-us {
         font-size: 30px;
         line-height: normal;
     }
@@ -1491,11 +1514,16 @@ a:hover {
         font-size: 24px;
     }
 
-    .Holidays-btn{
+    .Holidays-btn {
         font-size: 16px;
     }
 
-    .travel-inspiration-p,.confidence-p,.holidays-p,.holidays-span,.holidays-list li,.bg-support span {
+    .travel-inspiration-p,
+    .confidence-p,
+    .holidays-p,
+    .holidays-span,
+    .holidays-list li,
+    .bg-support span {
         font-size: 14px;
     }
 
@@ -1503,7 +1531,8 @@ a:hover {
         font-size: 24px;
     }
 
-    .mermaid-beach,.explore-destination {
+    .mermaid-beach,
+    .explore-destination {
         font-size: 16px;
     }
 
@@ -1527,7 +1556,7 @@ a:hover {
         font-size: 30px;
     }
 
-    .about-demo-p {
+    .about-demo-p,.trip-category-list li {
         font-size: 16px;
     }
 
@@ -1549,25 +1578,26 @@ a:hover {
         height: 100vh;
     }
 
-    .confidence{
+    .confidence {
         margin-left: auto;
     }
 
-    .best-pakage,.orignal-price{
+    .best-pakage,
+    .orignal-price {
         font-size: 24px;
         line-height: normal;
     }
 
-    .holiday-lovers-btn{
+    .holiday-lovers-btn {
         width: 100%;
     }
 
-    .holiday-lovers-h3{
+    .holiday-lovers-h3 {
         font-size: 24px;
         line-height: normal;
     }
 
-    .custom-select2{
+    .custom-select2 {
         width: 130px;
         padding: 8px 14px;
         font-size: 13px;
@@ -1575,7 +1605,9 @@ a:hover {
 }
 
 @media (max-width:768px) {
-    .make-tour,.Trust-us {
+
+    .make-tour,
+    .Trust-us {
         font-size: 24px;
     }
 
@@ -1583,7 +1615,8 @@ a:hover {
         font-size: 24px;
     }
 
-    .Holidays,.bg-support h2 {
+    .Holidays,
+    .bg-support h2 {
         font-size: 16px;
     }
 
@@ -1591,7 +1624,16 @@ a:hover {
         width: 100%;
     }
 
-    .explore-themes{
+        .call-destination-btn {
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .call-destination-btn-span {
+        font-size: 14px;
+    }
+
+    .explore-themes {
         width: auto;
     }
 
@@ -1599,11 +1641,15 @@ a:hover {
         font-size: 24px;
     }
 
-    .Experts-no,.explore-themes,.holidays-offer {
+    .Experts-no,
+    .explore-themes,
+    .holidays-offer {
         font-size: 16px;
     }
 
-    .Popular-destination,.best-pakage,.holiday-lovers-h3 {
+    .Popular-destination,
+    .best-pakage,
+    .holiday-lovers-h3 {
         font-size: 18px;
     }
 
@@ -1615,11 +1661,15 @@ a:hover {
         font-size: 24px;
     }
 
-      /* .form {
+    /* .form {
         width: 452px !important;
     } */
 
-    .about-demo-p,.holiday-lovers-p,.market-price,.bg-support p,.Trust-us-p {
+    .about-demo-p,
+    .holiday-lovers-p,
+    .market-price,
+    .bg-support p,
+    .Trust-us-p {
         font-size: 14px;
     }
 
@@ -1641,13 +1691,21 @@ a:hover {
         font-size: 20px;
     }
 
-    .Holidays,.market-price,.holidays-p,.holidays-list li,.bg-support p,.Trust-us-p {
+    .Holidays,
+    .market-price,
+    .holidays-p,
+    .holidays-list li,
+    .bg-support p,
+    .Trust-us-p {
         font-size: 12px;
     }
 
-    .Campanile{
-    font-size: 16px;
-    margin-bottom: 14px;
+    .Campanile {
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+    .trip-category-list li{
+        font-size: 14px;
     }
 
 
@@ -1657,7 +1715,7 @@ a:hover {
     .about-demo-p {
         font-size: 12px;
     } */
-           /* .form {
+    /* .form {
         width: auto  !important;
     } */
 }
