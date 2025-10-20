@@ -4,270 +4,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Packages Details</title>
+    <title>Package Details Page</title>
     <link rel="stylesheet" href="assets/css/fonts.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"> -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
 
     <link rel="stylesheet" href="assets/css/index.css">
-    <!-- Include Swiper.js CSS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+
 </head>
+
 
 <body>
 
- <div class="bg-white">
-    <div class="container mx-auto px-4">
-      <div class="hidden lg:block">
+    <div class="bg-white">
+        <div class="container mx-auto px-4">
+            <div class="hidden lg:block">
 
-        <!-- Navbar -->
-        <nav class="mt-6 mb-5 flex items-center justify-between">
-          <!-- Logo (left side) -->
-          <div class="flex items-center">
-            <img src="assets/images/plan-holidays.jpg" class="max-w-full h-auto" alt="logo">
-          </div>
+                <!-- Navbar -->
+                <nav class="mt-6 mb-5 flex items-center justify-between">
+                    <!-- Logo (left side) -->
+                    <div class="flex items-center">
+                        <img src="assets/images/plan-holidays.jpg" class="max-w-full h-auto" alt="logo">
+                    </div>
 
-          <div class="flex space-x-6 xl:space-x-16 items-center">
-            <!-- Mega Menu replacing 'Destination' -->
-            <div class="relative inline-block">
-              <button id="mega-menu-dropdown-button"
-                class="flex items-center justify-between w-full py-2 px-3 nav-icon-nav">
-                <i class="fas fa-map-marker-alt mr-1"></i> Destination
-                <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 10 6">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="m1 1 4 4 4-4" />
-                </svg>
-              </button>
+                    <div class="flex space-x-6 xl:space-x-16 items-center">
+                        <!-- Mega Menu replacing 'Destination' -->
+                        <div class="relative inline-block">
+                            <button id="mega-menu-dropdown-button"
+                                class="flex items-center justify-between w-full py-2 px-3 nav-icon-nav">
+                                <i class="fas fa-map-marker-alt mr-1"></i> Destination
+                                <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                            </button>
 
-              <!-- Mega Menu Content -->
-              <div id="mega-menu-dropdown" class="absolute top-full left-0 mt-3 z-50 w-max gap-4 text-sm bg-white border border-gray-100 rounded-lg shadow-lg dark:border-gray-700 dark:bg-gray-700 
+                            <!-- Mega Menu Content -->
+                            <div id="mega-menu-dropdown" class="absolute top-full left-0 mt-3 z-50 w-max gap-4 text-sm bg-white border border-gray-100 rounded-lg shadow-lg dark:border-gray-700 dark:bg-gray-700 
               opacity-0 scale-95 transform transition-all duration-300 ease-out hidden">
-                <div class="justify-start text-gray-700 text-lg font-bold font-['Titillium_Web'] leading-7 ms-6 mt-4">
-                  Browse destinations</div>
-                <div class="grid grid-cols-3 gap-16 pb-4 pl-4">
-                  <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
-                    <ul class="space-y-4" aria-labelledby="mega-menu-dropdown-button">
-                      <li><a href="#"
-                          class="text-gray-600 hover:text-[#C02D63] text-base font-normal font-['Lato'] leading-snug">Dubai</a>
-                      </li>
-                      <li><a href="#"
-                          class="text-gray-600 hover:text-[#C02D63] text-base font-normal font-['Lato'] leading-snug">Germany</a>
-                      </li>
-                      <li><a href="#"
-                          class="text-gray-600 hover:text-[#C02D63] text-base font-normal font-['Lato'] leading-snug">Thailand</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
-                    <ul class="space-y-4">
-                      <li><a href="#"
-                          class="text-gray-600 hover:text-[#C02D63] text-base font-normal font-['Lato'] leading-snug">Switzerland</a>
-                      </li>
-                      <li><a href="#"
-                          class="text-gray-600 hover:text-[#C02D63] text-base font-normal font-['Lato'] leading-snug">Maldives</a>
-                      </li>
-                      <li><a href="#"
-                          class="text-gray-600 hover:text-[#C02D63] text-base font-normal font-['Lato'] leading-snug">Singapore</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="p-4">
-                    <ul class="space-y-4">
-                      <li><a href="#"
-                          class="text-gray-600 hover:text-[#C02D63] text-base font-normal font-['Lato'] leading-snug">Turkey</a>
-                      </li>
-                      <li><a href="#"
-                          class="text-gray-600 hover:text-[#C02D63] text-base font-normal font-['Lato'] leading-snug">Europe</a>
-                      </li>
-                      <li><a href="#"
-                          class="text-fuchsia-900 text-base font-normal font-['Lato'] underline leading-snug hover:font-bold">View
-                          All</a>
-                      </li>
+                                <div
+                                    class="justify-start text-gray-700 text-lg font-bold font-['Titillium_Web'] leading-7 ms-6 mt-4">
+                                    Browse destinations</div>
+                                <div class="grid grid-cols-3 gap-16 pb-4 pl-4">
+                                    <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                                        <ul class="space-y-4" aria-labelledby="mega-menu-dropdown-button">
+                                            <li><a href="#"
+                                                    class="text-gray-600 hover:text-[#C02D63] text-base font-normal font-['Lato'] leading-snug">Dubai</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="text-gray-600 hover:text-[#C02D63] text-base font-normal font-['Lato'] leading-snug">Germany</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="text-gray-600 hover:text-[#C02D63] text-base font-normal font-['Lato'] leading-snug">Thailand</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                                        <ul class="space-y-4">
+                                            <li><a href="#"
+                                                    class="text-gray-600 hover:text-[#C02D63] text-base font-normal font-['Lato'] leading-snug">Switzerland</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="text-gray-600 hover:text-[#C02D63] text-base font-normal font-['Lato'] leading-snug">Maldives</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="text-gray-600 hover:text-[#C02D63] text-base font-normal font-['Lato'] leading-snug">Singapore</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="p-4">
+                                        <ul class="space-y-4">
+                                            <li><a href="#"
+                                                    class="text-gray-600 hover:text-[#C02D63] text-base font-normal font-['Lato'] leading-snug">Turkey</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="text-gray-600 hover:text-[#C02D63] text-base font-normal font-['Lato'] leading-snug">Europe</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="text-fuchsia-900 text-base font-normal font-['Lato'] underline leading-snug hover:font-bold">View
+                                                    All</a>
+                                            </li>
 
-                    </ul>
-                  </div>
-                </div>
-              </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Other Links -->
+                        <a href="#" class="nav-icon-nav hover:text-blue-500">
+                            <i class="fas fa-plane mr-1"></i> Packages
+                        </a>
+                        <a href="#" class="nav-icon-nav hover:text-blue-500">
+                            <i class="fas fa-hotel mr-1"></i> Hotels
+                        </a>
+                        <a href="#" class="nav-icon-nav hover:text-blue-500">
+                            <i class="fas fa-bolt mr-1"></i> Blog
+                        </a>
+                    </div>
+
+
+
+                    <!-- Right side (Phone No & Signin Button) -->
+                    <div class="flex items-center space-x-6">
+                        <p class="nav-phone-number">
+                            1800-123-5555
+                        </p>
+                        <a href="" class="btn-signin">Sign in</a>
+                    </div>
+                </nav>
             </div>
 
-            <!-- Other Links -->
-            <a href="#" class="nav-icon-nav hover:text-blue-500">
-              <i class="fas fa-plane mr-1"></i> Packages
-            </a>
-            <a href="#" class="nav-icon-nav hover:text-blue-500">
-              <i class="fas fa-hotel mr-1"></i> Hotels
-            </a>
-            <a href="#" class="nav-icon-nav hover:text-blue-500">
-              <i class="fas fa-bolt mr-1"></i> Blog
-            </a>
-          </div>
 
 
-
-          <!-- Right side (Phone No & Signin Button) -->
-          <div class="flex items-center space-x-6">
-            <p class="nav-phone-number">
-              1800-123-5555
-            </p>
-            <a href="" class="btn-signin">Sign in</a>
-          </div>
-        </nav>
-      </div>
-
-
-
-      <div class="block lg:hidden">
-        <div class="flex items-center justify-between ms-4 me-4 mt-6 mb-5">
-          <div class="flex items-center">
-            <img src="assets/images/plan-holidays.jpg" class="max-w-full h-auto" alt="logo" />
-          </div>
-          <button
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-            type="button" data-drawer-target="drawer-disabled-backdrop" data-drawer-show="drawer-disabled-backdrop"
-            data-drawer-backdrop="false" aria-controls="drawer-disabled-backdrop">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-
-        <div id="drawer-disabled-backdrop"
-          class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800"
-          tabindex="-1" aria-labelledby="drawer-disabled-backdrop-label">
-          <h5 id="drawer-disabled-backdrop-label"
-            class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">
-            Menu
-          </h5>
-
-          <button type="button" data-drawer-hide="drawer-disabled-backdrop" aria-controls="drawer-disabled-backdrop"
-            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
-            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-            </svg>
-          </button>
-
-          <div class="py-4 overflow-y-auto">
-            <ul class="space-y-2 font-medium">
-
-              <li>
-                <button id="mobile-destination-btn"
-                  class="flex items-center justify-between w-full p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                  <div class="flex items-center">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span class="ms-3">Destination</span>
-                  </div>
-                  <svg class="w-2.5 h-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="m1 1 4 4 4-4" />
-                  </svg>
-                </button>
-
-                <div id="mobile-destination-menu" class="hidden pl-6 mt-2 space-y-2">
-                  <a href="#" class="block text-gray-600">Popular Destinations</a>
-                  <a href="#" class="block text-gray-600">Adventure Trips</a>
-                  <a href="#" class="block text-gray-600">Honeymoon Packages</a>
-                  <a href="#" class="block text-gray-600">Beach Holidays</a>
+            <div class="block lg:hidden">
+                <div class="flex items-center justify-between ms-4 me-4 mt-6 mb-5">
+                    <div class="flex items-center">
+                        <img src="assets/images/plan-holidays.jpg" class="max-w-full h-auto" alt="logo" />
+                    </div>
+                    <button
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                        type="button" data-drawer-target="drawer-disabled-backdrop"
+                        data-drawer-show="drawer-disabled-backdrop" data-drawer-backdrop="false"
+                        aria-controls="drawer-disabled-backdrop">
+                        <i class="fas fa-bars"></i>
+                    </button>
                 </div>
-              </li>
 
-              <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100"><i
-                    class="fas fa-box-open"></i><span class="ms-3">Packages</span></a></li>
-              <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100"><i
-                    class="fas fa-hotel"></i><span class="ms-3">Hotels</span></a></li>
-              <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100"><i
-                    class="fas fa-blog"></i><span class="ms-3">Blog</span></a></li>
+                <div id="drawer-disabled-backdrop"
+                    class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800"
+                    tabindex="-1" aria-labelledby="drawer-disabled-backdrop-label">
+                    <h5 id="drawer-disabled-backdrop-label"
+                        class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">
+                        Menu
+                    </h5>
 
-            </ul>
-          </div>
+                    <button type="button" data-drawer-hide="drawer-disabled-backdrop"
+                        aria-controls="drawer-disabled-backdrop"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                    </button>
+
+                    <div class="py-4 overflow-y-auto">
+                        <ul class="space-y-2 font-medium">
+
+                            <li>
+                                <button id="mobile-destination-btn"
+                                    class="flex items-center justify-between w-full p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span class="ms-3">Destination</span>
+                                    </div>
+                                    <svg class="w-2.5 h-2.5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg>
+                                </button>
+
+                                <div id="mobile-destination-menu" class="hidden pl-6 mt-2 space-y-2">
+                                    <a href="#" class="block text-gray-600">Popular Destinations</a>
+                                    <a href="#" class="block text-gray-600">Adventure Trips</a>
+                                    <a href="#" class="block text-gray-600">Honeymoon Packages</a>
+                                    <a href="#" class="block text-gray-600">Beach Holidays</a>
+                                </div>
+                            </li>
+
+                            <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100"><i
+                                        class="fas fa-box-open"></i><span class="ms-3">Packages</span></a></li>
+                            <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100"><i
+                                        class="fas fa-hotel"></i><span class="ms-3">Hotels</span></a></li>
+                            <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100"><i
+                                        class="fas fa-blog"></i><span class="ms-3">Blog</span></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-      </div>
-
-
     </div>
-  </div>
 
     <div class="container mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-12 m-4 lg:mt-[41px]">
             <!-- Carousel Section -->
             <div class="lg:col-span-7 mt-4 lg:mt-[41px] ">
                 <h2 class="Campanile">Campanile Val de France Ex Kyriad Disneyland</h2>
-                <div class="flex items-center gap-2 mt-2 mb-3">
-                    <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
-                    <p class="sr-only Campanile-p ">Location:</p>
-                    <p class=" Campanile-p ">Paris, France</p>
-                </div>
-                <div id="controls-carousel" class="relative w-full" data-carousel="static">
-                    <!-- Carousel wrapper -->
-                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96 gap-4">
-                        <!-- Item 1 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="assets/images/carousel.jpg"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="Carousel Image 1">
-                        </div>
-                        <!-- Item 2 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                            <img src="assets/images/carousel.jpg"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="Carousel Image 2">
-                        </div>
-                        <!-- Item 3 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="assets/images/carousel.jpg"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="Carousel Image 3">
+                <div class="flex justify-between items-center mb-3 md:mb-4 lg:mb-5">
+                    <div class="flex items-center gap-2 mt-2 mb-3">
+                        <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+                        <p class="sr-only Campanile-p ">Location:</p>
+                        <p class=" Campanile-p ">Paris, France</p>
+                    </div>
+                    <div>
+                        <div
+                            class="px-2 py-1 bg-[#516D4E] rounded-md inline-flex justify-center items-center gap-[5px]">
+                            <p class="justify-start text-white text-xs font-bold font-['Titillium_Web'] leading-tight">
+                                Economy Package</p>
                         </div>
                     </div>
-                    <!-- Slider controls -->
-                    <button type="button"
-                        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                        data-carousel-prev aria-label="Previous Slide">
-                        <span
-                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M5 1 1 5l4 4" />
-                            </svg>
-                            <span class="sr-only">Previous</span>
-                        </span>
-                    </button>
-                    <button type="button"
-                        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                        data-carousel-next aria-label="Next Slide">
-                        <span
-                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 9 4-4-4-4" />
-                            </svg>
-                            <span class="sr-only">Next</span>
-                        </span>
-                    </button>
                 </div>
-
                 <div class="lg:mt-[30px] mt-4">
                     <div class="bg-frame1">
                         <div class="p-4 md:p-6 lg:p-8">
                             <h2 class="holidays-offer">Holiday Details</h2>
-                            <div class="grid grid-cols-4 lg:grid-cols-5 gap-4 mt-4 flex flex-col items-center justify-center">
-                                <div class="flex flex-col items-center justify-center hidden lg:block">
+                            <div
+                                class="grid grid-cols-4 lg:grid-cols-5 gap-4 mt-4 flex flex-col items-center justify-center">
+                                <div class="flex flex-col items-center justify-center">
                                     <img src="assets/images/travel.svg" class="w-6 h-6 md:w-7 md:h-7 lg:h-10 lg:w-10"
                                         alt="Travel Icon">
                                     <p
                                         class="justify-start text-gray-600 text-sm md:text-base lg:text-xl font-normal font-['Lato'] leading-7">
                                         Travel</p>
                                 </div>
-                                <div class="flex flex-col items-center justify-center">
-                                    <img src="assets/images/sight-seeing.svg"
-                                        class="w-6 h-6 md:w-7 md:h-7 lg:h-10 lg:w-10" alt="Sightseeing Icon">
-                                    <p
-                                        class="justify-start text-gray-600 text-sm md:text-base lg:text-xl font-normal font-['Lato'] leading-7">
-                                        SightSeeing</p>
+                                <div class="hidden lg:block">
+                                    <div class="flex flex-col items-center justify-center">
+                                        <img src="assets/images/sight-seeing.svg"
+                                            class="w-6 h-6 md:w-7 md:h-7 lg:h-10 lg:w-10" alt="Sightseeing Icon">
+                                        <p
+                                            class="justify-start text-gray-600 text-sm md:text-base lg:text-xl font-normal font-['Lato'] leading-7">
+                                            SightSeeing</p>
+                                    </div>
                                 </div>
                                 <div class="flex flex-col items-center justify-center">
                                     <img src="assets/images/hotels.svg" class="w-6 h-6 md:w-7 md:h-7 lg:h-10 lg:w-10"
@@ -318,23 +293,194 @@
                     </div>
                 </div>
 
-
-
-
-                <div class="lg:mt-[30px] mt-4">
-                    <div class="bg-frame1">
-                        <div class="mt-4 lg:mt-[24px] ml-4 lg:ml-[30px] mr-4 mb-4 lg:mb-[34px]">
-                            <h2 class="holidays-offer">Overview</h2>
-                            <p class="holidays-p">The enchanting Hotel Campanile Val de France is the perfect place for
-                                families looking for a cosy and peaceful retreat. Just a quick 40-minute car ride from
-                                CDG Airport, you'll be whisked away to a world of relaxation and fun. And if a Parisian
-                                adventure is calling your name, hop on the RER train for a 50-minute ride to downtown
-                                Paris. Plus, with a free shuttle to Disneyland <span class="holidays-span">Read
-                                    More</span> </p>
-                        </div>
-                    </div>
+                <div class="border border-slate-400 w-full mt-4 md:mt-6 lg:mt-8 p-4 md:p-6 lg:p-8">
+                    <h2
+                        class="justify-start text-gray-700 text-base md:text-lg lg:text-xl font-bold font-['Titillium_Web'] leading-7">
+                        Holiday
+                        Overview</h2>
+                    <p class="holidays-p mt-3 lg:mt-5">The enchanting Hotel Campanile Val de France is the perfect place
+                        for
+                        families looking for a cosy and peaceful retreat. Just a quick 40-minute car ride from
+                        CDG Airport, you'll be whisked away to a world of relaxation and fun. And if a Parisian
+                        adventure is calling your name, hop on the RER train for a 50-minute ride to downtown
+                        Paris. Plus, with a free shuttle to Disneyland <span class="holidays-span">Read
+                            More</span> </p>
                 </div>
 
+                <div class="border border-slate-400 mt-4 md:mt-6 lg:mt-8 p-4 md:p-6 lg:p-8">
+
+                    <h2 class="justify-start text-gray-700 text-xl font-bold font-['Titillium_Web'] leading-7">Stay and
+                        Itinerary</h2>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h2 class="text-gray-600 text-2xl font-semibold font-['Titillium_Web'] leading-loose">
+                                Hotel Blue Diamond Kasol
+                            </h2>
+                            <div class="flex gap-3 items-center">
+                                <div class="flex items-center gap-1">
+                                    <i class="fas fa-map-marker-alt mr-1"></i>
+                                    <h2 class="text-gray-600 text-base font-normal font-['Lato'] leading-snug">
+                                        Cox’s Bazar
+                                    </h2>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <i class="fas fa-clock mr-1"></i>
+                                    <p class="text-gray-600 text-base font-normal font-['Lato'] leading-snug">
+                                        4 days
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <img src="assets/images/yellow_star.svg" alt="rating star" class="h-auto max-w-full">
+                            <img src="assets/images/yellow_star.svg" alt="rating star" class="h-auto max-w-full">
+                            <img src="assets/images/yellow_star.svg" alt="rating star" class="h-auto max-w-full">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex flex-col md:flex-row items-center justify-center gap-3 mt-4 lg:mt-6">
+                            <div class="swiper mainSwiper w-full md:w-[700px] h-[300px] md:h-[450px]">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/thumnil_1.png"
+                                            class="w-full h-full object-cover rounded-lg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/thumnil_2.png"
+                                            class="w-full h-full object-cover rounded-lg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/thumnil_3.png"
+                                            class="w-full h-full object-cover rounded-lg" />
+                                    </div>
+                                </div>
+
+                                <div class="swiper-button-prev custom-swiper-btn">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </div>
+                                <div class="swiper-button-next custom-swiper-btn">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+
+
+
+                                <!-- 
+                                      <i class="fa-solid fa-chevron-left swiper-prev-hotel absolute left-[-60px] top-[300px] text-center justify-start text-pink-700 text-5xl font-black 
+                                    font-['Font_Awesome_5_Free'] leading-[67.20px]"></i>
+
+                                     <i class="fa-solid fa-chevron-right swiper-next-hotel absolute right-[-60px] top-[300px] text-center justify-start text-pink-700 text-5xl font-black 
+                                    font-['Font_Awesome_5_Free'] leading-[67.20px]"></i>
+                                 -->
+
+                            </div>
+
+                            <div class="swiper thumbSwiper w-full md:w-[200px] h-[100px] md:h-[450px] mt-3 md:mt-0">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/thumnil_1.png"
+                                            class="w-full h-[100px] md:h-[140px] object-cover rounded-lg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/thumnil_2.png"
+                                            class="w-full h-[100px] md:h-[140px] object-cover rounded-lg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/thumnil_3.png"
+                                            class="w-full h-[100px] md:h-[140px] object-cover rounded-lg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="holidays-p mt-3 lg:mt-5">The enchanting Hotel Campanile Val de France is the perfect
+                            place
+                            for
+                            families looking for a cosy and peaceful retreat. Just a quick 40-minute car ride from
+                            CDG Airport, you'll be whisked away to a world of relaxation and fun. And if a Parisian
+                            adventure is calling your name, hop on the RER train for a 50-minute ride to downtown
+                            Paris. Plus, with a free shuttle to Disneyland <span class="holidays-span">Read
+                                More</span> </p>
+                    </div>
+
+
+                    <div>
+                        <div class="flex flex-col md:flex-row items-center justify-center gap-3 mt-4 lg:mt-6">
+                            <div class="swiper mainSwiper2 w-full md:w-[700px] h-[300px] md:h-[450px]">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/thumnil_1.png"
+                                            class="w-full h-full object-cover rounded-lg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/thumnil_2.png"
+                                            class="w-full h-full object-cover rounded-lg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/thumnil_3.png"
+                                            class="w-full h-full object-cover rounded-lg" />
+                                    </div>
+                                </div>
+
+                                <div class="swiper-button-prev custom-swiper-btn">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </div>
+                                <div class="swiper-button-next custom-swiper-btn">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+
+
+
+                                <!-- 
+                                      <i class="fa-solid fa-chevron-left swiper-prev-hotel absolute left-[-60px] top-[300px] text-center justify-start text-pink-700 text-5xl font-black 
+                                    font-['Font_Awesome_5_Free'] leading-[67.20px]"></i>
+
+                                     <i class="fa-solid fa-chevron-right swiper-next-hotel absolute right-[-60px] top-[300px] text-center justify-start text-pink-700 text-5xl font-black 
+                                    font-['Font_Awesome_5_Free'] leading-[67.20px]"></i>
+                                 -->
+
+                            </div>
+
+                            <div class="swiper thumbSwiper2 w-full md:w-[200px] h-[100px] md:h-[450px] mt-3 md:mt-0">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/thumnil_1.png"
+                                            class="w-full h-[100px] md:h-[140px] object-cover rounded-lg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/thumnil_2.png"
+                                            class="w-full h-[100px] md:h-[140px] object-cover rounded-lg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/thumnil_3.png"
+                                            class="w-full h-[100px] md:h-[140px] object-cover rounded-lg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="holidays-p mt-3 lg:mt-5">The enchanting Hotel Campanile Val de France is the perfect
+                            place
+                            for
+                            families looking for a cosy and peaceful retreat. Just a quick 40-minute car ride from
+                            CDG Airport, you'll be whisked away to a world of relaxation and fun. And if a Parisian
+                            adventure is calling your name, hop on the RER train for a 50-minute ride to downtown
+                            Paris. Plus, with a free shuttle to Disneyland <span class="holidays-span">Read
+                                More</span> </p>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
 
                 <div class="lg:mt-[30px] mt-4">
                     <div class="bg-frame1">
@@ -372,9 +518,9 @@
             <div class="lg:col-span-5 ">
 
                 <div class="lg:mt-[41px]  mr-4">
-                    <div class="flex justify-end items-end mb-[40px]">
+                    <!-- <div class="flex justify-end items-end mb-[40px]">
                         <p class="pound-per-person">175 <span class="pound-per-person-p">/ Per person</span></p>
-                    </div>
+                    </div> -->
                     <div class="form shadow-lg rounded-lg bg-white">
                         <form class="bg-white p-4 md:p-6 lg:p-8">
                             <!-- Icons Section -->
@@ -1279,50 +1425,109 @@
 
     </script>
 
-      <script>
-    const menuButton = document.getElementById('mega-menu-dropdown-button');
-    const menuDropdown = document.getElementById('mega-menu-dropdown');
+    <script>
+        const menuButton = document.getElementById('mega-menu-dropdown-button');
+        const menuDropdown = document.getElementById('mega-menu-dropdown');
 
-    menuButton.addEventListener('click', () => {
-      const isHidden = menuDropdown.classList.contains('hidden');
+        menuButton.addEventListener('click', () => {
+            const isHidden = menuDropdown.classList.contains('hidden');
 
-      if (isHidden) {
-        menuDropdown.classList.remove('hidden');
-        setTimeout(() => {
-          menuDropdown.classList.remove('opacity-0', 'scale-95');
-          menuDropdown.classList.add('opacity-100', 'scale-100');
-        }, 10);
-      } else {
-        menuDropdown.classList.remove('opacity-100', 'scale-100');
-        menuDropdown.classList.add('opacity-0', 'scale-95');
-        setTimeout(() => {
-          menuDropdown.classList.add('hidden');
-        }, 200);
-      }
-    });
+            if (isHidden) {
+                menuDropdown.classList.remove('hidden');
+                setTimeout(() => {
+                    menuDropdown.classList.remove('opacity-0', 'scale-95');
+                    menuDropdown.classList.add('opacity-100', 'scale-100');
+                }, 10);
+            } else {
+                menuDropdown.classList.remove('opacity-100', 'scale-100');
+                menuDropdown.classList.add('opacity-0', 'scale-95');
+                setTimeout(() => {
+                    menuDropdown.classList.add('hidden');
+                }, 200);
+            }
+        });
 
-    // Close when clicking outside
-    document.addEventListener('click', (event) => {
-      if (!menuButton.contains(event.target) && !menuDropdown.contains(event.target)) {
-        menuDropdown.classList.remove('opacity-100', 'scale-100');
-        menuDropdown.classList.add('opacity-0', 'scale-95');
-        setTimeout(() => {
-          menuDropdown.classList.add('hidden');
-        }, 200);
-      }
-    });
+        // Close when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!menuButton.contains(event.target) && !menuDropdown.contains(event.target)) {
+                menuDropdown.classList.remove('opacity-100', 'scale-100');
+                menuDropdown.classList.add('opacity-0', 'scale-95');
+                setTimeout(() => {
+                    menuDropdown.classList.add('hidden');
+                }, 200);
+            }
+        });
 
-    document.getElementById("mobile-destination-btn").addEventListener("click", () => {
-      document.getElementById("mobile-destination-menu").classList.toggle("hidden");
-    });
+        document.getElementById("mobile-destination-btn").addEventListener("click", () => {
+            document.getElementById("mobile-destination-menu").classList.toggle("hidden");
+        });
 
-  </script>
-
-
-
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script>
+        const thumbSwiper = new Swiper(".thumbSwiper", {
+            direction: window.innerWidth < 768 ? "horizontal" : "vertical",
+            spaceBetween: 10,
+            slidesPerView: 3,
+            watchSlidesProgress: true,
+            breakpoints: {
+                0: {
+                    direction: "horizontal",
+                    slidesPerView: 3,
+                },
+                768: {
+                    direction: "vertical",
+                    slidesPerView: 3,
+                },
+            },
+        });
 
+        const mainSwiper = new Swiper(".mainSwiper", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: thumbSwiper,
+            },
+        });
+
+
+
+
+
+
+
+        const thumbSwiper2 = new Swiper(".thumbSwiper2", {
+            direction: window.innerWidth < 768 ? "horizontal" : "vertical",
+            spaceBetween: 10,
+            slidesPerView: 3,
+            watchSlidesProgress: true,
+            breakpoints: { 
+                0: {
+                    direction: "horizontal",
+                    slidesPerView: 3,
+                },
+                768: {
+                    direction: "vertical",
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+        const mainSwiper2 = new Swiper(".mainSwiper2", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: thumbSwiper2,
+            },
+        });
+    </script>
 
 </body>
 
