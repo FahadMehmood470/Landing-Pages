@@ -1,0 +1,11 @@
+.admin_name {
+    font-family: 'Poppins';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: linear-gradient(96deg, #2196F3 1.26%, #F07D7D 54.34%, #2540EC 97.85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

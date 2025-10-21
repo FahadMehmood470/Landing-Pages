@@ -1,9 +1,15 @@
 import "./Component.css";
-import Admin_Navbar from "../../components/Navbar/Admin_Navbar";
+import Admin_Navbar from "../../components/Navbar/Header";
+import InfoAdmin from "../../components/Admin_info_block/infoAdmin";
+import SalesRevenueChart from "../../components/Admin_info_block/SalesRevenueChart";
 const Dashboard = () => {
   return (
-        <Admin_Navbar />
-  )
-}
+    <div className="p-8 space-y-12">
+      <Admin_Navbar />
+      <InfoAdmin />
+      <SalesRevenueChart/>
+    </div>
+  );
+};
 
-export default Dashboard
+export default Dashboard;
