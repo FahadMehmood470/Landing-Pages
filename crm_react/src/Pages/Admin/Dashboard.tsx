@@ -7,6 +7,7 @@ const Dashboard = () => {
     <div className="p-8 space-y-12">
       <Admin_Navbar />
       <InfoAdmin />
+      {/* <SalesRev/> */}
       <SalesRevenueChart/>
     </div>
   );

@@ -68,7 +68,7 @@ const AdminSidebar = () => {
   ];
 
   return (
-    <div className="w-80 bg-white shadow-[1px_0px_30px_2px_rgba(239,239,244,1.00)] p-12">
+    <div className="w-80 bg-white shadow-[1px_0px_30px_2px_rgba(239,239,244,1.00)] p-12 h-[100%]">
       <div className="flex items-center gap-3">
         <div className="w-12 h-12 bg-sky-500 rounded-xl"></div>
         <h1 className="text-black text-2xl font-semibold font-poppins">LOGO</h1>
