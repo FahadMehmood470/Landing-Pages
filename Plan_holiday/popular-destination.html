@@ -189,21 +189,54 @@
   </div>
 
 
-  <div class="bg-[#fcf4f7] py-8">
-    <div class="container mx-auto">
-      <div>
-        <ul class="trip-category-list flex justify-between">
-          <li class="">All</li>
-          <li>Family Vacation</li>
-          <li>Friends Holidays</li>
-          <li>Solo Trip</li>
-          <li>Honeymoon</li>
-          <li>Adventure</li>
+<div class="bg-[#fcf4f7] py-8">
+  <div class="container mx-auto">
+    <div class="flex justify-between flex-wrap gap-4" id="tripCategory">
+      <label class="cursor-pointer">
+        <input type="radio" name="trip-category" value="All" class="hidden peer" checked>
+        <span class="peer-checked:text-pink-600 text-gray-700 text-2xl font-normal font-['Titillium_Web'] leading-10">
+          All
+        </span>
+      </label>
 
-        </ul>
-      </div>
+      <label class="cursor-pointer">
+        <input type="radio" name="trip-category" value="Family Vacation" class="hidden peer">
+        <span class="peer-checked:text-pink-600 text-gray-700 text-2xl font-normal font-['Titillium_Web'] leading-10">
+          Family Vacation
+        </span>
+      </label>
+
+      <label class="cursor-pointer">
+        <input type="radio" name="trip-category" value="Friends Holidays" class="hidden peer">
+        <span class="peer-checked:text-pink-600 text-gray-700 text-2xl font-normal font-['Titillium_Web'] leading-10">
+          Friends Holidays
+        </span>
+      </label>
+
+      <label class="cursor-pointer">
+        <input type="radio" name="trip-category" value="Solo Trip" class="hidden peer">
+        <span class="peer-checked:text-pink-600 text-gray-700 text-2xl font-normal font-['Titillium_Web'] leading-10">
+          Solo Trip
+        </span>
+      </label>
+
+      <label class="cursor-pointer">
+        <input type="radio" name="trip-category" value="Honeymoon" class="hidden peer">
+        <span class="peer-checked:text-pink-600 text-gray-700 text-2xl font-normal font-['Titillium_Web'] leading-10">
+          Honeymoon
+        </span>
+      </label>
+
+      <label class="cursor-pointer">
+        <input type="radio" name="trip-category" value="Adventure" class="hidden peer">
+        <span class="peer-checked:text-pink-600 text-gray-700 text-2xl font-normal font-['Titillium_Web'] leading-10">
+          Adventure
+        </span>
+      </label>
     </div>
   </div>
+</div>
+
 
   <div class="bg-hero-image overflow-hidden">
     <div class="container mx-auto">
@@ -1014,6 +1047,17 @@
 
 
   </script>
+
+  <script>
+  const radios = document.querySelectorAll('input[name="trip-category"]');
+  radios.forEach(radio => {
+    radio.addEventListener('change', () => {
+      console.log("Selected:", radio.value);
+      // You can use the value in JS here, for example:
+      // docum  ent.querySelector('#selectedCategory').textContent = radio.value;
+    });
+  });
+</script>
 
     <script>
     const menuButton = document.getElementById('mega-menu-dropdown-button');
