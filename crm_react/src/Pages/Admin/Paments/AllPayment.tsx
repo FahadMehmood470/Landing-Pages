@@ -1,4 +1,3 @@
-import img_Lock from "../../../assets/images/lock.svg";
 import BreackIcon from "../../../assets/images/details_Breakdown.svg";
 import ArrowSwitch from "../../../assets/images/arrow_Switch.svg";
 import ViewIcon from "../../../assets/images/view_icon.svg";

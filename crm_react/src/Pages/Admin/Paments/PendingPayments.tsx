@@ -1,5 +1,4 @@
 import BreackIcon from "../../../assets/images/details_Breakdown.svg";
-import ArrowSwitch from "../../../assets/images/arrow_Switch.svg";
 import ViewIcon from "../../../assets/images/view_icon.svg";
 import FilterIcon from "../../../assets/images/filter_icon.svg";
 import { Pagination } from "flowbite-react";
