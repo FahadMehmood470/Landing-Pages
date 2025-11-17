@@ -1,17 +1,12 @@
 import { NavLink } from "react-router-dom";
 
 const items = [
-  { label: "New Folders", to: "new-folder" },
-  { label: "All Folders", to: "all" },
-  { label: "Booking Folders", to: "booking" },
-  { label: "Invoiced Folders", to: "invoiced" },
-  { label: "Request Folders", to: "requests" },
-  { label: "Delete Folders", to: "deleted" },
-  { label: "Test Sub Folders", to: "test-sub" },
-  { label: "All Folder (VO)", to: "all-vo" },
+  { label: "Suppliers", to: "suppliers" },
+  { label: "PaymentsMode", to: "payments-mode" }
 ];
 
-const FolderList = () => {
+
+const ListOfValList = () => {
   return (
     <div className="flex flex-wrap items-center gap-10 mr-12">
       {items.map((it) => (
@@ -35,6 +30,6 @@ const FolderList = () => {
       ))}
     </div>
   );
-};
+}
 
-export default FolderList;
+export default ListOfValList

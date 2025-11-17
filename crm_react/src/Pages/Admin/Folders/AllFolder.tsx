@@ -7,9 +7,13 @@ import AddIcon from "../../../assets/images/Add_icon.svg";
 import FilterIcon from "../../../assets/images/filter_icon.svg";
 import { useState } from "react";
 import FilterModal from "../../../components/Modal/filterModal";
+import { Pagination } from "flowbite-react";
+
 
 const AllFolder = () => {
   const [openFilter, setOpenFilter] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const onPageChange = (page: number) => setCurrentPage(page);
   return (
     <div className="container mx-auto">
       <div className=" rounded-xl mt-12">
@@ -53,9 +57,9 @@ const AllFolder = () => {
           </div>
         </div>
 
-        <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <div className="relative overflow-x-auto shadow-md sm:rounded-lg  bg-gray-50">
           <table className="w-full text-left rtl:text-right text-gray-500 dark:text-gray-400 text-Text-Normal text-sm font-normal font-['Inter'] leading-6">
-            <thead className="text-Text-Normal text-xs font-medium font-['Inter'] leading-5 bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <thead className="text-Text-Normal text-xs font-medium font-['Inter'] leading-5 dark:bg-gray-700 dark:text-gray-400">
               <tr>
                 <th scope="col" className="px-6 py-3">
                   Folder #
@@ -128,6 +132,11 @@ const AllFolder = () => {
               </tr>
             </tbody>
           </table>
+
+          <div className="flex overflow-x-auto">
+            <Pagination currentPage={currentPage} totalPages={10} onPageChange={onPageChange} showIcons />
+             
+          </div>
         </div>
       </div>
     </div>

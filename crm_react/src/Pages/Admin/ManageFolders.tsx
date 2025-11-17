@@ -7,13 +7,13 @@ const ManageFolders = () => {
 
     <div className="p-8 space-y-12">
       <Admin_Navbar />
-      <FolderList/>
+      <FolderList />
       <div className="mt-4">
-        <Outlet/>
-        
+        <Outlet />
+
       </div>
 
-      
+
     </div>
   )
 }

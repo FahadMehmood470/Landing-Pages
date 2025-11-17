@@ -1,43 +1,73 @@
 import { Modal, ModalBody, ModalFooter, ModalHeader } from "flowbite-react";
-import { DateRange, type Range, type RangeKeyDict } from "react-date-range";
+// import { DateRange, type Range, type RangeKeyDict } from "react-date-range";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
-import { useState } from "react";
-
+// import { useState } from "react";
+import { Datepicker, Label, Select } from "flowbite-react";
 interface FilterModalProps {
   openFilter: boolean;
   setOpenFilter: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export default function FilterModal({ openFilter, setOpenFilter }: FilterModalProps) {
-  const [range, setRange] = useState<Range[]>([
-    {
-      startDate: new Date(),
-      endDate: new Date(),
-      key: "selection",
-    },
-  ]);
+
 
   return (
     <Modal show={openFilter} onClose={() => setOpenFilter(false)}>
-      <ModalHeader>Filter Options</ModalHeader>
-      <ModalBody>
-        <div className="space-y-6">
-          <div className="p-4 bg-white rounded-lg shadow-md w-fit mx-auto">
-            <DateRange
-              editableDateInputs={true}
-              onChange={(item: RangeKeyDict) => setRange([item.selection])}
-              moveRangeOnFirstSelection={false}
-              ranges={range}
-              className="border border-gray-300 rounded-lg"
-            />
-            <p className="mt-4 text-gray-700">
-              Selected Range:{" "}
-              <span className="font-semibold text-blue-600">
-                {range[0].startDate?.toDateString()} → {range[0].endDate?.toDateString()}
-              </span>
-            </p>
+      <ModalHeader>Filter Options
+        <div className="space-y-6 ">
+          <div className="pt-4 flex items-center gap-4 max-w-[400px]">
+            <Datepicker />-<Datepicker />
           </div>
+        </div>
+      </ModalHeader>
+      <ModalBody>
+        <div className="grid grid-cols-2 gap-8">
+          <div className="max-w-md">
+            <div className="mb-2 block">
+              <Label htmlFor="countries">Select your country</Label>
+            </div>
+            <Select id="countries" required>
+              <option>United States</option>
+              <option>Canada</option>
+              <option>France</option>
+              <option>Germany</option>
+            </Select>
+          </div>
+          <div className="max-w-md">
+            <div className="mb-2 block">
+              <Label htmlFor="countries">Select your country</Label>
+            </div>
+            <Select id="countries" required>
+              <option>United States</option>
+              <option>Canada</option>
+              <option>France</option>
+              <option>Germany</option>
+            </Select>
+          </div>
+          <div className="max-w-md">
+            <div className="mb-2 block">
+              <Label htmlFor="countries">Select your country</Label>
+            </div>
+            <Select id="countries" required>
+              <option>United States</option>
+              <option>Canada</option>
+              <option>France</option>
+              <option>Germany</option>
+            </Select>
+          </div>
+          <div className="max-w-md">
+            <div className="mb-2 block">
+              <Label htmlFor="countries">Select your country</Label>
+            </div>
+            <Select id="countries" required>
+              <option>United States</option>
+              <option>Canada</option>
+              <option>France</option>
+              <option>Germany</option>
+            </Select>
+          </div>
+
         </div>
       </ModalBody>
 
