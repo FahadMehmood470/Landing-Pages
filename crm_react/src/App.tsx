@@ -1,11 +1,38 @@
-import AdminRoutes from './routes/AdminRoutes'
+import { Routes, Route } from 'react-router-dom';
+import AdminRoutes from './routes/AdminRoutes';
+import AgentRoutes from './routes/AgentRoutes';
+import ProtectedRoute from './components/Login/ProtectedRoute';
+import Login from './components/Login/Login';
+import PageNotFound from './Pages/PageNotFound/PageNotFound';
 
 const App = () => {
   return (
     <div>
-      <AdminRoutes/>
-    </div>
-  )
-}
+    <Routes>
+        <Route path="*" element={<PageNotFound/>}/>
+      <Route path="/" element={<Login />} />
+      <Route path="/login" element={<Login />} />
 
-export default App
+      <Route
+        path="/admin/*"
+        element={
+          <ProtectedRoute allowed={["admin"]}>
+            <AdminRoutes />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route
+        path="/agent/*"
+        element={
+          <ProtectedRoute allowed={["agent"]}>
+            <AgentRoutes />
+          </ProtectedRoute>
+        }
+      />
+    </Routes>
+    </div>
+  );
+};
+
+export default App;

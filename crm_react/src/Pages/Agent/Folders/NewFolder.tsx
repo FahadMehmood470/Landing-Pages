@@ -15,16 +15,17 @@ import ZiarahIcon from "../../../assets/images/Ziarah.svg";
 import BreackIcon from "../../../assets/images/details_Breakdown.svg";
 import InvoiceIcon from "../../../assets/images/invoice_icon.svg";
 import PrintIcon from "../../../assets/images/print_icon.svg";
+import { Button, Label, TextInput } from "flowbite-react";
 
 
 
 type Field = {
-  name: string; // key to store value
+  name: string;
   label: string;
   type: "text" | "number" | "date" | "time" | "select" | "textarea";
   placeholder?: string;
-  options?: string[]; // for select
-  colSpan?: number; // optional to help AdminLayout -> number of grid columns it should span
+  options?: string[];
+  colSpan?: number;
 };
 
 type Section = {
@@ -33,7 +34,7 @@ type Section = {
   description?: string;
   icon: string;
   buttonLabel?: string;
-  gridCols?: number; // how many Tailwind grid-cols to use for fields (default 4)
+  gridCols?: number;
   fields: Field[];
 };
 
@@ -49,28 +50,14 @@ const sections: Section[] = [
       { name: "orderType", label: "Order Type", type: "select", options: ["January - June 2022", "July - December 2022"] },
       { name: "vendorRef", label: "Vendor Reference", type: "text", placeholder: "e.g., VNDR-12345" },
       { name: "companyBranch", label: "Company / Branch", type: "select", options: ["Branch A", "Branch B"] },
-      { name: "vendorRef2", label: "Vendor Reference", type: "text", placeholder: "e.g., VNDR-12345" },
-      { name: "orderType2", label: "Order Type", type: "select", options: ["January - June 2022", "July - December 2022"] },
-      { name: "vendorRef3", label: "Vendor Reference", type: "text", placeholder: "e.g., VNDR-12345" },
-      { name: "companyBranch2", label: "Company / Branch", type: "select", options: ["Branch A", "Branch B"] },
-      { name: "vendorRef4", label: "Vendor Reference", type: "text", placeholder: "e.g., VNDR-12345" },
-      { name: "vendorRef5", label: "Vendor Reference", type: "text", placeholder: "e.g., VNDR-12345" },
+      { name: "bookedBy", label: "Booked By", type: "text", placeholder: "Select booking agent / staff" },
+      { name: "Status", label: "Status", type: "select", options: ["January - June 2022", "July - December 2022"] },
+      { name: "Destination", label: "Destination", type: "text", placeholder: "Select travel destination" },
+      { name: "TravelDate", label: "TravelDate", type: "date", placeholder: "Select travel destination" },
+      { name: "BalanceDueDate", label: "Balance Due Date", type: "date", placeholder: "Select payment due date" },
+      { name: "FlightItinerary", label: "Flight Itinerary", type: "number", placeholder: "Enter Flight Itinerary Number" },
     ],
   },
-
-  // {
-  //   id: "addFolder",
-  //   title: "Add New Folder",
-  //   icon: newFolder,
-  //   buttonLabel: "Add New Folder",
-  //   gridCols: 4,
-  //   fields: [
-  //     { name: "folderName", label: "Folder Name", type: "text", placeholder: "Enter folder name" },
-  //     { name: "vendorRef", label: "Vendor Reference", type: "text", placeholder: "e.g., VNDR-12345" },
-  //     { name: "companyBranch", label: "Company / Branch", type: "select", options: ["Branch A", "Branch B"] },
-  //     { name: "vendorRef2", label: "Vendor Reference", type: "text", placeholder: "e.g., VNDR-12345" },
-  //   ],
-  // },
 
   {
     id: "itinerary",
@@ -102,12 +89,12 @@ const sections: Section[] = [
       { name: "title", label: "Title", type: "text", placeholder: "Title" },
       { name: "firstName", label: "First Name", type: "text", placeholder: "First Name" },
       { name: "middleName", label: "Middle Name", type: "text", placeholder: "Middle Name" },
-      { name: "depAirport", label: "Dep Airport", type: "text", placeholder: "e.g., VNDR-12345" },
-      { name: "departureTime", label: "Departure Time", type: "time", placeholder: "e.g., 12:30" },
-      { name: "arrivalDate", label: "Arrival Date", type: "date" },
-      { name: "arrivalAirport", label: "Arrival Airport", type: "text", placeholder: "e.g., LHR" },
-      { name: "arrivalTime", label: "Arrival Time", type: "time" },
-      { name: "passportDetails", label: "Passport Details", type: "text", placeholder: "Passport Details", colSpan: 8 },
+      { name: "lastName", label: "Last Name", type: "text", placeholder: "Last Name" },
+      { name: "passengerType", label: "Passenger Type", type: "text", placeholder: "Passenger Type" },
+      { name: "email", label: "Email", type: "text", placeholder: "Example@gmail.com" },
+      { name: "phoneNo.", label: "Phone No.", type: "number", placeholder: "000-000-0000" },
+      { name: "dateofBirth", label: "Date of Birth", type: "date", placeholder: "20/08/1980" },
+      { name: "passportDetails", label: "Passport Details", type: "text", placeholder: "Enter Your Password  Details and others", colSpan: 8 },
     ],
   },
 
@@ -116,22 +103,19 @@ const sections: Section[] = [
     title: "Ticket/Package Cost",
     icon: TicketIcon,
     buttonLabel: "Add New Ticket",
-    gridCols: 6,
+    gridCols: 5,
     fields: [
-      // Row 1 (5 columns)
-      { name: "ticket1", label: "Dep Airport", type: "text", colSpan: 1 },
-      { name: "ticket2", label: "Departure Time", type: "time", colSpan: 1 },
-      { name: "ticket3", label: "Arrival Date", type: "date", colSpan: 1 },
-      { name: "ticket4", label: "Arrival Airport", type: "text", colSpan: 1 },
-      { name: "ticket5", label: "Arrival Time", type: "time", colSpan: 1 },
-
-      // Row 2 (6 columns)
-      { name: "ticket6", label: "Base Fare", type: "number", colSpan: 1 },
-      { name: "ticket7", label: "Taxes", type: "number", colSpan: 1 },
-      { name: "ticket8", label: "Discount", type: "number", colSpan: 1 },
-      { name: "ticket9", label: "Service Fee", type: "number", colSpan: 1 },
-      { name: "ticket10", label: "Total Amount", type: "number", colSpan: 1 },
-      { name: "ticket11", label: "Remarks", type: "text", colSpan: 1 },
+      { name: "ticketNumber", label: "Ticket Number", type: "text", colSpan: 1 },
+      { name: "ticketDate", label: "Ticket Date", type: "date", colSpan: 1 },
+      { name: "PNR", label: "PNR", type: "number", colSpan: 1 },
+      { name: "From", label: "From", type: "select", options: ["Economy", "Business", "First Class"] },
+      { name: "to", label: "To", type: "select", options: ["Economy", "Business", "First Class"] },
+      { name: "baseFare", label: "Base Fare", type: "number", colSpan: 1 },
+      { name: "tax&Fees", label: "Tax & Fees", type: "number", colSpan: 1 },
+      { name: "totalCost", label: "Total Cost", type: "number", colSpan: 1 },
+      { name: "sellPrice", label: "Sell Price", type: "number", colSpan: 1 },
+      { name: "Margin", label: "Margin", type: "number", colSpan: 1 },
+      { name: "Supplier", label: "Supplier", type: "text", colSpan: 1 },
     ],
   },
 
@@ -140,22 +124,19 @@ const sections: Section[] = [
     title: "Hotel Details",
     icon: HotelIcon,
     buttonLabel: "Add New Hotel",
-    gridCols: 6,
+    gridCols: 5,
     fields: [
-      // Row 1 (5 columns)
-      { name: "hotel1", label: "Hotel Name", type: "text", colSpan: 1 },
-      { name: "hotel2", label: "Check-In Date", type: "date", colSpan: 1 },
-      { name: "hotel3", label: "Check-Out Date", type: "date", colSpan: 1 },
-      { name: "hotel4", label: "City", type: "text", colSpan: 1 },
-      { name: "hotel5", label: "Room Type", type: "select", options: ["Single", "Double", "Suite"], colSpan: 1 },
-
-      // Row 2 (6 columns)
-      { name: "hotel6", label: "Room Rate", type: "number", colSpan: 1 },
-      { name: "hotel7", label: "Nights", type: "number", colSpan: 1 },
-      { name: "hotel8", label: "Total Cost", type: "number", colSpan: 1 },
-      { name: "hotel9", label: "Breakfast Included", type: "select", options: ["Yes", "No"], colSpan: 1 },
-      { name: "hotel10", label: "Special Requests", type: "text", colSpan: 1 },
-      { name: "hotel11", label: "Remarks", type: "text", colSpan: 1 },
+      { name: "Supplier", label: "Supplier", type: "select", options: ["Economy", "Business", "First Class"] },
+      { name: "hotelName", label: "Hotel Name", type: "text", colSpan: 1 },
+      { name: "guestName", label: "Guest Name", type: "text", colSpan: 1 },
+      { name: "hotelCity", label: "Hotel City", type: "text", colSpan: 1 },
+      { name: "no.ofRooms", label: "No. of Rooms", type: "number" },
+      { name: "roomType", label: "Room Type", type: "text", colSpan: 1 },
+      { name: "supplierRef", label: "Supplier Ref", type: "number", colSpan: 1 },
+      { name: "Meals", label: "Meals", type: "select", options: ["Economy", "Business", "First Class"] },
+      { name: "dateIn", label: "Date In", type: "date", colSpan: 1 },
+      { name: "dateOut", label: "Date Out", type: "date", colSpan: 1 },
+      { name: "Nights", label: "Nights", type: "number", colSpan: 1 },
     ],
   },
 
@@ -164,17 +145,43 @@ const sections: Section[] = [
     title: "Transport Details",
     icon: TransportIcon,
     buttonLabel: "Add New Transport",
-    gridCols: 8,
+    gridCols: 9,
     fields: [
-      { name: "title", label: "Title", type: "text" },
-      { name: "firstName", label: "First Name", type: "text" },
-      { name: "middleName", label: "Middle Name", type: "text" },
-      { name: "depAirport", label: "Dep Airport", type: "text" },
-      { name: "departureTime", label: "Departure Time", type: "time" },
-      { name: "arrivalDate", label: "Arrival Date", type: "date" },
-      { name: "arrivalAirport", label: "Arrival Airport", type: "text" },
-      { name: "arrivalTime", label: "Arrival Time", type: "time" },
-      { name: "passportDetails", label: "Passport Details", type: "text", colSpan: 8 },
+      { name: "Supplier", label: "Supplier", type: "select", options: ["Economy", "Business", "First Class"] },
+      { name: "vehicleType", label: "Vehicle Type", type: "select", options: ["Economy", "Business", "First Class"] },
+      { name: "Date", label: "Date", type: "date" },
+      { name: "pickupTime", label: "Pickup Time", type: "text" },
+      { name: "From", label: "From", type: "date" },
+      { name: "To", label: "To", type: "date" },
+      { name: "Cost", label: "Cost", type: "number" },
+      { name: "Margin", label: "Margin", type: "number" },
+      { name: "sellPrice", label: "Sell Price", type: "number" },
+      { name: "Description", label: "Description", type: "text", colSpan: 8 },
+    ],
+  },
+
+  {
+    id: "Visas",
+    title: "Visas",
+    icon: ZiarahIcon,
+    buttonLabel: "Add New Other Details",
+    gridCols: 2,
+
+    fields: [
+      { name: "visaCategory", label: "Visa Category", type: "select", options: ["January - June 2022", "July - December 2022"] },
+      { name: "visaAmount", label: "Visa Amount", type: "select", options: ["Branch A", "Branch B"] },
+    ],
+  },
+
+  {
+    id: "ziaraats",
+    title: "Ziaraats",
+    icon: ZiarahIcon,
+    gridCols: 2,
+    description: "Configure religious tour packages and pilgrimage services for Makkah and Madinah",
+    fields: [
+      { name: "ziaraatsMakkah", label: "Ziaraats Makkah", type: "select", options: ["January - June 2022", "July - December 2022"] },
+      { name: "ziaraatsMadina", label: "Ziaraats Madina", type: "select", options: ["Branch A", "Branch B"] },
     ],
   },
 
@@ -185,26 +192,15 @@ const sections: Section[] = [
     buttonLabel: "Add New Other Details",
     gridCols: 4,
     fields: [
-      { name: "departureTime", label: "Departure Time", type: "time" },
-      { name: "arrivalDate", label: "Arrival Date", type: "date" },
-      { name: "arrivalAirport", label: "Arrival Airport", type: "text" },
-      { name: "arrivalTime", label: "Arrival Time", type: "time" },
-      { name: "passportDetails", label: "Passport Details", type: "text", colSpan: 4 },
+      { name: "Supplier", label: "Supplier", type: "select", options: ["January - June 2022", "July - December 2022"] },
+      { name: "vehicleType", label: "Vehicle Type", type: "select", options: ["January - June 2022", "July - December 2022"] },
+      { name: "Date", label: "Date", type: "date" },
+      { name: "pickupTime", label: "Arrival Time", type: "time" },
+      { name: "Description", label: "Description", type: "text", colSpan: 4 },
     ],
   },
 
-  {
-    id: "ziaraats",
-    title: "Ziaraats",
-    icon: ZiarahIcon,
-    buttonLabel: "Save Folder",
-    gridCols: 2,
-    description: "Configure religious tour packages and pilgrimage services for Makkah and Madinah",
-    fields: [
-      { name: "orderType", label: "Order Type", type: "select", options: ["January - June 2022", "July - December 2022"] },
-      { name: "companyBranch", label: "Company / Branch", type: "select", options: ["Branch A", "Branch B"] },
-    ],
-  },
+
 ];
 
 const NewFolderFull: React.FC = () => {
@@ -218,6 +214,28 @@ const NewFolderFull: React.FC = () => {
   }, {});
 
   const [entries, setEntries] = useState<Record<string, any[]>>(initialEntriesState);
+  const [showAfterSave, setShowAfterSave] = useState(false);
+  const [showAdvancePayment, setShowAdvancePayment] = useState(false);
+  const [advancePaymentData, setAdvancePaymentData] = useState({
+    amount: "",
+    date: "",
+    mode: "",
+  });
+  const [finalValues, setFinalValues] = useState({
+    revenue: 0,
+    hotels: 0,
+    transport: 0,
+    others: 0,
+    total: 0,
+  });
+
+  const handleSaveAll = () => {
+    setShowAfterSave(true);
+    setShowAdvancePayment(true);
+  };
+  const handleCancelAdvance = () => {
+    setShowAdvancePayment(false);
+  };
 
   const addItem = (sectionId: string) => {
     setEntries((prev) => {
@@ -243,6 +261,18 @@ const NewFolderFull: React.FC = () => {
       ...prev,
       [sectionId]: prev[sectionId].map((it) => (it.id === itemId ? { ...it, [fieldName]: value } : it)),
     }));
+  };
+
+  const handleSaveAdvance = () => {
+    const paymentAmount = Number(advancePaymentData.amount) || 0;
+
+    setFinalValues(prev => ({
+      ...prev,
+      total: Math.max(prev.total - paymentAmount, 0),
+      // you can also update other fields like revenue, transport, hotels here if needed
+    }));
+
+    setShowAdvancePayment(false);
   };
 
   // optional: function to log section data (save)
@@ -316,21 +346,8 @@ const NewFolderFull: React.FC = () => {
 
                 {/* Fields grid */}
                 {/* Fields grid */}
-                <div
-                  className={`grid gap-4 ${{
-                      1: "grid-cols-1",
-                      2: "grid-cols-2",
-                      3: "grid-cols-3",
-                      4: "grid-cols-4",
-                      5: "grid-cols-5",
-                      6: "grid-cols-6",
-                      7: "grid-cols-7",
-                      8: "grid-cols-8",
-                      9: "grid-cols-9",
-                      10: "grid-cols-10",
-                    }[section.gridCols || 4]
-                    }`}
-                >
+               <div className={`grid gap-4 grid-cols-${section.gridCols ?? 4}`}>
+
                   {section.fields.map((f) => {
                     const span = f.colSpan ? `col-span-${f.colSpan}` : "";
                     const value = item[f.name] ?? "";
@@ -387,36 +404,13 @@ const NewFolderFull: React.FC = () => {
 
               </div>
             ))}
-
-            {/* bottom actions for section */}
-            {/* <div className="mt-6 flex items-center gap-4">
-              <button
-                onClick={() => addItem(section.id)}
-                className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-md"
-              >
-                <img src={AddIcon} className="w-4 h-4" alt="add" />
-                <span className="text-sm font-['Poppins']">Add New</span>
-              </button>
-
-              <button
-                onClick={() => handleSaveSection(section.id)}
-                className="px-4 py-2 bg-black text-white rounded-md"
-              >
-                Save {section.title}
-              </button>
-            </div> */}
           </div>
         </div>
       ))}
-
-      {/* global Save button at bottom */}
       <div className="mt-6">
         <div
           className="px-4 py-3 bg-black rounded-lg cursor-pointer w-32 text-center"
-          onClick={() => {
-            console.log("All data:", entries);
-            alert("All data printed to console (check DevTools).");
-          }}
+          onClick={handleSaveAll}
         >
           <span className="text-white text-base font-medium font-poppins leading-tight">Save All</span>
         </div>
@@ -525,20 +519,68 @@ const NewFolderFull: React.FC = () => {
 
         </div>
 
-        <div className="flex gap-2 mt-12">
-          <div className="flex items-center justify-center gap-2 px-4 py-3 bg-black rounded-lg cursor-pointer">
-            <img src={InvoiceIcon} alt="Lock Folder" className="w-5 h-5" />
-            <span className="text-white text-base font-medium font-poppins leading-tight">
-              Make Invoice
-            </span>
-          </div>
-          <div className="flex items-center justify-center gap-2 px-4 py-3 bg-sky-500 rounded-lg cursor-pointer">
-            <img src={PrintIcon} alt="Lock Folder" className="w-5 h-5" />
-            <span className="text-white text-base font-medium font-poppins leading-tight">
-              Print Invoice
-            </span>
-          </div>
-        </div>
+        {
+          showAfterSave && (
+            <div className="flex gap-2 mt-12">
+              <div className="flex items-center justify-center gap-2 px-4 py-3 bg-black rounded-lg cursor-pointer">
+                <img src={InvoiceIcon} alt="Lock Folder" className="w-5 h-5" />
+                <span className="text-white text-base font-medium font-poppins leading-tight">
+                  Make Invoice
+                </span>
+              </div>
+              <div className="flex items-center justify-center gap-2 px-4 py-3 bg-sky-500 rounded-lg cursor-pointer">
+                <img src={PrintIcon} alt="Lock Folder" className="w-5 h-5" />
+                <span className="text-white text-base font-medium font-poppins leading-tight">
+                  Print Invoice
+                </span>
+              </div>
+            </div>
+          )
+        }
+
+        {showAdvancePayment && (
+          <>
+            <div className="bg-zinc-100 rounded-tl-xl rounded-tr-xl p-4 mt-12">
+              <h2 className="justify-start text-stone-700 text-xl font-semibold font-['Poppins']">Advance Payment Details</h2>
+            </div>
+            <div className="bg-white p-6">
+              <p className="text-subheading-color text-base font-normal font-['Inter']">Payment Details</p>
+              <p className="justify-start text-sky-500 text-xl font-semibold font-['Poppins'] mt-3 mb-4">Add Payments</p>
+              <div className="grid grid-cols-3 gap-5">
+                <div>
+                  <div className="mb-2 block">
+                    <Label htmlFor="Amount">Amount</Label>
+                  </div>
+                  <TextInput id="Amount" type="number" value={advancePaymentData.amount}
+                    onChange={(e) => setAdvancePaymentData(prev => ({ ...prev, amount: e.target.value }))}
+                    placeholder="23233" required />
+                </div>
+                <div>
+                  <div className="mb-2 block">
+                    <Label htmlFor="PaymentDate">Paid Date</Label>
+                  </div>
+                  <TextInput id="PaymentDate" type="date" value={advancePaymentData.date}
+                    onChange={(e) => setAdvancePaymentData(prev => ({ ...prev, date: e.target.value }))} required />
+                </div>
+                <div>
+                  <div className="mb-2 block">
+                    <Label htmlFor="PaymentMode">Payment Mode</Label>
+                  </div>
+                  <TextInput id="PaymentMode" type="text" placeholder="Bank Transfer" value={advancePaymentData.mode}
+                    onChange={(e) => setAdvancePaymentData(prev => ({ ...prev, mode: e.target.value }))} required />
+                </div>
+              </div>
+
+              <div className="flex gap-3 mt-3">
+                <Button onClick={handleSaveAdvance} color="cyan">Save</Button>
+                <Button onClick={handleCancelAdvance} color="alternative">Cancle</Button>
+              </div>
+            </div>
+
+          </>
+        )}
+
+
 
 
       </div>

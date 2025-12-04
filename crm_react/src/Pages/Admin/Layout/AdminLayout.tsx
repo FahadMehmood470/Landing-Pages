@@ -1,8 +1,8 @@
-import AdminSidebar from "./components/Sidebar/AdminSidebar";
+import AdminSidebar from "../../../components/Sidebar/AdminSidebar";
 import { Outlet } from "react-router-dom";
-import "./Pages/Admin/Component.css"
+import "../Component.css"
 
-const Layout = () => {
+const AdminLayout = () => {
   return (
     // <div className="flex items-start">
     //   <AdminSidebar />
@@ -22,4 +22,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default AdminLayout;

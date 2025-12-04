@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import Layout from "../Layout.tsx";
+import AdminLayout from "../Pages/Admin/Layout/AdminLayout.tsx";
 import Dashboard from "../Pages/Admin/Dashboard.tsx";
 import ManageFolders from "../Pages/Admin/ManageFolders";
 import Payments from "../Pages/Admin/Payments";
@@ -31,12 +31,15 @@ import BookingReport from "../Pages/Admin/Reports/BookingReport.tsx";
 import RecievedReport from "../Pages/Admin/Reports/RecievedReport.tsx";
 import BalanceDueReport from "../Pages/Admin/Reports/BalanceDueReport.tsx";
 import TravelPendingReport from "../Pages/Admin/Reports/TravelPendingReport.tsx";
+import Agents from "../Pages/Admin/Companies/Agents.tsx";
+import ShowAllCompanies from "../Pages/Admin/Companies/ShowAllCompanies.tsx";
 
 function AdminRoutes() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Layout />}>
+      
+        <Route path="/" element={<AdminLayout />}>
           <Route index element={<Dashboard />} />
           <Route path="dashboard" element={<Dashboard />} />
           {/* <Route path="folders" element={<ManageFolders />} /> */}
@@ -84,9 +87,17 @@ function AdminRoutes() {
             <Route path="booking-report" element={<BookingReport />} />
             <Route path="recieved-eport" element={<RecievedReport />} />
             <Route path="balance-due-report" element={<BalanceDueReport />} />
-            <Route path="travel-pending-report" element={<TravelPendingReport />} />            
+            <Route path="travel-pending-report" element={<TravelPendingReport />} />
           </Route>
 
+
+          <Route path="companies" element={<Companies />}>
+            {/* Default route inside Companies */}
+            <Route index element={<ShowAllCompanies />} />
+
+            {/* Agent route */}
+            <Route path="agent/:companyId" element={<Agents />} />
+          </Route>
         </Route>
       </Routes>
     </>

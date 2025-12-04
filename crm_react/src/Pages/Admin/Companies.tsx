@@ -9,7 +9,7 @@ const Companies = () => {
   return (
     <div className="p-8 space-y-12">
       <Admin_Navbar />
-     <ShowAllCompanies/>
+      {/* <ShowAllCompanies /> */}
       <div className="mt-4">
         <Outlet />
       </div>

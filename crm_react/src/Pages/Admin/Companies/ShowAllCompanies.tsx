@@ -47,12 +47,6 @@ const ShowAllCompanies = () => {
                     />
                 )}
 
-
-
-
-
-
-
             </div >
 
             <AllCompanies companies={companies} />

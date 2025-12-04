@@ -1,5 +1,5 @@
 export interface NewCompany {
-  company: string;
+  company: string; // instead of companyName
   companyType: string;
   email: string;
   number: string;

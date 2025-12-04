@@ -1,70 +1,29 @@
 import { NavLink } from "react-router-dom";
 
-const AdminSidebar = () => {
+const AgentSidebar = () => {
   const menuItems = [
     {
       id: 1,
       name: "Dashboard",
-      path: "/admin/dashboard",
+      path: "/agent/dashboard",
       white: "/Dashboard_w.svg",
       black: "/Dashboard_b.svg",
     },
     {
       id: 2,
       name: "Manage Folders",
-      path: "/admin/folders",
+      path: "/agent/folders",
       white: "/manage_folder_w.svg",
       black: "/manage_folder_b.svg",
     },
+
     {
       id: 3,
-      name: "Payments",
-      path: "/admin/payments",
-      white: "/Payments_w.svg",
-      black: "/Payments_b.svg",
-    },
-    {
-      id: 3,
-      name: "List Of Values",
-      path: "/admin/list",
-      white: "/list_w.svg",
-      black: "/list_b.svg",
-    },
-    {
-      id: 4,
-      name: "Companies",
-      path: "/admin/companies",
-      white: "/Companies_w.svg",
-      black: "/Companies_b.svg",
-    },
-    {
-      id: 5,
       name: "Leads",
-      path: "/admin/leads",
+      path: "/agent/leads",
       white: "/Leads_w.svg",
       black: "/Leads_b.svg",
-    },
-    {
-      id: 6,
-      name: "Reports",
-      path: "/admin/reports",
-      white: "/Reports_w.svg",
-      black: "/Reports_b.svg",
-    },
-    {
-      id: 7,
-      name: "Settings",
-      path: "/admin/settings",
-      white: "/Settings_w.svg",
-      black: "/Settings_b.svg",
-    },
-        {
-      id: 8,
-      name: "Attendance",
-      path: "/admin/attendance",
-      white: "/Attendance_w.svg",
-      black: "/Attendance_b.svg",
-    },
+    }
   ];
 
   return (
@@ -101,4 +60,5 @@ const AdminSidebar = () => {
   );
 };
 
-export default AdminSidebar;
+export default AgentSidebar;
+
