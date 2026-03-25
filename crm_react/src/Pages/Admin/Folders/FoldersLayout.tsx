@@ -1,5 +1,3 @@
-import React from 'react'
-
 const FoldersAdminLayout = () => {
   return (
     <div>FoldersAdminLayout</div>

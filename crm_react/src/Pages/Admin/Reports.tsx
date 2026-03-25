@@ -1,4 +1,4 @@
-import Admin_Navbar from "../../components/Navbar/Header"
+import Admin_Navbar from "../../components/Navbar/Admin_Navbar"
 import ReportsList from "./Reports/ReportsList"
 import { Outlet } from "react-router-dom"
 

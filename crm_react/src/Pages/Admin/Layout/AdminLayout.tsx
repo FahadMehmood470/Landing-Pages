@@ -13,7 +13,7 @@ const AdminLayout = () => {
 
     <div className="flex min-h-screen">
       <AdminSidebar />
-      <div className="flex-1 overflow-y-auto dashborad_gradient">
+      <div className="flex-1 overflow-y-auto bg-[#F7F7F7]">
         <Outlet />
       </div>
     </div>

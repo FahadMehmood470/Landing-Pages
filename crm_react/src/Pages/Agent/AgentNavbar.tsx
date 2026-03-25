@@ -3,8 +3,15 @@ import ProfileImage from "../../assets/images/Profile Image.png";
 import DropdownIcon from "../../assets/images/d_icon.svg";
 
 import { Dropdown, DropdownItem } from "flowbite-react";
+import { useNavigate } from "react-router-dom";
 
 const AgentNavbar = () => {
+    const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.removeItem("role");   // clears login
+    navigate("/login");                // redirect to login
+  };
   return (
     <nav>
       <div className="flex justify-between items-center">
@@ -111,7 +118,7 @@ const AgentNavbar = () => {
               <DropdownItem>Dashboard</DropdownItem>
               <DropdownItem>Settings</DropdownItem>
               <DropdownItem>Earnings</DropdownItem>
-              <DropdownItem>Sign out</DropdownItem>
+              <DropdownItem onClick={handleLogout}>Sign out</DropdownItem>
             </Dropdown>
           </div>
         </div>

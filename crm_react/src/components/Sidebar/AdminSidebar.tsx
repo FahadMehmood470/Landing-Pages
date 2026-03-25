@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import Logo from "../../assets/images/logo.png";
 
 const AdminSidebar = () => {
   const menuItems = [
@@ -8,6 +9,20 @@ const AdminSidebar = () => {
       path: "/admin/dashboard",
       white: "/Dashboard_w.svg",
       black: "/Dashboard_b.svg",
+    },
+     {
+      id: 4,
+      name: "Companies",
+      path: "/admin/companies",
+      white: "/Companies_w.svg",
+      black: "/Companies_b.svg",
+    },
+    {
+      id: 5,
+      name: "Users",
+      path: "/admin/users",
+      white: "/Leads_w.svg",
+      black: "/Leads_b.svg",
     },
     {
       id: 2,
@@ -30,36 +45,31 @@ const AdminSidebar = () => {
       white: "/list_w.svg",
       black: "/list_b.svg",
     },
+   
     {
-      id: 4,
-      name: "Companies",
-      path: "/admin/companies",
-      white: "/Companies_w.svg",
-      black: "/Companies_b.svg",
-    },
-    {
-      id: 5,
+      id: 6,
       name: "Leads",
       path: "/admin/leads",
       white: "/Leads_w.svg",
       black: "/Leads_b.svg",
     },
+
     {
-      id: 6,
+      id: 7,
       name: "Reports",
       path: "/admin/reports",
       white: "/Reports_w.svg",
       black: "/Reports_b.svg",
     },
     {
-      id: 7,
+      id: 8,
       name: "Settings",
       path: "/admin/settings",
       white: "/Settings_w.svg",
       black: "/Settings_b.svg",
     },
-        {
-      id: 8,
+    {
+      id: 9,
       name: "Attendance",
       path: "/admin/attendance",
       white: "/Attendance_w.svg",
@@ -70,8 +80,11 @@ const AdminSidebar = () => {
   return (
     <div className="w-80 bg-white shadow-[1px_0px_30px_2px_rgba(239,239,244,1.00)] p-12 h-[100%]">
       <div className="flex items-center gap-3">
-        <div className="w-12 h-12 bg-sky-500 rounded-xl"></div>
-        <h1 className="text-black text-2xl font-semibold font-poppins">LOGO</h1>
+        {/* <div className="w-12 h-12 bg-sky-500 rounded-xl"></div>
+        <h1 className="text-black text-2xl font-semibold font-poppins">
+
+        </h1> */}
+        <img src={Logo} className="h-auto max-w-full" alt="" />
       </div>
 
       <div className="mt-12 space-y-4">

@@ -6,8 +6,6 @@ const items = [
   { label: "Booking Folders", to: "booking" },
   { label: "Invoiced Folders", to: "invoiced" },
   { label: "Request Folders", to: "requests" },
-  { label: "Delete Folders", to: "deleted" },
-  { label: "Test Sub Folders", to: "test-sub" },
   { label: "All Folder (VO)", to: "all-vo" },
 ];
 

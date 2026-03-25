@@ -1,5 +1,5 @@
 import "./Component.css";
-import Admin_Navbar from "../../components/Navbar/Header";
+import Admin_Navbar from "../../components/Navbar/Admin_Navbar";
 import InfoAdmin from "../../components/Admin_info_block/infoAdmin";
 import SalesRevenueChart from "../../components/Admin_info_block/SalesRevenueChart";
 const Dashboard = () => {

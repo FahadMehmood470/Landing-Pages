@@ -5,12 +5,34 @@ import PrintIcon from "../../../assets/images/Print_icon_blue.svg";
 import EdittIcon from "../../../assets/images/edit_icon.svg";
 import AddIcon from "../../../assets/images/Add_icon.svg";
 import FilterIcon from "../../../assets/images/filter_icon.svg";
+import TransportVarIcon from "../../../assets/images/TransportVorcher.svg";
+
 import { useState } from "react";
 import FilterModal from "../../../components/Modal/filterModal";
 import { Pagination } from "flowbite-react";
+import { useNavigate } from "react-router-dom";
 
 
 const AllFolder = () => {
+  //   const data = [
+  //   {
+  //     id: 3241,
+  //     creationDate: "06/18/2025",
+  //     passenger: "Alyvia Kelley",
+  //     phone: "+92 300 0209425",
+  //     email: "a.kelley@gmail.com",
+  //     supplier: "181573",
+  //     type: "Umrah",
+  //     branch: "Safa Marwa & Tours",
+  //     staffName: "Asim Khalild",
+  //     staffEmail: "asim@alharamaintravel.co.uk",
+  //     travelDate: "06/18/2025",
+  //   },
+  // ];
+  const row = { id: 3241 };
+
+  const navigate = useNavigate();
+
   const [openFilter, setOpenFilter] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const onPageChange = (page: number) => setCurrentPage(page);
@@ -120,22 +142,43 @@ const AllFolder = () => {
                 <td className="px-6 py-4">06/18/2025</td>
 
                 <td className="px-6 py-4 flex items-center gap-3">
-                  <img src={EdittIcon} alt="Edit" />
-                  <img src={PrintIcon} alt="Print" />
-                  <a
-                    href="#"
-                    className="text-rose-500 text-base font-medium font-['Inter'] underline"
-                  >
-                    Edit
-                  </a>
+                  <div className="bg-Neutral-White rounded-lg outline outline-1 outline-offset-[-1px] outline-Neutral-800  p-2">
+
+                    <img src={EdittIcon} alt="Edit" className="cursor-pointer w-5 h-5" onClick={() => navigate(`/admin/folders/edit/${row.id}`)} />
+                  </div>
+
+                  <div className="bg-Neutral-White rounded-lg outline outline-1 outline-offset-[-1px] outline-Neutral-800  p-2">
+                    <img src={PrintIcon} alt="Print" className="w-5 h-5"/>
+                  </div>
+                  <div className="bg-Neutral-White rounded-lg outline outline-1 outline-offset-[-1px] outline-Neutral-800  p-2">
+
+                    <img src={TransportVarIcon} alt="TransportVarIcon" className="w-5 h-5" />
+                  </div>
+
                 </td>
               </tr>
             </tbody>
+            {/* <tbody>
+  {data.map((row) => (
+    <tr key={row.id}>
+      <td>{row.id}</td>
+      ...
+      <td className="px-6 py-4 flex items-center gap-3">
+        <img
+          src={EdittIcon}
+          className="cursor-pointer"
+          onClick={() => navigate(`/admin/folders/edit/${row.id}`)}
+        />
+      </td>
+    </tr>
+  ))}
+</tbody> */}
+
           </table>
 
           <div className="flex overflow-x-auto">
             <Pagination currentPage={currentPage} totalPages={10} onPageChange={onPageChange} showIcons />
-             
+
           </div>
         </div>
       </div>

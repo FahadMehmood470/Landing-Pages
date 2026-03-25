@@ -1,0 +1,22 @@
+// import { Outlet } from "react-router-dom"
+// import Admin_Navbar from "../../components/Navbar/Header"
+// import FolderList from "../../Pages/Admin/Folders/FolderList"
+
+const ManageFolders = () => {
+  return (
+
+    <div className="p-8 space-y-12">
+      {/* <Admin_Navbar />
+      <FolderList />
+      <div className="mt-4">
+        <Outlet />
+
+      </div> */}
+      <h3>THis Is Manage FOlder List</h3>
+
+
+    </div>
+  )
+}
+
+export default ManageFolders

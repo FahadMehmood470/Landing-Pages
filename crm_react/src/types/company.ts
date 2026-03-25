@@ -1,10 +1,12 @@
 export interface NewCompany {
-  company: string; // instead of companyName
-  companyType: string;
-  email: string;
-  number: string;
-  website: string;
+  id: number;
+  title: string;
+  image: string;
   address: string;
-  status: string;
-  logo: File | null;
+  email: string;
+  phone: string;
+  // company:string
+  status: number;
+  subscribe_link?: string | null;
+  web_address: string | null;
 }

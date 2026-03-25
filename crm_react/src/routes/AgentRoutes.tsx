@@ -7,8 +7,6 @@ import AllFolder from "../Pages/Agent/Folders/AllFolder.tsx";
 import BoookingFolder from "../Pages/Agent/Folders/BoookingFolder.tsx";
 import InvoicedFolder from "../Pages/Agent/Folders/InvoicedFolder.tsx";
 import RequestedFolder from "../Pages/Agent/Folders/RequestedFolder.tsx";
-import DeleteFolder from "../Pages/Agent/Folders/DeleteFolder.tsx";
-import TestSubFolder from "../Pages/Agent/Folders/TestSubFolder.tsx";
 import AllFoldersVO from "../Pages/Agent/Folders/AllFoldersVO.tsx";
 import AgentLayout from "../Pages/Agent/Layout/AgentLayout.tsx";
 import AddManualLeads from "../Pages/Agent/Leads/AddManualLeads.tsx";
@@ -36,8 +34,6 @@ const AgentRoutes = () => {
             <Route path="booking" element={<BoookingFolder />} />
             <Route path="invoiced" element={<InvoicedFolder />} />
             <Route path="requests" element={<RequestedFolder />} />
-            <Route path="deleted" element={<DeleteFolder />} />
-            <Route path="test-sub" element={<TestSubFolder />} />
             <Route path="all-vo" element={<AllFoldersVO />} />
           </Route>
           <Route path="leads" element={<Leads />}>
@@ -46,12 +42,9 @@ const AgentRoutes = () => {
             <Route path="new-leads" element={<NewLeads />} />
             <Route path="opened-leads" element={<OpenLeads />} />
             <Route path="released-leads" element={<ReleasedLeads />} />
-            <Route path="closed-leads" element={<ClosedLeads/>} />
+            <Route path="closed-leads" element={<ClosedLeads />} />
             <Route path="archive-leads" element={<ArchivedLeads />} />
             <Route path="view-only-lead" element={<ViewOnlyLeads />} />
-
-
-
           </Route>
         </Route>
 

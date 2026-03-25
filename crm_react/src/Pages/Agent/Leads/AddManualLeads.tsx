@@ -13,10 +13,14 @@ import DownloadIcon from "../../../assets/images/downloadIcon.svg";
 
 import { Label, TextInput, Select, Textarea, Button, FileInput } from "flowbite-react";
 import { useState } from "react";
+import SaveEntryAgent from "../../../components/Modal/SaveEntryAgent";
 
 
 
 const AddManualLeads = () => {
+    const [openModal, setOpenModal] = useState(false);
+
+
     const [uploadedFiles, setUploadedFiles] = useState<any[]>([]);
     const handleFile = (file: File) => {
         const newFile = {
@@ -370,30 +374,35 @@ const AddManualLeads = () => {
                     </label>
 
 
-                    <div className="mt-8 space-y-4">
-                        {uploadedFiles.map((item) => (
-                            <div
-                                key={item.id}
-                                className="flex items-center justify-between bg-white rounded-xl p-4 border border-neutral-200 shadow-sm"
-                            >
-                                {/* Left side */}
-                                <div className="flex items-center gap-4">
-                                    <div className="bg-zinc-100 p-3 rounded-lg">
-                                        <img src={UploadIcon} alt="" className="w-6" />
-                                    </div>
 
-                                    <div>
-                                        <p className="text-lg font-semibold text-neutral-800">
-                                            {item.name}
-                                        </p>
 
-                                        <p className="text-sm text-neutral-500">
-                                            {item.size} • Uploaded {item.time}
-                                        </p>
-                                    </div>
+                </div>
 
-                                    {/* Category Badge */}
-                                    {/* <span
+
+                <div className="mt-8 space-y-4">
+                    {uploadedFiles.map((item) => (
+                        <div
+                            key={item.id}
+                            className="flex items-center justify-between bg-white rounded-xl p-4 border border-neutral-200 shadow-sm"
+                        >
+                            {/* Left side */}
+                            <div className="flex items-center gap-4">
+                                <div className="bg-zinc-100 p-3 rounded-lg">
+                                    <img src={UploadIcon} alt="" className="w-6" />
+                                </div>
+
+                                <div>
+                                    <p className="text-lg font-semibold text-neutral-800">
+                                        {item.name}
+                                    </p>
+
+                                    <p className="text-sm text-neutral-500">
+                                        {item.size} • Uploaded {item.time}
+                                    </p>
+                                </div>
+
+                                {/* Category Badge */}
+                                {/* <span
                                         className={`text-sm px-3 py-1 round
                                         ed-full border ml-4 ${item.type === "Passport"
                                             ? "border-amber-500 text-amber-700"
@@ -404,32 +413,32 @@ const AddManualLeads = () => {
                                     >
                                         {item.type}
                                     </span> */}
-                                </div>
-
-                                {/* Right Icons */}
-                                <div className="flex items-center gap-4 text-xl">
-                                    <button className="text-green-600 hover:text-green-800">
-                                        <img src={DownloadIcon} alt="" />
-                                    </button>
-                                    <button className="text-blue-600 hover:text-blue-800">
-                                        <img src={EyeIcon} alt="" />
-                                    </button>
-                                    <button
-                                        className="text-red-600 hover:text-red-800"
-                                        onClick={() => setUploadedFiles(prev => prev.filter(f => f.id !== item.id))}
-                                    >
-                                        <img src={DeleteIcon} alt="" />
-                                    </button>
-                                </div>
                             </div>
-                        ))}
-                    </div>
 
-
+                            {/* Right Icons */}
+                            <div className="flex items-center gap-4 text-xl">
+                                <button className="text-green-600 hover:text-green-800">
+                                    <img src={DownloadIcon} alt="" />
+                                </button>
+                                <button className="text-blue-600 hover:text-blue-800">
+                                    <img src={EyeIcon} alt="" />
+                                </button>
+                                <button
+                                    className="text-red-600 hover:text-red-800"
+                                    onClick={() => setUploadedFiles(prev => prev.filter(f => f.id !== item.id))}
+                                >
+                                    <img src={DeleteIcon} alt="" />
+                                </button>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+                <div className=" flex items-center justify-end gap-5 mt-5">
+                    <Button color="cyan" className="text-white text-base font-medium font-poppins">Back to List</Button>
+                    <Button className="text-white text-base font-medium font-poppins bg-black" onClick={() => setOpenModal(true)}>Save Initial Lead</Button>
                 </div>
 
-
-
+                 <SaveEntryAgent openModal={openModal} setOpenModal={setOpenModal} />
 
 
             </div>

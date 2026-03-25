@@ -273,14 +273,10 @@ const NewFolderFull: React.FC = () => {
     }));
 
     setShowAdvancePayment(false);
+    finalValues
   };
 
-  // optional: function to log section data (save)
-  const handleSaveSection = (sectionId: string) => {
-    console.log("Save section", sectionId, entries[sectionId]);
-    // Hook up API call here
-    alert(`Saved ${sectionId} (check console)`);
-  };
+
 
   return (
     <div className="container mx-auto py-5">

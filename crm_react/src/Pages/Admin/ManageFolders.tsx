@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom"
-import Admin_Navbar from "../../components/Navbar/Header"
+import Admin_Navbar from "../../components/Navbar/Admin_Navbar"
 import FolderList from "../../Pages/Admin/Folders/FolderList"
 
 const ManageFolders = () => {

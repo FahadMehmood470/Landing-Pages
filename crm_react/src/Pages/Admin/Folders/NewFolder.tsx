@@ -19,12 +19,12 @@ import PrintIcon from "../../../assets/images/print_icon.svg";
 
 
 type Field = {
-  name: string; // key to store value
+  name: string;
   label: string;
   type: "text" | "number" | "date" | "time" | "select" | "textarea";
   placeholder?: string;
-  options?: string[]; // for select
-  colSpan?: number; // optional to help AdminLayout -> number of grid columns it should span
+  options?: string[];
+  colSpan?: number;
 };
 
 type Section = {
@@ -40,7 +40,7 @@ type Section = {
 const sections: Section[] = [
   {
     id: "manageFolder",
-    title: "Manage Folders",
+    title: "Add New Folder",
     description: "Quickly manage folders for better organization.",
     icon: img_Lock,
     buttonLabel: "Lock Folder",
@@ -246,11 +246,11 @@ const NewFolderFull: React.FC = () => {
   };
 
   // optional: function to log section data (save)
-  const handleSaveSection = (sectionId: string) => {
-    console.log("Save section", sectionId, entries[sectionId]);
-    // Hook up API call here
-    alert(`Saved ${sectionId} (check console)`);
-  };
+  // const handleSaveSection = (sectionId: string) => {
+  //   console.log("Save section", sectionId, entries[sectionId]);
+  //   // Hook up API call here
+  //   alert(`Saved ${sectionId} (check console)`);
+  // };
 
   return (
     <div className="container mx-auto py-5">
